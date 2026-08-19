@@ -28,65 +28,9 @@
 
 ---
 
-## 🚀 快速使用方法
+## 🚀 使用方法
 
-### 方式一：一键命令行替换（推荐）
-
-打开终端，复制并执行以下对应系统的一键命令即可完成自动克隆、备份并替换：
-
-#### 🪟 Windows (PowerShell)
-> 请以普通用户或管理员身份打开 PowerShell 执行：
-
-```powershell
-# 1. 目标帮助文档路径
-$helpPath = "C:\Program Files\KISSsoft AG\KISSsoft 2025\help"
-
-# 2. 如果存在原英文文件夹且未备份，先自动备份为 e_backup
-if ((Test-Path "$helpPath\e") -and -not (Test-Path "$helpPath\e_backup")) {
-    Rename-Item "$helpPath\e" "$helpPath\e_backup"
-    Write-Host "已自动备份原版帮助文件夹至: $helpPath\e_backup" -ForegroundColor Green
-}
-
-# 3. 克隆汉化包并替换
-git clone https://github.com/excellent-max/KISSsoft-2025-Help-ZH.git "$env:TEMP\kisssoft_zh"
-Copy-Item -Recurse -Force "$env:TEMP\kisssoft_zh\e" "$helpPath\"
-Remove-Item -Recurse -Force "$env:TEMP\kisssoft_zh"
-Write-Host "✅ 汉化替换完成！打开 KISSsoft 按 F1 即可享受中英双语文档。" -ForegroundColor Cyan
-```
-
-#### 🪟 Windows (CMD 命令提示符)
-```cmd
-:: 1. 备份原文件夹
-ren "C:\Program Files\KISSsoft AG\KISSsoft 2025\help\e" "e_backup"
-
-:: 2. 克隆并复制替换（需已安装 Git）
-git clone https://github.com/excellent-max/KISSsoft-2025-Help-ZH.git "%TEMP%\kisssoft_zh"
-xcopy /E /I /Y "%TEMP%\kisssoft_zh\e" "C:\Program Files\KISSsoft AG\KISSsoft 2025\help\e"
-rd /S /Q "%TEMP%\kisssoft_zh"
-echo ✅ 替换完成！
-```
-
-#### 🍎 macOS (CrossOver / Wine / 虚拟机运行环境)
-> 适用于在 Mac 上使用 CrossOver/Wine 运行 KISSsoft 的用户（路径以 CrossOver 默认容器为例）：
-
-```bash
-# 替换为你的 Bottle 实际路径
-WINE_HELP_DIR="$HOME/Library/Application Support/CrossOver/Bottles/KISSsoft/drive_c/Program Files/KISSsoft AG/KISSsoft 2025/help"
-
-if [ -d "$WINE_HELP_DIR/e" ] && [ ! -d "$WINE_HELP_DIR/e_backup" ]; then
-    mv "$WINE_HELP_DIR/e" "$WINE_HELP_DIR/e_backup"
-    echo "已备份原文件夹至 e_backup"
-fi
-
-git clone https://github.com/excellent-max/KISSsoft-2025-Help-ZH.git /tmp/kisssoft_zh
-cp -R /tmp/kisssoft_zh/e "$WINE_HELP_DIR/"
-rm -rf /tmp/kisssoft_zh
-echo "✅ macOS/Wine 环境替换完成！"
-```
-
----
-
-### 方式二：手动下载复制替换
+### 方式一：手动下载复制替换（推荐）
 
 1. 点击本仓库右上角 **`Code` -> `Download ZIP`** 并解压。
 2. 打开 KISSsoft 2025 安装目录下的 `help` 文件夹：
@@ -94,8 +38,18 @@ echo "✅ macOS/Wine 环境替换完成！"
    C:\Program Files\KISSsoft AG\KISSsoft 2025\help\
    ```
 3. 将原来的 `e` 文件夹重命名为 `e_backup` 进行备份。
-4. 将解压出来的 `e` 文件夹复制到该目录下。
-5. 打开 KISSsoft 软件按 `F1` 键，即可立即调出中英双语帮助系统。
+4. 将解压出来的 `e` 文件夹直接复制到该目录下替换。
+5. 打开 KISSsoft 软件按 `F1` 键，即可立即调出完整的中英双语帮助文档。
+
+---
+
+### 方式二：Windows PowerShell 一键替换指令
+
+在 Windows 电脑上打开 **PowerShell**（按下 `Win + R` 输入 `powershell` 回车），直接粘贴并执行以下单行命令即可自动完成备份与极速替换（无需安装 Git）：
+
+```powershell
+$h="C:\Program Files\KISSsoft AG\KISSsoft 2025\help"; if(Test-Path "$h\e"){ if(!(Test-Path "$h\e_backup")){ Rename-Item "$h\e" "$h\e_backup" } }; $z="$env:TEMP\k.zip"; Invoke-WebRequest "https://github.com/excellent-max/KISSsoft-2025-Help-ZH/archive/refs/heads/main.zip" -OutFile $z; Expand-Archive $z -DestinationPath "$env:TEMP\k" -Force; Copy-Item -Recurse -Force "$env:TEMP\k\KISSsoft-2025-Help-ZH-main\e" "$h\"; Remove-Item -Recurse -Force $z, "$env:TEMP\k"; Write-Host "✅ 汉化替换成功！打开 KISSsoft 按 F1 即可生效。" -ForegroundColor Cyan
+```
 
 ---
 
