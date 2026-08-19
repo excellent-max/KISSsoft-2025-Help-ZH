@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>根据 DIN 5480 计算花键连接，采用齿面定心 | Calculating spline connections according to DIN 5480 with flank centering</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculating spline connections according to DIN 5480 with flank centering">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7961');expand('7960');expand('9288');expand('9246');highlight('11217')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7963.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11656.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">根据 DIN 5480 计算花键连接，采用齿面定心</h3>   
+                
+<p class="bodytext">在 <strong>齿面定心连接</strong> 中，齿面用于定心和旋转同步。齿面定心连接中轴和轮毂使用的齿根圆标称长度为<span class="subscript-italic">理论齿根圆直径</span>，按 h<strong>fP</strong> = 0.55*m 计算。所有没有 <span class="menu">大径定心</span> 或 <span class="menu">小径定心</span> 标注的基准齿廓均适用于齿面定心花键连接。</p><p class="bodytext">在涉及切削加工工艺的场合中，所用公差涵盖合适的最大可能齿根高（h<span class="subscript-italic">fP</span> = 0.65*m）以及齿根圆直径公差。齿槽齿根圆直径的公差带为 9H，轮毂齿根圆直径的公差带为 11a。</p><p class="bodytext">以下值适用于 <strong>齿面定心的花键</strong>:</p><ul>	<li class="bodytext">轮毂齿顶圆直径 d<span class="subscript-italic">a2</span>，公差带 H11</li>	<li class="bodytext">轴齿顶圆直径 d<span class="subscript-italic">a1</span>，公差带 h11</li>	<li class="bodytext">轮毂齿根圆直径 d<span class="subscript-italic">f2</span> 的公差，按 A<span class="subscript-italic">df2</span> = (0.2*m+1.73*(A<span class="subscript-italic">e</span>+TG)) 计算。</li>	<li class="bodytext">轴齿根圆直径 d<span class="subscript-italic">f1</span> 的公差，按机械加工计算：A<span class="subscript-italic">df1</span> = -(0.2*m+(1.73*A<span class="subscript-italic">s</span>+TG))；冷滚压成形时：A<span class="subscript-italic">df1</span> = -0.76*m。</li></ul><p class="bodytext">下面描述如何根据基础标准 DIN 5480-1 的表 5 计算根圆公差。</p><p class="bodytext">选择 <span class="menu">计算</span><span class="menu1" style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"><strong style="font-weight:bold"><span style="font-size:9.5pt"><span style="font-weight:normal">→</span></span></strong></span></span><span class="menu"> 设置 </span><span class="menu1" style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"><strong style="font-weight:bold"><span style="font-size:9.5pt"><span style="font-weight:normal">→ </span></span></strong></span></span><span class="menu">通用</span>，然后选择根圆公差是根据工艺过程（DIN 5480-16, 4.3.1）计算还是根据基础标准（DIN 5480-1, 表5）计算。</p><p class="bodytext">当根圆公差按照基础标准DIN 5480-1（表5）计算时，齿根牙型直径按第13页上的公式计算：</p><p class="bodytext"><strong>轴根部牙型直径</strong>: dFf1 = |da2| - 2*cFmin</p><p class="bodytext"><strong>轮毂齿根牙型直径</strong>：dFf2 = -(da1 + 2*cFmin);</p><p class="bodytext">cFmin 来自 DIN 5480-1 标准中的表 4。</p><p class="bodytext">如果分度圆直径或模数超出定义的范围，表中相邻的边值将被用作cFmin。</p><p class="bodytext"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">所计算的齿根直径公差带也在此处使用。</span></span></span></span></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculating spline connections according to DIN 5480 with flank centering</h3>   
+                
+<p class="bodytext">In <strong>flank-centered connections</strong>, the flanks are used for centering and rotational synchronization. The nominal lengths of the root diameter used for the shaft and the hub in flank-centered connections are the <span class="subscript-italic">theoretical root diameter</span> calculated with h<strong>fP</strong> = 0.55*m. All reference profiles without the note <span class="menu">Major diameter fit</span> or <span class="menu">Minor diameter fit</span> are for flank-centered splined joints.</p><p class="bodytext">The allowances that apply where cutting manufacturing processes are involved cover the appropriate greatest possible dedendum (h<span class="subscript-italic">fP</span>=0.65*m) and the root diameter allowances. The tolerance field for the root diameter of the tooth space is 9H. For the hub root diameter it is 11a.</p><p class="bodytext">The following values apply for <strong>flank-centered splines</strong>:</p><ul>	<li class="bodytext">Hub tip diameter d<span class="subscript-italic">a2</span> with tolerance field H11</li>	<li class="bodytext">Shaft tip diameter d<span class="subscript-italic">a1</span> with tolerance field h11</li>	<li class="bodytext">Allowance for the hub root diameter d<span class="subscript-italic">f2</span>, calculated with A<span class="subscript-italic">df2</span> = (0.2*m+1.73*(A<span class="subscript-italic">e</span>+TG)).</li>	<li class="bodytext">Allowance for the hub root diameter d<span class="subscript-italic">f1</span>, calculated for machining: with A<span class="subscript-italic">df1</span> = -(0.2*m+(1.73*A<span class="subscript-italic">s</span>+TG)). For cold roll forming: with A<span class="subscript-italic">df1</span> = -0.76*m.</li></ul><p class="bodytext">This process for calculating root circle tolerances according to the base standard, DIN 5480-1, Table 5, is described below.</p><p class="bodytext">Select <span class="menu">Calculations</span><span class="menu1" style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"><strong style="font-weight:bold"><span style="font-size:9.5pt"><span style="font-weight:normal">→</span></span></strong></span></span><span class="menu"> Settings </span><span class="menu1" style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"><strong style="font-weight:bold"><span style="font-size:9.5pt"><span style="font-weight:normal">→ </span></span></strong></span></span><span class="menu">General</span> and then select whether root circle tolerances are to be calculated according to the manufacturing process (DIN 5480-16, 4.3.1) or according to the base standard (DIN 5480-1, Table 5).</p><p class="bodytext">When the root circle tolerances are calculated according to the basic standard DIN 5480-1 (Table 5), the root form diameter is calculated as specified by the formulae on page 13:</p><p class="bodytext"><strong>Shaft root form diameter</strong>: dFf1 = |da2| - 2*cFmin</p><p class="bodytext"><strong>Hub root form diameter</strong>: dFf2 = -(da1 + 2*cFmin);</p><p class="bodytext">cFmin comes from Table 4 in the DIN 5480-1 standard.</p><p class="bodytext">If either the reference diameter or the module lie outside of the defined range, the adjacent edge value in the table is used as cFmin.</p><p class="bodytext"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">The tolerance band calculated for the root diameter is also used here.</span></span></span></span></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

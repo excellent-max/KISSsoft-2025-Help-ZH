@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>用户定义的滚子型线 | User-defined roller profile</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="User-defined roller profile">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10648');expand('10646');expand('10645');expand('9287');expand('9246');highlight('10649')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10648.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11536.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">用户定义的滚子型线</h3>   
+                
+<p class="bodytext">滚子轴承通常使用 ISO 16281 中规定的对数型线。但如果需要，也可以使用用户定义的滚子型线。该文件的预期结构如下：</p><p class="bodytext">-- 这是一个注释</p><p class="bodytext">DATA</p><p class="bodytext">1 -0.45 0.000581256</p><p class="bodytext">2 -0.41 0.000390587</p><p class="bodytext">3 -0.37 0.000277616</p><p class="bodytext">4 -0.33 0.000200197</p><p class="bodytext">...</p><p class="bodytext">...</p><p class="bodytext">21 0.33 0.000200197</p><p class="bodytext">22 0.37 0.000277616</p><p class="bodytext">23 0.41 0.000390587</p><p class="bodytext">24 0.45 0.000581256</p><p class="bodytext">END</p><p class="bodytext">注意：</p><ul>	<li class="bodytext">以“--”开头的行是注释，并被忽略。</li>	<li class="bodytext">型线函数定义以关键字"DATA"开始，以关键字"END"结束。</li>	<li class="bodytext">每行必须包含三列。第一列是索引，仅作为用户的参考来源，其值没有任何作用，会被忽略。第二列是无量纲位置 x/L<sub>we</sub>，型线在该位置处以 mm/mm 定义；本列的值应在 -0.5 到 +0.5 之间。第三列是无量纲型线 f<sub>r</sub>/D<sub>w</sub>，单位为 mm/mm；本列的值不能超过 0.5。</li>	<li class="bodytext">如果型线未在整个滚动体宽度上定义，则这些区域的值将按二次外推确定。</li>	<li class="bodytext">为节省空间，'...' 所代表的数据已省略。</li></ul><p class="bodytext"></p><div class="objectWrapper" data-id="62ff46619ef04" data-type="image" data-caption="Koordinatenrahmen für die Definition des benutzerdefinierten Rollenprofils"><p class="bodytext"><img data-id="62ff46619ef04" height="260" src="10715.png" width="300"></p><p class="figcaption" data-id="62ff46619ef04">图 28.1：用于定义用户定义的滚子型线的坐标系</p></div>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">User-defined roller profile</h3>   
+                
+<p class="bodytext">A logarithmic profile as specified in ISO 16281 is usually used for roller bearings. However, a user-defined roller profile can be used instead, if required. The expected structure of this file is as follows:</p><p class="bodytext">-- This is a comment</p><p class="bodytext">DATA</p><p class="bodytext">1 -0.45 0.000581256</p><p class="bodytext">2 -0.41 0.000390587</p><p class="bodytext">3 -0.37 0.000277616</p><p class="bodytext">4 -0.33 0.000200197</p><p class="bodytext">...</p><p class="bodytext">...</p><p class="bodytext">21 0.33 0.000200197</p><p class="bodytext">22 0.37 0.000277616</p><p class="bodytext">23 0.41 0.000390587</p><p class="bodytext">24 0.45 0.000581256</p><p class="bodytext">END</p><p class="bodytext">Notes:</p><ul>	<li class="bodytext">Lines that start with &quot;--&quot; are comments and are ignored.</li>	<li class="bodytext">The profile function definition starts with the keyword &quot;DATA&quot; and ends with the keyword &quot;END&quot;.</li>	<li class="bodytext">Each line must have three columns. The first column is the index. It is only included as a reference source for the user. Its values have no effect, and are ignored. The second column is the non-dimensional position x/L<sub>we</sub> for which the profile is defined in mm/mm. The values in this column should range between -0.5 and +0.5. The third column is the non-dimensional profile f<sub>r</sub>/D<sub>w</sub> in mm/mm. The values in this column cannot exceed 0.5.</li>	<li class="bodytext">If the profile is not defined over the entire rolling body width, the value is extrapolated quadratically for these areas.</li>	<li class="bodytext">To save space, the data represented by &quot;...&quot; has been omitted.</li></ul><p class="bodytext"></p><div class="objectWrapper" data-id="62ff46619ef04" data-type="image" data-caption="Koordinatenrahmen für die Definition des benutzerdefinierten Rollenprofils"><p class="bodytext"><img data-id="62ff46619ef04" height="260" src="10715.png" width="300" /></p><p class="figcaption" data-id="62ff46619ef04">Figure 28.1: Coordinate frame used to define the user-defined roller profile</p></div>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

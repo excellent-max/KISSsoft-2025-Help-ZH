@@ -1,0 +1,327 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>可靠性 | Reliability</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Reliability">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8718');expand('7708');expand('9286');expand('9246');highlight('11226')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11638.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11502.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">可靠性</h3>   
+                
+<p class="bodytext">可靠性根据 Bertsche 的研究 [17] 进行计算，该研究详细描述了各种可行方法。最常用的方法，也是非常适合“传统”机械工程计算结果的方法，是“威布尔分布”。在这种情况下，Bertsche 建议使用3 参数威布尔分布。机器元件的可靠性 R 根据载荷循环次数 t，使用以下方程计算。</p><p class="bodytext"></p><p class="bodytext"><img src="11227.png" style="height:41px; width:145px"></p><p class="bodytext">参数 T 和 t<sub class="subscript">0</sub> 可由部件的数学可实现寿命 H<sub class="subscript">att</sub> 按下式推导得到（其中 F<sub class="subscript">O</sub> 根据计算方法取值，见表 1；β 和 f<sub class="subscript">tB</sub> 取自 Bertsche 的表 2）：</p><div class="objectWrapper" data-id="5ba0bcd789d00" data-type="table" data-caption="14.6a: Schadenswahrscheinlichkeit von verschiedenen Rechenmethoden bei der Bestimmung der Werkstoffkennwerte"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcd789d00">	<tbody>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext"><strong>计算方法</strong></p>			</td>			<td colspan="4" width="348">			<p class="bodytext"><strong>损伤概率 Fo</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext"></p>			</td>			<td width="36">			<p class="bodytext">1%</p>			</td>			<td width="36">			<p class="bodytext">10%</p>			</td>			<td width="54">			<p class="bodytext">其他</p>			</td>			<td width="222">			<p class="bodytext">注释</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">轴，DIN 743</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext">2.5%</p>			</td>			<td width="222">			<p class="bodytext">假定，未记录</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">轴，FKM 指南</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext">2.5%</p>			</td>			<td width="222">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">轴，AGMA 6001</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext">如果 kC = 0.817</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">滚动轴承，ISO 281</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext">如果系数 a1 = 1.0</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">齿面，ISO 6336；DIN 3990</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">齿根，ISO 6336；DIN 3990</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">齿面，AGMA 2001</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext">随机性系数 KR=1 时</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">齿根，ISO 6336；AGMA 2001</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext">随机性系数 KR=1 时</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcd789d00">表 15.5：14.6a：确定材料特性时不同计算方法的损伤概率</p></div><p class="bodytext"><img src="11228.png" style="height:101px; width:260px"></p><p class="bodytext"></p><p class="bodytext"><img src="11229.png" style="height:24px; width:124px"></p><p class="bodytext">其中</p><p class="bodytext"></p><p class="bodytext">H_{att10}={{H_{att}} \over (1-f_{tB})*{\sqrt[{\beta }]{{In{({1-F_{o} \over 100})}} \over In(0.9)}}+f_{tB}}<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="37.506ex" height="10.676ex" style="vertical-align: -7.338ex;" viewbox="0 -1437.2 16148.1 4596.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="zh-MathJax-SVG-1-Title">
+<title id="zh-MathJax-SVG-1-Title">H_{att10}={{H_{att}} \over (1-f_{tB})*{\sqrt[{\beta }]{{In{({1-F_{o} \over 100})}} \over In(0.9)}}+f_{tB}}</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="zh-E1-MJMATHI-48" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 219 683Q260 681 355 681Q389 681 418 681T463 682T483 682Q499 682 499 672Q499 670 497 658Q492 641 487 638H485Q483 638 480 638T473 638T464 637T455 637Q416 636 405 634T387 623Q384 619 355 500Q348 474 340 442T328 395L324 380Q324 378 469 378H614L615 381Q615 384 646 504Q674 619 674 627T617 637Q594 637 587 639T580 648Q580 650 582 660Q586 677 588 679T604 682Q609 682 646 681T740 680Q802 680 835 681T871 682Q888 682 888 672Q888 645 876 638H874Q872 638 869 638T862 638T853 637T844 637Q805 636 794 634T776 623Q773 618 704 340T634 58Q634 51 638 51Q646 48 692 46H723Q729 38 729 37T726 19Q722 6 716 0H701Q664 2 567 2Q533 2 504 2T458 2T437 1Q420 1 420 10Q420 15 423 24Q428 43 433 45Q437 46 448 46H454Q481 46 514 49Q520 50 522 50T528 55T534 64T540 82T547 110T558 153Q565 181 569 198Q602 330 602 331T457 332H312L279 197Q245 63 245 58Q245 51 253 49T303 46H334Q340 38 340 37T337 19Q333 6 327 0H312Q275 2 178 2Q144 2 115 2T69 2T48 1Q31 1 31 10Q31 12 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-74" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-66" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-42" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-49" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-46" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-6F" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path>
+<path stroke-width="1" id="zh-E1-MJSZ4-221A" d="M983 1739Q988 1750 1001 1750Q1008 1750 1013 1745T1020 1733Q1020 1726 742 244T460 -1241Q458 -1250 439 -1250H436Q424 -1250 424 -1248L410 -1166Q395 -1083 367 -920T312 -601L201 44L137 -83L111 -57L187 96L264 247Q265 246 369 -357Q470 -958 473 -963L727 384Q979 1729 983 1739Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-3B2" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-48"></use>
+<g transform="translate(831,-150)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-61"></use>
+ <use transform="scale(0.707)" x="529" y="0" xlink:href="#zh-E1-MJMATHI-74"></use>
+ <use transform="scale(0.707)" x="890" y="0" xlink:href="#zh-E1-MJMATHI-74"></use>
+<g transform="translate(885,0)">
+ <use transform="scale(0.707)" xlink:href="#zh-E1-MJMAIN-31"></use>
+ <use transform="scale(0.707)" x="500" y="0" xlink:href="#zh-E1-MJMAIN-30"></use>
+</g>
+</g>
+ <use x="2802" y="0" xlink:href="#zh-E1-MJMAIN-3D"></use>
+<g transform="translate(3859,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="12049" height="60" x="0" y="220"></rect>
+<g transform="translate(5115,677)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-48"></use>
+<g transform="translate(831,-150)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-61"></use>
+ <use transform="scale(0.707)" x="529" y="0" xlink:href="#zh-E1-MJMATHI-74"></use>
+ <use transform="scale(0.707)" x="890" y="0" xlink:href="#zh-E1-MJMATHI-74"></use>
+</g>
+</g>
+<g transform="translate(60,-2117)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMAIN-28"></use>
+ <use x="389" y="0" xlink:href="#zh-E1-MJMAIN-31"></use>
+ <use x="1112" y="0" xlink:href="#zh-E1-MJMAIN-2212"></use>
+<g transform="translate(2112,0)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-66"></use>
+<g transform="translate(490,-150)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-74"></use>
+ <use transform="scale(0.707)" x="361" y="0" xlink:href="#zh-E1-MJMATHI-42"></use>
+</g>
+</g>
+ <use x="3496" y="0" xlink:href="#zh-E1-MJMAIN-29"></use>
+ <use x="4107" y="0" xlink:href="#zh-E1-MJMAIN-2217"></use>
+<g transform="translate(4830,0)">
+ <use transform="scale(0.574)" x="559" y="1077" xlink:href="#zh-E1-MJMATHI-3B2"></use>
+ <use x="0" y="286" xlink:href="#zh-E1-MJSZ4-221A"></use>
+<rect stroke="none" width="3491" height="60" x="1000" y="1977"></rect>
+<g transform="translate(1000,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="3251" height="60" x="0" y="220"></rect>
+<g transform="translate(60,858)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-49"></use>
+ <use transform="scale(0.707)" x="504" y="0" xlink:href="#zh-E1-MJMATHI-6E"></use>
+<g transform="translate(781,0)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMAIN-28"></use>
+<g transform="translate(275,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="1559" height="60" x="0" y="146"></rect>
+<g transform="translate(60,464)">
+ <use transform="scale(0.574)" x="0" y="0" xlink:href="#zh-E1-MJMAIN-31"></use>
+ <use transform="scale(0.574)" x="500" y="0" xlink:href="#zh-E1-MJMAIN-2212"></use>
+<g transform="translate(734,0)">
+ <use transform="scale(0.574)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-46"></use>
+ <use transform="scale(0.574)" x="643" y="-150" xlink:href="#zh-E1-MJMATHI-6F"></use>
+</g>
+</g>
+<g transform="translate(348,-401)">
+ <use transform="scale(0.574)" xlink:href="#zh-E1-MJMAIN-31"></use>
+ <use transform="scale(0.574)" x="500" y="0" xlink:href="#zh-E1-MJMAIN-30"></use>
+ <use transform="scale(0.574)" x="1001" y="0" xlink:href="#zh-E1-MJMAIN-30"></use>
+</g>
+</g>
+</g>
+ <use transform="scale(0.707)" x="2934" y="0" xlink:href="#zh-E1-MJMAIN-29"></use>
+</g>
+</g>
+<g transform="translate(507,-476)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-49"></use>
+ <use transform="scale(0.707)" x="504" y="0" xlink:href="#zh-E1-MJMATHI-6E"></use>
+ <use transform="scale(0.707)" x="1105" y="0" xlink:href="#zh-E1-MJMAIN-28"></use>
+<g transform="translate(1056,0)">
+ <use transform="scale(0.707)" xlink:href="#zh-E1-MJMAIN-30"></use>
+ <use transform="scale(0.707)" x="500" y="0" xlink:href="#zh-E1-MJMAIN-2E"></use>
+ <use transform="scale(0.707)" x="779" y="0" xlink:href="#zh-E1-MJMAIN-39"></use>
+</g>
+ <use transform="scale(0.707)" x="2774" y="0" xlink:href="#zh-E1-MJMAIN-29"></use>
+</g>
+</g>
+</g>
+</g>
+ <use x="9545" y="0" xlink:href="#zh-E1-MJMAIN-2B"></use>
+<g transform="translate(10545,0)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-66"></use>
+<g transform="translate(490,-150)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-74"></use>
+ <use transform="scale(0.707)" x="361" y="0" xlink:href="#zh-E1-MJMATHI-42"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></p><p class="bodytext"></p><p class="bodytext">根据 Bertsche [17] 计算可靠性时使用的系数和参数<span style="font-size:11pt"><span style="line-height:normal"><span style='font-family:"Calibri",sans-serif'><span style="font-size:12.0pt"><span style='font-family:"Times New Roman",serif'>。</span></span></span></span></span></p><div class="objectWrapper" data-id="5ba0bcd789dab" data-type="table" data-caption="14.6b: Faktoren für Weibull-Verteilung nach Bertsche; in Klammern die in KISSsoft verwendeten Mittelwerte"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcd789dab">	<tbody>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext"></p>			</td>			<td width="162">			<p class="bodytext"><strong>系数 ftB</strong></p>			</td>			<td width="186">			<p class="bodytext"><strong>威布尔形状参数 </strong>β</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">轴</p>			</td>			<td width="162">			<p class="bodytext">0.7～0.9 (0.8)</p>			</td>			<td width="186">			<p class="bodytext">1.1～1.9 (1.5)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">球轴承</p>			</td>			<td width="162">			<p class="bodytext">0.1～0.3 (0.2)</p>			</td>			<td width="186">			<p class="bodytext">1.1</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">滚子轴承</p>			</td>			<td width="162">			<p class="bodytext">0.1～0.3 (0.2)</p>			</td>			<td width="186">			<p class="bodytext">1.35</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">齿面</p>			</td>			<td width="162">			<p class="bodytext">0.4～0.8 (0.6)</p>			</td>			<td width="186">			<p class="bodytext">1.1～1.5 (1.3)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">齿根</p>			</td>			<td width="162">			<p class="bodytext">0.8～0.95 (0.875)</p>			</td>			<td width="186">			<p class="bodytext">1.2～2.2 (1.7)</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcd789dab">表 15.6：14.6b：根据 Bertsche 的威布尔分布系数。括号内给出了 KISSsoft 使用的平均值。</p></div><p class="hint">注意：</p><p class="bodytext">使用威布尔分布计算可靠性时，会采用计算得到的寿命，因此也会考虑所要求的安全系数。若要在计算可靠性时不考虑所要求的安全系数，请将安全系数设为 1.0。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Reliability</h3>   
+                
+<p class="bodytext">Reliability is calculated according to Bertsche's study [17], in which the possible methods have been described in great detail. The most commonly used approach, and one which is well suited to the results that can be achieved in &quot;traditional&quot; mechanical engineering calculations, is &quot;Weibull distribution&quot;. In this case, Bertsche recommends the use of 3-parameter Weibull distribution. The reliability R of a machine element is calculated as a function of the number of load cycles t using the following equations.</p><p class="bodytext"></p><p class="bodytext"><img src="11227.png" style="height:41px; width:145px" /></p><p class="bodytext">Parameters T and t<sub class="subscript">0</sub> can be derived from the mathematically achievable service life of the component, H<sub class="subscript">att</sub>, as follows (with F<sub class="subscript">O</sub> according to the calculation method, Table 1, β and f<sub class="subscript">tB</sub> from Table 2 according to Bertsche):</p><div class="objectWrapper" data-id="5ba0bcd789d00" data-type="table" data-caption="14.6a: Schadenswahrscheinlichkeit von verschiedenen Rechenmethoden bei der Bestimmung der Werkstoffkennwerte"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcd789d00">	<tbody>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext"><strong>Calculation method</strong></p>			</td>			<td colspan="4" width="348">			<p class="bodytext"><strong>Damage probability Fo</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext"></p>			</td>			<td width="36">			<p class="bodytext">1%</p>			</td>			<td width="36">			<p class="bodytext">10%</p>			</td>			<td width="54">			<p class="bodytext">Other</p>			</td>			<td width="222">			<p class="bodytext">Comment</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Shaft, DIN 743</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext">2.5%</p>			</td>			<td width="222">			<p class="bodytext">Assumed, not documented</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Shaft, FKM guideline</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext">2.5%</p>			</td>			<td width="222">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Shaft, AGMA 6001</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext">If kC = 0.817</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Rolling bearing, ISO 281</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext">If coefficient a1 = 1.0</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Tooth flank, ISO 6336; DIN 3990</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Tooth root, ISO 6336; DIN 3990</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Tooth flank, AGMA 2001</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext">If randomness factor KR=1</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Tooth root, ISO 6336; AGMA 2001</p>			</td>			<td width="36">			<p class="bodytext">*</p>			</td>			<td width="36">			<p class="bodytext"></p>			</td>			<td width="54">			<p class="bodytext"></p>			</td>			<td width="222">			<p class="bodytext">If randomness factor KR=1</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcd789d00">Table 15.5: 14.6a: Damage probability for different calculation methods when determining material properties</p></div><p class="bodytext"><img src="11228.png" style="height:101px; width:260px" /></p><p class="bodytext"></p><p class="bodytext"><img src="11229.png" style="height:24px; width:124px" /></p><p class="bodytext">with</p><p class="bodytext"></p><p class="bodytext"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="37.506ex" height="10.676ex" style="vertical-align: -7.338ex;" viewBox="0 -1437.2 16148.1 4596.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
+<title id="MathJax-SVG-1-Title">H_{att10}={{H_{att}} \over (1-f_{tB})*{\sqrt[{\beta }]{{In{({1-F_{o} \over 100})}} \over In(0.9)}}+f_{tB}}</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMATHI-48" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 219 683Q260 681 355 681Q389 681 418 681T463 682T483 682Q499 682 499 672Q499 670 497 658Q492 641 487 638H485Q483 638 480 638T473 638T464 637T455 637Q416 636 405 634T387 623Q384 619 355 500Q348 474 340 442T328 395L324 380Q324 378 469 378H614L615 381Q615 384 646 504Q674 619 674 627T617 637Q594 637 587 639T580 648Q580 650 582 660Q586 677 588 679T604 682Q609 682 646 681T740 680Q802 680 835 681T871 682Q888 682 888 672Q888 645 876 638H874Q872 638 869 638T862 638T853 637T844 637Q805 636 794 634T776 623Q773 618 704 340T634 58Q634 51 638 51Q646 48 692 46H723Q729 38 729 37T726 19Q722 6 716 0H701Q664 2 567 2Q533 2 504 2T458 2T437 1Q420 1 420 10Q420 15 423 24Q428 43 433 45Q437 46 448 46H454Q481 46 514 49Q520 50 522 50T528 55T534 64T540 82T547 110T558 153Q565 181 569 198Q602 330 602 331T457 332H312L279 197Q245 63 245 58Q245 51 253 49T303 46H334Q340 38 340 37T337 19Q333 6 327 0H312Q275 2 178 2Q144 2 115 2T69 2T48 1Q31 1 31 10Q31 12 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-74" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-66" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-42" d="M231 637Q204 637 199 638T194 649Q194 676 205 682Q206 683 335 683Q594 683 608 681Q671 671 713 636T756 544Q756 480 698 429T565 360L555 357Q619 348 660 311T702 219Q702 146 630 78T453 1Q446 0 242 0Q42 0 39 2Q35 5 35 10Q35 17 37 24Q42 43 47 45Q51 46 62 46H68Q95 46 128 49Q142 52 147 61Q150 65 219 339T288 628Q288 635 231 637ZM649 544Q649 574 634 600T585 634Q578 636 493 637Q473 637 451 637T416 636H403Q388 635 384 626Q382 622 352 506Q352 503 351 500L320 374H401Q482 374 494 376Q554 386 601 434T649 544ZM595 229Q595 273 572 302T512 336Q506 337 429 337Q311 337 310 336Q310 334 293 263T258 122L240 52Q240 48 252 48T333 46Q422 46 429 47Q491 54 543 105T595 229Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-49" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-46" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-6F" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path>
+<path stroke-width="1" id="E1-MJSZ4-221A" d="M983 1739Q988 1750 1001 1750Q1008 1750 1013 1745T1020 1733Q1020 1726 742 244T460 -1241Q458 -1250 439 -1250H436Q424 -1250 424 -1248L410 -1166Q395 -1083 367 -920T312 -601L201 44L137 -83L111 -57L187 96L264 247Q265 246 369 -357Q470 -958 473 -963L727 384Q979 1729 983 1739Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-3B2" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMATHI-48" x="0" y="0"></use>
+<g transform="translate(831,-150)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-61" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-74" x="529" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-74" x="890" y="0"></use>
+<g transform="translate(885,0)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-31"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-30" x="500" y="0"></use>
+</g>
+</g>
+ <use xlink:href="#E1-MJMAIN-3D" x="2802" y="0"></use>
+<g transform="translate(3859,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="12049" height="60" x="0" y="220"></rect>
+<g transform="translate(5115,677)">
+ <use xlink:href="#E1-MJMATHI-48" x="0" y="0"></use>
+<g transform="translate(831,-150)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-61" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-74" x="529" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-74" x="890" y="0"></use>
+</g>
+</g>
+<g transform="translate(60,-2117)">
+ <use xlink:href="#E1-MJMAIN-28" x="0" y="0"></use>
+ <use xlink:href="#E1-MJMAIN-31" x="389" y="0"></use>
+ <use xlink:href="#E1-MJMAIN-2212" x="1112" y="0"></use>
+<g transform="translate(2112,0)">
+ <use xlink:href="#E1-MJMATHI-66" x="0" y="0"></use>
+<g transform="translate(490,-150)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-74" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-42" x="361" y="0"></use>
+</g>
+</g>
+ <use xlink:href="#E1-MJMAIN-29" x="3496" y="0"></use>
+ <use xlink:href="#E1-MJMAIN-2217" x="4107" y="0"></use>
+<g transform="translate(4830,0)">
+ <use transform="scale(0.574)" xlink:href="#E1-MJMATHI-3B2" x="559" y="1077"></use>
+ <use xlink:href="#E1-MJSZ4-221A" x="0" y="286"></use>
+<rect stroke="none" width="3491" height="60" x="1000" y="1977"></rect>
+<g transform="translate(1000,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="3251" height="60" x="0" y="220"></rect>
+<g transform="translate(60,858)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-49" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-6E" x="504" y="0"></use>
+<g transform="translate(781,0)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-28" x="0" y="0"></use>
+<g transform="translate(275,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="1559" height="60" x="0" y="146"></rect>
+<g transform="translate(60,464)">
+ <use transform="scale(0.574)" xlink:href="#E1-MJMAIN-31" x="0" y="0"></use>
+ <use transform="scale(0.574)" xlink:href="#E1-MJMAIN-2212" x="500" y="0"></use>
+<g transform="translate(734,0)">
+ <use transform="scale(0.574)" xlink:href="#E1-MJMATHI-46" x="0" y="0"></use>
+ <use transform="scale(0.574)" xlink:href="#E1-MJMATHI-6F" x="643" y="-150"></use>
+</g>
+</g>
+<g transform="translate(348,-401)">
+ <use transform="scale(0.574)" xlink:href="#E1-MJMAIN-31"></use>
+ <use transform="scale(0.574)" xlink:href="#E1-MJMAIN-30" x="500" y="0"></use>
+ <use transform="scale(0.574)" xlink:href="#E1-MJMAIN-30" x="1001" y="0"></use>
+</g>
+</g>
+</g>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-29" x="2934" y="0"></use>
+</g>
+</g>
+<g transform="translate(507,-476)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-49" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-6E" x="504" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-28" x="1105" y="0"></use>
+<g transform="translate(1056,0)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-30"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-2E" x="500" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-39" x="779" y="0"></use>
+</g>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-29" x="2774" y="0"></use>
+</g>
+</g>
+</g>
+</g>
+ <use xlink:href="#E1-MJMAIN-2B" x="9545" y="0"></use>
+<g transform="translate(10545,0)">
+ <use xlink:href="#E1-MJMATHI-66" x="0" y="0"></use>
+<g transform="translate(490,-150)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-74" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-42" x="361" y="0"></use>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg></p><p class="bodytext"></p><p class="bodytext">Factors and parameters for calculating reliability according to Bertsche [17]<span style="font-size:11pt"><span style="line-height:normal"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-size:12.0pt"><span style="font-family:&quot;Times New Roman&quot;,serif">.</span></span></span></span></span></p><div class="objectWrapper" data-id="5ba0bcd789dab" data-type="table" data-caption="14.6b: Faktoren für Weibull-Verteilung nach Bertsche; in Klammern die in KISSsoft verwendeten Mittelwerte"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcd789dab">	<tbody>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext"></p>			</td>			<td width="162">			<p class="bodytext"><strong>Coefficient ftB</strong></p>			</td>			<td width="186">			<p class="bodytext"><strong>Weibull shape parameter </strong>β</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">Shafts</p>			</td>			<td width="162">			<p class="bodytext">0.7 to 0.9 (0.8)</p>			</td>			<td width="186">			<p class="bodytext">1.1 to 1.9 (1.5)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">Ball bearing</p>			</td>			<td width="162">			<p class="bodytext">0.1 to 0.3 (0.2)</p>			</td>			<td width="186">			<p class="bodytext">1.1</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">Roller bearing</p>			</td>			<td width="162">			<p class="bodytext">0.1 to 0.3 (0.2)</p>			</td>			<td width="186">			<p class="bodytext">1.35</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">Tooth flank</p>			</td>			<td width="162">			<p class="bodytext">0.4 to 0.8 (0.6)</p>			</td>			<td width="186">			<p class="bodytext">1.1 to 1.5 (1.3)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="144">			<p class="bodytext">Tooth root</p>			</td>			<td width="162">			<p class="bodytext">0.8 to 0.95 (0.875)</p>			</td>			<td width="186">			<p class="bodytext">1.2 to 2.2 (1.7)</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcd789dab">Table 15.6: 14.6b: Coefficients for a Weibull distribution according to Bertsche. The mean values used in KISSsoft are given in brackets.</p></div><p class="hint">Note:</p><p class="bodytext">Calculating reliability using Weibull distribution uses the calculated service life, and so also takes into account the required safeties. To calculate reliability without taking required safeties into account, set the safeties to 1.0.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

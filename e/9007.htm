@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>与 Creo Parametric (ProEngineer) 的 3D 接口 | 3D interface to Creo Parametric (ProEngineer)</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="3D interface to Creo Parametric (ProEngineer)">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8924');expand('9272');expand('9246');highlight('9007')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9005.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10219.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">与 Creo Parametric (ProEngineer) 的 3D 接口</h3>   
+                
+<p class="bodytext">制造商：Applisoft Europe (Italy)</p><p class="bodytext">在 KISSsoft 中计算的圆柱齿轮或锥齿轮，可以在 Creo Parametric 中直接生成为具有真实齿形的 3D 零件（参见<a class="referencetopic-shabschnitt" href="8927.htm" target="_self">3D 齿轮生成</a>一章）。您可以创建直齿或斜齿的圆柱齿轮（外齿轮或内齿轮），或直齿锥齿轮，如 DIN 3971 图 1 所定义。</p><p class="bodytext">除零件外，系统还会打开一张图纸，齿轮的制造数据以表格形式显示在其中。在开始通过 3D 接口在 Creo Parametric 中生成零件之前，请先打开 CAD 系统。</p><p class="bodytext"></p><p class="bodytext">在 Creo Parametric 的接口中，您可以为特定齿轮的文件（例如 Z10GEAR1CAD.rpt）输入附加变量，这些文件位于 <span class="menu">CAD</span> 目录中。这些附加变量随后将被定义为参数并保存在 Creo Parametric 中。<br>生成过程中所用的参数已在 Creo Parametric 中定义，不能再使用。预定义参数：</p><ul>	<li class="bodytext">pz, z, b, da, d, df, di, elica, USUnit</li></ul><p class="bodytext">如果要以美制单位（非公制）创建零件模型，请打开 <span class="menu">kiss.ini</span> 文件（参见<a class="referencetopic-shabschnitt" href="9080.htm" target="_self">[PROENGINEER] 中的定义</a>一章）<span class="menu"></span>，并将 <span class="menu">USCUSTOMARYUNITS</span> 参数设置为 1。</p><p class="bodytext">您也可以更改现有轮齿而不实际影响零件（参见<a class="referencetopic-shabschnitt" href="10217.htm" target="_self">修改选定的 3D 模型</a>一章）。您还可以在现有轴上切削轮齿（参见<a class="referencetopic-shabschnitt" href="10550.htm" target="_self">在现有轴上切削轮齿</a>一章）。</p><p class="bodytext"></p><p class="bodytext">一旦开始生成过程，就会打开一个新的对话框。此对话框包含这三个选项：</p><ol>	<li class="bodytext">在新文件中生成齿轮</li>	<li class="bodytext">在轴上生成齿轮</li>	<li class="bodytext">退出</li></ol><p class="bodytext">如果选择 <span class="menu">在新文件中生成齿轮</span>，齿轮将生成在一个新的零件文件中。</p><p class="hint">注意：</p><p class="bodytext">如果希望阻止选择菜单或消息出现，可以在接口的基本设置中指定（参见<a class="referencetopic-shabschnitt" href="10548.htm" target="_self">更改接口中的基本设置</a>一章）。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">另请参见</p><p class="relateditem"><a href="10219.htm" target="_self">集成 KISSsoft 插件</a></p><p class="relateditem"><a href="10550.htm" target="_self">在现有轴上切削轮齿</a></p><p class="relateditem"><a href="10217.htm" target="_self">修改选定的 3D 模型</a></p><p class="relateditem"><a href="10569.htm" target="_self">修改现有轴上的齿</a></p><p class="relateditem"><a href="10548.htm" target="_self">更改接口中的基本设置</a></p><p class="relateditem"><a href="11205.htm" target="_self">保存到 PTC Windchill 工作目录</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">3D interface to Creo Parametric (ProEngineer)</h3>   
+                
+<p class="bodytext">Manufacturer: Applisoft Europe (Italy)</p><p class="bodytext">Cylindrical or bevel gears calculated in KISSsoft can be generated directly in Creo Parametric as a 3D part (see chapter <a class="referencetopic-shabschnitt" href="8927.htm" target="_self">Generation of 3D gears</a>) with a real tooth form. You can create cylindrical gears with straight or helical teeth, which are external or internal, or straight-toothed bevel gears, as defined in DIN 3971, Figure 1.</p><p class="bodytext">In addition to the part, the system opens a drawing in which the gear manufacturing data appear in a table. Open the CAD system before you start generating a part with the 3D interface to Creo Parametric.</p><p class="bodytext"></p><p class="bodytext">In the interface to Creo Parametric, you can enter additional variables in the files for the particular gear (e.g. Z10GEAR1CAD.rpt) in the <span class="menu">CAD</span> directory. These additional variables will later be defined as parameters and saved in Creo Parametric.<br />The parameters used for the generating process are already defined in Creo Parametric and can no longer be used. Predefined parameters:</p><ul>	<li class="bodytext">pz, z, b, da, d, df, di, elica, USUnit</li></ul><p class="bodytext">If you want to create a model of a part in US customary units (not metric), open the <span class="menu">kiss.ini</span> file (see chapter <a class="referencetopic-shabschnitt" href="9080.htm" target="_self">Definitions in [PROENGINEER]</a>)<span class="menu"></span> and set the <span class="menu">USCUSTOMARYUNITS</span> parameter to 1.</p><p class="bodytext">You can also change an existing toothing without actually affecting the part (see chapter <a class="referencetopic-shabschnitt" href="10217.htm" target="_self">Modifying the selected 3D model</a>). You can also cut gear teeth on an existing shaft (see chapter <a class="referencetopic-shabschnitt" href="10550.htm" target="_self">Cutting gear teeth on an existing shaft</a>).</p><p class="bodytext"></p><p class="bodytext">A new dialog opens as soon as you start the generating process. This dialog has these three options:</p><ol>	<li class="bodytext">Generate gear in new file</li>	<li class="bodytext">Generate gear on shaft</li>	<li class="bodytext">Exit</li></ol><p class="bodytext">If you select <span class="menu">Generate gear in new file</span>, the gear is generated in a new part file.</p><p class="hint">Note:</p><p class="bodytext">If you want to prevent the selection menu or message from appearing, you can specify this in (see chapter <a class="referencetopic-shabschnitt" href="10548.htm" target="_self">Changing base settings in the interface</a>).</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">See also</p><p class="relateditem"><a href="10219.htm" target="_self">Integrating the KISSsoft Add-in</a></p><p class="relateditem"><a href="10550.htm" target="_self">Cutting gear teeth on an existing shaft</a></p><p class="relateditem"><a href="10217.htm" target="_self">Modifying the selected 3D model</a></p><p class="relateditem"><a href="10569.htm" target="_self">Modifying the teeth on an existing shaft</a></p><p class="relateditem"><a href="10548.htm" target="_self">Changing base settings in the interface</a></p><p class="relateditem"><a href="11205.htm" target="_self">Saving the files to the PTC Windchill working directory</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

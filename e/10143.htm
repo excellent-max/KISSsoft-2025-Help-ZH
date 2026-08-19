@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>内齿 - 选择不同配置时参考齿廓的差异 | Internal toothing - differences in the reference profile if selecting different configurations</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Internal toothing - differences in the reference profile if selecting different configurations">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8342');expand('8341');expand('9286');expand('9246');highlight('10143')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10119.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10151.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">内齿 - 选择不同配置时基准齿廓的差异</h3>   
+                
+<p class="bodytext">一个具有内齿的齿轮副已在 KISSsoft 中计算。然后需要使用插齿刀来制造这个内齿轮。该刀具根据特定客户要求制造，并受到所用齿型的影响。这必须反映内齿轮的基准齿廓几何形状。那么，如何确定插齿刀的几何形状？</p><p class="bodytext">一个齿轮的基准齿廓是相关的齿条齿廓。一个常规的滚齿刀用于外齿轮，具有这种齿条几何形状，这使得定义滚齿刀的齿廓变得容易。然而，必须反转齿轮齿廓以获得滚齿刀的齿廓（齿轮的基准齿廓齿顶高变为滚齿刀的齿根高，依此类推）。</p><p class="bodytext">如果制造工具是插齿刀，由于插齿刀齿数有限，情况会有所变化。可从基本的假设开始，即反向齿轮的基准齿廓与插齿刀的基准齿廓一致。然而，之后必须修改插齿刀的齿顶高，以获得内齿轮所需的齿根直径。</p><p class="bodytext">首先，必须定义插齿刀的齿数。插齿刀的基准直径将根据用于制造齿轮的机床类型在一定程度上预先确定。该基准直径必须大于将插入插齿刀的机床主轴直径。然而，如果该直径与插齿刀的尺寸相比过大，那么刀具的柄部直径将过小。这将导致生产过程中产生强烈的振动，并导致精度等级较差。基准直径除以模数以确定插齿刀的齿数。</p><p class="bodytext">如果你想要使用 KISSsoft 来设计插齿刀的几何形状，必须首先输入插齿刀的齿数。你可以从 0.0 开始输入插齿刀的变位系数。插齿刀的变位量会随着使用而发生变化。每次插齿刀重新刃磨时，其变位量会略微减少。新的插齿刀通常具有正变位量（例如 +0.2）。磨损的刀具具有负变位量。</p><p class="bodytext">在输入插齿刀的数据时，请格外小心。是否达到所需的齿根成形直径 d<sub>Ff</sub>？如果未达到，必须减小插齿刀的齿顶圆角半径。如果这仍然无法解决问题，则必须增大刀具基准齿廓的齿顶高。然而，这也会改变有效齿根直径。</p><p class="bodytext">相同的问题也可能发生在顶成形圆直径 d<sub>Fa</sub> 上。通常情况下，无法生成直至齿顶的整个渐开线部分。在这种情况下，必须增加插齿刀的齿数或减小齿轮的齿顶圆直径。</p><p class="bodytext">如果你开发一个由插齿刀加工的齿轮，始终必须在开发过程中尽早研究生产工艺。这是因为并非所有齿轮几何形状都能用这种生产工艺制造。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Internal toothing - differences in the reference profile if selecting different configurations</h3>   
+                
+<p class="bodytext">A gear pair with internal toothing has been calculated in the KISSsoft. A pinion type cutter is then to be used to manufacture this internal gear. The tool is manufactured to suit particular customer requirements and is influenced by the particular tooth form which is used. This must reflect the reference profile geometry of the internal gear. How can you then determine the pinion type cutter geometry?</p><p class="bodytext">A gear's reference profile is the relevant rack profile. A regular hobbing cutter for an external gear has this rack geometry,  which makes it easy to define the hobbing cutter profile. However, you must reverse the gear profile to obtain the hobbing cutter profile (the gear reference profile tooth addendum becomes the hobbing cutter tooth dedendum, and so on).</p><p class="bodytext">If the manufacturing tool is a pinion type cutter, the situation changes due to the restricted number of teeth on the pinion type cutter. You can begin with the basic approach that the inverse gear reference profile matches that of the pinion type cutter. However, after that, you must modify the pinion type cutter addendum to achieve the necessary root diameter on the internal gear.</p><p class="bodytext">First of all, you must define the number of teeth on the pinion type cutter. The reference diameter of the pinion type cutter will already be predefined to some extent, depending on the type of machine tool used to manufacture the gear. This reference diameter must be greater than the diameter of the main shaft of the machine tool that is to be inserted in the pinion type cutter tool. However, if this diameter is too large, when compared with the size of the pinion type cutter, the shank diameter will be too small. This will cause powerful vibrations during the production process and result in a poor accuracy grade. The reference diameter is divided by the module to determine the number of teeth on the pinion cutter.</p><p class="bodytext">If you want to use KISSsoft to design the pinion type cutter geometry, you must first input the number of teeth on the pinion type cutter. You can start with 0.0 for the profile shift coefficient of the pinion type cutter. A pinion type cutter's profile shift changes as it is used. Every time the pinion type cutter is resharpened, the profile shift is reduced slightly. A new pinion type cutter usually has a positive profile shift (for example +0.2). A worn tool has a negative profile shift.</p><p class="bodytext">Be extremely careful when entering the data for a pinion type cutter. Is the required root form diameter d<sub>Ff</sub> achieved? If not, you must reduce the tip fillet radius of the pinion type cutter. If that does not help, you must increase the addendum of the tool reference profile. However, this also changes the active root diameter.</p><p class="bodytext">The same problem can also happen with the tip form circle diameter d<sub>Fa</sub>. It often happens that it is not possible to generate the entire involute part up to the tooth tip. In this situation, you must either increase the number of teeth on the pinion cutter tool or reduce the tip diameter of the gear.</p><p class="bodytext">If you develop a gear that is manufactured by a pinion type cutter, it is always critically important that you investigate the production process early on in the development process. This is because not every gear geometry can be created with this production process.</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

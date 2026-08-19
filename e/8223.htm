@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算类型 | Type of calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Type of calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8206');expand('8180');expand('9287');expand('9246');highlight('8223')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10927.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8224.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算类型</h3>   
+                
+<p class="bodytext">您可以使用以下四种不同方法之一进行安全分析：</p><ul>	<li class="bodytext"><strong>静态</strong>。计算相对于屈服的强度安全系数。</li>	<li class="bodytext"><strong>无限寿命强度</strong>。计算相对于无限寿命强度的安全系数（在 S-N 曲线（沃勒线）的水平段中，不使用载荷谱）</li>	<li class="bodytext"><strong>有限寿命</strong>。计算给定循环次数下相对于疲劳的安全系数。此处使用恒定载荷（不使用载荷谱）。根据 AGMA 的计算方法只定义单级载荷谱。单级载荷谱在 FKM 方法中单独处理。根据 DIN 743 和 FKM 中定义的方法，S-N 曲线（沃勒线）在达到载荷循环次数极限 ND (10^6) 后水平延伸。</li>	<li class="bodytext"><strong>Miner 连续/基本/扩展</strong>。这些方法在计算 S-N 曲线（沃勒线）在拐点循环次数以上部分的斜率方式上有所不同。</li></ul><div class="objectWrapper" data-id="5ba0bcd93593e" data-type="image" data-caption="Miner Hypothesen"><p class="bodytext"><img class="" data-id="5ba0bcd93593e" height="534" src="10885.png" width="564"></p><p class="figcaption" data-id="5ba0bcd93593e">图 26.2：Miner 假说</p></div><p class="bodytext"></p><ul>	<li class="bodytext">图例：</li>	<li class="bodytext">1) 遵循 FKM 的 Miner 基本法</li>	<li class="bodytext">2) 根据 DIN 743-4:2012 的 Miner 扩展法</li>	<li class="bodytext">3) 遵循 FKM 指南的 Miner 连续法</li>	<li class="bodytext">4) 根据 Haibach 的 Miner 原法</li>	<li class="bodytext">5) 根据 Haibach 的 Miner 基本法</li>	<li class="bodytext">灰色区域是被忽略的部分。</li></ul><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">根据 Miner 的计算方法只有在您在 <span class="menu">基本数据</span> 输入窗口的 <span class="menu">载荷谱</span> 下拉列表中选择了 <span class="menu">考虑载荷谱</span> 选项时才可用。载荷谱（参见"<a class="referencetopic-shabschnitt" href="8913.htm" target="_self">定义载荷谱</a>"章）可以在 KISSSOFT 数据库工具中定义。然后您只需在计算中选择它们即可。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Type of calculation</h3>   
+                
+<p class="bodytext">You can perform a safety analysis using one of these four different methods:</p><ul>	<li class="bodytext"><strong>Static</strong>. Calculates the safety against yield safety.</li>	<li class="bodytext"><strong>Infinite life strength</strong>. Calculates the safety against the infinite life strength (in the horizontal section of the S-N curve (Woehler lines), no load spectrum used)</li>	<li class="bodytext"><strong>Limited life</strong>. Calculates the safety against fatigue for a given number of cycles. Here, a constant load is used (no load spectra). The calculation method according to AGMA only defines a one-step load spectrum. A one-step load spectrum is handled separately in the FKM method. According to the methods defined in DIN 743 and FKM, the S-N curve (Woehler lines) runs horizontally after it reaches the number of load cycles limit ND (10^6).</li>	<li class="bodytext"><strong>Miner consequent/elementary/extended</strong>. These methods differ in the way they calculate the inclination of the S-N curve (Woehler lines) above the number of breakpoint cycles.</li></ul><div class="objectWrapper" data-id="5ba0bcd93593e" data-type="image" data-caption="Miner Hypothesen"><p class="bodytext"><img class="" data-id="5ba0bcd93593e" height="534" src="10885.png" width="564" /></p><p class="figcaption" data-id="5ba0bcd93593e">Figure 26.2: Miner hypotheses</p></div><p class="bodytext"></p><ul>	<li class="bodytext">Legend:</li>	<li class="bodytext">1) Miner elementary following FKM</li>	<li class="bodytext">2) Miner extended in acc. with DIN 743-4:2012</li>	<li class="bodytext">3) Miner consequent following FKM guideline</li>	<li class="bodytext">4) Miner original according to Haibach</li>	<li class="bodytext">5) Miner elementary according to Haibach</li>	<li class="bodytext">The gray fields are the fractions that are ignored.</li></ul><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">The calculation methods according to Miner are only available if you have selected the <span class="menu">Consider load spectra</span> option in the <span class="menu">Load spectra</span> drop-down list in the <span class="menu">Basic data</span> input window. Load spectra (see chapter <a class="referencetopic-shabschnitt" href="8913.htm" target="_self">Define load spectrum</a>) can be defined in the KISSSOFT database tool. You then only need to select them in the calculation.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

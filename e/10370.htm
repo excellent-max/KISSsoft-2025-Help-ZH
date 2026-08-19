@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>使用内部几何参数的滚动轴承计算 | Rolling bearing calculation with internal geometry</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Rolling bearing calculation with internal geometry">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8145');expand('8139');expand('9287');expand('9246');highlight('10370')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8147.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8148.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">使用内部几何参数的滚动轴承计算</h3>   
+                
+<p class="bodytext">滚动轴承参考寿命计算基于 ISO/TS 16281。</p><p class="bodytext">本次计算的额外结果包括外圈和内圈（推力轴承中为右圈和左圈）上的最大赫兹压力、静力安全系数、参考寿命和修改后的参考寿命（以小时为单位）、工况点处的刚度矩阵，以及每个滚动体上的载荷分布或压力曲线。</p><p class="bodytext">如果滚动轴承计算使用内部几何参数，则可以确定轴承频率。计算值（外圈过滚频、内圈过滚频、滚动体旋转频和保持圈频率）在报告中记录并在图形中显示。</p><p class="bodytext">如需更详细的信息，请参见（见"<a class="referencetopic-shabschnitt" href="10645.htm" target="_self">滚动轴承（内部几何参数）</a>"章）。</p><p class="bodytext">如果滚动轴承的内部几何参数由制造商提供，则计算中会使用这些参数。如果这些数据未知，KISSsoft 会运行近似方法，尝试利用滚动轴承的载荷额定值（静载荷额定值 C<sub>0</sub> 和动载荷额定值 C）来确定内部几何参数。该过程基于 ISO 76 和 ISO 281，通常会产生相当有用的结果。</p><p class="bodytext">如果已知个别值（如滚动体数量），则仅对剩余值进行近似。</p><p class="bodytext">如果在数据库中输入的内几何数据不足或不正确，此数据将被忽略，内几何将进行近似。报告中将打印一条注释，说明已使用内几何近似。</p><p class="bodytext">计算轴承类型时，内部几何参数并不总能被考虑（见"<a class="referencetopic-shabschnitt" href="10065.htm" target="_self">滚动轴承内部几何参数</a>"章）。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Rolling bearing calculation with internal geometry</h3>   
+                
+<p class="bodytext">The rolling bearing reference rating life calculation is based on ISO/TS 16281.</p><p class="bodytext">The additional results of this calculation are the maximum Hertzian pressure on the inner and outer ring (right and left ring for a thrust bearings), the static safety, the reference and modified reference rating life in hours, the stiffness matrix at the operating point, and the load distribution or pressure curve on each rolling element.</p><p class="bodytext">If the calculation of rolling bearings is performed with internal geometry, the bearing frequencies can be determined. The calculated values (over-rolling frequency of the outer ring, over-rolling frequency of the inner ring, rotational frequency of the rolling elements and the cage frequency) are documented in the report and shown in a graphic.</p><p class="bodytext">For more detailed information, see (see chapter <a class="referencetopic-shabschnitt" href="10645.htm" target="_self">Rolling Bearings (Internal Geometry)</a>).</p><p class="bodytext">f the rolling bearing inner geometry is provided by the manufacturer, then it is used in the calculation. If these data are unknown, then KISSsoft runs an approximation method that tries to determine the internal geometry using the rolling bearing load ratings (the static load rating C<sub>0</sub> and dynamic load rating C). This procedure is based on ISO 76 and ISO 281, and normally produces quite useful results.</p><p class="bodytext">If individual values such as the number of rolling bodies are known, only the remaining values are approximated.</p><p class="bodytext">If the inner geometry you entered in the database is either insufficient or incorrect, this data is then ignored, and the inner geometry is approximated. A note is then printed in the report, stating that an approximation of the inner geometry has been used.</p><p class="bodytext">Internal geometry cannot always be taken into account when calculating bearing types (see chapter <a class="referencetopic-shabschnitt" href="10065.htm" target="_self">Rolling bearing Internal geometry</a>).</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

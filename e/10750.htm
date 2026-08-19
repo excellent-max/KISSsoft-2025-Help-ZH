@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>测量栅格 | Measurement grid</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Measurement grid">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7708');expand('9286');expand('9246');highlight('10750')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10868.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8865.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">测量栅格</h3>   
+                
+<p class="bodytext">圆柱齿轮和锥齿轮均可生成测量栅格报告（选择 <span class="menu">计算 &gt; 测量栅格</span>）。</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext"><strong>设置</strong></p>			</td>			<td width="420">			<p class="bodytext"><strong>描述</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">齿轮</p>			</td>			<td width="420">			<p class="bodytext">设置齿轮以计算测量栅格。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">测量栅格区域</p>			</td>			<td width="420">			<p class="bodytext">设置测量网格用于计算。</p>			<p class="bodytext">0: 齿面</p>			<p class="bodytext">1: 齿根过渡曲面</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">测量机器</p>			</td>			<td width="420">			<p class="bodytext">为特定测量机器设置报告格式</p>			<p class="bodytext">0: 克林根伯格</p>			<p class="bodytext">1: 格里森</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">列数</p>			</td>			<td width="420">			<p class="bodytext">在齿宽上设置列数（&gt;=3）</p>			<p class="bodytext">列数（区段数 – 2），用于 Parasolid 设置，因为区段不应包含轮齿的两端。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">行数</p>			</td>			<td width="420">			<p class="bodytext">设置齿廓上的行数（&gt;=3）</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">距齿根过渡圆的距离</p>			</td>			<td width="420">			<p class="bodytext">距齿根过渡圆的距离。默认值 0.1*法向模数（中间）。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">齿顶距离</p>			</td>			<td width="420">			<p class="bodytext">齿顶距离。默认值 0.1*法向模数（中间）。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">距侧面 I/小端（趾）的距离</p>			</td>			<td width="420">			<p class="bodytext">圆柱齿轮侧 I 的距离，锥齿轮趾的距离。</p>			<p class="bodytext">默认值为（齿宽）/(列数 + 1).</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">距侧面 II/大端（heel）的距离</p>			</td>			<td width="420">			<p class="bodytext">圆柱齿轮侧 II 的距离，锥齿轮大端（heel）的距离</p>			<p class="bodytext">默认值为（齿宽）/(列数 + 1).</p>			</td>		</tr>	</tbody></table><p class="bodytext">报告包含网格点的坐标和法向量，格式为[XP YP ZP XN YN ZN]。参考点和齿厚角在报告标题中显示。</p><p class="bodytext">数据的参考坐标可能根据所使用的测量机类型而不同。例如，以下惯例适用于 Klingelnberg 测量机。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd6c1660" data-type="image" data-caption="Messgitterkonvention für Stirnräder und Kegelräder bei Klingelnberg-Maschinen"><p class="bodytext"><img data-id="5ba0bcd6c1660" height="196" src="13-messgitter.png" width="563"></p><p class="figcaption" data-id="5ba0bcd6c1660">图15.98：Klingelnberg机器的圆柱齿轮和锥齿轮测量栅格</p></div><p class="bodytext">点和区段的序号序列根据 ISO/TR 10064-6 定义，即线的索引从下到上，列的索引从侧 II（轮齿大端）到侧 I（轮齿小端）。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Measurement grid</h3>   
+                
+<p class="bodytext">A measurement grid report is available for cylindrical and bevel gears (select <span class="menu">Calculations &gt; Measurement grid</span>).</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext"><strong>Setting</strong></p>			</td>			<td width="420">			<p class="bodytext"><strong>Description</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Gear</p>			</td>			<td width="420">			<p class="bodytext">Setting the gear for calculating the measurement grid.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Measurement grid area</p>			</td>			<td width="420">			<p class="bodytext">Setting the measurement array for the calculation.</p>			<p class="bodytext">0: Tooth flank</p>			<p class="bodytext">1: Fillet surface</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Measurement machine</p>			</td>			<td width="420">			<p class="bodytext">Setting the report format for a particular measurement machine</p>			<p class="bodytext">0: Klingelnberg</p>			<p class="bodytext">1: Gleason</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Number of columns</p>			</td>			<td width="420">			<p class="bodytext">Setting the number of columns across the facewidth (&gt;=3)</p>			<p class="bodytext">Number of columns (number of sections – 2) for parasolid settings, because the sections should not include both ends of a tooth.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Number of rows</p>			</td>			<td width="420">			<p class="bodytext">Setting the number of rows across the tooth profile (&gt;=3)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Distance from root form circle</p>			</td>			<td width="420">			<p class="bodytext">Distance from root form circle. Default value 0.1* normal module (middle).</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Distance from tooth tip</p>			</td>			<td width="420">			<p class="bodytext">Distance from tooth tip. Default value 0.1* normal module (middle).</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Distance from side I/toe</p>			</td>			<td width="420">			<p class="bodytext">Distance from side I for cylindrical gears, distance from toe for bevel gears.</p>			<p class="bodytext">Default value is (facewidth)/(number of columns + 1).</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Distance from side II/heel</p>			</td>			<td width="420">			<p class="bodytext">Distance from side II for cylindrical gears, distance from heel for bevel gears.</p>			<p class="bodytext">Default value is (facewidth)/(number of columns + 1).</p>			</td>		</tr>	</tbody></table><p class="bodytext">The report includes the coordinates and the normal vector of the grid points in the format [XP YP ZP XN YN ZN]. The reference point and the tooth thickness angle are displayed in the report header.</p><p class="bodytext">The reference coordinates of the data may differ according to which type of measuring machine is used. For example, the following convention applies to Klingelnberg machines.</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd6c1660" data-type="image" data-caption="Messgitterkonvention für Stirnräder und Kegelräder bei Klingelnberg-Maschinen"><p class="bodytext"><img data-id="5ba0bcd6c1660" height="196" src="13-messgitter.png" width="563" /></p><p class="figcaption" data-id="5ba0bcd6c1660">Figure 15.98: Measurement grid for cylindrical gears and bevel gears for Klingelnberg machines</p></div><p class="bodytext">The sequence of index numbers for points and sections is defined according to ISO/TR 10064-6, i.e. the index for lines runs from bottom to top, and the index for columns runs from side II (heel) to side I (toe).</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

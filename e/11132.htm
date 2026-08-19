@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>根据Pech方法计算蜗轮的磨损 | Calculating wear on worm wheels according to Pech</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculating wear on worm wheels according to Pech">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8444');expand('10794');expand('8431');expand('8429');expand('9286');expand('9246');highlight('11132')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10307.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8451.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">根据Pech方法计算蜗轮的磨损</h3>   
+                
+<p class="bodytext">现在可以根据 Pech [54] 计算交叉斜齿轮的磨损。该过程计算塑料蜗轮的塑性变形、磨损程度以及总磨损（在工作节径的法向截面上）。以下限制适用于此计算：</p><ul>	<li class="bodytext">具有<span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">90° 轴交角</span></span></span>的圆柱蜗杆-蜗轮副</li>	<li class="bodytext">润滑脂润滑</li>	<li class="bodytext">无载荷谱计算</li>	<li class="bodytext">蜗杆材料：钢</li>	<li class="bodytext">蜗轮材料：POM, PEEK, PEEK+30% CF 或 PA46</li>	<li class="bodytext">主动齿轮：蜗杆</li></ul><p class="bodytext">使用 KISSsoft 还可以进行塑料/塑料组合的计算，但这些计算受特殊假设和限制（见下文）。<br><br>从材料 DAT 文件中读取的摩擦系数（COF）对计算没有影响（COF 根据 Pech 计算）。计算塑料/塑料组合时使用（用户定义的）COF（选择「<span class="menu">强度校核 &gt; 详情</span>」）。<br><br>齿根温度和齿面温度的条目对钢/塑料组合的计算没有影响（温度根据 Pech 计算）。塑料/塑料组合使用用户定义的温度。塑料/塑料组合的润滑脂温度按两个齿轮齿根温度的平均值计算。<br><br>蜗轮的齿面粗糙度会影响计算出的摩擦系数。粗糙度越大，磨损量越大。<br><br>点击「<span class="menu">计算设置</span>」输入允许塑性变形量的系数（「<span class="menu">计算 &gt; 计算设置 &gt; 一般</span>」）。<br><br>如果在 KISSsoft 材料数据库中输入自己的材料，必须在材料 .dat 文件中输入附加数据（例如对于 PEEK）。</p><p class="bodytext"><br><em class="emphasis">塑料材料类型</em><br><em class="emphasis">-- 值：0-不在列表中、1-POM、2-PEEK、3-PEEK+30%CF、4-PA46、5-PA66 </em><br><em class="emphasis">-- 6-PA6, 7-PA66+GF, 8-PPS, 9-PPS+GF, 10-PA12, 11-PBT, 12-PET</em><br><em class="emphasis">:TABLE FUNCTION MaterialType</em><br><em class="emphasis">INPUT X None TREAT LINEAR</em><br><em class="emphasis">DATA</em><br><em class="emphasis">0 </em><br><em class="emphasis">2</em><br><em class="emphasis">END</em><br><br>下表显示了根据Pech计算磨损的参数限值。</p><div class="objectWrapper" data-id="5ba0bcd757d61" data-type="table" data-caption="Geometriegrenzwerte für die Verschleissberechnung nach Pech"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcd757d61">	<tbody>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">齿数：蜗轮</p>			</td>			<td width="210">			<p class="bodytext">16 ≤ Z<sub class="subscript">2</sub> ≤ 80</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">中心距</p>			</td>			<td width="210">			<p class="bodytext">10 mm ≤ a ≤ 80 mm</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">轴向模数：蜗轮</p>			</td>			<td width="210">			<p class="bodytext">0.5 mm ≤ m<sub class="subscript">x</sub> ≤ 3 mm</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">齿数比</p>			</td>			<td width="210">			<p class="bodytext">10 ≤ u ≤ 80</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">压力角</p>			</td>			<td width="210">			<p class="bodytext">10° ≤ a<sub class="subscript">n</sub> ≤ 22°</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">变位系数：蜗轮</p>			</td>			<td width="210">			<p class="bodytext">-0.2 ≤ x<sub class="subscript">2</sub> ≤ 1.5</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcd757d61">表19.2：根据Pech计算蜗轮磨损的几何极限值</p></div><p class="bodytext"><br><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">齿线偏差随时间在载荷和非载荷齿面上的变化，根据Pech可参见下图。</span></span></span></span></p><div class="objectWrapper" data-id="5ba0bcd757de2" data-type="image" data-caption="Abbildung: Entwicklung der Flankenlinienabweichung an der belasteten (Abnahme) und unbelasteten Flanke (Zunahme) nach Pech."><p class="bodytext"><img data-id="5ba0bcd757de2" height="303" src="11133.png" width="526"></p><p class="figcaption" data-id="5ba0bcd757de2">图19.4：根据Pech计算载荷齿面（减小）和非载荷齿面（增大）的齿线偏差发展。</p></div><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculating wear on worm wheels according to Pech</h3>   
+                
+<p class="bodytext">A calculation for determining the wear on crossed helical gears according to Pech [54] is now available. This process calculates the plastic deformation, the degree of wear and the overall wear (in the normal section on the operating pitch diameter) of plastic worm wheels. The following restrictions apply to this calculation:</p><ul>	<li class="bodytext">Cylindrical worm wheel pair with an <span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">axial crossing angle of 90°</span></span></span></li>	<li class="bodytext">Grease lubrication</li>	<li class="bodytext">Calculation without load spectrum</li>	<li class="bodytext">Material of worm: Steel</li>	<li class="bodytext">Material of worm wheel: POM, PEEK, PEEK+30% CF or PA46</li>	<li class="bodytext">Driving gear: Worm</li></ul><p class="bodytext">Using KISSsoft, you can also perform calculations for plastic/plastic combinations, but these are subject to special assumptions and limitations (see below).<br /><br />The coefficient of friction (COF) taken from the material DAT file has no effect on the calculation (the COF is calculated according to Pech). A (user-defined) COF is used to calculate plastic/plastic combinations (select <span class="menu">Rating &gt; Details</span>).<br /><br />The entries for the root temperature and flank temperature have no effect on the calculation of steel/plastic combinations (temperatures are calculated according to Pech). User-defined temperatures are used for plastic/plastic combinations. The grease temperature for plastic/plastic combinations is calculated as the mean value of the root temperatures of the two gears.<br /><br />The flank roughness of the worm wheel has an effect on the calculated coefficient of friction. A greater level of roughness causes a greater amount of wear.<br /><br />Click on <span class="menu">Calculation settings</span> to input a coefficient for the permitted level of plastic deformation (<span class="menu">Calculation &gt; Calculation settings &gt; General</span>).<br /><br />If you input your own material in the KISSsoft material database, you must enter additional data in the material .dat file (for example for PEEK).</p><p class="bodytext"><br /><em class="emphasis">-- Type of plastic material</em><br /><em class="emphasis">-- Values: 0-not on the list, 1-POM, 2-PEEK, 3-PEEK+30%CF, 4-PA46, 5-PA66, </em><br /><em class="emphasis">-- 6-PA6, 7-PA66+GF, 8-PPS, 9-PPS+GF, 10-PA12, 11-PBT, 12-PET</em><br /><em class="emphasis">:TABLE FUNCTION MaterialType</em><br /><em class="emphasis">INPUT X None TREAT LINEAR</em><br /><em class="emphasis">DATA</em><br /><em class="emphasis">0 </em><br /><em class="emphasis">2</em><br /><em class="emphasis">END</em><br /><br />The table below shows the parameter limits for calculating wear according to Pech.</p><div class="objectWrapper" data-id="5ba0bcd757d61" data-type="table" data-caption="Geometriegrenzwerte für die Verschleissberechnung nach Pech"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcd757d61">	<tbody>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">Number of teeth: Worm wheel</p>			</td>			<td width="210">			<p class="bodytext">16 ≤ Z<sub class="subscript">2</sub> ≤ 80</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">Center distance</p>			</td>			<td width="210">			<p class="bodytext">10 mm ≤ a ≤ 80 mm</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">Axial module: Worm wheel</p>			</td>			<td width="210">			<p class="bodytext">0.5 mm ≤ m<sub class="subscript">x</sub> ≤ 3 mm</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">Gear ratio</p>			</td>			<td width="210">			<p class="bodytext">10 ≤ u ≤ 80</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">Pressure angle</p>			</td>			<td width="210">			<p class="bodytext">10° ≤ a<sub class="subscript">n</sub> ≤ 22°</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="264">			<p class="bodytext">Profile shift coefficient: Worm wheel</p>			</td>			<td width="210">			<p class="bodytext">-0.2 ≤ x<sub class="subscript">2</sub> ≤ 1.5</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcd757d61">Table 19.2: Geometry limit values for calculating wear according to Pech</p></div><p class="bodytext"><br /><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">The progression of the tooth trace deviation over time on the loaded and unloaded flank, according to Pech, can be seen in the next figure.</span></span></span></span></p><div class="objectWrapper" data-id="5ba0bcd757de2" data-type="image" data-caption="Abbildung: Entwicklung der Flankenlinienabweichung an der belasteten (Abnahme) und unbelasteten Flanke (Zunahme) nach Pech."><p class="bodytext"><img data-id="5ba0bcd757de2" height="303" src="11133.png" width="526" /></p><p class="figcaption" data-id="5ba0bcd757de2">Figure 19.4: Figure: Development of tooth trace deviation on the loaded flank (decrease) and the unloaded flank (increase) according to Pech.</p></div><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

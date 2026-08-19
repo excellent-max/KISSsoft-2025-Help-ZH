@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>注册服务器 | Registering the server</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Registering the server">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9746');expand('9018');expand('9272');expand('9246');highlight('9747')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9746.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9748.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">注册服务器</h3>   
+                
+<p class="bodytext">现在在本地计算机上注册 KISSsoft COM 服务器。有两种不同的方法可以完成此操作：</p><ul>	<li class="bodytext">右键单击以显示上下文菜单，然后选择 <strong>以管理员身份运行</strong> 以显示 Windows 提示符。然后，转到 "... /bin" 子文件夹并运行 "KISSsoftCOM_Register.bat" 文件。</li>	<li class="bodytext">为此，请在 Windows 命令提示符中，在 KISSsoft 安装目录的 bin 目录中输入以下命令行：</li></ul><p class="code">KISSsoftCOM.exe /regserver</p><p class="code">regsvr32 KISSsoftCOMPS.dll</p><p class="code">regsvr32 KISSsoftCOMPS.dll</p><p class="bodytext">为了让您无论发布级别如何都能使用 COM 服务器，提供了一个带相关发布号的版本特定 COM 接口。</p><p class="bodytext">要使用此变体，请运行 KISSsoftCOM_RegisterXXXX.bat 文件或下面列出的文件。（此处，XXXX 代表版本号，例如 2021）：</p><p class="code">KISSsoftCOMXXXX.exe /regserver</p><p class="code">regsvr32 KISSsoftCOMXXXXPS32.dll</p><p class="code">regsvr32 KISSsoftCOMXXXXPS64.dll</p><p class="bodytext">需要管理员权限才能注册每个程序。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Registering the server</h3>   
+                
+<p class="bodytext">Now register the KISSsoft COM server on your local computer. There are two different ways of doing this:</p><ul>	<li class="bodytext">Right-click to display the context menu and then select <strong>As administrator</strong> to display the Windows prompt. Then, go to the &quot;... /bin&quot; subfolder and run the &quot;KISSsoftCOM_Register.bat&quot; file.</li>	<li class="bodytext">To do this, enter these command lines in a Windows command prompt, in the KISSsoft installation bin directory:</li></ul><p class="code">KISSsoftCOM.exe /regserver</p><p class="code">regsvr32 KISSsoftCOMPS.dll</p><p class="code">regsvr32 KISSsoftCOMPS.dll</p><p class="bodytext">To enable you to use the COM server regardless of release level, there is a version-specific COM interface that has the relevant release number.</p><p class="bodytext">To use this variant, run the KISSsoftCOM_RegisterXXXX.bat file or the files listed below. (Here, XXXX represents the version number, e.g. 2021):</p><p class="code">KISSsoftCOMXXXX.exe /regserver</p><p class="code">regsvr32 KISSsoftCOMXXXXPS32.dll</p><p class="code">regsvr32 KISSsoftCOMXXXXPS64.dll</p><p class="bodytext">You will need administrator rights to register each program.</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

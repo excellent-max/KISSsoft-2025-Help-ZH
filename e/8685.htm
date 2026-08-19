@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>定义齿形系数 | Define tooth form factors</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Define tooth form factors">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8677');expand('8718');expand('7708');expand('9286');expand('9246');highlight('8685')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8915.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8687.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">定义齿形系数</h3>   
+                
+<p class="bodytext">齿形系数 Y<sub class="subscript">F</sub> 考虑了齿形对名义齿根应力 <em>σ</em><sub class="subscript">F0</sub> 的影响。应力修正系数 Y<sub class="subscript">S</sub> 考虑了缺口对齿根的影响。这两个系数可以通过三种不同的方式计算：</p><ol>	<li class="bodytext"><strong>根据标准中的公式（常规）</strong><br>	按照 ISO 6336 或 DIN 3990 的定义，齿形系数和应力修正系数在齿根处、切线与齿中心线成 30<span class="superscript">°</span> 角的点处计算。但是，人们普遍认为这种方法相当不精确，尤其是对于深齿形。</li>	<li class="bodytext"><strong>使用图解法</strong><br>	根据 Obsieger [20]，有一种更精确的方法，即计算齿形系数 Y<sub class="subscript">F</sub> 与应力修正系数 Y<sub class="subscript">S</sub> 的乘积并确定其最大值。该方法基于用于特定齿形的制造工艺，并应用于整个齿根区域的所有点。然后使用该最大值计算强度。系数 Y<sub class="subscript">F</sub> 和 Y<sub class="subscript">S</sub> 根据 ISO 6336 或 DIN 3990 中的公式计算。<br>	<br>	这是推荐的方法，尤其适用于特殊齿形和内齿形。如有需要，该计算方法也可用于 ISO 6336 和 DIN 3990 所定义的强度计算以及精细尺寸设计。<br>	<br>	<strong>注意：</strong><br>	如果在此使用图解法，KISSsoft 每次都会在计算强度之前先计算齿形。其参数取自之前输入的刀具数据（在 齿形 输入窗口中，参见"<a class="referencetopic-shabschnitt" href="8372.htm" target="_self">齿形</a>"章），或取自 <span class="menu">参考齿廓</span> 输入窗口中的默认设置。齿形与应力修正系数乘积的最大值会同时计算，并纳入应力计算中。</li></ol><div class="objectWrapper" data-id="5bae15b72fe2c" data-type="image" data-caption="Abbildung: Zahnformfaktoren nach grafischer Methode"><p class="bodytext"><img data-id="5bae15b72fe2c" height="277" src="10006.png" width="563"></p><p class="figcaption" data-id="5bae15b72fe2c">图 15.8：使用图解法的齿形系数</p></div><p class="bodytext"></p><ol start="3">	<li class="bodytext"><strong>对于内齿形，根据提案 2737</strong><br>	当按照 ISO 6336 或 DIN 3990 计算强度时，选择此选项可使用 VDI 2737 中定义的齿形系数，该方法对内齿形更精确，因为它评估 60° 切线切点处的应力，并根据使用插齿刀的制造工艺导出齿形。<br>	<br>	ISO 6336 中规定的齿根应力计算比 DIN 3990 中实现的计算更准确。但是，应用于临界点（60° 切线）齿根圆角的计算仍不正确。VDI 2737 附录 B 中定义的方法准确得多，因此我们建议您使用此方法。如果选择此选项，则仅计算临界截面处的齿根圆角 ϱF 和齿根厚度 sFn，其计算公式符合 VDI 2737。所有其他尺寸均按 ISO 6336 计算。<br>	<br>	下表用 4 个示例展示了 ISO 6336 定义的结果与在齿形上测量的有效值之间齿根圆角仍会出现的较大差异。然而，VDI 2737 中所述的计算方法非常适用。</li></ol><div class="objectWrapper" data-id="5ba0bcda8b9c1" data-type="table" data-caption="Vergleich Zahnfussrundungen"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcda8b9c1">	<tbody>		<tr align="left" valign="top">			<td width="60">			<p class="tableheading">齿轮 x=</p>			</td>			<td width="78">			<p class="tableheading">插齿刀 x0=</p>			</td>			<td width="90">			<p class="tableheading">ISO 6336-3 2006 和 2007-02 中的 ϱF</p>			</td>			<td width="102">			<p class="tableheading">ISO 6336-3 2007-04 现行版本中的 ϱF</p>			</td>			<td width="102">			<p class="tableheading">在齿面上测量的 ϱF</p>			</td>			<td width="72">			<p class="tableheading">按 VDI 2737 的 ϱF</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">-0.75</p>			</td>			<td width="78">			<p class="bodytext">0.1</p>			</td>			<td width="90">			<p class="bodytext">0.201</p>			</td>			<td width="102">			<p class="bodytext"><strong>0.426</strong></p>			</td>			<td width="102">			<p class="bodytext"><strong>0.233</strong></p>			</td>			<td width="72">			<p class="bodytext"><strong>0.233</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">-0.75</p>			</td>			<td width="78">			<p class="bodytext">0.0</p>			</td>			<td width="90">			<p class="bodytext">0.175</p>			</td>			<td width="102">			<p class="bodytext"><strong>0.403</strong></p>			</td>			<td width="102">			<p class="bodytext"><strong>0.220</strong></p>			</td>			<td width="72">			<p class="bodytext"><strong>0.220</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">0.0</p>			</td>			<td width="78">			<p class="bodytext">0.1</p>			</td>			<td width="90">			<p class="bodytext">0.298</p>			</td>			<td width="102">			<p class="bodytext"><strong>0.364</strong></p>			</td>			<td width="102">			<p class="bodytext"><strong>0.284</strong></p>			</td>			<td width="72">			<p class="bodytext"><strong>0.286</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">0.0</p>			</td>			<td width="78">			<p class="bodytext">0.0</p>			</td>			<td width="90">			<p class="bodytext">0.274</p>			</td>			<td width="102">			<p class="bodytext"><strong>0.343</strong></p>			</td>			<td width="102">			<p class="bodytext"><strong>0.265</strong></p>			</td>			<td width="72">			<p class="bodytext"><strong>0.264</strong></p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcda8b9c1">表 15.7：齿根圆角的比较</p></div><p class="bodytext">关于计算 Y<sub>F</sub> 的说明：</p><ul>	<li class="bodytext">如果余量 As &lt; 0.05*mn（根据 ISO 6336-3），则计算中使用理论变位系数。否则使用较大的制造变位系数 xE.e（在此应用理论重合度）。这与 STplus 程序（来自德国慕尼黑）所采用的方法一致。ISO 标准中没有给出精确定义。但是，可以在 <span class="menu">细节</span> 选项卡中为齿根和齿面强度计算预定义特定的公差带。然后始终使用该值计算强度以及端面重合度。</li>	<li class="bodytext">根据 ISO 标准，计算时应使用整个轮齿的参考齿廓。因此，如果您输入了带凸台的预加工参考齿廓，并且在扣除磨削余量后留下了带有残余凸台的已加工齿廓，则计算中使用精加工参考齿廓。在没有凸台（或凸台过小）的预加工参考齿廓中会产生磨削缺口。为确保能正确考虑这种情况，使用预加工参考齿廓（含预加工制造变位系数）计算 Y<sub>F</sub>。精加工参考齿廓也用于计算磨削缺口，从而确定 Y<sub>Sg</sub>（ISO 6336-3 第 7.3 节）。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Define tooth form factors</h3>   
+                
+<p class="bodytext">The tooth form factor Y<sub class="subscript">F</sub> takes into account how the tooth form affects the nominal tooth root stress <em>σ</em><sub class="subscript">F0</sub>. The stress correction factor Y<sub class="subscript">S</sub> takes into account the effect of the notch on the tooth root. These two factors can be calculated in three different ways:</p><ol>	<li class="bodytext"><strong>According to the formulae in the standard (normal)</strong><br />	As defined in ISO 6336 or DIN 3990, the tooth form and the stress correction factors are calculated at the tooth root at the point at which the tangent and the tooth center line form an angle of 30<span class="superscript">°</span>. However, it is generally acknowledged that this method is rather imprecise, especially for deep tooth forms.</li>	<li class="bodytext"><strong>Using graphical method</strong><br />	According to Obsieger [20], there is a more precise approach in which the product of the tooth form factor Y<sub class="subscript">F</sub> and the stress correction factor Y<sub class="subscript">S</sub> is calculated and the maximum value is determined. This method is based on the manufacturing process used for a specific tooth form and is applied to all points in the whole root area. This maximum value is then used to calculate the strength. Factors Y<sub class="subscript">F</sub> and Y<sub class="subscript">S</sub> are calculated according to the formulae in ISO 6336 or DIN 3990.<br />	<br />	This is the recommended method, particularly for unusual tooth forms and internal toothings. If required, this calculation procedure can also be applied in strength calculations as defined in ISO 6336 and DIN 3990, as well as in fine sizing.<br />	<br />	<strong>Note:</strong><br />	If you use the graphical method here, KISSsoft will calculate the tooth form before it calculates the strength, each time. It takes its parameters either from the cutter data you have entered previously, in the Tooth form input window (see chapter <a class="referencetopic-shabschnitt" href="8372.htm" target="_self">Tooth form</a>), or from the default settings in the <span class="menu">Reference profile</span> input window. The maximum value of the product of the tooth form and stress modification factor is calculated at the same time and included in the stress calculation.</li></ol><div class="objectWrapper" data-id="5bae15b72fe2c" data-type="image" data-caption="Abbildung: Zahnformfaktoren nach grafischer Methode"><p class="bodytext"><img data-id="5bae15b72fe2c" height="277" src="10006.png" width="563" /></p><p class="figcaption" data-id="5bae15b72fe2c">Figure 15.8: Figure: Tooth form factors using the graphical method</p></div><p class="bodytext"></p><ol start="3">	<li class="bodytext"><strong>for internal toothing, according to proposal 2737</strong><br />	When calculating strength according to ISO 6336 or DIN 3990, select this option to use the tooth form factor as defined in VDI 2737, which is more precise for internal toothing, because it evaluates the stress at the point of the 60° tangent and derives the tooth form from the manufacturing process with the pinion type cutter.<br />	<br />	The calculation specified in ISO 6336 for calculating tooth root stress is more accurate than the one implemented in DIN 3990. However, the calculation applied to the root rounding in the critical point (for a 60° tangent) is still incorrect. The method defined in VDI 2737, Annex B is much more accurate, which is why we recommend you use this method. If you select this option, only the root rounding ϱF and the root thickness sFn in the critical cross-section is calculated in accordance with the formulae in VDI 2737. All other sizes are calculated according to ISO 6336.<br />	<br />	The table (below) uses 4 examples to show the large variations that still arise in root rounding between the result defined in ISO 6336 and the effective values measured on the tooth form. However, the calculation method stated in VDI 2737 is very suitable.</li></ol><div class="objectWrapper" data-id="5ba0bcda8b9c1" data-type="table" data-caption="Vergleich Zahnfussrundungen"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcda8b9c1">	<tbody>		<tr align="left" valign="top">			<td width="60">			<p class="tableheading">Gear x=</p>			</td>			<td width="78">			<p class="tableheading">Pinion Cutter x0=</p>			</td>			<td width="90">			<p class="tableheading">ϱF in ISO 6336-3 2006 and 2007-02</p>			</td>			<td width="102">			<p class="tableheading">ϱF in the current edition of ISO 6336-3 2007-04</p>			</td>			<td width="102">			<p class="tableheading">ϱF measured on the tooth flank</p>			</td>			<td width="72">			<p class="tableheading">ϱF with VDI 2737</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">-0.75</p>			</td>			<td width="78">			<p class="bodytext">0.1</p>			</td>			<td width="90">			<p class="bodytext">0.201</p>			</td>			<td width="102">			<p class="bodytext"><strong>0.426</strong></p>			</td>			<td width="102">			<p class="bodytext"><strong>0.233</strong></p>			</td>			<td width="72">			<p class="bodytext"><strong>0.233</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">-0.75</p>			</td>			<td width="78">			<p class="bodytext">0.0</p>			</td>			<td width="90">			<p class="bodytext">0.175</p>			</td>			<td width="102">			<p class="bodytext"><strong>0.403</strong></p>			</td>			<td width="102">			<p class="bodytext"><strong>0.220</strong></p>			</td>			<td width="72">			<p class="bodytext"><strong>0.220</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">0.0</p>			</td>			<td width="78">			<p class="bodytext">0.1</p>			</td>			<td width="90">			<p class="bodytext">0.298</p>			</td>			<td width="102">			<p class="bodytext"><strong>0.364</strong></p>			</td>			<td width="102">			<p class="bodytext"><strong>0.284</strong></p>			</td>			<td width="72">			<p class="bodytext"><strong>0.286</strong></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">0.0</p>			</td>			<td width="78">			<p class="bodytext">0.0</p>			</td>			<td width="90">			<p class="bodytext">0.274</p>			</td>			<td width="102">			<p class="bodytext"><strong>0.343</strong></p>			</td>			<td width="102">			<p class="bodytext"><strong>0.265</strong></p>			</td>			<td width="72">			<p class="bodytext"><strong>0.264</strong></p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcda8b9c1">Table 15.7: Comparison of root roundings</p></div><p class="bodytext">Note about the calculating Y<sub>F</sub>:</p><ul>	<li class="bodytext">The theoretical profile shift is used in the calculation if the allowance is As &lt; 0.05*mn (in accordance with ISO 6336-3). Otherwise the larger manufacturing profile shift xE.e (where the theoretical contact ratio is applied) is used. This corresponds to the procedure used in the STplus program (from Munich, Germany). An exact definition is not provided in the ISO standard. However, a specific tolerance field can be predefined in the <span class="menu">Details</span> tab for the root and flank strength calculation. This value is then always used to calculate strength and for the transverse contact ratio.</li>	<li class="bodytext">According to the ISO standard, the reference profile for the entire toothing is to be used for the calculation. For this reason, if you input the reference profile for pre-machining with protuberance, and a manufactured profile with remaining protuberance is left after deduction of the grinding allowance, the reference profile for final machining is used for the calculation. A grinding notch is produced in the reference profile for pre-machining without a protuberance (or a protuberance that is too small). To ensure that this situation can be correctly taken into consideration, the pre-machining reference profile (with pre-machining manufacturing profile shift) is used to calculate Y<sub>F</sub>. The final machining reference profile is also used to calculate the grinding notch and therefore to define Y<sub>Sg</sub> (section 7.3 in ISO 6336-3).</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

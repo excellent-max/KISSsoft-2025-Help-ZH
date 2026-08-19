@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>启动参数 | Start parameters</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Start parameters">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8932');expand('9272');expand('9246');highlight('9127')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8932.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9132.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">启动参数</h3>   
+                
+<p class="bodytext">可通过输入提示运行 KISSsoft，使用以下启动参数：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="156">			<p class="tableheading">参数</p>			</td>			<td width="372">			<p class="tableheading">描述</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">INI=<span class="menu">目录</span></p>			</td>			<td width="372">			<p class="bodytext">KISS.ini（参见<a class="referencetopic-shabschnitt" href="9068.htm" target="_self">全局设置 - KISS.ini</a>）文件将从指定位置加载。您可以传入文件名（带目录路径）或仅传入目录名。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">START=<span class="menu">模块</span></p>			</td>			<td width="372">			<p class="bodytext">将启动指定的计算模块。模块描述符例如：<span class="menu">M040</span> 用于螺栓计算，或 <span class="menu">Z012</span> 用于圆柱齿轮副计算。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">LOAD=<span class="menu">文件名</span></p>			</td>			<td width="372">			<p class="bodytext">将启动与该文件对应的计算模块并加载该文件。如果提供的文件名不包含路径，系统将在用户目录中查找该文件（参见<a class="referencetopic-shabschnitt" href="9069.htm" target="_self">[PATH] 中的定义</a>）。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">LANGUAGE=<span class="menu">数字</span></p>			</td>			<td width="372">			<p class="bodytext">KISSsoft 以指定的界面和报告语言启动。（0：德语，1：英语，2：法语，3：意大利语，4：西班牙语，5：俄语，6：葡萄牙语，7：中文，11：英语（使用美制单位））</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">DEBUG=<span class="menu">文件名 </span></p>			</td>			<td width="372">			<p class="bodytext">将写入包含调试信息的日志文件。它对于错误跟踪非常有用。建议为文件名指定完整路径，以便日后轻松找到日志文件。</p>			</td>		</tr>		<tr>			<td>LIC=<strong>许可文件</strong><span class="menu"> </span></td>			<td>			<p class="bodytext">如果在此指定许可文件，KISSsoft 将使用该许可文件启动，而不是使用指定的默认许可文件。</p>			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext"><span class="menu">文件名 </span></p>			</td>			<td width="372">			<p class="bodytext">将启动与该文件对应的计算模块并加载该文件。这也提供了一种在 Windows 中将 KISSsoft 与相应的文件扩展名关联起来的方法。</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Start parameters</h3>   
+                
+<p class="bodytext">You can run KISSsoft from the input prompt with the following start parameters:</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="156">			<p class="tableheading">Parameter</p>			</td>			<td width="372">			<p class="tableheading">Description</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">INI=<span class="menu">directory</span></p>			</td>			<td width="372">			<p class="bodytext">The KISS.ini (see chapter <a class="referencetopic-shabschnitt" href="9068.htm" target="_self">Global settings - KISS.ini</a>) file will be loaded from the specified location. You can transfer a file name, with its directory path, or only a directory name.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">START=<span class="menu">module</span></p>			</td>			<td width="372">			<p class="bodytext">The specified calculation module will be started. The module descriptor is, for example, <span class="menu">M040</span> for bolt calculation or <span class="menu">Z012</span> for cylindrical gear pair calculation.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">LOAD=<span class="menu">file name</span></p>			</td>			<td width="372">			<p class="bodytext">The calculation module belonging to the file is started and the file is loaded. If the supplied file name does not include a path, the system looks for the file in the User directory (see chapter <a class="referencetopic-shabschnitt" href="9069.htm" target="_self">Definitions in [PATH]</a>).</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">LANGUAGE=<span class="menu">number</span></p>			</td>			<td width="372">			<p class="bodytext">KISSsoft starts with the language specified for the interface and reports. (0: German, 1: English, 2: French, 3: Italian, 4: Spanish, 5: Russian, 6: Portuguese, 7: Chinese, 11: English with US Customary Units)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">DEBUG=<span class="menu">file name </span></p>			</td>			<td width="372">			<p class="bodytext">A log file containing debug information will be written. It can be very helpful for error-tracking. It is advisable to define the file name with a complete path, so that you can find the log file easily later.</p>			</td>		</tr>		<tr>			<td>LIC=<strong>license file</strong><span class="menu"> </span></td>			<td>			<p class="bodytext">If a license file is specified here, KISSsoft starts with that license file instead of the specified default license file.</p>			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext"><span class="menu">File name </span></p>			</td>			<td width="372">			<p class="bodytext">The calculation module belonging to the file is started and the file is loaded. This also provides a way to associate KISSsoft with the appropriate file name extensions in Windows.</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

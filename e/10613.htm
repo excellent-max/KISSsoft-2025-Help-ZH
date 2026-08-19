@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算 | Calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8076');expand('9288');expand('9246');highlight('10613')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8076.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8079.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算</h3>   
+                
+<p class="bodytext"><strong>按 Kollmann 设计： </strong>如果选择此方法，则可根据所需安全系数以及指定的载荷和几何形状，确定最大角偏差 γ<sub class="subscript">max</sub>、安装用压装距离 a<sub class="subscript">f</sub> 和连接力。</p><p class="bodytext"><strong>按 Kollmann 验证： </strong>在无角度偏差和最大角度偏差两种情况下分别计算可传递扭矩。</p><p class="bodytext">还可以输入安装用压装距离 af 或安装压入力 Ffmin。</p><p class="bodytext">针对屈服点和滑动的安全系数也在验证过程中被计算。</p><p class="bodytext">Kollmann 定义的安全系数包括所需安全系数，您可以在"设置"选项卡中定义。要显示它，请选择 <span class="menu">计算</span><span class="menu1" style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"><strong style="font-weight:bold"><span style="font-size:9.5pt"><span style="font-weight:normal"> → </span></span></strong></span></span><span class="menu">设置。</span></p><p class="bodytext"><strong>方法如 DIN 7190-2:2017 中所定义： </strong>在本计算方法中，滑动力矩、连接力和轴向力是在所有元件已连接的状态下，从输入转矩、无外力安装以及所有几何数据中计算得出的。滑动安全性是通过这种方式进行计算的。如果存在不同的外部轮毂直径或不同的内部轴直径，这些也可以定义为切片（最多7个）。每个切片的值分别计算后相加。最大值用于接合处的压力。</p><p class="bodytext"><img src="10614.png" style="height:31px; width:123px"></p><p class="bodytext">对于中心载荷作用的情况，抗滑动安全系数 S<sub class="subscript">R </sub> 的最小值应满足 S<sub class="subscript">Rmin</sub> &gt; 1.3。</p><p class="bodytext">此外，如果为安装而手动输入连接力 p<sub class="subscript">FA</sub>，还会计算有效等效应力。最大等效应力与特定材料的屈服点进行比较，安全系数由此确定。<span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">当使用空心轴时，最大等效应力总是出现在轮毂或轴的内径处。</span></span></span></p><p class="bodytext"><img src="10615.png" style="height:36px; width:157px"></p><p class="bodytext">抗屈服点安全系数 S<sub class="subscript">P</sub>（塑性流动）应达到 S<sub class="subscript">Pmin</sub> &gt; 1.3，以便零件在装配或拆卸时不会发生塑性变形。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation</h3>   
+                
+<p class="bodytext"><strong>Sizing according to Kollmann: </strong>If you select this method, the maximum angular deviation γ<sub class="subscript">max</sub>, the pressing distance for mounting a<sub class="subscript">f</sub>, and the joining force, can be sized using the required safeties and the specified load and geometry.</p><p class="bodytext"><strong>Verification according to Kollmann: </strong>The transmittable torque is calculated for no angular deviation and for maximum angular deviation.</p><p class="bodytext">You can also input the pressing distance for mounting af or the mounting pressing force Ffmin.</p><p class="bodytext">The safeties against the yield point and against sliding are also calculated in the verification process.</p><p class="bodytext">The safeties defined by Kollmann include the required safeties, which you can define in the Settings tab. To display it, select <span class="menu">Calculation</span><span class="menu1" style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"><strong style="font-weight:bold"><span style="font-size:9.5pt"><span style="font-weight:normal"> → </span></span></strong></span></span><span class="menu">Settings.</span></p><p class="bodytext"><strong>Method as defined in DIN 7190-2:2017: </strong>In this calculation method, the sliding moment, joining force, and axial force are calculated for the state at which all the elements are already joined, from the input torque, mounting without force and all the geometry data. The safety against sliding is calculated in this way. If different external hub diameters or different internal shaft diameters are present, these can also be defined as slices (max. 7). The values are calculated individually for each slice and then added together. The maximum value is used for the pressure in the joint.</p><p class="bodytext"><img src="10614.png" style="height:31px; width:123px" /></p><p class="bodytext">In the case of a central load application, the safety against sliding S<sub class="subscript">R </sub> should have a minimum value of S<sub class="subscript">Rmin</sub> &gt; 1.3.</p><p class="bodytext">In addition, the effective equivalent stresses are calculated if you enter a joining force manually for mounting p<sub class="subscript">FA</sub>. The maximum equivalent stress is compared with the yield point of the particular material.<span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">The safety is defined in this way. </span></span></span>The maximum equivalent stresses appear every time for the inner diameter of the hub or shaft when a hollow shaft is being used.</p><p class="bodytext"><img src="10615.png" style="height:36px; width:157px" /></p><p class="bodytext">The Safety against yield point S<sub class="subscript">P</sub> (plastic flow) should reach a value of S<sub class="subscript">Pmin</sub> &gt; 1.3 so that the parts do not undergo plastic deformation when being assembled or disassembled.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>剪切静力计算 | Static calculation on shearing</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Static calculation on shearing">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8444');expand('10794');expand('8431');expand('8429');expand('9286');expand('9246');highlight('10307')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10305.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11132.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">剪切静力计算</h3>   
+                
+<p class="bodytext">确定蜗轮作为斜齿圆柱齿轮受到剪切的作用方式：</p><p class="bodytext">τ<sub class="subscript">F</sub> = F<sub class="subscript">t</sub><span class="superscript">2</span>*K<sub class="subscript">A</sub>*Y<sub class="subscript">E</sub>/A<sub>τ</sub></p><p class="bodytext">A<sub>τ</sub> = b<sub class="subscript">max</sub>/5*(4*s<sub class="subscript">tda2</sub>-s<sub class="subscript">tdx2</sub>)</p><p class="bodytext">d<sub class="subscript">x2</sub> = 2* a-d<sub class="subscript">a1</sub></p><p class="bodytext">此计算自动执行，并在报告中的 <strong>齿根承载能力</strong> 或 <strong>齿轮齿根静力剪切</strong> 条目下记录。</p><div class="objectWrapper" data-id="5ba0bcd65031b" data-type="image" data-caption="Dimensionen des Schubquerschnitts."><p class="bodytext"><img data-id="5ba0bcd65031b" height="289" src="10308.png" width="438"></p><p class="figcaption" data-id="5ba0bcd65031b">图19.3：剪切横截面的尺寸。</p></div>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Static calculation on shearing</h3>   
+                
+<p class="bodytext">Determining how the worm wheel is subjected to shearing as a helical gear:</p><p class="bodytext">τ<sub class="subscript">F</sub> = F<sub class="subscript">t</sub><span class="superscript">2</span>*K<sub class="subscript">A</sub>*Y<sub class="subscript">E</sub>/A<sub>τ</sub></p><p class="bodytext">A<sub>τ</sub> = b<sub class="subscript">max</sub>/5*(4*s<sub class="subscript">tda2</sub>-s<sub class="subscript">tdx2</sub>)</p><p class="bodytext">d<sub class="subscript">x2</sub> = 2* a-d<sub class="subscript">a1</sub></p><p class="bodytext">This calculation is performed automatically and is documented in the report under <strong>Tooth root load capacity</strong> or <strong>Static shearing in tooth root of the gear</strong>.</p><div class="objectWrapper" data-id="5ba0bcd65031b" data-type="image" data-caption="Dimensionen des Schubquerschnitts."><p class="bodytext"><img data-id="5ba0bcd65031b" height="289" src="10308.png" width="438" /></p><p class="figcaption" data-id="5ba0bcd65031b">Figure 19.3: Dimensions of the shear cross section.</p></div>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

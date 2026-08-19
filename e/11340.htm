@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>接触分析中的齿根应力与 FEM 应力——是否存在差异？ | Tooth root stresses in the contact analysis and stress according to FEM – is there a difference?</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Tooth root stresses in the contact analysis and stress according to FEM – is there a difference?">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9489');expand('8341');expand('9286');expand('9246');highlight('11340')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10263.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9487.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">接触分析中的齿根应力与 FEM 应力——是否存在差异？</h3>   
+                
+<p class="bodytext">现在提供了一种基于 FEM 的方法，用于计算虚拟轮齿（2D）中的应力。这是一个额外选项，通常很有用。然而，这仅当您能信任由此方法确定的 TCA 应力时才有意义——理论上是否多余？<br><br>按 ISO or DIN standard（ISO 或 DIN 标准）计算齿根应力时，只在齿根的一个截面上进行，该截面位于与齿根轮廓相切的切线恰好成 30° 的点处（内齿轮为 60°）。研究已表明，对于标准齿轮轮齿，最大齿根应力出现在该截面。还有一些公式可用于确定圆角半径和截面面积。这些值随后可用于确定弯曲应力。这些公式基于如下假设：采用展成法加工时使用标准刀具。由于齿形修形等原因导致的齿廓变化被忽略。弯曲应力由名义应力（YF 系数）和标准规定的应力修正系数（YS）组成，基于对少量齿轮的测量确定，因此是近似的。对于特殊轮齿，例如深齿形，理论弯曲应力与实际弯曲应力之间可能存在显著差异。<br><br>按标准规定，斜齿轮轮齿的计算采用当量直齿轮进行。因此，使用当量直齿轮进行的 FEM 计算采用与标准相同的方法，唯一区别在于 FE 计算中使用精确的齿形。此时，对 30° 切线处截面的限制以及 YF 和 YS 的公式不再适用。载荷在单齿啮合点上的施加方式相同。这样可以确定按标准计算与按 FEM 计算所得应力之间的精确差异。如上所述，对于特殊轮齿或齿根区域有较大修形的轮齿，这是一种特别好的方法。<br><br>KISSsoft 接触分析（TCA）程序确定齿宽范围内的载荷分布，然后利用这些数据计算齿宽范围内每一分段中每个齿接触点处施加的力。随后使用标准中的公式确定各分段中的齿根应力。然而，KISSsoft 的“图解法”与标准相比在功能上有显著增强。图解法将使用标准公式的应力计算过程应用于 30° 切线范围内的所有截面（而不仅仅是 30° 点），从而计算出轮齿上最大齿根应力所在点的截面（直径）（同样使用标准中相应截面的公式）。<br><br>因此，TCA 结果中的齿根应力比使用标准计算的结果更精确。尽管如此，使用精确齿形按 FEM 计算的齿根应力与使用标准中 YF 和 YS 公式计算的应力之间的差异未被考虑在内。因此，可以使用 FEM 计算来研究特定轮齿的齿根应力是否与按标准计算的齿根应力有很大差异。如果有差异，则可将使用 TCA 方法确定的应力乘以一个系数（按 FEM 计算的应力/按标准计算的应力），该系数来自 2D FEM 结果，该结果位于 KISSsoft 中，以获得最精确的结果。</p><p class="bodytext"></p><p class="bodytext"></p><p class="bodytext"></p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Tooth root stresses in the contact analysis and stress according to FEM – is there a difference?</h3>   
+                
+<p class="bodytext">An FEM-based approach is now available for calculating stresses in virtual toothing (2D). This is an additional option, which is generally good. However, this is only if you can trust the TCA stresses determined by this method – theoretically superfluous?<br /><br />Calculating tooth root stresses as specified in the ISO or DIN standard only occurs in a cross section in the tooth root, at the point at which the tangents are exactly 30° to the root contour (60° for internal toothing). Investigations have shown that the maximum root stress occurs in this cross section, in standard gear teeth. There are also formulae which can be used to define the rounding radius and the area of the cross section. These values can then be used to determine bending stress. These formulae are based on the assumption that a standard tool is used in a generating procedure. Changes to the tooth contour, for example due to profile modifications, are ignored. The bending stress, consisting of nominal stress (YF coefficient) and the stress correction factor (YS) as specified in the standard, is determined on the basis of measurements taken on a few gears, and is therefore approximated. In special toothings, for example those with deep tooth forms, there may be a significant difference between the theoretical bending stress and the effective bending stress.<br /><br />The calculation for helical gear teeth, as specified in the standard, is performed with virtualspur gears. The FEM calculation with virtual spur gears therefore uses the same approach as the standard, the only difference being that the exact tooth form is used in the FE calculation. The restriction to the cross section at the 30° tangent and also the formulae for YF and YS no longer apply in this case. The application of the load at the single tooth contact point is treated in the same way. This enables the exact difference between the stress calculated as specified in the standard and in FEM to be determined. As already described above, this is a particularly good approach for special gear teeth or gear teeth with substantial profile modifications in the root area.<br /><br />The KISSsoft contact analysis (TCA) procedure determines load distribution across the facewidth and then uses this data to calculate the force applied at each individual tooth contact point in every segment across the facewidth. The formulae in the standard are then used to determine tooth root stress in the individual segments. However, KISSsoft's &quot;graphical method&quot; offers a considerable enhancement in functionality compared to the standard. The graphical method applies the stress calculation process using the standard's formulae to all the cross sections in the 30° tangent range (not just at the 30° point), and therefore calculates the cross section (diameter) at the point on the tooth at which the maximum tooth root stress is found (also using the formulae in the standard for the relevant cross section).<br /><br />The tooth root stress in the TCA result is therefore more accurate than the one calculated using the standard. Despite this, the difference between the root stress according to FEM using the exact tooth form, or the stress calculated using the formulas for YF and YS according to the standard is not taken into account. The FEM calculation can therefore be used to investigate whether the root stress for a specific toothing is very different from the root stress calculated as specified in the standard. If it is, the stress determined using the TCA method can be multiplied by the coefficient (stress according to FEM/stress as specified in the standard) of the 2D FEM results in KISSsoft to achieve the most accurate results.</p><p class="bodytext"></p><p class="bodytext"></p><p class="bodytext"></p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

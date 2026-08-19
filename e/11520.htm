@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>SKF 云服务：使用 SKF 轴承刚度模块 | SKF Cloud Services: using the SKF bearing stiffness module</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="SKF Cloud Services: using the SKF bearing stiffness module">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11621');expand('8183');expand('9287');expand('9246');highlight('11520')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11624.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11625.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">SKF 云服务：使用 SKF 轴承刚度模块</h3>   
+                
+<p class="bodytext">SKF 通过一个接口为不同的轴承型号提供其自身的刚度计算。与 ISO/TS 16281 中一样，这使得在 KISSsoft 系统中可以考虑非线性滚动轴承刚度以及名义和修正的参考额定寿命。因此，轴计算基于所涉及轴承的实际内部几何结构。这确保了高度精确的结果，得益于轴承制造商提供的专业计算经验。</p><p class="bodytext">此外，以下值可以通过轴承刚度模块加以考虑：</p><ul>	<li class="bodytext">轴承位移和扭转</li>	<li class="bodytext">反作用力和反作用力矩</li>	<li class="bodytext">工作点处的非线性刚度矩阵</li>	<li class="bodytext">名义和修正参考轴承额定寿命 Lnrh 和 Lnmrh</li>	<li class="bodytext">轴向和径向刚度曲线</li></ul><p class="bodytext">如果选择了此功能，KISSsoft 会尝试对所有 SKF 轴承使用轴承刚度模块。如果出现错误，KISSsoft 会自动切换到自身已实现的 ISO/TS 16281 标准。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">SKF Cloud Services: using the SKF bearing stiffness module</h3>   
+                
+<p class="bodytext">SKF provides its own stiffness calculation for different bearing models, via an interface. Like in ISO/TS 16281, this makes it possible to take non-linear rolling bearing stiffness and the nominal and modified reference rating life into account in the KISSsoft system. Consequently, the shaft calculation is based on the actual internal geometry of the bearing involved. This ensures highly accurate results, benefiting from the expert calculation-related expertise supplied by the bearing manufacturer.</p><p class="bodytext">The following values, among other things, can be taken into account via the bearing stiffness module:</p><ul>	<li class="bodytext">Bearing displacement and torsion</li>	<li class="bodytext">Reaction forces and reaction moments</li>	<li class="bodytext">A non-linear stiffness matrix at the operating point</li>	<li class="bodytext">Nominal and modified reference bearing rating life Lnrh and Lnmrh</li>	<li class="bodytext">Axial and radial stiffness curves</li></ul><p class="bodytext">If this function is selected, KISSsoft attempts to use the bearing stiffness module for all SKF bearings. If there is an error, KISSsoft automatically switches to the ISO/TS 16281 standard, which is implemented in it.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

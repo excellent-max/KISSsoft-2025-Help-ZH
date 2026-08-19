@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>轴用元件 | Elements for shafts</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Elements for shafts">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7647');expand('7629');expand('9292');expand('9246');highlight('7655')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7654.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7656.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">轴用元件</h3>   
+                
+<p class="bodytext">不同类型的元件可以放置在轴上。它们也会传递到 KISSsoft 轴计算中。轴上的位置通过 <span class="menu">position</span> 变量定义。</p><ul>	<li class="bodytext"><strong>kSysHelicalGear</strong>：圆柱齿轮。</li>	<li class="bodytext"><strong>kSysBevelGear</strong>：锥齿轮。锥顶的位置通过 <span class="menu">direction</span> 变量定义。</li>	<li class="bodytext"><strong>kSysWorm</strong>：蜗杆。</li>	<li class="bodytext"><strong>kSysWormGear</strong>：蜗轮。</li>	<li class="bodytext"><strong>kSysCoupling</strong>：联轴器。可为 3D 显示输入直径 <span class="menu">d </span>和宽度 <span class="menu">b </span>。</li>	<li class="bodytext"><strong>kSysBearing</strong>：普通类型的轴承。损耗可记录在 <span class="menu">Tloss</span> 中。损耗扭矩的方向应在表达式中用 <span class="menu">-sign(speed)</span> 来定义。</li>	<li class="bodytext"><strong>kSysRollerBearing</strong>：滚动轴承。每次刷新计算时，轴承几何数据都会从 KISSsoft 轴承数据库中导入。损耗可记录在 <span class="menu">Tloss</span> 中。损耗扭矩的方向应在表达式中用 <span class="menu">-sign(speed)</span> 来定义。</li>	<li class="bodytext"><strong>kSysCentricalLoad</strong>：中心载荷。</li>	<li class="bodytext"><strong>kSysMass</strong>：轴上的附加质量。</li>	<li class="bodytext"><strong>kSysRopeSheave</strong>：滑轮（绳轮）。皮带力通过连接计算得出。</li>	<li class="bodytext"><strong>kSysFaceGear:</strong> 端面齿轮。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Elements for shafts</h3>   
+                
+<p class="bodytext">Different elements can be placed onto shafts. They will also be transferred to the KISSsoft shaft calculation. The position on the shaft is defined with the <span class="menu">position</span> variable.</p><ul>	<li class="bodytext"><strong>kSysHelicalGear</strong>: A cylindrical gear.</li>	<li class="bodytext"><strong>kSysBevelGear</strong>: A bevel gear. The position of the peak is defined by the <span class="menu">direction</span> variable.</li>	<li class="bodytext"><strong>kSysWorm</strong>: A worm.</li>	<li class="bodytext"><strong>kSysWormGear</strong>: A worm wheel.</li>	<li class="bodytext"><strong>kSysCoupling</strong>: A coupling. Diameter <span class="menu">d </span>and Width <span class="menu">b </span>can be entered for the 3D display.</li>	<li class="bodytext"><strong>kSysBearing</strong>: A normal type of bearing. Losses can be recorded in <span class="menu">Tloss</span>. The direction of the loss torque should be defined with a <span class="menu">-sign(speed)</span> in the expression.</li>	<li class="bodytext"><strong>kSysRollerBearing</strong>: A rolling bearing. The bearing geometry is imported from the KISSsoft bearings database every time you refresh the calculation. Losses can be recorded in <span class="menu">Tloss</span>. The direction of the loss torque should be defined with a <span class="menu">-sign(speed)</span> in the expression.</li>	<li class="bodytext"><strong>kSysCentricalLoad</strong>: A centrical load.</li>	<li class="bodytext"><strong>kSysMass</strong>: An additional mass on the shaft.</li>	<li class="bodytext"><strong>kSysRopeSheave</strong>: A pulley (rope sheave). The belt force is calculated via the connection.</li>	<li class="bodytext"><strong>kSysFaceGear:</strong> A face gear.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

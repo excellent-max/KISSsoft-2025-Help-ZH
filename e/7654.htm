@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>导入现有的 KISSsoft 计算 | Importing existing KISSsoft calculations</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Importing existing KISSsoft calculations">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7651');expand('7647');expand('7629');expand('9292');expand('9246');highlight('7654')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7652.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7655.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">导入现有的 KISSsoft 计算</h3>   
+                
+<p class="bodytext">如果 KISSsoft 计算已存在于新 KISSsys 系统的元素中，您只需在 KISSsoft 窗口中加载这些文件。为此，请单击 <span class="menu">文件</span> -&gt; <span class="menu">打开</span>。但是，您应注意以下几点：</p><ul>	<li class="bodytext">存储在 <span class="menu">fileName</span> 变量中的文件名（位于 KISSsys 计算元素中）将被更改。该名称必须删除或修改。</li>	<li class="bodytext">力元素和轴承在轴计算过程中会被覆盖。因此，您需要在导入计算后调用 <span class="menu">Dialog</span> 或 <span class="menu">UpdateShaftElements</span> 函数。无法导入 KISSsys 模型树结构中不存在的力元素和轴承。此外请注意，加载的轴计算中的力元素和轴承名称必须与模型中使用的名称相同。</li>	<li class="bodytext">对于齿轮，您必须确保齿轮（齿轮 1 和齿轮 2）的顺序与模型中的定义匹配。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Importing existing KISSsoft calculations</h3>   
+                
+<p class="bodytext">If KISSsoft calculations are already present for the elements in a new KISSsys system, you can simply load the files in the KISSsoft window. Click on <span class="menu">File</span> -&gt; <span class="menu">Open</span> to do this. However, you should note a few points:</p><ul>	<li class="bodytext">The file name stored in the <span class="menu">fileName</span> variable, in the KISSsys calculation element, will be changed. The name must either be deleted or modified.</li>	<li class="bodytext">The elements of forces and the bearings are overwritten during the shaft calculation. For this reason, you need to call the <span class="menu">Dialog</span> or <span class="menu">UpdateShaftElements</span> function after importing the calculation. You cannot import force elements and bearings that are not present in the KISSsys model tree structure. Also note that the names of the force elements and bearings in the loaded shaft calculation must be identical to the names used in the model.</li>	<li class="bodytext">In the case of gears, you must ensure that the sequence of the gears (gear 1 and gear 2) matches the definition in the model.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>用于确定疲劳强度的系数 | Coefficients used to determine fatigue strength</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Coefficients used to determine fatigue strength">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10926');expand('8206');expand('8180');expand('9287');expand('9246');highlight('10928')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10926.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10929.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">用于确定疲劳强度的系数</h3>   
+                
+<p class="bodytext">以下系数用于计算修正后的疲劳强度 σ<sub>f</sub>：</p><p class="bodytext"><strong>表面粗糙度系数 k<sub>a</sub></strong></p><p class="bodytext">你可以为列表中的每个个体单元设置表面粗糙度。系数 k<sub>a</sub> 则根据图4中所示的方法，从列表条目中确定，AGMA 6101-F09。</p><p class="bodytext"><strong>尺寸系数 k<sub>b</sub></strong></p><p class="bodytext">尺寸系数 k<sub>b</sub> 是根据轴径，采用图5所示的方法确定的，AGMA 6101-F09。</p><p class="bodytext"><strong>可靠性系数 k<sub>c</sub></strong></p><p class="bodytext">在 <span class="menu">强度</span> 选项卡中定义可靠性（默认值 0.99%）。该值用于确定可靠性系数 k<sub>c</sub>，采用图 6 所示方法（AGMA 6101）。</p><p class="bodytext"><strong>温度系数 k<sub>d</sub></strong></p><p class="bodytext">该系数 k<sub>d </sub>=1 是在温度范围 -30°C 到 120°C 之间时设置的。如果轴温度超出此范围，可以修改轴的条目。</p><p class="bodytext"><strong>寿命系数 k<sub>e</sub></strong></p><p class="bodytext">此系数是基于应力 σ<sub>e</sub> 和 σ<sub>u</sub> 以及载荷循环次数 NL 确定的。</p><p class="bodytext"><strong>表面处理系数 k<sub>f</sub></strong></p><p class="bodytext">对于键槽，此系数直接取自 AGMA 6101-F09 中的表2。</p><p class="bodytext">对于直边花键或普通花键，假定 K<sub>t</sub> 系数为 2.0。</p><p class="bodytext">如果存在键和过盈配合的组合，标准规定 k<sub>f</sub> 系数为 0.33 至 0.4。我们建议输入值 0.33。</p><p class="bodytext">环形沟槽的缺口效应类型用于V形缺口和螺纹。其具有固定的 h/r = 20 比例。</p><p class="bodytext">系统从肩部、环形沟槽和横孔的图示中取用各自的 K<sub>t</sub> 系数（图8至图10，AGMA 6101-F09），并将其与系数 q（图7，AGMA 6101-F09）一起用于计算系数 k<sub>f</sub>。</p><p class="bodytext"><strong>其他影响系数 k<sub>g</sub></strong></p><p class="bodytext">此系数可用于考虑例如热处理、残余应力（喷丸、冷轧等）、腐蚀和表面涂层等因素。</p><p class="bodytext">此系数的默认值设置为 k<sub>g</sub> = 1，但可用为轴输入的值覆盖。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Coefficients used to determine fatigue strength</h3>   
+                
+<p class="bodytext">The following coefficients are required to calculate the modified fatigue strength σ<sub>f</sub>:</p><p class="bodytext"><strong>Surface finish coefficient k<sub>a</sub></strong></p><p class="bodytext">You can set the surface finish for each individual element in a list. Coefficient k<sub>a</sub> is then determined from the list entry, using the method shown in Figure 4, AGMA 6101-F09.</p><p class="bodytext"><strong>Size factor k<sub>b</sub></strong></p><p class="bodytext">The size factor k<sub>b</sub> is determined on the basis of the shaft diameter, using the method shown in Figure 5, AGMA 6101-F09.</p><p class="bodytext"><strong>Reliability coefficient k<sub>c</sub></strong></p><p class="bodytext">The <span class="menu">Strength</span> tab is where you define the reliability (default 0.99%). This value is used to determine reliability coefficient k<sub>c</sub>, using the method shown in Figure 6, AGMA 6101.</p><p class="bodytext"><strong>Temperature coefficient k<sub>d</sub></strong></p><p class="bodytext">The coefficient k<sub>d </sub>=1 is set for temperatures between -30°C and 120°C. The entries for the shaft can be modified if the shaft temperature lies outside this range.</p><p class="bodytext"><strong>Life factor k<sub>e</sub></strong></p><p class="bodytext">This coefficient is determined on the basis of stresses σ<sub>e</sub> and σ<sub>u</sub> and the number of load cycles NL.</p><p class="bodytext"><strong>Surface processing coefficient k<sub>f</sub></strong></p><p class="bodytext">For key ways, this coefficient is taken directly from Table 2 in AGMA 6101-F09.</p><p class="bodytext">For straight-side or normal splines, a K<sub>t</sub> coefficient of 2.0 is assumed.</p><p class="bodytext">If a combination of a key and an interference fit is present, a k<sub>f</sub> coefficient of 0.33 to 0.4 is specified in the standard. We recommend to enter the value 0.33.</p><p class="bodytext">The notch effect type of the circumferential groove is used for V-notches and threads. It has a fixed ratio of h/r = 20.</p><p class="bodytext">The system takes an individual K<sub>t</sub> coefficient from the diagrams for the shoulder, circumferential groove and cross hole (Figures 8 to 10, AGMA 6101-F09) and uses them, together with coefficient q (Figure 7, AGMA 6101-F09) to calculate coefficient k<sub>f</sub>.</p><p class="bodytext"><strong>Miscellaneous effects coefficient k<sub>g</sub></strong></p><p class="bodytext">This coefficient can be used to take into account, for example, heat treatments, residual stresses (shot peening, cold rolled, etc.), corrosion, and surface coatings.</p><p class="bodytext">The default value set for this coefficient is k<sub>g</sub> =1, however, it can be overwritten with the values entered for the shaft.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

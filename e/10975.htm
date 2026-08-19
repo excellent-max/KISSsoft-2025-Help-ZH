@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>添加附加选项卡和对话框 | Adding additional tabs and dialogs</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Adding additional tabs and dialogs">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10985');expand('9272');expand('9246');highlight('10975')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10974.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10976.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">添加附加选项卡和对话框</h3>   
+                
+<p class="bodytext">附加选项卡和对话框的描述文件存储在 ext/dui（动态用户界面）目录中。KISSsoft 每次启动模块时都会评估此目录中的文件。可给这些文件任意命名，但文件扩展名必须始终为 *.dui。<br><br>标签 <span class="code">&lt;module&gt;</span> 告诉 KISSsoft 该描述文件定义的计算模块。对于选项卡，此条目是强制性的。选项卡或对话框的标题由标签 <span class="code">&lt;title&gt;</span> 定义。该标签可以包含实际文本或来自 KISSsoft 词汇表（wpoolUi_.txt）的文本 ID（编号）。<br><br>使用标签 <span class="code">&lt;before&gt;</span> 来定义附加选项卡的位置。如果看不到标签 <span class="code">&lt;before&gt;</span>，附加选项卡将放置在标准系统选项卡之后。附加选项卡也可以用于替换标准选项卡。要排除一个选项卡，请设置标签 <span class="code">&lt;exclude&gt;</span>。<br><br>附加选项卡示例：</p><p class="code">&lt;KISSsoft filetype="userinterface"&gt;</p><p class="code">&lt;module&gt;Z012&lt;/module&gt;</p><p class="code">&lt;title&gt;我的标题&lt;/title&gt;</p><p class="code">&lt;before&gt;Z012_Tolerances&lt;/before&gt;</p><p class="code">&lt;exclude&gt;Z012_BasicData&lt;/exclude&gt;</p><p class="code">&lt;element&gt;a&lt;/element&gt;</p><p class="code">&lt;element&gt;Q&lt;/element&gt;</p><p class="code">&lt;/KISSsoft&gt;</p><p class="bodytext"><br>附加选项卡始终显示。设置 &lt;permanent&gt; 标签可定义该选项卡是否可通过<span class="menu">计算</span>菜单启用。</p><p class="code">&lt;permanent&gt;false&lt;/permanent&gt;</p><p class="bodytext"><br>附加选项卡始终与系统提供的标准选项卡以相同方式工作。插入 <span class="code">&lt;calculation&gt;</span>、<span class="code">&lt;report&gt;</span> 和 <span class="code">&lt;results&gt;</span> 标签来表示特殊选项卡的行为。<span class="code">&lt;calculation&gt;</span> 标签执行一个 COM 函数，所有通过 COM 接口可用的函数在此处同样可用。报告和结果的相应模板名称见"<a class="referencetopic-shabschnitt" href="8346.htm" target="_self">结果和报告</a>"章。</p><p class="bodytext">使用 <span class="code">&lt;setup&gt;</span> 标签将一个 COM 功能分配给附加对话框。当这些对话框运行时，该功能将被执行。<br><br>附加描述文件的示例可向 KISSsoft AG 索取。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Adding additional tabs and dialogs</h3>   
+                
+<p class="bodytext">The description files for additional tabs and dialogs are stored in the ext/dui (dynamic user interface) directory. KISSsoft evaluates the files in this directory every time a module is started. You can give these files any name you want, although the file extension must always be *.dui.<br /><br />The <span class="code">&lt;module&gt;</span> tag tells KISSsoft which calculation module the description file was defined for. This entry is mandatory for tabs. The titles of the tabs or dialogs are defined by the <span class="code">&lt;title&gt;</span> tab. The tag can contain either an actual text or the ID (number) of a text from the KISSsoft Glossary (wpoolUi_.txt).<br /><br />Use the <span class="code">&lt;before&gt;</span> tag to define the position of the additional tabs. If you do not see the <span class="code">&lt;before&gt;</span> tag, the additional tab is placed after the standard system tabs. An additional tab can also be used to replace a standard tab. To exclude a tab, set the <span class="code">&lt;exclude&gt;</span> tag.<br /><br />Example of an additional tab:</p><p class="code">&lt;KISSsoft filetype="userinterface"&gt;</p><p class="code">&lt;module&gt;Z012&lt;/module&gt;</p><p class="code">&lt;title&gt;My own title&lt;/title&gt;</p><p class="code">&lt;before&gt;Z012_Tolerances&lt;/before&gt;</p><p class="code">&lt;exclude&gt;Z012_BasicData&lt;/exclude&gt;</p><p class="code">&lt;element&gt;a&lt;/element&gt;</p><p class="code">&lt;element&gt;Q&lt;/element&gt;</p><p class="code">&lt;/KISSsoft&gt;</p><p class="bodytext"><br />An additional tab is always displayed. Set the &lt;permanent&gt; tag to define that the tab can be enabled via the <span class="menu">Calculations</span> menu.</p><p class="code">&lt;permanent&gt;false&lt;/permanent&gt;</p><p class="bodytext"><br />Additional tabs always work in the same way as the standard tabs supplied with the system. Insert the <span class="code">&lt;calculation&gt;</span>, <span class="code">&lt;report&gt;</span> and <span class="code">&lt;results&gt;</span> tags to represent the behavior of a special tab. The <span class="code">&lt;calculation&gt;</span> tag executes a COM function. All the functions that are available via the COM interface are also available here. The name of the corresponding template is set for the report and the results (see chapter <a class="referencetopic-shabschnitt" href="8346.htm" target="_self">Results and Reports</a>).</p><p class="bodytext">Use the <span class="code">&lt;setup&gt;</span> tag to assign a COM function to additional dialogs. This function is executed when those dialogs run.<br /><br />Examples of additional description files can be requested from KISSsoft AG.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

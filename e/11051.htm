@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>仅在以下条件得到满足时才考虑解决方案： | Only take solutions into account if the following conditions are fulfilled:</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Only take solutions into account if the following conditions are fulfilled:">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11048');expand('11040');expand('8552');expand('9286');expand('9246');highlight('11051')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11050.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11052.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">仅在以下条件得到满足时才考虑解决方案：</h3>   
+                
+<p class="bodytext">用户还可以定义其他标准以确保不满意的解被拒绝。这些值在当量圆柱齿轮的轮齿上进行计算和检查：</p><p class="bodytext"></p><p class="bodytext"><strong>1. 有效直径到成形直径的最小距离</strong> d<sub>Ν</sub><sub class="subscript">f</sub> - d<sub class="subscript">Ff</sub></p><p class="bodytext">啮合干涉发生在有效齿根圆小于齿根成形圆时。此处可以指定有效齿根直径与齿根成形圆之间的最小距离，即有效渐开线与制造渐开线之间的距离。输入值是两个直径的最小差值。结果视图中仅考虑大于或等于输入值的解。</p><p class="bodytext"><strong>2. 最小端面压力角（在齿根成形圆上任一点）</strong> alphafF</p><p class="bodytext">对于差速锥齿轮，需要在横截面（端截面）中具有最小的齿廓角，以确保轴向脱模性。仅考虑结果视图中大于或等于输入值的解。</p><p class="bodytext"><strong>3. 参考齿廓中的最小牙底倒圆角半径</strong> rhofp</p><p class="bodytext">出于可制造性的原因，可能需要一个最小的牙底倒圆角半径（绝对值，单位 mm）。仅将结果视图中大于或等于输入值的解纳入考虑。</p><p class="bodytext"><strong>4. 最小齿顶间隙</strong> c</p><p class="bodytext">出于可制造性的原因，可能需要一个最小的齿顶间隙（绝对值，单位 mm）。此值与齿顶间隙 c 进行比较。仅将齿顶间隙大于或等于输入值的解显示在结果视图中。</p><p class="bodytext"><strong>5. 齿顶成形圆上的最小齿厚</strong> sFvan</p><p class="bodytext">齿顶成形圆上的最小齿厚 sFvan 对于达到所需的齿顶倒圆半径至关重要。此计算考虑了 <span class="menu">修改</span> 选项卡中的齿顶修形。只有齿顶成形圆上的齿厚大于或等于输入值的解才会显示在结果视图中。齿厚 sFvan 在齿宽中部进行检查。如果您还希望在剖面 I 和 II 中检查内侧和外侧的齿厚，请在模块特定设置中选择 <span class="menu">差速器齿轮组的补充说明</span>。</p><p class="bodytext"><strong>6. 制造必须能够采用齿顶倒圆 rK</strong></p><p class="bodytext">只有能够执行 <strong>修改</strong> 选项卡条目中所定义的齿顶倒圆 rK 的解，才会显示在结果视图中。</p><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">如果 <span class="menu">模块特定设置 –&gt; 差速器齿轮组</span> 已选定，这些标准也会在“内侧”和“外侧”剖面中进行检查。然后只有满足预定义标准的解才会被考虑。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Only take solutions into account if the following conditions are fulfilled:</h3>   
+                
+<p class="bodytext">The user can also define other criteria to ensure unsatisfactory solutions are rejected. These values are calculated and checked on the virtual cylindrical gear toothing:</p><p class="bodytext"></p><p class="bodytext"><strong>1. Minimum distance of active diameter to form diameter</strong> d<sub>Ν</sub><sub class="subscript">f</sub> - d<sub class="subscript">Ff</sub></p><p class="bodytext">Meshing interferences occur if the active root circle is less than the root form circle. Here you can specify a minimum value for the distance between the active root diameter and the root form circle, i.e. between active and manufactured involutes. The input value is the minimum difference between the two diameters. Only solutions greater than, or equal to, the input value are taken into account in the results view.</p><p class="bodytext"><strong>2. Minimum transverse pressure angle at a point on root form circle</strong> alphafF</p><p class="bodytext">For differential bevel gears, a minimum profile angle in the transverse section is required to ensure the axial demoldability. Only solutions greater than, or equal to, the input value are taken into account in the results view.</p><p class="bodytext"><strong>3. Minimum root rounding radius in the reference profile</strong> rhofp</p><p class="bodytext">A minimum root rounding radius may be required for reasons of manufacturability (absolute value in mm). Only solutions greater than, or equal to, the input value are taken into account in the results view.</p><p class="bodytext"><strong>4. Minimum tip clearance</strong> c</p><p class="bodytext">A minimum tip clearance may be required for reasons of manufacturability (absolute value in mm). This is compared with tip clearance c. Only solutions with a tip clearance greater than, or equal to, the input value are displayed in the results view.</p><p class="bodytext"><strong>5. Minimum tooth thickness on tip form circle</strong> sFvan</p><p class="bodytext">The minimum tooth thickness on the tip form circle, sFvan, is critical for achieving the required tip rounding radius. This calculation takes into account the tip alterations from the <span class="menu">Modifications</span> tab. Only solutions with a tooth thickness at the tip form circle that is greater than, or equal to, the input value are displayed in the results view. The tooth thickness sFvan is checked in the middle of the facewidth. Select <span class="menu">Additions for differential gears</span> in the Module specific settings if you also want the tooth thickness to be checked outside and inside, in sections I and II.</p><p class="bodytext"><strong>6. Manufacturing must be possible with tip rounding rK</strong></p><p class="bodytext">Only solutions in which the tip rounding rK as defined by the entries in the <strong>Modifications</strong> tab can be executed are displayed in the results view.</p><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">If <span class="menu">Module specific settings –&gt; Differential gears</span> has been selected, these criteria are also checked in an &quot;inside&quot; and &quot;outside&quot; section. Only solutions which meet the predefined criteria are then taken into account.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

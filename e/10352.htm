@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>夹紧连接 | Clamped Connections</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Clamped Connections">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9288');expand('9246');highlight('10352')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8090.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10353.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">夹紧连接</h3>   
+                
+<p class="bodytext">夹紧连接仅用于传递低或中等扭矩（小波动）。</p><p class="bodytext">可以计算两种不同的夹紧连接配置：</p><ul>	<li class="bodytext"><span class="menu">剖分式轮毂</span><br>	对于剖分式轮毂，假设压力在整个接合面上均匀分布。压力可以是均匀表面压力、余弦形表面压力或线性接触。</li></ul><p class="bodytext" style="margin-left:80px"><img height="167" src="Geteilte_Nabe.png" width="150"></p><ul>	<li class="bodytext"><span class="menu">槽式轮毂</span><br>	建议使用尽可能窄的配合，以确保压力主要呈线性性质（因为轴毂也受到弯曲的影响）。计算是针对线性压力的最不利情况进行的。</li></ul><p class="bodytext" style="margin-left:80px"><img src="Geschlitzte_Nabe.png"></p><p class="hint">注意</p><p class="bodytext">滑动和表面压力的安全性计算在文献中由Roloff Matek [80] 描述。弯曲的计算按照Decker [81] 的规定进行。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">本章内容</p><p class="relateditem"><a href="10353.htm" target="_self">计算</a></p><p class="relateditem"><a href="10356.htm" target="_self">尺寸设定</a></p><p class="relateditem"><a href="10355.htm" target="_self">设置</a></p><p class="relateditem"><a href="10354.htm" target="_self">材料</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Clamped Connections</h3>   
+                
+<p class="bodytext">Clamped connections are only used to transfer low or medium torque (minor fluctuations).</p><p class="bodytext">There are two different configurations of clamped connections that can be calculated:</p><ul>	<li class="bodytext"><span class="menu">Split hub</span><br />	In the case of a split hub, it is assumed that pressure is distributed uniformly across the whole joint. The pressure can be uniform surface pressure, cosine-shaped surface pressure or linear contact.</li></ul><p class="bodytext" style="margin-left:80px"><img height="167" src="Geteilte_Nabe.png" width="150" /></p><ul>	<li class="bodytext"><span class="menu">Slotted hub</span><br />	We recommend you use as narrow a fit as possible, to ensure that the pressure is mostly of a linear nature (as hubs are also subject to bending). The calculation is performed for the least practical case of linear pressure.</li></ul><p class="bodytext" style="margin-left:80px"><img src="Geschlitzte_Nabe.png" /></p><p class="hint">Note</p><p class="bodytext">Calculations of safety against sliding and surface pressure are described in literature by Roloff Matek [80]. The calculation of bending is performed as specified by Decker [81].</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">In this chapter</p><p class="relateditem"><a href="10353.htm" target="_self">Calculations</a></p><p class="relateditem"><a href="10356.htm" target="_self">Sizings</a></p><p class="relateditem"><a href="10355.htm" target="_self">Settings</a></p><p class="relateditem"><a href="10354.htm" target="_self">Materials</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

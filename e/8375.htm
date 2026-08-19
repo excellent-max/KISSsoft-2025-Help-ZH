@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>啮合 | Meshing</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Meshing">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8370');expand('8353');expand('9286');expand('9246');highlight('8375')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8374.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11516.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">啮合</h3>   
+                
+<p class="bodytext">显示两个齿轮的啮合。</p><p class="bodytext"></p><p class="hint">关于面齿轮的说明：</p><p class="bodytext"><span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">在 KISSsoft 中，面齿轮是通过在不同截面中模拟制造过程来计算的。您可以同时显示不同的截面。为此，请在图形窗口中打开</span></span></span><span class="menu">属性浏览器</span>，并将您所需的<span class="menu">截面</span>中的该属性设置为<span class="menu">True</span>（见图 23.1）。</p><div class="objectWrapper" data-id="5ba0bcd9956c2" data-type="image" data-caption="Grafikfenster Zahneingriff mit Property Browser"><p class="bodytext"><img data-id="5ba0bcd9956c2" height="230" src="18-z060eingriff_small.png" width="540"></p><p class="figcaption" data-id="5ba0bcd9956c2">图 23.1：带属性浏览器的啮合图形窗口</p></div><p class="bodytext"></p><p class="bodytext">理论齿形与有效齿形之间的差异意味着该齿存在根切！您可以在 2D 视图中更清楚地看到这一点。</p><p class="bodytext"><strong>碰撞检查：</strong></p><p class="bodytext">在生成两个齿轮（在图形显示中）时，您可以选择碰撞显示选项。在图形中，这会（用方块）显示齿轮接触或可能发生碰撞的位置。</p><p class="bodytext"><strong>以黑色显示：</strong>接触（介于 0.005 * 模数距离和 0.001 * 模数穿透之间）</p><p class="bodytext"><strong>以红色显示：</strong>碰撞（大于 0.001 * 模数穿透）</p><p class="bodytext">系统会识别并标记所有啮合齿中的碰撞。此选项对于分析非渐开线齿形或实测齿形（使用 3D 测量机）的生成情况（配合理论单齿面生成检查）特别有用。</p><p class="bodytext">此功能也适用于圆柱齿轮和蜗轮蜗杆（但对蜗轮蜗杆有限制（参见"<a class="referencetopic-shabschnitt" href="10510.htm" target="_self">检查接触区点</a>"章））。</p><p class="hint">注意：</p><p class="bodytext"><br>如果选择了<span class="menu">自动建立齿面接触</span>选项，则只能检查接触时的轮齿啮合。在这种情况下，不再显示碰撞。</p><p class="bodytext"></p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Meshing</h3>   
+                
+<p class="bodytext">Displays the meshing of two gears.</p><p class="bodytext"></p><p class="hint">Note about face gears:</p><p class="bodytext"><span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">In KISSsoft, the face gear is calculated by simulating the manufacturing process in different sections. You can display different sections at the same time. To do this, open the </span></span></span><span class="menu">Property browser </span>in the Graphic window, and set the property in the <span class="menu">section</span> you require to <span class="menu">True</span> (see Figure 23.1).</p><div class="objectWrapper" data-id="5ba0bcd9956c2" data-type="image" data-caption="Grafikfenster Zahneingriff mit Property Browser"><p class="bodytext"><img data-id="5ba0bcd9956c2" height="230" src="18-z060eingriff_small.png" width="540" /></p><p class="figcaption" data-id="5ba0bcd9956c2">Figure 23.1: Meshing graphics window with Property Browser</p></div><p class="bodytext"></p><p class="bodytext">The difference between the theory and the effective tooth form means that the tooth has an undercut! You can see this more clearly in the 2D view.</p><p class="bodytext"><strong>Collision check:</strong></p><p class="bodytext">You can select the collision display option when generating two gears (in the graphical display). In the graphic, this shows (with squares) the points at which the gears touch or where collisions may occur.</p><p class="bodytext"><strong>shown in black:</strong> Contact (between 0.005 * module distance and 0.001 * module penetration)</p><p class="bodytext"><strong>shown in red:</strong> Collision (greater than 0.001 * module penetration)</p><p class="bodytext">The system identifies and marks collisions in all the meshing teeth. This option is particularly useful for analyzing the generation of non-involute tooth forms or measured tooth forms (using a 3D measurement machine) with a theoretical single flank generation check.</p><p class="bodytext">This function is also available for cylindrical gears and worm gears (but with restrictions for worm gears (see chapter <a class="referencetopic-shabschnitt" href="10510.htm" target="_self">Checking the contact pattern</a>)).</p><p class="hint">Note:</p><p class="bodytext"><br />If the <span class="menu">Make flank contact automatically</span> option is selected, you can only check the tooth meshing on contact. In this case, collisions are no longer displayed.</p><p class="bodytext"></p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

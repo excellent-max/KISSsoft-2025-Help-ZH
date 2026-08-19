@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>与变量对话框的交互 | Interactions with variable dialogs</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Interactions with variable dialogs">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7663');expand('7659');expand('7629');expand('9292');expand('9246');highlight('7667')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7665.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7668.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">与变量对话框的交互</h3>   
+                
+<p class="bodytext">您可以与变量对话框进行交互。输入字段中的更改以及列表中的选择可以触发对用户定义函数的回调。然后，您也可以从该回调例程中更改对话框元素。</p><p class="bodytext">为此，请通过变量对话框中的标题输入将局部函数设置为回调：</p><p class="bodytext"><span class="menu">res = CADH_VarDialog([[</span>"<span class="menu">Title</span>"<span class="menu">,PROC(Callback)], Width, Height,</span> <span class="menu">Pitch], [dialog element 1], [dialog element 2], etc.);</span></p><p class="bodytext">如果您对对话框进行更改，现在将调用局部回调函数。该函数声明如下：</p><p class="code">PARres;</p><p class="bodytext"></p><p class="code">PROCCallback</p><p class="code">PARhandle,elemNo,event,eventPar;</p><p class="bodytext"></p><p class="code">IFTYP(elemNo)=STRINGTHEN</p><p class="code">IFelemNo='@combo'ANDevent=C:CBN_SELCHANGETHEN</p><p class="code">IFeventPar=0THEN//owninput,enableinput</p><p class="code">CADH_VarDialogAccess(handle,[['@input1',C:VDLG_ENABLE,TRUE]]);</p><p class="code">ELSE//disableinput,setvaluetozero</p><p class="code">CADH_VarDialogAccess(handle,[['@input1',C:VDLG_ENABLE,FALSE],</p><p class="code">['@input1',c:VDLG_ASSIGN,0]]);</p><p class="code">ENDIF</p><p class="code">ENDIF</p><p class="code">ENDIF</p><p class="code">ENDPROC</p><p class="bodytext"></p><p class="code">res=CADH_VarDialog([['Titel',PROC(Callback)],400,4000.4],</p><p class="code">[[C:VDLG_Real,'@input1'],'Input1:',2],</p><p class="code">[[C:VDLG_StrCom,'@combo'],'Selection:',</p><p class="code">['owninput','calculate'],[0],TRUE]);</p><p class="bodytext"></p><p class="bodytext">句柄会作为代码参数与元素标识符、事件以及其他参数一起传递给对话框。可能的事件如下：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="138">			<p class="tableheading">元素类型</p>			</td>			<td width="180">			<p class="tableheading">事件</p>			</td>			<td width="168">			<p class="tableheading">参数</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">对话框</p>			</td>			<td width="180">			<p class="bodytext">初始化</p>			</td>			<td width="168">			<p class="bodytext">无</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"><span class="menu">WM_INITDIALOG</span></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">组合框</p>			</td>			<td width="180">			<p class="bodytext">选择</p>			</td>			<td width="168">			<p class="bodytext">当前值</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"><span class="menu">CBN_SELCHANGE</span></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">输入字段</p>			</td>			<td width="180">			<p class="bodytext">离开字段</p>			</td>			<td width="168">			<p class="bodytext">当前值</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"><span class="menu">WM_KILLFOCUS </span></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">按钮</p>			</td>			<td width="180">			<p class="bodytext">已选中</p>			</td>			<td width="168">			<p class="bodytext">无</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"><span class="menu">BN_CLICKED </span></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>	</tbody></table><p class="bodytext">作为元素编号，既可以传递结果数组中按索引对应的编号，也可以传递元素名称。如示例所示，可以通过为对话框元素传递一个数组来定义名称，该数组的第一个元素中包含类型和名称。</p><p class="bodytext">使用此函数从回调例程访问对话框：</p><p class="bodytext"><span class="menu">CADH_VarDialogAccess(handle, [[elemNo, action, param],[elemNo,</span> <span class="menu">action, param],...]</span></p><p class="bodytext">此处允许以下操作：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="138">			<p class="tableheading">操作</p>			</td>			<td width="180">			<p class="tableheading">描述</p>			</td>			<td width="168">			<p class="tableheading">参数</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"><span class="menu">VDLG_ASSIGN </span></p>			</td>			<td width="180">			<p class="bodytext">赋值到输入字段</p>			</td>			<td width="168">			<p class="bodytext">新值</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"><span class="menu">VDLG_SELECT</span></p>			</td>			<td width="180">			<p class="bodytext">组合框中的选择</p>			</td>			<td width="168">			<p class="bodytext">[position]/value</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"><span class="menu">VDLG_ENABLE </span></p>			</td>			<td width="180">			<p class="bodytext">选择或取消选择</p>			</td>			<td width="168">			<p class="bodytext">TRUE/FALSE</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"><span class="menu">VDLG_SETFOCUS</span></p>			</td>			<td width="180">			<p class="bodytext">聚焦新元素</p>			</td>			<td width="168">			<p class="bodytext">元素的 ID</p>			</td>		</tr>	</tbody></table><p class="bodytext">如果未指定操作，则返回输入字段中的值。数据以数组形式返回，元素数量与代码参数相同。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Interactions with variable dialogs</h3>   
+                
+<p class="bodytext">You can interact with variable dialogs. Changes in input fields, and selections in lists, can trigger callbacks to a user-defined function. Then, you can also change dialog elements from this callback routine.</p><p class="bodytext">To do this, set a local function as a callback via the title input in the variable dialog:</p><p class="bodytext"><span class="menu">res = CADH_VarDialog([[</span>&quot;<span class="menu">Title</span>&quot;<span class="menu">,PROC(Callback)], Width, Height,</span> <span class="menu">Pitch], [dialog element 1], [dialog element 2], etc.);</span></p><p class="bodytext">The local callback function will now be called if you make changes to the dialog. The function is declared as follows:</p><p class="code">PARres;</p><p class="bodytext"></p><p class="code">PROCCallback</p><p class="code">PARhandle,elemNo,event,eventPar;</p><p class="bodytext"></p><p class="code">IFTYP(elemNo)=STRINGTHEN</p><p class="code">IFelemNo='@combo'ANDevent=C:CBN_SELCHANGETHEN</p><p class="code">IFeventPar=0THEN//owninput,enableinput</p><p class="code">CADH_VarDialogAccess(handle,[['@input1',C:VDLG_ENABLE,TRUE]]);</p><p class="code">ELSE//disableinput,setvaluetozero</p><p class="code">CADH_VarDialogAccess(handle,[['@input1',C:VDLG_ENABLE,FALSE],</p><p class="code">['@input1',c:VDLG_ASSIGN,0]]);</p><p class="code">ENDIF</p><p class="code">ENDIF</p><p class="code">ENDIF</p><p class="code">ENDPROC</p><p class="bodytext"></p><p class="code">res=CADH_VarDialog([['Titel',PROC(Callback)],400,4000.4],</p><p class="code">[[C:VDLG_Real,'@input1'],'Input1:',2],</p><p class="code">[[C:VDLG_StrCom,'@combo'],'Selection:',</p><p class="code">['owninput','calculate'],[0],TRUE]);</p><p class="bodytext"></p><p class="bodytext">A handle is transferred to the dialog as a code parameter, along with an element identifier, the event, and additional parameters. The possible events are:</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="138">			<p class="tableheading">Element type</p>			</td>			<td width="180">			<p class="tableheading">Event</p>			</td>			<td width="168">			<p class="tableheading">Parameter</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">Dialog</p>			</td>			<td width="180">			<p class="bodytext">Initialization</p>			</td>			<td width="168">			<p class="bodytext">none</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"><span class="menu">WM_INITDIALOG</span></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">Combobox</p>			</td>			<td width="180">			<p class="bodytext">Selection</p>			</td>			<td width="168">			<p class="bodytext">Current value</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"><span class="menu">CBN_SELCHANGE</span></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">Input field</p>			</td>			<td width="180">			<p class="bodytext">Leave field</p>			</td>			<td width="168">			<p class="bodytext">Current value</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"><span class="menu">WM_KILLFOCUS </span></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">Button</p>			</td>			<td width="180">			<p class="bodytext">selected</p>			</td>			<td width="168">			<p class="bodytext">none</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"></p>			</td>			<td width="180">			<p class="bodytext"><span class="menu">BN_CLICKED </span></p>			</td>			<td width="168">			<p class="bodytext"></p>			</td>		</tr>	</tbody></table><p class="bodytext">Either the element number according to the index in the results array is transferred as the element number, or the element name is transferred. As in the example, a name can be defined by transferring an array, with a type and name in its first element, for the dialog element.</p><p class="bodytext">Use this function to access the dialog from the callback routine:</p><p class="bodytext"><span class="menu">CADH_VarDialogAccess(handle, [[elemNo, action, param],[elemNo,</span> <span class="menu">action, param],...]</span></p><p class="bodytext">The following actions are permitted here:</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="138">			<p class="tableheading">Action</p>			</td>			<td width="180">			<p class="tableheading">Description</p>			</td>			<td width="168">			<p class="tableheading">Parameter</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"><span class="menu">VDLG_ASSIGN </span></p>			</td>			<td width="180">			<p class="bodytext">Assignment to input field</p>			</td>			<td width="168">			<p class="bodytext">New value</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"><span class="menu">VDLG_SELECT</span></p>			</td>			<td width="180">			<p class="bodytext">Selection in combo box</p>			</td>			<td width="168">			<p class="bodytext">[position]/value</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"><span class="menu">VDLG_ENABLE </span></p>			</td>			<td width="180">			<p class="bodytext">Select or deselect</p>			</td>			<td width="168">			<p class="bodytext">TRUE/FALSE</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext"><span class="menu">VDLG_SETFOCUS</span></p>			</td>			<td width="180">			<p class="bodytext">Focus on new element</p>			</td>			<td width="168">			<p class="bodytext">Element's ID</p>			</td>		</tr>	</tbody></table><p class="bodytext">If no action is specified, the value in the input field is returned. The data is returned as an array, with as many elements as code parameters.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

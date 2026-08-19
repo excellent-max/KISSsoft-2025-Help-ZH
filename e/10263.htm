@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>警告：&quot;切口参数 qs …. 超出 RANGE (1.0 到 8.0) ...&quot; | Warning: "Notch parameter qs …. outside RANGE (1.0 to 8.0) ..."</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Warning: &quot;Notch parameter qs …. outside RANGE (1.0 to 8.0) ...&quot;">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9489');expand('8341');expand('9286');expand('9246');highlight('10263')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10260.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11340.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">警告："切口参数 qs …. 超出 RANGE (1.0 到 8.0) ..."</h3>   
+                
+<p class="bodytext">应力修正因子 Y<sub class="subscript">S</sub>（YS）是根据符合 ISO 6336，第3部分或 DIN 3990，第3部分的公式计算的。该公式使用一个切口参数 q<sub class="subscript">s</sub>，该参数也记载在这些标准中。</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="414"><p class="bodytext"><img src="10265.png" style="height:61px; width:61px"></p></td><td width="78"><p class="bodytext">(23.4)</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext">按标准规定的 Y<sub class="subscript">S</sub> 公式的有效范围在 1.0 ...q<sub class="subscript">s</sub>... 8.0 范围内。不应在此范围之外使用此公式。<br><br>如果 q<sub class="subscript">s</sub> &lt; 1，Y<sub class="subscript">S</sub>（按 q<sub class="subscript">s</sub>=1 计算）会偏大。在这种情况下，计算结果将落在有效范围内。</p><p class="bodytext">如果 q<sub class="subscript">s</sub> &gt; 8, 则 Y<sub class="subscript">S</sub> 将更大（比使用 q<sub class="subscript">s</sub>= 8 计算的值大）. 在这种情况下，计算结果落入无效范围，且 Y<sub class="subscript">s</sub> 因此使用有效的 q<sub class="subscript">s</sub>值(&gt;8). <br><br>在每种情况下，如果 q<sub class="subscript">s</sub> 超过或低于 1 到 8 的范围，报告中将发出警告。此报告还显示哪个 q<sub class="subscript">s</sub>值被进一步用于计算。</p><p class="hint">注意：</p><p class="bodytext">如果您想更改此处描述的过程，可以在设置（STANDARD.Z12 文件等）或已保存的文件（.Z12 等）中进行。为此，请用记事本打开文件并更改这一行： <br>ZS.qsLIMIT=0;<br>至：ZS.qsLIMIT=1;（q<sub class="subscript">s</sub> 不变）<br>或改为 ZS.qsLIMIT=2;（当 q<sub class="subscript">s</sub> &lt;1 时设置为 q<sub class="subscript">s</sub>=1，当 q<sub class="subscript">s</sub> &gt;8 时设置为 q<sub class="subscript">s</sub>=8）。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Warning: &quot;Notch parameter qs …. outside RANGE (1.0 to 8.0) ...&quot;</h3>   
+                
+<p class="bodytext">The stress correction factor Y<sub class="subscript">S</sub> Stress correction factor YS is calculated with a formula that complies with ISO 6336, Part 3 or DIN 3990, Part 3. This formula uses a notch parameter q<sub class="subscript">s</sub> , which is also documented in these standards.</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="414"><p class="bodytext"><img src="10265.png" style="height:61px; width:61px" /></p></td><td width="78"><p class="bodytext">(23.4)</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext">The validity range for the formula for Y<sub class="subscript">S</sub> in accordance with the standard lies in the range 1.0 ...q<sub class="subscript">s</sub>... 8.0. This formula should not be used outside of this range.<br /><br />If q<sub class="subscript">s</sub> &lt; 1, Y<sub class="subscript">S</sub>(calculated with q<sub class="subscript">s</sub>=1), should be rather too large. In this case, the calculation results will fall in the validity area.</p><p class="bodytext">If q<sub class="subscript">s</sub> &gt; 8, then Y<sub class="subscript">S</sub> will be rather larger (than calculated with q<sub class="subscript">s</sub>= 8). In this case, the calculation results fall into the invalid range, and Y<sub class="subscript">s</sub> is therefore calculated with the effective q<sub class="subscript">s</sub>value (&gt;8). <br /><br />In each case, if q<sub class="subscript">s</sub> exceeds, or falls below, the range 1 to 8, a warning is entered in the report. This report also shows which q<sub class="subscript">s</sub>value was used further on in the calculation.</p><p class="hint">Note:</p><p class="bodytext">If you want to change the procedure described here, you can do this either in the setup (STANDARD.Z12 file, etc.) or in a saved file (.Z12, etc.). To do this, open the file in Notepad and change this line: <br />ZS.qsLIMIT=0;<br />to: ZS.qsLIMIT=1; (q<sub class="subscript">s</sub> is not changed)<br />or to ZS.qsLIMIT=2; (q<sub class="subscript">s</sub>&lt;1 is set to q<sub class="subscript">s</sub>=1, q<sub class="subscript">s</sub>&gt;8 is set to q<sub class="subscript">s</sub>=8).</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

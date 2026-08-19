@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>磨削过程细节 | Details about the grinding process</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Details about the grinding process">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11362');expand('7708');expand('9286');expand('9246');highlight('11166')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11362.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11363.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">磨削过程细节</h3>   
+                
+<p class="bodytext">这里用于定义磨削过程。如果在 <span class="menu">基准齿廓</span> 选项卡中存在磨削余量，或在 <span class="menu">修改</span> 选项卡中添加了齿廓修形，则这些输入是必需的。齿顶或齿根的修形起始点规定了磨削过程加工齿轮的高度。还必须预先定义磨削轮齿顶的圆角半径。如果磨削过程达到与所选齿根修形起点相匹配的直径，软件将模拟磨削刀具的完整滚切过程。可能产生的磨削凹口将被计算出来，并在根据 ISO/DIN 进行的强度计算中予以考虑。数据可以作为系数、长度或直径输入。当齿廓修形在特定长度上定义时（例如线性修根），该长度从所选齿顶或齿根修形起点处测量。<br>使用刀具和齿轮的制造过程只能在 <span class="menu">制造</span> 2D 图形中检查。<br><br>通常，齿根区域不包含在磨削范围内。当您为 <span class="menu">齿根修形起点</span> 输入一个值时，如有需要，还可以指定将齿根区域包含在磨削范围内。在这种情况下，通常还要输入磨削轮的齿顶高 [h<span class="superscript">*</span><sub class="subscript">grind</sub>]。齿根处的齿廓修形随后从磨削轮的齿顶成形高度 [h<sub class="subscript">Fa</sub><span class="superscript">*</span><sub class="subscript">grind</sub>] 处开始，但不早于齿轮的基圆。</p><p class="hint">注意：</p><p class="bodytext">关于 <span class="menu">展成</span> 或 <span class="menu">成形磨削</span> 设置的建议：<br>如果不知道磨削过程是采用展成还是成形磨削，我们建议：如果输入无预加工刀具的成品齿，则选择"成形磨削"过程。如果输入带预加工刀具的成品齿，我们还建议选择"展成"。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Details about the grinding process</h3>   
+                
+<p class="bodytext">This is where you define the grinding process. These inputs are necessary if a grinding allowance is present in the <span class="menu">Reference profile</span> tab, or if profile modifications are added in the <span class="menu">Modifications</span> tab. The start of modification at the tip or root specifies the height at which the grinding process processes the gear. The radius of the grinding wheel tip must also be predefined. If the grinding process reaches the diameter that matches the selected start of modification at the root, the software simulates the complete roll-off of the grinding tool. The grinding notch that may result is calculated and taken into account in the strength calculation according to ISO/DIN. You can input the data as coefficients, as lengths or as the diameter. Where profile modifications are defined over a particular length (e.g. linear root relief), the length is measured from the selected start of the modification at the tip or root. <br />The manufacturing process with a tool and gear can only be checked in the <span class="menu">Manufacture</span> 2D graphic.<br /><br />Usually, the tooth root area is not included in grinding. When you enter a value for <span class="menu">Start of modification at root</span> you can, if required, also specify that the root area is included in grinding. The grinding wheel addendum [h<span class="superscript">*</span><sub class="subscript">grind</sub>] is also usually entered in this case. The profile modifications in the root then start from the tip form height [h<sub class="subscript">Fa</sub><span class="superscript">*</span><sub class="subscript">grind</sub>] of the grinding wheel, but not before the gear's base circle.</p><p class="hint">Note:</p><p class="bodytext">Recommendation for the <span class="menu">Generation</span> or <span class="menu">Form grinding</span> setting:<br />if it is not known whether the grinding process is performed using the generation or form grinding process, we recommend you select the &quot;Form grinding&quot; process, if you input finished teeth without a pre-machining tool. We also recommend you select &quot;Generation&quot; if you input finished teeth with a pre-machining tool.</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>范围表 | Range tables</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Range tables">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9060');expand('9042');expand('9272');expand('9246');highlight('9065')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9063.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9066.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">范围表</h3>   
+                
+<p class="bodytext">范围表用于检查给定值是否在定义的范围内变化。</p><p class="bodytext"></p><p class="hint">示例</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext">-- 表类型：范围表；表名称：'A'</p></td></tr><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext">:<span class="menu">TABLE RANGE 'A'r</span></p></td></tr><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext">-- INPUT X drehzahl 定义 <span class="menu">drehzahl</span>（转速）输入参数。</p></td></tr><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext">-- 中间值将按对数插值。</p></td></tr><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext">-- INPUT Y leistung 定义 <span class="menu">leistung</span>（功率）输入参数。</p></td></tr><tr align="left" valign="top"><td width="24"><p class="bodytext"></p></td><td colspan="6" width="468"><p class="bodytext">INPUT X drehzahl l TREAT LOG</p></td></tr><tr align="left" valign="top"><td width="24"><p class="bodytext"></p></td><td colspan="6" width="468"><p class="bodytext">INPUT Y leistung</p></td></tr><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext">-- 数据内容：第 1 行为 INPUT X，第 2 行为 INPUT Y 上限</p></td></tr><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext">-- 第 3 行：INPUT Y 下限</p></td></tr><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext"></p></td></tr><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext">DATA</p></td></tr><tr align="left" valign="top"><td width="24"><p class="bodytext"></p></td><td width="78"><p class="bodytext"></p></td><td width="78"><p class="bodytext">200</p></td><td width="84"><p class="bodytext">300</p></td><td width="84"><p class="bodytext">500</p></td><td width="72"><p class="bodytext">1000</p></td><td width="72"><p class="bodytext">4000</p></td></tr><tr align="left" valign="top"><td width="24"><p class="bodytext"></p></td><td width="78"><p class="bodytext">LOWER</p></td><td width="78"><p class="bodytext">1.5</p></td><td width="84"><p class="bodytext">2.0</p></td><td width="84"><p class="bodytext">3.0</p></td><td width="72"><p class="bodytext">10</p></td><td width="72"><p class="bodytext">20</p></td></tr><tr align="left" valign="top"><td width="24"><p class="bodytext"></p></td><td width="78"><p class="bodytext">UPPER</p></td><td width="78"><p class="bodytext">10</p></td><td width="84"><p class="bodytext">15</p></td><td width="84"><p class="bodytext">20</p></td><td width="72"><p class="bodytext">15</p></td><td width="72"><p class="bodytext">40</p></td></tr><tr align="left" valign="top"><td colspan="7" width="492"><p class="bodytext">END</p></td></tr></tbody></table><p class="bodytext">两个输入变量是 <span class="menu">drehzahl</span>（转速）和 <span class="menu">leistung</span>（功率）。输出值用于判断功率随转速变化时是否处于规定范围内，因此无需另行声明输出变量。转速的中间值按对数插值。表体数据的第一行对应变量 <span class="menu">drehzahl</span>（转速）的值，其他行对应变量 <span class="menu">leistung</span>（功率）的值，其中 <span class="menu">LOWER</span> 为下限，<span class="menu">UPPER</span> 为上限。程序将输入的 <span class="menu">leistung</span>（功率）值与这些限值比较，并报告 <span class="menu">leistung</span> 低于、处于或高于给定范围 <span class="menu">A</span>。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Range tables</h3>   
+                
+<p class="bodytext">Range tables check whether a given value is moving within a defined range.</p><p class="bodytext"></p><p class="hint">Example</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext">-- table type: range table; Name of the table: 'A'</p></td></tr><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext">:<span class="menu">TABLE RANGE 'A'r</span></p></td></tr><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext">-- INPUT X drehzahl defines the <span class="menu">drehzahl</span> (speed) input parameter.</p></td></tr><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext">-- interim values will be interpolated logarithmically.</p></td></tr><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext">-- INPUT Y leistung defines the <span class="menu">leistung</span> (power) input parameter.</p></td></tr><tr align="left" valign="top"><td  width="24"><p class="bodytext"></p></td><td  colspan="6" width="468"><p class="bodytext">INPUT X drehzahl l TREAT LOG</p></td></tr><tr align="left" valign="top"><td  width="24"><p class="bodytext"></p></td><td  colspan="6" width="468"><p class="bodytext">INPUT Y leistung</p></td></tr><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext">-- Data content: 1st line: INPUT X, 2nd line: INPUT Y upper limit</p></td></tr><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext">-- 3rd line: INPUT Y lower limit</p></td></tr><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext"></p></td></tr><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext">DATA</p></td></tr><tr align="left" valign="top"><td  width="24"><p class="bodytext"></p></td><td  width="78"><p class="bodytext"></p></td><td  width="78"><p class="bodytext">200</p></td><td  width="84"><p class="bodytext">300</p></td><td  width="84"><p class="bodytext">500</p></td><td  width="72"><p class="bodytext">1000</p></td><td  width="72"><p class="bodytext">4000</p></td></tr><tr align="left" valign="top"><td  width="24"><p class="bodytext"></p></td><td  width="78"><p class="bodytext">LOWER</p></td><td  width="78"><p class="bodytext">1.5</p></td><td  width="84"><p class="bodytext">2.0</p></td><td  width="84"><p class="bodytext">3.0</p></td><td  width="72"><p class="bodytext">10</p></td><td  width="72"><p class="bodytext">20</p></td></tr><tr align="left" valign="top"><td  width="24"><p class="bodytext"></p></td><td  width="78"><p class="bodytext">UPPER</p></td><td  width="78"><p class="bodytext">10</p></td><td  width="84"><p class="bodytext">15</p></td><td  width="84"><p class="bodytext">20</p></td><td  width="72"><p class="bodytext">15</p></td><td  width="72"><p class="bodytext">40</p></td></tr><tr align="left" valign="top"><td  colspan="7" width="492"><p class="bodytext">END</p></td></tr></tbody></table><p class="bodytext">The two input variables are <span class="menu">drehzahl</span> (speed) and <span class="menu">leistung</span> (power). The output value represents the decision about whether the power in dependency with the speed is moving within a defined range and does not have to be declared. Interim values of the speed will be interpolated logarithmically. The first row of the body data corresponds to values of the <span class="menu">drehzahl</span> (speed) variable. The other rows correspond to values of the <span class="menu">leistung</span> (power) variable with <span class="menu">LOWER</span> as the lower, and <span class="menu">UPPER</span> as the upper, limit. The input value of <span class="menu">leistung</span> (power) is compared with these limits and a report sent to the program stating whether the <span class="menu">leistung</span> is located below, within, or above, the given range <span class="menu">A</span>.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

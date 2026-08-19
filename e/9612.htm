@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>导入轴几何 | Importing the shaft geometry</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Importing the shaft geometry">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8314');expand('8313');expand('8183');expand('9287');expand('9246');highlight('9612')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8325.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10001.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">导入轴几何</h3>   
+                
+<p class="bodytext">在元素树中右键点击"外部"或"内轮廓"以打开上下文菜单。点击 <span class="menu">导入</span> 以导入 .ktx 或 .dxf 文件。</p><p class="bodytext"></p><p class="bodytext"><strong>读取（导入）ktx 文件：</strong></p><p class="bodytext"></p><p class="bodytext">在 KISSsoft 中，转到轴计算元素树，右键点击 <span class="menu">外轮廓</span> 元素以显示上下文菜单。在其中选择 <span class="menu">导入</span> 选项。选择所需的 .ktx 文件并点击 <span class="menu">打开</span>。轴轮廓现在已导入 KISSsoft。</p><p class="bodytext"></p><p class="bodytext"><strong>读取（导入）dxf 文件：</strong></p><p class="bodytext">轴的外轮廓和内轮廓（如果存在）应由 CAD 系统分别输出。</p><p class="hint">注意：</p><p class="bodytext">您可以使用默认值 <strong>ALL</strong> 作为图层名称，这样所有图层都会被导入。您还可以将轮廓作为不同图层中的变体导入。为此，请在相应的输入字段中输入图层名称。如果您不知道确切的图层名称，可以输入一个无效的名称作为测试（例如 xxx）。如果您随后尝试导入此文件，生成的错误消息将列出有效的图层名称。</p><ul>	<li class="bodytext">轴轮廓在 CAD 系统中以中心线显示。使用 X-Y 平面作为坐标系（X 轴为旋转轴），以确保轮廓导入后能被正确解释，并使轴在 KISSsoft 中以 Y-Z 平面（Y 轴为旋转轴）绘制。将轴几何保存为 .dxf 文件。</li>	<li class="bodytext">在 KISSsoft 中，转到轴计算元素树，右键点击 <span class="menu">外轮廓</span> 元素以显示上下文菜单，在其中选择 <span class="menu">导入</span> 选项。选择所需的 .dxf 文件，然后点击 <span class="menu">打开</span>。</li>	<li class="bodytext">这将打开另一个对话框，您可以在其中定义图层、原点（X/Y）和对称轴的角度。输入这些数据后，点击确定以关闭此对话框。然后轴轮廓将按照这些细节导入。</li></ul><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Importing the shaft geometry</h3>   
+                
+<p class="bodytext">Right-click on &quot;outside&quot; or &quot;inner contour&quot; in the Element Tree to open a context menu. Click <span class="menu">Import</span> to import a .ktx or a .dxf file.</p><p class="bodytext"></p><p class="bodytext"><strong>Reading (importing) a ktx file:</strong></p><p class="bodytext"></p><p class="bodytext">In KISSsoft, go to the Shaft calculation Element Tree and right-click on the <span class="menu">Outer contour</span> element to display the context menu. Select the <span class="menu">Import</span> option in it. Select the required .ktx file and click on <span class="menu">Open</span>. The shaft contour is now imported into KISSsoft.</p><p class="bodytext"></p><p class="bodytext"><strong>Reading (importing) a dxf file:</strong></p><p class="bodytext">The outside and inner contour of the shaft (if present) should be output individually by the CAD system.</p><p class="hint">Note:</p><p class="bodytext">You can use the default value <strong>ALL</strong> for the layer name, so that all layers are imported. You can also import the contours as variants in different layers. To do this, enter the layer name in the appropriate input field. If you don't know the exact layer designation, you can input an invalid name as a test (for example, xxx). If you then try to import this file, the resulting error message will list the valid layer names.</p><ul>	<li class="bodytext">The shaft contour is displayed with a centerline in a CAD system.<span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"> </span></span></span>Use the X-Y plane as the coordinates system (the X-axis is the rotational axis) to ensure the contour is interpreted correctly after it has been imported and so that the shaft is drawn in KISSsoft in the Y-Z plane (the Y-axis is the rotational axis). Save the shaft geometry as a .dxf file.</li>	<li class="bodytext">In KISSsoft, go to the Shaft calculation Element Tree and right-click on the <span class="menu">Outer contour</span> element to display a context menu in which you select the <span class="menu">Import</span> option. Select the .dxf file you require, and click <span class="menu">Open</span>.</li>	<li class="bodytext">This opens another dialog, in which you can define the layer, the point of origin (X/Y) and the angle of the symmetry axis. After you have input this data, click OK to close this dialog. The shaft contour is then imported with these details.</li></ul><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

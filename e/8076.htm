@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>圆锥过盈配合 | Conical Interference Fit</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Conical Interference Fit">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9288');expand('9246');highlight('8076')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8105.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10613.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">圆锥过盈配合</h3>   
+                
+<p class="bodytext">使用该模块计算圆锥过盈配合的使用可靠性。确定安装条件。</p><p class="bodytext">提供以下 <strong>计算方法</strong>：</p><p class="bodytext">- 按 Kollmann [78] 定义的方法，验证与尺寸计算。</p><p class="bodytext">- 按 <span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">DIN 7190-2:2017</span></span></span> 定义的方法</p><p class="hint">注意：</p><p class="bodytext" style="margin-left:0cm; margin-right:0cm"><br><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">锥角是圆锥锥面与其轴线之间的夹角 β。圆锥的张开角 α 是锥度角的两倍。</span></span></span></span></p><p class="bodytext"><strong>计算说明：</strong></p><ul>	<li class="bodytext">所有已知的研究都集中在由杨氏模量相同的材料制成的外部和内部元件上。（Kollmann）</li>	<li class="bodytext">如果选择 DIN 7190-2 中描述的方法，且轴和轮毂由不同材料制成，则轴材料应使用杨氏模量较高的材料。</li>	<li class="bodytext">圆锥过盈配合必须始终在上端有一个止挡。因此，程序只处理这种情况。</li>	<li class="bodytext">圆锥过盈配合通常用螺栓轴向夹紧。您必须通过测量长度来仔细检查连接。仅用扭矩扳手拧紧不够精确。圆锥过盈配合仅在特殊情况下通过压装连接。</li>	<li class="bodytext">为了在不用螺栓夹紧的情况下按 Kollmann 进行计算，在纵向方向上使用特殊的摩擦系数。该摩擦系数按 Voith 公司发行的 Antriebstechnik 12 (1973) 系列文章计算。</li></ul><p class="bodytext"><strong><img src="11310.png" style="height:71px; width:192px"></strong></p><p class="bodytext"><strong>纵向滑动粘着系数：</strong> Galle 研究（参见 Kollmann [78] 表 2.20）中详述的摩擦系数：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="186">			<p class="tableheading">材料配对</p>			</td>			<td width="150">			<p class="tableheading">预载荷</p>			</td>			<td width="138">			<p class="tableheading">静摩擦系数</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">Ck60/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">-</p>			</td>			<td width="138">			<p class="bodytext">0.299</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">42CrMo4/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">-</p>			</td>			<td width="138">			<p class="bodytext">0.269</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">31CrMoV9/31CrMoV9</p>			</td>			<td width="150">			<p class="bodytext">-</p>			</td>			<td width="138">			<p class="bodytext">0.247</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">Ck60/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">U</p>			</td>			<td width="138">			<p class="bodytext">0.407</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">42CrMo4/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">U</p>			</td>			<td width="138">			<p class="bodytext">0.297</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">31CrMoV9/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">U</p>			</td>			<td width="138">			<p class="bodytext">0.375</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">31CrMoV9/31CrMoV9</p>			</td>			<td width="150">			<p class="bodytext">U</p>			</td>			<td width="138">			<p class="bodytext">0.468</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">Ck60/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">W</p>			</td>			<td width="138">			<p class="bodytext">0.357</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">42CrMo4/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">W</p>			</td>			<td width="138">			<p class="bodytext">0.472</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">31CrMoV9/31CrMoV9</p>			</td>			<td width="150">			<p class="bodytext">W</p>			</td>			<td width="138">			<p class="bodytext">0.387</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext">载荷分类：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="26">			<p class="bodytext">-</p>			</td>			<td width="199">			<p class="bodytext">无</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="26">			<p class="bodytext">U</p>			</td>			<td width="199">			<p class="bodytext">圆周弯曲载荷</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="26">			<p class="bodytext">W</p>			</td>			<td width="199">			<p class="bodytext">疲劳扭转载荷</p>			</td>		</tr>	</tbody></table><p class="bodytext">没有其他材料组合的粘着系数，因此您需要估算这些值。</p><p class="bodytext">径向过盈配合在纵向和周向滑动方向上的粘着系数：DIN 7190 [79] 表 4（参见"<a class="referencetopic-shabschnitt" href="8097.htm" target="_self">摩擦系数</a>"章）中描述的摩擦系数。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">本章内容</p><p class="relateditem"><a href="10613.htm" target="_self">计算</a></p><p class="relateditem"><a href="8079.htm" target="_self">工况系数</a></p><p class="relateditem"><a href="8080.htm" target="_self">用螺母轴向紧固</a></p><p class="relateditem"><a href="10718.htm" target="_self">轮毂外径可变</a></p><p class="relateditem"><a href="8084.htm" target="_self">锥度</a></p><p class="relateditem"><a href="8086.htm" target="_self">材料</a></p><p class="relateditem"><a href="8088.htm" target="_self">设置</a></p><p class="relateditem"><a href="8090.htm" target="_self">尺寸计算</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Conical Interference Fit</h3>   
+                
+<p class="bodytext">Use this module to calculate the service reliability of a conical interference fit. Determining mounting conditions.</p><p class="bodytext">The following <strong>calculation methods</strong> are available:</p><p class="bodytext">- Method as defined by Kollmann [78], Verification and sizing.</p><p class="bodytext">- Method as defined in <span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">DIN 7190-2:2017</span></span></span></p><p class="hint">Note:</p><p class="bodytext" style="margin-left:0cm; margin-right:0cm"><br /><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">The cone angle is the angle β between the flank of the cone and its axis. The opening angle α of the cone is twice the size of the angle of taper.</span></span></span></span></p><p class="bodytext"><strong>Notes for the calculation:</strong></p><ul>	<li class="bodytext">All known investigations focus on external and internal components made of materials that have the same Young's modulus. (Kollmann)</li>	<li class="bodytext">If you select the method described in DIN 7190-2, and the shaft and hub are made of different materials, the material with the higher Young's modulus should be used for the shaft material.</li>	<li class="bodytext">Conical interference fits must always have a stop at the upper end. For this reason, the program only deals with this situation.</li>	<li class="bodytext">Conical interference fits are normally clamped axially with a bolt. You must check the joint carefully by measuring the length. Simply tightening it with a torque wrench is not accurate enough. Conical interference fits are only joined by pressing them on in exceptional circumstances.</li>	<li class="bodytext">To perform the calculation according to Kollmann, without clamping using a bolt, a special coefficient of friction is used in the longitudinal direction. The coefficient of friction is calculated according to a series of articles in Antriebstechnik 12 (1973), issued by the company Voith.</li></ul><p class="bodytext"><strong><img src="11310.png" style="height:71px; width:192px" /></strong></p><p class="bodytext"><strong>Adhesive coefficient for sliding in the longitudinal direction:</strong> Coefficient of friction as detailed in investigations by Galle (see Kollmann [78], Table 2.20):</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="186">			<p class="tableheading">Material pairing</p>			</td>			<td width="150">			<p class="tableheading">Previous load</p>			</td>			<td width="138">			<p class="tableheading">Coefficient for stiction</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">Ck60/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">-</p>			</td>			<td width="138">			<p class="bodytext">0.299</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">42CrMo4/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">-</p>			</td>			<td width="138">			<p class="bodytext">0.269</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">31CrMoV9/31CrMoV9</p>			</td>			<td width="150">			<p class="bodytext">-</p>			</td>			<td width="138">			<p class="bodytext">0.247</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">Ck60/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">U</p>			</td>			<td width="138">			<p class="bodytext">0.407</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">42CrMo4/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">U</p>			</td>			<td width="138">			<p class="bodytext">0.297</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">31CrMoV9/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">U</p>			</td>			<td width="138">			<p class="bodytext">0.375</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">31CrMoV9/31CrMoV9</p>			</td>			<td width="150">			<p class="bodytext">U</p>			</td>			<td width="138">			<p class="bodytext">0.468</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">Ck60/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">W</p>			</td>			<td width="138">			<p class="bodytext">0.357</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">42CrMo4/16MnCr5</p>			</td>			<td width="150">			<p class="bodytext">W</p>			</td>			<td width="138">			<p class="bodytext">0.472</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="186">			<p class="bodytext">31CrMoV9/31CrMoV9</p>			</td>			<td width="150">			<p class="bodytext">W</p>			</td>			<td width="138">			<p class="bodytext">0.387</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext">Load classifications:</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="26">			<p class="bodytext">-</p>			</td>			<td width="199">			<p class="bodytext">none</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="26">			<p class="bodytext">U</p>			</td>			<td width="199">			<p class="bodytext">Circumferential bending load</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="26">			<p class="bodytext">W</p>			</td>			<td width="199">			<p class="bodytext">Fatigue torsion load</p>			</td>		</tr>	</tbody></table><p class="bodytext">No adhesive coefficients for other combinations of materials are available, so you will have to estimate them.</p><p class="bodytext">Adhesive coefficients for radial interference fits in longitudinal and circumferential direction of sliding: Coefficient of friction as described in DIN 7190 [79], Table 4 (see chapter <a class="referencetopic-shabschnitt" href="8097.htm" target="_self">Coefficients of friction</a>).</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">In this chapter</p><p class="relateditem"><a href="10613.htm" target="_self">Calculation</a></p><p class="relateditem"><a href="8079.htm" target="_self">Application factor</a></p><p class="relateditem"><a href="8080.htm" target="_self">Axial spanning with nut</a></p><p class="relateditem"><a href="10718.htm" target="_self">Variable external diameter of the hub</a></p><p class="relateditem"><a href="8084.htm" target="_self">Conicity</a></p><p class="relateditem"><a href="8086.htm" target="_self">Materials</a></p><p class="relateditem"><a href="8088.htm" target="_self">Settings</a></p><p class="relateditem"><a href="8090.htm" target="_self">Sizings</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

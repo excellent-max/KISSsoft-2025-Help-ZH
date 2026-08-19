@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2S Draft//EN"> 
+<html>
+<head>
+<title> Online Hilfe </title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="Keywords" content="Sprache der Benutzeroberfläche">
+
+<base target="BODY">
+
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+
+
+</head>
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+<div id='data'>
+
+<script>
+  var query_vars = read_querystring();
+  var onlhlp=1;
+  var id=query_vars['id'];
+  if (id) {
+	act_bodyfile=id+'.htm';
+  	wr("<IFRAME name=ALL Frameborder='0' Scrolling='0' Width='100%' Height='" + _frame_height + "' Border='0' marginheight='0' marginwidth='0' src='" + act_bodyfile + "' id='BODYheight'></IFRAME>");
+	}
+  else
+	{
+	location.href='index.htm'
+	}
+
+</script>

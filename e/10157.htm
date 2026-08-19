@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>输入齿轮计算用的材料到数据库中 | Inputting materials for gear calculations in the database</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Inputting materials for gear calculations in the database">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10153');expand('9272');expand('9246');highlight('10157')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10152.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10242.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">在数据库中输入齿轮计算材料</h3>   
+                
+<p class="bodytext">在比较某公司用于齿轮齿的材料时，发现KISSsoft 提供的数据库中并不包含所有所需的材料。</p><p class="bodytext">特别地，以下用于齿轮计算的关键值缺失：σ<sub class="subscript">Flim/</sub>S<sub class="subscript">at</sub>, σ<sub class="subscript">Hlim/</sub>S<sub class="subscript">ac</sub>, R<sub class="subscript">zF</sub>, R<sub class="subscript">zH</sub> 和 B<sub class="subscript">M.</sub></p><p class="bodytext">当用户重新定义材料及其属性时，必须将其与我们材料数据库中的类似材料进行比较。</p><p class="bodytext">首先，在数据库中定义材料的基本数据。然后，定义该基础材料的齿轮特定数据。</p><p class="bodytext">然后，根据硬度值计算 σ<sub class="subscript">Flim/Sat</sub>、σ<sub class="subscript">Hlim/Sac</sub> 的值，如 ISO 6336-5 所述。</p><p class="bodytext">为此，可使用相关的材料简图、输入自定义材料的转换函数（参见 <a class="referencetopic-shabschnitt" href="8715.htm" target="_self">材料</a>）或 ISO 中的公式。S<sub class="subscript">at</sub>、S<sub class="subscript">ac</sub> 值是基于 σ<sub class="subscript">Flim</sub>、σ<sub class="subscript">Hlim</sub> 转换的。</p><p class="bodytext">如果没有输入热接触系数 BM 的值，则使用默认值。</p><p class="bodytext">对于总高度，使用 R<sub class="subscript">zF</sub> 10µm 和 R<sub class="subscript">zH</sub> 3µm 作为平均值。可在 ISO 6336-2 中找到更多详细信息。</p><p class="bodytext"><span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">ISO 6336 第 2 部分提供了更多关于当引入附加材料硬化系数 Z<sub>w</sub> 时，总高度对齿面承载能力计算影响的信息。</span></span></span></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Inputting materials for gear calculations in the database</h3>   
+                
+<p class="bodytext">When comparing the materials used for gear teeth in a particular company, it became evident that not all the required materials were present in the database provided by KISSsoft.</p><p class="bodytext">In particular, the following key values, necessary for gear calculation, are missing: include σ<sub class="subscript">Flim/</sub>S<sub class="subscript">at</sub>, σ<sub class="subscript">Hlim/</sub>S<sub class="subscript">ac</sub>, R<sub class="subscript">zF</sub>, R<sub class="subscript">zH</sub> and B<sub class="subscript">M.</sub></p><p class="bodytext">When you redefine materials and their properties, you must compare them with similar materials in our materials database.</p><p class="bodytext">First of all, define the basic data for a material in the database. Then, define the gear-specific data for this base material.</p><p class="bodytext">Then, calculate the values of σ<sub class="subscript">Flim/Sat</sub>, σ<sub class="subscript">Hlim/Sac</sub> depending on the hardness values, as described in ISO 6336-5.</p><p class="bodytext">To do this, you can either use the relevant material diagram, the conversion function for inputting your own materials (see chapter <a class="referencetopic-shabschnitt" href="8715.htm" target="_self">Materials</a>) or formulae from ISO. The S<sub class="subscript">at</sub>, S<sub class="subscript">ac</sub> values are converted on the basis of σ<sub class="subscript">Flim</sub>, σ<sub class="subscript">Hlim</sub>.</p><p class="bodytext">A default value is used if no value is input for the thermal contact coefficient BM.</p><p class="bodytext">For total heights, specify average values with R<sub class="subscript">zF</sub> 10µm and R<sub class="subscript">zH</sub> 3µm. You will find more detailed information about this in ISO 6336-2.</p><p class="bodytext">ISO 6336, Part 2 provides more information about the influence of the total height <span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">on the calculation of flank load capacity when an additional material hardening factor, Z<sub>w</sub>, has been introduced.</span></span></span></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

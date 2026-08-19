@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>目录结构 | Directory structure</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Directory structure">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9114');expand('9272');expand('9246');highlight('9131')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9114.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9120.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">目录结构</h3>   
+                
+<p class="bodytext">如果有多个用户，建议将共享数据（<strong>数据库</strong>、用户定义的<strong>报告模板</strong>和<strong>标准文件</strong>）存储在服务器上。这样可以确保在发生更改和升级时，所有用户都能使用一套统一的数据。要进行设置，请将 UDB、EXT 和 TEMPLATE 目录放到所有用户均可访问的服务器上，然后设置相应变量 UDBDIR、EXTDIR 和 TEMPLATEDIR（位于 KISS.ini 文件中，见"<a class="referencetopic-shabschnitt" href="9069.htm" target="_self">[PATH] 中的定义</a>"章）。</p><p class="bodytext">如果有多个用户，临时目录则应分别设在各自的本地工作站上，否则不同用户生成的中间结果可能相互覆盖。每套 KISSsoft 安装均使用操作系统中设置的临时用户目录；不过，也可以自定义 CADDIR 和 TEMPDIR 变量，并在 KISS.ini 文件中进行设置（参见“<a class="referencetopic-shabschnitt" href="9069.htm" target="_self">[PATH] 中的定义</a>”一章）。</p><p class="bodytext">打开或保存计算文件或报告时，KISSsoft 会优先显示个人<strong>用户目录</strong>，避免用户反复在系统目录中查找文件。可通过 USERDIR 变量在 KISS.ini 文件中定义该目录（参见“<a class="referencetopic-shabschnitt" href="9069.htm" target="_self">[PATH] 中的定义</a>”一章）。如果已选择当前工作项目（参见“<a class="referencetopic-shabschnitt" href="9116.htm" target="_self">当前工作项目</a>”一章），KISSsoft 会忽略个人用户目录，改为优先显示项目目录。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Directory structure</h3>   
+                
+<p class="bodytext">If there are several users, it is advisable to store shared data (<strong>databases</strong>, user-defined <strong>report templates</strong> and <strong>standard files</strong>) on a server. This ensures that, if there are changes and upgrades, all users will be able to work with one uniform set of data. To set this up, put the UDB, EXT and TEMPLATE directories on a server that can be accessed by all users, and then set the corresponding variables, UDBDIR, EXTDIR and TEMPLATEDIR, in the KISS.ini (see chapter <a class="referencetopic-shabschnitt" href="9069.htm" target="_self">Definitions in [PATH]</a>) file.</p><p class="bodytext">In contrast, if there are several users, the temporary directories should be defined locally on their workstations. Otherwise, the interim results generated for individual users might overwrite each other. For each installation, KISSsoft uses the temporary user directory set in the operating system. The CADDIR and TEMPDIR variables can, however, be tailored in the KISS.ini (see chapter <a class="referencetopic-shabschnitt" href="9069.htm" target="_self">Definitions in [PATH]</a>) file.</p><p class="bodytext">If you want to open or save a calculation file or report, KISSsoft displays your own personal <strong>user directory</strong> as the first choice storage location. This saves you frequent searches in the directories on your system. You can define this user directory via the USERDIR variable in the KISS.ini (see chapter <a class="referencetopic-shabschnitt" href="9069.htm" target="_self">Definitions in [PATH]</a>) file. The user directory will be ignored if you have selected an Active working project (see chapter <a class="referencetopic-shabschnitt" href="9116.htm" target="_self">The active working project</a>). In this case, KISSsoft offers you the project directory as the first choice storage location.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

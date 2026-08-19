@@ -1,0 +1,166 @@
+.bodytext,.bodytextleft,.bodytextright,bodytextcenter,.bodytextspace,
+.indent,.indent2,.indent3,
+.tablebodytext,.tablebodytextleft,.tablebodytextright,.tablebodytextcenter,.tablebodytexttab,
+.tableheading,
+.tablebodysmall,.tablebodysmallcenter,.tablebodysmallintent,.tablebodysmallright,
+li.list,li.list2,li.list3,li.listbullet,li.listbullet2,li.listbullet3,
+li.listnumber,li.listnumber2,.listcontinue,.listcontinue2,li.tablelistbullet,
+.graphic,.biggraphic,biggraphicright,
+.figcaption,listspecial,note,.definition,marginnote,marginright,
+.expandinginlinetemplate,.expandinginline,.expandingblocktemplate,.expandingblock,
+.relatedheading,.relateditem,.relateddocuments,
+.rssdescription
+
+{font-family: arial,helvetica,geneva,"sans Serif";
+}
+
+.titel2 {
+	font-family:arial,verdana,helvetica;
+	font-size: 30px;
+	color: #FFFFFF;
+	font-weight : bold;
+	background-color:#333333;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:10px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+        margin-left: 0px;
+        margin-right: 0px;
+	vertical-align:baseline;
+}
+
+.Titel3 {
+	font-family:arial,verdana,helvetica;
+	font-size: 16px;
+	color: blue;
+	font-weight : bold;
+	background-color:#FFFFFF;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+        margin-left: 0px;
+        margin-right: 0px;
+	vertical-align:baseline;
+}
+.buchzwischentitelteil {
+	font-family:Impact, Charcoal, sans-serif;
+	color:#1075bd;
+	font-size:60px;
+	line-height:34px;
+	letter-spacing:1px;
+	margin:7px 0px 15px 1px;
+}
+.buchzwischentitelnummerformat {
+	font-style: italic;
+	font-family: Times New Roman,serif;
+	font-size: 100px;
+	font-weight:bold;
+}
+.buchzwischentitel {
+	font-family:Impact, Charcoal, sans-serif;
+	color:#1075bd;
+	font-size:30px;
+	line-height:34px;
+	letter-spacing:1px;
+	margin:7px 0px 15px 1px;
+}
+.symbols
+{	font-size:14px
+}
+.symbols-italic
+{display: inline;
+        font-family: "Symbol", verdana, arial, helvetica, sans-serif;
+	font-style: italic;
+	font-size:14px;
+        color: inherit;
+        background-color: inherit;
+       }
+.symbols-sub 
+{display: inline;
+        font-family: "Symbol", verdana, arial, helvetica, sans-serif;
+	font-size:10pt;
+        color: inherit;
+	vertical-align:-4px;
+        background-color: inherit;
+       }
+.symbols-sub-italic
+{display: inline;
+        font-family: "Symbol", verdana, arial, helvetica, sans-serif;
+	font-style: italic;
+	font-size:10pt;
+        color: inherit;
+	vertical-align:-4px;
+        background-color: inherit;
+       }
+.subscript 
+{display: inline;
+	font-size:10pt;
+	font-family: sans-serif;
+        color: inherit;
+	vertical-align:-4px;
+        background-color: inherit;
+       }
+.subscript-italic 
+{display: inline;
+	font-size:10pt;
+	font-style: italic;
+	font-family: Times New Roman,serif;
+        color: inherit;
+	vertical-align:-4px;
+        background-color: inherit;
+       }
+.emphasis{ 
+	font-style: italic; 
+	font-family: Times New Roman,serif;
+	background-color:transparent;
+	}
+.menu{
+	font-familiy: sans-serif;
+	font-weight:bold;
+	color:#1075bd;
+	}
+.bodytext{
+        margin-top: 2pt;
+        margin-bottom: 2pt;
+}
+.tablebodytext,.tablebodytextleft,.tablebodytextright,.tablebodytextcenter,.tablebodytexttab{
+       	margin-top: 0pt;
+	line-height: 1.0;
+}
+.tableheading {
+	border-right:0px
+}
+.markierungbox{
+	font-size:10pt;
+	font-family: sans-serif;
+	font-weight:bold;
+        background-color: #CCD8E3;
+	padding:2px;
+	margin-top: 20px;
+	margin-bottom: 4px;
+        color: black;
+	text-transform:capitalize;
+}
+.heading1,.heading2,.heading3,.heading4 {
+	font-family:Impact, Charcoal, sans-serif;
+	color:#1075bd;
+	font-size:29px;
+	line-height:34px;
+	letter-spacing:1px;
+	margin:7px 0px 15px 1px;
+	background-image:none;
+}
+
+.heading6 {
+	font-size:10pt;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:2px;
+}
+.relatedheading{
+	padding-left:2px;
+	background-color:#1075bd;
+}

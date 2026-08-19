@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>变量 | Variables</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Variables">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7647');expand('7629');expand('9292');expand('9246');highlight('7648')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7647.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7649.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">变量</h3>   
+                
+<p class="bodytext">可以使用以下变量：</p><ul>	<li class="bodytext"><strong>Real</strong>：一个数值。</li>	<li class="bodytext"><strong>String</strong>：一个字符串。输入需用引号括起，例如 "<span class="menu">Text</span>"。</li>	<li class="bodytext"><strong>Point</strong>：具有 3 个分量的坐标或向量。以 {<span class="menu">1,2,3</span>} 格式输入。</li>	<li class="bodytext"><strong>Array</strong>：一维或多维字段。例如输入为 <span class="menu">[</span>"<span class="menu">text</span>"<span class="menu">,1.23,</span>{<span class="menu">1,2,3</span>}<span class="menu">,[1,2]]</span>。</li>	<li class="bodytext"><strong>Function</strong>：可执行函数。最好通过专用输入屏幕输入。</li>	<li class="bodytext"><strong>Element ID</strong>：Classcad 对象的 ID。输出为 $31，输入为不带引号的对象名称。</li>	<li class="bodytext"><strong>List</strong>：以列表框显示，在 Interpreter 中作为数字使用（列表索引，从 0 开始）。列表框通过 <span class="menu">编辑列表</span> 菜单选项定义为数组，例如 ["<span class="menu">one</span>","<span class="menu">two</span>","<span class="menu">three</span>"]。</li>	<li class="bodytext"><strong>Database List</strong>：KISSsoft 数据库中的名称显示在列表框中。在 Interpreter 中，此类型也根据数据库 ID 作为数字使用。要将数据库分配定义为数组，请选择 <span class="menu">编辑列表</span> 菜单选项：["<span class="menu">database</span>","<span class="menu">table</span>"]</li></ul><p class="bodytext"></p><p class="bodytext">每个变量都有一个名称、一个值、一个表达式和不同的标志。如果存在表达式，则变量的值由该表达式定义。因此，表达式特别适合输入公式。相反，如果在值的位置输入公式，则该公式将被求值，结果将被赋值，而实际公式将丢失。<span class="menu">KISSsoft -&gt; KISSsys</span> 和 <span class="menu">KISSsys-&gt; KISSsoft</span> 选项决定了两个程序之间如何交换数据。只有激活了相应选项的变量才会被交换。</p><p class="bodytext">对于 <span class="menu">Real</span>、<span class="menu">String</span>、<span class="menu">Point</span>、<span class="menu">List</span> 和 <span class="menu">Database List</span> 数据类型，还有额外的引用元素和变体元素。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Variables</h3>   
+                
+<p class="bodytext">The following variables can be used:</p><ul>	<li class="bodytext"><strong>Real</strong>: A numerical value.</li>	<li class="bodytext"><strong>String</strong>: A character string. Input in quotation marks e.g. &quot;<span class="menu">Text</span>&quot;.</li>	<li class="bodytext"><strong>Point</strong>: A coordinate or vector with 3 components. Input in {<span class="menu">1,2,3</span>} format.</li>	<li class="bodytext"><strong>Array</strong>: A one-dimensional or multidimensional field. Input as e.g <span class="menu">[</span>&quot;<span class="menu">text</span>&quot;<span class="menu">,1.23,</span>{<span class="menu">1,2,3</span>}<span class="menu">,[1,2]]</span>.</li>	<li class="bodytext"><strong>Function</strong>: An executable function. Input best entered via the special input screen.</li>	<li class="bodytext"><strong>Element ID</strong>: The ID of a Classcad object. Output as $31, input as name of the object with no quotation marks.</li>	<li class="bodytext"><strong>List</strong>: Displayed as a selection list and acts as a number in the Interpreter (list index, beginning with 0). The selection list is defined as an array via the <span class="menu">Edit list</span> menu option, e.g. [&quot;<span class="menu">one</span>&quot;,&quot;<span class="menu">two</span>&quot;,&quot;<span class="menu">three</span>&quot;].</li>	<li class="bodytext"><strong>Database List</strong>: The name from the KISSsoft database is displayed in a selection list. In the Interpreter, this type also acts as a number according to the database ID. To define the database assignment as an array, select the <span class="menu">Edit the list</span> menu option: [&quot;<span class="menu">database</span>&quot;,&quot;<span class="menu">table</span>&quot;]</li></ul><p class="bodytext"></p><p class="bodytext">Each of the variables has a name, a value, an expression and different flags. If an expression is present, the value of the variables is defined via this expression. The expression is therefore particularly well suited for inputting formulae. If, in contrast, a formula is entered in place of the value, this formula will be evaluated and the result will be assigned. The actual formula will be lost. The <span class="menu">KISSsoft -&gt; KISSsys</span> and <span class="menu">KISSsys-&gt; KISSsoft</span> options determine how data is exchanged between the two programs. Only variables with the appropriate option activated are exchanged.</p><p class="bodytext">There are additional reference elements and variant elements for the <span class="menu">Real</span>, <span class="menu">String</span>, <span class="menu">Point</span>, <span class="menu">List</span> and <span class="menu">Database List</span> data types.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

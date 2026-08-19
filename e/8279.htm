@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿轮 | Gears</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Gears">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8266');expand('8183');expand('9287');expand('9246');highlight('8279')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10919.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8284.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">齿轮</h3>   
+                
+<p class="bodytext">如果计算中包括 <strong>齿轮</strong>，可以通过多种不同方式考虑它们：</p><ul>	<li class="bodytext"><strong>齿轮仅起载荷作用：</strong>不考虑齿轮的质量和刚度。</li>	<li class="bodytext"><strong>将齿轮作为质量考虑：</strong>在弯曲计算中，齿轮被作为质量处理。质量由工作节圆与轴的外径之差以及齿轮宽度（与轴相同的比重）得出。</li>	<li class="bodytext"><strong>将齿轮作为质量和刚度考虑：</strong>齿轮被作为轴轮廓的一部分处理（例如，整体式小齿轮轴）。</li>	<li class="bodytext"><strong>按过盈配合安装的齿轮，其刚度按 ISO 6336-1 考虑（用 <em>d<sub>w</sub></em> 代替 <em>d<sub>f</sub></em>）：</strong>轴在中径 <em>d<sub class="subscript">m</sub></em> 处被加强，其中 <em>d<sub class="subscript">m</sub> = (d<sub class="subscript">1</sub>+d<sub class="subscript">2</sub>)/2, d<sub class="subscript">1</sub></em> = 轴直径，<em> d<sub class="subscript">2</sub> </em>= 齿轮的工作节圆。分度圆直径用于计算齿轮的重量。所有其他计算中使用中径（<em>I<sub>xx</sub>, I<sub>zz</sub>, I<sub>p</sub>, W<sub>xx</sub>, W<sub>zz</sub>, W<sub>p</sub></em>）。</li></ul><p class="hint">注意</p><p class="bodytext">如果齿轮通过过盈配合安装在轴上，通常很难评估齿轮在多大程度上加强了轴的刚度。您无法使用 KISSsoft 解决此问题。但是，您可以估计过盈配合的影响：只需对 <span class="menu">作为质量的齿轮 </span> 和 <span class="menu">作为质量和刚度的齿轮 </span> 进行计算，并记录弯曲图中的差异。如果差异很小，则过盈配合没有影响。但是，如果差异显著，您必须输入更精确的信息。为此，您必须在图形轴输入中把齿轮的一部分整合到轴轮廓中。</p><p class="bodytext">如果在同一位置定义了多个相同的齿轮元素，对于具有多个接触的齿轮（例如行星系统中的太阳轮），重量只考虑一次。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Gears</h3>   
+                
+<p class="bodytext">If the calculation includes <strong>gears</strong>, they can be considered in a number of different ways:</p><ul>	<li class="bodytext"><strong>Gears are only load applications:</strong> The masses and stiffnesses of the gears are not taken into account.</li>	<li class="bodytext"><strong>Consider gears as masses:</strong> The gear is handled as a mass in the bending calculation. The mass results from the difference between the operating pitch circle and the external shaft diameter as well as the gear width (same specific weight as the shaft).</li>	<li class="bodytext"><strong>Consider gears as mass and as stiffness:</strong> The gear is handled as part of the shaft contour (for example, integral pinion shaft).</li>	<li class="bodytext"><strong>Consider gears mounted by interference fit with stiffness according to ISO 6336-1 (with <em>d<sub>w</sub></em> instead of <em>d<sub>f</sub></em>):</strong> The shaft is stiffened at the mid diameter <em>d<sub class="subscript">m</sub></em>, with <em>d<sub class="subscript">m</sub> = (d<sub class="subscript">1</sub>+d<sub class="subscript">2</sub>)/2, d<sub class="subscript">1</sub></em> = shaft diameter,<em> d<sub class="subscript">2</sub> </em>= the gear's operating pitch circle. The reference diameter is used to calculate the gear's weight. The mean diameter is used in all the other calculations (<em>I<sub>xx</sub>, I<sub>zz</sub>, I<sub>p</sub>, W<sub>xx</sub>, W<sub>zz</sub>, W<sub>p</sub></em>).</li></ul><p class="hint">Note</p><p class="bodytext">If gears have been mounted on shafts by interference fit, it is usually hardly possible to assess the extent to which the gear stiffens the shaft. You cannot use KISSsoft to solve this problem. However, you can estimate the influence the interference fit has: It is sufficient to perform the calculation for <span class="menu">Gear as mass </span> and for <span class="menu">Gear as mass and stiffness </span> and note the difference in the diagrams of bending. If the difference is small, the interference fit has no influence. However, if the difference is significant, you must enter more precise information. To do this, you must integrate a part of the gear in the shaft contour in the graphical shaft input.</p><p class="bodytext">If multiple identical gear elements are defined at the same position, for a gear with multiple contacts (such as a sun wheel in a planetary system), the weight is only taken into consideration once.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

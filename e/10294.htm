@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>图中啮合 | Meshing in the diagrams</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Meshing in the diagrams">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11063');expand('8865');expand('7708');expand('9286');expand('9246');highlight('10294')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11063.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10728.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">图中啮合</h3>   
+                
+<p class="bodytext">你可以从下拉列表中选择 X 轴的不同取值。此处可以选取滚角、长度（啮合线长度）、齿轮 A 的直径以及转角。</p><p class="hint">注意</p><p class="bodytext">如果你选择 X 轴的转角，齿轮轴线是 0°。</p><p class="bodytext"></p><p class="bodytext">在每张显示啮合线长度 A-E 的图形中，如 ISO 21771 所定义的，必须记住这些特定点对于非变形齿对的计算是按照 ISO 21771 中的规定进行的，没有修改。接触分析考虑了齿的弯曲。根据所使用的齿形修改方式，这会创建一个更早发生且更长的接触。如果例如以角度（或滚角、啮合线长度）作为 X 轴，这种现象很明显。相反，如果以直径作为 X 轴，力图看起来就不同。提前啮合从齿根稍高的点开始，然后垂直向下直到到达点 A。只有到达点 A 后，才会向齿尖方向延伸。因此，力图根据所选择的 X 轴而不同。</p><p class="bodytext">在特殊情况下，涉及较大的齿形修形时，如果齿接触不再延伸到齿顶，并且啮合线偏离理论轨迹（见图15.103），这会导致极其显著的差异。齿形修形会增加转角的范围。</p><p class="bodytext"></p><div class="objectWrapper" data-id="6183ac3e0b55f" data-type="image" data-caption="Normalkraftverlauf einer Verzahnung ohne Modifikationen; links: Darstellung über dem Drehwinkel; rechts: über dem Durchmesser"><p class="bodytext"><img data-id="6183ac3e0b55f" height="247" src="Diagramme-1a.png" width="259"><img data-id="6183ac3e0b55f" height="247" src="Diagramme-1b.png" width="260"></p><p class="figcaption" data-id="6183ac3e0b55f">图15.101: 无任何修形的齿形的法向力曲线；左: 通过转角显示；右: 通过直径显示</p></div><p class="figcaption" data-id="6183ac3e0b55f"></p><div class="objectWrapper" data-id="6183ad1d50f16" data-type="image" data-caption="Normalkraftverlauf einer Verzahnung mit geringer Höhenballigkeit (Eingriff erfolgt bis zum Zahnkopf)"><p class="figcaption"><img data-id="6183ad1d50f16" height="246" src="Diagramme-2a.png" width="258"><img data-id="6183ad1d50f16" height="246" src="Diagramme-2b.png" width="258"></p><p class="figcaption" data-id="6183ad1d50f16">图15.102: 低齿形鼓形修整的齿形的法向力曲线（啮合发生在齿顶）</p></div><p class="figcaption" data-id="6183ad1d50f16"></p><div class="objectWrapper" data-id="6183adf6794c7" data-type="image" data-caption="Spezialfall eines Normalkraftverlaufs bei höherer Belastung und grosser Höhenballigkeit (Eingriff erfolgt nicht bis zum Zahnkopf)"><p class="figcaption"><img data-id="6183adf6794c7" height="247" src="Diagramme-3a.png" width="258"><img data-id="6183adf6794c7" height="247" src="Diagramme-3b.png" width="260"></p><p class="figcaption" data-id="6183adf6794c7">图15.103: 一种特殊情况下的法向力曲线，具有更高的载荷和更大的齿形鼓形修整（啮合不发生在齿顶）</p></div>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Meshing in the diagrams</h3>   
+                
+<p class="bodytext">You can select different values for the X-axis from a drop-down list. Here, you can select the roll angle, the length (length of path of contact), the diameter of gear A and the angle of rotation.</p><p class="hint">Note</p><p class="bodytext">If you select the angle of rotation for the X-axis, the gear axis is 0°.</p><p class="bodytext"></p><p class="bodytext">In every graphic that displays the length of path of contact A-E as defined in ISO 21771, you must remember that these particular points for the non-deformed tooth pair are calculated without modifications, as specified in ISO 21771. Contact analysis takes tooth bending into account. Depending on which tooth modification is used, this creates a contact that occurs earlier and is also longer. This is clearly visible if, for example, normal force is displayed with the angle of rotation (or roll angle, length of path of contact) as the X-axis. In contrast, the force diagram looks different if the diameter is displayed as the X-axis. The premature meshing starts at a slightly higher point on the tooth root and then moves vertically downwards until point A is reached. Only then does it run in the direction of the tooth tip. The force diagram therefore varies, depending on which X-axis is selected.</p><p class="bodytext">In special cases, involving large profile modifications, this results in extremely significant differences if the tooth contact no longer runs to the tooth tip and the path of contact varies from the theoretical progression (see Figure 15.103). The profile modifications increase the range of the angle of rotation.</p><p class="bodytext"></p><div class="objectWrapper" data-id="6183ac3e0b55f" data-type="image" data-caption="Normalkraftverlauf einer Verzahnung ohne Modifikationen; links: Darstellung über dem Drehwinkel; rechts: über dem Durchmesser"><p class="bodytext"><img data-id="6183ac3e0b55f" height="247" src="Diagramme-1a.png" width="259" /><img data-id="6183ac3e0b55f" height="247" src="Diagramme-1b.png" width="260" /></p><p class="figcaption" data-id="6183ac3e0b55f">Figure 15.101: Normal force curve for toothing without any modifications; left: display via the angle of rotation; right: via the diameter</p></div><p class="figcaption" data-id="6183ac3e0b55f"></p><div class="objectWrapper" data-id="6183ad1d50f16" data-type="image" data-caption="Normalkraftverlauf einer Verzahnung mit geringer Höhenballigkeit (Eingriff erfolgt bis zum Zahnkopf)"><p class="figcaption"><img data-id="6183ad1d50f16" height="246" src="Diagramme-2a.png" width="258" /><img data-id="6183ad1d50f16" height="246" src="Diagramme-2b.png" width="258" /></p><p class="figcaption" data-id="6183ad1d50f16">Figure 15.102: Normal force curve for toothing with low profile crowning (meshing occurs up to the tooth tip)</p></div><p class="figcaption" data-id="6183ad1d50f16"></p><div class="objectWrapper" data-id="6183adf6794c7" data-type="image" data-caption="Spezialfall eines Normalkraftverlaufs bei höherer Belastung und grosser Höhenballigkeit (Eingriff erfolgt nicht bis zum Zahnkopf)"><p class="figcaption"><img data-id="6183adf6794c7" height="247" src="Diagramme-3a.png" width="258" /><img data-id="6183adf6794c7" height="247" src="Diagramme-3b.png" width="260" /></p><p class="figcaption" data-id="6183adf6794c7">Figure 15.103: Special case of a normal force curve with a higher load and greater profile crowning (meshing does not occur up to the tooth tip)</p></div>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

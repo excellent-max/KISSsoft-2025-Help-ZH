@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>使用轴计算文件的条件 | Conditions for using shaft calculation files</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Conditions for using shaft calculation files">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10582');expand('8720');expand('7708');expand('9286');expand('9246');highlight('10741')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10739.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10742.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">使用轴计算文件的条件</h3>   
+                
+<p class="bodytext">如果你在使用轴文件，齿轮模块中的尺寸参数必须与所选 W010 文件中的参数一致。更具体地说：</p><ol><li class="bodytext">小齿轮几何必须与轴文件 1 中定义的小齿轮几何一致。选择基于工况节圆、方向（驱动/被驱动）和接触齿面。同样适用于齿轮轴。</li><li class="bodytext">齿轮副性能必须与轴文件中定义的齿轮性能一致。</li><li class="bodytext">小齿轮和齿轮（根据轴文件 W10）的轴转动必须一致。例如，如果小齿轮顺时针转动，齿轮必须逆时针转动。然而，如果齿轮是内齿轮，本例中两者都必须顺时针转动。</li></ol><p class="bodytext">从这些条件中，您还可以很容易地看出这些轴文件是否可用于接触分析。如果这些条件中有一个不满足，则无法进行计算。</p><p class="bodytext">除上述条件外，还检查了有关螺旋角、齿宽和齿轮的工作端面压力角的其他条件（警告）。</p><p class="bodytext">所有条件均可通过“允许的偏差轴/齿轮”条目进行控制，或通过点击“抑制轴/齿轮合理性检查”设置来关闭。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Conditions for using shaft calculation files</h3>   
+                
+<p class="bodytext">If you are working with shaft files, the sizing parameters in the gears module must match those in the selected W010 files. More specifically:</p><ol><li class="bodytext">The pinion geometry must match the geometry defined for the pinion in shaft file 1. The selection is based on the operating pitch circle, the direction (driving/driven) and the contact flank. The same applies to the gear shaft.</li><li class="bodytext">The gear pair performance must match the gear performance defined in the shaft files.</li><li class="bodytext">The shaft rotation for both the pinion and the gear (according to shaft files W10) must be consistent. For example, if the pinion rotates in a clockwise direction, the gear must rotate counterclockwise. However, if the gear is an internal gear, both the pinion and gear must rotate clockwise in this example.</li></ol><p class="bodytext">From these conditions you can also easily see whether the shaft files can be used for the contact analysis. If one of these conditions is not met, no calculation can be performed.</p><p class="bodytext">In addition to the conditions listed above, a number of other conditions (warnings) concerning the helix angle, the facewidth, and the gear's working transverse pressure angle, are also checked.</p><p class="bodytext">All the conditions can controlled with the &quot;Permitted deviation shaft/ gear&quot; entry or switched off by clicking the &quot;Suppress shaft/gear plausibility check&quot; setting.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

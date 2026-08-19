@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>外部表格 | External tables</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="External tables">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9042');expand('9272');expand('9246');highlight('9060')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10436.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9063.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">外部表格</h3>   
+                
+<p class="bodytext">KISSsoft 使用外部表（也称为查找表）来处理更大的数据量。这些外部表的一个或多个输出值被分配给一个或多个输入值（参见图 9.2）。</p><div class="objectWrapper" data-id="5ba0bcdbaccb7" data-type="image" data-caption="Funktionsprinzip externer Tabellen"><p class="bodytext"><img data-id="5ba0bcdbaccb7" height="126" src="08-tabext_inout.png" width="563"></p><p class="figcaption" data-id="5ba0bcdbaccb7">图 9.2: 外部表功能原理</p></div><p class="bodytext">分配给输入数据的输出数据包含在表格中。</p><p class="bodytext">外部表格存储在 <em class="emphasis">/</em><span class="menu">KISSsoft 安装目录</span><em class="emphasis">/</em><span class="menu">dat</span> 中。如果在数据库中输入了新的表格名称，则还必须手动创建同名且文件扩展名为 <span class="menu">.dat</span> 的文件。</p><p class="bodytext">由于表位于外部，KISSsoft 仅能在程序执行时确定它们的数量。用户可直接从中受益，因为他们可以像 KISSsoft 提供的文件一样，自行生成包含数据表的文件。这些表是可读的 ASCII 文件，因此可以由用户进行编辑和扩展。例如，可以使用内部标准作为 ISO 基本公差的替代方案。</p><p class="bodytext">图（参见图 9.3）显示了 KISSsoft 使用的三种表格类型：</p><div class="objectWrapper" data-id="5ba0bcdbacd0b" data-type="image" data-caption="Typen externer Tabellen"><p class="bodytext"><img data-id="5ba0bcdbacd0b" height="184" src="08-tabellenextern_small.png" width="565"></p><p class="figcaption" data-id="5ba0bcdbacd0b">图 9.3: 外部表类型</p></div><p class="bodytext">无论类型如何，表始终具有以下结构：</p><p class="bodytext"><span class="menu">:TABLE 类型</span> <span class="menu">变量或标签</span><br><span class="menu">表头</span><br><span class="menu">DATA</span><br><span class="menu">数据</span><br><span class="menu">END</span></p><p class="bodytext">使用 <span class="menu">:TABLE</span> 命令将文件标记为外部表格。对于 <span class="menu">类型</span> 参数，您必须使用以下指定之一：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="107">			<p class="bodytext"><span class="menu">FUNCTION</span></p>			</td>			<td width="139">			<p class="bodytext">函数表</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="107">			<p class="bodytext"><span class="menu">RANGE</span></p>			</td>			<td width="139">			<p class="bodytext">范围表</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="107">			<p class="bodytext"><span class="menu">LIST</span></p>			</td>			<td width="139">			<p class="bodytext">列表表</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">您可以用 <span class="menu">*</span>、<span class="menu">-</span> 或空格来标记表格中的空白。请注意，如果空格后跟有更多值，则不能使用空格字符。KISSsoft 将空格解释为值分隔符。</p><p class="bodytext">表格标题和正文数据的结构取决于类型，以下各节将通过示例应用进行说明。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">另请参见</p><p class="relateditem"><a href="9063.htm" target="_self">函数表</a></p><p class="relateditem"><a href="9065.htm" target="_self">范围表</a></p><p class="relateditem"><a href="9066.htm" target="_self">列表表</a></p><p class="relateditem"><a href="9067.htm" target="_self">使用的关键词列表</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">External tables</h3>   
+                
+<p class="bodytext">KISSsoft uses external tables, also called look-up tables, to handle larger data volumes. One or more output values from these external tables are assigned to one or more input values (see Figure 9.2).</p><div class="objectWrapper" data-id="5ba0bcdbaccb7" data-type="image" data-caption="Funktionsprinzip externer Tabellen"><p class="bodytext"><img data-id="5ba0bcdbaccb7" height="126" src="08-tabext_inout.png" width="563" /></p><p class="figcaption" data-id="5ba0bcdbaccb7">Figure 9.2: Principle of functionality of external tables</p></div><p class="bodytext">The output data that is assigned to the input data are contained in the table.</p><p class="bodytext">The external tables are stored in the <em class="emphasis">/</em><span class="menu">KISSsoft installation directory</span><em class="emphasis">/</em><span class="menu">dat</span>. If a new table name is entered in a database, a file with the same name and the file extension <span class="menu">.dat</span> must also be created manually.</p><p class="bodytext">Because tables are located externally, KISSsoft can only determine how many of them there are during program execution. The user directly benefits from the fact that they can generate their own files with data tables, in a similar way to the files supplied by KISSsoft. The tables are readable ASCII files and can therefore be edited and expanded by the user. It would, for example, be possible to use an internal standard as an alternative to the ISO base tolerances.</p><p class="bodytext">Figure (see Figure 9.3) shows the three table types used by KISSsoft in one diagram:</p><div class="objectWrapper" data-id="5ba0bcdbacd0b" data-type="image" data-caption="Typen externer Tabellen"><p class="bodytext"><img data-id="5ba0bcdbacd0b" height="184" src="08-tabellenextern_small.png" width="565" /></p><p class="figcaption" data-id="5ba0bcdbacd0b">Figure 9.3: Types of external tables</p></div><p class="bodytext">A table always has the following structure, no matter what type it is:</p><p class="bodytext"><span class="menu">:TABLE type</span> <span class="menu">variable or label</span><br /><span class="menu">table header</span><br /><span class="menu">DATA</span><br /><span class="menu">data</span><br /><span class="menu">END</span></p><p class="bodytext">Use the <span class="menu">:TABLE</span> command to mark the external table as an external table. You must use one of the following designations for the <span class="menu">Type</span> argument:</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="107">			<p class="bodytext"><span class="menu">FUNCTION</span></p>			</td>			<td width="139">			<p class="bodytext">Functions tables</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="107">			<p class="bodytext"><span class="menu">RANGE</span></p>			</td>			<td width="139">			<p class="bodytext">Range tables</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="107">			<p class="bodytext"><span class="menu">LIST</span></p>			</td>			<td width="139">			<p class="bodytext">List tables</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">You can mark blanks in tables with <span class="menu">*</span>, <span class="menu">-</span> or blank spaces. Note here that no space characters can be used if they are followed by more values. KISSsoft interprets blank space as value separators.</p><p class="bodytext">The structure of the table header and the body data, which is dependent on the type, is described with example applications in the following sections.</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">See also</p><p class="relateditem"><a href="9063.htm" target="_self">Functions tables</a></p><p class="relateditem"><a href="9065.htm" target="_self">Range tables</a></p><p class="relateditem"><a href="9066.htm" target="_self">List tables</a></p><p class="relateditem"><a href="9067.htm" target="_self">List of key words used</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

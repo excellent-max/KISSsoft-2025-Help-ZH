@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>接触分析 | Contact analysis</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Contact analysis">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7708');expand('9286');expand('9246');highlight('8828')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11725.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10334.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">接触分析</h3>   
+                
+<p class="bodytext">在计算啮合路径时会考虑载荷。这还会计算齿向载荷分布系数 K<sub class="subscript">H</sub><sub>β</sub>，使用 ISO 6336-1 附录 E 中定义的更精确方法。在这种情况下，啮合刚度可以根据 Weber/Banaschek [21]、ISO 6336-1 或 <span class="menu">自定义输入</span> 来计算（参见设置章中的"接触分析/齿向载荷分布系数"节）。<br>您可以在报告中查看计算结果，或选择 图形 &gt; 接触分析 来显示它。接触分析既可以计算传动误差（作为啮合路径上的长度，单位为 mm），也可以计算旋转角度误差（作为从动齿轮上的角度，单位为 °）。</p><p class="bodytext"><br><strong>分辨率</strong></p><p class="bodytext">您可以为分辨率选择 "自定义输入"、"低"、"中"、"高" 或 "很高" 等级。分辨率定义了收敛条件的终止准则 ε（10^-3 到 10^-6）。</p><p class="bodytext"><img src="11185.png" style="height:51px; width:72px"></p><p class="bodytext">T<sub class="subscript">c</sub>= 计算扭矩，<br>T<sub class="subscript">n</sub>= 公称转矩</p><p class="bodytext">接触分析的公称转矩以及离散化模型的切片数（参见接触分析理论节）。切片数会根据齿轮几何形状和所选分辨率自动设置。所选分辨率越高，自动定义的切片数就越多。您还可以通过将计算精度设置为 "自定义输入" 并点击其旁边的加号按钮来手动输入步数、切片数和齿距数。所输入的步数是每个齿距的步数。</p><p class="bodytext"></p><p class="bodytext"><strong>部分载荷与载荷系数</strong></p><p class="bodytext">可以在"用于计算的载荷 Wt"中输入部分载荷。在计算轴的变形和计算公称转矩时，都会考虑部分载荷。通过选择 <span class="menu">考虑载荷系数</span> 并输入 ISO 系数 k<sub>Α</sub>、K<sub>γ</sub> 和 K<sub>ν</sub>，可以对部分载荷进行缩放。要按 ISO 执行计算，请将 <span class="menu">考虑载荷系数</span> 设置为 ‚K<sub>Α</sub>K<sub>γ</sub>K<sub>ν</sub>‘。"所得部分载荷系数 W't" 字段显示用于接触分析的最终部分载荷。</p><p class="bodytext">如果选中 <span class="menu">考虑载荷谱</span> 选项，则使用 <span class="menu">额定值</span> 选项卡中定义的载荷谱之一来计算接触分析。要考虑各个载荷区间，您必须选择 <span class="menu">额定值</span> 选项卡中带 <span class="menu">仅考虑载荷谱中的一个载荷区间</span> 选项的元素。当考虑载荷谱时，主动轮、工作齿面和旋转方向的配置会根据载荷区间的代数符号而变化。</p><p class="bodytext"></p><p class="bodytext"><strong>摩擦系数</strong></p><p class="bodytext">如果已定义"摩擦系数"，则接触分析会使用摩擦力 Fr 计算功率损失。点击"摩擦系数"右侧的选型按钮，可根据 ISO/TS 6336-22 对摩擦系数进行选型。当对摩擦系数进行选型时，接触分析中会考虑部分载荷和载荷系数。假定啮合中各齿面之间的摩擦系数为常数。</p><p class="bodytext"></p><p class="bodytext"><strong>跳动误差</strong></p><p class="bodytext">您可以在此处输入跳动误差 Fr。然后，该误差将作为中心距的修正量纳入接触分析。您应始终在该列表框中分别使用正跳动误差和负跳动误差各执行一次计算。</p><p class="bodytext"></p><p class="bodytext"><img height="178" src="11356.png" width="416"></p><p class="bodytext"></p><p class="bodytext"><br><strong>单个法向齿距偏差</strong></p><p class="bodytext">您可以在此处预定义单个法向齿距偏差 <em class="emphasis">ƒ</em><span class="subscript-italic">pt</span>。然后，程序会为单个法向齿距偏差计算一个建议值。该值可以带正号或负号输入。然后，针对距离过大或过小的情况输出结果。当考虑单个法向齿距偏差时，接触分析在两个齿距上进行。</p><p class="bodytext"><strong>注意：</strong><br>如果所选的单个法向齿距偏差相对于部分载荷过大，则可能出现数值问题。</p><p class="bodytext"></p><p class="bodytext"></p><p class="bodytext"><img height="252" src="11357.png" width="358"></p><p class="bodytext"></p><p class="bodytext" style="margin-left:0cm; margin-right:0cm"><strong><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">制造偏差</span></span></span></span></strong></p><p class="bodytext" style="margin-left:0cm; margin-right:0cm"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">要考虑制造误差（fpar、ΣfHβ）的影响，请在 <span class="menu">接触分析</span> 选项卡的"制造公差"下拉列表中选择一个合适的值。<br>制造误差会增大法向齿面方向上的齿面间隙。</span></span></span></span></p><div class="objectWrapper" data-id="5e6f7a1ef0ad4" data-type="image" data-caption="Abbildung: Definition der positiven Richtung von Herstellungsfehlern fma und fHβ"><p class="bodytext"><img data-id="5e6f7a1ef0ad4" height="189" src="10849.png" width="189"></p><p class="figcaption" data-id="5e6f7a1ef0ad4">图 15.90：制造误差 fma 和 fHβ 正方向的定义</p></div><p class="bodytext">此处假定误差呈线性分布，因此侧面 I 上的制造误差为 0，在侧面 II 上达到最大值，并沿齿宽呈线性递增。制造误差成对考虑，可为正值或负值。</p><p class="bodytext"></p><p class="bodytext"><strong>中心距与中心距公差</strong><br>"中心距"字段显示用于计算的中心距。它对应于列表框中的中心距，即"中心距公差"、三个中心距公差（下/中/上）之一，或名义中心距，或用户定义的中心距。</p><p class="bodytext"></p><p class="bodytext"><strong>磨损</strong></p><p class="bodytext">您可以使用磨损迭代功能来更详细地定义沿齿面的磨损，因为它会使用磨损后的齿面执行多个接触分析步骤。但是，这会显著增加此计算运行所需的时间。点击 <span class="menu">迭代计算磨损</span> 复选框以选择此选项。</p><p class="bodytext">您可以输入每一步允许的最大磨损。在下面所示的接触分析中，通过仅应用最大允许磨损，缩短了一次迭代后的使用寿命。在接触分析过程的下一步中，会考虑带磨损的齿形。重复该过程，直到达到总使用寿命。<br><br>在模块特定设置（<span class="menu">接触分析</span> 选项卡）中，您可以选择定义迭代磨损计算结果的平滑程度。</p><p class="bodytext"></p><p class="bodytext"><strong>锥形变位系数</strong></p><p class="bodytext">如果选中此选项（在 <span class="menu">计算 &gt; 设置<span class="menu"> &gt; </span> </span> <span class="menu">接触分析</span> 选项卡中），则 <span class="menu">基本数据</span> 中的变位系数可以被覆盖，并且可以相对于齿轮 1 向齿轮副添加一个锥形变位。当与轴向偏移一起使用时，这可以减小轮齿间隙。</p><p class="bodytext"></p><p class="bodytext"></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">另请参见</p><p class="relateditem"><a href="10334.htm" target="_self">接触分析理论</a></p><p class="relateditem"><a href="11409.htm" target="_self">接触分析中的非对称轮齿</a></p><p class="relateditem"><a href="10863.htm" target="_self">离散化模型</a></p><p class="relateditem"><a href="10340.htm" target="_self">边缘刚度降低</a></p><p class="relateditem"><a href="11116.htm" target="_self">行星系统接触分析模型</a></p><p class="relateditem"><a href="11180.htm" target="_self">接触分析的啮合位置</a></p><p class="relateditem"><a href="11532.htm" target="_self">导出结果</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Contact analysis</h3>   
+                
+<p class="bodytext">The load is taken into account when calculating the path of contact. This also calculates the face load factor K<sub class="subscript">H</sub><sub>β</sub> using the more precise method defined in ISO 6336-1, Annex E. In this case, the meshing stiffness can be calculated either according to Weber/Banaschek [21], ISO 6336-1 or <span class="menu">Own input</span> (see &quot;Contact analysis/Face load factor&quot; section in the Settings chapter).<br />You can view the calculation results in the report or select Graphic &gt; Contact analysis to display it. The contact analysis can calculate either the transmission error as a length on the path of contact in mm or the angle of rotation error as an angle on the driven gear in °.</p><p class="bodytext"><br /><strong>Resolution</strong></p><p class="bodytext">You can select the levels &quot;Own Input&quot;, &quot;low&quot;, &quot;medium&quot;, &quot;high&quot; or &quot;very high&quot; for the resolution. Resolution defines the termination criterion of the convergence condition, ε (10^-3 to 10^-6).</p><p class="bodytext"><img src="11185.png" style="height:51px; width:72px" /></p><p class="bodytext">T<sub class="subscript">c</sub>= the calculated torque and<br />T<sub class="subscript">n</sub>= nominal torque</p><p class="bodytext">of the contact analysis and the number of slices of the discretized model (see the Theory of contact analysis section). The number of slices is automatically set according to the gear geometry and the selected resolution. The higher the selected resolution, the higher the number of slices that are defined automatically. You can also enter the number of steps, slices and pitches manually by setting the accuracy of calculation to &quot;Own input&quot; and clicking the Plus button next to it. The number of steps entered is per pitch.</p><p class="bodytext"></p><p class="bodytext"><strong>Partial load and load factors</strong></p><p class="bodytext">The &quot;Partial load for calculation Wt&quot; can be input for the load. The partial load is taken into account both when calculating the shaft deformation and when calculating the nominal torque. The partial load can be scaled by selecting <span class="menu">Take into account load factors</span> and entering ISO coefficients k<sub>Α</sub>, K<sub>γ</sub>, and K<sub>ν</sub>. To perform the calculation according to ISO, set <span class="menu">Take into account load factors</span> to ‚K<sub>Α</sub>K<sub>γ</sub>K<sub>ν</sub>‘. The &quot;Resulting partial load factor W't&quot; field shows the resulting partial load used for the contact analysis.</p><p class="bodytext">If the <span class="menu">Take load spectrum into account</span> option is selected, contact analysis is calculated using one of the load spectra defined in the <span class="menu">Rating</span> tab. To take into account individual load bins, you must select the element with the <span class="menu">Consider only one load bin in the load spectra</span> option in the <span class="menu">Rating</span> tab. When load spectra are taken into account, the configuration of the driving wheel, the working flank, and the direction of rotation, change according to the load bin's algebraic sign.</p><p class="bodytext"></p><p class="bodytext"><strong>Coefficient of friction</strong></p><p class="bodytext">If a &quot;coefficient of friction&quot; has been defined, the contact analysis calculates the power loss using the friction force Fr. Click on the Sizing button to the right of the &quot;Coefficient of friction&quot; to size the coefficient of friction according to ISO/TS 6336-22. The partial load and the load factors are then taken into account in the contact analysis when the coefficient of friction is sized. The coefficient of friction between the flanks is assumed to be a constant in the meshing.</p><p class="bodytext"></p><p class="bodytext"><strong>Runout error</strong></p><p class="bodytext">You can enter the runout error Fr here. This is then included in the contact analysis as a modification to the center distance. You should always perform a calculation with a positive and a negative runout error in the selection list with that name.</p><p class="bodytext"></p><p class="bodytext"><img height="178" src="11356.png" width="416" /></p><p class="bodytext"></p><p class="bodytext"><br /><strong>Single normal pitch deviation</strong></p><p class="bodytext">You can predefine the single normal pitch deviation <em class="emphasis">ƒ</em><span class="subscript-italic">pt</span> here. The program them calculates a proposed value for the single normal pitch deviation. This can be entered with either a positive or negative prefix operator. The results are then output for the case that the distance is too large or small. The contact analysis is performed over two pitches when single normal pitch deviation is taken into account.</p><p class="bodytext"><strong>Note:</strong><br />Numerical problems may arise if the selected single normal pitch deviation is too large relative to the partial load.</p><p class="bodytext"></p><p class="bodytext"></p><p class="bodytext"><img height="252" src="11357.png" width="358" /></p><p class="bodytext"></p><p class="bodytext" style="margin-left:0cm; margin-right:0cm"><strong><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">Manufacturing deviation</span></span></span></span></strong></p><p class="bodytext" style="margin-left:0cm; margin-right:0cm"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">To take the effect of manufacturing errors (fpar, ΣfHβ) into account, select an appropriate value from the &quot;Manufacturing allowances&quot; drop-down list in the <span class="menu">Contact analysis</span> tab.<br />The manufacturing error increases the flank gap in the normal flank direction.</span></span></span></span></p><div class="objectWrapper" data-id="5e6f7a1ef0ad4" data-type="image" data-caption="Abbildung: Definition der positiven Richtung von Herstellungsfehlern fma und fHβ"><p class="bodytext"><img data-id="5e6f7a1ef0ad4" height="189" src="10849.png" width="189" /></p><p class="figcaption" data-id="5e6f7a1ef0ad4">Figure 15.90: Figure: Definition of the positive direction of manufacturing errors fma and fHβ</p></div><p class="bodytext">A linear error distribution is assumed here so that the manufacturing error on side I is 0, is at its maximum on side II, and increases in a linear progression along the facewidth. Manufacturing errors are taken into account in pairs either positively or negatively.</p><p class="bodytext"></p><p class="bodytext"><strong>Center distance and center distance tolerance</strong><br />The &quot;Center distance&quot; field displays the center distance used for the calculation. This corresponds to the center distance in the selection list, either the &quot;Center distance tolerance&quot;, the three center distance allowances (lower/middle/top) or the nominal center distance or the center distance defined by the user.</p><p class="bodytext"></p><p class="bodytext"><strong>Wear</strong></p><p class="bodytext">You can use the wear iteration function to define wear along the tooth flank in more detail because it performs several steps of the contact analysis with the worn tooth flank. However, this does significantly increase the time it takes this calculation to run. Click the <span class="menu">Calculate wear iteratively</span> checkbox to select this option.</p><p class="bodytext">You can input the maximum permitted wear per step. In the contact analysis shown below, the service life after one iteration was reduced by only applying the maximum permissible wear. In the next step in the contact analysis process, the tooth form with wear is taken into account. The process is repeated until the total service life is reached.<br /><br />In the Module specific settings (<span class="menu">Contact analysis</span> tab), you have the option of defining the extent to which the results of the iterative wear calculation are to be smoothed.</p><p class="bodytext"></p><p class="bodytext"><strong>Conical profile shift coefficients</strong></p><p class="bodytext">If this option is selected (in the <span class="menu">Calculation &gt; Settings<span class="menu"> &gt; </span> </span> <span class="menu">Contact analysis</span> tab), the profile shift coefficients in the <span class="menu">Basic data</span> can be overwritten, and a conical profile shift can be added to the gear pair with reference to gear 1. When used together with an axial offset, this can reduce the toothing clearance.</p><p class="bodytext"></p><p class="bodytext"></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">See also</p><p class="relateditem"><a href="10334.htm" target="_self">Theory of contact analysis</a></p><p class="relateditem"><a href="11409.htm" target="_self">Asymmetrical gear teeth in the contact analysis</a></p><p class="relateditem"><a href="10863.htm" target="_self">Discretized model</a></p><p class="relateditem"><a href="10340.htm" target="_self">Reduced stiffness on the edges</a></p><p class="relateditem"><a href="11116.htm" target="_self">Contact analysis model for planetary systems</a></p><p class="relateditem"><a href="11180.htm" target="_self">Meshing position for contact analysis</a></p><p class="relateditem"><a href="11532.htm" target="_self">Exporting results</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

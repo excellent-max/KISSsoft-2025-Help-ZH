@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>按照 Klingelnberg、Gleason 和 Oerlikon 计算 | Calculation according to Klingelnberg, Gleason and Oerlikon</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation according to Klingelnberg, Gleason and Oerlikon">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8553');expand('8552');expand('9286');expand('9246');highlight('8555')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9792.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10784.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">按照 Klingelnberg、Gleason 和 Oerlikon 计算</h3>   
+                
+<p class="bodytext">ISO 10300 或 DIN 3991 中定义的强度计算仅考虑当量圆柱齿轮轮齿法计算中齿宽中部的（模数、螺旋角）关系。锥齿轮的形状及其制造工艺被忽略。因此，无论使用哪种工艺，都可以应用强度计算方法。这也反映了这样一个经验，即螺旋锥齿轮的承载能力受制造工艺的影响很小。</p><p class="bodytext">几何计算程序定义齿宽中部的尺寸，如直径和齿厚。它还计算齿宽外端和内端的直径。这些尺寸取决于锥齿轮的类型。然而，齿轮毛坯的尺寸可能与机床专用软件计算的结果不同，因为工艺描述得不够详细。对于 Gleason 工艺尤其如此。</p><ul>	<li class="bodytext"><strong>Klingelnberg 工艺：</strong><br>	<span class="menu">锥齿轮（KN3028 和 KN3030）和准双曲面齿轮（KN3029 和 KN3030）</span>计算方法使您能够计算几何和强度，并根据 Klingelnberg 内部标准检查制造工艺。然而，这些方法不计算所选 Klingelnberg 机床的机床设置。当您从 Klingelnberg 程序输入公式数据时，必须记住轮齿数据（如模数和螺旋角）始终适用于齿宽中部（除非另有说明）。</li>	<li class="bodytext"><strong>Gleason 工艺：</strong><br>	取决于 Gleason 使用的计算程序，轮齿数据（如模数和螺旋角）要么为齿宽外端预定义，要么为齿宽中部预定义。<br>	使用 <span class="menu">从 GLEASON 数据表</span> <span class="menu">转换</span> 对话框窗口，将 Gleason 数据从齿宽外端转换为齿宽中部的数据（参见"<a class="referencetopic-shabschnitt" href="11439.htm" target="_self">「「「类型」」」</a>"章）。数据转换完成后，即可执行强度计算。尽管锥齿轮尺寸（齿顶和齿根直径）并不总是与真实几何完全一致，但它们足够接近，使您能够检查（变速箱中的）装配条件。此流程不检查该零件是否能在 Gleason 机床上制造。</li>	<li class="bodytext"><strong>Oerlikon 工艺：</strong><br>	Oerlikon 工艺与 Klingelnberg 工艺大致相似（选择 Klingelnberg 锥齿轮类型）。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation according to Klingelnberg, Gleason and Oerlikon</h3>   
+                
+<p class="bodytext">The strength calculation defined in ISO 10300 or DIN 3991 only includes the relationships (module, helix angle) in the middle of the facewidth in the virtual cylindrical gear toothing method calculation. The shape of the bevel, and the process used to manufacture it, are ignored. As a result, the strength calculation method can be applied no matter which procedure is being used. This also reflects the experience that the load capacity of spiral bevel gears is only slightly affected by the manufacturing process.</p><p class="bodytext">The geometry calculation procedure defines the dimensions, such as diameter and tooth thickness, in the middle of the facewidth. It also calculates the diameter at the outside and inside end of the facewidth. These dimensions depend on the type of the bevel. However, the dimensions of the gear blank may differ from the results calculated by machine-specific software because the processes are not described in sufficient detail. This is particularly true for the Gleason process.</p><ul>	<li class="bodytext"><strong>Klingelnberg process:</strong><br />	The <span class="menu">Bevel gear (KN3028 and KN3030) and Hypoid gears (KN3029 and KN3030)</span> calculation methods enable you to calculate geometry and strength and check the manufacturing process according to the Klingelnberg in-house standard. However, these methods do not calculate the machine settings for the selected Klingelnberg machine. When you input formula data from a Klingelnberg program, you must remember that the toothing data, such as module and helix angle, always applies to the middle of the facewidth (unless otherwise specified).</li>	<li class="bodytext"><strong>Gleason process:</strong><br />	Depending on which calculation program Gleason uses, toothing data such as the module and helix angle, is either predefined for the outside end of the facewidth or for the middle of the facewidth.<br />	Use the <span class="menu">Conversion from GLEASON</span> <span class="menu">data sheets</span> dialog window to convert Gleason data from the outside end of the facewidth into data for the middle of the facewidth (see chapter <a class="referencetopic-shabschnitt" href="11439.htm" target="_self">Type</a>). Once this data has been converted, you can perform the strength calculation. Although the bevel dimensions (tip and root diameter) do not always exactly match the actual geometry, they are close enough to enable you to check the assembly conditions (in a gearbox). This procedure does not check to see whether the part can be manufactured on Gleason machines.</li>	<li class="bodytext"><strong>Oerlikon process:</strong><br />	The Oerlikon process is broadly similar to the Klingelnberg process (select the Klingelnberg bevel type).</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

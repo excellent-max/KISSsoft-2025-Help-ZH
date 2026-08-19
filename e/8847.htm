@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>精细定尺寸（宏观几何） | Fine sizing macrogeometry</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Fine sizing macrogeometry">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7708');expand('9286');expand('9246');highlight('8847')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8843.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8850.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">精细定尺寸（宏观几何）</h3>   
+                
+<p class="bodytext">精细定尺寸功能是 KISSsoft 最强大的工具之一。它会针对指定的齿宽和中心距，生成并显示所有可能的几何变体（模数、齿数等）；对于行星齿轮级，通常指定齿轮轮缘直径，并相应改变中心距。这些解以图形方式显示，因此您可以轻松找到最适合您用途的宏观几何变体。</p><p class="bodytext"><img height="145" src="12-feinauslegung_stageii_2016.png" width="565"></p><p class="bodytext">图 14：<span class="menu">齿轮定尺寸，第二阶段 </span></p><p class="bodytext">要调用<span class="menu">精细定尺寸</span>功能，可以转到<span class="menu">计算</span>菜单并选择<span class="menu">精细定尺寸</span>选项，或者点击工具栏中的<img src="8849.png" style="height:24px; width:24px">图标。</p><p class="bodytext">如果您输入名义传动比、中心距、模数区间、齿宽区间和螺旋角区间，以及压力角，KISSsoft 将计算并显示齿数、模数、螺旋角和变位系数的建议值。它还会显示与名义传动比的偏差、比滑和重合度。此模块还可用于对行星齿轮级、三齿轮和四齿轮传动系进行定尺寸。</p><p class="bodytext">初始参数（区间）的输入可通过下拉菜单中提供的几个选项来完成。可用选项如下：</p><ol>	<li style="margin-left: 40px;">最小值、最大值、步长</li>	<li style="margin-left: 40px;">最小值、最大值、步数</li>	<li style="margin-left: 40px;">最小值、步长、步数</li>	<li style="margin-left: 40px;">最小值、步长（%）、步数</li>	<li style="margin-left: 40px;">名义值、±步长（%）、步数</li></ol><p class="bodytext">步数可以是有理数。</p><p class="bodytext">通过此过程找到的所有变体都可以根据多种不同的标准进行评估（传动比精度、重量、强度、轮齿接触刚度偏差等）。</p><p class="bodytext">根据您的需求，还可以对最重要的参数（齿顶圆、齿根圆、最小齿数、允许的根切等）设置限制。除了生成详述各解和摘要的文本报告外，摘要还可以图形方式显示。</p><p class="bodytext">齿宽出现在输入界面中，如有需要可在此修改。</p><p class="bodytext"><strong>行星齿轮的强度定尺寸</strong></p><p class="bodytext">对行星齿轮级进行粗略定尺寸时，假定轮缘是静止的。如果轮缘旋转，则必须在定尺寸后更改转速。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">另请参见</p><p class="relateditem"><a href="8850.htm" target="_self">输入窗口中的必要输入项</a></p><p class="relateditem"><a href="8851.htm" target="_self">条件 I</a></p><p class="relateditem"><a href="11206.htm" target="_self">条件 II</a></p><p class="relateditem"><a href="8856.htm" target="_self">条件 III</a></p><p class="relateditem"><a href="8858.htm" target="_self">结果</a></p><p class="relateditem"><a href="8860.htm" target="_self">图形</a></p><p class="relateditem"><a href="8862.htm" target="_self">3 齿轮的几何精细定尺寸</a></p><p class="relateditem"><a href="11364.htm" target="_self">4 齿轮的几何精细定尺寸</a></p><p class="relateditem"><a href="8864.htm" target="_self">所有变体的附加强度计算</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Fine sizing macrogeometry</h3>   
+                
+<p class="bodytext">The fine sizing function is one of KISSsoft's most powerful tools. It generates and displays all the possible geometry variants (module, number of teeth, etc.) for the specified facewidth and center distance (the gear rim diameter is usually specified for planetary stages and the center distance varied accordingly). The solutions are displayed as graphics, so you can easily see the best possible macrogeometric variant for your purpose.</p><p class="bodytext"><img height="145" src="12-feinauslegung_stageii_2016.png" width="565" /></p><p class="bodytext">Figure 14: <span class="menu">Gear sizing, Phase II </span></p><p class="bodytext">To call the <span class="menu">Fine sizing</span> function, either go to the <span class="menu">Calculation </span>menu and select the <span class="menu">Fine sizing </span>option or click the <img src="8849.png" style="height:24px; width:24px" /> icon in the tool bar.</p><p class="bodytext">If you input a nominal ratio, a center distance, and intervals for the module, facewidth and helix angle, as well as the pressure angle, KISSsoft calculates and displays suggestions for the number of teeth, module, helix angle and profile shift. It also shows the deviation from the nominal ratio, the specific sliding and the contact ratios. This module can also be used to size planetary stages, three and four gears trains.</p><p class="bodytext">The input of the initial parameters (intervals) can be done through several options available in the drop-down menu. The available options are:</p><ol>	<li style="margin-left: 40px;">Minimum, maximum, step size</li>	<li style="margin-left: 40px;">Minimum, maximum, number of steps</li>	<li style="margin-left: 40px;">Minimum, step size, number of steps</li>	<li style="margin-left: 40px;">Minimum, step size in %, number of steps</li>	<li style="margin-left: 40px;">Nominal, +- step size in %, number of steps</li></ol><p class="bodytext">The number of steps can be a rational number.</p><p class="bodytext">All the variants found by this process can be evaluated by a wide range of different criteria (accuracy of ratio, weight, strength, tooth contact stiffness deviation etc.)</p><p class="bodytext">Depending on your requirements, limits can also be set on the most important parameters (tip circle, root circle, minimum number of teeth, tolerated undercut etc.). In addition to creating text reports detailing the solutions and the summary, the summary can also be displayed as a graphic.</p><p class="bodytext">The facewidth appears in the input screen, where you can modify it if required.</p><p class="bodytext"><strong>Sizing of strength for a planetary gear</strong></p><p class="bodytext">When performing rough sizing for planetary stages, it is assumed that the rim is static. If the rim rotates, you must change the speed after sizing.</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">See also</p><p class="relateditem"><a href="8850.htm" target="_self">Necessary entries in the input window</a></p><p class="relateditem"><a href="8851.htm" target="_self">Conditions I</a></p><p class="relateditem"><a href="11206.htm" target="_self">Conditions II</a></p><p class="relateditem"><a href="8856.htm" target="_self">Conditions III</a></p><p class="relateditem"><a href="8858.htm" target="_self">Results</a></p><p class="relateditem"><a href="8860.htm" target="_self">Graphics</a></p><p class="relateditem"><a href="8862.htm" target="_self">Geometry-Fine Sizing for 3 gears</a></p><p class="relateditem"><a href="11364.htm" target="_self">Geometry-Fine Sizing for 4 gears</a></p><p class="relateditem"><a href="8864.htm" target="_self">Additional strength calculation of all variants</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算基础原理 | Underlying principles of calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Underlying principles of calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9336');expand('9286');expand('9246');highlight('8624')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9336.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7708.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算基础原理</h3>   
+                
+<p class="bodytext">直齿或斜齿圆柱齿轮的几何参数根据 ISO 21771 或 DIN 3960 计算。许多手册和标准使用非常相似的方法来计算该几何参数。除了计算几何参数外，了解如何检查缺陷（根切、有效齿廓不足等）的信息也非常有用。刀具制造商或机床制造商提供的技术文档也可能包含相关信息。</p><p class="bodytext">齿厚偏差和侧隙的测量可根据不同标准选择，如 ISO 1328（1970 版）或 DIN 3967。制造公差也可以使用标准来定义，如 ISO 1328（DIN ISO 1328）、AGMA 2000、AGMA 2015、DIN 3961:1978 或 DIN 58405，以适应特定情况。</p><p class="bodytext">强度按照 ISO 6336 或 DIN 3990 等标准计算，通过校核常见缺陷（齿根断裂、点蚀、胶合、微点蚀）。这些标准包含了目前最全面、最详细的计算方法。有两种方法可用于计算抗胶合安全系数。计算胶合安全系数的积分温度法主要用于汽车工业，而闪温法则用于制造涡轮齿轮装置时。目前尚未确定这两种方法中哪一种更可靠。</p><p class="bodytext">微点蚀根据 ISO/TS 6336-22（原 ISO/TR 15144-1）方法 B 计算。对于没有修形的齿轮，此方法非常可靠。但是，对于有修形的齿轮，已规定齿顶修形量 C<sub>a</sub> 必须对应于最佳齿顶修形量 C<sub>eff</sub>（如标准中所建议的）。否则，必须在不考虑修形的情况下执行校核。这是一个显著的缺点，因为修形对微点蚀有相当大的影响。在这种情况下，您应使用方法 A（参见"<a class="referencetopic-shabschnitt" href="10068.htm" target="_self">抗微点蚀安全系数</a>"章）。</p><p class="bodytext">在美国，计算强度时必须采用 AGMA 2001 标准。这种计算方法与 DIN 3990 所要求的相差甚远，以至于结果无法比较。此外，还有许多不同的方法用于计算塑料齿轮的强度。</p><p class="bodytext">应用 DIN 3990 的问题之一是其包含的计算方法种类繁多。在方法 A（涉及测量的精确计算）和方法 D（最简单、粗略的计算）之间，有大约 10 种不同的计算变体可以应用。因此，将 DIN 3990 或 ISO 6336 的计算应用于完全相同的齿轮，得到截然不同的结果也就不足为奇了。只要有可能，KISSsoft 在此计算过程中都会使用最详细的公式进行尺寸设计和分析。此过程对应于方法 B。但是，使用不同程序进行的计算也可能给出截然不同的结果。调查其确切原因也需要花费大量的时间和精力。因此，使用参考程序进行比较要有效和高效得多。其中一个程序是由 FVA（Forschungsverein Antriebstechnik，即德国传动技术研究协会）在慕尼黑工业大学开发的 ST+ 圆柱齿轮程序包。因此，KISSsoft 包含了 <span class="menu">与</span> <span class="menu">FVA 程序一致（DIN 3990）</span> 选项，该选项提供与使用 FVA 代码计算相同的结果（参见"<a class="referencetopic-shabschnitt" href="8642.htm" target="_self">计算方法</a>"章）。KISSsoft 与 FVA 程序获得的结果之间的差异可以忽略不计。这些差异是由于 FVA 程序与 DIN 3990 常规版本之间的细微差异造成的。如果需要，我们可以为您提供多份不同的文档，以帮助您比较这些方法。</p><p class="bodytext">其他有趣的结果取自 Niemann 的著作 [7]：</p><ul>	<li class="bodytext">齿轮功率损失与齿轮损失系数 H<sub class="subscript">V</sub> 的关系（根据公式 (21.11/4)）</li>	<li class="bodytext">平均摩擦系数 μ<sub class="subscript">m</sub> 根据公式 (21.11/6)，其中 1 ≤ v<sub>t</sub> ≤ 50 m/s</li>	<li class="bodytext">齿轮功率损失 P<sub class="subscript">VZ</sub> 根据公式 (21.11/3)</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Underlying principles of calculation</h3>   
+                
+<p class="bodytext">The geometry of straight or angled cylindrical gears is calculated according to ISO 21771 or DIN 3960. Many manuals and standards use very similar methods to calculate this geometry. In addition to calculating the geometry, it is very useful to have information about how to check for defects (undercut, insufficient active profile, etc.). Technical documentation provided by tooling manufacturers or machine tool manufacturers may also include information about this.</p><p class="bodytext">Measurements for tooth thickness allowances and backlash can be selected according to different standards, such as ISO 1328 (1970 edition) or DIN 3967. Manufacturing tolerances can also be defined using standards such as ISO 1328 (DIN ISO 1328), AGMA 2000, AGMA 2015, DIN 3961:1978 or DIN 58405 to suit the particular situation.</p><p class="bodytext">Strength is calculated in accordance with, for example, ISO 6336 or DIN 3990, by verifying common defects (tooth root fracture, pitting, scuffing, micropitting). These standards include the most comprehensive and detailed calculation methods currently available. There are two methods that can be used to calculate safety against scuffing. The integral temperature method of calculating scuffing safety is mainly used in the automobile industry, whereas the flash temperature method is used when turbo gear units are being manufactured. It has not yet been established which of these two methods is the more reliable.</p><p class="bodytext">Micropitting is calculated according to ISO/TS 6336-22 (formerly ISO/TR 15144-1), Method B. This method is very reliable for gears without profile modifications. However, in the case of gears with profile modifications, it has been specified that the tip relief C<sub>a</sub> must correspond to the optimum tip relief C<sub>eff</sub> (as proposed in the standard). If not, the verification must be performed without taking the modification into account. This is a significant disadvantage, because modifications have a considerable effect on micropitting. In this case, you should use Method A (see chapter <a class="referencetopic-shabschnitt" href="10068.htm" target="_self">Safety against micropitting</a>).</p><p class="bodytext">In the USA, the AGMA 2001 standard must be applied when calculating resistance. This calculation method differs so much from that required by DIN 3990 that the results cannot be compared. In addition, there are numerous different methods that are used to calculate the resistance of plastic gears.</p><p class="bodytext">One of the problems with applying DIN 3990 is the wide range of different calculation methods it contains. There are around 10 different calculation variants that can be applied between Method A (exact calculation involving measurements) and Method D (the simplest, rough calculation). It is therefore no surprise that very different results can be obtained from applying calculations according to DIN 3990 or ISO 6336 to the exact same gear wheel. Whenever possible, KISSsoft uses the most detailed formulae for dimensioning and analyses during this calculation procedure. This procedure corresponds to Method B. However, calculations performed using different programs may also give very different results. It also takes a lot of time and effort to investigate the precise reasons for this. It is therefore much more effective and efficient to use a reference program to perform the comparison. One such program is the ST+ cylindrical gear program package developed by the FVA (Forschungsverein Antriebstechnik, (Research Society for Transmission Techniques, Germany)), at the Technical University in Munich. For this reason, KISSsoft includes the <span class="menu">As</span> <span class="menu">in FVA program (DIN 3990)</span> option, which supplies the same results as calculation with the FVA code (see chapter <a class="referencetopic-shabschnitt" href="8642.htm" target="_self">Calculation methods</a>). The differences between results obtained by KISSsoft and the FVA program are negligible. They are due to the minor differences between the FVA program and the regular version of DIN 3990. If requested, we can provide you with a number of different documents to help you compare these methods.</p><p class="bodytext">Other interesting results are taken from Niemann's book [7]:</p><ul>	<li class="bodytext">Gear power loss with gear loss grade H<sub class="subscript">V</sub> according to equation (21.11/4)</li>	<li class="bodytext">Mean coefficient of friction μ<sub class="subscript">m</sub> according to equation (21.11/6) with 1 ≤ v<sub>t</sub> ≤ 50 m/s</li>	<li class="bodytext">Gear power loss P<sub class="subscript">VZ</sub> according to equation (21.11/3)</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

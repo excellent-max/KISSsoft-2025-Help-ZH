@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>定义轴 | Defining Shafts</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Defining Shafts">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9287');expand('9246');highlight('8183')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9287.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8300.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">定义轴</h3>   
+                
+<p class="bodytext">该程序由基础包和不同的专家附加模块组成。提供以下计算：</p><ul>	<li class="bodytext">变形和力、扭矩和应力曲线</li>	<li class="bodytext">固有频率（弯曲、扭转和轴向运动）</li>	<li class="bodytext">屈曲载荷</li>	<li class="bodytext">静强度和疲劳强度</li>	<li class="bodytext">滚动轴承计算</li>	<li class="bodytext">滑动轴承计算</li>	<li class="bodytext">小齿轮所需的齿线修形</li></ul><p class="bodytext"><strong>基础包</strong></p><p class="bodytext">在此模块中，您可以输入几何和材料数据、轴名称、图纸编号、支承、边界条件以及外力和扭矩（联轴器、直齿轮和锥齿轮、蜗杆、蜗轮、带轮等的简化输入）。</p><p class="bodytext">装有机械元件（例如齿轮或轴承）的轴在图形轴编辑器中定义。<br>在此编辑器中定义轴所需的属性如下：</p><ul>	<li class="bodytext">任意尺寸（圆柱和圆锥）、旋转对称截面、实心和空心轴、梁（H 型、I 型或 L 型截面等）</li>	<li class="bodytext">集成的绘图工具，可以对轴轮廓进行简单修改（直径、长度）。您可以通过单击这些元素来编辑它们。</li>	<li class="bodytext">定义缺口几何形状，用于自动计算缺口系数。<br>	此处提供以下缺口几何形状：</li>	<li class="bodytext" style="margin-left: 80px;">圆角</li>	<li class="bodytext" style="margin-left: 80px;">倒角</li>	<li class="bodytext" style="margin-left: 80px;">退刀槽</li>	<li class="bodytext" style="margin-left: 80px;">过盈配合</li>	<li class="bodytext" style="margin-left: 80px;">纵向键槽</li>	<li class="bodytext" style="margin-left: 80px;">环形槽</li>	<li class="bodytext" style="margin-left: 80px;">方形槽</li>	<li class="bodytext" style="margin-left: 80px;">V 型缺口</li>	<li class="bodytext" style="margin-left: 80px;">花键</li>	<li class="bodytext" style="margin-left: 80px;">横向孔</li>	<li class="bodytext">您可以在任意空间位置输入这些力和扭矩值，但是，以下值已预定义：</li>	<li class="bodytext" style="margin-left: 80px;">圆柱齿轮</li>	<li class="bodytext" style="margin-left: 80px;">锥齿轮</li>	<li class="bodytext" style="margin-left: 80px;">蜗杆</li>	<li class="bodytext" style="margin-left: 80px;">蜗轮</li>	<li class="bodytext" style="margin-left: 80px;">联轴器</li>	<li class="bodytext" style="margin-left: 80px;">带轮/V 型带</li>	<li class="bodytext" style="margin-left: 80px;">中心力</li>	<li class="bodytext" style="margin-left: 80px;">偏心力</li>	<li class="bodytext" style="margin-left: 80px;">带转动惯量的外部质量（附加质量）</li>	<li class="bodytext" style="margin-left: 80px;">功率损失</li>	<li class="bodytext">计算以下内容：</li>	<li class="bodytext" style="margin-left: 80px;">轴重量</li>	<li class="bodytext" style="margin-left: 80px;">惯性矩</li>	<li class="bodytext" style="margin-left: 80px;">轴向力</li>	<li class="bodytext" style="margin-left: 80px;">轴在扭矩作用下的静态扭转变形</li>	<li class="bodytext">几何数据以及计算得出的轴承力和圆周力在屏幕和纸面上都有清晰表示。</li></ul><p class="bodytext"></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">本章内容</p><p class="relateditem"><a href="8300.htm" target="_self">输入窗口</a></p><p class="relateditem"><a href="8313.htm" target="_self">元素概览</a></p><p class="relateditem"><a href="8266.htm" target="_self">基本数据</a></p><p class="relateditem"><a href="11621.htm" target="_self">滚动轴承</a></p><p class="relateditem"><a href="8290.htm" target="_self">模块特定设置</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Defining Shafts</h3>   
+                
+<p class="bodytext">This program consists of a base package and different expert add-ins. The following calculations are available:</p><ul>	<li class="bodytext">Deformation and force, torque and stress curves</li>	<li class="bodytext">Eigenfrequencies (bending, torsion and axial movements)</li>	<li class="bodytext">Buckling loads</li>	<li class="bodytext">Static and fatigue strength</li>	<li class="bodytext">Rolling Bearing Calculation</li>	<li class="bodytext">Plain bearing calculation</li>	<li class="bodytext">Necessary flank line modification for pinions</li></ul><p class="bodytext"><strong>Base package</strong></p><p class="bodytext">In this module, you can input geometry and material data, shaft designations, the drawing number, the support, boundary conditions and external forces and torques (simplified input for couplings, spur and bevel gears, worms, worm gears, belt pulleys etc.).</p><p class="bodytext">A shaft with the machine elements mounted on it (for example, gears or bearings) is defined in the graphical shaft editor.<br />The properties required to define a shaft in this editor are:</p><ul>	<li class="bodytext">Any dimensions (cylindrical and conical), rotationally symmetrical cross section, solid and hollow shafts, beams (H-, I- or L-profile etc.)</li>	<li class="bodytext">Integrated drawing tool that enables simple modifications to be made to the shaft contour (diameter, lengths). You can edit these elements by clicking on them.</li>	<li class="bodytext">Definition of notch geometries for the automatic calculation of notch factors.<br />	The following notch geometries are available here:</li>	<li class="bodytext" style="margin-left: 80px;">Radius</li>	<li class="bodytext" style="margin-left: 80px;">Chamfer</li>	<li class="bodytext" style="margin-left: 80px;">Relief groove</li>	<li class="bodytext" style="margin-left: 80px;">Interference fit</li>	<li class="bodytext" style="margin-left: 80px;">Longitudinal key way</li>	<li class="bodytext" style="margin-left: 80px;">Circumferential groove</li>	<li class="bodytext" style="margin-left: 80px;">Square groove</li>	<li class="bodytext" style="margin-left: 80px;">V-notch</li>	<li class="bodytext" style="margin-left: 80px;">Spline</li>	<li class="bodytext" style="margin-left: 80px;">Cross hole</li>	<li class="bodytext">You can enter these values for force and torque in any spatial positions, however, the following values are already predefined:</li>	<li class="bodytext" style="margin-left: 80px;">Cylindrical gear</li>	<li class="bodytext" style="margin-left: 80px;">Bevel gear</li>	<li class="bodytext" style="margin-left: 80px;">Worm</li>	<li class="bodytext" style="margin-left: 80px;">Worm wheel</li>	<li class="bodytext" style="margin-left: 80px;">Coupling</li>	<li class="bodytext" style="margin-left: 80px;">Pulley/V-belt</li>	<li class="bodytext" style="margin-left: 80px;">Centrical force</li>	<li class="bodytext" style="margin-left: 80px;">Eccentric force</li>	<li class="bodytext" style="margin-left: 80px;">External masses with moment of inertia (additional mass)</li>	<li class="bodytext" style="margin-left: 80px;">Power loss</li>	<li class="bodytext">Calculation of:</li>	<li class="bodytext" style="margin-left: 80px;">Shaft weight</li>	<li class="bodytext" style="margin-left: 80px;">Moment of inertia</li>	<li class="bodytext" style="margin-left: 80px;">Axial force</li>	<li class="bodytext" style="margin-left: 80px;">Static twisting of the shaft due to torsion</li>	<li class="bodytext">Clear representation of geometry data and the calculated bearing and peripheral forces both on screen and on paper.</li></ul><p class="bodytext"></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">In this chapter</p><p class="relateditem"><a href="8300.htm" target="_self">Input window</a></p><p class="relateditem"><a href="8313.htm" target="_self">Element overview</a></p><p class="relateditem"><a href="8266.htm" target="_self">Basic data</a></p><p class="relateditem"><a href="11621.htm" target="_self">Rolling bearings</a></p><p class="relateditem"><a href="8290.htm" target="_self">Module specific settings</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

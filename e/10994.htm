@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>效率计算 | Efficiency Calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Efficiency Calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10992');expand('7629');expand('9292');expand('9246');highlight('10994')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10993.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11080.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">效率计算</h3>   
+                
+<p class="bodytext">您可以在 KISSsys 中使用效率计算确定特定齿轮单元的热量水平。已实现多种不同的方法，以便根据 ISO/TR 14179 标准的第 1 部分和第 2 部分选择计算方式。<br><br>热分析可分为两部分：功率损失和散热。还可以考虑外部冷却器。功率损失和散热可细分为几个部分，以便考虑齿轮单元所有单个元件的影响。<br><br>功率损失主要有两种类型：与载荷相关的和与载荷无关的。齿轮单元运行时通常同时存在这两种损失。功率损失还可细分为齿轮单元的各个元件，如齿轮、轴承和密封件。对于齿轮，考虑啮合损失和搅油损失；对于轴承，考虑滚动摩擦和滑动摩擦；对于密封件，考虑密封摩擦。在某些情况下，结果必须谨慎对待，因为所用的计算方法可能无法完全支持特定的几何类型。<br><br>散热可分为通过箱体、基础和旋转部件（输入/输出轴和联轴器）的散热以及冷却油流散热。<br><br>然后，只需给定润滑剂温度、冷却器功率和输入功率，即可计算齿轮单元的总效率和总散热能力。还可以指定这三个参数中的任意两个，计算第三个参数的最优值，即能使齿轮单元达到最佳热量水平的数值。 <span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">换句话说，在这个值下，散热量等于通过功率损失产生的热量。</span></span></span><br><br>标准第 1 部分与第 2 部分的区别在于计算时各数值的输入方式不同。第 1 部分的主要优点是允许输入用于箱体散热计算的自己的传热系数（如果箱体形状非常特殊），而在第 2 部分中，该系数是通过箱体形状的近似值计算的。第 2 部分的主要优点是在计算散热时还考虑了散热片、基础和旋转部件。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Efficiency Calculation</h3>   
+                
+<p class="bodytext">You can use the efficiency calculation in KISSsys to calculate the heat level in a particular gear unit. Several different methods have been implemented to enable you to select how the calculation is to be performed, according to the ISO/TR 14179 standard, Part 1 and Part 2.<br /><br />Thermal analysis can be defined in two sections: power loss and heat dissipation. An external cooler can also be taken into account. Power loss and heat dissipation can be split up into several sections to enable the effect of all the individual gear unit components to be taken into consideration.<br /><br />There are two main types of power loss: load-dependent and non-load-dependent. Both types of loss are usually present when a gear unit is running. Power loss can also be subdivided into gear unit elements, such as gears, bearings and seals. Meshing and churning losses are taken into account for gears, whereas rolling and sliding friction are taken into account for bearings, and seal friction is taken into account for seals. In some cases, the results must be treated with caution, because the calculation methods used may not fully support the geometry type.<br /><br />Heat dissipation can be categorized as heat dissipation through the housing, foundation and rotating parts (input/output shafts and couplings) and cooling oil flow.<br /><br />You can then simply calculate a gear unit's total efficiency and total heat dissipation capacity for a given lubricant temperature, cooler power and input power. You can also specify two of these three entries and calculate the optimum value for the third parameter, which is the value with which you achieve the best heat level for the gear unit. <span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">In other words, this is the value at which the dissipated heat equals the heat generated through the power loss</span></span></span><br /><br />.The difference between Part 1 and Part 2 of the standard is the way in which the different values are entered for the calculations. The main benefit of Part 1 is that it enables you to enter your own heat transfer coefficient for heat dissipation through the housing (if it has a very specific shape), whereas, in Part 2, this coefficient is calculated using an approximation of the shape of the housing. The main benefit of this part is that it also takes fins, foundations and rotating parts into consideration when calculating heat dissipation.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

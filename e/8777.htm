@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿廓修形 | Profile modification</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Profile modification">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8776');expand('8751');expand('7708');expand('9286');expand('9246');highlight('8777')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8776.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8780.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">齿廓修形</h3>   
+                
+<ol>	<li class="bodytext">	<p class="bodytext">从动齿轮上的齿顶修形可减小啮入冲击，而主动齿轮上的齿顶修形可减小啮出冲击。因此，齿顶修形通常同时应用于两个齿轮。仅在特殊情况下才只应用于从动齿轮。</p>	</li>	<li class="bodytext">	<p class="bodytext">计算齿廓修形时，必须始终指定齿顶倒角。否则，有效渐开线将不会包含在计算中。</p>	</li>	<li class="bodytext">	<p class="bodytext">齿面接触刚度始终根据所选计算方法进行计算。或者，接触刚度也可以根据齿形确定（参见<a class="referencetopic-shabschnitt" href="8687.htm" target="_self">齿面接触刚度</a>一章）。</p>	</li>	<li class="bodytext">	<p class="bodytext">沿啮合线长度的各点根据 ISO 21771 进行标注。对于主动小齿轮，必须在小齿轮上从 H -DE 到 E（或 D 到 E）施加齿顶修形，在齿轮上从 A 到 H -AB（或从 A 到 AB）施加。对于从动小齿轮，标注根据 ISO 21771 互换（A 变为 E，E 变为 A）。</p>	</li>	<li class="bodytext">	<p class="bodytext">KISSsoft 根据已由修形值改变的额定扭矩计算齿顶修形值。对于运行扭矩不总是相同的齿轮，修形值假定约为最大力矩的 50 到 75%，在小齿轮和齿轮之间均匀分布。齿顶修形 C<sub>α</sub> 的默认值使用 Niemann 所定义数据的平均值来定义。（稍大的）值（C.I）设置为从动齿轮齿顶处的啮合起点。值 C.II 设置为主动齿轮齿顶处的啮合终点值。当您选择<span class="menu">平滑啮合</span>齿廓修形时，值 C.I 也会设置在啮合终点。<br>对于深齿形（其中 ε<sub>α</sub> &gt; 2），齿顶修形中与载荷相关的部分会根据精度等级（制造质量）降低到 12.5%（对于质量等级 8 级及更差）最高可达 50%（对于质量等级 5 级及更好）。</p>	</li>	<li class="bodytext">	<p class="bodytext">KISSsoft 还会计算修形长度，即所谓的“长修形”，它从啮合线长度的 A 点延伸到 B 点。而“短修形”只到 H-AB 点（A 和 B 的中点）。通常选择短修形。但是，修形长度（从 A 到 AB）不应太短。应始终存在（与齿高相关的）0.2m<sub class="subscript">n</sub> 的最小长度。该值在尺寸计算时进行检查。如果从 A 到 AB 的长度太短，程序会提示您使用 0.2m<sub class="subscript">n</sub> 的最小高度。但是，这样做的结果是未修形部分的重合度将小于 1.0（&lt; 2.0，对于 ε<sub>α</sub> &gt; 2 的深齿形）。程序随后会显示一条消息告知您这一点。</p><div class="objectWrapper" data-id="5ba0bcdad5097" data-type="image" data-caption="Abbildung 14.34: Eingriffsstrecke Stirnrad"><p class="bodytext"><img data-id="5ba0bcdad5097" src="12-stirnradeingriffsstrecke.png" style="height:423px; width:500px"></p><p class="figcaption" data-id="5ba0bcdad5097">图 15.67：图 14.34：圆柱齿轮的啮合线长度</p></div>	<p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcdad50f5" data-type="image" data-caption="Kurze (links) und lange Profilmodifikation"><p class="bodytext"><img data-id="5ba0bcdad50f5" src="10100.png" style="height:230.4px; width:500.8px"></p><p class="figcaption" data-id="5ba0bcdad50f5">图 15.68：短（左）和长齿廓修形</p></div>	</li>	<li class="bodytext">	<p class="bodytext"><span class="menu">齿廓修形</span>的类型会影响抗胶合安全系数的计算方式。<br>如果选择<span class="menu">用于高承载能力齿轮</span>（根据 Niemann 给出的建议），接触末端（啮合线上的 E 点）的齿廓修形会略小于接触开始处的齿廓修形。<br>如果选择<span class="menu">平滑啮合</span>，接触末端的齿廓修形会设置为与接触开始处的齿廓修形相同的值。</p>	</li></ol>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Profile modification</h3>   
+                
+<ol>	<li class="bodytext">	<p class="bodytext">Tip relief on the driven gear reduces the entry impact, whereas tip relief on the driving gear reduces the exit impact. Tip reliefs are therefore usually applied to both gears. They are only applied to the driven gear alone in exceptional circumstances.</p>	</li>	<li class="bodytext">	<p class="bodytext">When calculating the profile modification, you must always specify the tip chamfer. If not, the active involute will not be included in the calculation.</p>	</li>	<li class="bodytext">	<p class="bodytext">Tooth contact stiffness is always calculated according to the selected calculation method. Alternatively, the contact stiffness can also be determined from the tooth form (see chapter <a class="referencetopic-shabschnitt" href="8687.htm" target="_self">Tooth contact stiffness</a>).</p>	</li>	<li class="bodytext">	<p class="bodytext">The points along the length of path of contact are labeled according to ISO 21771. In the case of a driving pinion, a tip modification must be applied on the pinion from H -DE to E (or D to E) and on a gear, from A to H -AB (or from A to AB). For a driven pinion, the labels are swapped according to ISO 21771 (A becomes E, E becomes A).</p>	</li>	<li class="bodytext">	<p class="bodytext">KISSsoft calculates the tip relief value for a nominal torque that has been changed by the modification value. In the case of gears that do not always have the same operating torque, the modification value is assumed to be approximately 50 to 75% of the maximum moment, evenly distributed across the pinion and the gear. The default value for tip relief C<sub>α</sub> is defined using the mean value of the data as defined by Niemann. A (somewhat greater) value (C.I) is set as the meshing start at the tip of the driven gear. The value C.II is set as the value for the meshing end at the tip of the driving gear. When you select the <span class="menu">For smooth meshing</span> profile modification, the value C.I is also set at the meshing end.<br />	For deep tooth forms, where ε<sub>α</sub> &gt; 2, the load-dependent portion of tip relief is reduced, depending on accuracy grade (manufacturing quality), to 12.5% (for quality level 8 and poorer) and up to 50% (for quality level 5 and better).</p>	</li>	<li class="bodytext">	<p class="bodytext">KISSsoft also calculates the modification length, also known as the &quot;long modification&quot;, which extends from point A to point B of the length of path of contact. However, the &quot;short modification&quot; only goes to point H-AB (the midpoint between A and B). Usually, the short modification is selected. However, the modification length (from A to AB) should not be too short. A minimum length (related to the tooth height) of 0.2m<sub class="subscript">n</sub> should always be present. This value is checked during sizing. If the length from A to AB is too short, the program prompts you to use a minimum height of 0.2m<sub class="subscript">n</sub>. However, the result of this is that the contact ratio in the unmodified part will be less than 1.0 (&lt; 2.0 for deep tooth forms where ε<sub>α</sub> &gt; 2). The program then displays an message telling you of this.</p><div class="objectWrapper" data-id="5ba0bcdad5097" data-type="image" data-caption="Abbildung 14.34: Eingriffsstrecke Stirnrad"><p class="bodytext"><img data-id="5ba0bcdad5097" src="12-stirnradeingriffsstrecke.png" style="height:423px; width:500px" /></p><p class="figcaption" data-id="5ba0bcdad5097">	Figure 15.67: Figure 14.34: Length of path of contact for a cylindrical gear</p></div>	<p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcdad50f5" data-type="image" data-caption="Kurze (links) und lange Profilmodifikation"><p class="bodytext"><img data-id="5ba0bcdad50f5" src="10100.png" style="height:230.4px; width:500.8px" /></p><p class="figcaption" data-id="5ba0bcdad50f5">	Figure 15.68: Short (left) and long profile modification</p></div>	</li>	<li class="bodytext">	<p class="bodytext">The type of <span class="menu">profile modification</span> has an effect on how safety against scuffing is calculated.<br />	If you select <span class="menu">For high load capacity gears</span> according to the suggestion given in Niemann, the profile modification at the end of the contact (point E on the path of contact) is somewhat less than the profile modification at the beginning of the contact.<br />	If you select <span class="menu">For smooth meshing</span>, the profile modification at the end of contact is set to the same values as the profile modification at the beginning of contact.</p>	</li></ol>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

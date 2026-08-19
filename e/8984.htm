@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>到 Siemens NX 的 3D 接口： | 3D interface to Siemens NX:</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="3D interface to Siemens NX:">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8924');expand('9272');expand('9246');highlight('8984')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8982.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8988.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">与 Siemens NX 的 3D 接口：</h3>   
+                
+<p class="bodytext">制造商：KISSsoft AG</p><p class="bodytext">Siemens NX 与 KISSsoft 之间的接口在 3D CAD 系统中建立了直接集成。借助它，所有 KISSsoft 计算模块都可以直接从 Siemens NX 内部运行。在 KISSsoft 中计算的圆柱齿轮或锥齿轮可以直接在 NX 中作为 3D 零件（参见 <a class="referencetopic-shabschnitt" href="8927.htm" target="_self">3D 齿轮的生成</a> 一章）以真实齿形生成。在 KISSsoft 中计算的轴可以作为由圆柱和圆锥元素组成的 3D 零件（参见 <a class="referencetopic-shabschnitt" href="10232.htm" target="_self">3D 轴的生成</a> 一章）直接在 NX 中生成。您可以按照 DIN 3971 图 1 创建外齿或内齿的直齿或斜齿圆柱齿轮、直齿或斜齿齿条、蜗杆或直齿锥齿轮以及轴。<br><br>如果您要生成新零件，将首先打开 <span class="menu">新建</span> 对话框。在其中，您可以输入用于生成零件的文件名。当您使用 <span class="menu">Teamcenter</span> 时，其对话框会自动显示，以便您也可以在 Teamcenter 环境中生成或保存零件。<br><br>您还可以选择为现有轴添加轮齿（参见 <a class="referencetopic-shabschnitt" href="8996.htm" target="_self">存在现有轴数据时的轮齿</a> 一章）。此外，2D 范围内的齿轮制造数据（参见 <a class="referencetopic-shabschnitt" href="8981.htm" target="_self">添加制造数据</a> 一章）<span style="font-size:11.0pt"><span style="line-height:107%"><span style='font-family:"Calibri",sans-serif'> </span></span></span>可以通过该接口自动作为表格插入到图纸中。齿轮制造数据被附加到相应的切口（齿槽）上。</p><p class="bodytext"></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">另请参见</p><p class="relateditem"><a href="8988.htm" target="_self">集成 KISSsoft 插件（在 CAD 中的菜单选项）</a></p><p class="relateditem"><a href="8994.htm" target="_self">从 Add-in 调用 KISSsoft</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">3D interface to Siemens NX:</h3>   
+                
+<p class="bodytext">Manufacturer: KISSsoft AG</p><p class="bodytext">The interface between Siemens NX and KISSsoft creates the direct integration in the 3D CAD system. Use this to run all KISSsoft calculation modules directly from within Siemens NX. Cylindrical or bevel gears calculated in KISSsoft can be generated directly in NX as a 3D part (see chapter <a class="referencetopic-shabschnitt" href="8927.htm" target="_self">Generation of 3D gears</a>) with a real tooth form. Shafts calculated with KISSsoft can be generated as a 3D part comprising cylinder and cone elements (see chapter <a class="referencetopic-shabschnitt" href="10232.htm" target="_self">Generating 3D shafts</a>) directly in NX. You can create cylindrical gears with straight or helical teeth, which are outside or inside, racks with straight or helical teeth, worms, or straight-toothed bevel gears, as defined in DIN 3971, Figure 1, and shafts.<br /><br />If you are generating a new part, the <span class="menu">New</span> dialog opens first. In it, you can enter the name of the file in which the part should be generated. When you use <span class="menu">Teamcenter</span>, its dialog is displayed automatically so you can also generate or save the part in the Teamcenter environment.<br /><br />You also have the option of adding toothing to existing shafts (see chapter <a class="referencetopic-shabschnitt" href="8996.htm" target="_self">Gear teeth if existing shaft data is present</a>). In addition, gear manufacturing data in the 2D range (see chapter <a class="referencetopic-shabschnitt" href="8981.htm" target="_self">Adding manufacturing data</a>)<span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"> </span></span></span>can automatically be inserted on the drawing as a table, with the interface. The gear manufacturing data is attached to the relevant cutout (tooth space).</p><p class="bodytext"></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">See also</p><p class="relateditem"><a href="8988.htm" target="_self">Integrating the KISSsoft Add-in (menu options in CAD)</a></p><p class="relateditem"><a href="8994.htm" target="_self">Calling KISSsoft from the Add-in</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

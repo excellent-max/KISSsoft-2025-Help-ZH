@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算 | Calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10590');expand('10467');expand('9246');highlight('10591')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10590.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10593.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算</h3>   
+                
+<p class="bodytext"><strong>输入弹簧力/定义参考扭矩</strong></p><p class="bodytext">若决定输入弹簧力（参考扭矩检查已选），则参考扭矩按以下方式计算：</p><p class="bodytext"><img src="10598.png" style="height:63px; width:128px"></p><p class="bodytext">F<sub class="subscript">k </sub>（N）：活塞力（F<sub class="subscript">K</sub> = p<sub class="subscript">K</sub>/A<sub class="subscript">K</sub>）</p><p class="bodytext">p<sub class="subscript">K</sub> (N/mm<sup><span class="superscript">2</span></sup>): 活塞压力</p><p class="bodytext">A<sub class="subscript">K</sub> (mm<sup><span class="superscript">2</span></sup>)：活塞表面积</p><p class="bodytext">F<sub class="subscript">l </sub>（N）：使摩擦片接触的弹簧力</p><p class="bodytext">F<sub class="subscript">v </sub>（N）：弹簧力的预紧力</p><p class="bodytext">F (N): 第一板上的合力 (N)</p><p class="bodytext">然后确定加速扭矩或保持扭矩。如果已定义了不同的滑动摩擦系数，则使用这些；否则使用平均滑动摩擦系数：</p><p class="bodytext"><img src="10599.png" style="height:63px; width:201px"></p><p class="bodytext">M<sub class="subscript">A</sub> (Nm): 加速扭矩</p><p class="bodytext">F<sub class="subscript">stat</sub>, F<sub class="subscript">dyn</sub> （N）：第一片上的合力</p><p class="bodytext">μ (-): 滑动摩擦系数</p><p class="bodytext">r<sub class="subscript">m </sub>(mm): 平均摩擦半径</p><p class="bodytext">z<sub class="subscript">R </sub>（-）：摩擦表面（板）数量</p><p class="bodytext">M<sub class="subscript">L </sub>(Nm): 负载力矩</p><p class="bodytext">μ<sub class="subscript">0</sub> （-）：静摩擦系数</p><p class="bodytext">参考扭矩随后由 M<sub>Α</sub>+M<sub class="subscript">L</sub> 计算得出。用户还可以定义扭矩损失，对于离合器其为负号，对于制动器为正号。</p><p class="bodytext">然而，如果直接定义参考扭矩，就不能同时定义扭矩损失。此扭矩损失必须在参考扭矩中予以考虑。</p><p class="bodytext">使用 VDI 2241 [106] 中规定的公式来定义滑动时间 t<sub class="subscript">3</sub>。</p><p class="bodytext"><strong>对于离合器：</strong></p><p class="bodytext">M<sub class="subscript">K</sub>=M<sub class="subscript">A</sub>，其中 M<sub class="subscript">K</sub> 为指定值，并考虑 t 的影响（按此顺序）：</p><p class="bodytext"><img src="10600.png" style="height:100px; width:516px"></p><p class="bodytext"><strong>对于制动器：</strong></p><p class="bodytext">其中 M<sub class="subscript">K</sub> 为指定值，并考虑 t<sub class="subscript">12</sub> 的影响（按此顺序）：</p><p class="bodytext"><img src="10626.png" style="height:65px; width:465px"></p><p class="bodytext">摩擦功 Q 的计算会考虑或忽略“扭矩上升时间区间” t<sub class="subscript">12</sub>，具体取决于该值是否已定义。同时还会计算总摩擦面上的切换容量和最大切换容量。</p><p class="bodytext">如果为滑动摩擦系数输入曲线点，则将扭矩图中计算曲线下方的面积计算为摩擦功。切换容量随后由该计算按时间积分得出的结果导出。</p><p class="bodytext">这些值必须作为特定值输入到摩擦表面上，因为这些值由制造商在相关目录中提供。</p><p class="bodytext">此外，当您输入切换频率和允许的摩擦啮合功（单次切换）时，程序计算一个利用率，以显示所选离合器是否足够。</p><p class="bodytext"><img src="10601.png" style="height:32px; width:199px"></p><p class="bodytext">Q<sub class="subscript">zul</sub> (kJ): 允许的摩擦功</p><p class="bodytext">Q<sub class="subscript">E</sub> (kJ): 允许的摩擦功（单次切换）</p><p class="bodytext">S<sub class="subscript">hü</sub> (1/h): 相交点切换频率</p><p class="bodytext">S<sub class="subscript">h</sub> (1/h): 单位时间内的切换频率</p><p class="bodytext">然后根据此允许值和计算出的摩擦啮合功确定利用率 A<sub class="subscript">Q</sub>：</p><p class="bodytext"><img src="10602.png" style="height:28px; width:123px"></p><p class="bodytext">当您选择离合器时，必须考虑参考扭矩，而最重要的是允许的摩擦啮合功 Q<sub class="subscript">E</sub>（单次切换）以及计算得出的允许摩擦啮合功（用于更高的切换频率）。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation</h3>   
+                
+<p class="bodytext"><strong>Inputting the spring forces/defining the reference torque</strong></p><p class="bodytext">If you decide to input the spring forces (Reference torque check is selected), the reference torque is calculated as follows:</p><p class="bodytext"><img src="10598.png" style="height:63px; width:128px" /></p><p class="bodytext">F<sub class="subscript">k </sub>(N): Piston force (F<sub class="subscript">K</sub> = p<sub class="subscript">K</sub>/A<sub class="subscript">K</sub>)</p><p class="bodytext">p<sub class="subscript">K</sub> (N/mm<sup><span class="superscript">2</span></sup>): Compression on the piston</p><p class="bodytext">A<sub class="subscript">K</sub> (mm<sup><span class="superscript">2</span></sup>): Piston surface area</p><p class="bodytext">F<sub class="subscript">l </sub>(N): Spring force to plates contact</p><p class="bodytext">F<sub class="subscript">v </sub>(N): Pretension for spring force</p><p class="bodytext">F (N): Resulting force on the first plate (N)</p><p class="bodytext">The accelerating torque or the holding torque is then determined from this. Using the different coefficients of sliding friction, if these have been defined, otherwise using the average coefficient of sliding friction:</p><p class="bodytext"><img src="10599.png" style="height:63px; width:201px" /></p><p class="bodytext">M<sub class="subscript">A</sub> (Nm): Accelerating torque</p><p class="bodytext">F<sub class="subscript">stat</sub>, F<sub class="subscript">dyn</sub> (N): Resulting force on the first plate</p><p class="bodytext">μ (-): Coefficient of sliding friction</p><p class="bodytext">r<sub class="subscript">m </sub>(mm): average friction radius</p><p class="bodytext">z<sub class="subscript">R </sub>(-): Number of friction surfaces (plates)</p><p class="bodytext">M<sub class="subscript">L </sub>(Nm): Load torque</p><p class="bodytext">μ<sub class="subscript">0</sub> (-): Coefficient of static friction</p><p class="bodytext">The reference torque is then calculated from M<sub>Α</sub>+M<sub class="subscript">L</sub>. You can also define a torque loss, which has a negative sign for a coupling and a positive sign for a brake.</p><p class="bodytext">However, if you define the reference torque directly, you cannot also define a torque loss. This must then be taken into account with the reference torque.</p><p class="bodytext">The formulae specified in VDI 2241 [106] are used to define the sliding time t<sub class="subscript">3</sub>.</p><p class="bodytext"><strong>For a coupling:</strong></p><p class="bodytext">M<sub class="subscript">K</sub>=M<sub class="subscript">A</sub>, where M<sub class="subscript">K</sub> is specified, with the influence of t (in this sequence):</p><p class="bodytext"><img src="10600.png" style="height:100px; width:516px" /></p><p class="bodytext"><strong>For a brake:</strong></p><p class="bodytext">where M<sub class="subscript">K</sub> is specified, with the influence of t<sub class="subscript">12</sub> (in this sequence):</p><p class="bodytext"><img src="10626.png" style="height:65px; width:465px" /></p><p class="bodytext">The engagement work of friction Q is then calculated with, or without, taking the &quot;torque-rise space-of-time&quot; t<sub class="subscript">12</sub> into account, depending on whether this value has been defined. The switching capacity on the total friction surface and the maximum switching capacity are also calculated.</p><p class="bodytext">If you input curve points for the coefficient of sliding friction, the area below the calculated curve in the torque diagram is calculated as the engagement work of friction. The switching capacity is then derived from the time-based conclusion of this calculation.</p><p class="bodytext">Each of these values must be input as specific values for the friction surfaces because these are provided by the manufacturers in the relevant catalogs.</p><p class="bodytext">Furthermore, when you input the switching frequencies and the permitted engagement work of friction (one-time switching) the program calculates a utilization to show whether the selected coupling will be adequate.</p><p class="bodytext"><img src="10601.png" style="height:32px; width:199px" /></p><p class="bodytext">Q<sub class="subscript">zul</sub> (kJ): permissible engagement work of friction</p><p class="bodytext">Q<sub class="subscript">E</sub> (kJ): permissible engagement work of friction (one-time switching)</p><p class="bodytext">S<sub class="subscript">hü</sub> (1/h): Intersection-point switching frequency</p><p class="bodytext">S<sub class="subscript">h</sub> (1/h): Switching frequency per time unit</p><p class="bodytext">The utilization A<sub class="subscript">Q</sub> is then determined from this permitted value and the calculated engagement work of friction:</p><p class="bodytext"><img src="10602.png" style="height:28px; width:123px" /></p><p class="bodytext">When you select a coupling, you must take into account the reference torque, and most importantly, the permissible engagement work of friction Q<sub class="subscript">E</sub> (one-time switching) and the calculated permissible engagement work of friction (for a higher switching frequency).</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

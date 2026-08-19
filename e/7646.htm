@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>表格视图 | Table view</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Table view">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7641');expand('7629');expand('9292');expand('9246');highlight('7646')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7642.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7647.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">表格视图</h3>   
+                
+<p class="bodytext">表格格式在隐藏的 <strong>definition</strong> 变量中定义。有不同类型的表格：</p><ul>	<li class="bodytext"><strong>计算用表格：</strong>此表格最适合显示同一类型的多个元素的数据。定义格式为：<br>	<br>	<span class="menu">[[typ,rows,columns],['variable1','variable2',..], </span><br>	<span class="menu">[element1,element2,..]]</span><br>	<br>	对于类型 1，您可以编辑每个显示的值。对于类型 2，您可以编辑所有没有表达式的值；对于类型 3，您可以编辑所有已设置 <span class="menu">KISSsys</span> → <span class="menu">KISSsoft</span> 标志的值。行数或列数未被使用。</li>	<li class="bodytext"><strong>数组或变体用表格</strong>：在此表格中，数组或变体变量分别显示在单独的列中。定义格式为：<br>	<br>	<span class="menu">[[typ,rows,columns],['variable1','variable2',..]]</span><br>	<br>	对于类型 21，您可以编辑每个显示的值。对于类型 22，您可以编辑所有没有表达式的值；对于类型 23，您可以编辑所有已激活 <span class="menu">KISSsys</span> → <span class="menu">KISSsoft</span> 选项的值。列数未被使用。</li>	<li class="bodytext"><strong>用户界面用表格</strong>：您可以根据需要配置此表格。定义为 <span class="menu">[[type,rows,columns],[[A1,B1],[A2,B2]]]</span>。内容可以通过表格中的上下文菜单插入，并且不应在定义中更改。由于定义是以交互方式更改的，因此您不能在此处设置表达式。行数或列数也应仅在对话框中更改。否则，关于参考元素的信息将会丢失。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Table view</h3>   
+                
+<p class="bodytext">The table format is defined in the hidden <strong>definition</strong> variable. There are different types of tables:</p><ul>	<li class="bodytext"><strong>Table for calculations:</strong> This table is best suited for displaying the data for several elements of the same type. The definition format is:<br />	<br />	<span class="menu">[[typ,rows,columns],['variable1','variable2',..], </span><br />	<span class="menu">[element1,element2,..]]</span><br />	<br />	In the case of type 1, you can edit each displayed value. In the case of type 2, you can edit all values that have no expression, and in the case of type 3 you can edit all values for which the <span class="menu">KISSsys</span> → <span class="menu">KISSsoft</span> flag has been set. The Number of Rows or Columns is not used.</li>	<li class="bodytext"><strong>Table for arrays or variants</strong>: In this table, the arrays or variant variables are each displayed in a separate column. The definition format is:<br />	<br />	<span class="menu">[[typ,rows,columns],['variable1','variable2',..]]</span><br />	<br />	In the case of type 21, you can edit each displayed value. In the case of type 22, you can edit all values that have no expression, and in the case of type 23, you can edit all values for which the <span class="menu">KISSsys</span> → <span class="menu">KISSsoft</span> option is activated. The Number of Columns is not used.</li>	<li class="bodytext"><strong>Table for user interface:</strong> You can configure this table to suit your needs. The definition is <span class="menu">[[type,rows,columns],[[A1,B1],[A2,B2]]]</span>. The contents can be inserted via a context menu in the table, and should not be changed in the definition. Since the definition is changed interactively, you must not set an expression here. The number of rows or columns should also only be changed in a dialog. Otherwise information about reference elements will be lost.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

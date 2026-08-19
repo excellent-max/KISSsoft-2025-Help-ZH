@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>条件 | Conditions</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Conditions">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11538');expand('7903');expand('9288');expand('9246');highlight('7941')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11538.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10404.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">条件</h3>   
+                
+<p class="bodytext">在此计算中，您可以将屈服点利用率、最大装配预紧力或两个拧紧扭矩定义为约束条件。如果将最大和最小拧紧扭矩定义为约束条件，则拧紧系数会根据该扭矩变化和摩擦系数变化计算得出。您还可以在此窗口中为螺栓连接输入载荷循环次数、嵌入量、预紧力损失和温度等数值。</p><p class="bodytext"><strong>屈服点的使用</strong><br>通常，在对螺栓进行尺寸设计时，会将螺栓拧紧到其屈服点的 90% 以计算预紧力。但是，如果使用屈服点或转角控制拧紧，则可以将该利用率值提高到 100%。</p><p class="bodytext"><strong>载荷循环次数</strong><br>如果该载荷循环次数为 ND &gt;= 2*10<span class="superscript"><sup>6</sup></span>，则最终热处理和最终滚压螺栓的疲劳寿命根据 VDI 2230 中 5.5/20 和 5.5/21 节规定的公式计算。如果涉及较小的值 (ND &lt; 2*10<span class="superscript"><sup>6</sup>)</span>，则对连接执行有限寿命设计 (5.5/22 和 5.5/23)。</p><p class="bodytext"><strong>嵌入量</strong></p><p class="bodytext">嵌入量根据您使用的计算方法进行计算。您还可以为平密封件输入额外的嵌入量值。此外，您可以用自己的值覆盖计算出的嵌入量，或直接输入预紧力损失。如果输入自己的预紧力损失，则不再考虑嵌入量。</p><p class="bodytext"><strong>装配和工作温度</strong><br>现在 KISSsoft 的螺栓计算功能已得到扩展，可按照 VDI 2230 中规定的计算指南使用，该指南还可计算工作温度在 -200 到 +1000 摄氏度之间的螺栓连接。您可以为螺栓和被夹紧零件（连接实体）指定不同的温度。您还可以考虑材料的杨氏模量、热膨胀系数、屈服点和许用压力随温度的变化。您可以使用经验公式来计算这些随温度变化的值，或指定您自己的值。由于钢的经验公式已经确定，您应该检查高温变化的值，或更好的是在此处输入您自己的值。</p><p class="bodytext">螺栓连接的所有准则在装配状态下进行检查，同时也在工作温度下的静止或非静止状态下检查（根据 VDI 2230：预紧力、螺栓载荷、疲劳寿命和表面压力）。</p><p class="bodytext">KISSsoft 会同时自动执行装配和工作温度的计算。对于螺栓与零件之间较高的温差，也应执行此计算。零件或螺栓与装配温度之间的最小温差必须至少为 30<span class="superscript">°</span> C，才能在报告中显示结果。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Conditions</h3>   
+                
+<p class="bodytext">In this calculation, you can define the yield point utilization, the maximum assembly pretension force or both tightening torques as constraints. If you define the maximum and minimum tightening torque as constraints, the tightening factor is then calculated from this torque variation and the friction coefficient variation. You can also enter values for the number of load cycles, amount of embedding, preload loss and temperatures for the bolted joint in this window.</p><p class="bodytext"><strong>Use of the yield point</strong><br />Usually, when sizing bolts, the bolt is tightened to 90% of its yield point to calculate the pretension force. However, if you use yield point or angle of rotation-controlled tightening, you can increase this utilization value up to 100%.</p><p class="bodytext"><strong>Number of load cycles</strong><br />If this number of load cycles is ND &gt;= 2*10<span class="superscript"><sup>6</sup></span>, the fatigue life for final heat treated and final rolled bolts are calculated according to the formulae specified in VDI 2230, 5.5/20 and 5.5/21. If smaller values are involved (ND &lt; 2*10<span class="superscript"><sup>6</sup>)</span>, limited life sizing is performed for the connection (5.5/22 and 5.5/23).</p><p class="bodytext"><strong>Amount of embedding</strong></p><p class="bodytext">The amount of embedding is calculated according to which calculation method you use. You can also input an extra amount of embedding value for flat seals. In addition, you can overwrite the calculated amount of embedding with your own value or input the preload loss directly. If you input your own preload loss, the amount of embedding is no longer taken into account.</p><p class="bodytext"><strong>Assembly and operating temperature</strong><br />Now KISSsoft's bolt calculation function has been extended, it can be used for the calculation guideline specified in VDI 2230, which also calculates bolted joints for operating temperatures between -200 and +1000 degrees Celsius. You can specify different temperatures for the bolt and the clamped parts (connecting solids). You can also take into account the temperature-dependent changes to the Young's modulus, the thermal expansion coefficients, the yield point and the pressures permitted for the materials. You can either use empirical formulae to calculate these temperature-dependent values, or specify your own values. Since the empirical formulae for steel have already been determined, you should check the values for high-temperature changes or, even better, enter your own values here.</p><p class="bodytext">All the criteria for the bolted joint are checked in the assembled state, and also in a stationary or non-stationary state at operating temperature (according to VDI 2230: pretension force, bolt load, fatigue life, and surface pressure).</p><p class="bodytext">KISSsoft automatically performs the calculation for assembly and the operating temperature at the same time. This calculation should also be performed for a higher temperature difference between the bolt and the parts. The minimum temperature difference between the parts or the bolt and the assembly temperature must be at least 30<span class="superscript">°</span> C, so that results are displayed in the report.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>函数 | Functions</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Functions">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7659');expand('7629');expand('9292');expand('9246');highlight('7661')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7660.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7662.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">函数</h3>   
+                
+<p class="bodytext">函数编程的不同选项最好通过示例来说明。函数头如下所示：</p><p class="code">//由调用程序传递的变量</p><p class="code">PAR Parameter1,Parameter2;</p><p class="bodytext"></p><p class="code">//常量声明</p><p class="code">CONST PI=3.1415926,E=2.71828;</p><p class="bodytext"></p><p class="code">//局部变量的声明</p><p class="code">VAR a,b,c,d;</p><p class="bodytext"></p><p class="bodytext">在这里，以<span class="menu">//</span>开头的行是注释。这三行中的每一行只能出现一次，并且声明的变量必须用逗号分隔。未初始化的参数或变量为<span class="menu">VOID</span>。可以用<span class="menu">ISVOID(variable)</span>来检查。</p><p class="bodytext">受限语句有两种形式：<span class="menu">IF</span> 或 <span class="menu">SWITCH</span> 语句：</p><p class="code">//带可选 ELSIF 和 ELSE 块的 IF 语句</p><p class="code">IF Parameter1&gt;5 THEN</p><p class="code">a=sin(PI*Parameter1);</p><p class="code">ELSIF Parameter1&lt;0 THEN</p><p class="code">a=Parameter1; ELSE</p><p class="code">a=0;</p><p class="code">ENDIF</p><p class="code"></p><p class="code">//通过数字或文本进行选择的 SWITCH 语句</p><p class="code">SWITCH Parameter2</p><p class="code">CASE 'Null':b=0;</p><p class="code">CASE 'Eins':b=1;</p><p class="code">DEFAULT :b=5;</p><p class="code">ENDSWITCH</p><p class="bodytext"></p><p class="bodytext">循环有四种程序变体：</p><p class="code">//带可选步长的 FOR 循环</p><p class="code">FOR a=1 TO 8 STEP 2 DO</p><p class="code">b=b+a;</p><p class="code">IF b&gt;100 THEN</p><p class="code">BREAK;//结束循环</p><p class="code">ENDIF</p><p class="code">NEXT</p><p class="bodytext"></p><p class="code">//WHILE 循环</p><p class="code">WHILE b&lt;100 DO</p><p class="code">b=b*10;</p><p class="code">WHEND</p><p class="bodytext"></p><p class="code">//DO 循环</p><p class="code">DO</p><p class="code">b=b*10;</p><p class="code">UNTIL b&gt;100;</p><p class="bodytext"></p><p class="code">//FORALL 循环针对数组的所有元素执行</p><p class="code">c=[1,2,3,4,5,6,7,8,9];</p><p class="code">a=0;</p><p class="code">FORALL c d DO//d 分别获得 c 中一个元素的值</p><p class="code">a=a+d;</p><p class="code">NEXT</p><p class="bodytext"></p><p class="bodytext">调用属于对象的函数有一种特殊语法。标准方法是指定对象名称，后跟一个点和函数名称。但是，对象名称也可以包含在局部变量中。这使您可以在运行时更改函数调用的对象。</p><p class="code">//针对 Objekt1 调用函数 OBJ_GetMember。</p><p class="code">Objekt1.OBJ_GetMember('variablenname');</p><p class="bodytext"></p><p class="code">//a 是类型为 String 的局部变量，保存对象的名称</p><p class="code">a='Objekt1';</p><p class="bodytext"></p><p class="code">//针对名称为 a 的对象调用服务函数</p><p class="code">b=a.OBJ_GetMember('variablenname');</p><p class="bodytext"></p><p class="code">//调用用户为 Objekt1 创建的函数。</p><p class="code">a.Benutzerfunktion();</p><p class="bodytext"></p><p class="code">//用户创建的函数将针对</p><p class="code">//当前对象调用。</p><p class="code">Benutzerfunktion();</p><p class="bodytext"></p><p class="code">//用户创建的函数将针对</p><p class="code">//上级对象调用。</p><p class="code">^.Benutzerfunktion();</p><p class="code"></p><p class="bodytext">系统相对于当前对象搜索变量名称。如果在表达式中使用<span class="menu">object.z</span>，系统将首先尝试在当前对象下方查找此变量。如果不存在，则搜索将在层次结构中的上级对象中继续（按照<span class="menu">^.object.z</span>），依此类推。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Functions</h3>   
+                
+<p class="bodytext">The different options for programming in functions are best described with the help of examples. A function's header looks like this:</p><p class="code">//Übergebene Variablen vom aufrufenden Programm</p><p class="code">PAR Parameter1,Parameter2;</p><p class="bodytext"></p><p class="code">//Deklaration von Konstanten</p><p class="code">CONST PI=3.1415926,E=2.71828;</p><p class="bodytext"></p><p class="code">//Deklaration von lokalen Variablen</p><p class="code">VAR a,b,c,d;</p><p class="bodytext"></p><p class="bodytext">Here, the lines that begin with <span class="menu">//</span> are comments. Each of these three lines must only occur once, and the declared variables must be separated with a comma. A non-initialized parameter or variable is <span class="menu">VOID</span>. This can be checked with <span class="menu">ISVOID(variable)</span>.</p><p class="bodytext">Limited statements have two variants: <span class="menu">IF</span> or <span class="menu">SWITCH</span> statements:</p><p class="code">//IF-Anweisung mit optionalem ELSIF und ELSE Block</p><p class="code">IF Parameter1&gt;5 THEN</p><p class="code">a=sin(PI*Parameter1);</p><p class="code">ELSIF Parameter1&lt;0 THEN</p><p class="code">a=Parameter1; ELSE</p><p class="code">a=0;</p><p class="code">ENDIF</p><p class="code"></p><p class="code">//SWITCH Anweisung mit Auswahl über Zahlen oder Texte</p><p class="code">SWITCH Parameter2</p><p class="code">CASE 'Null':b=0;</p><p class="code">CASE 'Eins':b=1;</p><p class="code">DEFAULT :b=5;</p><p class="code">ENDSWITCH</p><p class="bodytext"></p><p class="bodytext">There are four program variants for loops:</p><p class="code">//FOR Schleife mit optionaler Schrittweite</p><p class="code">FOR a=1 TO 8 STEP 2 DO</p><p class="code">b=b+a;</p><p class="code">IF b&gt;100 THEN</p><p class="code">BREAK;//beendet die Schleife</p><p class="code">ENDIF</p><p class="code">NEXT</p><p class="bodytext"></p><p class="code">//WHILE Schleife</p><p class="code">WHILE b&lt;100 DO</p><p class="code">b=b*10;</p><p class="code">WHEND</p><p class="bodytext"></p><p class="code">//DO Schleife</p><p class="code">DO</p><p class="code">b=b*10;</p><p class="code">UNTIL b&gt;100;</p><p class="bodytext"></p><p class="code">//FORALL Schleife wird für alle Elemente eines Arrays ausgeführt</p><p class="code">c=[1,2,3,4,5,6,7,8,9];</p><p class="code">a=0;</p><p class="code">FORALL c d DO//d bekommt jeweils den Wert eines Elementes von c</p><p class="code">a=a+d;</p><p class="code">NEXT</p><p class="bodytext"></p><p class="bodytext">There is a special syntax for calling up functions that belong to objects. The standard method is to specify the object name followed by a point and the name of the function. However, the name of an object can also be contained in a local variable. This enables you to change the object for the function call at runtime.</p><p class="code">//Die Funktion OBJ_GetMember wird für Objekt1 aufgerufen.</p><p class="code">Objekt1.OBJ_GetMember('variablenname');</p><p class="bodytext"></p><p class="code">//a ist lokale Variable vom Typ String mit dem Namen eines Objektes</p><p class="code">a='Objekt1';</p><p class="bodytext"></p><p class="code">//Es wird eine Servicefunktion für das Objekt mit Namen a aufgerufen</p><p class="code">b=a.OBJ_GetMember('variablenname');</p><p class="bodytext"></p><p class="code">//ruft vom Benutzer angelegte Funktion für Objekt1 auf.</p><p class="code">a.Benutzerfunktion();</p><p class="bodytext"></p><p class="code">//die vom Benutzer angelegte Funktion wird für das</p><p class="code">//aktuelle Objekt aufgerufen.</p><p class="code">Benutzerfunktion();</p><p class="bodytext"></p><p class="code">//die vom Benutzer angelegte Funktion wird für das</p><p class="code">//übergeordnete Objekt aufgerufen.</p><p class="code">^.Benutzerfunktion();</p><p class="code"></p><p class="bodytext">The system searches for variable names relative to the current object. If <span class="menu">object.z</span> is used in an expression, the system will first attempt to find this variable below the current object. If it is not present, the search will continue in the hierarchically superior object (in accordance with <span class="menu">^.object.z</span>) and so on.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

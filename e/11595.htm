@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>理论 | Theory</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Theory">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11594');expand('11432');expand('11646');expand('11414');expand('9246');highlight('11595')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11594.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11596.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">理论</h3>   
+                
+<p class="bodytext">强迫响应分析的理论基于Beermann [5]的研究工作。在该方法中，首先计算啮合齿轮的激励力，然后根据其激励阶次将其施加到系统上。整个过程基于频率响应分析，其中所有激励和响应均以其激励频率以及相应的幅值和相角来表示。<br>KISSsoft 中的强迫响应分析包括三个主要步骤：</p><ul>	<li class="bodytext">第一步是预处理步骤。执行轴计算以计算系统的所有相关运动学和几何参数。然后对所有涉及的齿轮级进行接触分析。计算出的最重要的输出数据是齿轮副的传动误差和非线性刚度。计算齿轮啮合激励力时需要这些值。</li>	<li class="bodytext">系统强迫响应分析的基本计算在第二个也是最重要的步骤中执行。该步骤包括生成耦合的振动方程组以及计算激励力。作为系统求解的结果，可计算出啮合齿轮副处的动态接触力。</li>	<li class="bodytext">第三步是后处理步骤，其中计算齿轮啮合输出、轴承力以及文档点处的轴输出。输出数据的计算基于主要步骤的结果。</li></ul><p class="bodytext">强迫响应算法的主要部分包括以下步骤：</p><ul>	<li class="bodytext">求出所有激励频率的系统基频Ω<sub>0</sub>并调整时间变量。</li>	<li class="bodytext">去除啮合齿轮对的重复频率以及可变扭矩输入。</li>	<li class="bodytext">针对特定激励频率构建级矩阵。级矩阵包含在特定激励频率下，单位载荷作用于齿轮对所导致的所有动态力和系统响应。</li>	<li class="bodytext">构建Fourier矩阵[5]，其中包含系统在啮合齿轮对处的所有平动力和旋转力。</li>	<li class="bodytext">计算相邻啮合齿轮对施力平面之间的角度：齿轮对因相邻齿轮对施力而产生的弯曲位移被投影到该力的方向上。</li>	<li class="bodytext">计算与用户定义的激励频率相对应的啮合齿轮对的齿轮刚度和平均传动误差。</li>	<li class="bodytext">定义轴的边界条件。</li>	<li class="bodytext">计算在不同激励频率下，齿轮对处单位载荷对所有轴产生的弯曲、轴向和扭转影响系数。</li>	<li class="bodytext">求解动力学方程组以计算Fourier系数。</li>	<li class="bodytext">在每个输入轴转速下，计算啮合齿轮对随时间的静态和动态力。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Theory</h3>   
+                
+<p class="bodytext">The theory of the forced response analysis is based on the research work done by Beermann [5]. In this approach, the excitation forces of the meshing gears are calculated and then are applied to the system according to their excitation orders. The total procedure is based on the frequency response analysis, where all the excitations and responses are represented in terms of the excitation frequencies together with their corresponding amplitudes and phase angles.<br />The forced response analysis in KISSsoft consists of three main steps:</p><ul>	<li class="bodytext">The first step is a pre-processing step. The shaft calculations are performed to calculate all relevant kinematic and geometric parameters of the system. Then, the contact analysis of all involved gear stages is carried out. The most important output data calculated are the transmission error and the nonlinear stiffness of gear pairs. These values are required to calculate the gear mesh excitation forces.</li>	<li class="bodytext">The basic calculation of the forced response analysis of the system is performed in the second, and most important step. This step includes the generation of the coupled system of vibration equations and the calculation of the excitation forces. As the result of the system solution, dynamic contact forces at meshing gear pairs are calculated.</li>	<li class="bodytext">The third step is a post-processing step in which the gear mesh outputs, bearing forces and shaft outputs at the documentation points are calculated. The calculation of the output data is based on the results of the main step.</li></ul><p class="bodytext">The main part of the forced response algorithm consists of the following steps:</p><ul>	<li class="bodytext">Finding the system base frequency Ω<sub>0</sub> of all excitation frequencies and adjusting the time variables.</li>	<li class="bodytext">Removal of duplicated frequencies for meshing gear pairs, and variable torque inputs.</li>	<li class="bodytext">Building the stage matrices for a specific excitation frequency. A stage matrix contains all the dynamic forces and system responses caused by the effect of a unit load on gear pairs for a specific excitation frequency.</li>	<li class="bodytext">Building the Fourier matrix [5] containing all translational and rotational forces of the system at meshing gear pairs.</li>	<li class="bodytext">Calculating the angles between force exertion planes of successive meshing gear pairs: the bending displacement of a gear pair as the result of force exertion at an adjacent gear pair is projected on the direction of that force.</li>	<li class="bodytext">Calculating the gear stiffness and mean transmission error of meshing gear pairs corresponding to the user-defined excitation frequencies.</li>	<li class="bodytext">Defining boundary conditions for the shafts.</li>	<li class="bodytext">Calculating the bending, axial, and torsion influence factors as the result of a unit load at gear pairs for all shafts at different excitation frequencies.</li>	<li class="bodytext">Solving the system of dynamic equations to calculate Fourier coefficients.</li>	<li class="bodytext">Calculating the static and dynamic forces at meshing gear pairs over time at each input shaft speed.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

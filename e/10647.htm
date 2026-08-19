@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>文件接口 | File interface</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="File interface">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10646');expand('10645');expand('9287');expand('9246');highlight('10647')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10646.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10648.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">文件接口</h3>   
+                
+<p class="bodytext">使用此模块可链接到轴计算文件。这意味着轴承信息会自动从轴计算文件中转移，无需重新输入数据。用户必须输入以下内容：</p><ul>	<li class="bodytext">文件名：轴计算文件的名称（扩展名 .W10），从中提取所选轴承数据。</li>	<li class="bodytext">元素类型：此处您选择轴承是属于轴的滚动轴承，还是连接轴承。</li>	<li class="bodytext">轴号：如果轴承属于某轴，则用户必须在此处输入轴号。然后程序从上到下遍历该轴的元件树。</li>	<li class="bodytext">轴承号：所选轴承的编号，位于相应的轴上或位于连接元件列表中。程序从上到下遍历轴的元件树。</li>	<li class="bodytext">数据交换：确定轴文件与本模块之间的数据交换方式。在每种情况下，所选轴承的几何信息会从轴文件中传递<ul>		<li class="bodytext">轴承载荷：从轴文件传递的信息是轴承的施加力和扭矩以及润滑条件</li>		<li class="bodytext">轴承位移：从轴文件传递的信息是轴承内圈的位移和转动以及润滑条件</li>		<li class="bodytext">自身输入：仅传递轴承几何信息。可指定自身的载荷和润滑条件</li>	</ul>	</li></ul><p class="bodytext"></p><p class="bodytext"></p><p class="figcaption" data-id="5ba0bcd6a1d96"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">File interface</h3>   
+                
+<p class="bodytext">Use this module to link to a shaft calculation file. This means bearing information is automatically transferred from the shaft calculation file without you having to reenter the data. The user must input the:</p><ul>	<li class="bodytext">File name: name of the shaft calculation file (extension .W10), from which the selected bearing data will be extracted.</li>	<li class="bodytext">Element type: Here, you select whether the bearing is a rolling bearing that belongs to a shaft, or a connecting rolling bearing</li>	<li class="bodytext">Shaft no.: if the bearing belongs to a shaft, the user must input the shaft number here. The program then runs through the shafts Element Tree from top to bottom 5ba0bcd6a1d96.</li>	<li class="bodytext">Bearing no.: number of the selected bearing, either on the corresponding shaft or from the list of connecting elements. The program runs through the shafts Elements tree from top to bottom 5ba0bcd6a1d96.</li>	<li class="bodytext">Data exchange: determines how data is exchanged between the shaft file and this module. In each case, the geometry of the selected bearing is transferred from the shaft file.	<ul>		<li class="bodytext">Bearing load: the information transferred from the shaft file is the applied force and torque of the bearing as well as the lubricating conditions</li>		<li class="bodytext">Bearing displacement: the information transferred from the shaft file is the displacement and rotation of the inner ring of the bearing as well as the lubricating conditions</li>		<li class="bodytext">Own Input: only the bearing geometry is transferred. You can specify your own load and lubrication conditions.</li>	</ul>	</li></ul><p class="bodytext"><p class="bodytext"></p><p class="figcaption" data-id="5ba0bcd6a1d96"></p></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

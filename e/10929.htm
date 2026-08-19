@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>安全计算 | Calculating the Safeties</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculating the Safeties">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10926');expand('8206');expand('8180');expand('9287');expand('9246');highlight('10929')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10928.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8239.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">安全计算</h3>   
+                
+<p class="bodytext">载荷谱在应用 AGMA 方法时不予考虑。</p><p class="bodytext">为计算疲劳安全系数 FSf，使用 von Mises 应力确定平均应力和振幅。</p><p class="bodytext">这些值，加上修正后的疲劳强度和拉伸强度，稍后用于确定疲劳安全系数。</p><p class="bodytext">为计算峰值载荷安全系数，使用 von Mises 应力确定总应力。峰值载荷安全系数使用总应力、拉伸强度、屈服点系数和峰值载荷系数计算。</p><p class="bodytext">峰值载荷系数可以在 <span class="menu">强度</span> 选项卡中针对所有载荷（拉伸/压缩、弯曲、扭转、推力）单独定义。在 KISSsoft 系统中，峰值载荷系数的默认设置为 1.0。根据标准，对于直齿和斜齿圆柱齿轮、锥齿轮和人字齿轮，该系数的设置为 2.0。对于蜗杆齿轮，该系数的设置为 3.0。以下规则适用于带有圆柱或环面蜗杆级、并连接到非蜗杆齿轮级（圆柱齿轮级、相交轴齿轮级或锥齿轮级）的多级齿轮单元：</p><ul>	<li class="bodytext">Fp = 2.0，如果各齿轮级需要承受当前载荷的 200%</li>	<li class="bodytext">Fp = 3.0，如果各齿轮级需要承受当前载荷的 300%</li></ul><p class="bodytext">屈服点系数也可以在 <span class="menu">强度</span> 选项卡中定义。在 KISSsoft 系统中，屈服点系数的默认设置为 0.75（根据标准，其范围为 0.66 至 0.8）。</p><p class="bodytext">根据标准，疲劳的总安全系数 FSf 和峰值载荷的总安全系数 FSp 必须 &gt;= 1。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculating the Safeties</h3>   
+                
+<p class="bodytext">Load spectra are not taken into consideration when the AGMA method is applied.</p><p class="bodytext">To calculate the fatigue safety FSf, the average stress and the amplitude are determined using the von Mises stress.</p><p class="bodytext">These values, together with the modified fatigue strength and the tensile strength, are required later to determine the fatigue safety.</p><p class="bodytext">The total stress is determined using the von Mises stress to calculate peak load safety. The peak load safety coefficient is calculated using the total stress, the tensile strength, a coefficient for the yield point, and a peak load coefficient.</p><p class="bodytext">The peak load coefficient can be defined individually in the <span class="menu">Strength</span> tab for all loads (tension/compression, bending, torsion, thrust). In the KISSsoft system, the default setting for the peak load coefficient is 1.0. As specified in the standard, the setting for this coefficient is 2.0 for cylindrical gears with straight and helical flanks, bevel gears, and double helical gearings. For worm gears, the setting for this coefficient is 3.0. The following rules apply to multi-level gear units with a cylindrical or globoid worm gear stage that are connected to a non-worm gear stage (cylindrical gear-, angled-, or bevel gear stage):</p><ul>	<li class="bodytext">Fp = 2.0, if the stages are to withstand 200% of the current load</li>	<li class="bodytext">Fp = 3.0, if the stages are to withstand 300% of the current load</li></ul><p class="bodytext">The yield point coefficient can be also defined in the <span class="menu">Strength</span> tab. In the KISSsoft system, the default setting for the yield point coefficient is 0.75. (As specified in the standard, it is 0.66 to 0.8).</p><p class="bodytext">According to the standard, the resultant safety factors for fatigue FSf and peak load FSp must be &gt;= 1.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

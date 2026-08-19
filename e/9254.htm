@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>示例：过盈配合计算 | Example: Interference fit calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Example: Interference fit calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9018');expand('9272');expand('9246');highlight('9254')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9032.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9256.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">示例：过盈配合计算</h3>   
+                
+<p class="bodytext">以下关于过盈配合装配的示例用于更详细地说明 KISSsoft 接口概念的工作方式。</p><p class="bodytext">对于齿轮轮缘与圆柱齿轮轮毂之间的过盈配合装配，需要找到满足以下边界条件的单一公差配对：</p><p class="bodytext"><em class="emphasis">持续扭矩 MD = 88000 Nm</em></p><p class="bodytext">公差配对采用基孔制（基准孔为 <em class="emphasis">H</em>）。</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext">安全性</p></td><td valign="middle" width="300"><p class="bodytext">抗滑动 &gt; 1.4</p></td></tr><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext"></p></td><td valign="middle" width="300"><p class="bodytext">轮毂抗断裂安全系数 &gt; 1.5</p></td></tr><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext"></p></td><td valign="middle" width="300"><p class="bodytext">齿轮轮缘抗断裂 &gt; 1.5</p></td></tr><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext"></p></td><td valign="middle" width="300"><p class="bodytext">轮毂抗屈服点 &gt; 1.1</p></td></tr><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext"></p></td><td valign="middle" width="300"><p class="bodytext">齿轮轮缘抗屈服点 &gt; 1.1</p></td></tr></tbody></table><p class="bodytext"></p><strong>Procedure:</strong><p class="bodytext">使用合适的 CAD 例程直接从图样中提取几何信息，并转换为 KISSsoft 定义的接口格式：</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td valign="middle" width="47"><p class="bodytext"></p></td><td valign="middle" width="348"><p class="bodytext">m01allg.df=640</p></td></tr><tr align="left" valign="top"><td valign="middle" width="47"><p class="bodytext"></p></td><td valign="middle" width="348"><p class="bodytext">m01n.da=800</p></td></tr><tr align="left" valign="top"><td valign="middle" width="47"><p class="bodytext"></p></td><td valign="middle" width="348"><p class="bodytext">m01w.di=242</p></td></tr><tr align="left" valign="top"><td valign="middle" width="47"><p class="bodytext"></p></td><td valign="middle" width="348"><p class="bodytext">m01allg.l=200.</p></td></tr></tbody></table><p class="bodytext">文件内容 <em class="emphasis">M010USER.IN</em></p><p class="bodytext">然后启动 KISSsoft 模块。它接受几何数据并在主屏幕上显示。</p><p class="bodytext">在主屏幕上，输入任何缺失的参数、扭矩和材料，然后开始计算。在 KISSsoft 中，还可对公差配合进行尺寸设计。在此，系统会提示用户从列表中选择合适的公差组合。系统随后使用用户的最终选择进行计算。</p><p class="bodytext">在用户退出计算后，结果文件会自动转换为可以被 CAD 宏读取的格式。此结果文件的格式通过模板文件 <em class="emphasis">M010USER.RPT</em> 定义：</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext">[SHAFT]</p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_max = %f{m01w.tol.max}</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_min = %f{m01w.tol.max}</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_bez = %s{m01w.tol.bez}</em><br><em class="emphasis"></em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext">[HUB]</p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_max = %f{m01n.tol.max}</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_min = %f{m01n.tol.max}</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_bez = %s{m01n.tol.bez}</em></p></td></tr></tbody></table><p class="bodytext">文件内容 <em class="emphasis">M010USER.RPT</em></p><p class="bodytext">结果如下：</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext">[SHAFT]</p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">wtol_max = 390.000000</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">wtol_min = 340.000000</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">wtol_bez = s6</em><br><em class="emphasis"></em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext">[HUB]</p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_max = 50.000000</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_min = 0.000000</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_bez = H6</em></p></td></tr></tbody></table><p class="bodytext">文件内容 <em class="emphasis">M010USER.OUT</em></p><p class="bodytext">这些数据现在通过宏直接附加到 CAD 系统中的相应尺寸。</p><strong>Summary:</strong><p class="bodytext">因此，各个任务被分开处理：接口的每一侧只执行它最擅长的任务。CAD 管理几何信息，并将此信息传递给计算程序，该程序知道如何处理数据，并将结果返回给 CAD。</p><p class="bodytext">借助定义的接口，CAD 系统和计算程序可以高效地协同使用。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Example: Interference fit calculation</h3>   
+                
+<p class="bodytext">The following example of the Interference fit assembly calculation is used to illustrate the way that the KISSsoft interfaces concept works, in more detail.</p><p class="bodytext">For the interference fit assembly between the gear rim and the cylindrical gear hub, you need to find the one tolerance pairing that meets the following boundary conditions:</p><p class="bodytext"><em class="emphasis">Permanent torque MD = 88000 Nm</em></p><p class="bodytext">The tolerance pairing involves a system of the standard drill hole <em class="emphasis">(H)</em>.</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext">Safety</p></td><td valign="middle" width="300"><p class="bodytext">against sliding &gt; 1.4</p></td></tr><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext"></p></td><td valign="middle" width="300"><p class="bodytext">against fracture of the hub &gt; 1.5</p></td></tr><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext"></p></td><td valign="middle" width="300"><p class="bodytext">against fracture of the gear rim &gt; 1.5</p></td></tr><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext"></p></td><td valign="middle" width="300"><p class="bodytext">against the yield point of the hub &gt; 1.1</p></td></tr><tr align="left" valign="top"><td valign="middle" width="96"><p class="bodytext"></p></td><td valign="middle" width="300"><p class="bodytext">against the yield point of the gear rim &gt; 1.1</p></td></tr></tbody></table><p class="bodytext"></p><strong>Procedure:</strong><p class="bodytext">The necessary information for the geometry is extracted directly from the drawing, with a suitable CAD routine, and converted to the interfaces format defined by KISSsoft:</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td valign="middle" width="47"><p class="bodytext"></p></td><td valign="middle" width="348"><p class="bodytext">m01allg.df=640</p></td></tr><tr align="left" valign="top"><td valign="middle" width="47"><p class="bodytext"></p></td><td valign="middle" width="348"><p class="bodytext">m01n.da=800</p></td></tr><tr align="left" valign="top"><td valign="middle" width="47"><p class="bodytext"></p></td><td valign="middle" width="348"><p class="bodytext">m01w.di=242</p></td></tr><tr align="left" valign="top"><td valign="middle" width="47"><p class="bodytext"></p></td><td valign="middle" width="348"><p class="bodytext">m01allg.l=200.</p></td></tr></tbody></table><p class="bodytext">File contents <em class="emphasis">M010USER.IN</em></p><p class="bodytext">Then, start the KISSsoft module. It accepts the geometry data and displays it in the main screen.</p><p class="bodytext">In the main screen, enter any parameters that are still missing, the torque, and the materials, and then start the calculation. In KISSsoft, you can also size the tolerance pairing. Here, you are prompted to select suitable tolerance combinations from a list. The system then performs the calculation with your final selection.</p><p class="bodytext">After you have exited the calculation, the results file is automatically converted into a format that can be read by the CAD macro. The format of this result file is defined via the templates file <em class="emphasis">M010USER.RPT</em>:</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext">[SHAFT]</p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_max = %f{m01w.tol.max}</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_min = %f{m01w.tol.max}</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_bez = %s{m01w.tol.bez}</em><br /><em class="emphasis"></em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext">[HUB]</p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_max = %f{m01n.tol.max}</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_min = %f{m01n.tol.max}</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_bez = %s{m01n.tol.bez}</em></p></td></tr></tbody></table><p class="bodytext">File contents <em class="emphasis">M010USER.RPT</em></p><p class="bodytext">The result then looks like this:</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext">[SHAFT]</p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">wtol_max = 390.000000</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">wtol_min = 340.000000</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">wtol_bez = s6</em><br /><em class="emphasis"></em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext">[HUB]</p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_max = 50.000000</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_min = 0.000000</em></p></td></tr><tr align="left" valign="top"><td valign="middle" width="396"><p class="bodytext"><em class="emphasis">ntol_bez = H6</em></p></td></tr></tbody></table><p class="bodytext">File contents <em class="emphasis">M010USER.OUT</em></p><p class="bodytext">This data is now attached directly to the appropriate dimension in the CAD system, via the macro.</p><strong>Summary:</strong><p class="bodytext">The individual tasks are therefore split up: Each side of the interface will perform only the tasks it is best suited to. The CAD administers the geometry and passes this information on to the calculation program, which knows how to process the data, and which, in turn, will return the result to the CAD.</p><p class="bodytext">The CAD system and calculation program can be used efficiently together, with the defined interface.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

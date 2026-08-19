@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>根据 Schaeffler 2017 (INA, FAG) 计算 | Calculation according to Schaeffler 2017 (INA, FAG)</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation according to Schaeffler 2017 (INA, FAG)">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9523');expand('8139');expand('9287');expand('9246');highlight('11105')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9524.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11319.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">根据 Schaeffler 2017 (INA, FAG) 计算</h3>   
+                
+<p class="bodytext">为了定义总摩擦力矩，必须知道在工况温度下的速度、载荷、润滑类型、润滑方法和润滑剂的粘度。</p><p class="bodytext">用于总摩擦力矩的公式：</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="414"><p class="bodytext"><img src="11106.png" style="height:24px; width:99px"></p></td> <td width="102"><p class="bodytext">(27.1)</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">0</sub>：不依赖速度（载荷无关）的摩擦力矩</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">0</sub> 是由润滑剂中的流体动力学损失决定的。它在快速旋转且负载较轻的轴承中尤其高。该值 <em class="emphasis">M</em><sub class="subscript">0</sub> 取决于润滑剂的数量和粘度以及滚动速度。</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">1</sub>：载荷依赖摩擦力矩</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">1</sub> 是由接触表面的弹性变形和部分滑动决定的，尤其是在缓慢旋转且负载较大的轴承中。该值 <em class="emphasis">M</em><sub class="subscript">1</sub> 取决于轴承类型（轴承依赖的指数用于计算），决定摩擦力矩的载荷和平均轴承直径。</p><p class="bodytext">对于承受轴向载荷的圆柱滚子轴承，公式中还需计入一个附加的轴向载荷相关摩擦力矩 <em class="emphasis">M</em><sub class="subscript">2</sub>。</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="414"><p class="bodytext"><img src="11107.png" style="height:24px; width:136px"></p></td> <td width="108"><p class="bodytext">(27.2)</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">2</sub>：轴向载荷依赖的摩擦力矩</p><p class="bodytext">对于圆柱滚子轴承，<em class="emphasis">M</em><sub class="subscript">2</sub> 取决于系数 k<sub class="subscript">B</sub>、轴向载荷和轴承的平均直径。</p><p class="bodytext">对于采用 TB 设计的轴承（通过新的计算和生产方法实现更好的轴向承载能力），轴承因子 f2 显示在主目录的专用图表中。</p><p class="bodytext"></p><p class="bodytext">用于计算的系数 f0、f1（见 <a class="referencetopic-shabschnitt" href="9521.htm" target="_self">摩擦系数 f0 和 f1</a> 一章）和 P1（取决于轴承类型和轴承载荷的值）已取自 DIN ISO 15312。公式、指数和系数已取自 Schaeffler 目录 2017 版。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation according to Schaeffler 2017 (INA, FAG)</h3>   
+                
+<p class="bodytext">To define the total moment of friction, the speed, load, lubrication type, lubrication method and viscosity of the lubricant at operating temperature must be known.</p><p class="bodytext">Formula used for the total moment of friction:</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="414"><p class="bodytext"><img src="11106.png" style="height:24px; width:99px" /></p></td> <td width="102"><p class="bodytext">(27.1)</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">0</sub>: speed-independent (load-independent) moment of friction</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">0</sub> is determined by the hydrodynamic losses in the lubricant. It is especially high in quickly rotating, lightly loaded bearings. The value <em class="emphasis">M</em><sub class="subscript">0</sub> depends upon the quantity and viscosity of the lubricant, as well as the rolling speed.</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">1</sub>: load-dependent friction moment</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">1</sub> is determined by the elastic deformation and partial sliding in the surfaces in contact, especially due to slowly rotating, heavily loaded bearings. The value <em class="emphasis">M</em><sub class="subscript">1</sub> depends on the bearing type (bearing-dependent exponents for the calculation), the decisive load for the moment of friction and the mean bearing diameter</p><p class="bodytext">For axially loaded cylindrical roller bearings, an additional axial load-dependent moment of friction, <em class="emphasis">M</em><sub class="subscript">2</sub> , is added to the formula.</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="414"><p class="bodytext"><img src="11107.png" style="height:24px; width:136px" /></p></td> <td width="108"><p class="bodytext">(27.2)</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">2</sub>: axial load-dependent friction moment</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">2</sub>  depends on a coefficient, k<sub class="subscript">B</sub> for cylindrical roller bearings, the axial loading and the bearing's mean diameter.</p><p class="bodytext">For bearings with a TB design (better axial load capacity achieved using new calculation and production methods), bearing factor f2 is displayed in a special diagram in the main catalog.</p><p class="bodytext"></p><p class="bodytext">Coefficients f0, f1 (see chapter <a class="referencetopic-shabschnitt" href="9521.htm" target="_self">Friction coefficients f0 and f1</a>) and P1 (values that depend on the bearing type and bearing load) used for the calculation have been taken from DIN ISO 15312. The formulae, exponents and coefficients have been taken from the Schaeffler Catalog, 2017 Edition.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

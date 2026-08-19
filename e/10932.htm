@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>用于根据 ISO 附录 E 计算的齿面载荷系数设置 | Face load factor settings for calculation according to ISO, Annex E</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Face load factor settings for calculation according to ISO, Annex E">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8648');expand('8720');expand('7708');expand('9286');expand('9246');highlight('10932')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8648.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8649.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">用于根据 ISO 附录 E 计算的齿面载荷系数设置</h3>   
+                
+<p class="bodytext"><strong>载荷因子：</strong> 定义载荷因子 K<sub>V</sub>、K<sub>A</sub> 和 K<sub>γ</sub> 的使用方式。它们可以用于根据 ISO 6336-1 附录 E 计算载荷分布和轴对齐。</p><p class="bodytext"><strong>迭代齿面载荷分布（仅影响行星级）：</strong> 如果使用轴数据来定义轴对齐，那么在轴计算中计算弯曲时，首先假定在齿宽上有一个恒定的载荷分布。如果载荷分布相当均匀，这种近似是可接受的，因此齿面载荷系数不会大于 1.3（最大 1.5）。如果载荷分布不太理想，应将齿轮计算中的载荷分布值返回到轴计算中，并用修改后的（非线性）载荷分布重新计算弯曲。这会产生一个更准确的修改后的载荷分布。然后对所有啮合处的载荷分布进行这种迭代确定，直到所有啮合处的载荷分布不再变化。请注意，此选项只有在至少一个变形组件与轴计算相关联时才会产生效果。</p><p class="bodytext"><strong>轮齿啮合刚度：</strong>定义轮齿啮合刚度是根据 ISO 6226 (Cγβ)（默认设置）计算，还是以恒定值 Cm 为 11 N/mm/μm 计算（如 AGMA 927-01 所定义）。</p><p class="bodytext"><strong>计算抗扭截面模量：</strong>如果在 <span class="menu">定义轴对齐</span> 对话框中将扭转变形计算设置为"侧 I/II"，则此处指定的直径将用于计算。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Face load factor settings for calculation according to ISO, Annex E</h3>   
+                
+<p class="bodytext"><strong>Load factors:</strong> Define how load factors K<sub>V</sub>, K<sub>A</sub> and K<sub>γ</sub> are used. They can be taken into account when calculating load distribution and axis alignment according to ISO 6336-1, Annex E.</p><p class="bodytext"><strong>Iterating the load distribution of the meshings (only affects planetary stages):</strong> If shaft data is used to define the axis alignment, a constant load distribution over the facewidth is initially assumed when bending is calculated in the shaft calculation. This is a satisfactory approximation if the load distribution is fairly well distributed, and the face load factor is therefore not greater than 1.3 (maximum 1.5). If the load distribution is less favorable, return the load distribution value from the gear calculation to the shaft calculation, and calculate bending again with the modified (and not linear) load distribution. This produces a more accurate, modified load distribution. This iterative determination of the load distribution across all the meshings is then performed until the load distribution stops changing in all the meshings. Be aware that this option only shows an effect if at least one of the deformation components is linked with the shaft calculation.</p><p class="bodytext"><strong>Tooth contact stiffness:</strong> This defines whether tooth contact stiffness is calculated according to ISO 6226 (Cγβ), (default setting) or whether it is constant with Cm = 11 N/mm/μm as defined in AGMA 927-01.</p><p class="bodytext"><strong>Calculating the moment of resistance in torsion:</strong> If the calculation of torsion due to deformation in the &quot;<span class="menu">Define axis alignment</span>&quot; dialog is set to &quot;Side I/II&quot;, the diameter specified here is used in the calculation.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

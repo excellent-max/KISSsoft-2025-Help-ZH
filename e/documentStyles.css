@@ -1,0 +1,318 @@
+/* utility styles for special uses */
+.emulatePaperSize {
+    width: 544px;
+    height: 770px;
+    margin: 0px;
+    padding: 0px;
+    border: 108px solid #FFFFFF;
+    border-top: 162px solid #FFFFFF;
+}
+
+.contrastFrameColor {
+    background-color: #F9F9F9;
+}
+
+/* general styles for export */
+* {
+    line-height: 13pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1075BD;
+    margin-bottom: 6pt;
+}
+
+h1 {
+    font-size: 36pt;
+    line-height: 46pt;
+}
+
+.romanNumeral {
+    font-family: Minion;
+    font-size: 72pt;
+}
+
+h2 {
+    font-size: 24pt;
+    text-indent: -7.0mm;
+}
+
+h2.doubleDigitHeader {
+    text-indent: -12mm;
+}
+
+h2.tripleDigitHeader {
+    text-indent: -16.5mm;
+}
+
+h3 {
+    font-size: 18pt;
+    line-height: 22pt;
+    margin-top: 30pt;
+}
+
+h4 {
+    font-size: 14pt;
+    line-height: 17pt;
+    margin-top: 24pt;
+}
+
+h5 {
+    font-size: 12pt;
+    line-height: 15pt;
+    margin-top: 24pt;
+}
+
+.hint {
+    font-weight: bold;
+    margin-left: -5.0mm;
+}
+
+.hint::before {
+    content: "▶ ";
+}
+
+.note {
+    background-color: #EAEAEA;
+    margin: 12px 0px;
+    margin-right: 4px;
+    padding: 4px;
+    border: 0.3mm solid #DDDDDD;
+}
+
+ul, ol {
+    line-height: 17pt;
+    list-style-position: outside;
+    margin-left: 7mm;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul > li, ol > li {
+    padding-left: 5mm;
+}
+
+.figcaption {
+    font-size: 8pt;
+    line-height: 10pt;
+    margin-top: 4pt;
+}
+
+table.litVerz {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0px;
+}
+
+table.litVerz td {
+    border: 1px solid #FFFFFF;
+    vertical-align: top;
+}
+
+table.litVerz tr td:first-of-type {
+    width: 12mm;
+}
+
+table.litVerz tr td:last-of-type {
+    line-height: 17pt;
+    padding-left: 2mm;
+}
+
+.code {
+    font-family: Courier;
+}
+
+.menu {
+    font-weight: bold;
+}
+
+table, td {
+    /* border: 1px solid #747474; */
+    border-collapse: collapse;
+}
+
+.printTableForFormulas {
+    width: 100%;
+    border: none;
+}
+
+.firstFormulaCell {
+    width: 140mm;
+    border: none;
+}
+
+.secondFormulaCell {
+    width: 10mm;
+    border: none;
+}
+
+/* styles for the title page */
+.titlePageTable {
+    height: 270mm;
+    width: 200mm;
+    margin-left: -25mm;
+    margin-right: -25mm;
+    border: none;
+}
+
+.titlePageTable td {
+    padding-left: 30mm;
+    padding-right: 16mm;
+    text-align: right;
+    border: none;
+}
+
+.firstRow {
+    background-color: #EDEDED;
+    height: 45mm;
+}
+
+.secondRow {
+    height: 140mm;
+    padding-top: 50mm;
+    text-align: left !important;
+    vertical-align: top;
+}
+
+.thirdRow {
+    background-color: #EDEDED;
+    height: 35mm;
+    font-size: 20pt;
+}
+
+.topRow {
+    font-size: 20pt !important;
+    margin-bottom: 0px;
+}
+
+.bottomRow {
+    text-align: left;
+    font-size: 12pt !important;
+    margin-top: 0px;
+}
+
+.titlePageMainText {
+    font-size: 36pt;
+    line-height: 40pt;
+}
+
+.titlePageSubText {
+    font-size: 24pt;
+}
+
+/* styles for the big main chapters only */
+.chapterPageTable {
+    height: 210mm;
+    width: 200mm;
+    margin-left: -25mm;
+    margin-right: -25mm;
+    border: none;
+}
+
+.chapterPageTable td {
+    padding-left: 30mm;
+    padding-right: 16mm;
+    text-align: left;
+    border: none;
+}
+
+.firstRowChapter {
+    height: 155mm;
+    vertical-align: top;
+    padding-top: 20mm;
+}
+
+.secondRowChapter {
+    background-color: #EDEDED;
+    height: 35mm;
+    font-size: 20pt;
+    text-align: right !important;
+    vertical-align: middle;
+}
+
+/* 'fixing' stylings from import */
+.tableheading {
+    font-weight: bold;
+}
+
+/*--- support for legacy styles ---*/
+.tableheading {
+    font-weight: bold;
+}
+
+
+/*
+  Styles added together with Claudia.
+  TODO: Clean up & integrate more nicely.
+*/
+* {
+    font-family: arial,helvetica,geneva,"sans Serif";
+    font-size: 13px;
+}
+
+body.contents {
+    margin-left: 8px;
+}
+
+a:link,a:visited,a:active {
+    color: rgb(16,117,189);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.bodytext {
+    margin-top: 2pt;
+    margin-bottom: 2pt;
+    line-height: 20px;
+    color: #575757;
+}
+
+.heading1,.heading2,.heading3,.heading4 {
+    font-size: 29px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    margin: 7px 0px 15px 1px;
+}
+
+.heading6 {
+    font-size: 10pt;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+
+/*
+  Some elements that were using h6 in old version are now using <p><strong /></p>.
+  Should probably still be using h6?
+  This way we can't really add a larger margin before this element since <p> has a fixed line height...
+*/
+p.bodytext > strong {
+    font-size: 10pt;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+
+/*
+  Style link list at end of main chapter entry
+  Make title look like h6, reduce space between links
+*/
+.belowtopictext .relatedheading {
+    font-size: 10pt;
+    margin-top: 12px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    color: #575757;
+}
+
+.belowtopictext .relateditem {
+    margin-top:2px;
+    margin-bottom:2px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>生成三维模型 | Generate a 3D model</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Generate a 3D model">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8865');expand('7708');expand('9286');expand('9246');highlight('10728')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10294.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8911.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">生成三维模型</h3>   
+                
+<p class="bodytext">此处用于修改生成 3D 模型的参数。</p><ul>	<li class="bodytext">在<strong>“模型类型”</strong>下，指定要生成的模型类型（体积模型、表层模型、切削模型）。体积模型可用于其他应用，如通过 CNC 进行机械加工或有限元分析。表层模型最适合于接触分析。切削模型仅适用于使用切削模拟的齿轮模型，如端面齿轮和包络蜗杆齿轮，并用于查看实际的切削模拟。</li></ul><p class="bodytext" style="margin-left:80px"><img height="123" src="18-grafikeinstellungen_parasolid.png" width="441"></p><ul>	<li class="bodytext"><strong>切削步骤数</strong> 设置切削过程中的每半节距切削次数。最小值为 1，默认值为 20。通过增加切削步骤数可以提高最终模型的质量，但这也增加了制造误差的可能性。"比例因子"用于解决失效问题。如果操作失败，我们建议使用较少的生成步骤并增大比例因子。</li>	<li class="bodytext"><strong>齿宽方向上的节段数</strong> 定义了沿齿宽方向用于近似齿面型式的节段数量。最小值为2，默认值为11。通常情况下，通过增加此值可以提高最终模型的质量，但不建议设置相对于齿宽过高的数值。该系数用于具有切削模拟的齿轮模型和具有多个横截面的齿轮模型，例如弧齿锥齿轮和具有齿向修形的圆柱齿轮。</li>	<li class="bodytext">生成3D模型 <strong>切削模型的缩放因子</strong> 用于在切削模拟过程中对模型进行缩放。最小值为1，默认值为10。有时由于内部操作错误，切削模拟可能在Parasolid内核中失败，尤其是在模型具有非常小的模数和/或大量生成步骤时。为了防止此类操作错误，应在切削过程中使用由比例因子设定尺寸的模型。因此，切削模型的尺寸可能与实际设计不同。然而，体积模型和表层模型在操作后会自动恢复其原始比例（尺寸），因此与输入的齿轮具有相同的尺寸。</li>	<li class="bodytext">"<strong>建模操作公差</strong>"设置 Parasolid 内核的内部操作容差，例如在布尔运算中的弦近似和碰撞检测。默认值为 1 μm。</li>	<li class="bodytext">生成3D模型 <strong>渲染质量</strong> 设置3D几何视图中结果图形的分辨率。此设置仅用于提高查看器的显示效果（可操作性），不影响生成模型的质量。如果查看器中的旋转操作速度慢，可以增加质量值以加快操作速度。默认值为5 μm。</li>	<li class="bodytext">点击 <strong>齿宽方向上根圆半径恒定</strong> 指定锥齿轮齿根圆角半径的生成方法。锥齿轮的齿根圆角半径沿齿宽方向随法向模数变化。如果选中此复选框，则在中间截面中使用由法向模数定义的恒定齿根圆角半径。（适用于锥齿轮）</li>	<li class="bodytext"><strong>沿齿宽的恒定凸角值</strong> 设置锥齿轮基准齿廓的凸角。锥齿轮的基准齿廓的凸角沿齿宽方向随法向模数变化。如果选中此复选框，则在中间截面中使用由法向模数定义的恒定凸角。（适用于锥齿轮）</li>	<li class="bodytext">如果选择 <strong>显示外部和内部的 2D 几何模型</strong>，则内、外两侧的齿形将表示为 2D 图形。（适用于锥齿轮）</li>	<li class="bodytext">如果选择 <strong>在已保存位置生成齿系统模型</strong>，系统模型将在已保存的位置生成。该位置保存在计算文件中，以后可恢复接触印痕的检查位置。(适用于锥齿轮)</li>	<li class="bodytext">点击 <strong>切割边样条近似点数</strong> 以指定每条边上用于近似根部区域或齿面样条曲线的建模（中间）点数。图中显示了一个简图，其中将要使用的点被扫描。端点（节点）被移除，因为它们会使曲线产生波浪形。如果可以假设点之间的参数距离相同，则仅使用切割边上的中间点。通常建议在根部区域使用更多的点。然而，此模型将帮助用户确定最佳值。（适用于包络蜗杆齿轮）</li>	<li class="bodytext">点击 <strong>蜗轮滚刀加大系数</strong> 以定义用于增大蜗轮滚刀的系数。实现干涉刀具的方法有多种，包括轴向螺距法、基圆螺距法、额外螺纹法和法向螺距设计法。KISSsoft 采用法向螺距法，因为该法实际上被视作行业标准。这些方法基于如下原理：蜗轮滚刀在法向截面中与蜗杆具有相同的法向螺距和相同的法向压力角。滚刀与齿轮之间的切削距离随后相应改变，以确保齿轮齿根圆直径和齿顶圆直径结果一致。若使用加大系数，生成的曲面将无法与蜗杆表面匹配，也无法获得最佳接触印痕。因此，如果您希望采用理论曲面几何而非常规切削方法，我们建议不要使用加大系数。实际应用中，刀具的齿厚会加大，以考虑蜗轮的齿厚公差。此时建议使用较小的加大系数来补偿公差量级，以获得最佳接触。（适用于包络蜗杆齿轮）</li>	<li class="bodytext">点击 <strong>刀具轴交角变化</strong> 在模拟铣削过程中修改蜗轮滚刀的轴交角。该角度可以为正也可以为负。正角度定义如下。（适用于包络蜗杆齿轮）</li>	<li class="bodytext">点击 <strong>蜗轮滚刀法向截面的压力角变化</strong> 将蜗轮滚刀设置为不同于蜗杆的压力角。（适用于包络蜗杆齿轮）</li>	<li class="bodytext">点击 <strong>蜗轮滚刀的齿面形状</strong> 为蜗轮滚刀设置不同于蜗杆的齿型。大量研究已表明，不同齿型组合可用于获得更好的蜗轮接触印痕。此设置用于此目的。如果未选择此选项，则蜗轮滚刀和蜗杆将使用相同的齿型。(适用于包络蜗杆齿轮)</li>	<li class="bodytext">点击 <strong>轴向扩展</strong>，以考虑齿轮的轴向长度膨胀/收缩因子α，用于注塑或烧结工艺。斜齿轮齿的螺旋角值基于新的齿宽重新计算。<br>		<br>		<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.86ex" height="5.343ex" style="vertical-align: -1.838ex;" viewbox="0 -1508.9 6828.4 2300.3" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="zh-MathJax-SVG-1-Title">
+<title id="zh-MathJax-SVG-1-Title">\beta =tan^{-1}{tan\beta  \over \alpha }</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="zh-E1-MJMATHI-3B2" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-74" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-3B1" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-3B2"></use>
+ <use x="851" y="0" xlink:href="#zh-E1-MJMAIN-3D"></use>
+ <use x="1907" y="0" xlink:href="#zh-E1-MJMATHI-74"></use>
+ <use x="2269" y="0" xlink:href="#zh-E1-MJMATHI-61"></use>
+<g transform="translate(2798,0)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-6E"></use>
+<g transform="translate(600,412)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMAIN-2212"></use>
+ <use transform="scale(0.707)" x="778" y="0" xlink:href="#zh-E1-MJMAIN-31"></use>
+</g>
+</g>
+<g transform="translate(4403,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="2185" height="60" x="0" y="220"></rect>
+<g transform="translate(60,714)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-74"></use>
+ <use x="361" y="0" xlink:href="#zh-E1-MJMATHI-61"></use>
+ <use x="891" y="0" xlink:href="#zh-E1-MJMATHI-6E"></use>
+ <use x="1491" y="0" xlink:href="#zh-E1-MJMATHI-3B2"></use>
+</g>
+ <use x="772" y="-686" xlink:href="#zh-E1-MJMATHI-3B1"></use>
+</g>
+</g>
+</g>
+</svg></li></ul><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Generate a 3D model</h3>   
+                
+<p class="bodytext">This is where you modify the parameters used to generate 3D models.</p><ul>	<li class="bodytext">Under <strong>&quot;Model type&quot;</strong>, specify the type of model to be generated (volume model, skin model, cutting model). The volume model can be used for other applications such as machining by CNC or finite element analysis. The skin model is most suitable for contact analysis. The cutting model is only suitable for the gear models that use cutting simulation, such as face gear and enveloping worm gear, and is used to view the actual cutting simulation.</li></ul><p class="bodytext" style="margin-left:80px"><img height="123" src="18-grafikeinstellungen_parasolid.png" width="441" /></p><ul>	<li class="bodytext">The <strong>Number of cutting steps</strong> sets the number of cuts per half pitch for the cutting process. The minimum value is 1, and the default value is 20. The quality of the final model can be increased by increasing the number of cutting steps, but this also increases the probability of manufacturing errors. The &quot;Scale factor&quot; is used for solving the failure problem. If the operation fails, we recommend you use a lower number of generation steps with a larger scale factor.</li>	<li class="bodytext">The <strong>Number of sections along facewidth</strong> defines the number of sections along the facewidth for approximating the tooth flank form. The minimum value is 2, and the default value is 11. Normally, the quality of the final model can be improved by increasing this value, but we do not recommend that you set a number that is excessively high, compared with the facewidth. The coefficient is used for the gear models using cutting simulation and gear models using multiple cross sections, such as spiral bevel gears and cylindrical gears with lead modification.</li>	<li class="bodytext">The <strong>Scaling factor for the cutting model</strong> is used to scale the model during the cutting simulation process. The minimum value is 1 and the default value is 10. Sometimes the cutting simulation can fail due to an internal operation error in the Parasolid kernel, especially when the model has a very small module and/or a large number of generation steps. To prevent this type of operating error, use the model with its size set by the scale factor in the cutting process. Consequently the cutting model can have different dimensions than the actual design. However, the volume and skin models are automatically returned to their original scale (size) after the operation, and therefore have the same dimensions as the entered gear.</li>	<li class="bodytext">The &quot;<strong>Modeling operation tolerance</strong>&quot; sets the tolerance for the internal operations of the Parasolid kernel, such as the chordal approximation and clash detection in Boolean operations. The default value is 1 μm.</li>	<li class="bodytext">The <strong>Rendering quality</strong> sets the resolution for the resulting graphics in the 3D geometry view. This is used only to improve the viewer display (usability) and does not affect the quality of the generated model. If the rotation operation in the Viewer is slow, you can increase the quality value to speed up the operation. The default value is 5 μm.</li>	<li class="bodytext">Click on <strong>Constant root radius along the facewidth</strong> to specify the method used to generate the root fillet radius for a bevel gear. The bevel gear's root fillet radius changes by the factor of the normal module along the facewidth. If you set this checkbox, the constant root fillet radius defined by the normal module is used in the middle section. (Available for bevel gears)</li>	<li class="bodytext">The <strong>Constant protuberance along the facewidth</strong> value sets the protuberance of the bevel gear's reference profile. The protuberance of the bevel gear's reference profile changes by the factor of the normal module along the facewidth. If you set this checkbox, the constant protuberance defined by the normal module is used in the middle section. (Available for bevel gears)</li>	<li class="bodytext">If <strong>Display 2D geometry for outside and inside</strong> is selected, the tooth forms on the internal and external sides are represented as a 2D graphic. (Available for bevel gears)</li>	<li class="bodytext">If <strong>Generate tooth system model in the saved position</strong> is selected, the system model is generated at the position you saved. This position is saved in the calculation file, and you will be able to restore the contact pattern's checking position in the future. (Available for bevel gears)</li>	<li class="bodytext">Click on <strong>Number of points on the edge of cut for spline approximation</strong> to specify the number of modeling (intermediate) points on each edge that are used to approximate the spline curves for the root area or the tooth flank. The figure shows a diagram in which the points that are to be used are scanned. The end points (nodes) are removed because they add waviness to the curve. We use only the intermediate points on the cutting edge if it can be assumed that the parametric distance between the points is the same. We usually recommend that more points are used in the root area. However, this model will help the user determine the optimum value. (Available for enveloping worm gear)</li>	<li class="bodytext">Click on <strong>Oversize factor for worm wheel cutter</strong> to define the coefficient used to increase the worm wheel cutter. There are different methods of implementing the interference tool. Those methods include the axial pitch method, the base pitch method, the extra thread method, and the normal pitch design method. KISSsoft uses the normal pitch method because this is practically regarded as the industry standard. These methods are based on the principle, that the worm wheel cutter uses the same normal pitch and the same normal pressure angle in the normal section as the worm. The cutting distance between the hob and the gear will then be changed accordingly, to ensure a consistent result for the root and tip diameters on the gear. If you are using the oversize factor, the generated surface will not be match the worm surface and will not give the best contact pattern. Therefore we recommend you do not use the oversize factor if you want to use theoretical surface geometry rather than a conventional cutting method. In practice, the tooth thickness of the cutter is increased to take the tooth thickness tolerance of the worm wheel into account. In this case, we recommend you use a small oversize factor to compensate for the tolerance order to get the best contact. (Available for enveloping worm gear)</li>	<li class="bodytext">Click on <strong>Cutter shaft angle change</strong> to modify the worm wheel cutter shaft angle during the simulated milling run. The angle can be both positive and negative. The positive angle is defined as shown below. (Available for enveloping worm gear)</li>	<li class="bodytext">Click on <strong>Change in pressure angle of the worm wheel cutter in normal section</strong> to set the worm wheel cutter to a different pressure angle than the worm. (Available for enveloping worm gear)</li>	<li class="bodytext">Click on <strong>Flank shape of worm wheel cutter</strong> to set a different tooth form for the worm wheel cutter than for the worm. Extensive research has shown how different combinations of tooth forms can be used to get a better contact pattern in worm wheels. This setting is used for this purpose. If this option is not selected, the same tooth form is used for both the worm wheel cutter and the worm. (Available for enveloping worm gear)</li>	<li class="bodytext">Click on <strong>Axial expansion</strong>, to take the axial length expansion/contraction factor α of the gears into account for injection-molding or sintering processes. The helix angle value for helical gear teeth is based on the new facewidth, calculated again from<br />	<br />	<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="15.86ex" height="5.343ex" style="vertical-align: -1.838ex;" viewBox="0 -1508.9 6828.4 2300.3" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
+<title id="MathJax-SVG-1-Title">\beta =tan^{-1}{tan\beta  \over \alpha }</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMATHI-3B2" d="M29 -194Q23 -188 23 -186Q23 -183 102 134T186 465Q208 533 243 584T309 658Q365 705 429 705H431Q493 705 533 667T573 570Q573 465 469 396L482 383Q533 332 533 252Q533 139 448 65T257 -10Q227 -10 203 -2T165 17T143 40T131 59T126 65L62 -188Q60 -194 42 -194H29ZM353 431Q392 431 427 419L432 422Q436 426 439 429T449 439T461 453T472 471T484 495T493 524T501 560Q503 569 503 593Q503 611 502 616Q487 667 426 667Q384 667 347 643T286 582T247 514T224 455Q219 439 186 308T152 168Q151 163 151 147Q151 99 173 68Q204 26 260 26Q302 26 349 51T425 137Q441 171 449 214T457 279Q457 337 422 372Q380 358 347 358H337Q258 358 258 389Q258 396 261 403Q275 431 353 431Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-74" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-3B1" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMATHI-3B2" x="0" y="0"></use>
+ <use xlink:href="#E1-MJMAIN-3D" x="851" y="0"></use>
+ <use xlink:href="#E1-MJMATHI-74" x="1907" y="0"></use>
+ <use xlink:href="#E1-MJMATHI-61" x="2269" y="0"></use>
+<g transform="translate(2798,0)">
+ <use xlink:href="#E1-MJMATHI-6E" x="0" y="0"></use>
+<g transform="translate(600,412)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-2212" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-31" x="778" y="0"></use>
+</g>
+</g>
+<g transform="translate(4403,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="2185" height="60" x="0" y="220"></rect>
+<g transform="translate(60,714)">
+ <use xlink:href="#E1-MJMATHI-74" x="0" y="0"></use>
+ <use xlink:href="#E1-MJMATHI-61" x="361" y="0"></use>
+ <use xlink:href="#E1-MJMATHI-6E" x="891" y="0"></use>
+ <use xlink:href="#E1-MJMATHI-3B2" x="1491" y="0"></use>
+</g>
+ <use xlink:href="#E1-MJMATHI-3B1" x="772" y="-686"></use>
+</g>
+</g>
+</g>
+</svg>.</li></ul><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

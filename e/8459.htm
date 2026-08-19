@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算基础原理 | Underlying principles of calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Underlying principles of calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8457');expand('9286');expand('9246');highlight('8459')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8457.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8460.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算基础原理</h3>   
+                
+<p class="bodytext">基本的几何关系在 ISO 14521 或 DIN 3975 中定义。其他信息以及其他重要定义（如各种蜗杆齿面形式 ZA、ZC 或 ZI、ZH、ZK、ZN）参见 [12]。强度（齿根折断、点蚀、磨损和温度安全）按 ISO 14521 或 DIN 3996 计算。与圆柱齿轮所需的计算相比，这些计算所需的时间和精力要少得多。蜗杆可在整个制造过程中通过所谓的“三针测量”进行检查。这对应于蜗轮（以及圆柱齿轮）使用的两球测量原理。然而，确定三针测量所涉及的计算非常复杂。G. Bock [52] 在位于柏林的“Physikalisch-Technisches Bundesanstalt”（德国国家计量研究院）为标准齿面形式开发了一种非常有用的方法。该方法考虑了蜗杆齿面的形状，因此被 KISSsoft 采用。</p><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">使用“模数”一词时，必须清楚地区分轴向模数和法向模数。</p><p class="bodytext"></p><p class="bodytext"><strong>关于如何使用工况系数的说明</strong></p><p class="bodytext">在圆柱齿轮和锥齿轮计算中，工况系数 K<sub>A</sub> 通常与功率相乘，例如 K<sub>A</sub>=1 且 P 为 5 kW 时的安全系数与 K<sub>A</sub>=2 且 P=2.5 kW 时完全相同。然而，对于按 ISO 或 DIN 标准进行的蜗杆计算，情况有所不同，可能引起混淆。</p><p class="bodytext">力和扭矩与工况系数相乘。相比之下，在确定轴承功率损失 P<sub>VLP</sub> 以及计算总效率 η<sub>Ges</sub> 时，功率不与工况系数相乘。因此，如果采用 K<sub>A</sub>=2 且 P 为 2.5 kW，而非 K<sub>A</sub>=1 且 P 为 5 kW，则功率损失 [PV] 较低，但总效率 η<sub>Ges</sub> 会严重偏低。</p><p class="bodytext">示例“WormGear 1 (DIN 3996, Example 1).Z80”的结果：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext"></p>			</td>			<td width="144">			<p class="bodytext">K<sub>A</sub>=1; P= 5 kW</p>			</td>			<td width="138">			<p class="bodytext">K<sub>A</sub>=2; P=2.5 kW</p>			</td>			<td width="120">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">P<sub>VLP</sub></p>			</td>			<td width="144">			<p class="bodytext">0.140</p>			</td>			<td width="138">			<p class="bodytext">0.070</p>			</td>			<td width="120">			<p class="bodytext">&lt;&lt; (* 1/K<sub>A</sub>)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">P<sub>VD</sub>+P<sub>V0</sub></p>			</td>			<td width="144">			<p class="bodytext">0.199</p>			</td>			<td width="138">			<p class="bodytext">0.199</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">P<sub>VZ</sub></p>			</td>			<td width="144">			<p class="bodytext">0.530</p>			</td>			<td width="138">			<p class="bodytext">0.530</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">P<sub>V</sub></p>			</td>			<td width="144">			<p class="bodytext">0.869</p>			</td>			<td width="138">			<p class="bodytext">0.799</p>			</td>			<td width="120">			<p class="bodytext">&lt;</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">η<sub>z</sub></p>			</td>			<td width="144">			<p class="bodytext">90.00</p>			</td>			<td width="138">			<p class="bodytext">90.00</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">η<sub>Ges</sub></p>			</td>			<td width="144">			<p class="bodytext">85.19</p>			</td>			<td width="138">			<p class="bodytext">75.77</p>			</td>			<td width="120">			<p class="bodytext">&lt;&lt;</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Θ<sub>S</sub></p>			</td>			<td width="144">			<p class="bodytext">76.6</p>			</td>			<td width="138">			<p class="bodytext">76.6</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Θ<sub>M</sub></p>			</td>			<td width="144">			<p class="bodytext">80.9</p>			</td>			<td width="138">			<p class="bodytext">80.9</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>W</sub></p>			</td>			<td width="144">			<p class="bodytext">1.386</p>			</td>			<td width="138">			<p class="bodytext">1.386</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>H</sub></p>			</td>			<td width="144">			<p class="bodytext">1.143</p>			</td>			<td width="138">			<p class="bodytext">1.143</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>δ</sub></p>			</td>			<td width="144">			<p class="bodytext">2.369</p>			</td>			<td width="138">			<p class="bodytext">2.369</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>F</sub></p>			</td>			<td width="144">			<p class="bodytext">2.251</p>			</td>			<td width="138">			<p class="bodytext">2.251</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>T</sub></p>			</td>			<td width="144">			<p class="bodytext">1.306</p>			</td>			<td width="138">			<p class="bodytext">1.306</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>	</tbody></table><p class="bodytext">这种结果差异不合逻辑，因此，为了确定 P<sub>VLP</sub> 和 η<sub>Ges</sub>，功率也会乘以 K<sub>A</sub> 以获得相同的结果。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Underlying principles of calculation</h3>   
+                
+<p class="bodytext">The underlying geometric relationships are defined in ISO 14521 or DIN 3975. You will find additional information, and other important definitions, such as the various worm flank forms (ZA, ZC or ZI, ZH, ZK, ZN), in [12]. Strength (tooth fracture, pitting, wear and temperature safety) is calculated according to ISO 14521 or DIN 3996. These calculations take much less time and effort to perform than those required for cylindrical gears. Worms can be checked throughout the manufacturing process by using what are known as &quot;three wire measurements&quot;. This corresponds to the principle of the measurement over two balls that is used for worm gears (and also for cylindrical gears). However, the calculations involved in ascertaining the three wire measurement are very complex. A very useful method for standard flank forms has been developed by G. Bock [52] at the &quot;Physikalisch-Technisches Bundesanstalt&quot; (German national metrology institute) in Berlin. This method takes into account the shape of the worm's flank, which is why it is used in KISSsoft.</p><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">When you use the term &quot;module&quot; you must differentiate clearly between the axial and the normal module.</p><p class="bodytext"></p><p class="bodytext"><strong>Note about how to use the application factor</strong></p><p class="bodytext">In cylindrical gear and bevel gear calculations, the application factor K<sub>A</sub> is usually multiplied by the power, for example, so that K<sub>A</sub>=1 with P= 5 kW gives exactly the same safeties as K<sub>A</sub>=2 and P=2.5 kW. However, this is different for worm calculations performed according to the ISO or DIN standard and may lead to confusion.</p><p class="bodytext">The forces and torques are multiplied by the application factor. In contrast, the power is not multiplied by the application factor when determining the bearing power loss P<sub>VLP</sub> and when calculating the total efficiency η<sub>Ges</sub>. Therefore, if K<sub>A</sub>=2 and P=2.5 kW instead of K<sub>A</sub>=1 with P= 5 kW, the power loss [PV] is lower, but the total efficiency η<sub>Ges</sub> is massively too low.</p><p class="bodytext">Results for the example &quot;WormGear 1 (DIN 3996, Example 1).Z80&quot;:</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext"></p>			</td>			<td width="144">			<p class="bodytext">K<sub>A</sub>=1; P= 5 kW</p>			</td>			<td width="138">			<p class="bodytext">K<sub>A</sub>=2; P=2.5 kW</p>			</td>			<td width="120">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">P<sub>VLP</sub></p>			</td>			<td width="144">			<p class="bodytext">0.140</p>			</td>			<td width="138">			<p class="bodytext">0.070</p>			</td>			<td width="120">			<p class="bodytext">&lt;&lt; (* 1/K<sub>A</sub>)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">P<sub>VD</sub>+P<sub>V0</sub></p>			</td>			<td width="144">			<p class="bodytext">0.199</p>			</td>			<td width="138">			<p class="bodytext">0.199</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">P<sub>VZ</sub></p>			</td>			<td width="144">			<p class="bodytext">0.530</p>			</td>			<td width="138">			<p class="bodytext">0.530</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">P<sub>V</sub></p>			</td>			<td width="144">			<p class="bodytext">0.869</p>			</td>			<td width="138">			<p class="bodytext">0.799</p>			</td>			<td width="120">			<p class="bodytext">&lt;</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">η<sub>z</sub></p>			</td>			<td width="144">			<p class="bodytext">90.00</p>			</td>			<td width="138">			<p class="bodytext">90.00</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">η<sub>Ges</sub></p>			</td>			<td width="144">			<p class="bodytext">85.19</p>			</td>			<td width="138">			<p class="bodytext">75.77</p>			</td>			<td width="120">			<p class="bodytext">&lt;&lt;</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Θ<sub>S</sub></p>			</td>			<td width="144">			<p class="bodytext">76.6</p>			</td>			<td width="138">			<p class="bodytext">76.6</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">Θ<sub>M</sub></p>			</td>			<td width="144">			<p class="bodytext">80.9</p>			</td>			<td width="138">			<p class="bodytext">80.9</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>W</sub></p>			</td>			<td width="144">			<p class="bodytext">1.386</p>			</td>			<td width="138">			<p class="bodytext">1.386</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>H</sub></p>			</td>			<td width="144">			<p class="bodytext">1.143</p>			</td>			<td width="138">			<p class="bodytext">1.143</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>δ</sub></p>			</td>			<td width="144">			<p class="bodytext">2.369</p>			</td>			<td width="138">			<p class="bodytext">2.369</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>F</sub></p>			</td>			<td width="144">			<p class="bodytext">2.251</p>			</td>			<td width="138">			<p class="bodytext">2.251</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="114">			<p class="bodytext">S<sub>T</sub></p>			</td>			<td width="144">			<p class="bodytext">1.306</p>			</td>			<td width="138">			<p class="bodytext">1.306</p>			</td>			<td width="120">			<p class="bodytext">=</p>			</td>		</tr>	</tbody></table><p class="bodytext">This difference in the results is not logical so therefore, to determine P<sub>VLP</sub> and η<sub>Ges</sub>, the power is also multiplied by K<sub>A</sub> to achieve the same results.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

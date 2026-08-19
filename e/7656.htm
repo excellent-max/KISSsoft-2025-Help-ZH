@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>连接元件 | Connection elements</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Connection elements">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7647');expand('7629');expand('9292');expand('9246');highlight('7656')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7655.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7657.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">连接元件</h3>   
+                
+<ul>	<li class="bodytext"><strong>kSysGearPairConstraint</strong>：两个圆柱齿轮或锥齿轮之间的连接。</li>	<li class="bodytext"><strong>kSysPlanetaryGearPairConstraint</strong>：齿轮与行星轮之间的连接。您可以选择配对类型：太阳轮-行星轮、行星轮-内齿轮或行星轮-行星轮。两个齿轮也必须按此顺序输入。还必须选择一个行星架。行星轮数量必须在同一对话框中定义，或在行星架耦合的 <span class="menu">NofPlanets</span> 变量中定义。</li>	<li class="bodytext"><strong>kSysPlanetaryBevelGearConstraint</strong>：用于锥齿轮差速器的锥齿轮与旋转锥齿轮之间的连接。与行星连接的情况一样，必须定义锥齿轮的顺序和行星轮数量。您可以在同一对话框中指定该级的效率。</li>	<li class="bodytext"><strong>kSysWormGearConstraint</strong>：蜗杆与蜗轮之间的连接。</li>	<li class="bodytext"><strong>kSysCouplingConstraint</strong>：两个联轴器之间传动比为 1 的连接。联轴器的运动力可以选择或取消选择。您还可以指定滑差的值，例如用于多片离合器或同步器。连接中的扭矩通常通过计算得出，但也可以指定。</li>	<li class="bodytext"><strong>kSysBeltConstraint</strong>：皮带轮之间的连接。传动比由直径比计算得出。您也可以输入滑差的值。</li>	<li class="bodytext"><strong>kSysConnectionBearing:</strong> 两个轴之间的连接。</li>	<li class="bodytext"><strong>kSysConnectionRollerBearing:</strong><span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"> </span></span></span>两个轴之间的连接滚动轴承。</li></ul><p class="bodytext">使用 <span class="menu">setConfig(slipConstraint_r/[slipConstraint_r,</span> <span class="menu">slip_r], torqueConstraint_r/[torqueConstraint_r, torque_r])</span> 函数来激活或停用该连接：</p><ul>	<li class="bodytext">1. 闭合，无滑差：<span class="menu">setConfig([TRUE, 0], FALSE)</span>，</li>	<li class="bodytext">2. 断开，无扭矩：<span class="menu">setConfig(FALSE, FALSE)</span>，</li>	<li class="bodytext">3. 断开，带扭矩：<span class="menu">setConfig(FALSE, [TRUE, 20]),</span></li></ul><ul>	<li class="bodytext"><strong>kSysSpeedOrForce</strong>：用于指定转速或扭矩的元素。两个值都可以指定或计算。您也可以预设功率作为扭矩的替代。</li></ul><p class="bodytext">使用 <span class="menu">setConfig(speedConstraint_r,</span> <span class="menu">torqueConstraint_r/[torqueConstraint_r, type_r, torque_r])</span> 函数来更改预设值。如果指定载荷类型，则下方显示的值具有以下含义：0. 带符号的扭矩，1. 扭矩，驱动，2. 扭矩，从动，3. 功率，驱动，4. 功率，从动。示例：</p><ul>	<li class="bodytext">1. 指定转速和扭矩：<span class="menu">setConfig(TRUE,</span> <span class="menu">TRUE)</span>，</li>	<li class="bodytext">2. 指定转速和扭矩及值：<span class="menu">setConfig(TRUE, [TRUE, 0, 20])</span>，</li>	<li class="bodytext">3. 仅预定义驱动功率：<span class="menu">setConfig(FALSE, [TRUE,</span> <span class="menu">3, 20])</span></li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Connection elements</h3>   
+                
+<ul>	<li class="bodytext"><strong>kSysGearPairConstraint</strong>: a connection between two cylindrical or bevel gears.</li>	<li class="bodytext"><strong>kSysPlanetaryGearPairConstraint</strong>: a connection between a gear and a planet. You can select the type of pairing: sun-planet, planet-internal gear or planet-planet. Both gears must also be entered in this sequence. A planet carrier must also be selected. The number of planets must be defined either in the same dialog or in the planet carrier coupling <span class="menu">NofPlanets</span> variable.</li>	<li class="bodytext"><strong>kSysPlanetaryBevelGearConstraint</strong>: a connection between a bevel gear and a rotating bevel gear for bevel gear differentials. As in the case of the planetary connection, the sequence of the bevel gears and the number of planets must be defined. You can specify the efficiency of this stage in the same dialog.</li>	<li class="bodytext"><strong>kSysWormGearConstraint</strong>: a connection between a worm and worm wheel.</li>	<li class="bodytext"><strong>kSysCouplingConstraint</strong>: A connection with ratio 1 between two couplings. The coupling's kinematic force can be selected or deselected. You can also specify a value for slip, e.g. for multi disc couplings or synchronizations. The torque in the connection is usually calculated, but can also be specified.</li>	<li class="bodytext"><strong>kSysBeltConstraint</strong>: A connection between belt sheaves. The transmission ratio is calculated from the diameter ratio. You can also enter a value for slip.</li>	<li class="bodytext"><strong>kSysConnectionBearing:</strong> A connection between two shafts.</li>	<li class="bodytext"><strong>kSysConnectionRollerBearing:</strong><span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"> </span></span></span>A connecting rolling bearing between two shafts.</li></ul><p class="bodytext">Use the <span class="menu">setConfig(slipConstraint_r/[slipConstraint_r,</span> <span class="menu">slip_r], torqueConstraint_r/[torqueConstraint_r, torque_r])</span> function to activate or deactivate the connection:</p><ul>	<li class="bodytext">1. Closed, without slip: <span class="menu">setConfig([TRUE, 0], FALSE)</span>,</li>	<li class="bodytext">2. Open, without torque: <span class="menu">setConfig(FALSE, FALSE)</span>,</li>	<li class="bodytext">3. Open, with torque: <span class="menu">setConfig(FALSE, [TRUE, 20]),</span></li></ul><ul>	<li class="bodytext"><strong>kSysSpeedOrForce</strong>: An element for specifying speed or torque. Both values can either be specified or calculated. You can also preset the power as an alternative to the torque.</li></ul><p class="bodytext">Use the <span class="menu">setConfig(speedConstraint_r,</span> <span class="menu">torqueConstraint_r/[torqueConstraint_r, type_r, torque_r])</span> function to change the preset values. If you specify a load type, the values shown below have these meanings: 0. Torque with prefix operator, 1. Torque, driving, 2. Torque, driven, 3. Power, driving, 4. Power, driven. Examples:</p><ul>	<li class="bodytext">1. Speed and torque specified: <span class="menu">setConfig(TRUE,</span> <span class="menu">TRUE)</span>,</li>	<li class="bodytext">2. Speed and torque with value specified: <span class="menu">setConfig(TRUE, [TRUE, 0, 20])</span>,</li>	<li class="bodytext">3. Only power driving predefined: <span class="menu">setConfig(FALSE, [TRUE,</span> <span class="menu">3, 20])</span></li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

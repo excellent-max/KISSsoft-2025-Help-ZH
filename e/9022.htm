@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>KISSsoft 中的开放接口概念 | Open interfaces concept in KISSsoft</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Open interfaces concept in KISSsoft">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9019');expand('9018');expand('9272');expand('9246');highlight('9022')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9021.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9024.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">KISSsoft 中的开放接口概念</h3>   
+                
+<p class="bodytext">KISSsoft 的接口概念具有简单而又非常灵活的结构。</p><p class="bodytext">应当能够尽可能简单地将计算程序集成到各种 CAD 系统中，并在不同的环境（如 MS Windows 或 UNIX 等操作系统）中使用它们。</p><p class="bodytext">CAD 系统与 KISSsoft 之间的接口机制基于文本数据集（ASCII 文件），对于所有传递数据，ID 与数值一起传递（参见<a class="referencetopic-shabschnitt" href="9254.htm" target="_self">示例：过盈配合计算</a>）。该数据集长度可变，但只会传递 CAD 系统中已知的值。这取决于 CAD 系统和当前激活的图纸。</p><p class="bodytext">KISSsoft 将测试第三方程序传输的数据集，以确保其完整性和一致性，如有必要，将提示您在 KISSsoft 输入系统中输入额外数据。KISSsoft 随后将运行计算，并将 CAD 系统所需的输出数据写入第二个文本数据集。然后，它将此数据集返回给 CAD 系统。通过使用报告生成器，可选择输出文件的任何格式，即 KISSsoft 会适应第三方程序。CAD 现在可以读取所需数据并选择性地处理。</p><p class="bodytext">这一概念带来简单的接口形式，使得即使非专业人士也能快速编写应用程序。</p><p class="biggraphic"><img class="" height="360" src="09-cadschnitt.png" width="565"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Open interfaces concept in KISSsoft</h3>   
+                
+<p class="bodytext">The KISSsoft interfaces concept has a simple, yet very flexible structure.</p><p class="bodytext">It should be possible to integrate calculation programs into all kinds of CAD systems as simply as possible, and use them in different environments (operating systems such as MS Windows or UNIX).</p><p class="bodytext">The interface mechanism between the CAD system and KISSsoft is based on a text dataset (ASCII file), and an ID is transferred together with the numerical value for all transfer data (see chapter <a class="referencetopic-shabschnitt" href="9254.htm" target="_self">Example: Interference fit calculation</a>). This dataset can be of variable length, but only the values that are known in the CAD system will be transferred. This depends on the CAD system and the currently active drawing.</p><p class="bodytext">KISSsoft will test the dataset transferred by the third party program, to ensure it is complete and consistent, and, if necessary, you will be prompted to input additional data in the KISSsoft input system. KISSsoft will then run the calculation and write the output data that the CAD system requires to a second text dataset. It then returns this dataset to the CAD system. By using the report generator you can select any format for the output file, i.e. KISSsoft adapts itself to the third party program. The CAD can now read the data required by the situation and process it selectively.</p><p class="bodytext">This concept results in simple interface forms, which enables even non-specialists to write applications quickly.</p><p class="biggraphic"><img class="" height="360" src="09-cadschnitt.png" width="565" /></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

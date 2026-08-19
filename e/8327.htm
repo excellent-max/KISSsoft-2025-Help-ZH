@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>滚动轴承 | Rolling bearings</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Rolling bearings">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10163');expand('8313');expand('8183');expand('9287');expand('9246');highlight('8327')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8326.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11344.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">滚动轴承</h3>   
+                
+<p class="bodytext">除了一般支承外，您还可以选择特定的滚动轴承。如果这样做，轴承数据将从滚动轴承数据库中获取。</p><p class="bodytext">如果轴承数据库中存在合适的条目，则轴承刚度值将从那里获取。或者，您可以直接在“元素编辑器”中输入这些值。您还可以选择在文件中定义径向刚度、轴向刚度和倾覆刚度（参见“dat”目录中的示例«Example-Userdefined-Bearing-Stiffness.dat»），然后使用这些值计算轴承的局部工作刚度。该文件应包含位置接触载荷曲线中的轴承游隙，这就是导入文件时游隙输入值被设置为 0 的原因。</p><p class="bodytext">也可以不使用偏移量，而是通过在外圈上施加预紧力来定义轴承的预紧力。这仅适用于具有内部几何形状的轴承，并且仅当相关轴承能够承受轴向预紧力时才考虑。然后，预紧力在内部转换为外圈的等效轴向偏移量。对于具有内部几何形状的轴承，您还可以指定外圈绕 x 轴和 z 轴的旋转。例如，这可用来对箱体变形建模，因此您可以直接输入 FEM 结果。</p><p class="bodytext">P<sub>d</sub> = d<sub>o </sub>– d<sub>i </sub>– 2 * D<sub>w</sub></p><p class="bodytext">此处，P<sub>d</sub> 为轴承的径向游隙，d<sub>o</sub> 为外滚道直径，di 为内滚道直径，D<sub>w</sub> 为滚动体直径。类似的定义也用于其他轴承类型，具体因所涉及的特定类型而异。</p><p class="bodytext">滚动轴承可以建模为径向轴承或推力轴承，各自具有不同的安装方式（参见下表）：</p><p class="bodytext"></p><div class="objectWrapper" data-id="650c581c8e70b" data-type="table" data-caption="Auswahlmöglichkeiten und deren Freiheitsgraddefinitionen"><table border="1" cellpadding="1" cellspacing="1" data-id="650c581c8e70b" style="width:500px">	<tbody>		<tr>			<td style="width:250px">			<p class="bodytext"><strong>滚动轴承选择列表</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>ux</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>uy</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>uz</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>rx</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>ry</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>rz</strong></p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">非定位轴承</p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">两侧调整的固定轴承 &lt;-&gt;</p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">右侧调整的固定轴承 -&gt;</p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			</td>			<td style="width:50px">			<p class="bodytext">右侧</p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">左侧调整的固定轴承 &lt;-</p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			</td>			<td style="width:50px">			<p class="bodytext">左侧</p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">两侧调整的轴向轴承 &lt;-&gt;</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">固定</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">右侧调整的轴向轴承 -&gt;</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">右侧</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">左侧调整的轴向轴承 &lt;-</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">左侧</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>			<td style="width:50px">			<p class="bodytext">非定位</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="650c581c8e70b">表 25.4：选择选项及其自由度的定义</p></div>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Rolling bearings</h3>   
+                
+<p class="bodytext">In addition to a general support, you can also select a specific rolling bearing. If you do so, the bearing data is taken from the rolling bearing database.</p><p class="bodytext">If a suitable entry is present in the bearings database, the bearing stiffness value is taken from there. Alternatively, you can enter the values directly in the Element editor. You also have the option of defining the radial and axial stiffness, and the tilting stiffness, in a file (see example «Example-Userdefined-Bearing-Stiffness.dat» in the «dat» directory), and then using these values to calculate the local operating stiffness of the bearing. The file should include the bearing clearance in the position contact-load curve, which is why the value input for clearance is set to 0 when the file is imported.</p><p class="bodytext">A pretension force, applied on the outer ring, can be used to define the pretension force on the bearing, instead of using the offset. This is only taken into account for bearings with inner geometry, and only if the relevant bearing can accept an axial pretension force. The pretension force is then transformed internally to an equivalent axial offset of the outer ring. For bearings with inner geometry, you can also specify a rotation around the x and z axis of the outer ring. This could then be used, for example, to model the housing deformation, so you can enter the FEM results directly.</p><p class="bodytext">P<sub>d</sub> = d<sub>o </sub>– d<sub>i </sub>– 2 * D<sub>w</sub></p><p class="bodytext">Here, P<sub>d</sub> is the diametral pitch bearing clearance, d<sub>o</sub> is the outside raceway diameter, di is the internal raceway diameter and D<sub>w</sub> is the rolling element diameter. Similar definitions are used for other bearing types, which vary depending on which particular type is involved.</p><p class="bodytext">The rolling bearings can be modeled as radial or thrust bearings, each with different mountings, (refer to the next table):</p><p class="bodytext"></p><div class="objectWrapper" data-id="650c581c8e70b" data-type="table" data-caption="Auswahlmöglichkeiten und deren Freiheitsgraddefinitionen"><table border="1" cellpadding="1" cellspacing="1" data-id="650c581c8e70b" style="width:500px">	<tbody>		<tr>			<td style="width:250px">			<p class="bodytext"><strong>Rolling bearing selection list</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>ux</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>uy</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>uz</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>rx</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>ry</strong></p>			</td>			<td style="width:50px">			<p class="bodytext"><strong>rz</strong></p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">Non-locating bearing</p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			<p class="bodytext"></p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">Fixed bearing adjusted on both sides &lt;-&gt;</p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">Fixed bearing adjusted on right side -&gt;</p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			</td>			<td style="width:50px">			<p class="bodytext">right</p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">Fixed bearing adjusted on left side &lt;-</p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			</td>			<td style="width:50px">			<p class="bodytext">left</p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">Axial bearing adjusted on both sides &lt;-&gt;</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">fixed</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">Axial bearing, adjusted on right side -&gt;</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">right</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>		</tr>		<tr>			<td style="width:250px">			<p class="bodytext">Axial bearing adjusted on left side &lt;-</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">left</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>			<td style="width:50px">			<p class="bodytext">non-locating</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="650c581c8e70b">Table 25.4: Selection options and their definition of the degrees of freedom</p></div>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

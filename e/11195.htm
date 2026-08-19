@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>表面处理部件的无限寿命强度估算（第5.5节） | Estimation of the infinite life strength for surface-treated parts (section 5.5)</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Estimation of the infinite life strength for surface-treated parts (section 5.5)">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8231');expand('8206');expand('8180');expand('9287');expand('9246');highlight('11195')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8235.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8236.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">表面处理部件的无限寿命强度估算（第5.5节）</h3>   
+                
+<p class="bodytext">此计算仅适用于表面处理的轧制钢。表面处理包括应用于材料的以下处理方法：</p><ul><li class="bodytext">渗碳</li><li class="bodytext">氮化、气体氮化、氮碳化</li><li class="bodytext">感应硬化</li><li class="bodytext">轧制</li><li class="bodytext">喷丸</li></ul><p class="bodytext">这些处理类型可以在输入材料时定义，或者在元素编辑器中输入轴的表面因子时定义。</p><p class="bodytext">该过程基于局部无限寿命强度的概念。考虑部件上的两个点。第一个点在部件表面，第二个点在硬化表面层与芯部之间的过渡点。得到的应力转换为主应力σ1和σ2。仅使用最大的主应力σ1进行后续计算。</p><p class="bodytext">用户也可以在元素编辑器中为此计算输入硬化深度。硬化深度随后用于计算部件表面到硬化表面层与芯部之间过渡点的距离。</p><p class="bodytext">强度选项卡用于定义是否根据公式4.3.2和4.3.3计算常数Kf，或从表4.3.1中取用。还可在指定材料时输入芯部硬度。或者，也可以从拉伸强度估计芯部硬度。</p><p class="bodytext">该方法用于计算内部应力，该应力包含在平均应力灵敏度的计算中。在这种情况下，首先计算部件表面点的利用程度，然后计算硬化表面层与芯部之间的过渡点的利用程度。然后使用这两个利用程度中的较大值进行校核。两个利用程度都应小于1。</p><p class="bodytext">仅当为此计算方法选择了带预定义处理类型的轧制钢时，结果才会在报告中显示。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Estimation of the infinite life strength for surface-treated parts (section 5.5)</h3>   
+                
+<p class="bodytext">This calculation should only be used for surface-treated rolled steel. The surface treatments include the following treatment methods applied to the materials:</p><ul><li class="bodytext">case-hardened</li><li class="bodytext">nitrided, gas-nitrided, nitro-carburated</li><li class="bodytext">induction hardened</li><li class="bodytext">rolling</li><li class="bodytext">shot peening</li></ul><p class="bodytext">These types of treatment can be defined either when you input the material, or when you input the surface factor for the shaft in the Element Editor.</p><p class="bodytext">This process is based on the concept of a local infinite life strength. Two points on the part are considered. The first point is on the part's surface, and the second point is at the transition point between the hard surface layer and the core. The resulting stresses are converted into main stresses σ1 and σ2. Only the largest main stress σ1 is then used for subsequent calculation.</p><p class="bodytext">You can also input a hardening depth for this calculation in the Element Editor. The hardening depth is then used to calculate the distance from the component's surface to the transition point between the hard surface layer and the core.</p><p class="bodytext">The Strength tab is where you define whether the constant Kf is to be calculated according to formulae 4.3.2 and 4.3.3 or taken from Table 4.3.1. You also have the option of inputting the core hardness when you specify the material. Alternatively, this can also be estimated from the tensile strength.</p><p class="bodytext">This approach is used to calculate the internal stress, which is included in the calculation of mean stress sensitivity. In this case, the degree of utilization for the point on the component's surface is calculated first, followed by the degree of utilization at the transition point between the hard surface layer and the core. The greater of the two degrees of utilization is then used for the proof. Both degrees of utilization should be &lt; 1.</p><p class="bodytext">The results are only displayed in the report if this calculation method has been selected for rolled steel with the predefined treatment types.</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

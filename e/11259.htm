@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>精确尺寸设计 | Fine sizing</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Fine sizing">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10645');expand('9287');expand('9246');highlight('11259')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10654.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8120.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">精确尺寸设计</h3>   
+                
+<p class="bodytext">加载“滚动轴承 ISO/TS 16281”模块后，单击精确尺寸设计选项 <img src="8849.png" style="height:24px; width:24px"> 打开一个窗口，在该窗口中您可以对滚动轴承的内部几何进行精确尺寸设计。与齿轮精确尺寸设计（参见"<a class="referencetopic-shabschnitt" href="8847.htm" target="_self">精确尺寸设计宏观几何</a>"章）的方式相同，您可以改变几何参数以生成大量不同的轴承变体。您在轴承数据中选择的类型现在决定了有哪些具体的输入参数可用（例如，滚动体数量、径向游隙、曲率比等）。该轴承类型的任何现有轴承数据都会直接传递到精确尺寸设计函数。<br><br>您需要一定经验才能有效使用精确尺寸设计函数。这是因为该过程可能会生成内部几何既不符合当前适用标准、也不符合实际已制造滚动轴承的轴承变体。系统确实会检查您输入的某些参数，并在遇到不可信数据时显示警告消息。<br><br>您可以在窗口中第一个选项卡的上三分之一处输入滚动轴承的外部尺寸。中间三分之一是输入内部轴承几何参数（根据轴承类型）的位置。在每种情况下，参数变体的数量由起始值、终值和间隔确定（例如：如果涉及 11 到 15 个滚动体，且间隔设置为两个滚动体，则程序恰好计算三个变体，前提是所有其他间隔都设置为零）。<br><br>此选项卡的下三分之一是定义系统生成的每个滚动轴承变体必须满足的边界条件的位置。您可以将滚动体的密度设置为 0% 到 100% 之间的一个数字（如果设置为 100%，轴承将拥有如此多的此类滚动体，以至于它们会沿整个工作节圆长度相互接触）。您在此输入的最小壁厚适用于内外圈滚道。任何不满足边界条件的轴承变体将在其余计算中被忽略。<br><br>现在，单击窗口底部区域的“计算”按钮以生成轴承变体。系统现在计算详细的内部几何以及额定载荷和额定寿命。在这种情况下，载荷数据取自“滚动轴承 ISO/TS 16281”模块中的“额定”选项卡。进度条显示计算的进行情况。<br><br>此处确定的轴承变体随后显示在精确尺寸设计窗口中“结果”选项卡的表格中。这些结果也可以在报告中输出。轴承变体还以图形的形式显示在“图形”选项卡中（与齿轮精确尺寸设计函数的结果类似（参见"<a class="referencetopic-shabschnitt" href="8860.htm" target="_self">图形</a>"章））。在这里，您可以沿水平和垂直轴显示不同参数的值。您还可以使用颜色标度使结果更易于理解。<br></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Fine sizing</h3>   
+                
+<p class="bodytext">After you have loaded the &quot;Roller bearing ISO/TS 16281&quot; module, click on the Fine sizing option <img src="8849.png" style="height:24px; width:24px" /> to open a window in which you can perform fine sizing on the internal geometry of rolling bearings. In the same way as for fine sizing gears (see chapter <a class="referencetopic-shabschnitt" href="8847.htm" target="_self">Fine sizing macrogeometry</a>), you can vary the geometry parameters to generate a multitude of different bearing variants. The type you selected in the bearing data now determines which specific input parameters (for example, number of rolling bodies, radial clearance, osculation etc.) are available. Any existing bearing data for the bearing type is transferred directly to the fine sizing function.<br /><br />You need a certain amount of experience before you can use the fine sizing function effectively. This is because the process may generate bearing variants whose internal geometry does not match either the currently applicable standards or roller bearings that have actually been manufactured. The system does check some of the parameters you input, and displays warning messages when it encounters implausible data.<br /><br />You input the external dimensions of the roller bearing in the upper third of the first tab in the window. The middle third is where you input the parameters for the internal bearing geometry (according to the bearing type). In each case, the number of variants for the parameters are determined from the start values, the final values and the intervals (for example: if between 11 and 15 rolling bodies are involved, and the interval is set to two rolling bodies, the program calculates exactly three variants, if all the other intervals are set to zero).<br /><br />The lower third of this tab is where you define the boundary conditions that each of the rolling bearing variants the system generates has to fulfill. You can set the density of the rolling bodies to a number between 0% and 100% (if you set it to 100%, the bearing will have so many rolling bodies of this type that they will touch each other along the whole length of the operating pitch circle). The minimum wall thicknesses you enter here apply to the inner and outer ring races. Any bearing variants that fail to meet the boundary conditions are ignored in the rest of the calculation.<br /><br />Now, click on the &quot;Calculate&quot; button in the bottom area of the window to generate the bearing variants. The system now calculates the detailed inner geometry and the load rating and rating life. In this case, the load data is taken from the &quot;Rating&quot; tab in the &quot;Rolling bearing ISO/TS 16281&quot; module. A progress bar shows you how the calculation is progressing.<br /><br />The bearing variants determined here are then displayed in a table in the &quot;Results&quot; tab in the Fine sizing window. These results can also be output in the report. The bearing variants are also displayed as a graphic in the &quot;Graphic&quot; tab (in a similar way to the results of the Gear fine sizing function (see chapter <a class="referencetopic-shabschnitt" href="8860.htm" target="_self">Graphics</a>)). Here you can display the values of different parameters along the horizontal and vertical axes. You can also use a color scale to make the results easier to understand.<br /></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

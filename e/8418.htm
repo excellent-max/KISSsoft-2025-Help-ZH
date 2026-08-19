@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>设置 | Settings</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Settings">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8353');expand('9286');expand('9246');highlight('8418')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8417.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8341.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">设置</h3>   
+                
+<p class="bodytext">单击<span class="menu">图形 &gt; 设置</span>菜单选项以配置<span class="menu"> </span>图形并输入视频录制设置。</p><p class="bodytext"><br><strong>二维图形</strong></p><p class="bodytext">选项：将曲线裁剪到图表范围</p><p class="bodytext">如果不选择此设置，则会显示整条曲线的完整变化过程，即使它超出了当前轴的范围。</p><p class="bodytext"><strong>三维图形</strong></p><p class="bodytext">选项：背景、CAD 系统（您可以选择已购买许可证的接口）以及投影。</p><p class="bodytext"><strong>视频录制</strong></p><p class="bodytext"><u>视频编解码器：</u></p><ul>	<li class="bodytext">H.264 - 一种广泛使用的格式，几乎在所有地方都受支持。</li>	<li class="bodytext">H.265 - 优化效果更好，支持高达 8k（UHD 8192×4320）的分辨率。但这可能导致兼容性问题。</li></ul><p class="bodytext"><u>模式：</u></p><ul>	<li class="bodytext">恒定比特率 (CBR) - 恒定比特率不会动态调整。如果图像中运动过多，这可能导致质量损失。</li>	<li class="bodytext">无约束比特率 - 视频质量取决于平均最小比特率。包含大量运动的图像序列会以相应更高的比特率录制。</li>	<li class="bodytext">受约束比特率 - 视频质量取决于平均比特率和最大比特率。整个视频的平均比特率不得低于指定值。但是，某个特定序列可能会达到最大比特率的极限。因此，编码器必须以低于平均比特率的速率对其他序列进行编码。</li>	<li class="bodytext">恒定速率系数 (CRF)：如果设置了此项，则恒定比特率基于输入的<span class="menu">恒定速率系数</span>输入的值。</li></ul><p class="bodytext"><u>帧率：</u>每秒的图像数。</p><p class="bodytext"><u>固定宽度：</u>如果输入固定宽度，视频将以该宽度（以像素为单位）录制。如果此处不输入值，则视频以当前尺寸生成。</p><p class="bodytext"><u>固定高度：</u>如果输入固定高度，视频将以该高度（以像素为单位）录制。如果此处不输入值，则视频以当前尺寸生成。</p><p class="bodytext"><u>恒定速率系数：</u>介于 0-100 之间的值，用于定义文件的带宽和大小。默认值为 24。</p><p class="bodytext"><u>平均比特率：</u>以比特每秒为单位的近似平均数据速率。</p><p class="bodytext"><u>最大比特率：</u>以比特每秒为单位的最大数据速率。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Settings</h3>   
+                
+<p class="bodytext">Click on the <span class="menu">Graphic &gt; Settings</span> menu option to configure the<span class="menu"> </span>graphics and input the settings for video recording.</p><p class="bodytext"><br /><strong>2D graphics</strong></p><p class="bodytext">Option: Clip curves to diagram range</p><p class="bodytext">If you do not select this setting, the entire curve progression is displayed, even if it exceeds the current axis range.</p><p class="bodytext"><strong>3D graphics</strong></p><p class="bodytext">Options: Background, CAD system (you can select the interfaces for which licenses have been purchased) and Projection.</p><p class="bodytext"><strong>Video recordings</strong></p><p class="bodytext"><u>Video codec:</u></p><ul>	<li class="bodytext">H.264 - a widely used format which is supported almost everywhere.</li>	<li class="bodytext">H.265 - has better optimization and supports a resolution of up to 8k (UHD 8192×4320). However, this can lead to problems of compatibility.</li></ul><p class="bodytext"><u>Mode:</u></p><ul>	<li class="bodytext">Constant Bit Rate (CBR) - the constant bit rate is not adjusted dynamically. This can result in a loss of quality if there is too much movement in the image.</li>	<li class="bodytext">Unconstrained Bit Rate - the video quality depends on the average minimum bit rate. Image sequences involving a lot of movement are recorded with a correspondingly higher bit rate.</li>	<li class="bodytext">Constrained Bit Rate - the quality of the video depends on the average bit rate and the maximum bit rate. The average bit rate of the entire video must not fall below the specified value. However, it may happen that a particular sequence maxes out the maximum bit. For that reason, the encoder must encode other sequences at less than the average rate.</li>	<li class="bodytext">Constant Rate Factor (CRF): if this is set, the constant bit rate is based on the value input as the <span class="menu">Constant Rate Factor</span>.</li></ul><p class="bodytext"><u>Frame rate:</u> the number of images per second.</p><p class="bodytext"><u>Fixed width:</u> if you input a fixed width, the video is recorded with this width (in pixels). If you do not input a value here, the video is generated at the current size.</p><p class="bodytext"><u>Fixed height:</u> if you input a fixed height, the video is recorded at this height (in pixels). If you do not input a value here, the video is generated at the current size.</p><p class="bodytext"><u>Constant Rate Factor:</u> a value between 0-100 which defines the file's band width and size. The default value is 24.</p><p class="bodytext"><u>Average bit rate:</u> approximate average data rate in bits per second.</p><p class="bodytext"><u>Maximum bit rate:</u> maximum data rate in bits per second.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

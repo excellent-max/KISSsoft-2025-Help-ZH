@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>创建数据库条目 | Creating a database entry</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Creating a database entry">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9051');expand('9042');expand('9272');expand('9246');highlight('9056')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9051.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9058.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">创建数据库条目</h3>   
+                
+<p class="bodytext">如果您在未选中任何行的情况下点击 <img src="9054.png" style="height:19px; width:19px"> 按钮，<span class="menu">显示</span> <span class="menu">条目</span> 窗口（<img src="9049.png" style="height:13px; width:14px">）将打开，其中的输入字段为空。只有 <span class="menu">名称</span> 字段包含 <span class="menu">_NEW</span> 条目，该条目通常用于标识新的表条目。传输必要数据后，通过点击 <span class="menu">OK</span>，然后在数据库工具窗口中点击 <span class="menu">保存</span> 来确认您的输入。新条目被分配一个 ≥ 20000 的标识号（<span class="menu">ID</span>），然后传输到活动数据集的列表中。点击 <span class="menu">编辑</span> 按钮可更改 ID ≥ 20000 的条目。</p><p class="bodytext">选中某行后点击 <img src="9054.png" style="height:19px; width:19px"> 按钮，<span class="menu">显示</span> <span class="menu">条目</span> 窗口将打开，输入字段中包含根据表条目预定义的值。后缀 <span class="menu">_NEW</span> 会自动附加到名称上，以将其与原始数据集区分开。在其余所有步骤中，您随后按上述方式继续操作。</p><p class="bodytext"><strong>示例：创建数据库条目 </strong><br>假设您要向 <span class="menu">KMAT.F000 </span>表添加一种新的弹簧材料。按照流程所述，您将选择 <span class="menu">F000</span> 表，该表属于 <span class="menu">KMAT</span> 数据库。在其中点击 <img src="9054.png" style="height:19px; width:19px"> 按钮，向表添加新条目/新行，然后将新数据传入 <span class="menu">显示条目</span> 窗口的输入字段。然而，由于只有少数参数可以在那里自由选择，下一个问题是，屈服点和杨氏模量等其他值在哪里可以更改？答案是：在基础材料输入字段中，即在 <span class="menu">KMAT.KISS</span> 表中。在引入新的弹簧材料之前，您必须始终指定一个基础材料。如果该基础材料不存在，则必须先在 <span class="menu">KMAT.KISS</span> 表中定义它，然后在 <span class="menu">KMAT.F000</span> 中进行缺失的输入。</p><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">所有特定于材料的表（如 <span class="menu">KMAT.F000</span> 或 <span class="menu">KMAT.Z080</span>），除 <span class="menu">KMAT.KLUB</span> 之外，在基础材料下拉菜单旁边都有一个复选按钮。如果勾选了复选框，您可以选择关联下拉列表菜单中的替代基础材料。如果复选框为空，则对基础材料菜单的访问将被阻止。此选项有助于防止在分配基础材料时发生不必要的更改。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Creating a database entry</h3>   
+                
+<p class="bodytext">If you click on the <img src="9054.png" style="height:19px; width:19px" /> button without having selected a row, the <span class="menu">Display</span> <span class="menu">entry</span> window (<img src="9049.png" style="height:13px; width:14px" />) opens and the input fields in it are empty. Only the <span class="menu">Name</span> field contains the entry <span class="menu">_NEW</span>, which normally identifies the new table entry. After you have transferred the necessary data, confirm your entries by clicking on <span class="menu">OK</span> and then <span class="menu">Save</span>in the database tool window. The new entry is assigned an identification number (<span class="menu">ID</span>) ≥ 20000 and is then transferred into the list of active datasets. Click the <span class="menu">Edit</span> button to change entries with an ID of ≥ 20000.</p><p class="bodytext">Click the <img src="9054.png" style="height:19px; width:19px" /> button after having selected a row, the <span class="menu">Display</span> <span class="menu">entry</span> window opens and contains predefined values in the input fields according to the table entry. The suffix <span class="menu">_NEW</span> will automatically be attached to the name, in order to differentiate it from the original dataset. In all remaining steps, you then proceed as described above.</p><p class="bodytext"><strong>Example: Creating a database entry </strong><br />Let's assume you want to add a new spring material to the <span class="menu">KMAT.F000 </span>table. As described in the procedure, you would select the <span class="menu">F000</span> table from the <span class="menu">KMAT</span> database. Click on the <img src="9054.png" style="height:19px; width:19px" /> button in it, to add a new entry/new row to the table, and then transfer the new data into the input fields in the <span class="menu">Display entry</span> window. However, as only a few parameters can be freely selected there, the next question is, where can the other values such as the yield point and Young's modulus be changed? The reply is: in the base material input fields, i.e. in table <span class="menu">KMAT.KISS</span>. You must always specify a base material before you can introduce a new spring material. If this is not present, you must first define it in the <span class="menu">KMAT.KISS</span> table and then make the missing entries in <span class="menu">KMAT.F000</span>.</p><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">All material-specific tables such as <span class="menu">KMAT.F000</span> or <span class="menu">KMAT.Z080</span> - with the exception of <span class="menu">KMAT.KLUB</span> - have a Check button beside the Base material drop-down menu. If you have marked the checkbox, you have the option of selecting an alternative base material in the associated drop-down list-menu. If the checkbox is empty, access to the menu of the base materials is blocked. This option helps prevent unwanted changes when the base material is being assigned.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

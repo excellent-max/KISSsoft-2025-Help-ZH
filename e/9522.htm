@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算热安全工作转速极限 | Calculating the thermally safe operating speed limit</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculating the thermally safe operating speed limit">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9520');expand('8148');expand('8139');expand('9287');expand('9246');highlight('9522')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9521.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9523.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算热安全工作转速极限</h3>   
+                
+<p class="bodytext">热安全工作转速由热参考转速通过转速比导出。nθ = fn * nθr</p><p class="bodytext">在从该方程迭代得到转速比之前，必须先计算载荷和润滑参数：</p><p class="bodytext"><em class="emphasis">KL</em> * <em class="emphasis">f</em>n<span class="superscript">5/3</span> + <em class="emphasis">KP</em> * <em class="emphasis">f</em>n = 1</p><p class="bodytext">载荷参数 <em class="emphasis">KL</em>：</p><p class="bodytext"><em class="emphasis">KL</em> = 10<span class="superscript">-6</span> * (π/30) * <em class="emphasis">n</em>θ<em class="emphasis">r</em>*10<span class="superscript">-7</span> * (<em class="emphasis">f</em>0<em class="emphasis">r</em> * n<span class="superscript">2/3</span> * nθr<span class="superscript">2/3</span> * dm<span class="superscript">3</span>)/<em class="emphasis">Q</em></p><p class="bodytext">润滑膜参数 <em class="emphasis">KP</em>：</p><p class="bodytext"><em class="emphasis">KP</em> = 10<span class="superscript">-6</span> * (π/30) * <em class="emphasis">n</em>θ<em class="emphasis">r</em>*(<em class="emphasis">f</em>1 * <em class="emphasis">P1</em> * dm)/<em class="emphasis">Q</em></p><p class="bodytext">nθr：热名义转速 [rpm] <br>f0：取自 DIN 732 表 A.1 的摩擦系数 [-] <br>f1：取自 DIN 732 表 A.1 的摩擦系数 [-] <br>n：润滑剂粘度 [mm<span class="superscript">2</span>/s] <br>dm：滚动轴承平均直径 [mm] <br>P1：参考载荷 [N] <br>Q：总散热量 [kW]</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculating the thermally safe operating speed limit</h3>   
+                
+<p class="bodytext">The thermally safe operating speed is derived from the thermal reference speed, using the speed ratio. nθ = fn * nθr</p><p class="bodytext">The load and lubrication parameters must be calculated before the speed ratio can be iterated from this equation:</p><p class="bodytext"><em class="emphasis">KL</em> * <em class="emphasis">f</em>n<span class="superscript">5/3</span> + <em class="emphasis">KP</em> * <em class="emphasis">f</em>n = 1</p><p class="bodytext">Load parameter <em class="emphasis">KL</em>:</p><p class="bodytext"><em class="emphasis">KL</em> = 10<span class="superscript">-6</span> * (π/30) * <em class="emphasis">n</em>θ<em class="emphasis">r</em>*10<span class="superscript">-7</span> * (<em class="emphasis">f</em>0<em class="emphasis">r</em> * n<span class="superscript">2/3</span> * nθr<span class="superscript">2/3</span> * dm<span class="superscript">3</span>)/<em class="emphasis">Q</em></p><p class="bodytext">Lubricant film parameter <em class="emphasis">KP</em>:</p><p class="bodytext"><em class="emphasis">KP</em> = 10<span class="superscript">-6</span> * (π/30) * <em class="emphasis">n</em>θ<em class="emphasis">r</em>*(<em class="emphasis">f</em>1 * <em class="emphasis">P1</em> * dm)/<em class="emphasis">Q</em></p><p class="bodytext">nθr: thermal nominal speed [rpm] <br />f0: Coefficient of friction from Table A.1, DIN 732 [-] <br />f1: Coefficient of friction from Table A.1, DIN 732 [-] <br />n: Lubricant viscosity [mm<span class="superscript">2</span>/s] <br />dm: average rolling bearing diameter [mm] <br />P1: Reference load [N] <br />Q: Total dissipated heat flows [kW]</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

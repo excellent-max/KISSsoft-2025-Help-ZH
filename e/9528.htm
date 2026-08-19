@@ -1,0 +1,325 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>根据 ISO 281 的修正额定寿命计算 | Modified rating life calculation according to ISO 281</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Modified rating life calculation according to ISO 281">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9527');expand('8139');expand('9287');expand('9246');highlight('9528')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9527.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9529.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">根据 ISO 281 的修正额定寿命计算</h3>   
+                
+<p class="bodytext">修正额定寿命 <em>L<sub>nm</sub></em> 的计算在基本额定寿命 <em> L<sub>10</sub></em> 计算的基础上扩展，考虑了可靠度、轴承材料疲劳极限、润滑和污染条件的影响。该计算在 ISO 281 标准中描述。</p><p class="bodytext"></p><p class="bodytext">如果激活此选项，则需要根据您的要求配置 <span class="menu">润滑剂 </span> 和 <span class="menu">污染 </span> 下拉列表，以及 <span class="menu">工作温度 </span> 输入字段。<span class="menu">失效概率</span> 用于计算可靠度寿命修正系数 <em>a<sub>1</sub></em>，可在 <span class="menu">计算 &gt; 设置</span> 中调整。</p><p class="bodytext">修正额定寿命 <em>L<sub>nm</sub></em> 按以下公式计算：</p><p class="bodytext"></p><p class="bodytext">L_{nm}=a_{1}\cdot a_{ISO}\cdot L_{10}<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="21.049ex" height="2.509ex" style="vertical-align: -0.671ex;" viewbox="0 -791.3 9062.5 1080.4" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="zh-MathJax-SVG-1-Title">
+<title id="zh-MathJax-SVG-1-Title">L_{nm}=a_{1}\cdot a_{ISO}\cdot L_{10}</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="zh-E1-MJMATHI-4C" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-49" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-53" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-4F" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-4C"></use>
+<g transform="translate(681,-150)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-6E"></use>
+ <use transform="scale(0.707)" x="600" y="0" xlink:href="#zh-E1-MJMATHI-6D"></use>
+</g>
+ <use x="2105" y="0" xlink:href="#zh-E1-MJMAIN-3D"></use>
+<g transform="translate(3161,0)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-61"></use>
+ <use transform="scale(0.707)" x="748" y="-213" xlink:href="#zh-E1-MJMAIN-31"></use>
+</g>
+ <use x="4366" y="0" xlink:href="#zh-E1-MJMAIN-22C5"></use>
+<g transform="translate(4867,0)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-61"></use>
+<g transform="translate(529,-155)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-49"></use>
+ <use transform="scale(0.707)" x="504" y="0" xlink:href="#zh-E1-MJMATHI-53"></use>
+ <use transform="scale(0.707)" x="1150" y="0" xlink:href="#zh-E1-MJMATHI-4F"></use>
+</g>
+</g>
+ <use x="7072" y="0" xlink:href="#zh-E1-MJMAIN-22C5"></use>
+<g transform="translate(7573,0)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-4C"></use>
+<g transform="translate(681,-150)">
+ <use transform="scale(0.707)" xlink:href="#zh-E1-MJMAIN-31"></use>
+ <use transform="scale(0.707)" x="500" y="0" xlink:href="#zh-E1-MJMAIN-30"></use>
+</g>
+</g>
+</g>
+</svg></p><p class="bodytext"></p><p class="bodytext">其中：</p><p class="bodytext"><em>a<sub>1 </sub></em>... 可靠度寿命修正系数 [-]<br><em>a<sub>ISO</sub></em> ... 基于系统方法的寿命修正系数 [-]<br><em>L<sub>10</sub></em> ... 基本额定寿命 [10<sup>6</sup> 转]</p><p class="bodytext"></p><p class="bodytext">可靠度寿命修正系数 <em>a<sub>1</sub></em> 考虑轴承的可靠度，即轴承达到或超过规定额定寿命的概率。系数 <em>a<sub>1</sub></em><sub> </sub> 取决于失效概率（参见"<a class="referencetopic-shabschnitt" href="9530.htm" target="_self">失效概率</a>"章）。</p><p class="bodytext">基于系统方法的寿命修正系数 <em>a<sub>ISO</sub></em> 考虑轴承材料疲劳极限、润滑和污染条件的影响：</p><p class="bodytext"></p><p class="bodytext">a_{ISO}=f\left({e_{c}\cdot C_{u} \over P},\kappa \right)<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="22.54ex" height="6.176ex" style="vertical-align: -2.505ex;" viewbox="0 -1580.7 9704.7 2659.1" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="zh-MathJax-SVG-1-Title">
+<title id="zh-MathJax-SVG-1-Title">a_{ISO}=f\left({e_{c}\cdot C_{u} \over P},\kappa \right)</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="zh-E1-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-49" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-53" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-4F" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-66" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-65" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-63" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-43" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-75" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-50" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-3BA" d="M83 -11Q70 -11 62 -4T51 8T49 17Q49 30 96 217T147 414Q160 442 193 442Q205 441 213 435T223 422T225 412Q225 401 208 337L192 270Q193 269 208 277T235 292Q252 304 306 349T396 412T467 431Q489 431 500 420T512 391Q512 366 494 347T449 327Q430 327 418 338T405 368Q405 370 407 380L397 375Q368 360 315 315L253 266L240 257H245Q262 257 300 251T366 230Q422 203 422 150Q422 140 417 114T411 67Q411 26 437 26Q484 26 513 137Q516 149 519 151T535 153Q554 153 554 144Q554 121 527 64T457 -7Q447 -10 431 -10Q386 -10 360 17T333 90Q333 108 336 122T339 146Q339 170 320 186T271 209T222 218T185 221H180L155 122Q129 22 126 16Q113 -11 83 -11Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path>
+<path stroke-width="1" id="zh-E1-MJSZ3-28" d="M701 -940Q701 -943 695 -949H664Q662 -947 636 -922T591 -879T537 -818T475 -737T412 -636T350 -511T295 -362T250 -186T221 17T209 251Q209 962 573 1361Q596 1386 616 1405T649 1437T664 1450H695Q701 1444 701 1441Q701 1436 681 1415T629 1356T557 1261T476 1118T400 927T340 675T308 359Q306 321 306 250Q306 -139 400 -430T690 -924Q701 -936 701 -940Z"></path>
+<path stroke-width="1" id="zh-E1-MJSZ3-29" d="M34 1438Q34 1446 37 1448T50 1450H56H71Q73 1448 99 1423T144 1380T198 1319T260 1238T323 1137T385 1013T440 864T485 688T514 485T526 251Q526 134 519 53Q472 -519 162 -860Q139 -885 119 -904T86 -936T71 -949H56Q43 -949 39 -947T34 -937Q88 -883 140 -813Q428 -430 428 251Q428 453 402 628T338 922T245 1146T145 1309T46 1425Q44 1427 42 1429T39 1433T36 1436L34 1438Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-61"></use>
+<g transform="translate(529,-155)">
+ <use transform="scale(0.707)" x="0" y="0" xlink:href="#zh-E1-MJMATHI-49"></use>
+ <use transform="scale(0.707)" x="504" y="0" xlink:href="#zh-E1-MJMATHI-53"></use>
+ <use transform="scale(0.707)" x="1150" y="0" xlink:href="#zh-E1-MJMATHI-4F"></use>
+</g>
+ <use x="2260" y="0" xlink:href="#zh-E1-MJMAIN-3D"></use>
+ <use x="3316" y="0" xlink:href="#zh-E1-MJMATHI-66"></use>
+<g transform="translate(4033,0)">
+ <use xlink:href="#zh-E1-MJSZ3-28"></use>
+<g transform="translate(736,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="2936" height="60" x="0" y="220"></rect>
+<g transform="translate(60,678)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-65"></use>
+ <use transform="scale(0.707)" x="659" y="-213" xlink:href="#zh-E1-MJMATHI-63"></use>
+ <use x="1095" y="0" xlink:href="#zh-E1-MJMAIN-22C5"></use>
+<g transform="translate(1595,0)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-43"></use>
+ <use transform="scale(0.707)" x="1011" y="-213" xlink:href="#zh-E1-MJMATHI-75"></use>
+</g>
+</g>
+ <use x="1092" y="-704" xlink:href="#zh-E1-MJMATHI-50"></use>
+</g>
+ <use x="3176" y="0" xlink:href="#zh-E1-MJMAIN-2C"></use>
+ <use x="3621" y="0" xlink:href="#zh-E1-MJMATHI-3BA"></use>
+</g>
+ <use x="4934" y="-1" xlink:href="#zh-E1-MJSZ3-29"></use>
+</g>
+</g>
+</svg></p><p class="bodytext"></p><p class="bodytext">其中：</p><p class="bodytext"><em>e<sub>C</sub></em> ... 污染系数 [-]<br><em>C<sub>u</sub></em> ... 疲劳载荷极限 [N]<br><em>P</em> ... 当量动载荷 [N]<br><em>κ</em> ... 粘度比 [-]</p><p class="bodytext"></p><p class="bodytext">基于系统方法的寿命修正系数 <em>a<sub>ISO</sub></em> 的计算流程见下图（参见图 27.1）。它考虑了粘度比 <em>κ</em> 计算的限制条件，以及 ISO 281 标准中所述的润滑脂润滑中 EP 添加剂的影响。通常 <em>a<sub>ISO</sub></em> 值限制为 <em>a<sub>ISO</sub></em> ≤ 50，但此限制可在 <span class="menu">计算 &gt; 设置</span> 中更改。</p><p class="bodytext"></p><div class="objectWrapper" data-id="6855616d8d4b3" data-type="image" data-caption="Berechnungsverfahren für die Ermittlung des Lebensdauerbeiwertes auf der Grundlage einer Systembetrachtung"><p class="bodytext"><img data-id="6855616d8d4b3" height="776" src="aISO_life_modification_factor_system_calculation.png" width="521"></p><p class="figcaption" data-id="6855616d8d4b3">图 27.1：基于系统方法的寿命修正系数计算流程</p></div><p class="bodytext"></p><p class="bodytext">污染系数 <em>e<sub>C</sub></em> 考虑润滑油膜中固体颗粒的影响，这些颗粒在被碾压时会在滚道中产生永久压痕。污染系数的参考值可从下表中查取。更精确的值可用 ISO 281 中给出的公式计算，这些公式考虑了轴承尺寸、润滑类型、油过滤比、污染等级等。污染系数 <em>e<sub>C</sub></em> 的计算流程见下图。与系数 <em>a<sub>ISO</sub></em> 的计算流程相同，它也考虑了粘度比 <em>κ</em> 计算的限制条件，以及 ISO 281 中所述的润滑脂润滑中 EP 添加剂的影响。</p><p class="bodytext"></p><div class="objectWrapper" data-id="6855674d23908" data-type="table" data-caption="Richtwerte für den Verunreinigungsbeiwert nach ISO 281"><table border="1" cellpadding="1" cellspacing="2" data-id="6855674d23908">	<thead>		<tr>			<th scope="col">			<p class="bodytext">污染等级</p>			<p class="bodytext"></p>			</th>			<th scope="col">			<p class="bodytext">系数 <em>e<sub>c</sub></em></p>			<p class="bodytext"><em>D<sub>pw</sub></em> &lt; 100mm</p>			</th>			<th scope="col">			<p class="bodytext">系数 <em>e</em><sub>c</sub></p>			<p class="bodytext"><em>D<sub>pw</sub></em> <span data-huuid="16578478166894186783"><span>≥</span></span> 100mm</p>			</th>		</tr>	</thead>	<tbody>		<tr>			<td>			<p class="bodytext"><strong>极高清洁度</strong><br>			颗粒尺寸与油膜厚度同一数量级<br>			实验室条件</p>			</td>			<td>			<p class="bodytext">1</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">1</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>高清洁度</strong><br>			润滑油经极精细过滤器过滤，<br>			此类轴承的典型工况为终身润滑并带密封</p>			</td>			<td>			<p class="bodytext">0,8 to 0,6</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,9 to 0,8</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>正常清洁度</strong><br>			润滑油经精细过滤器过滤，<br>			此类轴承的典型工况为终身润滑并带防尘盖</p>			</td>			<td>			<p class="bodytext">0,6 to 0,5</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,8 to 0,6</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>轻微污染</strong><br>			润滑剂中有轻微污染</p>			</td>			<td>			<p class="bodytext">0,5 to 0,3</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,6 to 0,4</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>典型污染</strong><br>			此类轴承无整体密封，多为粗过滤工况<br>			磨损颗粒及周围环境杂质侵入</p>			</td>			<td>			<p class="bodytext">0,3 to 0,1</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,4 to 0,2</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>严重污染</strong><br>			轴承环境严重污染，<br>			轴承布置密封不足</p>			</td>			<td>			<p class="bodytext">0,1 to 0</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,1 to 0</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>非常严重污染</strong></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0</p>			<p class="bodytext"></p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="6855674d23908">表 27.1：根据 ISO 281 的污染系数参考值</p></div><p class="figcaption" data-id="6855674d23908"></p><div class="objectWrapper" data-id="6855674d23908" data-type="image" data-caption="Berechnungsverfahren zur Ermittlung des Verunreinigungsbeiwertes"><p class="figcaption" data-id="6855674d23908"><img height="544" src="ec_contamination_factor_calculation.png" width="338"></p><p class="figcaption" data-id="6855674d23908">图 27.2：污染系数的计算流程</p></div><p class="figcaption" data-id="6855674d23908"></p><p class="bodytext">疲劳载荷极限 <em>C<sub>u</sub></em> 表示，现代高质量轴承在低于某一载荷并处于有利工况下运行时，可达到无限寿命。对于此类轴承，疲劳应力极限在约 1500 N/mm<sup>2</sup> 的接触应力下达到。疲劳载荷极限通常由轴承制造商提供，若未提供，则按 ISO 281 中给出的公式计算。</p><p class="bodytext">当量动载荷 <em>P</em> 根据 ISO 281 或 ISO/TS 16281 中的公式计算，具体取决于滚动轴承的计算方法。</p><p class="bodytext">粘度比 <em>κ</em> 考虑通过润滑油分离膜实现的滚动接触表面之间表面分离的程度。粘度比的计算如下：</p><p class="bodytext"></p><p class="bodytext">\kappa ={\nu \over \nu _{1}}<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.476ex" height="5.009ex" style="vertical-align: -2.171ex;" viewbox="0 -1221.9 3219 2156.8" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="zh-MathJax-SVG-1-Title">
+<title id="zh-MathJax-SVG-1-Title">\kappa ={\nu  \over \nu _{1}}</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="zh-E1-MJMATHI-3BA" d="M83 -11Q70 -11 62 -4T51 8T49 17Q49 30 96 217T147 414Q160 442 193 442Q205 441 213 435T223 422T225 412Q225 401 208 337L192 270Q193 269 208 277T235 292Q252 304 306 349T396 412T467 431Q489 431 500 420T512 391Q512 366 494 347T449 327Q430 327 418 338T405 368Q405 370 407 380L397 375Q368 360 315 315L253 266L240 257H245Q262 257 300 251T366 230Q422 203 422 150Q422 140 417 114T411 67Q411 26 437 26Q484 26 513 137Q516 149 519 151T535 153Q554 153 554 144Q554 121 527 64T457 -7Q447 -10 431 -10Q386 -10 360 17T333 90Q333 108 336 122T339 146Q339 170 320 186T271 209T222 218T185 221H180L155 122Q129 22 126 16Q113 -11 83 -11Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="zh-E1-MJMATHI-3BD" d="M74 431Q75 431 146 436T219 442Q231 442 231 434Q231 428 185 241L137 51H140L150 55Q161 59 177 67T214 86T261 119T312 165Q410 264 445 394Q458 442 496 442Q509 442 519 434T530 411Q530 390 516 352T469 262T388 162T267 70T106 5Q81 -2 71 -2Q66 -2 59 -1T51 1Q45 5 45 11Q45 13 88 188L132 364Q133 377 125 380T86 385H65Q59 391 59 393T61 412Q65 431 74 431Z"></path>
+<path stroke-width="1" id="zh-E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-3BA"></use>
+ <use x="854" y="0" xlink:href="#zh-E1-MJMAIN-3D"></use>
+<g transform="translate(1910,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="1068" height="60" x="0" y="220"></rect>
+ <use x="268" y="676" xlink:href="#zh-E1-MJMATHI-3BD"></use>
+<g transform="translate(60,-686)">
+ <use x="0" y="0" xlink:href="#zh-E1-MJMATHI-3BD"></use>
+ <use transform="scale(0.707)" x="699" y="-213" xlink:href="#zh-E1-MJMAIN-31"></use>
+</g>
+</g>
+</g>
+</g>
+</svg></p><p class="bodytext"></p><p class="bodytext">其中：</p><p class="bodytext"><em>ν.</em>.. 工作温度下的运动粘度 [mm<sup>2</sup>/s]，</p><p class="bodytext"><em>ν<sub>1</sub></em>... 参考运动粘度 [mm<sup>2</sup>/s]。</p><p class="bodytext"></p><p class="bodytext">工作温度下的运动粘度 <em>ν</em> 根据 ISO/TS 6336-22 计算，而参考运动粘度 <em>ν<sub>1</sub></em> 根据 ISO 281 中给出的公式计算。注意，根据 ISO 281 当前的认识水平，<em>a<sub>ISO</sub></em> 的计算仅在粘度比处于 0,1 ≤ κ ≤ 4 范围内时可行。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Modified rating life calculation according to ISO 281</h3>   
+                
+<p class="bodytext">The calculation of the modified rating life <em>L<sub>nm</sub></em> extends the calculation of the basic rating life <em> L<sub>10</sub></em> by considering the influence of reliability, fatigue limit of bearing material, lubrication and contamination conditions. The calculation is described in the ISO 281 standard.</p><p class="bodytext"></p><p class="bodytext">If you activate this option, you need to configure the <span class="menu">Lubricant </span> and <span class="menu">Contamination </span> selection lists as well as the <span class="menu">Operating temperature </span> input field according to your requirements. <span class="menu">Failure probability</span> which is used for the calculation of the life modification factor for reliability <em>a<sub>1</sub></em> can be adjusted in <span class="menu">Calculation &gt; Settings</span>.</p><p class="bodytext">The modified rating life <em>L<sub>nm</sub></em> is calculated according to the below equation:</p><p class="bodytext"></p><p class="bodytext"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="21.049ex" height="2.509ex" style="vertical-align: -0.671ex;" viewBox="0 -791.3 9062.5 1080.4" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
+<title id="MathJax-SVG-1-Title">L_{nm}=a_{1}\cdot a_{ISO}\cdot L_{10}</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMATHI-4C" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-49" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-53" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-4F" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMATHI-4C" x="0" y="0"></use>
+<g transform="translate(681,-150)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-6E" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-6D" x="600" y="0"></use>
+</g>
+ <use xlink:href="#E1-MJMAIN-3D" x="2105" y="0"></use>
+<g transform="translate(3161,0)">
+ <use xlink:href="#E1-MJMATHI-61" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-31" x="748" y="-213"></use>
+</g>
+ <use xlink:href="#E1-MJMAIN-22C5" x="4366" y="0"></use>
+<g transform="translate(4867,0)">
+ <use xlink:href="#E1-MJMATHI-61" x="0" y="0"></use>
+<g transform="translate(529,-155)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-49" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-53" x="504" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-4F" x="1150" y="0"></use>
+</g>
+</g>
+ <use xlink:href="#E1-MJMAIN-22C5" x="7072" y="0"></use>
+<g transform="translate(7573,0)">
+ <use xlink:href="#E1-MJMATHI-4C" x="0" y="0"></use>
+<g transform="translate(681,-150)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-31"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-30" x="500" y="0"></use>
+</g>
+</g>
+</g>
+</svg></p><p class="bodytext"></p><p class="bodytext">with:</p><p class="bodytext"><em>a<sub>1 </sub></em>... life modification factor for reliability [-]<br /><em>a<sub>ISO</sub></em> ... life modification factor based on a systems approach [-]<br /><em>L<sub>10</sub></em> ... basic rating life  [10<sup>6</sup> revolutions]</p><p class="bodytext"></p><p class="bodytext">The life modification factor for reliability <em>a<sub>1</sub></em> considers the reliability of the bearing, i.e. the probability that the bearing will attain or exceed a specified rating life. Factor <em>a<sub>1</sub></em><sub> </sub>depends on the failure probability (see chapter <a class="referencetopic-shabschnitt" href="9530.htm" target="_self">Failure probability</a>).</p><p class="bodytext">The life modification factor based on systems approach <em>a<sub>ISO</sub></em> considers the influence of fatigue limit of bearing material, lubrication and contamination conditions:</p><p class="bodytext"></p><p class="bodytext"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="22.54ex" height="6.176ex" style="vertical-align: -2.505ex;" viewBox="0 -1580.7 9704.7 2659.1" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
+<title id="MathJax-SVG-1-Title">a_{ISO}=f\left({e_{c}\cdot C_{u} \over P},\kappa \right)</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-49" d="M43 1Q26 1 26 10Q26 12 29 24Q34 43 39 45Q42 46 54 46H60Q120 46 136 53Q137 53 138 54Q143 56 149 77T198 273Q210 318 216 344Q286 624 286 626Q284 630 284 631Q274 637 213 637H193Q184 643 189 662Q193 677 195 680T209 683H213Q285 681 359 681Q481 681 487 683H497Q504 676 504 672T501 655T494 639Q491 637 471 637Q440 637 407 634Q393 631 388 623Q381 609 337 432Q326 385 315 341Q245 65 245 59Q245 52 255 50T307 46H339Q345 38 345 37T342 19Q338 6 332 0H316Q279 2 179 2Q143 2 113 2T65 2T43 1Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-53" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-4F" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-66" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-65" d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-63" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-22C5" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-43" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q484 659 454 652T382 628T299 572T226 479Q194 422 175 346T156 222Q156 108 232 58Q280 24 350 24Q441 24 512 92T606 240Q610 253 612 255T628 257Q648 257 648 248Q648 243 647 239Q618 132 523 55T319 -22Q206 -22 128 53T50 252Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-75" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-50" d="M287 628Q287 635 230 637Q206 637 199 638T192 648Q192 649 194 659Q200 679 203 681T397 683Q587 682 600 680Q664 669 707 631T751 530Q751 453 685 389Q616 321 507 303Q500 302 402 301H307L277 182Q247 66 247 59Q247 55 248 54T255 50T272 48T305 46H336Q342 37 342 35Q342 19 335 5Q330 0 319 0Q316 0 282 1T182 2Q120 2 87 2T51 1Q33 1 33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM645 554Q645 567 643 575T634 597T609 619T560 635Q553 636 480 637Q463 637 445 637T416 636T404 636Q391 635 386 627Q384 621 367 550T332 412T314 344Q314 342 395 342H407H430Q542 342 590 392Q617 419 631 471T645 554Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-3BA" d="M83 -11Q70 -11 62 -4T51 8T49 17Q49 30 96 217T147 414Q160 442 193 442Q205 441 213 435T223 422T225 412Q225 401 208 337L192 270Q193 269 208 277T235 292Q252 304 306 349T396 412T467 431Q489 431 500 420T512 391Q512 366 494 347T449 327Q430 327 418 338T405 368Q405 370 407 380L397 375Q368 360 315 315L253 266L240 257H245Q262 257 300 251T366 230Q422 203 422 150Q422 140 417 114T411 67Q411 26 437 26Q484 26 513 137Q516 149 519 151T535 153Q554 153 554 144Q554 121 527 64T457 -7Q447 -10 431 -10Q386 -10 360 17T333 90Q333 108 336 122T339 146Q339 170 320 186T271 209T222 218T185 221H180L155 122Q129 22 126 16Q113 -11 83 -11Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path>
+<path stroke-width="1" id="E1-MJSZ3-28" d="M701 -940Q701 -943 695 -949H664Q662 -947 636 -922T591 -879T537 -818T475 -737T412 -636T350 -511T295 -362T250 -186T221 17T209 251Q209 962 573 1361Q596 1386 616 1405T649 1437T664 1450H695Q701 1444 701 1441Q701 1436 681 1415T629 1356T557 1261T476 1118T400 927T340 675T308 359Q306 321 306 250Q306 -139 400 -430T690 -924Q701 -936 701 -940Z"></path>
+<path stroke-width="1" id="E1-MJSZ3-29" d="M34 1438Q34 1446 37 1448T50 1450H56H71Q73 1448 99 1423T144 1380T198 1319T260 1238T323 1137T385 1013T440 864T485 688T514 485T526 251Q526 134 519 53Q472 -519 162 -860Q139 -885 119 -904T86 -936T71 -949H56Q43 -949 39 -947T34 -937Q88 -883 140 -813Q428 -430 428 251Q428 453 402 628T338 922T245 1146T145 1309T46 1425Q44 1427 42 1429T39 1433T36 1436L34 1438Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMATHI-61" x="0" y="0"></use>
+<g transform="translate(529,-155)">
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-49" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-53" x="504" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-4F" x="1150" y="0"></use>
+</g>
+ <use xlink:href="#E1-MJMAIN-3D" x="2260" y="0"></use>
+ <use xlink:href="#E1-MJMATHI-66" x="3316" y="0"></use>
+<g transform="translate(4033,0)">
+ <use xlink:href="#E1-MJSZ3-28"></use>
+<g transform="translate(736,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="2936" height="60" x="0" y="220"></rect>
+<g transform="translate(60,678)">
+ <use xlink:href="#E1-MJMATHI-65" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-63" x="659" y="-213"></use>
+ <use xlink:href="#E1-MJMAIN-22C5" x="1095" y="0"></use>
+<g transform="translate(1595,0)">
+ <use xlink:href="#E1-MJMATHI-43" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-75" x="1011" y="-213"></use>
+</g>
+</g>
+ <use xlink:href="#E1-MJMATHI-50" x="1092" y="-704"></use>
+</g>
+ <use xlink:href="#E1-MJMAIN-2C" x="3176" y="0"></use>
+ <use xlink:href="#E1-MJMATHI-3BA" x="3621" y="0"></use>
+</g>
+ <use xlink:href="#E1-MJSZ3-29" x="4934" y="-1"></use>
+</g>
+</g>
+</svg></p><p class="bodytext"></p><p class="bodytext">with:</p><p class="bodytext"><em>e<sub>C</sub></em> ... contamination factor [-]<br /><em>C<sub>u</sub></em> ... fatigue load limit [N]<br /><em>P</em> ... dynamic equivalent load [N]<br /><em>κ</em> ... viscosity ratio [-]</p><p class="bodytext"></p><p class="bodytext">The calculation procedure for the life modification factor based on systems approach <em>a<sub>ISO</sub></em> is shown in the below figure (see Figure 27.1). It considers the restrictions in the calculation of the viscosity ratio <em>κ</em> and the effect of EP additives in grease lubrication as described in the ISO 281 standard. Normally the value <em>a<sub>ISO</sub></em> is limited to <em>a<sub>ISO</sub></em> ≤ 50, but this limit can be changed in <span class="menu">Calculation &gt; Settings</span>.</p><p class="bodytext"></p><div class="objectWrapper" data-id="6855616d8d4b3" data-type="image" data-caption="Berechnungsverfahren für die Ermittlung des Lebensdauerbeiwertes auf der Grundlage einer Systembetrachtung"><p class="bodytext"><img data-id="6855616d8d4b3" height="776" src="aISO_life_modification_factor_system_calculation.png" width="521" /></p><p class="figcaption" data-id="6855616d8d4b3">Figure 27.1: Calculation procedure for life modification factor based on systems approach</p></div><p class="bodytext"></p><p class="bodytext">The contamination factor <em>e<sub>C</sub></em> considers the effect of solid particles in the lubricant film which can generate permanent indentations in the raceway when these particles are over rolled. Guide values for the contamination factor can be taken from the following table. More accurate values can be calculated with the equations given in ISO 281 which consider bearing size, type of lubrication, oil filtration ratio, contamination level etc. The calculation procedure for the contamination factor <em>e<sub>C</sub></em> is shown in the below figure. The same as with the calculation procedure for factor <em>a<sub>ISO</sub></em>, it also considers the restrictions in the calculation of the viscosity ratio <em>κ</em> and the effect of EP additives in grease lubrication as described in ISO 281.</p><p class="bodytext"></p><div class="objectWrapper" data-id="6855674d23908" data-type="table" data-caption="Richtwerte für den Verunreinigungsbeiwert nach ISO 281"><table border="1" cellpadding="1" cellspacing="2" data-id="6855674d23908">	<thead>		<tr>			<th scope="col">			<p class="bodytext">Level of contamination</p>			<p class="bodytext"></p>			</th>			<th scope="col">			<p class="bodytext">Factor <em>e<sub>c</sub></em></p>			<p class="bodytext"><em>D<sub>pw</sub></em> &lt; 100mm</p>			</th>			<th scope="col">			<p class="bodytext">Factor <em>e</em><sub>c</sub></p>			<p class="bodytext"><em>D<sub>pw</sub></em> <span data-huuid="16578478166894186783"><span>≥</span></span> 100mm</p>			</th>		</tr>	</thead>	<tbody>		<tr>			<td>			<p class="bodytext"><strong>Extreme cleanliness</strong><br />			Particle size of the order of lubricant film thickness<br />			laboratory conditions</p>			</td>			<td>			<p class="bodytext">1</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">1</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>High cleanliness</strong><br />			Oil filtered through extremely fine filter,<br />			conditions typical of bearings greased for life and sealed</p>			</td>			<td>			<p class="bodytext">0,8 to 0,6</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,9 to 0,8</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>Normal cleanliness</strong><br />			Oil filtered through fine filter,<br />			conditions typical of bearings greased for life and shielded</p>			</td>			<td>			<p class="bodytext">0,6 to 0,5</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,8 to 0,6</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>Slight contamination</strong><br />			Slight contamination in lubricant</p>			</td>			<td>			<p class="bodytext">0,5 to 0,3</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,6 to 0,4</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>Typical contamination</strong><br />			Conditions typical of bearings without integral seals<br />			course filtering; wear particles and ingress from surroundings</p>			</td>			<td>			<p class="bodytext">0,3 to 0,1</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,4 to 0,2</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>Severe contamination</strong><br />			Bearing environment heavily contaminated,<br />			bearing arrangement with inadequate sealing</p>			</td>			<td>			<p class="bodytext">0,1 to 0</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0,1 to 0</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext"><strong>Very severe contamination</strong></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">0</p>			<p class="bodytext"></p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="6855674d23908">Table 27.1: Guide values for the contamination factor according to ISO 281</p></div><p class="figcaption" data-id="6855674d23908"></p><div class="objectWrapper" data-id="6855674d23908" data-type="image" data-caption="Berechnungsverfahren zur Ermittlung des Verunreinigungsbeiwertes"><p class="figcaption" data-id="6855674d23908"><img height="544" src="ec_contamination_factor_calculation.png" width="338" /></p><p class="figcaption" data-id="6855674d23908">Figure 27.2: Calculation procedure for the contamination factor</p></div><p class="figcaption" data-id="6855674d23908"></p><p class="bodytext">The fatigue load limit <em>C<sub>u</sub></em> considers that a modern high quality bearing can attain an infinite life when loaded below a certain load and operating under favorable operating conditions. For such bearings the fatigue stress limit is reached at a contact stress of approximately 1500 N/mm<sup>2</sup>. The fatigue load limit is usually provided by the bearing manufacturers, and if not, it is calculated according to the equations given in ISO 281.</p><p class="bodytext">The dynamic equivalent load <em>P</em> is calculated according to the equations in ISO 281 or ISO/TS 16281, depending on the calculation method for rolling bearings.</p><p class="bodytext">The viscosity ratio <em>κ</em> considers the degree of the surface separation between the rolling contact surfaces which is achieved by means of a lubrication separation film. The viscosity ratio is calculated as follows:</p><p class="bodytext"></p><p class="bodytext"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="7.476ex" height="5.009ex" style="vertical-align: -2.171ex;" viewBox="0 -1221.9 3219 2156.8" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-1-Title">
+<title id="MathJax-SVG-1-Title">\kappa ={\nu  \over \nu _{1}}</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E1-MJMATHI-3BA" d="M83 -11Q70 -11 62 -4T51 8T49 17Q49 30 96 217T147 414Q160 442 193 442Q205 441 213 435T223 422T225 412Q225 401 208 337L192 270Q193 269 208 277T235 292Q252 304 306 349T396 412T467 431Q489 431 500 420T512 391Q512 366 494 347T449 327Q430 327 418 338T405 368Q405 370 407 380L397 375Q368 360 315 315L253 266L240 257H245Q262 257 300 251T366 230Q422 203 422 150Q422 140 417 114T411 67Q411 26 437 26Q484 26 513 137Q516 149 519 151T535 153Q554 153 554 144Q554 121 527 64T457 -7Q447 -10 431 -10Q386 -10 360 17T333 90Q333 108 336 122T339 146Q339 170 320 186T271 209T222 218T185 221H180L155 122Q129 22 126 16Q113 -11 83 -11Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path>
+<path stroke-width="1" id="E1-MJMATHI-3BD" d="M74 431Q75 431 146 436T219 442Q231 442 231 434Q231 428 185 241L137 51H140L150 55Q161 59 177 67T214 86T261 119T312 165Q410 264 445 394Q458 442 496 442Q509 442 519 434T530 411Q530 390 516 352T469 262T388 162T267 70T106 5Q81 -2 71 -2Q66 -2 59 -1T51 1Q45 5 45 11Q45 13 88 188L132 364Q133 377 125 380T86 385H65Q59 391 59 393T61 412Q65 431 74 431Z"></path>
+<path stroke-width="1" id="E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E1-MJMATHI-3BA" x="0" y="0"></use>
+ <use xlink:href="#E1-MJMAIN-3D" x="854" y="0"></use>
+<g transform="translate(1910,0)">
+<g transform="translate(120,0)">
+<rect stroke="none" width="1068" height="60" x="0" y="220"></rect>
+ <use xlink:href="#E1-MJMATHI-3BD" x="268" y="676"></use>
+<g transform="translate(60,-686)">
+ <use xlink:href="#E1-MJMATHI-3BD" x="0" y="0"></use>
+ <use transform="scale(0.707)" xlink:href="#E1-MJMAIN-31" x="699" y="-213"></use>
+</g>
+</g>
+</g>
+</g>
+</svg></p><p class="bodytext"></p><p class="bodytext">with:</p><p class="bodytext"><em>ν.</em>.. kinematic viscosity at operating temperature [mm<sup>2</sup>/s],</p><p class="bodytext"><em>ν<sub>1</sub></em>... reference kinematic viscosity [mm<sup>2</sup>/s].</p><p class="bodytext"></p><p class="bodytext">The kinematic viscosity at operating temperature <em>ν</em> is calculated according to ISO/TS 6336-22, while the reference kinematic viscosity <em>ν<sub>1</sub></em> is calculated according to the equations given in ISO 281. Note that according to ISO 281 current state of knowledge, the calculation of <em>a<sub>ISO</sub></em> is only possible for a viscosity ratio in the range 0,1 ≤ κ ≤ 4.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

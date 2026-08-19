@@ -1,0 +1,27 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #df8541;
+      }
+
+      .cls-3 {
+        fill: #555;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <polygon class="cls-1" points="2 29.5 30 29.5 16 3 2 29.5"/>
+      <path class="cls-2" d="M30.83,30H1.17L16,1.93Zm-28-1H29.17L16,4.07Z"/>
+    </g>
+    <g>
+      <rect class="cls-3" x="15" y="12" width="2" height="10"/>
+      <rect class="cls-3" x="15" y="24" width="2" height="2"/>
+    </g>
+  </g>
+</svg>

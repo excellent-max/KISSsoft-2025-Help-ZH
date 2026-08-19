@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>通用设置 | General settings</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="General settings">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7712');expand('7681');expand('9291');expand('9246');highlight('7714')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7712.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7715.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">通用设置</h3>   
+                
+<p class="bodytext">参考的是 FKM 指南中的章节。</p><ul>	<li class="bodytext"><strong>根据公式 4.3.2 和 4.3.3 的系数 KF，在第 4.3.1.2 节中描述。</strong></li></ul><p class="bodytext">缺口效应系数作为一个估算值，用于在使用局部应力概念时，根据名义应力概念确定粗糙度系数的影响。</p><p class="bodytext">选中复选框时：Kf 根据第 4.3.1.2 节所述的公式 4.3.2 和 4.3.3 定义。</p><p class="bodytext">未选中复选框时：KF 系数按表 4.3.1 所示设置。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>不使用 2/deff 计算 G，第 4.3.1.3.3 节</strong></li></ul><p class="bodytext">如果在“常规数据”选项卡中未选中 <span class="menu">邻近点数据输入</span> 复选框，则使用基于第 4.3.18 节公式的计算来计算相关应力梯度的近似值。该计算包含拉伸/压缩、扭转和弯曲项。如果不存在弯曲，则公式中的第二项 (2/d) 是否有意义值得怀疑。此处编程的选项并未在 FKM 指南中提供！</p><p class="bodytext">如果选中复选框，则在公式 4.3.18 中不应用第二项来确定应力梯度。</p><p class="bodytext">如果未选中复选框，则在公式 4.3.18 中同时应用第二项来确定应力梯度。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>平均应力和幅值的输入</strong></li></ul><p class="bodytext">如果选中复选框，则通过平均应力和幅值应力在主界面中输入应力。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>平均应力和幅值的输入</strong>	<ul>		<li class="bodytext"><strong>参考直径处材料值：</strong><br>		值从数据库（参考直径处）获取并乘以 K1。</li>		<li class="bodytext"><strong>Rm、Rp 取决于数据库中的值，sigW 在参考直径处：</strong><br>		Rm、Rp 根据尺寸从数据库导入（不含 K1）。疲劳强度针对数据库中输入的参考直径确定，然后乘以 K1。</li>		<li class="bodytext"><strong>Rm、Rp 取决于数据库中的值，sigW 为常数：</strong><br>		疲劳强度不乘以 K1，正确值必须位于数据库中</li>		<li class="bodytext"><strong>Rm、Rp 取决于数据库中的值，sigW 由 Rm 计算：</strong><br>		疲劳强度由 Rm 计算。Rm 根据尺寸存储在数据库中，换算按 FKM。</li>	</ul>	</li></ul><p class="bodytext"></p><ul>	<li class="bodytext"><strong>邻近点数据的输入，第 4.3.1.3.3 节，公式 4.3.17</strong></li></ul><p class="bodytext">选中复选框时：与缺口敏感系数相关的应力斜率通过应力状态在邻近点中定义。为此，必须在主界面中输入应力值以及校核点与邻近点之间的距离。</p><p class="bodytext">未选中复选框时：与缺口敏感系数相关的应力梯度不是根据邻近点的值确定的。最大应力点处的相关应力梯度使用公式 4.3.18 估算。为此，必须定义两个半径（半径 1 和半径 2）（用于表面上的两个方向），以及典型的零件尺寸 d。另请参见：上述模块特定设置“不使用 2/deff 计算 G”。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>按第 4.1.0 和 4.6.2 节规定的载荷方向</strong></li></ul><p class="bodytext">选中复选框时：针对同步应力进行计算。</p><p class="bodytext">未选中复选框时：针对非同步应力 (4.6.2.2) 进行计算。可以稳妥地认为这种方法是谨慎的。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>使用机械材料支承，参见第 4.3.1 和 4.3.1.3.2 节</strong></li></ul><p class="bodytext">如果选中此复选框，则计算中使用机械材料缺口系数。否则使用 Stieler 缺口系数。如果存在尖锐缺口，机械材料支承系数会考虑强度储备并包含静态尺寸系数。机械材料支承数 (nwm) 由三部分组成：静态支承数 (nst)、机械变形支承数 (nvm) 和断裂力学支承数 (nbm)。假设：对于“光滑轴”和“自定义输入”缺口类型，应用 nst = 1。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>材料数据的选择，第 3.2.1 节</strong></li></ul><p class="bodytext">零件标准值 Rm 和 Rp 必须由半成品或试件的标准值 R<sub class="subscript">m,N</sub> 和 R<sub class="subscript">p,N</sub> 或由零件图纸值 R<sub class="subscript">m,Z</sub> 计算得出。在特殊情况下，可采用零件实际值 R<sub class="subscript">m,I</sub> 和 R<sub class="subscript">p,I</sub>。<br>有关更多信息，请参见第 3.2.1.2 节。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>表面处理零件疲劳极限的计算（第 5.5 节）</strong></li></ul><p class="bodytext">如果启用此复选框，并且您选择了轧制钢和表面处理方法，则执行 FKM 指南第 7 版第 5.5 节中规定的计算方法。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>表面因子</strong></li></ul><p class="bodytext">此选择仅用于计算表面处理零件的疲劳极限。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>硬化深度</strong></li></ul><p class="bodytext">您可以使用此输入项来定义硬表面层与芯部之间过渡点的位置。</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>根据拉伸强度 Rm 确定芯部硬度</strong></li></ul><p class="bodytext">如果选中此复选框，则芯部硬度根据拉伸强度估算，而不是使用指定材料时输入的芯部硬度。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">General settings</h3>   
+                
+<p class="bodytext">The references are to sections in the FKM guideline.</p><ul>	<li class="bodytext"><strong>Coefficient KF according to equation 4.3.2 and 4.3.3, described in section 4.3.1.2.</strong></li></ul><p class="bodytext">Notch effect coefficient as an estimated value to enable the effect of the roughness coefficient to be determined, according to the nominal stress concept, when the local stress concept is in use.</p><p class="bodytext">Checkbox selected: Kf is defined according to formulae 4.3.2 and 4.3.3, described in section 4.3.1.2.</p><p class="bodytext">Checkbox not selected: The KF coefficient is set as shown in Table 4.3.1.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Calculating G without 2/deff, section 4.3.1.3.3</strong></li></ul><p class="bodytext">If the <span class="menu">Input of neighboring point data</span> checkbox is not selected in the &quot;General data&quot; tab, an approximation of the related stress gradient is calculated, using the calculation based on the equations in section 4.3.18. This contains terms for tension/compression, torsion, and bending. If no bending is present, it is questionable whether the second term (2/d) in the formulae makes any sense. The option programmed here is not provided in the FKM Guideline!</p><p class="bodytext">If the checkbox is selected, the stress gradient is determined without applying the second term in formula 4.3.18.</p><p class="bodytext">If the checkbox is not selected, the stress gradient is determined while also applying the second term in formula 4.3.18.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Input of mean stresses and amplitudes</strong></li></ul><p class="bodytext">If the checkbox is selected then the stresses are input in the main screen, via the medium and amplitude stress.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Input of mean stresses and amplitudes</strong>	<ul>		<li class="bodytext"><strong>Material values at reference diameter:</strong><br />		values are taken from database (at reference diameter) and multiplied by K1.</li>		<li class="bodytext"><strong>Rm, Rp depending on value from database, sigW at reference diameter: </strong><br />		Rm, Rp are imported from the database according to size (excluding K1). The fatigue strength is determined for the reference diameter entered in the database, and then multiplied by K1.</li>		<li class="bodytext"><strong>Rm, Rp depending on value from database, sigW constant:</strong><br />		Fatigue strength not multiplied by K1, correct value must be in database</li>		<li class="bodytext"><strong>Rm, Rp depending on value from database, sigW calculated from Rm: </strong><br />		Fatigue strength is calculated from Rm. Rm is stored in the database according to size, conversion according to FKM.</li>	</ul>	</li></ul><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Input of neighboring point data, section 4.3.1.3.3, Formula 4.3.17</strong></li></ul><p class="bodytext">Checkbox selected: Notch sensitivity factor-related stress slope is defined in the neighboring point via the stress state. To do this, the stress values and the distance between the proof point and neighboring point must be entered in the main screen.</p><p class="bodytext">Checkbox not selected: Notch sensitivity factor-related stress gradient is not determined from the values at a neighboring point. The related stress gradient at the point of maximum stress is estimated using formula 4.3.18. To do this, two radii (Radius 1 and Radius 2) must be defined (for the two directions on the surface), and also a typical part dimension d. See also: module specific setting, Calculation of G without 2/deff, above.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Direction of load as specified in sections 4.1.0 and 4.6.2.</strong></li></ul><p class="bodytext">Checkbox selected: the calculation is carried out for synchronous stresses.</p><p class="bodytext">Checkbox not selected: the calculation is performed for asynchronous stresses (4.6.2.2). It can safely be assumed that this method of approach is a cautious one.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Use the mechanical material support, see sections 4.3.1 and 4.3.1.3.2</strong></li></ul><p class="bodytext">If this checkbox is selected, the mechanical material notch factor is used for the calculation. Otherwise, the Stieler notch factor is used. If sharp notches are present, the mechanical material support coefficient takes into account the strength reserves and contains the static size coefficient. The mechanical material support number (nwm) is made up of three parts: the static support number (nst), the mechanical deformation support number (nvm) and fracture mechanical support number (nbm). Assumption: nst = 1 is applied to the &quot;Smooth shaft&quot; and &quot;Own Input&quot; notch types.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Selecting materials data, section 3.2.1</strong></li></ul><p class="bodytext">The part standard values Rm and Rp must be calculated from the semi-finished product or test piece standard values R<sub class="subscript">m,N</sub> and R<sub class="subscript">p,N</sub> or from the part drawing value R<sub class="subscript">m,Z</sub>. In exceptional situations, the part actual values R<sub class="subscript">m,I</sub> and R<sub class="subscript">p,I</sub> can be applied.<br />See section 3.2.1.2. for more information.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Calculating the endurance limit for surface-treated parts (section 5.5)</strong></li></ul><p class="bodytext">If this checkbox is enabled, and you have selected a rolled steel and a surface treatment method, the calculation method specified in the FKM Guideline, 7th Edition, section 5.5, is performed.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Surface factor</strong></li></ul><p class="bodytext">This selection is only used for calculating the endurance limit of surface-treated parts.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Hardening depth</strong></li></ul><p class="bodytext">You can use this entry to define the location of the transition point between the hard surface layer and the core.</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Determine core hardness from tensile strength Rm</strong></li></ul><p class="bodytext">If this checkbox is selected, the core hardness is estimated from the tensile strength instead of using the core hardness entered when the material was specified.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

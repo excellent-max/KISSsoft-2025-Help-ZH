@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>考虑制造误差的KHß计算 | Calculation of KHß with manufacturing errors</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation of KHß with manufacturing errors">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8648');expand('8720');expand('7708');expand('9286');expand('9246');highlight('10713')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8660.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10852.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">考虑制造误差的KHß计算</h3>   
+                
+<p class="bodytext">根据 ISO 6336-1(E)，导程变化（fHb）和轴偏移（fma）误差也在啮合平面中被考虑。在这种情况下，它们的综合影响将在五种情况下被计入齿面间隙中：</p><ul><li class="bodytext">情况 1：fma = fHb = 0，即无误差</li><li class="bodytext">情况 2：fma = |fma|，fHb = |fHb|，因此两个误差均为正值</li><li class="bodytext">情况 3：fma = +|fma|，fHb = -|fHb|</li><li class="bodytext">情况 4：fma = -|fma|，fHb = +|fHb|</li><li class="bodytext">情况 5：fma = -|fma|，fHb = -|fHb|，因此两个误差均为负值</li></ul><p class="bodytext">在全部五种情况下计算齿向载荷分布系数 K<sub class="subscript">Hß</sub>，并选取最大值作为齿轮副的齿向载荷分布系数。</p><p class="bodytext">从公共接触点观察，正方向始终指向小齿轮实体（材料）所在的方向。</p><div class="objectWrapper" data-id="5ba0bcd6b26b2" data-type="image" data-caption="Definition der positiven Richtung"><p class="bodytext"><img data-id="5ba0bcd6b26b2" src="10720.png" style="height:300px; width:300px"></p><p class="figcaption" data-id="5ba0bcd6b26b2">图15.17：正方向的定义</p></div><p class="bodytext">在全部五种情况下，制造误差都会记录在报告以及间隙和载荷分布图形中。</p><p class="bodytext"><strong>建议的 fhb 和 fma 值</strong></p><p class="bodytext">点击 |fHb| 输入字段旁边的“尺寸计算”按钮，可显示 fHb 和 fma 的可用数据建议。<br><br><em class="emphasis">“最大值”</em> 显示 fHb 和 fma 的最大可能值。这些值来源于两个齿轮的 fHbT（螺旋线斜率偏差）公差以及轴线对中公差（f<sub>Σβ</sub> 和 f<sub>Σδ</sub>）。<br><br><em class="emphasis">“静态评估”的建议</em> 显示可能的最大值（99.7%概率）。此建议值的计算方法如下：</p><p class="bodytext"><br><img src="11158.png" style="height:87px; width:249px"><br></p><p class="bodytext"></p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation of KHß with manufacturing errors</h3>   
+                
+<p class="bodytext">According to ISO 6336-1(E), the lead variation (fHb) and shaft misalignment (fma) errors are also taken into account in the plane of action. In such a case, their combined effect is taken into account for the flank gap in five cases:</p><ul><li class="bodytext">Case 1: fma = fHb = 0, i.e. no error</li><li class="bodytext">Case 2: fma = |fma|, fHb = |fHb|, so positive values for both errors</li><li class="bodytext">Case 3: fma = +|fma|, fHb = -|fHb|</li><li class="bodytext">Case 4: fma = -|fma|, fHb = +|fHb|</li><li class="bodytext">Case 5: fma = -|fma|, fHb = -|fHb|, so negative values for both errors</li></ul><p class="bodytext">The face load factor K<sub class="subscript">Hß</sub> is calculated for all five cases, and the maximum value is selected as the face load factor of the gear pair.</p><p class="bodytext">The positive direction always lies in the direction of the pinion's material, seen from a common point of contact.</p><div class="objectWrapper" data-id="5ba0bcd6b26b2" data-type="image" data-caption="Definition der positiven Richtung"><p class="bodytext"><img data-id="5ba0bcd6b26b2" src="10720.png" style="height:300px; width:300px" /></p><p class="figcaption" data-id="5ba0bcd6b26b2">Figure 15.17: Definition of the positive direction</p></div><p class="bodytext">In all five cases, the manufacturing error is documented in the report and in the gaping and load distribution graphics.</p><p class="bodytext"><strong>Proposed value for fhb and fma</strong></p><p class="bodytext">Click on the Sizing button next to the input field for |fHb| to display suggestions of usable data for fHb and fma.<br /><br /><em class="emphasis">&quot;Maximum&quot;</em> shows the largest possible values for fHb and fma. The values are derived from the fHbT (helix slope deviation) tolerances of the two gears and from the axis alignment tolerance (f<sub>Σβ</sub> and f<sub>Σδ</sub>). <br /><br /><em class="emphasis">The &quot;statically evaluated&quot; proposal</em> displays the probable maximum values (99.7% probability). This proposal is calculated as follows:</p><p class="bodytext"><br /><img src="11158.png" style="height:87px; width:249px" /><br /></p><p class="bodytext"></p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>按 SKF 2018 样本计算 | Calculation according to SKF Catalog 2018</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation according to SKF Catalog 2018">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9523');expand('8139');expand('9287');expand('9246');highlight('9524')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9525.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11105.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">按 SKF 2018 样本计算</h3>   
+                
+<p class="bodytext">由于该计算需考虑众多因素和影响，因此只有在修改额定寿命计算中将其作为选项选中时才执行。不过，此计算也可在不使用这些默认值的情况下执行。根据 2018 SKF 样本，总摩擦力矩由滚子接触中的滚动摩擦与滑动摩擦（滚动体与保持架之间、轴承表面、润滑剂，以及密封轴承中磨削密封引起的滑动摩擦）共同决定。摩擦力矩的计算取决于多种系数：</p><ul>	<li class="bodytext">额定载荷</li>	<li class="bodytext">轴承类型</li>	<li class="bodytext">轴承尺寸</li>	<li class="bodytext">工作转速</li>	<li class="bodytext">润滑剂特性</li>	<li class="bodytext">润滑剂用量</li>	<li class="bodytext">密封件</li></ul><p class="bodytext"></p><p class="bodytext">执行计算必须满足以下工作条件：</p><ul>	<li class="bodytext">润滑脂或油润滑（油浴、油雾或油喷射方式）</li>	<li class="bodytext">载荷等于或大于最小载荷</li>	<li class="bodytext">载荷大小和方向恒定</li>	<li class="bodytext">名义工作游隙</li></ul><p class="bodytext"></p><p class="bodytext">如果载荷小于最小载荷，则计算继续使用最小载荷。如果在数据库中已输入最小载荷值，则使用该值；否则，软件将自行确定该值。对于径向轴承，最小载荷转换为最小径向力；对于推力轴承，最小轴向力由软件定义。此处不使用最小载荷值。</p><p class="bodytext">总摩擦力矩的公式为：</p><p class="bodytext">M = <em class="emphasis">M</em><sub class="subscript">rr</sub> + <em class="emphasis">M</em><sub class="subscript">sl</sub> + <em class="emphasis">M</em><sub class="subscript">seal</sub> + <em class="emphasis">M</em><sub class="subscript">drag</sub></p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">rr</sub>: <strong>滚动摩擦力矩</strong><br>滚动摩擦力矩取决于轴承类型、平均直径、径向和轴向载荷、转速以及润滑剂粘度。计算滚动摩擦力矩所需的设计系数通过滚动轴承的系列定义。计算中使用的设计系数和系数取自 SKF 2018 样本。</p><p class="bodytext">用于滚动摩擦的系数：</p><ul>	<li class="bodytext"><img src="greekPhi.png" style="height:10px; width:7px"><sub class="subscript">ish</sub>: <strong>润滑油膜厚度系数</strong><br>	在润滑剂流动中，润滑剂受到滚动体运动引起的剪切力作用。这会产生热量，从而减小滚动摩擦力矩。</li>	<li class="bodytext"><img src="greekPhi.png" style="height:10px; width:7px"><sub class="subscript">rs</sub>: <strong>润滑剂排挤系数</strong><br>	持续的滚动作用将多余的润滑剂从滚动体接触区挤走。这会减小润滑油膜厚度，从而减小滚动摩擦力矩。</li></ul><p class="bodytext">对于样本中未定义设计系数的轴承类型和轴承系列，已作出假设，以便在缺少这些系数的情况下仍能计算滚动摩擦力矩。</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">sl</sub>: <strong>滑动摩擦力矩 </strong><br>滑动摩擦力矩取决于轴承类型、平均直径、径向和轴向载荷以及润滑剂粘度。计算滑动摩擦力矩所需的设计系数通过滚动轴承的系列定义。可在 SKF 2018 样本中找到此计算所用的系数。</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">seal</sub>: <strong>磨削密封的摩擦力矩</strong><br>磨削密封的摩擦力矩取决于轴承类型、轴承尺寸、密封唇配合面直径以及密封类型。由于密封类型、密封唇配合面直径和密封布置因制造商而异，因此很难定义一个普遍适用的摩擦力矩。</p><p class="bodytext">选择 <span class="menu">计算 &gt; 设置</span> 以显示"设置"选项卡。在其中，您可以选择用于确定该参考尺寸的不同选项：</p><ul>	<li class="bodytext"><strong>根据所选计算方法中的 SKF 主目录</strong><ul>		<li class="bodytext"><em><span style="font-size:11pt"><span style='font-family:"Calibri",sans-serif'><span style="font-size:10.0pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">PUB BU/P1 17000/1 EN: October 2018</span></span></span></span></span></em><br>		您所用轴承密封类型的数值见 SKF 样本（集成于 KISSsoft 软件中）。如果 KISSsoft 系统在轴承名称中找到熟悉的密封标识，它将使用样本中列出的系数计算磨削密封的摩擦力矩。否则，摩擦力矩设为零。<br>		滚动轴承名称中密封标识的示例：<br>		<span class="menu">SKF: 623-2RS</span>：这表示该轴承两侧各有一个 RS1 型密封。KISSsoft 系统随后搜索其中包含 "-2RS1" 的名称。如果存在此标识，则应用 SKF 样本中的系数，并计算磨削密封的摩擦力矩。<br>		在 KISSsoft 中，密封唇配合面直径的计算公式为：<br>		ds = d + (D - d) * 0.2</li>	</ul>	</li>	<li class="bodytext"><strong>根据 ISO/TR 13593:1999 Viton </strong> <em class="emphasis">M</em><sub class="subscript">sea</sub> 用公式计算：<em class="emphasis">M</em><sub class="subscript">sea</sub> = 3.736*10^-3*dsh；<em class="emphasis">M</em><sub class="subscript">sea</sub> 单位为 Nm，d<sub class="subscript">sh</sub> 为轴直径，单位 mm</li>	<li class="bodytext"><strong>根据 ISO/TR 13593:1999 Buna N</strong> <em class="emphasis">M</em><sub class="subscript">sea</sub> 用公式计算：<em class="emphasis">M</em><sub class="subscript">sea</sub> = 2.429*10^-3*dsh；<em class="emphasis">M</em><sub class="subscript">sea</sub> 单位为 Nm，d<sub class="subscript">sh</sub> 为轴直径，单位 mm</li></ul><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">drag</sub>: <strong>由润滑损失引起的摩擦力矩 </strong><br>该摩擦力矩由油浴润滑中的流动、飞溅或喷射损失引起。为计算该力矩，还必须输入油位深度（h<sub class="subscript">Oil</sub>），可通过选择 <span class="menu">计算 &gt; 设置</span> 来指定。您可在"油位和润滑类型"一节中找到关于该输入的更详细说明（参见"<a class="referencetopic-shabschnitt" href="10374.htm" target="_self">油位和润滑类型</a>"章）。用于带保持架滚动轴承的设计系数 KZ 和 KL 同样适用于圆环滚子轴承（CARB）。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation according to SKF Catalog 2018</h3>   
+                
+<p class="bodytext">As this calculation has to take into consideration a myriad of factors and influences, it is only performed if selected as an option in the modified rating life calculation. However, this calculation can also be performed without these default values. The calculation of the total moment of friction according to the 2018 SKF catalog is determined by a combination of rolling and sliding friction in the roller contacts (between rolling bodies and cage, the bearing surface, the lubricant, and the sliding friction from grinding seals caused in sealed bearings). The calculation of the moment of friction depends on various coefficients:</p><ul>	<li class="bodytext">Rating (load)</li>	<li class="bodytext">Type of bearing</li>	<li class="bodytext">Bearing size</li>	<li class="bodytext">Operating speed</li>	<li class="bodytext">Lubricant properties</li>	<li class="bodytext">Lubricant quantities</li>	<li class="bodytext">Seals</li></ul><p class="bodytext"></p><p class="bodytext">The following working conditions must be present for the calculation to be performed:</p><ul>	<li class="bodytext">Grease or oil lubrication (oil bath, oil mist, or oil injection process)</li>	<li class="bodytext">Load equal or greater than minimum load</li>	<li class="bodytext">Load constant in size and direction</li>	<li class="bodytext">Nominal operating clearance</li></ul><p class="bodytext"></p><p class="bodytext">If the load is less than the minimum load, the calculation continues using the minimum load. If a minimum load value has been entered in the database, this value is used. If not, the software will determine this value. In the case of radial bearings, the minimum load is converted into a minimum radial force. In thrust bearings, the minimum axial force is defined by the software. The value for the minimum load is not used here.</p><p class="bodytext">The formula for the total moment of friction is:</p><p class="bodytext">M = <em class="emphasis">M</em><sub class="subscript">rr</sub> + <em class="emphasis">M</em><sub class="subscript">sl</sub> + <em class="emphasis">M</em><sub class="subscript">seal</sub> + <em class="emphasis">M</em><sub class="subscript">drag</sub></p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">rr</sub>: <strong>Rolling moment of friction</strong><br />The rolling moment of friction depends on the bearing type, mean diameter, radial and axial loading, rotation speed, and lubricant viscosity. The design coefficients required to calculate the rolling moment of friction are defined using the rolling bearing's series. The design coefficients and coefficients used in the calculation are taken from the SKF Catalog 2018.</p><p class="bodytext">Coefficients used for rolling friction:</p><ul>	<li class="bodytext"><img src="greekPhi.png" style="height:10px; width:7px" /><sub class="subscript">ish</sub>: <strong>Lubricant film thickness factor</strong><br />	In a lubricant flow, the lubricant is exposed to shear forces caused by the movement of the rolling bodies. This produces heat and therefore reduces the rolling moment of friction.</li>	<li class="bodytext"><img src="greekPhi.png" style="height:10px; width:7px" /><sub class="subscript">rs</sub>: <strong>Lubricant displacement factor</strong><br />	The constant rolling action squeezes excess lubricant away from the contact zone of the rolling body. This reduces the lubricant film thickness and therefore reduces the rolling moment of friction.</li></ul><p class="bodytext">Assumptions have been made for bearing types and bearing series for which no design coefficients have been defined in the catalog, so that the rolling moment of friction can still be calculated despite their absence.</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">sl</sub>: <strong>Sliding moment of friction </strong><br />The sliding moment of friction depends on the bearing type, mean diameter, radial and axial loading and lubricant viscosity. The design coefficients required to calculate the sliding moment of friction are defined using the rolling bearing's series. You will find the factors used for this calculation in the SKF 2018 catalog.</p><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">seal</sub>: <strong>Moment of friction for grinding seals</strong><br />The moment of friction for grinding seals depends on the bearing type, bearing size, diameter of the seal-lip mating surface, and the seal type. As the type of seal, the diameter of the seal-lip mating surface, and the seal layout, differ from one manufacturer to another, it is difficult to define a generally applicable moment of friction.</p><p class="bodytext">Select <span class="menu">Calculation &gt; Settings</span> to display the Settings tab. In it, you can choose different options for determining this reference size:</p><ul>	<li class="bodytext"><strong>according to SKF main catalog in selected calculation method </strong>	<ul>		<li class="bodytext"><em><span style="font-size:11pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-size:10.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">PUB BU/P1 17000/1 EN: October 2018</span></span></span></span></span></em><br />		You will find values for the seal types used in your bearings in the SKF catalog, which is integrated in the KISSsoft software. If the KISSsoft system finds a familiar seal label in the bearing label, it calculates the moment of friction for a grinding seal using the coefficients listed in the catalog. Otherwise, the moment of friction is set to zero.<br />		Example of a seal label in the name of a rolling bearing:<br />		<span class="menu">SKF: 623-2RS</span>: this means that the bearing has a RS1-type seal on both sides. The KISSsoft system then searches for names with &quot;-2RS1&quot; in them. If this label is present, the coefficients from the SKF catalog are applied and the moment of friction for grinding seals is calculated.<br />		In KISSsoft, the diameter of the seal-lip mating surface is calculated with:<br />		ds = d + (D - d) * 0.2</li>	</ul>	</li>	<li class="bodytext"><strong>according to ISO/TR 13593:1999 Viton </strong> <em class="emphasis">M</em><sub class="subscript">sea</sub> calculated with the formula: <em class="emphasis">M</em><sub class="subscript">sea</sub> = 3.736*10^-3*dsh; <em class="emphasis">M</em><sub class="subscript">sea</sub> in Nm, d<sub class="subscript">sh</sub> Shaft diameter in mm</li>	<li class="bodytext"><strong>according to ISO/TR 13593:1999 Buna N</strong> <em class="emphasis">M</em><sub class="subscript">sea</sub> calculated with the formula: <em class="emphasis">M</em><sub class="subscript">sea</sub> = 2.429*10^-3*dsh; <em class="emphasis">M</em><sub class="subscript">sea</sub> in Nm, d<sub class="subscript">sh</sub> Shaft diameter in mm</li></ul><p class="bodytext"><em class="emphasis">M</em><sub class="subscript">drag</sub>: <strong>Moment of friction caused by lubrication losses </strong><br />This moment of friction is caused by flow, splash or injection losses during oil bath lubrication. To calculate this moment, you must also input the oil level depth (h<sub class="subscript">Oil</sub>), which you can specify by selecting <span class="menu">Calculation &gt; Settings</span>. You will find a more detailed description of this entry in the Oil level and lubrication type section (see chapter <a class="referencetopic-shabschnitt" href="10374.htm" target="_self">Oil level and lubrication type</a>). The design coefficients KZ and KL for rolling bearings with a cage are also applied to toroidal roller bearings (CARB).</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>确定等效扭矩（用于载荷谱） | Determine the equivalent torque (for load spectra)</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Determine the equivalent torque (for load spectra)">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9489');expand('8341');expand('9286');expand('9246');highlight('10248')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10144.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10260.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">确定等效扭矩（用于载荷谱）</h3>   
+                
+<p class="bodytext">一些计算指南要求您确定载荷谱的等效扭矩，并使用它进行尺寸设计。如何在 KISSsoft 中确定等效扭矩？</p><p class="bodytext">这里的基本问题在于，用等效扭矩进行齿形验证必须与用实际载荷谱进行验证给出相同的安全系数。为此，你可以遵循以下步骤：</p><p class="bodytext">1. 输入载荷谱并计算齿形。</p><p class="bodytext">2. 记下每个齿轮的最低齿根安全系数和最低齿面安全系数。</p><p class="bodytext">3. 在 <span class="menu">计算设置</span> 窗口中（通过选择 <span class="menu">计算</span> <span class="menu">&gt; </span> <span class="menu">设置 </span> 访问），在 <span class="menu">安全系数 </span> 选项卡中使用 <span class="menu">安全系数根据尺寸 </span> 配置选项，输入用户已记录的所需安全系数。</p><p class="bodytext">4. 通过将载荷谱设置为 <span class="menu">单级载荷</span> 来将其删除。</p><p class="bodytext">5. 点击扭矩输入旁边的尺寸按钮。等效扭矩写入扭矩输入字段。</p><p class="bodytext">6. 现在运行计算以检查数据。你现在为特定齿轮的根或齿面定义的安全系数必须恰好等于上一步骤中最小的值（如步骤2）。所有齿轮的安全系数都不能低于你在步骤2中记录的安全系数。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Determine the equivalent torque (for load spectra)</h3>   
+                
+<p class="bodytext">Some calculation guidelines require you to determine the equivalent torque of a load spectrum and use it to perform sizing. How can I determine the equivalent torque in KISSsoft?</p><p class="bodytext">The fundamental issue here is that the verification of a toothing with equivalent torque must give the same safeties as the verification with the actual load spectrum. For this reason, you can follow this procedure:</p><p class="bodytext">1. Input the load spectrum and calculate the toothing.</p><p class="bodytext">2. Make a note of the lowest root safety and the lowest flank safety for each gear.</p><p class="bodytext">3. In the <span class="menu">Calculation settings</span> window, which you access by selecting <span class="menu">Calculation</span> <span class="menu">&gt; </span> <span class="menu">Settings </span>, input the safeties you have noted as required safeties in the <span class="menu">Safety factors </span>tab using the <span class="menu">Safety factors depending on size </span> configuration option.</p><p class="bodytext">4. Delete the load spectrum by setting it to <span class="menu">Single stage load</span>.</p><p class="bodytext">5. Click the Sizing button next to the input for the torque. The equivalent torque is written to the torque input field.</p><p class="bodytext">6. Now run the calculation to check the data. The safeties you have now defined for the root or flank of a particular gear must be exactly equal to the previous smallest value (as in step 2). None of the gears can have a safety that is less than the safeties you recorded in step 2.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

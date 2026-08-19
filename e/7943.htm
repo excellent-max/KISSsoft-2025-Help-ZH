@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>摩擦系数 | Coefficients of friction</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Coefficients of friction">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11538');expand('7903');expand('9288');expand('9246');highlight('7943')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7929.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7946.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">摩擦系数</h3>   
+                
+<p class="bodytext">在 KISSsoft 中，您可以指定一个摩擦系数区间。最小值用于 <em class="emphasis">F</em><sub class="subscript">M</sub> 和 <em class="emphasis">F</em><sub class="subscript">Mmax</sub> 的计算，最大值用于 <em class="emphasis">F</em><sub class="subscript">Mmin</sub> 和 <em class="emphasis">F</em><sub class="subscript">M</sub>/α<sub class="subscript">A</sub> 的计算。因此，摩擦系数值的离散会影响到拧紧扭矩的离散。</p><div class="objectWrapper" data-id="5ba0bcd87ebb6" data-type="image" data-caption="Reibungszahlen im Gewinde."><p class="bodytext"><img data-id="5ba0bcd87ebb6" height="441" src="reibungskoeffizienten_aussengewinde_m-010_2016.png" width="564"></p><p class="figcaption" data-id="5ba0bcd87ebb6">图 42.9：螺纹中的摩擦系数。</p></div><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd87ec39" data-type="image" data-caption="Reibungszahlen in Kopf- und Mutterauflage."><p class="bodytext"><img data-id="5ba0bcd87ec39" height="485" src="reibungskoeffizienten_schraubenkopf_m-011_2016.png" width="564"></p><p class="figcaption" data-id="5ba0bcd87ec39">图 42.10：头部支承面和螺母支承面中的摩擦系数。</p></div><p class="bodytext">您也可以按照 VDI 2230 Sheet 1 中表 A5 的附录所规定的摩擦等级 A 到 E 进行选型，以定义摩擦系数的值。螺纹、头部支承面和螺母支承面的最小和最大摩擦系数随后将被导入 KISSsoft。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Coefficients of friction</h3>   
+                
+<p class="bodytext">In KISSsoft, you can specify an interval for coefficients of friction. The minimum value is used for calculation with <em class="emphasis">F</em><sub class="subscript">M</sub> and <em class="emphasis">F</em><sub class="subscript">Mmax</sub> and the maximum value is used for calculation with <em class="emphasis">F</em><sub class="subscript">Mmin</sub> and <em class="emphasis">F</em><sub class="subscript">M</sub>/α<sub class="subscript">A</sub>. The scattering of the coefficient of friction value therefore affects the scatter of the tightening torques.</p><div class="objectWrapper" data-id="5ba0bcd87ebb6" data-type="image" data-caption="Reibungszahlen im Gewinde."><p class="bodytext"><img data-id="5ba0bcd87ebb6" height="441" src="reibungskoeffizienten_aussengewinde_m-010_2016.png" width="564" /></p><p class="figcaption" data-id="5ba0bcd87ebb6">Figure 42.9: Coefficients of friction in the thread.</p></div><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd87ec39" data-type="image" data-caption="Reibungszahlen in Kopf- und Mutterauflage."><p class="bodytext"><img data-id="5ba0bcd87ec39" height="485" src="reibungskoeffizienten_schraubenkopf_m-011_2016.png" width="564" /></p><p class="figcaption" data-id="5ba0bcd87ec39">Figure 42.10: Coefficients of friction in the head bearing area and nut bearing area.</p></div><p class="bodytext">You can also use the sizing according to friction classes A to E as specified in VDI 2230 Sheet 1, Annex to Table A5 to define the values for the coefficients of friction. The minimum and maximum coefficients of friction for the thread, the head bearing area and the nut support are then imported into KISSsoft.</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

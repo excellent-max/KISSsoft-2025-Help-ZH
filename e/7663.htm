@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>变量对话框 | Variable dialogs</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Variable dialogs">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7659');expand('7629');expand('9292');expand('9246');highlight('7663')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7662.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7664.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">变量对话框</h3>   
+                
+<p class="bodytext">在解释器函数中，可以生成变量对话框用于输入变量。调用方式为：</p><p class="bodytext"><span class="menu">res = CADH_VarDialog([</span>"<span class="menu">Title</span>"<span class="menu">, Width, Height, Pitch],</span> <span class="menu">[dialog element 1], [dialog element 2], etc.);</span></p><p class="bodytext">标题显示在对话框的标题栏中。Width 和 Height 值是对话框的像素尺寸。分割比例（0 到 1 之间的值）描述了字段描述宽度与对话框宽度之间的比率（默认值 0.4）。对话框尺寸的定义之后可以跟任意数量的数组，每个数组定义单个对话框元素。</p><p class="bodytext">返回值是一个数组，其第一个值为 <span class="menu">res[0]=1</span>，前提是通过选择 <span class="menu">OK</span> 关闭了对话框。否则，第一个值为零。返回数组的其他元素提供输入字段的结果。</p><p class="bodytext">以下约定用于定义变量类型：_str=String、_n=Int、_r=Real、_b=Bool。例如，Caption_str 表示 Beschr 变量为 String 类型。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Variable dialogs</h3>   
+                
+<p class="bodytext">In interpreter functions, variable dialogs can be generated for the input of variables. The call is:</p><p class="bodytext"><span class="menu">res = CADH_VarDialog([</span>&quot;<span class="menu">Title</span>&quot;<span class="menu">, Width, Height, Pitch],</span> <span class="menu">[dialog element 1], [dialog element 2], etc.);</span></p><p class="bodytext">The title is displayed in the dialog's title line. The Width and Height values are the dimensions of the dialog in pixels. The division (a value between 0 and 1) describes the ratio between the width of the field description and the dialog width (default value 0.4). This definition of the dialog size can be followed by any number of arrays that each define the individual dialog elements.</p><p class="bodytext">The return value is an array whose first value is <span class="menu">res[0]=1</span> if the dialog was closed by selecting <span class="menu">OK</span>. Otherwise, the first value is zero. The other elements of the returned array supply the results of the input fields.</p><p class="bodytext">The following convention is used to define the type of a variable: _str=String, _n=Int, _r=Real, _b=Bool. For example, in the case of Caption_str, this means that the Beschr variable is of the type String.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>集成 KISSsoft 插件（在 CAD 中的菜单选项） | Integrating the KISSsoft Add-in (menu options in CAD)</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Integrating the KISSsoft Add-in (menu options in CAD)">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8984');expand('8924');expand('9272');expand('9246');highlight('8988')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8984.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8994.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">集成 KISSsoft 插件（在 CAD 中的菜单选项）</h3>   
+                
+<p class="bodytext">首先，将提供的文件夹（例如<strong><span class="menu">NX</span>1847</strong>）连同其<span class="menu">startup</span>子文件夹，复制到用户可以随时访问的位置。</p><p class="bodytext"><span class="menu">kSoftNX_d.men</span>文件包含KISSsoft 插件菜单选项的定义。该文件的名称因所选语言不同而异。例如，文件名中的<span class="menu">_e</span>代表<span class="menu">英语</span>。其他语言代码为：_d代表<span class="menu">德语</span>，_f代表<span class="menu">法语</span>，_i:代表<span class="menu">意大利语</span>，_s:代表<span class="menu">西班牙语</span>，_r:代表<span class="menu">俄语</span>，_p:代表<span class="menu">葡萄牙语</span>，_c:代表<span class="menu">中文</span>。您可以将所需语言的文件复制到<span class="menu">startup</span>文件夹中。随后KISSsoft菜单将以该语言显示。</p><p class="hint">注意：</p><p class="bodytext">如果所选语言使用Unicode字体（例如俄语的西里尔字母），则必须在操作系统中将"本地化"设置为该语言（使用该语言的国家/地区）。</p><p class="bodytext"></p><p class="bodytext">KISSsoft也可作为功能区菜单使用。带<strong>_e </strong>的英语菜单作为默认设置嵌入在<span class="menu">startup </span>子文件夹中。如果要更改菜单显示的语言，请删除<span class="menu">startup</span>文件夹中所有名称以<strong>_e</strong>结尾的文件。...<span class="menu">\NX1847 </span>子文件夹包含每种可用语言对应的子文件夹（例如<span class="menu">kSoftNXRibbon_e </span>用于英语）。您可以将所需语言文件夹的全部内容复制到<span class="menu">startup </span>子文件夹中。随后菜单将以该语言显示。</p><p class="bodytext"><span class="menu">kSoftNX1847.dll</span>文件（例如）也存储在此文件夹中，其中包含菜单选项的链接和命令。</p><p class="bodytext">您必须为先前复制的文件夹输入路径（例如<span class="menu">NX1847</span>），输入位置在NX目录中的<span class="menu">NX1847\menu\custom_dirs.dat</span>文件里，以便NX系统知道其要使用的文件的存储位置。</p><p class="bodytext"></p><p class="bodytext"><img height="239" src="10-nx_b3_small.png" width="548"></p><p class="bodytext"></p><p class="bodytext">如果要使用的<span class="menu">custom_dirs.dat </span>文件在安装目录中不可用，您可以定义一个系统变量，为此明确命名所需路径。<br>系统变量：<span class="menu">UGII_CUSTOM_DIRECTORY_FILE </span></p><p class="bodytext">值：所需路径</p><p class="bodytext"></p><p class="bodytext"><span class="menu">KISSsoftCOM</span> 服务器应作为安装过程的一部分进行注册。然而，如果此步骤未完成，并且KISSsoft接口无法工作，必须注册该插件。</p><p class="bodytext">转到KISSsoft安装目录并选择<strong>NX1847</strong>子文件夹。在其中，双击<strong>NX_Register64.bat</strong>文件以注册接口。</p><p class="bodytext"></p><p class="bodytext">如果 KISSsoft 插件成功注册，将显示一条消息确认这一点。</p><p class="bodytext">要删除注册，请双击<span class="menu">NXUnRegister.bat </span>文件（位于KISSsoft安装目录中）。随后会显示一条消息，确认注销成功。</p><p class="bodytext"></p><p class="bodytext">为确保KISSsoft图标显示在菜单选项旁边，您还必须设置一个带路径的系统变量，以告诉程序在哪里可以找到KISSsoft图标。</p><p class="bodytext">示例：设置一个系统变量并将此值作为路径</p><p class="bodytext"><strong>KSOFT_ICONS</strong></p><p class="bodytext">C:\Program Files(x86)\KISSsoft&lt;version&gt;<strong>startup</strong> 文件夹中还包含<strong> <span class="menu">kSoftNX.ini</span> </strong>文件，您可以在其中更改实体、草图、平面和图纸的图层。</p><p class="bodytext">您可以使用<span class="menu">SKETCHPREFERENCES_CONTINOUSAUTODIMENSIONING</span>选项来定义在设计应用程序中修改草图后是否自动创建尺寸。如果禁用此选项，则对于较大的草图可提高性能。</p><p class="bodytext">在 NX 中，此选项可在以下路径找到：文件&gt;实用工具&gt;客户默认值&gt;草图&gt;推断约束和尺寸（旧版）&gt;设计应用中的连续自动尺寸（旧版）。</p><p class="bodytext"></p><p class="bodytext"><img src="10-nx_b15.png"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Integrating the KISSsoft Add-in (menu options in CAD)</h3>   
+                
+<p class="bodytext">First, copy the supplied folder, e.g. <strong><span class="menu">NX</span>1847</strong>, with its <span class="menu">startup</span> subfolder, to a location that can be accessed by users at any time.</p><p class="bodytext">The <span class="menu">kSoftNX_d.men</span> file contains the definition for the KISSsoft Add-in menu options. This file has different names to reflect which language has been selected. For example, the <span class="menu">_e</span> in the file name stands for <span class="menu">English</span>. The other language codes are _d for <span class="menu">German</span>, _f for <span class="menu">French</span>, _i: for <span class="menu">Italian</span>, _s: for <span class="menu">Spanish</span>, _r: for <span class="menu">Russian</span>, _p: for <span class="menu">Portuguese</span>, and _c: for <span class="menu">Chinese</span>. You can copy the file for the language you require to the <span class="menu">startup</span> folder. The KISSsoft menu will then be displayed in this language.</p><p class="hint">Note:</p><p class="bodytext">If the selected language uses Unicode fonts (e.g. Cyrillic for Russian), the Localization must be set to this language (a country with this language) in the operating system.</p><p class="bodytext"></p><p class="bodytext">KISSsoft is also available as a ribbon menu. The English menu with <strong>_e </strong>is embedded as the default setting in the <span class="menu">startup </span> subfolder. If you want to change the language in which the menu is displayed, delete all the files in the <span class="menu">startup</span> folder whose name ends with <strong>_e</strong>. The ...<span class="menu">\NX1847 </span> subfolder contains a subfolder for every available language (e.g. <span class="menu">kSoftNXRibbon_e </span> for English). You can copy the entire contents of the folder that has the language you require to the <span class="menu">startup </span> subfolder. The menu will then be displayed in this language.</p><p class="bodytext">The <span class="menu">kSoftNX1847.dll</span> file (for example), which contains the links and commands for the menu options, is also stored in this folder.</p><p class="bodytext">You must input the path for the previously copied folder, for example, <span class="menu">NX1847</span>, in the <span class="menu">NX1847\menu\custom_dirs.dat</span> file, in the NX directory, so that the NX system knows where the files it is to use are stored.</p><p class="bodytext"></p><p class="bodytext"><img height="239" src="10-nx_b3_small.png" width="548" /></p><p class="bodytext"></p><p class="bodytext">If the <span class="menu">custom_dirs.dat </span> file to be used is not available in the installation directory, you can define a system variable explicitly naming the required path for this purpose.<br />System variable: <span class="menu">UGII_CUSTOM_DIRECTORY_FILE </span></p><p class="bodytext">Value: required path</p><p class="bodytext"></p><p class="bodytext">The <span class="menu">KISSsoftCOM</span> server should be registered as part of the installation process. However, if this didn't happen, and the KISSsoft interface doesn't work, you must register the Add-in.</p><p class="bodytext">Go to the KISSsoft installation directory and select the <strong>NX1847</strong> subfolder. In it, double-click on the <strong>NX_Register64.bat</strong> file to register the interface.</p><p class="bodytext"></p><p class="bodytext">If the KISSsoft Add-in is registered successfully, a message is displayed to confirm that this is the case.</p><p class="bodytext">To delete the registration, double-click on the <span class="menu">NXUnRegister.bat </span>file in the KISSsoft installation directory. A message is then displayed to confirm that deregistration was successful.</p><p class="bodytext"></p><p class="bodytext">To ensure the KISSsoft icons are displayed next to the menu options, you must also set a system variable with the path, to tell the program where the KISSsoft icons can be found.</p><p class="bodytext">Example: Set a system variable and this value as the path</p><p class="bodytext"><strong>KSOFT_ICONS</strong></p><p class="bodytext">C:\Program Files(x86)\KISSsoft&lt;version&gt;The <strong>startup</strong> folder also contains the<strong> <span class="menu">kSoftNX.ini</span> </strong>file, in which you can change the layers of the bodies, sketches, planes and drawings.</p><p class="bodytext">You can use the <span class="menu">SKETCHPREFERENCES_CONTINOUSAUTODIMENSIONING</span> option to define whether dimensions shall be created automatically after modifying a sketch in design applications. If this option is disabled, performance is improved for larger sketches.</p><p class="bodytext">In NX, this option can be found under: File&gt;Utilities&gt;Customer Defaults&gt;Sketch&gt;Inferred Constraints and Dimensions (Legacy)&gt;Continuous Auto Dimensioning in Design Applications (Legacy).</p><p class="bodytext"></p><p class="bodytext"><img src="10-nx_b15.png" /></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

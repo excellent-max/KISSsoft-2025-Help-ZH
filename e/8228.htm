@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>载荷系数耐久计算 | Load factor endurance calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Load factor endurance calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8206');expand('8180');expand('9287');expand('9246');highlight('8228')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8241.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8246.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">载荷系数耐久计算</h3>   
+                
+<p class="bodytext">如有必要，平均应力和应力幅值可以乘以载荷系数。由于 DIN 743 标准不包含此系数，通常应将其预定义为 1.0。如果在轴计算中指定公称转矩时未考虑轴旋转时振动引起的扭矩增大，则使用大于 1 的系数是一个好主意。</p><p class="bodytext">如果在自由截面中指定力或功率额定值，则不使用载荷系数。</p><p class="bodytext">按照 Hänchen 的计算，包括以下信息：</p><p class="bodytext">根据 Hänchen [64] 第 24 页的总载荷系数 f：</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="414"><p class="bodytext"><img src="8229.png" style="height:31px; width:163px"></p></td> <td width="78"><p class="bodytext">(25.9)</p></td></tr></tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="54"><p class="bodytext"><em class="emphasis">f</em><sub class="subscript">un</sub></p></td> <td width="336"><p class="bodytext">最大载荷的不确定性（1.0 或 1.2 至 1.4）</p></td></tr> <tr align="left" valign="top"><td width="54"><p class="bodytext"><em class="emphasis">f</em><sub class="subscript">betr</sub></p></td> <td width="336"><p class="bodytext">运行系数（冲击）（1.0 至 3.0）</p></td></tr> <tr align="left" valign="top"><td width="54"><p class="bodytext"><em class="emphasis">f</em><sub class="subscript">leb</sub></p></td> <td width="336"><p class="bodytext">零件的重要性（1.0 或 1.2 至 1.5）</p></td></tr></tbody></table><p class="bodytext"></p><p class="hint">注意：</p><p class="bodytext">Hänchen 方法只使用一个载荷系数，即弯曲和扭转所输入的两个值中较大的一个。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Load factor endurance calculation</h3>   
+                
+<p class="bodytext">If necessary, the mean stresses and the stress amplitudes can be multiplied by a load factor. As the DIN 743 standard does not include this factor, you should generally predefine it as 1.0. Using a factor &gt; 1 is a good idea if you specify the nominal torque in a shaft calculation without taking into account the increases in torque due to the vibrations caused when the shaft rotates.</p><p class="bodytext">The load factor is not used if the forces or power ratings are specified in free cross sections.</p><p class="bodytext">The calculation according to Hänchen includes the following information:</p><p class="bodytext">The total load factor f according to Hänchen [64], p. 24:</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="414"><p class="bodytext"><img src="8229.png" style="height:31px; width:163px" /></p></td> <td width="78"><p class="bodytext">(25.9)</p></td></tr></tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="54"><p class="bodytext"><em class="emphasis">f</em><sub class="subscript">un</sub></p></td> <td width="336"><p class="bodytext">Uncertainty in maximum load (1.0 or 1.2 to 1.4)</p></td></tr> <tr align="left" valign="top"><td width="54"><p class="bodytext"><em class="emphasis">f</em><sub class="subscript">betr</sub></p></td> <td width="336"><p class="bodytext">Operational approach (shocks) (1.0 to 3.0)</p></td></tr> <tr align="left" valign="top"><td width="54"><p class="bodytext"><em class="emphasis">f</em><sub class="subscript">leb</sub></p></td> <td width="336"><p class="bodytext">Importance of part (1.0 or 1.2 to 1.5)</p></td></tr></tbody></table><p class="bodytext"></p><p class="hint">Note:</p><p class="bodytext">The Hänchen method uses only one load factor, which is the larger of the two values entered for bending and torsion.</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

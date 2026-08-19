@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>变量对话框的应用示例 | Example application of a variable dialog</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Example application of a variable dialog">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7663');expand('7659');expand('7629');expand('9292');expand('9246');highlight('7665')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7664.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7667.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">变量对话框的应用示例</h3>   
+                
+<div class="objectWrapper" data-id="5ba0bcd7deb1a" data-type="image" data-caption="Beispiel für variablen Dialog"><p class="bodytext"><img data-id="5ba0bcd7deb1a" src="51-vardialog.png" style="height:425px; width:506px"></p><p class="figcaption" data-id="5ba0bcd7deb1a">图 62.1：变量对话框示例</p></div><p class="bodytext"></p><p class="bodytext">变量对话框的程序代码如下例所示。其中使用了尽可能多的元素：</p><p class="code">// VARIABLES DECLARATION</p><p class="code">VAR res,result1,result2,result3,result4,result5,fullResult;</p><p class="code">// DIALOG AND INPUT DATA</p><p class="code">res = CADH_VarDialog(["Example of Variable Dialog",500,400,0.4],</p><p class="code">[C:VDLG_StrCom,"StrCOMBOBOX1:",["Gear1","Gear2","Gear3"],[2],0],</p><p class="code">[C:VDLG_Prompt,"TEXT1:",30],</p><p class="code">[C:VDLG_IntCom,"IntCOMBOBOX1:",[12,17,19],17,0,0,1],</p><p class="code">// HORIZONTAL GROUP WITH ONE VERTICALGROUP</p><p class="code">[C:VDLG_HORZ,"HORIZONTAL UNIT1",20,10,</p><p class="code">[ // Warning: remember brackets!</p><p class="code">[C:VDLG_VERT,"VERTICAL UNIT1",[0.3,0.9],-1,</p><p class="code">[</p><p class="code">[C:VDLG_Str,"StringFld:","Test Program"],</p><p class="code">[C:VDLG_RealComE,"RealCOMBOBOX1",[5.3,7.1,9.1],[2]]</p><p class="code">],</p><p class="code">20</p><p class="code">]</p><p class="code">] // Warning: remember brackets!</p><p class="code">],</p><p class="code">// HORIZONTAL GROUP WITH TWO VERTICAL UNITS GROUPS</p><p class="code">[C:VDLG_HORZ,"HORIZONTAL UNIT2",10,10,</p><p class="code">[</p><p class="code">[C:VDLG_VERT,"VERTICAL UNIT2",[0.01,0.35],-1,</p><p class="code">[</p><p class="code">[C:VDLG_Int,"IntFld:",6],</p><p class="code">[C:VDLG_StrComE,"StrCOMBOBOX2:",["Gear1","Gear2"],[0]]</p><p class="code">],</p><p class="code">10</p><p class="code">],</p><p class="code">[C:VDLG_VERT,"VERTICAL UNIT3",[0.4,1],-1,</p><p class="code">[</p><p class="code">[C:VDLG_Real,"RealFld:",5.6,0,0,3,3],</p><p class="code">[C:VDLG_IntComE,"IntCOMBOBOX2:",[5,7,9],7]</p><p class="code">]</p><p class="code">]</p><p class="code">]</p><p class="code">]</p><p class="code">);</p><p class="code">// res [0] contains 1 if OK was pressed , or else</p><p class="code">IF res[0] THEN</p><p class="code">// READ RESULTS FROM DIALOG:</p><p class="code">result1 = res[1]; //res [1]= Gear3</p><p class="code">result2 = res[2]; //res[2]= TEXT1:</p><p class="code">result3 = res[3]; //res[3]= 17</p><p class="code">result4 = res[4]; //res [4]= [["Test Program",9.1]]</p><p class="code">result5 = res[5]; //res[5]= [[6,"Gear1"],[5.6,7]]</p><p class="code">fullResult=res; //res=["Gear3","TEXT1:",17,[[''Test Program",9.1]],[[6,"Gear1"],[5.6,7]]]</p><p class="code">CADH_Message(fullResult);</p><p class="code">ENDIF</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Example application of a variable dialog</h3>   
+                
+<div class="objectWrapper" data-id="5ba0bcd7deb1a" data-type="image" data-caption="Beispiel für variablen Dialog"><p class="bodytext"><img data-id="5ba0bcd7deb1a" src="51-vardialog.png" style="height:425px; width:506px" /></p><p class="figcaption" data-id="5ba0bcd7deb1a">Figure 62.1: Example of a variable dialog</p></div><p class="bodytext"></p><p class="bodytext">The program code for the variable dialog is shown in the example below. As many elements as possible have been used in it:</p><p class="code">// VARIABLES DECLARATION</p><p class="code">VAR res,result1,result2,result3,result4,result5,fullResult;</p><p class="code">// DIALOG AND INPUT DATA</p><p class="code">res = CADH_VarDialog(["Example of Variable Dialog",500,400,0.4],</p><p class="code">[C:VDLG_StrCom,"StrCOMBOBOX1:",["Gear1","Gear2","Gear3"],[2],0],</p><p class="code">[C:VDLG_Prompt,"TEXT1:",30],</p><p class="code">[C:VDLG_IntCom,"IntCOMBOBOX1:",[12,17,19],17,0,0,1],</p><p class="code">// HORIZONTAL GROUP WITH ONE VERTICALGROUP</p><p class="code">[C:VDLG_HORZ,"HORIZONTAL UNIT1",20,10,</p><p class="code">[ // Warning: remember brackets!</p><p class="code">[C:VDLG_VERT,"VERTICAL UNIT1",[0.3,0.9],-1,</p><p class="code">[</p><p class="code">[C:VDLG_Str,"StringFld:","Test Program"],</p><p class="code">[C:VDLG_RealComE,"RealCOMBOBOX1",[5.3,7.1,9.1],[2]]</p><p class="code">],</p><p class="code">20</p><p class="code">]</p><p class="code">] // Warning: remember brackets!</p><p class="code">],</p><p class="code">// HORIZONTAL GROUP WITH TWO VERTICAL UNITS GROUPS</p><p class="code">[C:VDLG_HORZ,"HORIZONTAL UNIT2",10,10,</p><p class="code">[</p><p class="code">[C:VDLG_VERT,"VERTICAL UNIT2",[0.01,0.35],-1,</p><p class="code">[</p><p class="code">[C:VDLG_Int,"IntFld:",6],</p><p class="code">[C:VDLG_StrComE,"StrCOMBOBOX2:",["Gear1","Gear2"],[0]]</p><p class="code">],</p><p class="code">10</p><p class="code">],</p><p class="code">[C:VDLG_VERT,"VERTICAL UNIT3",[0.4,1],-1,</p><p class="code">[</p><p class="code">[C:VDLG_Real,"RealFld:",5.6,0,0,3,3],</p><p class="code">[C:VDLG_IntComE,"IntCOMBOBOX2:",[5,7,9],7]</p><p class="code">]</p><p class="code">]</p><p class="code">]</p><p class="code">]</p><p class="code">);</p><p class="code">// res [0] contains 1 if OK was pressed , or else</p><p class="code">IF res[0] THEN</p><p class="code">// READ RESULTS FROM DIALOG:</p><p class="code">result1 = res[1]; //res [1]= Gear3</p><p class="code">result2 = res[2]; //res[2]= TEXT1:</p><p class="code">result3 = res[3]; //res[3]= 17</p><p class="code">result4 = res[4]; //res [4]= [["Test Program",9.1]]</p><p class="code">result5 = res[5]; //res[5]= [[6,"Gear1"],[5.6,7]]</p><p class="code">fullResult=res; //res=["Gear3","TEXT1:",17,[[''Test Program",9.1]],[[6,"Gear1"],[5.6,7]]]</p><p class="code">CADH_Message(fullResult);</p><p class="code">ENDIF</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

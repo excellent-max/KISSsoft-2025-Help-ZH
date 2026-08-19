@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>应力比 | Stress ratio</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Stress ratio">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8206');expand('8180');expand('9287');expand('9246');highlight('8240')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11617.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8241.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">应力比</h3>   
+                
+<p class="bodytext">您还必须输入应力比，因为 KISSsoft 需要该值将相应截面上的载荷分解为平均载荷和载荷幅值。</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="228"><p class="bodytext">每个载荷循环的最大应力：</p></td> <td width="264"><p class="bodytext">σ<sub class="subscript">o</sub></p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">每个载荷循环的最小应力：</p></td> <td width="264"><p class="bodytext">σ<sub class="subscript">u</sub></p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">应力比</p></td> <td width="264"><p class="bodytext"><em class="emphasis">R</em> = σ<sub class="subscript">u</sub>/σ<sub class="subscript">o</sub></p></td></tr></tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="165"><p class="bodytext">平均应力：</p></td> <td width="63"><p class="bodytext">σ<sub class="subscript">m</sub></p></td> <td width="264"><p class="bodytext">= (σ<sub class="subscript">o</sub> + σ<sub class="subscript">u</sub>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext"></p></td> <td width="63"><p class="bodytext"></p></td> <td width="264"><p class="bodytext">= (σ<sub class="subscript">o</sub> + <em class="emphasis">R</em> <strong>.</strong> σ<sub class="subscript">o</sub>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext"></p></td> <td width="63"><p class="bodytext"></p></td> <td width="264"><p class="bodytext">= σ<sub class="subscript">o</sub> <strong>.</strong> (1 + <em class="emphasis">R</em>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext">应力幅值：</p></td> <td width="63"><p class="bodytext">σ<sub class="subscript">a</sub></p></td> <td width="264"><p class="bodytext">= (σ<sub class="subscript">o</sub> - σ<sub class="subscript">u</sub>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext"></p></td> <td width="63"><p class="bodytext"></p></td> <td width="264"><p class="bodytext">= (σ<sub class="subscript">o</sub> - <em class="emphasis">R</em> <strong>.</strong> σ<sub class="subscript">o</sub>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext"></p></td> <td width="63"><p class="bodytext"></p></td> <td width="264"><p class="bodytext">= σ<sub class="subscript">o</sub> <strong>.</strong> (1 - <em class="emphasis">R</em>)/2</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext">对于：</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="228"><p class="bodytext">纯交变应力</p></td> <td width="132"><p class="bodytext">(σ<sub class="subscript">u</sub> = - σ<sub class="subscript">o</sub>)</p></td> <td width="132"><p class="bodytext"><em class="emphasis">R</em> = - 1</p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">脉动应力</p></td> <td width="132"><p class="bodytext">(σ<sub class="subscript">u</sub> = 0)</p></td> <td width="132"><p class="bodytext"><em class="emphasis">R</em> = 0</p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">静应力</p></td> <td width="132"><p class="bodytext">(σ<sub class="subscript">u</sub> = σ<sub class="subscript">o</sub>)</p></td> <td width="132"><p class="bodytext"><em class="emphasis">R</em> = 1</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext">通常适用于旋转轴或心轴：</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="228"><p class="bodytext">弯曲力和剪切力：</p></td> <td width="258"><p class="bodytext"><em class="emphasis">R</em> = -1</p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">扭转和拉伸/压缩：</p></td> <td width="258"><p class="bodytext"><em class="emphasis">R</em> = 0 （可能 R = 0 至 1）</p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext"></p></td> <td width="258"><p class="bodytext"></p></td></tr></tbody></table><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">与 DIN 或 FKM 的计算不同，其中平均应力和幅值应力之间有明确的区分；当按照 Hänchen 进行强度计算时（参见"<a class="referencetopic-shabschnitt" href="8210.htm" target="_self">Hänchen &amp; Decker</a>"章），所输入的载荷会转换为比较应力，然后与弯曲疲劳极限进行比较。因此，如果选择此方法，应力比只影响应力比系数 α<sub class="subscript">0</sub> 的值。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Stress ratio</h3>   
+                
+<p class="bodytext">You must also enter the stress ratio, because KISSsoft requires this value to split the load on the corresponding cross-section into mean load and load amplitude.</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="228"><p class="bodytext">Maximum stress per load cycle:</p></td> <td width="264"><p class="bodytext">σ<sub class="subscript">o</sub></p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">Minimum stress per load cycle:</p></td> <td width="264"><p class="bodytext">σ<sub class="subscript">u</sub></p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">Stress ratio</p></td> <td width="264"><p class="bodytext"><em class="emphasis">R</em> = σ<sub class="subscript">u</sub>/σ<sub class="subscript">o</sub></p></td></tr></tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="165"><p class="bodytext">Mean stress:</p></td> <td width="63"><p class="bodytext">σ<sub class="subscript">m</sub></p></td> <td width="264"><p class="bodytext">= (σ<sub class="subscript">o</sub> + σ<sub class="subscript">u</sub>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext"></p></td> <td width="63"><p class="bodytext"></p></td> <td width="264"><p class="bodytext">= (σ<sub class="subscript">o</sub> + <em class="emphasis">R</em> <strong>.</strong> σ<sub class="subscript">o</sub>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext"></p></td> <td width="63"><p class="bodytext"></p></td> <td width="264"><p class="bodytext">= σ<sub class="subscript">o</sub> <strong>.</strong> (1 + <em class="emphasis">R</em>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext">Stress amplitude:</p></td> <td width="63"><p class="bodytext">σ<sub class="subscript">a</sub></p></td> <td width="264"><p class="bodytext">= (σ<sub class="subscript">o</sub> - σ<sub class="subscript">u</sub>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext"></p></td> <td width="63"><p class="bodytext"></p></td> <td width="264"><p class="bodytext">= (σ<sub class="subscript">o</sub> - <em class="emphasis">R</em> <strong>.</strong> σ<sub class="subscript">o</sub>)/2</p></td></tr> <tr align="left" valign="top"><td width="165"><p class="bodytext"></p></td> <td width="63"><p class="bodytext"></p></td> <td width="264"><p class="bodytext">= σ<sub class="subscript">o</sub> <strong>.</strong> (1 - <em class="emphasis">R</em>)/2</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext">For:</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="228"><p class="bodytext">Pure alternating stress</p></td> <td width="132"><p class="bodytext">(σ<sub class="subscript">u</sub> = - σ<sub class="subscript">o</sub>)</p></td> <td width="132"><p class="bodytext"><em class="emphasis">R</em> = - 1</p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">Pulsating stress</p></td> <td width="132"><p class="bodytext">(σ<sub class="subscript">u</sub> = 0)</p></td> <td width="132"><p class="bodytext"><em class="emphasis">R</em> = 0</p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">Static stress</p></td> <td width="132"><p class="bodytext">(σ<sub class="subscript">u</sub> = σ<sub class="subscript">o</sub>)</p></td> <td width="132"><p class="bodytext"><em class="emphasis">R</em> = 1</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext">Normally valid for rotating shafts or axes:</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="228"><p class="bodytext">Bending and shearing force:</p></td> <td width="258"><p class="bodytext"><em class="emphasis">R</em> = -1</p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext">Torsion and tension/compression:</p></td> <td width="258"><p class="bodytext"><em class="emphasis">R</em> = 0 (ev. R = 0 to 1)</p></td></tr> <tr align="left" valign="top"><td width="228"><p class="bodytext"></p></td> <td width="258"><p class="bodytext"></p></td></tr></tbody></table><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">In contrast to the calculation according to DIN or FKM, where there is a clear differentiation between the mean stress and amplitude stress, when a strength calculation in accordance with Hänchen (see chapter <a class="referencetopic-shabschnitt" href="8210.htm" target="_self">Hänchen & Decker</a>) is performed, the loads that are entered are converted into a comparative stress that is then compared with the fatigue limit for bending. For this reason, if you select this method, the stress ratio only affects the value of the stress ratio factor α<sub class="subscript">0</sub>.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

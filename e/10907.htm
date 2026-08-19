@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>使用实验数据进行计算 | Calculation with experimental data</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation with experimental data">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8236');expand('8206');expand('8180');expand('9287');expand('9246');highlight('10907')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8237.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8238.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">使用实验数据进行计算</h3>   
+                
+<p class="bodytext">使用此选项可定义由实验数据确定的 Haigh 图。如果在 <strong>实验数据</strong> 字段（用于按 DIN 743 定义的模块特定材料数据）中输入文件名（例如 WMAT-001.dat），则 <strong>强度</strong> 选项卡中会出现一个选择列表。</p><ul>	<li class="bodytext"><strong>不予考虑</strong>：数据被忽略。</li>	<li class="bodytext"><strong>用于 DIN 743 (KF</strong>σ<strong> 根据 DIN 743)</strong>：数据是从为材料定义的实验数据文件中导入的，并且 KFσ 系数根据 DIN 743 定义。</li>	<li class="bodytext"><strong>用于 DIN 743 (KF</strong>σ<strong>=1)</strong>：数据是从为材料定义的实验数据文件中导入的，且 KFσ 系数始终设置为 1。</li></ul><p class="bodytext"></p><p class="bodytext">关于如何定义数据的说明可从 KISSsoft 获取。测得的 Haigh 图并非完全按照 DIN 743 中所描述的方式解读。总体影响系数将Haigh 图分为x 坐标和 y 坐标，使得结果显著降低。</p><p class="bodytext">如 DIN 743 中所定义的平均应力影响，随着缺口变尖，其影响会增加，不应减少。此修改确保该影响始终增加。</p><p class="bodytext">如果折算平均应力 σmv &lt; 0，则 Wöhler 图的线将延伸到 Haigh 图的负区域，曲线随后在负区域内因压缩屈服点 σDk 而断裂。更多信息，另请参见 DIN 743-1 第 21 页的说明。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation with experimental data</h3>   
+                
+<p class="bodytext">Use this option to define a Haigh diagram which has been determined from experimental data. If you input a file name (e.g. WMAT-001.dat) in the <strong>Experimental data</strong> field for module-specific material data as defined in DIN 743, a selection list appears in the <strong>Strength</strong> tab.</p><ul>	<li class="bodytext"><strong>Do not take into account</strong>: the data is ignored.</li>	<li class="bodytext"><strong>Use in DIN 743 (KF</strong>σ<strong> according to DIN 743)</strong>: the data is imported from the file which was defined for the materials under Experimental data, and the KFσ coefficient is defined according to DIN 743.</li>	<li class="bodytext"><strong>Use in DIN 743 (KF</strong>σ<strong>=1)</strong>: the data is imported from the file which was defined for the materials under Experimental data, and the KFσ coefficient is always set to 1.</li></ul><p class="bodytext"></p><p class="bodytext">Instructions about how to define the data can be requested from KISSsoft. The measured Haigh diagram is not interpreted exactly as described in DIN 743. The overall influence coefficient divides the Haigh diagram into x- and y-coordinates so that the results are much lower.</p><p class="bodytext">The influence of mean stress as defined in DIN 743 increases as the notches become sharper, and should not decrease. This modification ensures that this influence always increases.</p><p class="bodytext">If the comparative medium stress is σmv &lt;0, the line of the Wöhler diagram is extended into the negative area of the Haigh diagram, and the curve is then broken in the negative area by compression yield point σDk. For more information, see also the description in DIN 743-1, p. 21.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

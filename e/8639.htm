@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿廓变位系数 | Profile shift coefficient</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Profile shift coefficient">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8625');expand('7708');expand('9286');expand('9246');highlight('8639')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8636.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11401.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">变位系数</h3>   
+                
+<p class="bodytext">初步说明：如果尚未指定变位系数总和，请点击中心距输入字段右侧的 Sizing 按钮（参见"<a class="referencetopic-shabschnitt" href="8634.htm" target="_self">中心距</a>"章），在<span class="menu">中心距计算</span>窗口中显示该距离的建议值。该建议值基于 DIN 3992 关于均衡齿形（区域 P4/P5）的建议。更多信息请参见 DIN 3992 或 Niemann [8] 图 22.1/6。</p><p class="bodytext">刀具可以根据制造进行调整。生产节圆与刀具参考线之间的距离称为变位量。为产生正变位，刀具从材料中进一步拉出，形成的齿在齿根处较厚、在齿顶处较窄。为产生负变位，刀具进一步压入材料，结果是齿变窄，且可能更快发生根切。除了对齿厚的影响外，滑动速度也会受到变位系数的影响。</p><p class="bodytext">总变位量的分配会影响齿厚、滑动运动和强度值。可以根据各种不同准则进行分配。为此，请点击<span class="menu">变位系数计算</span>窗口中的 Sizing 按钮，使用所提供的各种计算选项：</p><ul>	<li class="bodytext">为了实现最佳比滑<br>	此处建议的值显示的是圆柱齿轮副的变位系数，该变位系数已使小齿轮与齿轮之间的比滑达到平衡。当涉及两个以上齿轮时，变位系数设为与齿根处比滑运动相对应的最小值。</li>	<li class="bodytext">为了实现最小滑动速度<br>	两个齿轮齿顶处的最小滑动速度通常用于增速传动比。在圆柱齿轮副中，这意味着两个齿轮具有相同的滑动速度，且啮合线的进入和退出长度也相同。</li>	<li class="bodytext">为了实现最大齿根安全系数<br>	在 x<span class="superscript">*</span><sub class="subscript">min</sub> 到 x<span class="superscript">*</span><sub class="subscript">max</sub> 范围内迭代确定变位系数。</li>	<li class="bodytext">为了实现最大齿面安全系数<br>	在 x<span class="superscript">*</span><sub class="subscript">min</sub> 到 x<span class="superscript">*</span><sub class="subscript">max</sub> 范围内迭代确定变位系数。</li>	<li class="bodytext">为了实现最大胶合安全系数<br>	在 x<span class="superscript">*</span><sub class="subscript">min</sub> 到 x<span class="superscript">*</span><sub class="subscript">max</sub> 范围内迭代确定变位系数。</li>	<li class="bodytext">对于齿轮 1 无根切且齿顶成尖点 (min)<br>	齿轮 1 的变位系数最小值根据齿轮 1 的根切边界和齿轮 2 的最小齿顶厚计算。</li>	<li class="bodytext">对于齿轮 1 无根切且齿顶成尖点 (max)。<br>	齿轮 1 的变位系数最大值根据齿轮 1 的最小齿顶厚和齿轮 2 的根切边界计算。</li>	<li class="bodytext">针对每个齿轮的根切边界。<br>	建议值仅针对所选齿轮。不会检查所得变位系数是否也允许用于齿轮副中的另一个齿轮。更多信息请参见上述说明。</li>	<li class="bodytext">针对每个齿轮的最小齿顶厚。<br>	建议值仅针对所选齿轮。不会检查所得变位系数是否也允许用于齿轮副中的另一个齿轮。您可以在<span class="menu">计算 &gt; 设置 &gt; 常规 &gt; 齿顶最小齿厚系数</span>下指定齿顶厚度的最小值。更多信息请参见上述说明。</li></ul><p class="hint">注意：</p><p class="bodytext">如果已选择"改变变位系数时保持齿顶圆"或"改变变位系数时保持齿根圆"复选框，则 Sizing 按钮将被禁用。</p><p class="bodytext">点击 Convert 按钮，KISSsoft 将确定变位系数是取自测量数据还是取自图纸中输入的值。</p><p class="bodytext">提供以下选项：</p><ul>	<li class="bodytext"><strong>公法线长度</strong><br>	在此输入公法线长度和跨齿数。此选项不能用于（内）斜齿轮，因为其公法线长度无法测量。</li>	<li class="bodytext"><strong>跨球测量</strong><br>	为此，输入该尺寸和量球直径。对于齿数为奇数的斜齿轮，跨球测量不同于跨两针测量。请参见跨针测量。</li>	<li class="bodytext"><strong>跨 2 针测量</strong><br>	为此，输入该尺寸和量针直径。对于斜齿轮和齿数为奇数的齿轮，还必须输入最小跨距，以便进行测量。内斜齿轮无法进行跨针测量。</li>	<li class="bodytext"><strong>跨 3 针测量</strong><br>	在此输入跨针测量值和量针直径。对于斜齿轮和齿数为奇数的齿轮，这等同于跨两滚柱测量。此选项不能用于内齿轮和斜齿轮，或齿数为偶数的齿轮。</li>	<li class="bodytext"><strong>齿顶圆</strong><br>	这是一种相当不精确的计算，因为齿顶圆直径并不总是仅取决于变位系数。</li>	<li class="bodytext"><strong>分度圆齿厚</strong><br>	在此输入齿厚。您还可以输入弧长或弦长，并指定该值是在端面截面还是法向截面。</li></ul><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">如果两个变位系数值之一显示为灰色，这意味着它将由 KISSsoft 计算。当您选择用于输入中心距的复选框时就会发生这种情况。如果您覆盖灰色字段，它将变为活动状态，KISSsoft 将为另一个齿轮计算该值。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Profile shift coefficient</h3>   
+                
+<p class="bodytext">Preliminary note: If the profile shift sum has not yet been specified, click the Sizing button, to the right of the center distance input field (see chapter <a class="referencetopic-shabschnitt" href="8634.htm" target="_self">Center distance</a>), to display a suggested value for the distance in the <span class="menu">Size center distance</span> window. The suggested value is based on DIN 3992 recommendations for well balanced toothing (Area P4/P5). You will find more information about this in DIN 3992 or in Niemann [8], Fig. 22.1/6.</p><p class="bodytext">The tool can be adjusted for manufacture. The distance between the production pitch circle and the tool reference line is called the profile shift. To create a positive profile shift, the tool is pulled further out of the material, creating a tooth that is thicker at the root and narrower at the tip. To create a negative profile shift, the tool is pushed further into the material, with the result that the tooth is narrower and undercutting may occur sooner. In addition to the effect on tooth thickness, the sliding velocities will also be affected by the profile shift coefficient.</p><p class="bodytext">The distribution of the total profile shift affects the tooth thickness, sliding movements and strength values. It can be performed according to a range of different criteria. To achieve this, use the various sizing options provided by clicking the Sizing button in the <span class="menu">Size profile shift coefficient</span> window:</p><ul>	<li class="bodytext">For optimal specific sliding<br />	The value suggested here shows the profile shift, for a cylindrical gear pair, whose specific sliding between the pinion and the gear has been balanced. When more than two gears are involved, the profile shift coefficient is set to the smallest value that corresponds to the specific sliding movement at the root.</li>	<li class="bodytext">For minimum sliding velocity<br />	The minimum sliding velocity at the tip of the two gears is often used for speed-increasing ratios. In a cylindrical gear pair, this means both gears have the same sliding velocity and that the access and recess length of the path of contact are also the same.</li>	<li class="bodytext">For maximum root safety<br />	The profile shift coefficient is determined iteratively for the range x<span class="superscript">*</span><sub class="subscript">min</sub> to x<span class="superscript">*</span><sub class="subscript">max</sub>.</li>	<li class="bodytext">For maximum flank safety<br />	The profile shift coefficient is determined iteratively for the range x<span class="superscript">*</span><sub class="subscript">min</sub> to x<span class="superscript">*</span><sub class="subscript">max</sub>.</li>	<li class="bodytext">For maximum scuffing safety<br />	The profile shift coefficient is determined iteratively for the range x<span class="superscript">*</span><sub class="subscript">min</sub> to x<span class="superscript">*</span><sub class="subscript">max</sub>.</li>	<li class="bodytext">For gear 1 without undercut and point at tip (min)<br />	The minimum value of the profile shift coefficient for gear 1 is calculated from the undercut boundary for gear 1 and the minimum top land for gear 2.</li>	<li class="bodytext">For gear 1 without undercut and point at tip (max).<br />	The maximum value of the profile shift coefficient for gear 1 is calculated from the minimum topland of gear 1 and the undercut boundaries of gear 2.</li>	<li class="bodytext">For undercut boundary per gear.<br />	The proposed value only refers to the selected gear. No check is performed to see whether the resulting profile shift is also permitted for the other gear in the pair. For more information, please refer to the explanations above.</li>	<li class="bodytext">For minimum topland per gear.<br />	The proposed value only refers to the selected gear. No check is performed to see whether the resulting profile shift is also permitted for the other gear in the pair. You can specify the minimum thickness of the topland under <span class="menu">Calculation &gt; Settings &gt; General &gt; Coefficient for minimum tooth thickness at the tip</span>. For more information, please refer to the explanations above.</li></ul><p class="hint">Note:</p><p class="bodytext">The Sizing button is disabled if the &quot;Maintain tip circle when changing profile shift&quot; or &quot;Maintain root circle when changing profile shift&quot; checkbox has been selected.</p><p class="bodytext">Click the Convert button and KISSsoft will determine whether the profile shift coefficients are to be taken from measured data or from values entered in drawings.</p><p class="bodytext">The following options are available:</p><ul>	<li class="bodytext"><strong>Base tangent length</strong><br />	Enter the base tangent length and the number of teeth spanned here. This option cannot be used for (internal) helical gear teeth because their base tangent length cannot be measured.</li>	<li class="bodytext"><strong>Measurement over balls</strong><br />	To do this, enter this dimension and the diameter of the ball. In a gear with helical gear teeth and an odd number of teeth, the measurement over balls is not the same as the measurement over two pins. See Measurement over pins.</li>	<li class="bodytext"><strong>Measurement over 2 pins</strong><br />	To do this, enter this dimension and the diameter of the pin. You must also enter a minimum span for helical gear teeth and gears with an odd number of teeth, so the measurement can be performed. The measurement over pins cannot be measured in internal helical gears.</li>	<li class="bodytext"><strong>Measurement over 3 pins</strong><br />	Here, enter the measurement over pins and the pin diameter. For helical gear teeth and gears with an odd number of teeth, this is equivalent to the measurement over two rollers. You cannot use this option for internal and helical gear teeth, or gears with an even number of teeth.</li>	<li class="bodytext"><strong>Tip circle</strong><br />	This is a rather imprecise calculation because the tip diameter does not always depend solely on the profile shift.</li>	<li class="bodytext"><strong>Tooth thickness at reference circle</strong><br />	Here, enter the tooth thickness. You can also enter the arc length or chordal length, and specify whether the value is in transverse or normal section.</li></ul><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">If one of the two profile shift values is displayed in gray, this means it will be calculated by KISSsoft. This is what happens when you select the checkbox for entering the center distance. If you overwrite a gray field, it will become active and KISSsoft will calculate the value for the other gear.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿面断裂计算方法 | Calculation method for tooth flank fracture</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation method for tooth flank fracture">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8642');expand('8718');expand('7708');expand('9286');expand('9246');highlight('10574')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11334.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8646.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">齿面断裂计算方法</h3>   
+                
+<p class="bodytext">齿面断裂出现在工作齿面区域，而不是在 30° 切线处的最高弯曲应力区域。</p><p class="bodytext">齿面断裂（TFF）可根据 ISO/TS 6336-4 技术规范草案计算。慕尼黑的 Annast 博士 [15] 早先进行的研究后来被其他人更新和扩展。Witzig [16] 编写了 ISO/TS 6336-4 的初稿。重要提示：ISO/TS 6336-4 中规定的 TFF 仅适用于渗碳淬硬材料。</p><p class="bodytext">此外，一种新的半解析计算方法正处于标准化过程中（ISO 6336-4 N1457 草案）。该方法考虑了齿轮上每个离散点处发生的循环多轴应力，这些应力可能导致齿面断裂。多轴疲劳准则设定为包括不同应力场：压力（赫兹理论）、表面淬火处理后的残余应力以及局部材料抗力。新增了一张图表。它包含材料暴露分布和剪应力分布的颜色图。此外，齿面断裂起始点的最危险点已标出。</p><p class="bodytext">点击加号按钮以输入齿面断裂所需的参数。</p><p class="bodytext"><strong>硬化深度 CHD</strong><br>你可以输入预期的硬化深度（渗氮钢为硬度 HV400，其他所有钢为硬度 HV550）。你也可以输入硬度 HV300。此值随后用于以图形方式显示硬化曲线。输入适用于最终机械加工（磨削后）测量的深度。</p><p class="bodytext">输入此数据时，将根据 DNV 41.2 [11] 自动计算硬化表面的安全性。此处使用最小值 t400（渗氮钢）或 t550（所有其他钢）。如果仅知道 HV300 的值，则使用该值。但此时的计算结果应仅视为参考。计算按 [11] 中“亚表面疲劳”一节所述的方式进行。还需要按 DNV 41.2 的规定输入定义 CHD 硬化深度系数 Y<sub>C</sub> 所需的值。该计算与推荐硬化深度提案的计算方法不同，但结果仍然相似。为获得合理的硬化深度建议，建议通过选择 <span class="menu">报告 &gt; 硬化深度建议</span> 来调用相应计算。硬化深度的最大值仅用于检查齿顶处的硬化深度，主要用于文档记录。</p><p class="bodytext">有三种计算选项：</p><ul>	<li class="bodytext">使用齿轮材料的硬度文件，如果该文件已在数据库中存在。</li>	<li class="bodytext">选择一个包含硬度信息的独立文件</li>	<li class="bodytext">输入心部硬度以及根据Lang或Thomas（如ISO/TS 6336-4）直接输入生成理论硬度曲线的方法。</li></ul><p class="bodytext"></p><p class="bodytext"><strong>使用测量得到的硬化曲线按 ISO/TS 6336-4 进行齿面断裂计算</strong></p><p class="bodytext">对维斯塔斯（2017年）在风力发电场进行的测量评估由 ISO TC60-WG6 委员会完成，结果表明，根据 ISO/TS 6336-4 方法测定的硬度曲线无法获得可靠结果（由于个体测量点的离散性）。我们建议使用托马斯（或兰格）定义的理论硬度曲线近似测量硬度曲线，并将此值用于计算。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd6924d6" data-type="image" data-caption="Aufbau der Härtedatei (wichtig: die Angaben zur Tiefe müssen in mm sein)"><p class="bodytext"><img data-id="5ba0bcd6924d6" src="10730.png" style="height:219px; width:382px"></p><p class="figcaption" data-id="5ba0bcd6924d6">图15.5：硬度文件的结构（重要：深度值必须以 mm 为单位输入）</p></div><p class="bodytext">齿面断裂计算结果显示在报告中（选择 报告 &gt; 齿面断裂）。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation method for tooth flank fracture</h3>   
+                
+<p class="bodytext">Tooth flank fracture appears in the area of the active tooth flank instead of in the area of the highest bending stress at the 30° tangent.</p><p class="bodytext">Tooth flank fracture (TFF) can be calculated according to the draft ISO Technical Specification ISO/TS 6336-4. Earlier investigations performed by Dr Annast in Munich [15] have later been updated and expanded by others. Witzig [16] has put together a first draft of ISO/TS 6336-4. Important: TFF as specified in ISO/TS 6336-4 can only be applied for case-hardened materials.</p><p class="bodytext">Additionally, a new semi-analytical calculation method is in the standardization process (ISO 6336-4 N1457 draft). This method takes into consideration the cyclical multiaxial stresses that occur at each discretization point on the gear and could lead to tooth flank fracture. The multiaxial fatigue criterion is set to include different stress fields: pressure (Hertzian theory), residual due to the surface hardening treatment, and the local material resistance. A new graphic has been added. It consists of a color plot of the material exposure distribution and shear stress distribution. Additionally, the most critical point of the tooth flank fracture initiation is marked.</p><p class="bodytext">Click on the Plus button to enter the data required for tooth flank fracture.</p><p class="bodytext"><strong>Hardening depth CHD</strong><br />You can input the intended hardening depth (for hardness HV400, for nitrided steels, or HV550 for all other steels). You can also input the hardness HV300. This value is then used to display the hardening curve as a graphic. The input applies to the depth measured during final machining (after grinding).</p><p class="bodytext">When you input this data, the safety of the hardened surface layer is calculated automatically according to DNV 41.2 [11]. A minimum value of t400 (nitrided steel) or t550 (all other steels) is used here. If only the value for HV300 is known, this value is then used. However, the calculation should then only be seen as an indication. The calculation is performed as described in the 'Subsurface fatigue' section in [11]. The values required to define the CHD hardening depth coefficient Y<sub>C</sub>, as specified in DNV 41.2, are also needed. The calculation does not use the same approach as the calculation for the proposal for the recommended hardening depth, but still returns similar results. To obtain a proposal for a sensible hardening depth, we recommend you call the relevant calculation by selecting <span class="menu">Report &gt; Proposals for hardening depth</span>. A maximum value for the hardening depth is only used to check the hardening depth at the tooth tip. It is mainly used for documentation purposes.</p><p class="bodytext">There are three calculation options:</p><ul>	<li class="bodytext">Use a hardness file for the gear material, if this file already exists in the database</li>	<li class="bodytext">Select an independent file with the hardness information</li>	<li class="bodytext">Enter the core hardness and a method for generating a theoretical hardness curve according to Lang or Thomas (as in ISO/TS 6336-4) directly</li></ul><p class="bodytext"></p><p class="bodytext"><strong>Using measured hardening curves for tooth flank fracture according to ISO/TS 6336-4</strong></p><p class="bodytext">Evaluations of measurements taken at wind power installations by Vestas (2017) in the ISO TC60-WG6 committee have shown that reliable results cannot be obtained using measured hardness curves according to the method specified in ISO/TS 6336-4 (due to the scatter of the individual measuring points). We recommend that you use the theoretical hardness curve defined by Thomas (or Lang) to approximate the measured hardness curve and then use this value in the calculation.</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd6924d6" data-type="image" data-caption="Aufbau der Härtedatei (wichtig: die Angaben zur Tiefe müssen in mm sein)"><p class="bodytext"><img data-id="5ba0bcd6924d6" src="10730.png" style="height:219px; width:382px" /></p><p class="figcaption" data-id="5ba0bcd6924d6">Figure 15.5: Structure of the hardness file (important: depth values must be entered in mm)</p></div><p class="bodytext">The results of the tooth flank fracture calculation are given in a report (select Report &gt; Tooth flank fracture).</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>载荷谱类型 | Type of load spectrum</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Type of load spectrum">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8913');expand('8718');expand('7708');expand('9286');expand('9246');highlight('8917')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8913.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11641.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">载荷谱类型</h3>   
+                
+<p class="bodytext">载荷谱的使用寿命按 ISO 6336 第 6 部分规定计算，基于 Palmgren-Miner 法则。</p><p class="bodytext">此处预定义了三个载荷谱，如 DIN 15020（起重机械）中所示，以及许多其他标准载荷谱。您也可以输入自己的载荷谱。</p><p class="bodytext">载荷谱由多个元素组成（数据库中最多 50 个，如果从文件导入则数量不限）。每个元素由频率、转速以及功率或扭矩组成。数据始终指向您在输入额定功率（功率-扭矩-转速界面）时选择的参考齿轮。程序将这些值存储为系数，以便在额定功率变化时自动修改它们。</p><p class="bodytext">如果为行星齿轮级预定义了两个非零转速，则可以选择两个载荷谱。在这种情况下，对于第二个载荷谱，只有转速系数是重要的。</p><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">计算考虑 K 系数（动载、齿向载荷和端面系数）的载荷相关性。如果您想更详细地检查结果，可以在 Z18-H1.TMP 文本文件中（TMP 目录中）找到最感兴趣的中间结果。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Type of load spectrum</h3>   
+                
+<p class="bodytext">The service life for load spectra is calculated as specified in ISO 6336, Part 6, and is based on the Palmgren-Miner rule.</p><p class="bodytext">Three load spectra are predefined here, as shown in DIN 15020 (Lifting Appliances), along with many other standard spectra. You can also input your own load spectra.</p><p class="bodytext">A load spectrum consists of several elements (up to 50 in the database or an unlimited number if imported from a file). Each element consists of the frequency, speed, and power or torque. The data always refers to the reference gear you selected when you input the nominal power (Performance-Torque-Speed screen). The program stores these values as coefficients so that they are modified automatically when the nominal power changes.</p><p class="bodytext">If two speeds that are not equal to zero have been predefined for planetary stages, you can select two load spectra. In this case, only the speed factor is important for the second load spectrum.</p><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">The calculation takes into account the load dependency of the K coefficients (dynamic, face load and transverse coefficients). If you want to examine the result in greater detail, you will find the most interesting interim results in the Z18-H1.TMP text file (in the TMP directory).</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

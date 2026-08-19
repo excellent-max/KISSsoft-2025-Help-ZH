@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>根据 DIN 743 计算多重缺口 | Calculation of multiple notches according to DIN 743</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation of multiple notches according to DIN 743">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8236');expand('8206');expand('8180');expand('9287');expand('9246');highlight('11436')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8238.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10926.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">根据 DIN 743 计算多重缺口</h3>   
+                
+<p class="bodytext">在 FE 程序中创建模型（建模指南）以及根据应力定义缺口系数的步骤（评估指南）在 FVA 研究项目 No. 700 I《Berechnung von Mehrfachkerben nach DIN 743 durch Einbindung von FEM-Ergebnissen》中作了说明。</p><p class="bodytext">此处定义的方法仅适用于零件表面不受力的缺口。对于接触区内随时间产生微动疲劳的临界失效点（例如过盈配合或键连接），仍须使用通过试验确定的缺口效应系数进行计算。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5e79d0f76a263" data-type="image" data-caption="Örtliche Kerbspannungen im allgemeinen Fall"><p class="bodytext"><img data-id="5e79d0f76a263" height="313" src="Mehrfachkerben_Allgemein.png" width="558"></p><p class="figcaption" data-id="5e79d0f76a263">图 26.3：一般情况下的局部缺口应力</p></div><p class="bodytext">这里描述了两种不同的方法：方法 A（用于多重缺口的综合计算方法）和方法 B（涉及多重缺口的简化方法）。</p><p class="bodytext">KISSsoft 不使用方法 B。</p><p class="bodytext"></p><p class="bodytext"><strong>方法 A：</strong></p><p class="bodytext">方法 A 考虑了影响多重缺口强度的所有效应。</p><p class="bodytext">临界校核点的应力定义在零件表面上等效应力幅最大的位置。然后对这些值应用冯·米塞斯应力 (VM) 来计算等效应力幅。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5e79d15ced570" data-type="image" data-caption="Komponenten der örtlichen Kerbspannung"><p class="bodytext"><img data-id="5e79d15ced570" src="Mehrfachkerben_Komponent.png"></p><p class="figcaption" data-id="5e79d15ced570">图 26.4：局部缺口应力的分量</p></div><p class="bodytext">FE 分析通常在全局坐标系中提供空间应力张量，该张量仍需转换为平面应力张量。</p><p class="bodytext">缺口系数定义为缺口根部局部应力峰值与缺口截面处名义应力的商。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5e79d1c0549eb" data-type="image" data-caption="Biegungs-, Zug/Druck-, Torsions- und Scherungsbeanspruchung"><p class="bodytext"><img data-id="5e79d1c0549eb" height="361" src="Mehrfachkerben_Spannungsverlauf.png" width="494"></p><p class="figcaption" data-id="5e79d1c0549eb">图 26.5：弯曲、拉伸/压缩、扭转和剪切应力</p></div><p class="bodytext">为定义缺口系数，将局部应力分量分为主应力和次应力。某载荷类型的主应力是与基本载荷工况相关的名义应力。</p><p class="bodytext">必须先定义应力梯度，才能确定理论应力集中系数。这需要零件内部相邻节点处出现的应力值。</p><p class="bodytext">缺口系数使用下一张表中的公式（方法 A）确定。缺口系数也可能取小于 1 的值。在方法 B 中忽略次应力。</p><p class="bodytext"></p><div class="objectWrapper" data-id="650868a5dfbf3" data-type="image" data-caption="Tabelle 4 - Komponentenweise Formzahlberechnung (Methode A)"><p class="bodytext"><img data-id="650868a5dfbf3" src="Mehrfachkerben_Tabelle1.png"></p><p class="figcaption" data-id="650868a5dfbf3">图 26.6：表 4 - 计算零件的缺口系数（方法 A）</p></div><p class="bodytext">缺口效应系数 β 是针对局部应力幅中存在的每个分量分别计算的。为此所需的应力梯度不单独定义。</p><p class="bodytext">特殊情况：过盈配合（无基本载荷工况的平均应力）：</p><p class="bodytext">如果无基本载荷工况的平均应力作为名义应力纳入计算，则可按与平均应力相同的方式处理。首先根据所得的局部应力计算等效应力。然后可用相关缺口系数确定名义平均应力。</p><p class="bodytext">然后逐分量进行安全系数校核，因为缺口系数也是针对每个分量分别计算的。</p><p class="bodytext">各分量的安全系数按如下方式计算：</p><p class="bodytext"></p><div class="objectWrapper" data-id="6038885e6e680" data-type="image" data-caption="Tabelle 5 - Berechnung der Bauteilwechselfestigkeit"><p class="bodytext"><img data-id="6038885e6e680" src="Mehrfachkerben_Tabelle2.png"></p><p class="figcaption" data-id="6038885e6e680">图 26.7：表 5 - 计算零件的疲劳极限</p></div><p class="bodytext"></p><p class="bodytext">此处还计算平均应力敏感度。请调整 DIN 743 中各范围的平均应力敏感度，以确保该附加计算不会返回意外结果。安全系数使用平面应力状态下组合载荷和相位等效的公式确定。</p><p class="bodytext"></p><p class="bodytext"><strong>方法 B：</strong></p><p class="bodytext">在方法 B 中，确定缺口系数时对机械应力进行了简化。此方法不适用于叠加的动态载荷。</p><p class="bodytext">等效应力 (VM) 由主应力和次应力计算得出。</p><p class="bodytext">此方法用于组合载荷时受到一定限制。限制条件：</p><p class="bodytext"><a name="zh-_Hlk17285535"></a>σ<a name="zh-_Hlk17285535">a2/</a>σa1 &lt; 0.2 and τa2/σa1 &lt; 0.2</p><p class="bodytext">缺口系数使用 FE 预备分析中各载荷工况（拉伸/压缩、弯曲或扭转幅值）的缺口应力来确定。</p><p class="bodytext"></p><div class="objectWrapper" data-id="6038885e6e6ef" data-type="image" data-caption="Tabelle: Tabelle 7 - Formzahlberechnung mit Vergleichsspannung (Methode B)"><p class="bodytext"><img data-id="6038885e6e6ef" src="Mehrfachkerben_Tabelle3.png"></p><p class="figcaption" data-id="6038885e6e6ef">图 26.8：表 7 - 使用等效应力计算缺口系数（方法 B）</p></div><p class="bodytext">支承效应和缺口效应系数按 DIN 743 中公式规定的相同方式定义。</p><p class="bodytext">不承受基本载荷的平均应力（过盈配合）不纳入简化的方法 B。</p><p class="bodytext">安全系数校核按与 DIN 743 相同的方式进行。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation of multiple notches according to DIN 743</h3>   
+                
+<p class="bodytext">The procedure for creating the model in a FE program (modeling guideline) and for defining a notch factor from the stresses (evaluation guideline) is described in FVA research project No. 700 I ‘Berechnung von Mehrfachkerben nach DIN 743 durch Einbindung von FEM-Ergebnissen’.</p><p class="bodytext">The methods defined here are limited to notches with component surfaces that are not subject to force. You will still have to use a notch effect coefficient determined by experimentation to calculate critical failure points with fretting fatigue over time in the contact zone (e.g. interference fits or key connections).</p><p class="bodytext"></p><div class="objectWrapper" data-id="5e79d0f76a263" data-type="image" data-caption="Örtliche Kerbspannungen im allgemeinen Fall"><p class="bodytext"><img data-id="5e79d0f76a263" height="313" src="Mehrfachkerben_Allgemein.png" width="558" /></p><p class="figcaption" data-id="5e79d0f76a263">Figure 26.3: Local notch stresses in a general case</p></div><p class="bodytext">There are two different methods described: Method A (a comprehensive calculation method for multiple notches) and Method B (a simplified method involving multiple notches).</p><p class="bodytext">KISSsoft does not use Method B.</p><p class="bodytext"></p><p class="bodytext"><strong>Method A:</strong></p><p class="bodytext">Method A takes into account all the effects that affect strength for multiple notches.</p><p class="bodytext">The stresses at the critical proof point are defined at the point where the equivalent stress amplitude is greatest on the component surface. The von Mises stress (VM) is then applied to these values to calculate the equivalent stress amplitude.</p><p class="bodytext"></p><div class="objectWrapper" data-id="5e79d15ced570" data-type="image" data-caption="Komponenten der örtlichen Kerbspannung"><p class="bodytext"><img data-id="5e79d15ced570" src="Mehrfachkerben_Komponent.png" /></p><p class="figcaption" data-id="5e79d15ced570">Figure 26.4: Components of local notch stress</p></div><p class="bodytext">The FE analysis usually supplies a spatial stress tensor in the global coordinate system, which still has to be transformed into the plane stress tensor.</p><p class="bodytext">The notch factor is defined as a quotient of the local stress peaks at the notch root and of the nominal stress in the notch cross section.</p><p class="bodytext"></p><div class="objectWrapper" data-id="5e79d1c0549eb" data-type="image" data-caption="Biegungs-, Zug/Druck-, Torsions- und Scherungsbeanspruchung"><p class="bodytext"><img data-id="5e79d1c0549eb" height="361" src="Mehrfachkerben_Spannungsverlauf.png" width="494" /></p><p class="figcaption" data-id="5e79d1c0549eb">Figure 26.5: Bending, tension/compression, torsion and shearing stresses</p></div><p class="bodytext">To define the notch factor, the local stress components are separated into primary and secondary stresses. A load type's primary stress is the nominal stress associated with the base load case.</p><p class="bodytext">You must define the stress gradient before you can determine the theoretical stress concentration factors. This requires the stress values that occur at a neighboring node in the interior of the component.</p><p class="bodytext">The notch factor is determined using the equations in the next table (Method A). The notch factor can also have values that are less than 1. The secondary stresses are ignored in Method B.</p><p class="bodytext"></p><div class="objectWrapper" data-id="650868a5dfbf3" data-type="image" data-caption="Tabelle 4 - Komponentenweise Formzahlberechnung (Methode A)"><p class="bodytext"><img data-id="650868a5dfbf3" src="Mehrfachkerben_Tabelle1.png" /></p><p class="figcaption" data-id="650868a5dfbf3">Figure 26.6: Table 4 - Calculating the notch factor for components (Method A)</p></div><p class="bodytext">The notch effect coefficient β is calculated separately for each component present in the local stress amplitude. The stress gradient required to do this is not defined separately.</p><p class="bodytext">Special case: interference fit (mean stress without base load case):</p><p class="bodytext">If mean stress without a base load case is included in the calculation as nominal stress, it can be handled in the same way as mean stress. Firstly, the equivalent stress is calculated from the resulting local stresses. Then, the relevant notch factor can be used to determine the nominal mean stress.</p><p class="bodytext">The safety verification is then performed component by component, because the notch factor was also evaluated individually for each component.</p><p class="bodytext">The component safeties are calculated as follows:</p><p class="bodytext"></p><div class="objectWrapper" data-id="6038885e6e680" data-type="image" data-caption="Tabelle 5 - Berechnung der Bauteilwechselfestigkeit"><p class="bodytext"><img data-id="6038885e6e680" src="Mehrfachkerben_Tabelle2.png" /></p><p class="figcaption" data-id="6038885e6e680">Figure 26.7: Table 5 - Calculating the part's fatigue limit</p></div><p class="bodytext"></p><p class="bodytext">The mean stress sensitivity is also calculated here. Adjust the mean stress sensitivity of the ranges in DIN 743 to ensure this additional calculation does not return unexpected results. The safety is determined using the formulae for combined load and phase equivalence in the plane stress state.</p><p class="bodytext"></p><p class="bodytext"><strong>Method B:</strong></p><p class="bodytext">In Method B, the mechanical stress is simplified when determining the notch factor. This method is not suitable for a superimposed dynamic load.</p><p class="bodytext">The equivalent stress (VM) is calculated from the primary and secondary stress.</p><p class="bodytext">This method can only be used to a limited amount for a combined load. Limits:</p><p class="bodytext"><a name="_Hlk17285535"></a>σ<a name="_Hlk17285535">a2/</a>σa1 &lt; 0.2 and τa2/σa1 &lt; 0.2</p><p class="bodytext">The notch factor is using the notch stresses for the load cases (tension/compression, bending, or torsion amplitude) from a FE provision analysis.</p><p class="bodytext"></p><div class="objectWrapper" data-id="6038885e6e6ef" data-type="image" data-caption="Tabelle: Tabelle 7 - Formzahlberechnung mit Vergleichsspannung (Methode B)"><p class="bodytext"><img data-id="6038885e6e6ef" src="Mehrfachkerben_Tabelle3.png" /></p><p class="figcaption" data-id="6038885e6e6ef">Figure 26.8: Table: Table 7 - Calculating the notch factor with equivalent stress (Method B)</p></div><p class="bodytext">The supporting effect and notch effect coefficient are defined in the same way as specified in the formulae in DIN 743.</p><p class="bodytext">Mean stresses that are not subject to base load (interference fit) are not included in the simplified Method B.</p><p class="bodytext">The safety verification is performed in the same way as in DIN 743.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

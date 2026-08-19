@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>高效接口 | Efficient interfaces</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Efficient interfaces">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9019');expand('9018');expand('9272');expand('9246');highlight('9021')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9019.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9022.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">高效接口</h3>   
+                
+<p class="bodytext">只有在收益显著大于所需努力时，才应设置计算与CAD之间的自动化数据传输。例如，螺栓计算程序与CAD之间的接口仅具有次要重要性，因为要传输的信息（例如，由于计算需要选择M10螺栓）过于有限，可以通过手工更快地传输。然而，如果存在标准零件库（包含螺栓），则计算程序、标准零件库和CAD之间的双向链接可以非常高效。</p><p class="bodytext">以下高效接口可用（但此列表可以扩展）：</p><ul><li class="bodytext">常规<ul><li class="bodytext">应能够从CAD环境中启动计算程序（例如通过按下功能键）。这使您可以在绘图时进行简短计算，传输结果，然后继续绘图。</li></ul></li> <li class="bodytext">轴和轴承计算<ul><li class="bodytext">从 CAD 系统输出轮廓（即来自详图或由组合元素构成的图形的轴）并将其读入计算程序。（问题：在许多 CAD 程序中，遗憾的是很难定义要导出的轮廓。）</li> <li class="bodytext">输出计算程序中已优化的轴（包括滚动轴承等），将其读取并作为图纸信息导入 CAD。</li> <li class="bodytext">弯曲线和类似数据传输到CAD系统。</li> <li class="bodytext">计算滚动轴承和滑动轴承后，将轮廓传输到CAD系统。（通常，CAD系统已经包含滚动轴承的信息，因此只有轴承型号值得关注。）</li></ul></li> <li class="bodytext">齿轮计算<ul><li class="bodytext">在程序中计算加工数据并将所需值以文本形式传输到CAD。这是一个非常重要的功能，因为数据记录很容易出错，可能导致严重后果。<ul><li class="bodytext">在页面视图中计算精确的齿形并传输到CAD系统。（尽管这会产生非常美观的图纸，但通常不会提供任何必要的信息，除非数据需要进一步处理，例如传输到线切割机。）</li></ul></li></ul></li> <li class="bodytext">将齿轮的示意轴向截面或打印预览传输到 CAD 系统（但也可以在 CAD 中手动同样快速地实现）。</li> <li class="bodytext">机械元件<ul><li class="bodytext">将已计算机械元件的轮廓传输到 CAD，例如螺栓、V 带轮等。（通常，CAD 工作站已经包含适当的预编程信息，因此只需关注零件定义。）</li></ul></li> <li class="bodytext">轴毂连接<ul><li class="bodytext">连接的尺寸或校核应在CAD系统中直接实施，以便从CAD传输已知数据到计算，并将计算结果返回到CAD系统。</li></ul></li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Efficient interfaces</h3>   
+                
+<p class="bodytext">Automated data transfer between the calculation and CAD should only be set up if the benefits are considerably greater than the effort required. For example, an interface between a bolt calculation program and CAD is only of secondary importance since the information to be transferred (for example that, due to the calculation, an M10 bolt has to be selected) is too limited and could be transferred much faster &quot;by hand&quot;. If, however, a standard parts library with bolts is available, the bidirectional link between the three components (calculation program, standard parts library and CAD) can prove very efficient.</p><p class="bodytext">The following efficient interfaces are available (but this list can be extended):</p><ul><li class="bodytext">General <ul><li class="bodytext">It should be possible to start the calculation programs from the CAD environment (for example by pressing a function key). This enables you to perform a short calculation while you are drawing, transfer the results and then continue drawing.</li></ul></li> <li class="bodytext">Shafts and bearing calculation <ul><li class="bodytext">Output of a contour from the CAD system (i.e. a shaft from detailed or drawing with combined elements) and reading it into the calculation program. (Problem: in many CAD programs, it is unfortunately rather difficult to define the contour to be exported.)</li> <li class="bodytext">Output of a shaft that has been optimized in the calculation program (including rolling bearings etc.), reading it, and importing it into CAD as drawing information.</li> <li class="bodytext">Transfer of bending lines and similar data into the CAD system.</li> <li class="bodytext">Rolling bearings and plain bearings are calculated, and then the contour is transferred to the CAD system. (Frequently, the CAD system already contains information on rolling bearings, so that only the bearing label is of interest.)</li></ul></li> <li class="bodytext">Gear calculation <ul><li class="bodytext">Calculation of fabrication data in the program and transfer of the required values to the CAD as text. This is a very important function, since the recording of the data is very prone to errors, with potentially serious consequences. <ul><li class="bodytext">Calculation of the exact tooth form in Page view and transfer to the CAD system. (Although this results in very pretty drawings, it usually does not supply any necessary information, except if the data undergoes further processing, i.e. via transfer onto a wire electro-discharge machine.)</li></ul></li></ul></li> <li class="bodytext">Transfer of the schematic axial section or the Print Preview of the gears to the CAD system (but can also be achieved just as quickly in CAD, manually).</li> <li class="bodytext">Machine elements <ul><li class="bodytext">Transfer the contour of calculated machine elements to the CAD such as bolts, V-belt sheaves etc. (Frequently, the CAD station already contains appropriate, preprogrammed information, so that only the parts definition is of interest).</li></ul></li> <li class="bodytext">Shaft-hub connection <ul><li class="bodytext">The sizing or proofing of connections should be implemented directly in a CAD system, so that known data from the CAD can be transferred into the calculation and the results of the calculation can in turn be returned to the CAD system.</li></ul></li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

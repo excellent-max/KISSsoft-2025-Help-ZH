@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>材料属性 | Material properties</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Material properties">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8303');expand('8313');expand('8183');expand('9287');expand('9246');highlight('10398')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11703.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10399.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">材料属性</h3>   
+                
+<p class="bodytext">在<span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">  </span></span></span><span class="menu">材料属性</span> 下拉列表中选择一个条目，以指定 KISSsoft 如何定义与强度相关的材料特性值。</p><ol>	<li class="bodytext"><strong>参考直径 <em>σ<sub>B</sub></em>,</strong><strong><em> σ<sub>S</sub></em></strong>, <strong><em>σ<sub>W</sub></em></strong>  <strong>和尺寸系数 <em>K<sub>1</sub>(d<sub>eff</sub>)</em></strong>：<em> σ<sub>B</sub></em>,<em> σ<sub>S</sub></em>, <em>σ<sub>W</sub></em>（参考直径值）取自数据库表 W000，并乘以尺寸系数 <em>K<sub>1</sub></em>。</li>	<li class="bodytext"><strong>有效直径</strong> <strong><em>σ<sub>Beff</sub></em>, <em>σ<sub>Seff</sub>,</em> 参考直径<em> σ<sub>W</sub></em></strong> <strong> 和尺寸系数 <em>K<sub>1</sub>(d<sub>eff</sub>)</em></strong>: <em>σ<sub>Beff</sub></em> 和 <em>σ<sub>Seff</sub></em> 取决于尺寸，取自数据库表 KISS。 参考直径的 <em>σ<sub>W </sub></em>取自数据库表 W000，并乘以尺寸系数 <em>K<sub>1</sub> </em>。</li>	<li class="bodytext"><strong>有效直径</strong> <strong><em>σ<sub>Beff</sub></em>, <em>σ<sub>Seff</sub>,</em> 参考直径<em> σ<sub>W</sub></em> </strong> <strong>(<em>K<sub>1</sub></em>=1)</strong>: <em>σ<sub>Beff</sub></em> 和 <em>σ<sub>Seff</sub></em> 取决于尺寸，取自数据库表 KISS。 用于参考直径的 <em>σ<sub>W</sub></em> 取自数据库表 W000。尺寸系数 <em>K <sub>1</sub></em> 不予考虑。</li>	<li class="bodytext"><strong>有效直径</strong> <strong><em>σ<sub>Beff</sub></em>, <em>σ<sub>Seff</sub></em>，以及 <em>σ<sub>W</sub></em></strong> <strong>由 <em>R<sub>m</sub></em> 确定</strong>：<em>σ<sub>Beff</sub></em> 和 <em>σ<sub>Seff</sub></em> 取决于尺寸，取自数据库表 KISS。<em>σ<sub>W</sub></em> 根据标准由拉伸强度 <em>R<sub>m</sub></em> 确定。</li></ol><p class="bodytext">根据计算方法的公式符号：</p><p class="bodytext"><em>σ<sub>B</sub></em> (DIN 743), <em>R<sub>m</sub></em> (FKM): 拉伸强度<br><em>σ<sub>S</sub></em> (DIN 743), <em>R<sub>p</sub></em> (FKM): 屈服点<br><em>K<sub>1</sub></em> (DIN 743), <em>K<sub>dm</sub></em>, <em>K<sub>dp</sub></em>, <em>K</em><sub><em>dA</em> </sub>(FKM): 尺寸系数</p><p class="bodytext">材料的数据，用于计算轴的强度，是从数据库中的值导出的，如下：</p><ul>	<li class="bodytext">疲劳极限因子（用于拉伸/压缩、弯曲等）直接从材料数据库中获取。在数据库中，这些值为每种计算方法定义。如果这些材料的数据已在计算方法中指定，则使用这些值。</li>	<li class="bodytext">拉伸强度值根据特定EN标准中定义的直径存储在数据库中。使用原始直径从数据库中获取拉伸强度值，并用于计算。这种定义有效拉伸强度的方法非常可靠，可用于每种计算方法。其效果是每种计算方法都使用相同的数值。</li>	<li class="bodytext">当您指定计算方法时，您可以决定依据相关标准中给出的要求使用材料数据库。然后，实际拉伸强度使用从试样直径（通常为 10 mm）的基础拉伸强度得出的厚度系数，按照标准（必须是 FKM 或 DIN。如果使用 Hänchen，这将触发错误消息）来定义。</li>	<li class="bodytext">屈服点或应变极限是从数据库或标准中获取的，与拉伸强度的方式相同。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Material properties</h3>   
+                
+<p class="bodytext">Select an entry in the<span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"> </span></span></span><span class="menu">Material properties</span> drop-down list to specify how KISSsoft is to define the material characteristic values that are relevant to strength:</p><ol>	<li class="bodytext"><strong>Reference diameters <em>σ<sub>B</sub></em>,</strong><strong><em> σ<sub>S</sub></em></strong>, <strong><em>σ<sub>W</sub></em></strong> <strong>and size factor <em>K<sub>1</sub>(d<sub>eff</sub>)</em></strong>: <em> σ<sub>B</sub></em>,<em> σ<sub>S</sub></em>, <em>σ<sub>W</sub></em> (reference diameter values) are taken form the database table W000 and multiplied by the size factor <em>K<sub>1</sub></em>.</li>	<li class="bodytext"><strong>Effective diameters</strong> <strong><em>σ<sub>Beff</sub></em>, <em>σ<sub>Seff</sub>,</em> reference diameter<em> σ<sub>W</sub></em></strong> <strong> and size factor <em>K<sub>1</sub>(d<sub>eff</sub>)</em></strong>: <em>σ<sub>Beff</sub></em> and <em>σ<sub>Seff</sub></em> are taken from the database table KISS dependent on size. <em>σ<sub>W </sub></em>for the reference diameter is taken from the database table W000 and multiplied by the size factor <em>K<sub>1</sub> </em>.</li>	<li class="bodytext"><strong>Effective diameters</strong> <strong><em>σ<sub>Beff</sub></em>, <em>σ<sub>Seff</sub>,</em> reference diameter<em> σ<sub>W</sub></em> </strong> <strong>(<em>K<sub>1</sub></em>=1)</strong>: <em>σ<sub>Beff</sub></em> and <em>σ<sub>Seff</sub></em> are taken from the database table KISS dependent on size. <em>σ<sub>W</sub></em> for the reference diameter is taken from the database table W000. The size factor <em>K <sub>1</sub></em> is not taken into account.</li>	<li class="bodytext"><strong>Effective diameters</strong> <strong><em>σ<sub>Beff</sub></em>, <em>σ<sub>Seff</sub></em>, and<em> σ<sub>W</sub></em> </strong> <strong>determined from <em>R<sub>m</sub></em></strong>: <em>σ<sub>Beff</sub></em> and <em>σ<sub>Seff</sub></em> are taken from the database table KISS dependent on size. <em>σ<sub>W</sub></em> is determined from the tensile strength <em>R<sub>m</sub></em> according to the standard.</li></ol><p class="bodytext">Formula symbols according to the calculation method:</p><p class="bodytext"><em>σ<sub>B</sub></em> (DIN 743), <em>R<sub>m</sub></em> (FKM): Tensile strength<br /><em>σ<sub>S</sub></em> (DIN 743), <em>R<sub>p</sub></em> (FKM): Yield point<br /><em>K<sub>1</sub></em> (DIN 743), <em>K<sub>dm</sub></em>, <em>K<sub>dp</sub></em>, <em>K</em><sub><em>dA</em> </sub>(FKM): Size factors</p><p class="bodytext">The material's data, used to calculate the shaft strength, is derived from the values in the database as follows:</p><ul>	<li class="bodytext">Fatigue limit factors (for tension/compression, bending, etc.) are taken directly from the material database. There, these values are defined for every calculation method. If data for these materials has been specified in the calculation method, it is these values that are used.</li>	<li class="bodytext">Tensile strength values are stored in the database according to their diameter as defined in the specific EN standard. The raw diameter is used to fetch the tensile strength value from the database and use it in the calculation. This method of defining the effective tensile strength is very reliable and can be used for every calculation method. It has the effect that the same values are used for each calculation method.</li>	<li class="bodytext">When you specify a calculation method, you can decide to use the material database on the basis of the requirements given in the relevant standard. Then, the real tensile strength is defined using the thickness factor taken from the base tensile strength of the sample diameter (normally 10 mm), according to the standard (which must be FKM or DIN. If you use Hänchen, this triggers an error message).</li>	<li class="bodytext">The yield point or strain limits are taken either from the database or from the standard, in the same way as for the tensile strength.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

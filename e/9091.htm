@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>存储位置和描述 | Storage locations and descriptions</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Storage locations and descriptions">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9090');expand('8346');expand('9272');expand('9246');highlight('9091')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9090.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9092.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">存储位置和描述</h3>   
+                
+<p class="bodytext">KISSsoft 提供的报告模板存储在已设为 RPTDIR 的目录中（见<a class="referencetopic-shabschnitt" href="9068.htm" target="_self">全局设置 - KISS.ini</a>），该目录在 KISS.ini（见<a class="referencetopic-shabschnitt" href="9069.htm" target="_self">[PATH] 中的定义</a>）文件中设置。如果 RPTDIR（见<a class="referencetopic-shabschnitt" href="9069.htm" target="_self">[PATH] 中的定义</a>）未在 KISS.ini（见<a class="referencetopic-shabschnitt" href="9068.htm" target="_self">全局设置 - KISS.ini</a>）中定义，您将在安装文件夹的 rpt 子目录下找到这些模板。用户自定义的报告模板必须存储在 RPT 子目录中，该子目录位于 EXTDIR（见<a class="referencetopic-shabschnitt" href="9069.htm" target="_self">[PATH] 中的定义</a>）目录下。这是防止模板在安装补丁时被覆盖的唯一方法。系统生成报告时，如果存在用户自定义模板，则使用 EXTDIR 目录中的模板；否则使用 RPTDIR 中的模板创建报告。</p><p class="bodytext">报告模板名称具有如下结构：<em class="emphasis">MMMMlsz.rpt</em>它由以下部分组成：</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">MMMM</em></p></td> <td width="198"><p class="bodytext">模块描述符</p></td> <td width="246"><p class="bodytext">e.g. <em class="emphasis">M040</em></p></td></tr> <tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">l</em></p></td> <td width="198"><p class="bodytext">由于历史原因，</p></td> <td width="246"><p class="bodytext">始终为 <em class="emphasis">l</em></p></td></tr> <tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">s</em></p></td> <td width="198"><p class="bodytext">报告语言</p></td> <td width="246"><p class="bodytext"><em class="emphasis">s = d、e、f、i、s 或 a</em></p></td></tr> <tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">z</em></p></td> <td width="198"><p class="bodytext">由于历史原因，</p></td> <td width="246"><p class="bodytext">始终为 <em class="emphasis">0</em></p></td></tr> <tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">.rpt</em></p></td> <td width="198"><p class="bodytext">文件类型</p></td> <td width="246"><p class="bodytext"></p></td></tr></tbody></table><p class="bodytext"></p><p class="hint">示例</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>螺栓计算：</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">M040LD0.RPT</em></p></td> <td width="360"><p class="bodytext">螺栓计算，德语输出</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">M040USER.RPT</em></p></td> <td width="360"><p class="bodytext">通过界面默认打印，<br>结果输出到 M040USER.OUT 文件</p></td></tr> <tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>圆柱齿轮计算：</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z012LD0.RPT</em></p></td> <td width="360"><p class="bodytext">圆柱齿轮副，德语输出</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z012USER.RPT</em></p></td> <td width="360"><p class="bodytext">通过界面默认打印，<br>结果输出到 Z012USER.OUT 文件</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z10GEAR1.RPT</em></p></td> <td width="360"><p class="bodytext">通过接口输出，仅包含数据</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"></p></td> <td width="360"><p class="bodytext">用于齿轮 1，结果输出到文件 Z10GEAR1.OUT</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z10GEAR2.RPT</em></p></td> <td width="360"><p class="bodytext">通过接口输出，仅包含数据</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"></p></td> <td width="360"><p class="bodytext">用于齿轮 2，结果输出到文件 Z10GEAR2.OUT</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z011LD0.RPT</em></p></td> <td width="360"><p class="bodytext">单个齿轮，德语输出</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z013LD0.RPT</em></p></td> <td width="360"><p class="bodytext">齿条，德语输出</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z014LD0.RPT</em></p></td> <td width="360"><p class="bodytext">行星齿轮，德语输出</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z015LD0.RPT</em></p></td> <td width="360"><p class="bodytext">3 个齿轮，德语输出</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z016LD0.RPT</em></p></td> <td width="360"><p class="bodytext">4 个齿轮，德语输出</p></td></tr> <tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>弹簧计算：</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">F10SPRING.RPT</em></p></td> <td width="360"><p class="bodytext">图纸数据的默认打印结果输出到 F10SPRING.OUT 文件</p></td></tr> <tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>英文输出：</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">M040LE0.RPT</em></p></td> <td width="360"><p class="bodytext">螺栓计算，英文输出</p></td></tr> <tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>美式输出：</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">M040LA0.RPT</em></p></td> <td width="360"><p class="bodytext">螺栓计算，美式输出</p></td></tr></tbody></table><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Storage locations and descriptions</h3>   
+                
+<p class="bodytext">The report templates supplied by KISSsoft are stored in the directory that has been set as RPTDIR (see chapter <a class="referencetopic-shabschnitt" href="9068.htm" target="_self">Global settings - KISS.ini</a>) in the KISS.ini (see chapter <a class="referencetopic-shabschnitt" href="9069.htm" target="_self">Definitions in [PATH]</a>) file. If RPTDIR (see chapter <a class="referencetopic-shabschnitt" href="9069.htm" target="_self">Definitions in [PATH]</a>) was not defined in KISS.ini (see chapter <a class="referencetopic-shabschnitt" href="9068.htm" target="_self">Global settings - KISS.ini</a>), you will find the templates in the installation folder under rpt. It is essential that user-defined report templates are stored in the RPT subdirectory, in the EXTDIR (see chapter <a class="referencetopic-shabschnitt" href="9069.htm" target="_self">Definitions in [PATH]</a>) directory. This is the only way to prevent your templates from being overwritten if a patch is installed. When the system generates a report, it uses the user-defined template from the EXTDIR directory, if present. Otherwise it uses the template from the RPTDIR to create the report.</p><p class="bodytext">The report template labels have this structure: <em class="emphasis">MMMMlsz.rpt</em>It is made up of:</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">MMMM</em></p></td> <td width="198"><p class="bodytext">Module descriptor</p></td> <td width="246"><p class="bodytext">e.g. <em class="emphasis">M040</em></p></td></tr> <tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">l</em></p></td> <td width="198"><p class="bodytext">For historical reasons,</p></td> <td width="246"><p class="bodytext">always = <em class="emphasis">l</em></p></td></tr> <tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">s</em></p></td> <td width="198"><p class="bodytext">Language of the report</p></td> <td width="246"><p class="bodytext"><em class="emphasis">s = d, e, f, i, s or a</em></p></td></tr> <tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">z</em></p></td> <td width="198"><p class="bodytext">For historical reasons,</p></td> <td width="246"><p class="bodytext">always = <em class="emphasis">0</em></p></td></tr> <tr align="left" valign="top"><td width="84"><p class="bodytext"><em class="emphasis">.rpt</em></p></td> <td width="198"><p class="bodytext">File type</p></td> <td width="246"><p class="bodytext"></p></td></tr></tbody></table><p class="bodytext"></p><p class="hint">Examples</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>Bolt calculation:</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">M040LD0.RPT</em></p></td> <td width="360"><p class="bodytext">Bolt calculation, German printout</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">M040USER.RPT</em></p></td> <td width="360"><p class="bodytext">Default printout via the interface,<br /> results in the M040USER.OUT file</p></td></tr> <tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>Cylindrical gear calculation:</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z012LD0.RPT</em></p></td> <td width="360"><p class="bodytext">Cylindrical gear pair, German printout</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z012USER.RPT</em></p></td> <td width="360"><p class="bodytext">Default printout via the interface,<br /> results in the Z012USER.OUT file</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z10GEAR1.RPT</em></p></td> <td width="360"><p class="bodytext">Output via interface, contains only data</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"></p></td> <td width="360"><p class="bodytext">for gear 1, results in file Z10GEAR1.OUT</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z10GEAR2.RPT</em></p></td> <td width="360"><p class="bodytext">Output via interface, contains only data</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"></p></td> <td width="360"><p class="bodytext">for gear 2, results in file Z10GEAR2.OUT</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z011LD0.RPT</em></p></td> <td width="360"><p class="bodytext">Single gear, German printout</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z013LD0.RPT</em></p></td> <td width="360"><p class="bodytext">Rack, German printout</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z014LD0.RPT</em></p></td> <td width="360"><p class="bodytext">Planetary gear, German printout</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z015LD0.RPT</em></p></td> <td width="360"><p class="bodytext">3 gears, German printout</p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">Z016LD0.RPT</em></p></td> <td width="360"><p class="bodytext">4 gears, German printout</p></td></tr> <tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>Spring calculation:</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">F10SPRING.RPT</em></p></td> <td width="360"><p class="bodytext">Default printout for drawing data results in the F10SPRING.OUT file</p></td></tr> <tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>English printout:</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">M040LE0.RPT</em></p></td> <td width="360"><p class="bodytext">Bolt calculation, English printout</p></td></tr> <tr align="left" valign="top"><td colspan="2" width="528"><p class="tableheading"><strong>American printout:</strong></p></td></tr> <tr align="left" valign="top"><td width="168"><p class="bodytext"><em class="emphasis">M040LA0.RPT</em></p></td> <td width="360"><p class="bodytext">Bolt calculation, American printout</p></td></tr></tbody></table><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

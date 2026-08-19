@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>查看数据库条目 | Viewing database entries</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Viewing database entries">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9042');expand('9272');expand('9246');highlight('9044')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9042.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9051.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">查看数据库条目</h3>   
+                
+<p class="bodytext">要打开数据库，请选择 <span class="menu">附加功能</span> &gt; <span class="menu">数据库工具</span> 菜单选项，如图 9.5 所示（<img src="9045.png" style="height:13px; width:14px">）。此时会出现一个对话框，询问您是否要以写权限打开数据库（<img src="9046.png" style="height:13px; width:14px">）。如果单击 <span class="menu">是</span>，则可以编辑数据库条目，否则数据库条目为写保护。如果选择 <span class="menu">否</span>，则会打开实际的数据库工具窗口（<img src="9047.png" style="height:13px; width:14px">），但处于只读模式。在那里，您可以从分配给特定数据库的列表中选择表。表的行包含设置数据库条目参数的值。列包含数据库条目的参数，即不同材料的屈服点值。本节介绍如何编辑 <a class="referencetopic" href="9051.htm" id="zh-h9243" target="_self" title="Datenbankeinträge verwalten">数据库条目</a>。您也可以先在数据库工具窗口中选择一行，再单击 <span class="menu">显示</span> 进行确认来显示表条目（<img src="9048.png" style="height:13px; width:14px">）。此时会打开 <span class="menu">显示条目</span> 窗口，以结构化方式显示表行中的数值（<img src="9049.png" style="height:13px; width:14px">）。</p><div class="objectWrapper" data-id="5ba0bcdba6ab0" data-type="image" data-caption="Zugriff auf Datenbankeinträge"><p class="bodytext"><img class="" data-id="5ba0bcdba6ab0" height="585" src="08-db_howtoaccess_kommentiert_nummeriert_small.png" width="565"></p><p class="figcaption" data-id="5ba0bcdba6ab0">图 9.1: 访问数据库条目</p></div><p class="bodytext"></p><p class="hint">注意：</p><p class="bodytext">使用 KISSsoft 数据库工具，可更改数据库并添加自己的条目。存储在数据库中的数据在某种程度上是“敏感”的，因此输入错误的值可能会导致最初难以察觉的后果，但最终可能带来深远且严重的后果。因此，当用户打开数据库时，会询问用户是否需要写入授权。如果回答“否”，则可以查看表中的数据，但不能更改它。</p><p class="bodytext">如果您想绝对确保数据库保持不变，可以对其相应文件（*<span class="menu">.udb</span>）进行写保护。任何以写权限打开表的尝试都会导致错误消息，并且表通常会以写保护模式打开。要更改文件的写保护属性，请在 Windows® 资源管理器中右键单击该文件，然后选择 <span class="menu">属性</span>。在 <span class="menu">属性</span> 对话框中，单击 <span class="menu">常规</span> 选项卡，然后选中 <span class="menu">Write-protected</span> 复选框。如果要更改写保护的文件，请首先取消选中 <span class="menu">Write-protected</span> 复选框，或以不同的名称保存该文件。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Viewing database entries</h3>   
+                
+<p class="bodytext">To open the database, select the <span class="menu">Extras</span> &gt; <span class="menu">Database tool</span> menu option, as shown in (Figure 9.5, <img src="9045.png" style="height:13px; width:14px" />). A dialog window appears with the question whether you want to open the database with write authorization (<img src="9046.png" style="height:13px; width:14px" />). If you click on <span class="menu">Yes</span>, you can edit the database entries, otherwise they are write protected. If you select <span class="menu">No</span>, the actual database tool window (<img src="9047.png" style="height:13px; width:14px" />) opens, but in read-only mode. There, you can select a table from a list that is assigned to a particular database. The row of a table contains the values that set the parameters for the database entry. The columns contain the parameters for the database entries, i.e. values for the yield point of different materials. This section describes how to edit <a class="referencetopic" href="9051.htm" id="h9243" target="_self" title="Datenbankeinträge verwalten">database entries</a>. You can also display table entries by selecting a row in the database tool window and then confirming this by clicking <span class="menu">Display</span> (<img src="9048.png" style="height:13px; width:14px" />). The <span class="menu">Display entry</span> window opens with a structured display of the value amount from a table row (<img src="9049.png" style="height:13px; width:14px" />).</p><div class="objectWrapper" data-id="5ba0bcdba6ab0" data-type="image" data-caption="Zugriff auf Datenbankeinträge"><p class="bodytext"><img class="" data-id="5ba0bcdba6ab0" height="585" src="08-db_howtoaccess_kommentiert_nummeriert_small.png" width="565" /></p><p class="figcaption" data-id="5ba0bcdba6ab0">Figure 9.1: Accessing database entries</p></div><p class="bodytext"></p><p class="hint">Note:</p><p class="bodytext">With the KISSsoft database tool you can change the databases and expand them with your own entries. The data stored in the databases are in a sense &quot;sensitive&quot;, so that incorrectly entered values can have consequences that are initially imperceptible, yet eventually far-reaching and serious. For this reason, when you open the database you are asked whether the access should have write authorization. If you answer this question with &quot;No&quot;&quot;, you can view the data in the tables but not change it.</p><p class="bodytext">If you want to make absolutely sure that the databases remain unchanged, you can write protect their corresponding files (*<span class="menu">.udb</span>). Any attempt to open a table with write authorization results in an error message and the table will normally be opened in write protected mode. To change a file's write protection attribute, right-click on the file in Windows® Explorer, and then click on <span class="menu">Properties</span>. Click in the <span class="menu">Properties</span> dialog field, on the <span class="menu">General</span> tab, and then click the <span class="menu">Write-protected</span> checkbox. If you want to make changes to a write protected file, first either deselect the <span class="menu">Write-protected</span> checkbox or save the file with a different name.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>条件 | Conditions</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Conditions">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10865');expand('7708');expand('9286');expand('9246');highlight('10528')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10865.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10866.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">条件</h3>   
+                
+<p class="bodytext"><strong>条件 </strong></p><p class="bodytext">在 <span class="menu">条件</span> 选项卡中定义适用于每个解的一般条件。</p><p class="bodytext">选择 <span class="menu">考虑载荷频谱</span> 选项，以考虑强度计算模块中先前定义的载荷频谱。</p><p class="bodytext">如果启用了 <span class="menu">排除接触分析，仅按 ISO 6336-1 附录 E 使用 K<sub>Hβ</sub> 进行使用寿命计算</span> 选项，则求解范围仅使用使用寿命和 K<sub>Hβ</sub> 计算来执行。</p><p class="bodytext">选择 <span class="menu">交叉变化值，因子1，因子2</span> 选项，以运行带修改值的系数的额外变化。</p><p class="bodytext">选择 <span class="menu">计算解决方案无需修改</span> 选项，可跳过不含任何修改的方案的计算。</p><p class="bodytext">选择 <span class="menu">计算每个部分载荷的轴变形一次（仅使用基本修正进行计算）</span> 选项，可对每个部分载荷仅计算一次轴的弯曲图，而不是对每个修改配置都计算。此选项会使计算精度略有下降。但是，如果只需计算少量载荷情况，却有大量修改配置，选择此选项可显著加快尺寸确定过程。</p><p class="bodytext">每次修改都可以在更大的部分载荷范围内进行计算。可在 <span class="menu">部分载荷范围</span> 部分中进行必要设置。用于接触分析的扭矩范围以及端面载荷因子计算结果也在此输出。</p><p class="bodytext"></p><p class="bodytext"><span class="menu">修改 </span></p><p class="bodytext"><span class="menu">修改</span> 选项卡是精细尺寸修改的主要选项卡。在其中可定义新的<span class="menu">修改类型</span>，例如修缘、修根等（完整的列表见"<a class="referencetopic-shabschnitt" href="8751.htm" target="_self">修改</a>"章）。如果 <span class="menu">同步ID</span> 列中的值与特定行号（ID）不同，则该修改会与所选修改同步，且所有变体以相同的步数执行。在 <span class="menu">齿轮</span> 列中可选择要应用修改的齿轮。使用 <span class="menu">齿面</span> 选项可指定修改所应用的齿面。如果 <span class="menu">活动</span> 在 <span class="menu">状态</span> 列中被选中，则在尺寸设定过程中该修改将发生变化；如果 <span class="menu">静态</span> 已选定，则使用预定义值进行修改且不作任何更改；如果选择了 <span class="menu">非活动</span>，则忽略该修改，仅显示在图形窗口中。可输入<span class="menu">每次修改的步数</span>，设置从最小值到最大值之间的步数（从最小值开始）。可输入 <span class="menu">值，因子1</span> 和 <span class="menu">值，因子2</span> 的最小值与最大值，从而限制修改尺寸设定的输入。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Conditions</h3>   
+                
+<p class="bodytext"><strong>Conditions </strong></p><p class="bodytext">The <span class="menu">Conditions</span> tab is where you define general conditions that are valid for every solution.</p><p class="bodytext">Select the <span class="menu">Take load spectrum into account</span> option to take into account the load spectrum previously defined in the strength calculation module.</p><p class="bodytext">If the <span class="menu">Excluding contact analysis, only service life calculation using K<sub>Hβ</sub> according to ISO 6336-1, Annex E</span> option is enabled, the solution range is only performed using the service life and K<sub>Hβ </sub>calculation.</p><p class="bodytext">Select the <span class="menu">Cross-vary value, Factor 1, Factor 2</span> option to run an additional variation of the coefficients with the modification value.</p><p class="bodytext">Select the <span class="menu">Calculate solution without modifications</span> option to skip the calculation of the solution without any modifications.</p><p class="bodytext">Select the <span class="menu">Calculate shaft deformation just once for each partial load (calculation with basic modification only)</span> option to calculate the diagrams of bending once for the shafts, for each partial load, and not for every modification configuration. This option makes the calculation slightly less accurate. However, if you are performing calculations with just a few load cases, but a large number of modification configurations, selecting this option can significantly speed up the sizing process.</p><p class="bodytext">Every modification can be calculated for a larger partial load range. You can set the necessary settings in the <span class="menu">Partial load range</span> section. The torque range used for contact analysis and the face load factor calculation result is also output here.</p><p class="bodytext"></p><p class="bodytext"><span class="menu">Modifications </span></p><p class="bodytext">The <span class="menu">Modifications</span> tab is the main tab for fine sizing modifications. In it, you define new <span class="menu">Modification types</span>, such as tip relief, root relief, etc. for the sizing. (You will find a complete list at (see chapter <a class="referencetopic-shabschnitt" href="8751.htm" target="_self">Modifications</a>)). If the <span class="menu">Synchro ID</span> column contains a different value than for the specific line number (ID), the modification is synchronized with the modification you have selected, and all the variants are performed with the same number of steps. In the <span class="menu">Gear</span> column, you select a gear to which the modification is to be applied. Use the <span class="menu">Flank</span> option to specify the flank on which the modification is to be applied. If <span class="menu">active</span> is selected in the <span class="menu">Status</span> column, the modification will be varied while it is being sized. If <span class="menu">static</span> is set, a predefined value will be used for the modification without being changed in any way. If <span class="menu">inactive</span> is selected, the modification will be ignored and only displayed in the Graphic window. You can enter the <span class="menu">Number of steps</span> per modification to set the number of steps between the minimum and maximum value, starting from the minimum value. You can enter the minimum and maximum value for the <span class="menu">Value, Factor 1</span> and <span class="menu">Value, Factor 2</span>, limiting the inputs for the modification sizing.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

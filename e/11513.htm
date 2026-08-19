@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>实测制造偏差 | Measured manufacturing deviation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Measured manufacturing deviation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11568');expand('8751');expand('7708');expand('9286');expand('9246');highlight('11513')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11329.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11569.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">实测制造偏差</h3>   
+                
+<p class="bodytext">使用 <span class="menu">实测制造偏差</span> 可直接导入 Gleason GAMA CMM 数据，并将其转换为 KISSsoft 中用于拓扑修形的格式。因此，用于实测制造偏差修形的模板格式与拓扑修形的模板相同。假设模板中的值以微米为单位给出。要显示修形，请点击 <span class="menu">图形 -&gt; 3D 几何 -&gt; 修形</span>。<br>通过定义修形，您可以分析制造偏差对齿轮性能、传动误差、接触应力和其他性能的影响。此功能在 <strong>设计 - 制造 - 测量闭环</strong> 中至关重要，因为它能确保所制造的齿轮具有所需的性能。</p><p class="bodytext">修形也可以手动定义，但我们建议您在 <span class="menu">导入实测制造偏差</span> 中定义它，该选项位于 <span class="menu">制造</span> 选项卡。点击转换按钮以打开此对话框。</p><p class="bodytext"></p><div class="objectWrapper" data-id="60535ee950aa7" data-type="image" data-caption="Import der gemessenen Herstellabweichung"><p class="bodytext"><img data-id="60535ee950aa7" height="254" src="Herstellabweichung_Fenster.png" width="527"></p><p class="figcaption" data-id="60535ee950aa7">图 15.60：导入实测制造偏差</p></div><p class="bodytext">带有制造偏差的 CMM 数据在窗口中进行分配。目前仅支持 Gleason GAMA 数据格式。此处的制造偏差数据应采用与 FN 列中显示相同的格式。</p><p class="bodytext"></p><div class="objectWrapper" data-id="60535f61d8c1a" data-type="image" data-caption="Gleason GAMA CMM-Data"><p class="bodytext"><img data-id="60535f61d8c1a" height="295" src="Herstellabweichung_List.png" width="527"></p><p class="figcaption" data-id="60535f61d8c1a">图 15.61：Gleason GAMA CMM 数据</p></div><p class="bodytext">分配文件后，点击 <span class="menu">计算</span> 和 <span class="menu">保存</span> 按钮，将模板文件保存到正确的文件夹。保存文件后，点击 <span class="menu">应用</span> 按钮。程序随后会自动生成修形条目，如下所示。</p><p class="bodytext"></p><div class="objectWrapper" data-id="6053601c898a0" data-type="image" data-caption="Eingabe der gemessenen Herstellabweichung"><p class="bodytext"><img data-id="6053601c898a0" height="74" src="Herstellabweichung_3.png" style="width: 535px; height: 63px;" width="628"></p><p class="figcaption" data-id="6053601c898a0">图 15.62：输入实测制造偏差</p></div>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Measured manufacturing deviation</h3>   
+                
+<p class="bodytext">Use the <span class="menu">Measured manufacturing deviation</span> to import Gleason GAMA CMM data directly and convert it to the format used for topological modifications in KISSsoft. As a result, the template format for the modification to the measured manufacturing deviation is the same as the template for the topological modifications. It is assumed that the values in the template are given in micrometers. To display the modifications, click on <span class="menu">Graphic -&gt; 3D Geometry -&gt; Modifications</span>.<br />By defining the modification, you can then analyze how manufacturing deviation affects gear performance, transmission error, contact stress and other properties. This functionality is essential in the <strong>Design - Manufacturing - Measuring Closed Loop</strong> because it ensures that the manufactured gears have the required properties.</p><p class="bodytext">The modification can also be defined manually, but instead, we recommend you do define it in the <span class="menu">Import measured manufacturing deviation</span> in the <span class="menu">Manufacturing</span> tab. Click on the Convert button to open this dialog.</p><p class="bodytext"></p><div class="objectWrapper" data-id="60535ee950aa7" data-type="image" data-caption="Import der gemessenen Herstellabweichung"><p class="bodytext"><img data-id="60535ee950aa7" height="254" src="Herstellabweichung_Fenster.png" width="527" /></p><p class="figcaption" data-id="60535ee950aa7">Figure 15.60: Importing the measured manufacturing deviation</p></div><p class="bodytext">The CMM data with the manufacturing deviation is assigned in the window. At present, only the Gleason GAMA data format is supported. The manufacturing deviation data here should be in the same format as displayed in the FN column.</p><p class="bodytext"></p><div class="objectWrapper" data-id="60535f61d8c1a" data-type="image" data-caption="Gleason GAMA CMM-Data"><p class="bodytext"><img data-id="60535f61d8c1a" height="295" src="Herstellabweichung_List.png" width="527" /></p><p class="figcaption" data-id="60535f61d8c1a">Figure 15.61: Gleason GAMA CMM data</p></div><p class="bodytext">After you have assigned the file, click on the <span class="menu">Calculate</span> and <span class="menu">Save</span> buttons to save the template files to the correct folder. After you have saved the file, click on the <span class="menu">Apply</span> button. The program then automatically generates the modifications entry, as shown below.</p><p class="bodytext"></p><div class="objectWrapper" data-id="6053601c898a0" data-type="image" data-caption="Eingabe der gemessenen Herstellabweichung"><p class="bodytext"><img data-id="6053601c898a0" height="74" src="Herstellabweichung_3.png" style="width: 535px; height: 63px;" width="628" /></p><p class="figcaption" data-id="6053601c898a0">Figure 15.62: Inputting the measured manufacturing deviation</p></div>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

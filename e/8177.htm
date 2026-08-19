@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>相交切口效应 | Intersecting notch effects</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Intersecting notch effects">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8176');expand('9287');expand('9246');highlight('8177')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8176.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8187.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">相交切口效应</h3>   
+                
+<p class="bodytext">在轴设计时，应尽可能避免切口效应重叠，例如带过盈配合的轴肩处的切口效应。但如果确实发生重叠，在最坏情况下，应使用 FKM 指南计算总切口效应系数 K<sub class="subscript">f</sub>：</p><p class="bodytext"></p><p class="bodytext"><img src="8178.png" style="height:33px; width:267px"></p><p class="bodytext"></p><p class="bodytext">由局部切口效应系数 K<sub class="subscript">f1</sub> 和 K<sub class="subscript">f2</sub> 得出。在 KISSsoft 中，可通过为自由截面的切口效应选择<span class="menu">自定义输入</span>（参见"<a class="referencetopic-shabschnitt" href="8251.htm" target="_self">截面类型</a>"章）来解决此情况（自由截面参见"<a class="referencetopic-shabschnitt" href="10166.htm" target="_self">自由截面（单切口）</a>"章）。</p><p class="bodytext">然后可以按如下方式计算总切口效应系数：</p><ol><li class="bodytext">定义两个具有相同 Y 坐标的截面（例如 A-A 和 B-B）。</li> <li class="bodytext">通过选择切口类型 Kf1（例如轴肩）计算截面 A-A。切口系数直接显示在单元编辑器中（参见"<a class="referencetopic-shabschnitt" href="8324.htm" target="_self">单元编辑器</a>"章）。</li> <li class="bodytext">然后对截面 B-B 重复第 2 步中描述的过程。</li> <li class="bodytext">记录这两个切口各自的切口系数，然后根据上述公式计算切口系数 Kf。</li> <li class="bodytext">现在删除截面 A-A 和 B-B，并添加一个具有相同 Y 坐标的新自由截面 C-C。打开单元编辑器，为切口效应选择<span class="menu">自定义输入</span>。然后输入在步骤 4 中计算的总切口效应系数。</li></ol>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Intersecting notch effects</h3>   
+                
+<p class="bodytext">If at all possible, notch effects, for example in a shoulder with an interference fit, should not be overlapped when the shaft is designed. However, if this does happen, in the worst case scenario, the FKM Guideline should be applied to calculate the overall notch effect coefficient K<sub class="subscript">f</sub>:</p><p class="bodytext"></p><p class="bodytext"><img src="8178.png" style="height:33px; width:267px" /></p><p class="bodytext"></p><p class="bodytext">from part notch effect coefficients K<sub class="subscript">f1</sub> and K<sub class="subscript">f2</sub> . In KISSsoft, this situation can be resolved by selecting <span class="menu">Own input</span> for the notch effect (see chapter <a class="referencetopic-shabschnitt" href="8251.htm" target="_self">Cross-section types</a>) of a free cross section (see chapter <a class="referencetopic-shabschnitt" href="10166.htm" target="_self">Free cross section (single notch)</a>).</p><p class="bodytext">The overall notch effect coefficient can then be calculated as follows:</p><ol><li class="bodytext">Two cross sections (for example, A-A and B-B) are defined with the same Y-coordinate.</li> <li class="bodytext">Cross section A-A is calculated by selecting notch type Kf1 (for example, shoulder). The notch factors are displayed directly in the Elements Editor (see chapter <a class="referencetopic-shabschnitt" href="8324.htm" target="_self">Element Editor</a>).</li> <li class="bodytext">The process described in 2. is then repeated for cross section B-B.</li> <li class="bodytext">The resulting notch factors for both these notches are noted down, and the notch factors Kf are calculated according to the formula given above.</li> <li class="bodytext">Now, both cross sections (A-A and B-B) are deleted, and a new free cross section C-C with the same Y-coordinate is added. Open the Element Editor and select <span class="menu">Own Input</span> for the notch effect. Then, enter the overall notch effect coefficients calculated in point 4.</li></ol>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

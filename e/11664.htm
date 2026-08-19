@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>使用 FEM 计算 3D 齿根应力 | Calculate 3D tooth root stress with FEM</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculate 3D tooth root stress with FEM">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11247');expand('7708');expand('9286');expand('9246');highlight('11664')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11663.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11611.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">使用 FEM 计算 3D 齿根应力</h3>   
+                
+<p class="bodytext">此特殊计算可用于使用 FEM 方法计算齿轮齿根处的应力。为此创建了一个三维 (3D) 模型。由于此计算从接触分析结果中获取总啮合线长度及相关的载荷分布，因此在执行此特殊计算之前，必须已成功完成接触分析。</p><p class="bodytext">提供以下输入字段：</p><ul>	<li class="bodytext"><strong>选择齿轮副/选择齿轮</strong>，用于要分析的齿轮/齿轮副。齿轮副选择选项仅在具有多个齿轮副的模块中可用（例如三齿轮传动）。</li>	<li class="bodytext"><span class="menu">齿数</span>，包含在 FE 模型中的齿数。</li>	<li class="bodytext"><span class="menu">轴直径</span>，用于手动输入模型的内径。对于轴直径较小的大型齿轮，这是减少有限元数量的有效方法（通过定义较大的轴直径）。</li>	<li class="bodytext"><span class="menu">FE 尺寸</span>，用于直接输入平均单元边长。它对应于位于 XZ 层上的所有单元边长的平均值。默认值由齿轮尺寸确定。随着 FE 值减小，FE 模型中的齿形表示得更精确。这对所得应力有显著影响。</li>	<li class="bodytext"><span class="menu">每个周节的啮合位置数</span> 定义了要进行接触分析的啮合位置数。在接触分析中，使用相同的 <span class="menu">每个周节的啮合位置数</span> 设置（位于 <span class="menu">分辨率</span> 选项下）。它对应于接触分析计算完成后可用于 FE 计算的载荷工况数。</li>	<li class="bodytext"><span class="menu">切片数</span> 定义了沿齿宽的有限元数量以及接触分析的切片数。在接触分析中，使用相同的 <span class="menu">切片数</span> 设置（位于 <span class="menu">分辨率</span> 选项下）。如果直接输入切片数，接触分析中的相应字段将设置为 <span class="menu">自定义输入</span> 选项。</li>	<li class="bodytext"><span class="menu">旋转角（接触分析载荷工况）</span>，用于计算。此选项仅在接触分析已成功完成后显示。用户现在可以选择用于计算的载荷工况。默认载荷工况是导致中间齿弯曲力矩最大的工况。用户也可以选择接触分析中计算的任意位置。可用旋转角的数量与 <span class="menu">每个周节的啮合位置数</span> 一致。</li></ul><p class="bodytext">用于计算的 FE 网格始终显示在右侧。当接触分析成功完成后，所得接触力以红线显示在 FE 网格上。这些始终对应当前选择的载荷工况。软件会自动在缺口周围和中间齿根区域生成更细的网格，以便更精确地计算这些区域周围的应力。</p><p class="bodytext">齿的固定条件（FEM 分析所需的边界条件）定义在齿轮的内径和侧面上。如果内径为零，软件会自动定义内径为齿顶圆直径的 20% <a>以便进行计算</a>。内径也可以通过单击 <span class="menu">轴直径</span> 变量手动调整。</p><p class="bodytext">FEM 结果在 KISSsoft 结果窗口和报告中提供。报告中提供了所有建模齿沿齿形的每个切片的应力结果。<a>单击 </a><span class="menu">图形 &gt; FEM &gt; FEM 结果</span> 可显示更多结果，例如 3D 位移和主应力。将显示内径与有效直径之间的所有结果。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculate 3D tooth root stress with FEM</h3>   
+                
+<p class="bodytext">This special calculation can be used to calculate the stresses at the root of a gear tooth using the FEM method. A three dimensional (3D) model is created for this purpose. As this calculation takes the total length of path of contact and the associated load distribution from the contact analysis results, it is essential that the contact analysis has been performed successfully before this special calculation can be performed.</p><p class="bodytext">The following input fields are available:</p><ul>	<li class="bodytext"><strong>Select gear pair/Select gear</strong> for the gear/gear pair to be analyzed. The gear pair selection option is only available in modules with multiple gear pairs (e.g. three gears train).</li>	<li class="bodytext"><span class="menu">Number of teeth</span> to be included in the FE model.</li>	<li class="bodytext"><span class="menu">Shaft diameter</span> to enter the inner diameter of the model manually. For large gears with a small shaft diameter, this is a useful way of reducing the number of finite elements (by defining a larger shaft diameter).</li>	<li class="bodytext"><span class="menu">FE size</span> to input the average element edge directly. This corresponds to the average value for all the edges of the elements that lie on the XZ layer. A default value is determined from the gear dimensions. The tooth form in the FE model is represented more accurately as the FE value decreases. This has a significant impact on the resulting stresses.</li>	<li class="bodytext"><span class="menu">Number of meshing positions per pitch</span> defines the number of meshing positions for which the contact analysis is to be performed. In the contact analysis, the same <span class="menu">Number of meshing positions per pitch</span> setting is used under the <span class="menu">Resolution</span> option. It corresponds to the number of load cases that are available for the FE calculation, after the contact analysis calculation has been performed.</li>	<li class="bodytext"><span class="menu">Number of slices</span> defines the number of finite elements along the facewidth and also the number of slices for the contact analysis. In the contact analysis, the same <span class="menu">Number of slices</span> setting is used under the <span class="menu">Resolution</span> option. If you enter the number of slices directly, the corresponding field in the contact analysis is set to the <span class="menu">Own input</span> option.</li>	<li class="bodytext"><span class="menu">Angle of rotation (contact analysis load case)</span> for the calculation. This option is only displayed if the contact analysis has been performed successfully. The user can now select the load case for the calculation. The default load case is the one which leads to maximum bending moment at the middle tooth. The user can also select any of the positions calculated in the contact analysis. The number of available angles of rotation matches the <span class="menu">Number of meshing positions per pitch</span>.</li></ul><p class="bodytext">The FE mesh used for the calculation is always displayed on the right-hand side. When the contact analysis has been performed successfully, the resulting contact forces are displayed as red lines on the FE mesh. These always correspond to the currently selected load case. The software automatically generates a finer mesh around notches and at the root area of the middle tooth, to provide a more accurate calculation of the stresses around these areas.</p><p class="bodytext">The tooth's fixation condition (required boundary condition for the FEM analysis) is defined at the inside diameter and the sides of the gear. If the inside diameter is zero, the software automatically defines an inside diameter of 20% of the tip diameter <a>so that the calculation can be performed</a>. The inner diameter can also be adjusted manually by clicking the <span class="menu">Shaft diameter</span> variable.</p><p class="bodytext">The FEM results are provided at the KISSsoft result window and in the report. The stress results for every slice along the tooth form of all the modeled teeth are provided in the report. <a>Click on </a><span class="menu">Graphics &gt; FEM &gt; FEM Results</span> to display more results, such as displacements and principle stresses, in 3D. All the results in the range between the inside diameter and the active diameter are displayed.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

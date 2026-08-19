@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>系统模块中的设置 | Settings in the system module</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Settings in the system module">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11594');expand('11432');expand('11646');expand('11414');expand('9246');highlight('11674')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11673.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11679.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">系统模块中的设置</h3>   
+                
+<p class="bodytext"><span class="menu">边界</span> 选项卡中给出的转速是边界的额定转速值。只有在用户界面中的 <span class="menu">参考边界</span> 转速不满足强制响应要求时，才会使用这些转速。耦合元件的扭矩用作额定恒定扭矩。在扭矩脉动激励中，这些恒定扭矩被加到动态扭矩幅值上，以对齿轮施加可变扭矩激励。</p><p class="bodytext"><strong>注释：</strong></p><ol>	<li class="bodytext">强制响应分析中的旋转方向基于 <span class="menu">边界</span> 选项卡<span class="menu"> </span>中的数据。</li>	<li class="bodytext">接触分析基于恒定扭矩值。这意味着即使在扭矩脉动的情况下，强制响应也使用由 <a>接触分析模块</a> 根据恒定扭矩计算出的齿轮副的传动误差和刚度。</li></ol><p class="bodytext">当计算类型包含 <span class="menu">齿轮啮合力</span> 时，系统中不应存在零啮合频率。例如，在行星系统中，当太阳轮、行星架和齿圈在 <span class="menu">参考边界</span> 选项卡中具有相同转速时，就可能出现这种情况。在这种情况下，行星轮以使其与太阳轮和齿圈接触的轮齿不变的方式转动。这样，所有齿轮都以相同的角速度旋转，因此会显示错误消息。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Settings in the system module</h3>   
+                
+<p class="bodytext">The speeds given in the <span class="menu">Boundary</span> tab are the nominal speed values of the boundaries. These speeds are only used if the <span class="menu">Reference boundary</span> speed in the user interface does not fulfill the forced response requirements. The torques of the coupling elements are used as the nominal constant torques. In the torque ripple excitation, these constant torques are added to the dynamic torque amplitudes to apply the variable torque excitation to the gears.</p><p class="bodytext"><strong>Notes:</strong></p><ol>	<li class="bodytext">The sense of rotation in the forced response analysis is based on the data in the <span class="menu">Boundary</span> tab<span class="menu"> </span></li>	<li class="bodytext">The contact analysis is based on the constant torque values. This means that even in the case of the torque ripple, the forced response uses the transmission error and stiffness of gear pairs calculated from the <a>Contact analysis module</a>, based on the constant torques.</li></ol><p class="bodytext">When the type of calculation includes <span class="menu">Gear meshing forces</span>, there should be no zero-mesh frequencies present in the system. This can happen, for example, in a planetary system when the sun, planet carrier and ring gear have the same speed in the <span class="menu">Reference boundary</span> tab. In this case, the planets are turning in such a way that their teeth that contact the sun and ring gears are not changed. The planets are turning in such a way that their contact teeth do not change. In this way, all gears are rotating with the same angular velocity and therefore, an error message is shown.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>数据库工具和外部表 | Database Tool and External Tables</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Database Tool and External Tables">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9272');expand('9246');highlight('9042')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11704.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9044.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">数据库工具和外部表</h3>   
+                
+<p class="bodytext">除了为计算输入的独特数据之外，您还可能遇到重复出现的数据，例如材料特性。KISSsoft 会将这些特性存储在数据库中。您可以使用 <span class="menu">数据库工具</span> 查看和更改它们，其用法将在以下各节中说明。表构成了数据库的元素，并以可编辑的 ASCII 文件形式包含在您的程序包中。外部表（参见 <a class="referencetopic-shabschnitt" href="9060.htm" target="_self">外部表</a> 一章）一节介绍了外部表（也称为"查找表"）的设置和处理。</p><p class="bodytext">KISSsoft 中有四个数据库：</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="78"><p class="bodytext"><span class="menu">KMAT</span></p></td> <td width="312"><p class="bodytext">- 材料</p></td></tr> <tr align="left" valign="top"><td width="78"><p class="bodytext"><span class="menu">M000</span></p></td> <td width="312"><p class="bodytext">- 轴毂连接和螺栓</p></td></tr> <tr align="left" valign="top"><td width="78"><p class="bodytext"><span class="menu">W000</span></p></td> <td width="312"><p class="bodytext">- 轴和轴承</p></td></tr> <tr align="left" valign="top"><td width="78"><p class="bodytext"><span class="menu">Z000</span></p></td> <td width="312"><p class="bodytext">- 齿轮</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext">该表（参见 表 9.1）以 <span class="menu">M000</span> 数据库为例，说明 KISSsoft 中数据的组织方式。如图所示，<span class="menu">F040NORM</span> 和 <span class="menu">M090MAT</span> 表属于轴毂连接组。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5bb1def6eb9b0" data-type="table" data-caption="Tabelle: Organisation der Daten in KISSsoft (1 von 2)"><table border="1" cellpadding="1" cellspacing="1" data-id="5bb1def6eb9b0" height="127" width="146"><tbody><tr><td><span class="menu">KMAT</span></td></tr> <tr><td><span class="menu">M000</span></td></tr> <tr><td><span class="menu">W000</span></td></tr> <tr><td><span class="menu">Z000</span></td></tr> <tr><td></td></tr> <tr><td>(a) 数据库</td></tr></tbody></table><p class="figcaption" data-id="5bb1def6eb9b0">表 9.1：KISSsoft 中数据的组织方式（1/2）</p></div><p class="bodytext"></p><div class="objectWrapper" data-id="5bb1def6eba1b" data-type="table" data-caption="Tabelle: Organisation der Daten in KISSsoft (2 von 2)"><table border="1" cellpadding="1" cellspacing="1" data-id="5bb1def6eba1b" height="187" width="438"><tbody><tr><td colspan="2"><span class="menu">KMAT</span></td></tr> <tr><td rowspan="3"><span class="menu">M000</span></td> <td><span class="menu">F040NORM</span></td></tr> <tr><td><strong>...</strong></td></tr> <tr><td><span class="menu">M090MAT</span></td></tr> <tr><td colspan="2"><span class="menu">W000</span></td></tr> <tr><td colspan="2"><span class="menu">Z000</span></td></tr> <tr><td colspan="2">(b) 表</td></tr></tbody></table><p class="figcaption" data-id="5bb1def6eba1b">表 9.2：KISSsoft 中数据的组织方式（2/2）</p></div><p class="bodytext"></p><p class="bodytext">到目前为止，数据库中已创建了以下表：中心距公差、参考齿廓、孔径标准、螺栓螺纹类型、准双曲面锥齿轮生产工艺、锥齿轮制造工艺、V 带标准、花键标准、链条类型 DIN 8154、链条类型 DIN 8187、链条类型 DIN 8188、胶粘材料、载荷谱、钎焊材料、键标准、多边形标准、半圆键标准、润滑剂、螺栓类型、垫圈标准、多花键标准、滚动轴承、胶粘和钎焊连接材料、材料、齿厚公差、齿形带标准。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">本章内容</p><p class="relateditem"><a href="9044.htm" target="_self">查看数据库条目</a></p><p class="relateditem"><a href="9051.htm" target="_self">管理数据库条目</a></p><p class="relateditem"><a href="10436.htm" target="_self">从数据库工具导入和导出数据</a></p><p class="relateditem"><a href="9060.htm" target="_self">外部表</a></p><p class="relateditem"><a href="10008.htm" target="_self">数据库表描述</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Database Tool and External Tables</h3>   
+                
+<p class="bodytext">In addition to the unique data you input for calculations, you may also encounter recurring data such as a material's characteristics. KISSsoft will store these characteristics in databases. You view and change them with the <span class="menu">database tool</span>, whose use will be explained in the following sections. Tables form the elements of the databases and are contained in your program package as editable ASCII files. The External tables (see chapter <a class="referencetopic-shabschnitt" href="9060.htm" target="_self">External tables</a>) section deals with the setting up and handling of external tables (also called &quot;look-up tables).</p><p class="bodytext">In KISSsoft there are four databases:</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="78"><p class="bodytext"><span class="menu">KMAT</span></p></td> <td width="312"><p class="bodytext">- Materials</p></td></tr> <tr align="left" valign="top"><td width="78"><p class="bodytext"><span class="menu">M000</span></p></td> <td width="312"><p class="bodytext">- Shaft-Hub Connection and Bolts</p></td></tr> <tr align="left" valign="top"><td width="78"><p class="bodytext"><span class="menu">W000</span></p></td> <td width="312"><p class="bodytext">- Shafts and Bearings</p></td></tr> <tr align="left" valign="top"><td width="78"><p class="bodytext"><span class="menu">Z000</span></p></td> <td width="312"><p class="bodytext">- Gears</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext">This table (see Table 9.1) uses the <span class="menu">M000</span> database as an example to show how data is organized in KISSsoft. As shown there, the <span class="menu">F040NORM</span> and <span class="menu">M090MAT</span> tables belong to the group of shaft-hub connections.</p><p class="bodytext"></p><div class="objectWrapper" data-id="5bb1def6eb9b0" data-type="table" data-caption="Tabelle: Organisation der Daten in KISSsoft (1 von 2)"><table border="1" cellpadding="1" cellspacing="1" data-id="5bb1def6eb9b0" height="127" width="146"><tbody><tr><td><span class="menu">KMAT</span></td></tr> <tr><td><span class="menu">M000</span></td></tr> <tr><td><span class="menu">W000</span></td></tr> <tr><td><span class="menu">Z000</span></td></tr> <tr><td></td></tr> <tr><td>(a) Databases</td></tr></tbody></table><p class="figcaption" data-id="5bb1def6eb9b0">9.1 table: Table: How data is organized in KISSsoft (1 of 2)</p></div><p class="bodytext"></p><div class="objectWrapper" data-id="5bb1def6eba1b" data-type="table" data-caption="Tabelle: Organisation der Daten in KISSsoft (2 von 2)"><table border="1" cellpadding="1" cellspacing="1" data-id="5bb1def6eba1b" height="187" width="438"><tbody><tr><td colspan="2"><span class="menu">KMAT</span></td></tr> <tr><td rowspan="3"><span class="menu">M000</span></td> <td><span class="menu">F040NORM</span></td></tr> <tr><td><strong>...</strong></td></tr> <tr><td><span class="menu">M090MAT</span></td></tr> <tr><td colspan="2"><span class="menu">W000</span></td></tr> <tr><td colspan="2"><span class="menu">Z000</span></td></tr> <tr><td colspan="2">(b) tables</td></tr></tbody></table><p class="figcaption" data-id="5bb1def6eba1b">9.2 table: Table: How data is organized in KISSsoft (2 of 2)</p></div><p class="bodytext"></p><p class="bodytext">Up to now, the following tables have been created in the databases: Center distance tolerances, Reference profiles, Bore standard, Thread type bolt, Production process for hypoid bevel gears, Manufacturing process for bevel gears, V-belt standard, Spline standard, Chain type DIN 8154, Chain type DIN 8187, Chain type DIN 8188, Glue materials, Load spectra, Soldering materials, Key standard, Polygon standard, Woodruff key standard, Lubricants, Bolt type, Washer standard, Multi-spline standard, Rolling bearing, Materials for glued and soldered joint, Material, Tooth thickness tolerances, Toothed belt standard.</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">In this chapter</p><p class="relateditem"><a href="9044.htm" target="_self">Viewing database entries</a></p><p class="relateditem"><a href="9051.htm" target="_self">Managing database entries</a></p><p class="relateditem"><a href="10436.htm" target="_self">Import and export data from the database tool</a></p><p class="relateditem"><a href="9060.htm" target="_self">External tables</a></p><p class="relateditem"><a href="10008.htm" target="_self">Description of database tables</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

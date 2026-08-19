@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>任意螺栓位置的多螺栓连接 | Multi-bolted joint with any bolt position</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Multi-bolted joint with any bolt position">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7910');expand('7908');expand('7903');expand('9288');expand('9246');highlight('7920')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7917.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10723.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">任意螺栓位置的多螺栓连接</h3>   
+                
+<p class="bodytext">在多螺栓连接中，您可以在任意位置定义螺栓。它们随后会受到剪切力、两个方向的弯矩和扭转力矩的影响。这些螺栓位置的值在<span class="menu">螺栓位置</span><span style="font-size:10.0pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"></span></span></span>选项卡中。螺栓上的载荷分布是在假设刚性板通过螺栓位置处的弹簧连接的基础上计算的。不通过形心的力必须移动到形心点才能输入。您可以通过输入系数来表示不同的螺栓直径。</p><p class="bodytext">对于要计算校核的螺栓，输入系数 = 1。校核始终针对<span class="menu">基本数据</span>选项卡中指定的螺栓执行。对于布置中的所有其他螺栓，设置一个大于或小于 1 的系数。该系数表示较大或较小螺栓相对于已执行校核的螺栓的横截面状况。例如，对于横截面为两倍大的螺栓，输入系数 = 2<span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">。</span></span></span></span></p><p class="bodytext"></p><p class="bodytext">计算螺栓有以下选项：</p><ul>	<li class="bodytext"><strong>验证所有螺栓</strong><br>所有螺栓的安全系数要么显示在结果概览的表格中，要么显示在报告中。您可以选择最关键的螺栓然后验证它。<br>此选项仅在定义中使用系数 = 1 时才有用。</li>	<li class="bodytext"><strong>验证单个螺栓</strong><br>输入螺栓编号以验证特定螺栓。</li></ul><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd87568b" data-type="image" data-caption="Definitionen der Kräfte und Momente in KISSsoft"><p class="bodytext"><img data-id="5ba0bcd87568b" height="399" src="10832.png" width="483"></p><p class="figcaption" data-id="5ba0bcd87568b">图 42.3：KISSsoft 中力和力矩的定义</p></div><p class="bodytext">在<span class="menu">基本数据</span>选项卡中输入运行数据后，您可以在<span class="menu">螺栓位置</span>选项卡中定义螺栓位置。您可以在表格中输入螺栓位置，也可以从文件导入。产生的轴向力以及传递剪切力所需的夹紧载荷也显示在表格中。</p><p class="bodytext">您还可以定义推力螺栓的额外系数，其中假定压缩直接通过板传递。中性轴可以通过推力螺栓系数移动。在 [80] 中，在关键词“多螺栓板连接”下，例如假定平均压力点为 1/4 板高。</p><p class="bodytext"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">如果未选择<span class="menu">使用最大所需夹紧载荷</span>选项，则使用特定螺栓上的所需夹紧载荷进行计算。</span></span></span></span></p><p class="bodytext">计算所需夹紧载荷时，您还可以考虑为剪切力设置的代数前缀运算符（正负号）。由扭转和剪切力引起的剪切力随后在特定点相加，在其他点相减。仅当您知道剪切力的方向且该力恒定时，才应使用前缀运算符。默认设置是所有剪切力值相加，无论涉及何种力的方向。</p><p class="bodytext">单击尺寸计算按钮 <span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">，在<span class="menu">螺栓位置</span>选项卡的表格（上方，右侧）中显示此窗口，您可以在其中输入不同的配置。所选数量的螺栓随后会以规则间隔自动插入到所选配置中。</span></span></span></p><p class="bodytext">可能的配置有：</p><ul>	<li class="bodytext">直线（值：起点、终点、螺栓数量）</li>	<li class="bodytext">圆（值：圆心、半径、螺栓数量）</li>	<li class="bodytext">圆弧段（值：半径、起始角、结束角、螺栓数量）</li></ul><div class="objectWrapper" data-id="5ba0bcd8757ff" data-type="image" data-caption="Möglichkeiten der Positionsauslegung"><p class="graphic"><img data-id="5ba0bcd8757ff" src="9604.png" style="height:352px; width:400px"></p><p class="figcaption" data-id="5ba0bcd8757ff">图 42.4：位置尺寸计算选项</p></div>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Multi-bolted joint with any bolt position</h3>   
+                
+<p class="bodytext">In a multi-bolted joint you can define bolts in any position. They are then affected by shearing force, a bending moment in two directions, and a torsional moment. The values for these bolt positions are in the <span class="menu">Position of bolt</span><span style="font-size:10.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"></span></span></span> tab. The load distribution on the bolts is calculated on the assumption that rigid plates are connected by springs at the bolt positions. Forces which do not affect the centroid point must be moved to the centroid point so they can be entered. You can represent different bolt diameters by entering a coefficient.</p><p class="bodytext">Enter coefficient = 1 for the bolt for which you want to calculate the proof. The proof is always performed for the bolt specified in the <span class="menu">Basic data</span> tab. For all the other bolts in the arrangement, set a coefficient that is either greater than or less than 1. The coefficient represents the cross-sectional condition of the larger or smaller bolt compared to the bolt for which the proof has been performed. For example, enter coefficient = 2 for a bolt whose cross section is twice the size<span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">.</span></span></span></span></p><p class="bodytext"></p><p class="bodytext">There are the following options for calculating bolts:</p><ul>	<li class="bodytext"><strong>Validation for all bolts</strong><br />	The safeties for all the bolts are displayed either in a table in the results overview or in the report. You can select the most critical bolt and then validate it.<br />	This option is only useful if the factors = 1 are used in the definition.</li>	<li class="bodytext"><strong>Validate a single bolt</strong><br />	Enter the bolt number to validate a specific bolt.</li></ul><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd87568b" data-type="image" data-caption="Definitionen der Kräfte und Momente in KISSsoft"><p class="bodytext"><img data-id="5ba0bcd87568b" height="399" src="10832.png" width="483" /></p><p class="figcaption" data-id="5ba0bcd87568b">Figure 42.3: Definitions of forces and moments in KISSsoft</p></div><p class="bodytext">Once you have entered the operating data in the <span class="menu">Basic data</span> tab, you can define the bolt positions in the <span class="menu">Position of bolt</span> tab. You can either enter the bolt positions in a table or import them from a file. The resulting axial forces, and also the clamp loads required to transmit shearing force, are also displayed in the table.</p><p class="bodytext">You can also define an additional Factor for thrust bolts, in which it is assumed that compression is transmitted directly via the plates. The neutral axis can be moved by the Factor for thrust bolts. In [80], under the keyword &quot;Multi-bolted Plate Joint&quot;, for example, an average pressure point of 1/4 plate height is assumed.</p><p class="bodytext"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">If the <span class="menu">Use maximum required clamp load</span> option is not selected, the required clamp load on the particular bolt is used for the calculation.</span></span></span></span></p><p class="bodytext">When you calculate the required clamp load, you can also take into account the algebraic prefix operator set for the shearing forces. Shearing forces caused by torsion and shearing force are then added at specific points and subtracted at other points. You should only include the prefix operator if you know the direction of the shearing force and if this force is constant. The default setting is that all the shearing force values are added together, no matter which direction of force is involved.</p><p class="bodytext">Click the Sizing button <span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">in the table (above, on the right) in the <span class="menu">Position of bolt</span> tab to display this window, in which you can enter different configurations. The selected number of bolts is then automatically inserted at regular intervals in the selected configuration.</span></span></span></p><p class="bodytext">The possible configurations are:</p><ul>	<li class="bodytext">line (values for: starting point, end point, number of bolts)</li>	<li class="bodytext">circle (values for: center point, radius, number of bolts)</li>	<li class="bodytext">circle segment (values for: radius, starting angle, end angle, number of bolts)</li></ul><div class="objectWrapper" data-id="5ba0bcd8757ff" data-type="image" data-caption="Möglichkeiten der Positionsauslegung"><p class="graphic"><img data-id="5ba0bcd8757ff" src="9604.png" style="height:352px; width:400px" /></p><p class="figcaption" data-id="5ba0bcd8757ff">Figure 42.4: Position sizing options</p></div>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

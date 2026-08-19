@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算过程 | Calculation procedure</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation procedure">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11139');expand('10992');expand('7629');expand('9292');expand('9246');highlight('11141')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11139.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11142.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算过程</h3>   
+                
+<p class="bodytext">要调用不平衡响应分析，请在 KISSsys 中点击「<span class="menu">kSoftSystem 计算单元</span>」。右键单击该单元，然后选择「<span class="menu">ForcedResponse</span>」选项。下一个对话框包含执行计算所需的全部输入。可以从系统中包含带已定义边界条件联轴器的轴列表中选择用于计算的参考轴。然后可以选择计算用不平衡响应图的 X 轴（由此也定义了要运行的计算类型）。此处有两个选项：</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>参考轴速：</strong> 参考轴速度在用户指定的范围内（最小/最大速度）被修改，使用预定义的步数。对整个轴系统中的每个速度进行运动学计算，并计算所有轴的速度。这些速度随后用于计算动态载荷，然后施加到模型上。结果是在指定的参考位置上轴的不平衡响应。</li>	<li class="bodytext"><strong>参考轴的Y坐标：</strong> 在这种情况下，参考轴的长度被划分为预定义的若干段，并针对指定速度进行不平衡响应计算。这样便可得到该速度下参考轴的精确形状。</li></ul><p class="bodytext">然后，还可以选择用于计算接触刚度的计算方法，这与模态分析计算类似。<br><br>还可以考虑速度对滚动轴承刚度的影响（但仅适用于具有内部几何参数的轴承）。如果选择此选项，则对每个速度进行静力计算，并相应调整动态分析中使用的轴承刚度。<br><br>最后，还可以在此对话框中定义扭转、轴向和弯曲振动的阻尼。请注意，轴承的黏性阻尼必须在轴计算中为每个轴承单独定义（单位可自由定义），或在 KISSsys 的轴承属性中定义（SI 单位）。</p><p class="bodytext"></p><p class="bodytext"></p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation procedure</h3>   
+                
+<p class="bodytext">To call the unbalance response analysis, click on a <span class="menu">kSoftSystem calculation element</span> in KISSsys. Right-click on the element, and then select the <span class="menu">ForcedResponse</span> option. The next dialog contains all the inputs required to perform the calculation. You can select the reference shaft for the calculation from a list of shafts in the system that include a coupling with a defined boundary condition. You can then select the X-axis of the unbalance response diagram for the calculation (and therefore also define the type of calculation to run). Two options are available here:</p><p class="bodytext"></p><ul>	<li class="bodytext"><strong>Reference shaft speed:</strong> The reference shaft speed is modified within the range you specified (min/max speed) with the predefined number of steps. A kinematic calculation is performed for each speed in the entire shaft system and the speed of all the shafts is calculated. These speeds are then used to calculate the dynamic loads, which are then applied to the model. The result is the unbalance response in the specified reference position on the shaft.</li>	<li class="bodytext"><strong>Y-coordinate of the reference shaft:</strong> In this case, the length of the reference shaft is subdivided into the predefined number of sections, and the unbalance response calculation is performed for the specified speed. This results in the exact shape of the reference shaft at this speed.</li></ul><p class="bodytext">You can then also select the calculation method you want to use to calculate contact stiffness, which is similar to the modal analysis calculation.<br /><br />The effect of speed on the stiffness of rolling bearings can also be taken into account (but only for bearings with internal geometry). If this option is selected, a static calculation is performed for each speed, and the bearing stiffness used in the dynamic analysis is adjusted accordingly.<br /><br />Finally, you can also define the damping for torsion, axial and bending vibration in this dialog. Note that the viscous damping of bearings must be defined separately for each bearing in the shaft calculation (freely definable units) or in the bearing's properties in KISSsys (SI units).</p><p class="bodytext"></p><p class="bodytext"></p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

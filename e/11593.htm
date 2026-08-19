@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>热功率额定值 | Thermal rating</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Thermal rating">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11432');expand('11646');expand('11414');expand('9246');highlight('11593')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11432.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11433.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">热功率额定值</h3>   
+                
+<p class="bodytext">您可以使用热功率额定值来计算特定齿轮箱中的热水平。已实现了几种不同的方法，使您能够根据 ISO/TR 14179 标准的第 1 部分和第 2 部分选择执行计算的方式。热分析可分为两部分：功率损失和散热。也可以考虑外部冷却器。功率损失和散热可以分为几个部分，以便考虑所有单个齿轮箱部件的影响。功率损失可以分为两个主要组成部分：与载荷相关的和与载荷无关的。当齿轮箱运行时，通常这两种损失都存在。功率损失还可以细分为齿轮、轴承和密封件等齿轮箱元件。对于齿轮，考虑啮合损失和搅油损失；对于轴承，考虑滚动摩擦和滑动摩擦；对于密封件，考虑密封摩擦。在某些情况下，必须谨慎对待结果，因为所使用的计算方法可能无法完全支持该几何类型。散热可以分为通过箱体、基础和旋转部件（输入/输出轴和联轴器）的散热以及冷却油流量。对于给定的润滑剂温度、冷却器功率和输入功率，可以轻松计算齿轮箱的总效率和总散热能力。您还可以指定这三个条目中的两个，并计算第三个参数的最优值，该值就是使齿轮箱达到最佳热水平的值。换句话说，就是散热等于功率损失产生的热量时的值。标准的第 1 部分和第 2 部分在计算值的输入方式上有所不同。第 1 部分的主要优点是，它使您能够为通过箱体的散热输入自己的传热系数（如果箱体具有非常特殊的形状），而在第 2 部分中，该系数使用箱体形状的近似值来计算。本部分的主要优点是，在计算散热时它还考虑了散热片、基础和旋转部件。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Thermal rating</h3>   
+                
+<p class="bodytext">You can use the thermal rating to calculate the heat level in a particular gear unit. Several different methods have been implemented to enable you to select how the calculation is to be performed, according to the ISO/TR 14179 standard, Part 1 and Part 2. Thermal analysis can be split into two sections: power loss and heat dissipation. An external cooler can also be taken into account. Power loss and heat dissipation can be split up into several sections, to enable the effect of all the individual gear unit components to be taken into consideration. Power loss can be split into two main components: load-dependent and non-load-dependent. Both types of loss are usually present when a gear unit is running. Power loss can also be subdivided into gear unit elements such as gears, bearings and seals. Meshing and churning losses are taken into account for gears whereas rolling and sliding friction are taken into account for bearings and seal friction is taken into account for seals. In some cases, the results must be treated with caution, because the calculation methods used may not fully support the geometry type. Heat dissipation can be categorized as heat dissipation through the housing, foundation and rotating parts (input/output shafts and couplings) and cooling oil flow. A gear unit's total efficiency and total heat dissipation capacity for a given lubricant temperature, cooler power and input power can be calculated with ease. You can also specify two of these three entries and calculate the optimum value for the third parameter, which is the value with which you achieve the best heat level for the gear unit. In other words, this is the value at which the dissipated heat equals the heat generated through the power loss. Part 1 and Part 2 of the standard differ in the way the calculation values are input. The main benefit of Part 1 is that it enables you to enter your own heat transfer coefficients for heat dissipation through the housing (if it has a very specific shape), whereas, in Part 2, this coefficient is calculated using an approximation of the shape of the housing. The main benefit of this part is that it also takes fins, foundations and rotating parts into consideration when calculating heat dissipation.</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

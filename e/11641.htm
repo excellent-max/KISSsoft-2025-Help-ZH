@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>载荷谱含负值分量 | Load spectra with negative bins</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Load spectra with negative bins">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8913');expand('8718');expand('7708');expand('9286');expand('9246');highlight('11641')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8917.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11258.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">载荷谱含负值分量</h3>   
+                
+<p class="bodytext">带有负载荷区间（T &lt; 0 和/或 n &lt; 0）的载荷谱可以如下计算。</p><p class="bodytext"><br><strong>重要提示：</strong></p><ul>	<li class="bodytext">如果非工作齿面承受载荷，则该载荷区间被视为负区间。</li>	<li class="bodytext"><span style="font-size:10.0pt"><span style='font-family:"Arial",sans-serif'><span style="color:#575757">这不适用于惰轮的点蚀安全系数计算（在行星齿轮级的情况下，它仅适用于太阳轮和内齿轮；在行星轮的情况下，假设两个齿面始终承受载荷）。</span></span></span></li>	<li class="bodytext"><span style="font-size:11pt"><span style='font-family:"Calibri",sans-serif'><span style="font-size:10.0pt"><span style='font-family:"Arial",sans-serif'><span style="color:#575757">在计算齿根安全系数时，这仅适用于交变弯曲系数为 Y<sub>M</sub>=1.0 的区间。</span></span></span></span></span></li></ul><div class="objectWrapper" data-id="68a5b3a8f3b74" data-type="image" data-caption="Bewertung von Lastkollektiv-Elementen"><p class="bodytext"><img data-id="68a5b3a8f3b74" height="487" src="Z000_damageFlank.png" width="570"></p><p class="figcaption" data-id="68a5b3a8f3b74">图 15.10：载荷谱区间的评估</p></div><p class="bodytext"></p><p class="bodytext">在 <span class="menu">齿根和齿面强度计算详情 </span>中，可以在 <span class="menu"> 强度 </span>选项卡下选择和定义以下选项：</p><ul>	<li class="bodytext">用于计算点蚀安全：<ul>		<li class="bodytext">将所有负载荷区间按正区间评估（与之前相同）</li>		<li class="bodytext">仅考虑右齿面</li>		<li class="bodytext">仅考虑左齿面</li>		<li class="bodytext">计算两种情况，并记录较不利的情况</li>	</ul>	</li>	<li class="bodytext">用于计算齿根安全：<ul>		<li class="bodytext">将所有负载荷区间按正区间评估（与之前相同）</li>		<li class="bodytext">将负载荷区间的齿根应力增大 1/0.7</li>		<li class="bodytext">将正载荷区间的齿根应力增大 1/0.7</li>		<li class="bodytext">计算两种情况，并记录更符合实际的情况</li>	</ul>	</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Load spectra with negative bins</h3>   
+                
+<p class="bodytext">Load spectra with negative load bins (T &lt; 0 and/or n &lt; 0) can be calculated as follows.</p><p class="bodytext"><br /><strong>IMPORTANT:</strong></p><ul>	<li class="bodytext">A load bin is considered to be negative if the non-working flank is placed under load.</li>	<li class="bodytext"><span style="font-size:10.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#575757">This does not apply for the calculation of the pitting safety for idler gears (in the case of planetary gear stages, it only applies to the sun and internal gear; in the case of planets, it is assumed that both flanks are always under load).</span></span></span></li>	<li class="bodytext"><span style="font-size:11pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-size:10.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#575757">When calculating the root safety, this is only applied to bins where the alternating bending factor is Y<sub>M</sub>=1.0.</span></span></span></span></span></li></ul><div class="objectWrapper" data-id="68a5b3a8f3b74" data-type="image" data-caption="Bewertung von Lastkollektiv-Elementen"><p class="bodytext"><img data-id="68a5b3a8f3b74" height="487" src="Z000_damageFlank.png" width="570" /></p><p class="figcaption" data-id="68a5b3a8f3b74">Figure 15.10: Evaluation of load spectra bins</p></div><p class="bodytext"></p><p class="bodytext">Under <span class="menu">Details for the root and flank strength calculation </span> in the <span class="menu"> Rating </span>tab the following options can be selected and defined:</p><ul>	<li class="bodytext">For calculating pitting safety	<ul>		<li class="bodytext">Evaluate all negative load bins as positive (as up to now)</li>		<li class="bodytext">Consider only right flank</li>		<li class="bodytext">Consider only left flank</li>		<li class="bodytext">Calculate both cases and document the less favorable case</li>	</ul>	</li>	<li class="bodytext">For calculating root safety	<ul>		<li class="bodytext">Evaluate all negative load bins as positive (as up to now)</li>		<li class="bodytext">Increase tooth root stress for negative load bins by 1/0.7</li>		<li class="bodytext">Increase tooth root stress for positive load bins by 1/0.7</li>		<li class="bodytext">Calculate both cases and document the more realistic case</li>	</ul>	</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

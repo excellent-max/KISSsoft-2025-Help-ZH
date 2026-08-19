@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>交变弯曲系数 | Alternating bending factor</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Alternating bending factor">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8720');expand('7708');expand('9286');expand('9246');highlight('8698')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8689.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11636.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">交变弯曲系数</h3>   
+                
+<p class="bodytext">齿根强度计算仅用于计算齿根上的脉动载荷。但在某些情况下，齿根会受到交变弯曲载荷（例如行星齿轮装置中的行星齿轮）。在这种情况下，您可以通过选择 <span class="menu">自定义输入</span> 或 <span class="menu">自定义输入，按载荷谱元素</span> 方法来更改单个齿轮的交变弯曲系数。除了直接传递这些值之外，还可以选择 <span class="menu">按 ISO 6336-3 附录 B 计算</span> 方法来计算该系数。为此，您必须打开 <span class="menu">强度</span> 选项卡，转到载荷谱部分，并为每个齿轮输入 f<sub class="subscript">low</sub> 和 f<sub class="subscript">high</sub> 参数。f<sub class="subscript">high</sub> 必须始终具有 100% 的固定默认值。</p><p class="bodytext">ISO 6336-5:2003 第 5.3.3 节和 DIN 3990-5 第 4.3 节规定，纯循环载荷下的 Y<sub class="subscript">M</sub> 值为 0.7。在 ISO 6336-3:2006 附录 B 中，惰轮和行星齿轮的应力比 <em class="emphasis">R</em> 通过以下公式加以考虑：</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1" style="height:174px; width:408px">	<tbody>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img height="77" src="8699.png" style="width: 156px; height: 74px;" width="152"></p>			</td>			<td width="78">			<p class="bodytext">(12.16)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="8700.png" style="height:67px; width:141px"></p>			</td>			<td width="78">			<p class="bodytext">(12.17)</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">f</em><sub class="subscript">high</sub></p>			</td>			<td width="390">			<p class="bodytext">承受较高载荷的齿面侧的载荷（必须始终具有 100% 的固定默认值）</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">f</em><sub class="subscript">low</sub></p>			</td>			<td width="390">			<p class="bodytext">承受较低载荷的齿面侧的载荷</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">M</em></p>			</td>			<td width="390">			<p class="bodytext">无量纲数，取决于</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"></p>			</td>			<td width="390">			<p class="bodytext">处理类型和载荷类型</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"></p>			</td>			<td width="390">			<p class="bodytext">（参见 ISO 6336:2006-3 附录 B 中的表 B.1）</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">R</em></p>			</td>			<td width="390">			<p class="bodytext">应力比</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">Y</em> <sub class="subscript">M</sub></p>			</td>			<td width="390">			<p class="bodytext">交变弯曲系数</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcda9397f" data-type="table" data-caption="Mittleres Spannungsverhältnis M entsprechend Table B.1 - Mean stress ratio in ISO 6336:2006-3"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcda9397f">	<tbody>		<tr align="left" valign="top">			<td width="168">			<p class="tableheading">处理</p>			</td>			<td width="186">			<p class="tableheading">耐久强度</p>			</td>			<td width="114">			<p class="tableheading">静强度校核系数</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">钢</p>			</td>			<td width="186">			<p class="bodytext"></p>			</td>			<td width="114">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">渗碳淬火</p>			</td>			<td width="186">			<p class="bodytext">0.8 - 0.15 Y<sub class="subscript">S</sub></p>			</td>			<td width="114">			<p class="bodytext">0.7</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">渗碳淬火并喷丸</p>			</td>			<td width="186">			<p class="bodytext">0.4</p>			</td>			<td width="114">			<p class="bodytext">0.6</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">渗氮</p>			</td>			<td width="186">			<p class="bodytext">0.3</p>			</td>			<td width="114">			<p class="bodytext">0.3</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">火焰/感应淬火</p>			</td>			<td width="186">			<p class="bodytext">0.4</p>			</td>			<td width="114">			<p class="bodytext">0.6</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">未表面硬化钢</p>			</td>			<td width="186">			<p class="bodytext">0.3</p>			</td>			<td width="114">			<p class="bodytext">0.5</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">铸钢</p>			</td>			<td width="186">			<p class="bodytext">0.4</p>			</td>			<td width="114">			<p class="bodytext">0.6</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcda9397f">表 15.13：ISO 6336:2006-3 中表 B.1 - 平均应力比 - 规定的平均应力比 M</p></div><p class="bodytext">根据 Linke [24]，交变弯曲系数（在该文献中记为 Y <sub class="subscript">A</sub>）如图 14.19 所示确定。对于塑料，Niemann [7] 建议层压织物取 0.8，PA（聚酰胺）和 POM（聚甲醛）取 0.667。</p><div class="objectWrapper" data-id="5ba0bcda939e6" data-type="image" data-caption="Wechselbiegungsfaktor nach Linke [24]"><p class="bodytext"><img data-id="5ba0bcda939e6" height="515" src="12-wechselbiegung_linke.png" width="494"></p><p class="figcaption" data-id="5ba0bcda939e6">图 15.11：符合 Linke [24] 的交变弯曲系数</p></div><p class="hint">注意</p><p class="bodytext">Y<sub>M</sub> 不是标准化的，也不属于 ISO 6336-3 方法 B 的一部分。您应确保所使用的值有经验或试验作为依据。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Alternating bending factor</h3>   
+                
+<p class="bodytext">The tooth root strength calculation is used solely to calculate pulsating load on the tooth root. However, in some cases, the tooth root is subject to alternating bending loads (e.g. a planet gear in planetary gear units). In this scenario you can change the alternating bending coefficient of individual gears by selecting either the <span class="menu">Own input</span> or <span class="menu">Own input, per load spectrum element</span> methods. As an alternative to transferring these values directly, select the <span class="menu">Calculate in accordance with ISO 6336-3 Annex B</span> method to calculate the coefficient. To do this, you must then open the <span class="menu">Rating</span> tab, go to the Load spectrum section, and input the f<sub class="subscript">low</sub> and f<sub class="subscript">high</sub> parameters for each gear. f<sub class="subscript">high</sub> must always have the fixed default value of 100%.</p><p class="bodytext">ISO 6336-5:2003, section 5.3.3 and DIN 3990-5, section 4.3, state 0.7 as the value Y<sub class="subscript">M</sub> for pure cyclic load. In ISO 6336-3:2006, Annex B, the stress ratio <em class="emphasis">R</em> for idler and planetary gears is taken into account by using this formula:</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1" style="height:174px; width:408px">	<tbody>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img height="77" src="8699.png" style="width: 156px; height: 74px;" width="152" /></p>			</td>			<td width="78">			<p class="bodytext">(12.16)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="8700.png" style="height:67px; width:141px" /></p>			</td>			<td width="78">			<p class="bodytext">(12.17)</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">f</em><sub class="subscript">high</sub></p>			</td>			<td width="390">			<p class="bodytext">Load on the flank side that is subject to the higher load (must always have the fixed default value of 100%)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">f</em><sub class="subscript">low</sub></p>			</td>			<td width="390">			<p class="bodytext">Load on the flank side that is subject to the lower load</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">M</em></p>			</td>			<td width="390">			<p class="bodytext">Dimensionless number depending</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"></p>			</td>			<td width="390">			<p class="bodytext"> on the type of treatment and load type</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"></p>			</td>			<td width="390">			<p class="bodytext">(see Table B.1 in ISO 6336:2006-3, Annex B)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">R</em></p>			</td>			<td width="390">			<p class="bodytext">Stress ratio</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="102">			<p class="bodytext"><em class="emphasis">Y</em> <sub class="subscript">M</sub></p>			</td>			<td width="390">			<p class="bodytext">Alternating bending factor</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcda9397f" data-type="table" data-caption="Mittleres Spannungsverhältnis M entsprechend Table B.1 - Mean stress ratio in ISO 6336:2006-3"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcda9397f">	<tbody>		<tr align="left" valign="top">			<td width="168">			<p class="tableheading">Treatment</p>			</td>			<td width="186">			<p class="tableheading">Endurance strength</p>			</td>			<td width="114">			<p class="tableheading">Coefficient for static proof</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">Steels</p>			</td>			<td width="186">			<p class="bodytext"></p>			</td>			<td width="114">			<p class="bodytext"></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">case-hardened</p>			</td>			<td width="186">			<p class="bodytext">0.8 - 0.15 Y<sub class="subscript">S</sub></p>			</td>			<td width="114">			<p class="bodytext">0.7</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">Case-hardened and shot peened</p>			</td>			<td width="186">			<p class="bodytext">0.4</p>			</td>			<td width="114">			<p class="bodytext">0.6</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">Nitrided</p>			</td>			<td width="186">			<p class="bodytext">0.3</p>			</td>			<td width="114">			<p class="bodytext">0.3</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">Flame/induction-hardened</p>			</td>			<td width="186">			<p class="bodytext">0.4</p>			</td>			<td width="114">			<p class="bodytext">0.6</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">Not surface-hardened steel</p>			</td>			<td width="186">			<p class="bodytext">0.3</p>			</td>			<td width="114">			<p class="bodytext">0.5</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="168">			<p class="bodytext">Cast steel</p>			</td>			<td width="186">			<p class="bodytext">0.4</p>			</td>			<td width="114">			<p class="bodytext">0.6</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcda9397f">Table 15.13: Mean stress ratio M as specified in Table B.1 - Mean Stress Ratio - in ISO 6336:2006-3</p></div><p class="bodytext">According to Linke [24], the alternating bending factor (described there as Y <sub class="subscript">A</sub>) is determined as shown in Figure 14.19. For plastics, Niemann recommends [7] 0.8 for laminated fabric and 0.667 for PA (polyamide) and POM (polyoxymethylene).</p><div class="objectWrapper" data-id="5ba0bcda939e6" data-type="image" data-caption="Wechselbiegungsfaktor nach Linke [24]"><p class="bodytext"><img data-id="5ba0bcda939e6" height="515" src="12-wechselbiegung_linke.png" width="494" /></p><p class="figcaption" data-id="5ba0bcda939e6">Figure 15.11: Alternating bending factor in accordance with Linke [24]</p></div><p class="hint">Note</p><p class="bodytext">Y<sub>M</sub> is not standardized and is not part of ISO 6336-3 Method B. You should ensure that the values used are backed up by experience or tests.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

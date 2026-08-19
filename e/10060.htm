@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿轮材料 | Material of gears</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Material of gears">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10008');expand('9042');expand('9272');expand('9246');highlight('10060')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10059.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10010.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">齿轮材料</h3>   
+                
+<ul><li class="bodytext"><strong>注释：</strong> 供用户自行使用的文本字段。</li> <li class="bodytext"><strong>硬度曲线文件：</strong>数据库条目引用外部表（参见“<a class="referencetopic-shabschnitt" href="9060.htm" target="_self">外部表</a>”一章）。硬度曲线表的文件名以 Z22-???.dat 开头。材料实测硬度值将在模块 Z22 中以图形方式显示，但不参与计算。下面举例说明如何在外部表中创建这种硬度曲线。</li></ul><p class="bodytext"><img height="457" src="08-hardnesscurve.png" width="541"></p><p class="bodytext">图 9.5：硬度曲线定义示例 (Z22-100.dat)</p><ul><li class="bodytext"><strong>Wöhler 图线文件：</strong>数据库条目引用外部表（参见「<a class="referencetopic-shabschnitt" href="9060.htm" target="_self">外部表</a>」章节）。S-N 曲线（Wöhler 曲线）的表以 .dat 开头。对于塑料材料，<br> 必须在此处输入文件名。<strong>该文件包含计算中使用的材料数据</strong>（Wöhler 曲线、杨氏模量等）。对于金属材料，<br> 也可以在此处输入文件名。<strong>该文件包含计算中使用的弯曲强度和赫兹接触压力的 S-N 曲线（Wöhler 曲线）</strong>。如果设置了「<span class="menu">按自定义 Wöhler 曲线计算</span>」标志，则这些曲线将用于计算。</li></ul><p class="bodytext"><img height="312" src="09-woehlerlinien_datei.png" width="538"></p><p class="bodytext">图 9.6：金属材料应力-寿命曲线（S-N 曲线，Woehler 曲线）文件示例</p><ul><li class="bodytext"><strong>齿根疲劳极限 (ISO, DIN/ AGMA 2101) </strong>σ<sub class="subscript">Flim</sub><strong>/s</strong><sub class="subscript">at</sub><strong>, 齿面疲劳极限 (ISO, DIN AGMA 2101) </strong>σ<sub class="subscript">Hlim</sub><strong>/s</strong><sub class="subscript">ac</sub><strong>: </strong>[N/mm<span class="superscript">2</span>] 齿根/齿面疲劳极限值在 DIN 3990 或 ISO 6336 Part 5 中规定。</li> <li class="bodytext"><strong>齿根疲劳极限 (AGMA 2001) s</strong><sub class="subscript">at</sub><strong>, 齿面疲劳极限 s</strong><sub class="subscript">ac</sub><strong> (AGMA 2001): </strong>[lbf/in<span class="superscript">2</span>] 基于 AGMA 2001 的强度计算。</li> <li class="bodytext"><strong>齿根/齿面平均粗糙度高度 R</strong><sub class="subscript">zF</sub><strong>/ R</strong><sub class="subscript">zH</sub><strong>: </strong>[μm]</li> <li class="bodytext"><strong>热接触系数 B</strong><sub class="subscript">M</sub><strong>: </strong>[N/mm/s<span class="superscript">0.5</span>/K] 该系数用于计算闪温系数。可在 DIN 3990，第 4 部分，公式 3.11、4.17、4.18 和 4.19 中找到更多信息。对于最常用的材料，其值为 13.795。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Material of gears</h3>   
+                
+<ul><li class="bodytext"><strong>Comment:</strong> Text field for your own use.</li> <li class="bodytext"><strong>File for hardness curve: </strong>The database entries refer to external tables (see chapter <a class="referencetopic-shabschnitt" href="9060.htm" target="_self">External tables</a>). Tables for the hardness curve begin with Z22-???.dat. The material's measured hardness value, to be displayed as a graphic in module Z22. Does not influence the calculation. Here is an example of how to create this type of hardness curve in an external table.</li></ul><p class="bodytext"><img height="457" src="08-hardnesscurve.png" width="541" /></p><p class="bodytext">Figure 9.5: Example of a hardness curve definition (Z22-100.dat)</p><ul><li class="bodytext"><strong>Woehler line file: </strong>The database entries refer to external tables (see chapter <a class="referencetopic-shabschnitt" href="9060.htm" target="_self">External tables</a>). Tables for S-N curves (Woehler lines) begin with .dat.<br /> You <strong>must input a file name for plastics</strong> here. The file contains the material data (Woehler lines, Young's modulus, etc.) used in the calculation.<br /> <strong>For metallic materials </strong>you can also input a file name here. The file contains the S-N curves (Woehler lines) for bending strength and for Hertzian pressure that are used in the calculation, if the <span class="menu">Calculate with own Woehler line</span> flag is set.</li></ul><p class="bodytext"><img height="312" src="09-woehlerlinien_datei.png" width="538" /></p><p class="bodytext">Figure 9.6: Example of a file with S-N curves (Woehler lines) for a metallic material</p><ul><li class="bodytext"><strong>Endurance limit root (ISO, DIN/ AGMA 2101) </strong>σ<sub class="subscript">Flim</sub><strong>/s</strong><sub class="subscript">at</sub><strong>, Endurance limit flank (ISO, DIN AGMA 2101) </strong>σ<sub class="subscript">Hlim</sub><strong>/s</strong><sub class="subscript">ac</sub><strong>: </strong>[N/mm<span class="superscript">2</span>] Endurance limit values specified in DIN 3990 or ISO 6336 Part 5.</li> <li class="bodytext"><strong>Endurance limit root (AGMA 2001) s</strong><sub class="subscript">at</sub><strong>, Endurance limit flank s</strong><sub class="subscript">ac</sub><strong> (AGMA 2001): </strong>[lbf/in<span class="superscript">2</span>] Strength calculation based on AGMA 2001.</li> <li class="bodytext"><strong>Average roughness height root/flank R</strong><sub class="subscript">zF</sub><strong>/ R</strong><sub class="subscript">zH</sub><strong>: </strong>[μm]</li> <li class="bodytext"><strong>Thermal contact coefficient B</strong><sub class="subscript">M</sub><strong>: </strong>[N/mm/s<span class="superscript">0.5</span>/K] This coefficient is needed to calculate the flash factor. You will find more information about this in DIN 3990, Part 4, Equations 3.11, 4.17, 4.18 and 4.19. For the most commonly used materials, it is 13.795.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

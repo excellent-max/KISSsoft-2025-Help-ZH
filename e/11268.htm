@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>案例 I，试验齿轮不变时的试验结果 | Case I, test results for unchanged test gears</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Case I, test results for unchanged test gears">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11267');expand('11254');expand('9291');expand('9246');highlight('11268')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11267.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11270.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">案例 I，试验齿轮不变时的试验结果</h3>   
+                
+<p class="bodytext">这类试验结果通常在试验台上测量。试验齿轮的几何形状必须在单独的 KISSsoft .Z12 文件中定义，该文件可在用户界面中选择（<span class="menu">试验数据</span> 选项卡）。在这种情况下，只能使用 1 种润滑状态，并且必须在试验文件中定义。</p><p class="bodytext">在输入试验结果数据之前，必须为试验齿轮创建并选择一个文件。用户界面中的表格会根据齿轮文件中的设置进行调整。试验文件中失效齿轮的材料特性并不重要，因为这些特性会被<span class="menu">基本数据</span>和<span class="menu">试验数据</span>选项卡中设置的用户定义值覆盖。失效齿轮所选材料必须为塑料（例如 PA66 (VDI 2736)）。必须为将要啮合的配对齿轮所用材料设置正确的材料特性。</p><p class="bodytext">必须为所选试验文件指定一个失效齿轮。如果所选试验文件中的两种材料均为塑料，用户可以选择齿轮 1 或齿轮 2。在其他情况下，系统会自动设置失效齿轮。失效只能发生在齿轮 1 或齿轮 2 上，不能同时发生在两者上。</p><p class="bodytext"><br>以下限制适用于试验文件：</p><ul>	<li class="bodytext">必须选择塑料齿轮的计算方法</li>	<li class="bodytext">必须取消选择 <span class="menu">计算根部/齿面温度</span> 选项（适用于润滑脂润滑和干运行）</li>	<li class="bodytext">不进行载荷谱计算</li>	<li class="bodytext">至少有 1 个齿轮必须由塑料材料制成</li>	<li class="bodytext"><span class="menu">额定值</span> 选项卡必须可见。</li></ul><p class="bodytext">要计算允许的齿根和/或齿面强度，必须具备以下试验结果：</p><ul>	<li class="bodytext">失效齿轮的扭矩、转速和失效循环次数。根据 VDI 2736，所有试验都应运行至失效</li>	<li class="bodytext">失效齿轮的环境温度、齿根温度和齿面温度（取决于“失效原因”），或油润滑时的油温。</li>	<li class="bodytext">如果配对齿轮为塑料，且失效原因设置为 <span class="menu">齿面</span>，还必须设置配对齿轮的齿面温度。</li>	<li class="bodytext">“失效原因”类型可设置为无失效、齿根、齿面或磨损。</li></ul><p class="bodytext">试验齿轮许用值表也可以从文件导入。不过，必须使用合适的文件结构（参见示例文件 K17_testResults.dat）。</p><p class="bodytext">控制允许的齿根和/或齿面强度计算的其他设置位于<span class="menu">计算设置</span>中的<span class="menu">试验数据</span>选项卡上。第 1.2 节和第 1.3 节对各个参数有更详细的说明。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Case I, test results for unchanged test gears</h3>   
+                
+<p class="bodytext">Such test results are usually measured on test rigs. Geometry of the test gears must be defined in a separate KISSsoft .Z12 file, which can be selected on the user interface (<span class="menu">Test data</span> tab). In this case, only 1 lubrication regime is possible and must be defined in test file.</p><p class="bodytext">Before test result data is entered in the table, a file must be created and selected for the test gear. The table in the user interface is adjusted to suit the test, using the settings in the gear file. The material characteristics of the failed gear in the test file are not important, as they are overwritten with user-defined values set in the <span class="menu">Basic data</span> and <span class="menu">Test data</span> tabs. The selected material of the failed gear must be a plastic (for example, PA66 (VDI 2736)). The correct material characteristics must be set for the material from which the counter gear that is to be mated is made.</p><p class="bodytext">A failed gear must be specified for the selected test file. If both materials from the selected test file are a type of plastic, the user can select either gear 1 or gear 2. In other cases, the failed gear is set automatically. It is only possible to have failure on either gear 1 or gear 2, not on both gears simultaneously.</p><p class="bodytext"><br />The following limitations apply for the test files:</p><ul>	<li class="bodytext">Calculation method for plastic gears must be selected</li>	<li class="bodytext">The <span class="menu">Calculate temperatures root/flank</span> option must be deselected (for grease and dry runs)</li>	<li class="bodytext">Calculation without load spectrum</li>	<li class="bodytext">At least 1 gear must be made of plastic material</li>	<li class="bodytext">The <span class="menu">Rating</span> tab must be visible.</li></ul><p class="bodytext">To calculate the permissible root and/or flank strength, the following test results must be available:</p><ul>	<li class="bodytext">Torque, speed and cycles to failure of the failed gear. According to VDI 2736, all the tests should run until failure</li>	<li class="bodytext">Environmental, root and flank temperature (dependent on the &quot;failure cause&quot;) or oil temperature (for oil lubrication) of the failed gear.</li>	<li class="bodytext">If the mating gear is plastic, and the failure cause is set to <span class="menu">flank</span>, the mating gear's flank temperature must also be set.</li>	<li class="bodytext">The type of &quot;failure cause&quot; can be set to no failure, root, flank or wear.</li></ul><p class="bodytext">The test gear allowances table can also be imported from a file. However, you must use a suitable file structure (see example file K17_testResults.dat).</p><p class="bodytext">Additional settings that control the calculation of permissible root and/or flank strength are available in the <span class="menu">Test data</span> tab in <span class="menu">Calculation settings</span>. Sections 1.2 and 1.3 have more detailed explanations of the individual parameters.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

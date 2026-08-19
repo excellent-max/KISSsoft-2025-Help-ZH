@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>节点密度 | Node density</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Node density">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11650');expand('8290');expand('8183');expand('9287');expand('9246');highlight('10106')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11506.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10747.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">节点密度</h3>   
+                
+<p class="bodytext">用户可以影响用于计算梁的节点数量。如果进行线性计算，这不会对结果产生影响，除了线弯矩会分布在现有节点上之外。梁元件在线性模型中无论长度如何都提供精确解。</p><p class="bodytext">影响节点密度的原因，一方面是为了加快计算速度（例如在 KISSsys 中进行的系列计算），另一方面是为了确保弯曲线显示及相应报告的精度。</p><p class="bodytext">节点密度影响非线性梁元件的精度。因此，与线性计算相比，非线性计算中两节点之间的最大距离会减半，无论预定义的值是多少。</p><p class="bodytext">节点密度仅影响采用有限差分法建模的元件。采用传递矩阵法建模的元件不依赖网格（见"<a class="referencetopic-shabschnitt" href="10967.htm" target="_self">使用 FEM Solver</a>"章）。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Node density</h3>   
+                
+<p class="bodytext">The user can influence how many nodes are used to calculate a beam. If you are performing a linear calculation, this has no effect on the result, apart from line moments which are distributed across the existing nodes. The beam elements supply the exact solution in the linear model independently of the length.</p><p class="bodytext">Reasons for influencing the density of nodes are, on one hand, to speed up calculations (for example, in series calculations in KISSsys) and, on the other hand, to ensure the accuracy of the display of the bending lines and the corresponding report.</p><p class="bodytext">The density of the nodes affects the accuracy of non-linear beam elements. For this reason, the maximum distance between two nodes for non-linear calculations, when compared with a linear calculation, is halved, no matter what value is predefined.</p><p class="bodytext">The node density affects only the elements that are modeled with the finite differences method. Elements that are modeled with the transfer matrix method, are not grid-dependent (see chapter <a class="referencetopic-shabschnitt" href="10967.htm" target="_self">Use FEM Solver</a>).</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>根据齿形计算成形直径 | Calculate form diameters from tooth form</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculate form diameters from tooth form">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8893');expand('8865');expand('7708');expand('9286');expand('9246');highlight('8896')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8893.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10093.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">根据齿形计算成形直径</h3>   
+                
+<p class="bodytext">齿形计算模拟制造过程。在此过程中，它会计算齿根中的有效根切。选择<span class="menu">根据齿形</span><span class="menu">计算成形直径</span>选项，以在每次计算运行中计算齿形、确定存在的任何根切并将其纳入计算。随后使用它来计算端面重合度以及齿根成形圆和齿顶成形圆（生成直径）。由于 KISSSOFT 已能自动正确计算凸角和根切情况下的成形直径，我们建议您不再使用此选项。</p><p class="bodytext">您可以选择将齿根成形圆、齿顶成形圆或这两个值都包含在齿形中。到目前为止，齿条的成形直径尚未取自齿形。</p><p class="bodytext"></p><p class="hint">注意：</p><p class="bodytext">如果选择了此选项并且已预定义齿廓修形，则计算出的成形直径将位于修形的起点处。这通常会导致非常小的端面重合度 εα.i 和 εα.e。这是正确的，因为修形起点处的齿形不再与渐开线完全匹配。然而，为告知用户端面重合度过低而显示的消息相当令人困惑。如果齿廓修形尺寸设置正确，使承载啮合涉及整个齿高，则可以忽略此消息。这是因为承载状态下的端面重合度对应于理论端面重合度 εα。一般来说，我们建议您不要将此选项与齿廓修形一起使用。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculate form diameters from tooth form</h3>   
+                
+<p class="bodytext">The tooth form calculation simulates the manufacturing process. In doing so it calculates the effective undercut in the tooth root. Select the <span class="menu">Calculate form diameter from</span> <span class="menu">tooth form</span> option to calculate the tooth form in every calculation run, define any undercut that is present and include it in the calculation. This is then used to calculate the transverse contact ratio and the root and tip form circles (generated diameters). As KISSSOFT already automatically calculates the form diameters correctly for protuberance and undercut, we recommend you no longer use this option.</p><p class="bodytext">You can select whether the root form circle, the tip form circle, or both these values, are to be included in the tooth form. Up to now, the form diameter for racks has not been taken from the tooth form.</p><p class="bodytext"></p><p class="hint">Note:</p><p class="bodytext">If this option is selected and profile modifications have been predefined, the calculated form diameter will be at the beginning of the modification. This often results in very small transverse contact ratios εα.i and εα.e. This is correct because, the tooth form at the start of the modification no longer exactly matches the involute. However, the message that is displayed, to inform the user that the transverse contact ratio is too low, is rather confusing. If the profile modification has been sized correctly, so that meshing under load involves a whole tooth height, this message can be ignored. This is because the transverse contact ratio under load corresponds to the theoretical transverse contact ratio εα. Generally speaking, we recommend you do NOT use this option with profile modifications.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>锥齿轮：– 确定允许的过载 | Bevel gears: – Determine permitted overloads</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Bevel gears: – Determine permitted overloads">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9489');expand('8341');expand('9286');expand('9246');highlight('10113')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10115.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10120.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">锥齿轮：– 确定允许的过载</h3>   
+                
+<p class="bodytext">根据 ISO 标准计算锥齿轮时，是否可以考虑最大过载？</p><p class="bodytext">AGMA 标准中定义了允许标准过载 250%。这种过载被定义为持续时间少于 1 秒，8 小时时间内不超过 4 次。ISO 标准是否有类似的过载（冲击）规定？在 ISO 标准中未找到相关参考资料。</p><p class="bodytext">ISO 10300 不提供关于允许过载的任何信息。然而，ISO 的 Woehler 曲线（对于 YNT 和 ZNT 因素）与 AGMA 不同。因此，如果严格遵守 ISO 10300，必须输入包括过载在内的总载荷循环次数。应用因子为 2.5（对应于 250% 过载）。之后，必须计算并检查安全系数。<br><br>如果载荷仅非常罕见地发生（在整个额定寿命期间少于 1000 次），这可以使用静力计算处理。KISSsoft 提供了简化版的强度计算过程，专门用于覆盖这种情况。该方法基于 ISO 方法，但仅考虑齿根的公称应力（不考虑应力修正系数 YS）。在此情况下，请注意，必须相对于材料的屈服点保持至少 1.5 的安全系数！</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Bevel gears: – Determine permitted overloads</h3>   
+                
+<p class="bodytext">Can maximum overloads be taken into account when calculating bevel gears according to ISO standards?</p><p class="bodytext">AGMA norms have definitions that allow for a standard overload of 250%. This overload is defined as being present for less than 1 second, not more than 4 times in an 8 hour time period. Does the ISO standard have comparable regulations with regard to overloads (shock)? No references could be found about this subject in the ISO standard.</p><p class="bodytext">ISO 10300 does not give any information about permitted overloads. However, ISO has a different Woehler curve (for YNT and ZNT factors) than AGMA. Therefore, in principle if ISO 10300 is strictly adhered to, you must input the total number of load cycle including the overload. The application factor is 2.5 (which corresponds to 250% overload). After this, you must calculate and check the safety factors.<br /><br />If the load only occurs very infrequently, (less than 1000 times during the entire rating life), this can be handled in a static calculation. KISSsoft has a simplified version of the strength calculation process, specifically to cover this situation. This is based on the ISO method, but only takes into account the nominal stress in the tooth root (without stress correction factor YS). Here, please note that, in this case, you must maintain a minimum safety of 1.5 relative to the material's yield point!</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

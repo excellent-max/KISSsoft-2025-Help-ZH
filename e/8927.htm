@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>3D 齿轮的生成 | Generation of 3D gears</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Generation of 3D gears">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8924');expand('9272');expand('9246');highlight('8927')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8925.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10232.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">3D 齿轮的生成</h3>   
+                
+<p class="bodytext">您必须首先进行齿轮计算，以确保结果一致。单击<span class="menu">图形 &gt; 设置</span>以选择要导出所选元件的 CAD 系统。</p><p class="bodytext">然后，选择<span class="menu">图形 &gt; 3D 导出</span>菜单项，然后指定要生成的单个齿轮以及配置（仅限单个齿轮）。</p><p class="bodytext">在 Siemens NX 情况下，只有在从 NX 插件菜单启动 KISSsoft 后，运行齿轮计算并点击所需的生成按钮时，才能进行生成。在 Creo Parametric (ProEngineer) 和 CATIA 情况下，必须运行 CAD 接口，以便可以从 KISSsoft 开始齿轮生成过程。在 SolidWorks、Solid Edge 和 Inventor CAD 系统中，点击生成按钮以运行 CAD 程序（如果尚未打开）。</p><p class="bodytext">默认设置以允许的齿形误差（公差带）1 <em>μ</em>m 运行齿轮生成过程。如果该公差过大，您可以打开<span class="menu">齿形</span>选项卡更改公差。更改后，您必须再次单击<span class="menu">计算</span>（齿形选项卡处于活动状态），以传递输入并重新计算齿形。<br>更改齿形选项卡中的生成类型（多段线、圆弧逼近、样条线）只影响 2D 显示。在 Siemens NX、SolidWorks 和 Solid Edge 中，零件以样条线生成。在 Inventor、Creo Parametric (ProEngineer) 和 CATIA 中，零件以圆弧生成。SolidWorks 和 Solid Edge 还支持其他生成类型，您可以通过输入附加参数 <span class="menu">APPROXIMATION=1</span> 来更改这些类型，该参数位于 KISS.ini（参见<a class="referencetopic-shabschnitt" href="9077.htm" target="_self">[SOLIDWORKS] 中的定义</a>）文件中，该文件位于相应的 CAD 系统中。<br>对于齿轮，通常从圆柱体上切出齿槽的端面截面，然后以阵列方式复制。对于螺旋角 &gt; 50<span class="superscript">°</span> 且齿数 &lt; 4 的蜗杆，则在轴向截面中切出齿槽，然后复制。</p><p class="bodytext"></p><p class="bodytext">CAD 接口的限制（除 Parasolid 外）：</p><ul>	<li class="bodytext">圆柱齿轮：双螺旋齿轮不能直接创建，必须手动创建，先创建一侧再创建另一侧。</li>	<li class="bodytext">蜗杆：包络蜗杆和蜗轮不可行（仅圆柱蜗杆与蜗轮）。</li>	<li class="bodytext">不考虑沿齿宽方向的修改（仅考虑齿形修改）。</li></ul><p class="bodytext"></p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Generation of 3D gears</h3>   
+                
+<p class="bodytext">You must first perform a gear calculation to ensure that the results are consistent. Click on <span class="menu">Graphics &gt; Settings</span> to select the CAD system to which you want to export the selected element.</p><p class="bodytext">Then, select the <span class="menu">Graphics &gt; 3D Export</span> menu option and then specify which individual gears you want to generate, and the configuration (only possible as individual gears).</p><p class="bodytext">In the case of Siemens NX, generation is only possible if you have started KISSsoft from the NX add-in menu, then run the gear calculation and clicked on the required generation button. In the case of Creo Parametric (ProEngineer) and CATIA, you must run the CAD interface so that you can start the gear generation process from KISSsoft. In the SolidWorks, Solid Edge and Inventor CAD systems, click a generation button to run the CAD process, if it is not already open.</p><p class="bodytext">The default setting runs the gear generation process with a permitted tooth form error (tolerance band) of 1 <em>μ</em>m. If this tolerance is too large, you can open the <span class="menu">Tooth form</span> tab to change the tolerance. Once this is changed, you must click <span class="menu">Calculate</span> again (Tooth form tab active), to transfer the inputs and recalculate the tooth form.<br />Changing the generation type in the Tooth form tab (polylines, arc of circle approximation, splines) only affects the 2D display. In Siemens NX, SolidWorks and Solid Edge, the part is generated with splines. In Inventor, Creo Parametric (ProEngineer) and CATIA, it is created with arcs of a circle. SolidWorks and Solid Edge also support other generation types, which you can change by entering the additional <span class="menu">APPROXIMATION=1</span> parameter in the KISS.ini (see chapter <a class="referencetopic-shabschnitt" href="9077.htm" target="_self">Definitions in [SOLIDWORKS]</a>) file, in the relevant CAD system.<br />In the case of the gears, the transverse section of the tooth space is usually cut out from a cylinder and then duplicated as a pattern. For worms with a helix angle &gt; 50<span class="superscript">°</span> and a number of teeth &lt; 4 the tooth space is cut out in the axial section and then duplicated.</p><p class="bodytext"></p><p class="bodytext">Restrictions of the CAD interfaces (except Parasolid):</p><ul>	<li class="bodytext">Cylindrical Gears: Double helical gearings are not created directly and must be done manually, first one side then the other side.</li>	<li class="bodytext">Worms: Enveloping worms and worm wheels are not possible (only cylindrical worms with worm wheel).</li>	<li class="bodytext">Modifications across the face width are not taken into account (only tooth form modifications are considered).</li></ul><p class="bodytext"></p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>考虑剪切变形和剪切修正系数 | Consider deformation due to shearing and shear correction factor</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Consider deformation due to shearing and shear correction factor">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11650');expand('8290');expand('8183');expand('9287');expand('9246');highlight('8293')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8292.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10966.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">考虑剪切变形和剪切修正系数</h3>   
+                
+<p class="bodytext">如果未选中此复选框，则轴被建模为 <strong>无限刚硬</strong>。在这种情况下，剪切力对弯曲图没有影响。此模型适用于长度显著大于其横截面的所有轴。如果不是这种情况，您可以启用 <span class="menu">考虑剪切变形</span>。相关的剪切修正系数 κ 可以在 <span class="menu">模块特定设置</span> 中修改。</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="8294.png" style="height:57px; width:95px"></p>			</td>			<td width="78">			<p class="bodytext">(24.1)</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext">其中</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">A’</p>			</td>			<td width="174">			<p class="bodytext">剪切截面</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">A</p>			</td>			<td width="174">			<p class="bodytext">横截面积</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext">剪切修正系数 κ ≥ 1 包含了应力在整个横截面上的不均匀分布，并适用于整个轴系统。对于圆形横截面，κ = 1.1 适用；对于矩形横截面，κ = 1.2 适用。</p><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">此处输入的值必须与 <strong>有效定义</strong>（在 KISSsoft 中）所规定的剪切修正系数一致，如上面的公式所示。某些来源也使用公式符号的倒数。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Consider deformation due to shearing and shear correction factor</h3>   
+                
+<p class="bodytext">If this checkbox has not been selected, the shaft is modeled to be <strong>infinitely stiff</strong>. In this case, shearing forces have no effect on the diagrams of bending. This model is suitable for all shafts whose length is significantly greater than their cross section. If this is not the case, you can enable <span class="menu">Consider deformation due to shearing</span>. The associated shear correction factor κ can be modified in the <span class="menu">Module specific settings</span>.</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="8294.png" style="height:57px; width:95px" /></p>			</td>			<td width="78">			<p class="bodytext">(24.1)</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext">where</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">A’</p>			</td>			<td width="174">			<p class="bodytext">shear section</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="60">			<p class="bodytext">A</p>			</td>			<td width="174">			<p class="bodytext">Cross-sectional area</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext">The shear correction coefficient κ ≥ 1 includes the irregular distribution of stress across the cross section and applies to the entire shaft system. κ = 1.1 applies for circular shaped cross sections, and κ = 1.2 applies for rectangular shaped cross sections.</p><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">The value input here must correspond to the shear correction factor specified in the <strong>valid definition</strong> in KISSsoft, as shown in the equation above. Some sources also use the reciprocal value for the formula symbol.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

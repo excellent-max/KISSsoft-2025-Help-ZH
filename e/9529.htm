@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>基于载荷谱的额定寿命计算 | Rating life calculation with load spectra</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Rating life calculation with load spectra">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9527');expand('8139');expand('9287');expand('9246');highlight('9529')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9528.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9530.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">基于载荷谱的额定寿命计算</h3>   
+                
+<p class="bodytext">轴承上的载荷谱具有以下值：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">k</em>:</p>			</td>			<td width="295">			<p class="bodytext">载荷谱中的元素数量</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">q</em><sub class="subscript">i</sub>:</p>			</td>			<td width="295">			<p class="bodytext">频率（载荷组 i）（%）</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">n</em><sub class="subscript">i</sub>:</p>			</td>			<td width="295">			<p class="bodytext">转速（载荷组 i）（rpm）</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">F</em><sub class="subscript">ri</sub>:</p>			</td>			<td width="295">			<p class="bodytext">径向力（载荷组 i）（N）</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">F</em><sub class="subscript">ai</sub>:</p>			</td>			<td width="295">			<p class="bodytext">轴向力（载荷组 i）（N）</p>			</td>		</tr>	</tbody></table><p class="bodytext">您可以从轴计算中获取此载荷谱数据，在这种情况下，径向力和轴向力可能会得到不同的载荷谱。或者，您也可以从数据库中选择载荷谱。对于轴承力，这里的重要因素是扭矩系数（而非载荷系数），并且负号前缀运算符只会影响轴向力。</p><p class="bodytext"></p><p class="bodytext">采用简单计算方法可达到的额定寿命：</p><p class="bodytext">您通过定义当量设计载荷和平均转速来计算额定寿命。然后可以使用常用公式计算额定寿命。</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="Berechnung-Lebensdauer-mit-Lastkollektiv27-4.png"></p>			<p class="bodytext"></p>			</td>			<td width="78">			<p class="bodytext">(27.4)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="Berechnung-Lebendauer-mit-Lastkollektiv-27-5.png"></p>			</td>			<td width="78">			<p class="bodytext">(27.5)</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="48">			<p class="bodytext"><em class="emphasis">n</em><sub class="subscript">m</sub>:</p>			</td>			<td width="414">			<p class="bodytext">平均转速</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="48">			<p class="bodytext"><em class="emphasis">p</em>:</p>			</td>			<td width="414">			<p class="bodytext">额定寿命公式中的指数（3.0 或 10/3）</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="48">			<p class="bodytext"><em class="emphasis">P</em><sub class="subscript">i</sub>:</p>			</td>			<td width="414">			<p class="bodytext">当量动载荷（载荷组 i）</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="48">			<p class="bodytext"><em class="emphasis">P</em><sub class="subscript">m</sub>:</p>			</td>			<td width="414">			<p class="bodytext">平均当量动载荷</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext">采用修正额定寿命计算可达到的额定寿命：</p><p class="bodytext">使用修正额定寿命计算时，会针对每个当量载荷组分别计算额定寿命。然后利用该结果确定总使用寿命：</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="Berechnung-Lebensdauer-mit-Lastkollektiv27-6.png"></p>			</td>			<td width="78">			<p class="bodytext">(27.6)</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="42">			<p class="bodytext"><em class="emphasis">L</em><sub class="subscript">nxi</sub>:</p>			</td>			<td width="390">			<p class="bodytext">在使用转速 n<sub class="subscript">i </sub>和载荷 F<sub class="subscript">ri</sub>、F<sub class="subscript">ai</sub> 情况下的使用寿命（载荷组 i）</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="42">			<p class="bodytext"><em class="emphasis">L</em><sub class="subscript">nx</sub>:</p>			</td>			<td width="390">			<p class="bodytext">总额定寿命</p>			</td>		</tr>		<tr>			<td width="42"></td>			<td width="390">			<p class="bodytext">下标 x 可以为 h 或 rh</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Rating life calculation with load spectra</h3>   
+                
+<p class="bodytext">The load spectrum on the bearing has these values:</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">k</em>:</p>			</td>			<td width="295">			<p class="bodytext">Number of elements in the load spectrum</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">q</em><sub class="subscript">i</sub>:</p>			</td>			<td width="295">			<p class="bodytext">Frequency (load bin i) (%)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">n</em><sub class="subscript">i</sub>:</p>			</td>			<td width="295">			<p class="bodytext">Speed (load bin i) (rpm)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">F</em><sub class="subscript">ri</sub>:</p>			</td>			<td width="295">			<p class="bodytext">Radial force (load bin i) (N)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="36">			<p class="bodytext"><em class="emphasis">F</em><sub class="subscript">ai</sub>:</p>			</td>			<td width="295">			<p class="bodytext">Axial force (load bin i) (N)</p>			</td>		</tr>	</tbody></table><p class="bodytext">You can take this load spectrum data from the shaft calculation, in which case you may obtain different load spectra for radial and axial forces. Alternatively, you can select a load spectrum from the database. For bearing forces, the important factor here is the torque factor (not the load factor) and a negative prefix operator will only affect the axial force.</p><p class="bodytext"></p><p class="bodytext">Achievable rating life with simple calculation approach:</p><p class="bodytext">You calculate the rating life by defining an equivalent design load and the average speed. You can then use the usual formulae to calculate the rating life.</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="Berechnung-Lebensdauer-mit-Lastkollektiv27-4.png" /></p>			<p class="bodytext"></p>			</td>			<td width="78">			<p class="bodytext">(27.4)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="Berechnung-Lebendauer-mit-Lastkollektiv-27-5.png" /></p>			</td>			<td width="78">			<p class="bodytext">(27.5)</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="48">			<p class="bodytext"><em class="emphasis">n</em><sub class="subscript">m</sub>:</p>			</td>			<td width="414">			<p class="bodytext">Average speed</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="48">			<p class="bodytext"><em class="emphasis">p</em>:</p>			</td>			<td width="414">			<p class="bodytext">Exponent in the rating life formula (3.0 or 10/3)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="48">			<p class="bodytext"><em class="emphasis">P</em><sub class="subscript">i</sub>:</p>			</td>			<td width="414">			<p class="bodytext">Dynamic equivalent load (load bin i)</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="48">			<p class="bodytext"><em class="emphasis">P</em><sub class="subscript">m</sub>:</p>			</td>			<td width="414">			<p class="bodytext">Average dynamic equivalent load</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext">Achievable rating life with the modified rating life calculation:</p><p class="bodytext">When the modified rating life calculation is used, the rating life is calculated separately for every equivalent load bin. The result is then used to determine the total service life:</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="414">			<p class="bodytext"><img src="Berechnung-Lebensdauer-mit-Lastkollektiv27-6.png" /></p>			</td>			<td width="78">			<p class="bodytext">(27.6)</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="42">			<p class="bodytext"><em class="emphasis">L</em><sub class="subscript">nxi</sub>:</p>			</td>			<td width="390">			<p class="bodytext">Service life (load spectrum bin i) in the case of speed n<sub class="subscript">i </sub>and load F<sub class="subscript">ri</sub>, F<sub class="subscript">ai</sub></p>			</td>		</tr>		<tr align="left" valign="top">			<td width="42">			<p class="bodytext"><em class="emphasis">L</em><sub class="subscript">nx</sub>:</p>			</td>			<td width="390">			<p class="bodytext">Total rating life</p>			</td>		</tr>		<tr>			<td width="42"></td>			<td width="390">			<p class="bodytext">Index x can be h or rh</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

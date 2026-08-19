@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>摩擦系数 f0 和 f1 | Friction coefficients f0 and f1</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Friction coefficients f0 and f1">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9520');expand('8148');expand('8139');expand('9287');expand('9246');highlight('9521')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9520.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9522.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">摩擦系数 f0 和 f1</h3>   
+                
+<p class="bodytext">系数 f0 和 f1 以及当量动载荷 P1 仅用于定义载荷和润滑参数。这些值因具体的轴承类型/型号、润滑类型或载荷方向而异。它们列在标准中的表 A.1 中。并非所有轴承变体都列在表中。下面针对各种润滑类型的值已经确定（并纳入 KISSsoft 中）。它们基于标准中表 A.1 中关于 f0 的注释。</p><ul><li class="bodytext">油，油浴润滑，轴承处于油雾中：f0 = 0.5 * f0（表中值）</li><li class="bodytext">油，油浴润滑，油位达轴承中部：f0 = 2.0 * f0（表中值）</li><li class="bodytext">油，油浴润滑，油位达最低滚动体中部：f0 = 1.0 * f0（表中值）</li><li class="bodytext">油，循环润滑：f0 = 2.0 * f0（表中值）</li><li class="bodytext">润滑脂，磨合轴承：f0 = 1.0 * f0（表中值）</li><li class="bodytext">润滑脂，新加脂：f0 = 2.0 * f0（表中值）</li></ul><p class="bodytext"></p><p class="bodytext">对于标准中未定义数据的轴承和轴承类型，假定采用以下值：</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td width="114"><p class="bodytext"></p></td><td width="150"><p class="bodytext">P1</p></td><td width="120"><p class="bodytext">f0（表中值）</p></td><td width="132"><p class="bodytext">f1</p></td></tr><tr align="left" valign="top"><td width="114"><p class="bodytext">球轴承</p></td><td width="150"><p class="bodytext">3.3*Fa - 0.1*Fr</p><p class="bodytext">(P1 &lt;= Fr) where P1 = Fr</p></td><td width="120"><p class="bodytext">1.7</p></td><td width="132"><p class="bodytext">0.0007*(P0/C0)^0.5</p></td></tr><tr align="left" valign="top"><td width="114"><p class="bodytext">滚子轴承</p></td><td width="150"><p class="bodytext">Fr</p></td><td width="120"><p class="bodytext">3</p></td><td width="132"><p class="bodytext">0.0003</p></td></tr><tr align="left" valign="top"><td width="114"><p class="bodytext">推力球轴承</p></td><td width="150"><p class="bodytext">Fa</p></td><td width="120"><p class="bodytext">1.7</p></td><td width="132"><p class="bodytext">0.0007*(P0/C0)^0.5</p></td></tr><tr align="left" valign="top"><td width="114"><p class="bodytext">推力滚子轴承</p></td><td width="150"><p class="bodytext">Fa</p></td><td width="120"><p class="bodytext">3.5</p></td><td width="132"><p class="bodytext">0.0015</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Friction coefficients f0 and f1</h3>   
+                
+<p class="bodytext">Coefficients f0 and f1 and the dynamic equivalent load P1 are only needed to define the load and lubrication parameters. These values differ depending on the specific bearing type/model, lubrication type, or load direction. They are listed in Table A.1 in the standard. Not all bearing variants are listed in the table. The values for various types of lubrication below have been defined (and incorporated in KISSsoft). They are based on the notes about f0 in Table A.1 in the standard.</p><ul><li class="bodytext">Oil, bath lubrication, bearing in oil mist: f0 = 0.5 * f0 (tabular value)</li><li class="bodytext">Oil, bath lubrication, oil level up to middle bearing: f0 = 2.0 * f0 (tabular value)</li><li class="bodytext">Oil, bath lubrication, oil level up to middle of the lowest rolling element: f0 = 1.0 * f0 (tabular value)</li><li class="bodytext">Oil, circulatory lubrication: f0 = 2.0 * f0 (tabular value)</li><li class="bodytext">Grease, run-in bearing: f0 = 1.0 * f0 (tabular value)</li><li class="bodytext">Grease, newly greased: f0 = 2.0 * f0 (tabular value)</li></ul><p class="bodytext"></p><p class="bodytext">The following values have been assumed for bearings and bearing types for which no data has been defined in the standard:</p><table border="1" cellpadding="1" cellspacing="1"><tbody><tr align="left" valign="top"><td  width="114"><p class="bodytext"></p></td><td  width="150"><p class="bodytext">P1</p></td><td  width="120"><p class="bodytext">f0 (tabular value)</p></td><td  width="132"><p class="bodytext">f1</p></td></tr><tr align="left" valign="top"><td  width="114"><p class="bodytext">Ball bearing</p></td><td  width="150"><p class="bodytext">3.3*Fa - 0.1*Fr</p><p class="bodytext">(P1 &lt;= Fr) where P1 = Fr</p></td><td  width="120"><p class="bodytext">1.7</p></td><td  width="132"><p class="bodytext">0.0007*(P0/C0)^0.5</p></td></tr><tr align="left" valign="top"><td  width="114"><p class="bodytext">Roller bearing</p></td><td  width="150"><p class="bodytext">Fr</p></td><td  width="120"><p class="bodytext">3</p></td><td  width="132"><p class="bodytext">0.0003</p></td></tr><tr align="left" valign="top"><td  width="114"><p class="bodytext">Thrust ball bearing</p></td><td  width="150"><p class="bodytext">Fa</p></td><td  width="120"><p class="bodytext">1.7</p></td><td  width="132"><p class="bodytext">0.0007*(P0/C0)^0.5</p></td></tr><tr align="left" valign="top"><td  width="114"><p class="bodytext">Thrust roller bearing</p></td><td  width="150"><p class="bodytext">Fa</p></td><td  width="120"><p class="bodytext">3.5</p></td><td  width="132"><p class="bodytext">0.0015</p></td></tr></tbody></table><p class="bodytext"></p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

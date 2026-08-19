@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>集成 KISSsoft 插件（在 CAD 中的菜单选项） | Integrating the KISSsoft Add-in (menu options in CAD)</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Integrating the KISSsoft Add-in (menu options in CAD)">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8951');expand('8924');expand('9272');expand('9246');highlight('8957')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8954.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8963.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">集成 KISSsoft 插件（在 CAD 中的菜单选项）</h3>   
+                
+<p class="bodytext">安装时应注册插件（Add-in）。但是，如果此操作无效且 Solid Edge 中未显示 KISSsoft 菜单，则必须注册该插件。</p><p class="bodytext">转到 KISSsoft 安装目录并选择 <span class="menu">SolidEdge</span> 子文件夹。在其中，双击 <span class="menu">SolidEdgeRegister64.bat</span> 文件以注册接口。</p><p class="bodytext">如果 KISSsoft 插件成功注册，将显示一条消息确认这一点。</p><p class="bodytext">要删除注册，请双击 <span style="font-size:11.0pt">SolidEdgeUnRegister.bat<span style="line-height:107%"><span style='font-family:"Calibri",sans-serif'></span></span></span> 文件<span class="menu"></span>（位于 KISSsoft 安装目录中）。然后显示一条消息确认注销成功。</p><p class="bodytext">选择 <span class="menu">工具 &gt; Add-Ins</span>，然后选择 <span class="menu">Add-In-Manager</span>。您可以在 Add-In Manager 中选中/取消选中 <span class="menu">KISSsoft</span> 插件。</p><p class="bodytext">KISSsoft 插件显示在主菜单中。这将 KISSsoft 菜单选项集成到 Solid Edge 中。即使重启后它们仍会保留。</p><p class="bodytext"></p><p class="bodytext">KISSsoft 插件菜单提供八种语言（德语、英语、法语、意大利语、西班牙语、俄语、葡萄牙语和中文）。安装 KISSsoft 时选定的语言将用于这些菜单。要设置语言，请打开位于 KISSsoft 安装目录中的 <span class="menu">kiss.ini</span> 文件，然后单击 <span class="menu">DISPLAYLANGUAGE</span>，再设置所需语言（0 = 德语，1 = 英语，2 = 法语，3 = 意大利语，4 = 西班牙语，5 = 俄语；6 = 葡萄牙语，7 = 中文）。此语言设置也适用于 KISSsoft 系统。</p><p class="hint">注意：</p><p class="bodytext">如果所选语言使用 Unicode 字体（例如俄语的西里尔字母），则必须在操作系统中将区域设置设为该语言（使用该语言的国家/地区）。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Integrating the KISSsoft Add-in (menu options in CAD)</h3>   
+                
+<p class="bodytext">You should register the Add-in when you install it. However, if this doesn't work and the KISSsoft menu is not displayed in Solid Edge, you must register the Add-in.</p><p class="bodytext">Go to the KISSsoft installation directory and select the <span class="menu">SolidEdge</span> sub-folder. In it, double-click on the <span class="menu">SolidEdgeRegister64.bat</span> file to register the interface.</p><p class="bodytext">If the KISSsoft Add-in is registered successfully, a message is displayed to confirm that this is the case.</p><p class="bodytext">To delete the registration, double-click on the <span style="font-size:11.0pt">SolidEdgeUnRegister.bat<span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"></span></span></span> file<span class="menu"></span> in the KISSsoft installation directory. A message is then displayed to confirm that deregistration was successful.</p><p class="bodytext">Select <span class="menu">Tools &gt; Add-Ins</span> and then <span class="menu">Add-In-Manager</span>. You can select/deselect the <span class="menu">KISSsoft</span> Add-in in the Add-In Manager.</p><p class="bodytext">The KISSsoft Add-in is displayed in the main menu. This integrates the KISSsoft menu options in Solid Edge. They are retained even after a restart.</p><p class="bodytext"></p><p class="bodytext">The KISSsoft Add-in menu options are available in eight languages (German, English, French, Italian, Spanish, Russian, Portuguese and Chinese). They use the same language as was selected when KISSsoft was being installed. To set the language, open the <span class="menu">kiss.ini</span> file in the KISSsoft installation directory, click on <span class="menu">DISPLAYLANGUAGE</span>, and set the language you require (0 = German, 1 = English, 2 = French, 3= Italian, 4= Spanish, 5= Russian; 6= Portuguese, 7= Chinese). This language setting now also applies to your KISSsoft system.</p><p class="hint">Note:</p><p class="bodytext">If the selected language uses Unicode fonts (e.g. Cyrillic for Russian), the Localization must be set to this language (a country with this language) in the operating system.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

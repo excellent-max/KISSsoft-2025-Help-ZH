@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>模态分析 | Modal analysis</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Modal analysis">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11432');expand('11646');expand('11414');expand('9246');highlight('11433')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11593.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11434.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">模态分析</h3>   
+                
+<p class="bodytext">此特殊计算用于计算整个轴系的固有频率和固有振型，包括轴之间齿轮连接的影响。</p><p class="bodytext">要开始运行此计算，请点击菜单中的 <span class="menu">计算&gt; 模态分析</span>。您必须定义要计算的固有频率数量，并指定是仅包括扭转振动还是包括所有振动类型，以及是否考虑陀螺效应（不适用于扭转振动）。您还必须定义用于计算轮齿接触刚度的计算方法。对于最后这个选项，有以下选择：</p><ul>	<li class="bodytext">按 ISO 6336 Method B 定义，即此处所用的轮齿接触刚度与该标准中的描述一致。</li>	<li class="bodytext">使用接触分析算法（针对每个齿轮副），即在齿轮连接中进行完整的接触分析。如果 KISSsoft 对特定齿轮副类型没有接触分析计算，或者该齿轮副不传递功率，则该特定齿轮副使用 ISO 6336 方法。</li>	<li class="bodytext">无限：假设轮齿接触刚度为无限。选择此选项以检查极限条件。</li>	<li class="bodytext">忽略：假设轮齿接触刚度为零，因此振动轴之间没有连接（每个轴独立振动）。</li></ul><p class="bodytext">计算完成后，可以在报告或图形中查看结果。</p><p class="bodytext">请注意，当对行星系统进行模态分析时，计算没有考虑旋转行星的位置对系统弯曲刚度的影响。这与固有频率分析中通常采用的准静态计算过程类似。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Modal analysis</h3>   
+                
+<p class="bodytext">This special calculation has been designed to calculate the eigenfrequencies and eigenmodes of a complete shaft system, including the effect of gear connections between shafts.</p><p class="bodytext">To start running this calculation, click on <span class="menu">Calculation&gt; Modal analysis</span> in the menu. You must define the number of eigenfrequencies to be calculated, and specify whether only torsional or all vibration types are to be included, and whether gyroscopic effects are to be taken into account (does not apply to torsional vibrations). You must also define which calculation method is to be used to calculate tooth contact stiffness. The following selections are available for this last option:</p><ul>	<li class="bodytext">As defined in ISO 6336 Method B, if the tooth contact stiffness used here matches the description in this standard.</li>	<li class="bodytext">Using the contact analysis algorithm (for each gear pair), where a full contact analysis is performed in the gear connections. If KISSsoft does not have a contact analysis calculation for a particular gear pair type, or if the gear pair does not transfer power, the ISO 6336 process is used for that specific pair.</li>	<li class="bodytext">Infinite: the tooth contact stiffness is assumed to be infinite. Select this option if you want to check limiting conditions.</li>	<li class="bodytext">Ignore: the tooth contact stiffness is assumed to be zero and there is therefore no connection between the vibrating shafts (each shaft is vibrating independently).</li></ul><p class="bodytext">When the calculation is finished, the results can be accessed in the report or in the graphics.</p><p class="bodytext">Note that, when you perform a modal analysis for a planetary system, the calculation does not take into account the effect of the positions of the rotating planets on the system's bending stiffness. This is similar to the quasi-static calculation procedure usually followed in eigenfrequencies analysis.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>起始和结束块 | Start and end block</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Start and end block">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9089');expand('8346');expand('9272');expand('9246');highlight('10316')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10171.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9090.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">起始和结束块</h3>   
+                
+<p class="bodytext">KISSsoft 中的报告通常生成时包含一个起始块和一个结束块。可自行定义这些起始和结束块。起始块和结束块在模板文件中定义，这些模板文件存储在安装文件夹中的 <span class="menu">rpt</span> 目录下。</p>
+
+<p class="bodytext"> </p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="tableheading">语言</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="tableheading">起始块文件</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="tableheading">结束块文件</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">德语</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissd.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfd.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">英语</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kisse.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfe.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">法语</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissf.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissff.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">意大利语</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissi.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfi.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">西班牙语</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kisss.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfs.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">俄语</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissr.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfr.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">葡萄牙语</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissp.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfp.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">中文</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissc.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfc.rpt</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="bodytext">可用于这些模板的命令及其含义：</p>
+
+<p class="bodytext"> </p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="tableheading">命令</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="tableheading">描述</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">DATE</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">日期（选择“Extras &gt; Settings”然后设置您首选的输出格式。）</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">TIME</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">时间（选择“Extras &gt; Settings”然后设置您偏好的输出格式。）</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">PROJECT</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">项目名称</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">PROJECTDESCRIPTION</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">项目描述</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">FILENAME/DESCRIPTION</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">文件名</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">FILENAME.EXT</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">文件名（含扩展名）（例如"Example1.Z12"）</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">FILEPATH</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">带文件名的路径（例如："C:\Temp\GearPair.Z12"）</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">DESCRIPTION</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">文件描述</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">COMMENT</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">文件注释</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">CUSTOMER</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">项目中定义的客户名称</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">USER</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">用户名（Windows用户名）</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">RELEASE</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">版本号（例如："04-2010"）</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">COMPANY</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">许可证文件中定义的公司名称</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">NLINES</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">报告中的行数</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">IMPERIALUNITS</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">是否在IF语句中指定了英制单位</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">METRICUNITS</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">是否在IF语句中指定了公制单位</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">PROJECTUSED</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">是否在IF语句中使用了项目</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="bodytext"> </p>
+
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Start and end block</h3>   
+                
+<p class="bodytext">Reports in KISSsoft are usually generated with a start block and an end block. You can define these start and end blocks yourself. The start and end blocks are defined in template files which are stored in the <span class="menu">rpt</span> directory in the installation folder.</p>
+
+<p class="bodytext">&nbsp;</p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="tableheading">Language</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="tableheading">Start block file</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="tableheading">End block file</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">German</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissd.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfd.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">English</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kisse.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfe.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">French</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissf.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissff.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">Italian</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissi.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfi.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">Spanish</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kisss.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfs.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">Russian</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissr.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfr.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">Portuguese</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissp.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfp.rpt</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="120">
+			<p class="bodytext">Chinese</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="198">
+			<p class="bodytext">kissc.rpt</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="234">
+			<p class="bodytext">kissfc.rpt</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="bodytext">Commands that can be used in these templates and what they mean:</p>
+
+<p class="bodytext">&nbsp;</p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<tbody>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="tableheading">Command</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="tableheading">Description</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">DATE</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Date (select "Extras &gt; Settings" and then set your preferred output format.)</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">TIME</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Time (select "Extras &gt; Settings" and then set your preferred output format.)</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">PROJECT</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Project name</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">PROJECTDESCRIPTION</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Description of the project</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">FILENAME/DESCRIPTION</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">File name</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">FILENAME.EXT</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">File name with extension (e.g. "Example1.Z12")</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">FILEPATH</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Path with file name (e.g. "C:\Temp\GearPair.Z12")</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">DESCRIPTION</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Description of the file</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">COMMENT</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Comment for the file</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">CUSTOMER</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Customer name as defined in the project</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">USER</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">User name (Windows user name)</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">RELEASE</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Version number (e.g. "04-2010")</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">COMPANY</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Company name (as defined in the license file)</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">NLINES</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Number of lines in the report</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">IMPERIALUNITS</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Whether US customary units are specified for IF statements</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">METRICUNITS</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Whether metric units are specified for IF statements</p>
+			</td>
+		</tr>
+		<tr align="left" valign="top">
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="174">
+			<p class="bodytext">PROJECTUSED</p>
+			</td>
+			<td style="border-bottom-width:1px; border-style:solid; border-top-width:1px" width="378">
+			<p class="bodytext">Whether projects are used for IF statements</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="bodytext">&nbsp;</p>
+
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

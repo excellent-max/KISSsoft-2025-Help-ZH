@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>与 Solid Edge 的 3D 接口 | 3D interface to Solid Edge</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="3D interface to Solid Edge">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8924');expand('9272');expand('9246');highlight('8951')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8949.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8952.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">与 Solid Edge 的 3D 接口</h3>   
+                
+<p class="bodytext">制造商：KISSsoft AG</p><p class="bodytext">此接口实现了 Solid Edge 3D CAD 系统与 KISSsoft 之间的直接集成。使用此接口，KISSsoft 的所有计算模块均可在 Solid Edge 内运行。在 KISSsoft 中计算的圆柱齿轮或锥齿轮可在 Solid Edge 中直接生成具有真实齿形的 3D 零件（参见"<a class="referencetopic-shabschnitt" href="8927.htm" target="_self">3D 齿轮生成</a>"章）。使用 KISSsoft 计算的轴可作为包含圆柱和圆锥元素的 3D 零件直接生成（参见"<a class="referencetopic-shabschnitt" href="10232.htm" target="_self">3D 轴生成</a>"章），可直接在 Solid Edge 中生成。单击按钮即可启动 Solid Edge（从 KISSsoft 内部）。系统会打开一个新零件，并生成相应的零件。您可以创建具有直齿或斜齿的圆柱齿轮（外齿轮或内齿轮）、具有直齿或斜齿的齿条、或按 DIN 3971 图 1 定义的直齿锥齿轮，以及轴。<br>您还可以向现有轴添加轮齿（参见"<a class="referencetopic-shabschnitt" href="8954.htm" target="_self">存在现有轴数据时的轮齿</a>"章）。此外，通过该接口，2D 范围内的齿轮制造数据（参见"<a class="referencetopic-shabschnitt" href="8966.htm" target="_self">添加制造数据</a>"章）可作为文本字段自动插入到图纸中。齿轮制造数据附加到相应的切除（齿槽）上。</p><p class="hint">注意：</p><p class="bodytext">默认模板文件（例如 metric.prt）用于生成齿轮。要使用用户特定的模板文件，可以定义一个名为 <span class="menu">USERPARTTEMPLATE</span> 的变量（位于 <span class="menu">[Solid Edge]</span> 节、<span class="menu">kiss.ini</span> 文件中），或者覆盖默认模板文件并将其复制到默认路径上的用户特定模板文件文件夹中。如果在 Solid Edge 中为模板设置了用户特定路径，则使用该路径。否则，使用模板文件的默认路径（例如 <span class="menu">...\Solid Edge &lt;version&gt;\Template</span>）。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">另请参见</p><p class="relateditem"><a href="8952.htm" target="_self">更改展成参数</a></p><p class="relateditem"><a href="8954.htm" target="_self">存在现有轴数据时的轮齿</a></p><p class="relateditem"><a href="8957.htm" target="_self">集成 KISSsoft 插件（在 CAD 中的菜单选项）</a></p><p class="relateditem"><a href="8963.htm" target="_self">插件功能（调用）</a></p><p class="relateditem"><a href="8967.htm" target="_self">打开所创建齿轮的计算文件</a></p><p class="relateditem"><a href="11095.htm" target="_self">简化的齿轮视图</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">3D interface to Solid Edge</h3>   
+                
+<p class="bodytext">Manufacturer: KISSsoft AG</p><p class="bodytext">This interface creates the direct integration between the Solid Edge 3D CAD system and KISSsoft. Use this to run all KISSsoft calculation modules from within Solid Edge. Cylindrical or bevel gears calculated in KISSsoft can be generated directly in SolidWorks as a 3D part (see chapter <a class="referencetopic-shabschnitt" href="8927.htm" target="_self">Generation of 3D gears</a>) with a real tooth form. Shafts calculated with KISSsoft can be generated as a 3D part comprising cylinder and cone elements (see chapter <a class="referencetopic-shabschnitt" href="10232.htm" target="_self">Generating 3D shafts</a>) directly in Solid Edge. You can start Solid Edge from within KISSsoft at the click of a button. The system opens a new part, and generates the appropriate part. You can create cylindrical gears with straight or helical teeth, which are outside or inside, racks with straight or helical teeth, or straight-toothed bevel gears, as defined in DIN 3971, Figure 1, and shafts.<br />You can also add gear teeth to existing shafts (see chapter <a class="referencetopic-shabschnitt" href="8954.htm" target="_self">Gear teeth if existing shaft data is present</a>). In addition, gear manufacturing data in the 2D range (see chapter <a class="referencetopic-shabschnitt" href="8966.htm" target="_self">Adding manufacturing data</a>) can automatically be inserted on the drawing as a text field, with the interface. The gear manufacturing data is attached to the relevant cutout (tooth space).</p><p class="hint">Note:</p><p class="bodytext">The default template file (e.g. metric.prt) is used to generate gears. To use a user-specific template file, either define a variable called <span class="menu">USERPARTTEMPLATE</span> in the <span class="menu">[Solid Edge]</span> section, in the <span class="menu">kiss.ini</span> file, or overwrite the default template file and copy it to the user-specific template files folder on the default path. If a user-specific path has been set for templates in Solid Edge, this path is used. Otherwise, the default path for template files is used (e.g. <span class="menu">...\Solid Edge &lt;version&gt;\Template</span>).</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">See also</p><p class="relateditem"><a href="8952.htm" target="_self">Changing the parameter for generation</a></p><p class="relateditem"><a href="8954.htm" target="_self">Gear teeth if existing shaft data is present</a></p><p class="relateditem"><a href="8957.htm" target="_self">Integrating the KISSsoft Add-in (menu options in CAD)</a></p><p class="relateditem"><a href="8963.htm" target="_self">Add-in functions (calls)</a></p><p class="relateditem"><a href="8967.htm" target="_self">Opening the calculation file for the created gear</a></p><p class="relateditem"><a href="11095.htm" target="_self">Simplified gear view</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

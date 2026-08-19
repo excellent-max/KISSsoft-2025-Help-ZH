@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>主设置 | Main settings</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Main settings">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10582');expand('8720');expand('7708');expand('9286');expand('9246');highlight('10739')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10582.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10741.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">主设置</h3>   
+                
+<p class="bodytext">在<span class="menu">定义轴对齐</span>对话框中，您可以定义轴的比例偏差误差和恒定偏差误差（f<sub>Σβ</sub><sub class="subscript">p</sub>、f<sub>Σβ</sub><sub class="subscript">c</sub>）以及轴的倾角误差（f<sub>Σδ</sub><sub class="subscript">p</sub>、f<sub>Σδ</sub><sub class="subscript">c</sub>）。轴的比例偏差/倾角误差在公称转矩下定义，并通过载荷系数根据相应的 ISO 系数策略进行缩放。缩放规则在<span class="menu">面载荷因子设置</span>对话框和<span class="menu">接触分析</span>选项卡中定义。<br><br>除了直接定义轴的偏差和倾角（线性变形模型）外，您还可以使用轴计算文件，以便更精确地定义安装齿轮的轴所受到的弯曲和扭转影响。</p><p class="bodytext">下面介绍<span class="menu">定义轴对齐</span>对话框。您在此通过轴计算文件确定轴线对中。在 "File Shaft Gear 1/Gear 2" 字段中输入小齿轮 (1) 或齿轮 (2) 所属轴的文件名。必须输入文件的完整路径（例如 C:\MyCalculations\ContactAnalysis\pinion_shaft.W10）。但是，如果轴文件存储在与齿轮计算文件 Z12 相同的文件夹中，则只需输入轴计算文件的名称（如图所示）。</p><p class="bodytext">载荷的缩放结果以 % 显示在对话框的上部。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5fb392967be79" data-type="image" data-caption="Achslage definieren (Planeten und Zahnradpaar)"><p class="bodytext"><img data-id="5fb392967be79" height="342" src="achslagedefinierenpair.png" width="480"></p><p class="figcaption" data-id="5fb392967be79">图15.24：定义轴对齐（行星和齿轮副）</p></div><p class="bodytext">如果使用轴文件，则选择额外的Plus按钮以选择需考虑的啮合。</p><p class="bodytext">锥形扩展可应用于内齿轮。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Main settings</h3>   
+                
+<p class="bodytext">The <span class="menu">Define axis alignment</span> dialog is where you define the proportional and constant deviation error of axis (f<sub>Σβ</sub><sub class="subscript">p</sub>, f<sub>Σβ</sub><sub class="subscript">c</sub>) and the inclination error of axis (f<sub>Σδ</sub><sub class="subscript">p</sub>, f<sub>Σδ</sub><sub class="subscript">c</sub>). The proportional deviation/inclination error of axis is defined at the nominal torque and scaled with the corresponding ISO coefficients strategy via the load factors. The scaling is defined in the <span class="menu">Settings for the face load factor </span> dialog and in the <span class="menu"> Contact analysis </span>tab.<br /><br />Instead of defining the deviation and inclination of the axes directly (linear deformation model), you can use shaft calculation files for a more precise definition of the effect of bending and torsion on the shafts on which the gears are mounted.</p><p class="bodytext">The <span class="menu">Define axis alignment</span> dialog is described below. This is where you determine the axis alignment by using the shaft calculation files. In the &quot;File Shaft Gear 1/Gear 2&quot; fields, enter the file name for the shafts to which the pinion (1) or the gear (2) belong. You must input the file name with its entire path (for example C:\MyCalculations\ContactAnalysis\pinion_shaft.W10). However, if the shaft files are stored in the same folder as the gear calculation file Z12, you only need to input the name of the shaft calculation file (as shown in the figure).</p><p class="bodytext">The resulting scaling of the load is displayed in % in the upper part of the dialog.</p><p class="bodytext"></p><div class="objectWrapper" data-id="5fb392967be79" data-type="image" data-caption="Achslage definieren (Planeten und Zahnradpaar)"><p class="bodytext"><img data-id="5fb392967be79" height="342" src="achslagedefinierenpair.png" width="480" /></p><p class="figcaption" data-id="5fb392967be79">Figure 15.24: Define axis alignment (planets and gear pair)</p></div><p class="bodytext">If a shaft file is used, select the additional Plus button to select the meshing that is to be taken into account.</p><p class="bodytext">Conical expansion can be taken into account for internal gears.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

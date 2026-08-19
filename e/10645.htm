@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>滚动轴承（内部几何参数） | Rolling Bearings (Internal Geometry)</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Rolling Bearings (Internal Geometry)">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9287');expand('9246');highlight('10645')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10374.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10646.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">滚动轴承（内部几何参数）</h3>   
+                
+<p class="bodytext" style="margin-left:0cm; margin-right:0cm">除了经典轴承计算（见“<a class="referencetopic-shabschnitt" href="8139.htm" target="_self">滚动轴承（经典分析）</a>”章节）之外，KISSsoft 还提供了<span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">根据 ISO/TS 16281 进行的计算。</span></span></span></span><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">此处的内部轴承几何（滚动体数量、滚动体直径等）用于计算轴承载荷和使用寿命。</span></span></span></span></p><p class="bodytext" style="margin-left:0cm; margin-right:0cm"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">此方法已集成在轴计算中，也可作为独立的 KISSsoft 模块使用。除非另有说明，下文将描述该独立的 KISSsoft 模块。该模块专为轴承专家或了解其轴承内部几何参数的用户设计。</span></span></span></span></p><p class="bodytext"></p><p class="bodytext"><strong>注意： </strong></p><p class="bodytext"><br><strong>EHL 润滑膜厚度</strong><br>最小 EHL 润滑膜厚度是根据已知的内部几何参数，按[67]中所述方法计算的。压力对粘度的影响使用Barus’方程予以考虑，如同一参考文献中所述。</p><p class="bodytext"></p><p class="bodytext"><strong>自旋与滚动比</strong><br>球轴承的自旋与滚动比基于 [67] 中的方程计算。采用“外滚道（环）控制”的假设，即球在外滚道（环）上不发生自旋。众所周知，该假设主要适用于轻载高速轴承。除此之外，不再进一步考虑球的陀螺运动和保持架效应。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">本章内容</p><p class="relateditem"><a href="10646.htm" target="_self">轴承数据选项卡</a></p><p class="relateditem"><a href="10651.htm" target="_self">额定载荷选项卡</a></p><p class="relateditem"><a href="10654.htm" target="_self">图形</a></p><p class="relateditem"><a href="11259.htm" target="_self">精细设计</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Rolling Bearings (Internal Geometry)</h3>   
+                
+<p class="bodytext" style="margin-left:0cm; margin-right:0cm">In addition to the classic bearing calculation (see (see chapter <a class="referencetopic-shabschnitt" href="8139.htm" target="_self">Rolling Bearings (Classic Analysis)</a>)), KISSsoft also provides a <span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">calculation according to ISO/TS 16281</span></span></span></span>.<span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"> Here, the internal bearing geometry (number of rolling elements, rolling body diameter, etc.) is used to calculate the bearing load and the service life.</span></span></span></span></p><p class="bodytext" style="margin-left:0cm; margin-right:0cm"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">This method is integrated in the Shaft calculation and is also available as a separate KISSsoft module. Unless otherwise indicated, the separate KISSsoft module is described below. The module is designed to be used by bearing experts, or users who know the internal geometry of their bearings.</span></span></span></span></p><p class="bodytext"></p><p class="bodytext"><strong>Notes: </strong></p><p class="bodytext"><br /><strong>EHL lubricant film thickness</strong><br />The minimum EHL lubricant film thickness is calculated for rolling bearings with a known internal geometry, using the methodology described in [67]. The effect of pressure on viscosity is taken into account using the Barus’ equation, as documented in the same reference.</p><p class="bodytext"></p><p class="bodytext"><strong>Spin to roll ratio</strong><br />The spin to roll ratio of ball bearings is calculated on the basis of the equations in [67]. The assumption of &quot;outer raceway (ring) control&quot; is used, meaning that no spin of the ball is present on the outer raceway (ring). It is a well-known fact that this assumption primarily applies for lightly loaded high speed bearings. Ball gyroscopic motions and cage effects are not considered any further than that.</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">In this chapter</p><p class="relateditem"><a href="10646.htm" target="_self">Bearing data tab</a></p><p class="relateditem"><a href="10651.htm" target="_self">Rating (load) tab</a></p><p class="relateditem"><a href="10654.htm" target="_self">Graphics</a></p><p class="relateditem"><a href="11259.htm" target="_self">Fine sizing</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

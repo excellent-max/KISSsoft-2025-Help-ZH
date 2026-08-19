@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>力 | Forces</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Forces">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8328');expand('8313');expand('8183');expand('9287');expand('9246');highlight('8329')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8328.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8333.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">力</h3>   
+                
+<p class="bodytext"><span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">力可以定位在轴上的任何点，甚至在轴之外(!)。有多种方法可用于定义传力元件（如齿轮）甚至单个力。在大多数力元件中，扭矩方向通过将它们设置为 <span class="menu">驱动</span> 或 <span class="menu">从动</span> 来定义。设置 <span class="menu">驱动</span> 表示轴是驱动元件，或者力矩与旋转方向相反</span></span></span>（参见"<a class="referencetopic-shabschnitt" href="8273.htm" target="_self">旋转方向</a>"章）。</p><p class="bodytext">关于部分元件的说明：</p><p class="bodytext"></p><p class="bodytext"><strong>圆柱齿轮</strong></p><p class="bodytext"><strong>接触位置：</strong> 如果您输入与其他齿轮的接触位置，力将施加在该点。与其简单地输入分度圆直径和名义压力角，不如输入工作节圆直径和工作压力角，这样可以得到更准确的结果。然后，单击“转换”按钮来计算这些值。<br>如果啮合类型设置为"多重啮合"，您可以在同一个圆柱齿轮元件上模拟多个啮合。然后，您必须为每个啮合定义位置、有效工作节圆直径和载荷施加长度。系统将根据这些数据自动得出工作压力角和螺旋角。<br>默认情况下，载荷施加的中心点是齿轮中心。该中心点可通过定义载荷施加位置偏移 δyF 来更改，公式如下：</p><p class="bodytext"><br><img height="233" src="10965.png" width="356"><br>原始齿轮载荷施加起始位置：L0 =齿轮中部 - (齿宽/2)<br>齿轮上载荷施加的原始结束位置：R0 =齿轮中部 - (齿宽/2)<br><br>*如果 δyF &gt; 0<br>齿轮上载荷施加的新起始位置：L1 = L0 + 2 * δyF<br>齿轮上载荷施加的新结束位置：R1 = R0<br><br>*如果 δyF &lt; 0<br>齿轮上载荷施加的新起始位置：L1 = L0<br>齿轮上载荷施加的新结束位置：R1 = R0 + 2 * δyF<br><br>这些计算只有在计算设置中选择了相应选项时才有效。对所有齿轮元件使用相同的过程。</p><p class="bodytext"><strong>非对称圆柱齿轮</strong></p><p class="bodytext">您可以通过在齿轮几何中选择 <span class="menu">非对称</span> 来定义非对称圆柱齿轮。如果选择此选项，您必须输入法向截面上的两个工作压力角，一个用于左齿面，一个用于右齿面。然后根据旋转方向（顺时针或逆时针）和方向（驱动或从动）确定工作齿面。根据定义的是哪个工作齿面，使用左齿面或右齿面的工作压力角进行计算。如果链接了圆柱齿轮副文件，这也同样适用。</p><p class="bodytext"><br><strong>考虑刚度矩阵：</strong> 如果选中此复选框，则会考虑所连接的齿轮计算中存在的任何齿轮体定义。仅使用在 <span class="menu">从文件读取数据</span> 选项中所选齿轮的齿轮体。请注意，齿轮体的刚度矩阵不用于标准轴计算，即它不会改变轴的刚度。</p><p class="bodytext"></p><p class="bodytext"><strong>锥齿轮</strong><br><strong>啮合位置</strong>：参见圆柱齿轮。<br>锥齿轮的位置可以使用锥齿轮数据进行转换。定位的参考点是节锥上锥齿轮宽度的中部。锥齿轮位置可以使用轴上轴线交点的位置和其他锥齿轮数据进行转换。<br>ISO 23509:2016 附录 D 中的公式用于确定轴计算中锥齿轮的轴向力和径向力。<br>在计算准双曲面齿轮时，会考虑由于摩擦产生的附加力分量。相应的摩擦系数 μ 可以在模块特定设置中定义。<br>如果啮合类型设置为"多重啮合"，您可以在同一个锥齿轮元件上模拟多个啮合。</p><p class="bodytext"></p><p class="bodytext"><strong>面齿轮</strong></p><p class="bodytext">面齿轮的节锥角始终设置为 90°（此输入无法更改）。</p><p class="bodytext"></p><p class="bodytext"><strong>蜗杆</strong></p><p class="bodytext"><strong>接触位置</strong>：参见圆柱齿轮。蜗杆通常是驱动元件。其效率包含在力分量的计算中。<br>如果蜗杆数据从 Z80 文件读取，请在蜗轮蜗杆计算中的 <span class="menu">计算设置</span> 的 <span class="menu">计算</span> 选项卡中选择 <span class="menu">使用替代公式计算</span><span class="menu">（不同于标准）</span> 选项。这确保了轴计算中的径向力与蜗轮蜗杆计算中的径向力相匹配（参见"<a class="referencetopic-shabschnitt" href="8505.htm" target="_self">使用替代公式计算（不同于标准）</a>"章）。</p><p class="bodytext"></p><p class="bodytext"><strong>蜗轮</strong><br><strong>接触位置：</strong>参见圆柱齿轮。蜗轮通常是从动元件。其效率包含在力分量的计算中。</p><p class="bodytext"></p><p class="bodytext"><strong>带轮</strong><br><strong>绳轮方向：</strong>输入合成带力的方向（参见图 25.7）</p><p class="bodytext"></p><p class="bodytext">螺旋角的方向和元件的位置定义如下（参见图 25.1）。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd97799d" data-type="image" data-caption="Zur Richtungsdefinition bei Kraftelementen."><p class="bodytext"><img data-id="5ba0bcd97799d" height="503" src="12-w-013.png" width="488"></p><p class="figcaption" data-id="5ba0bcd97799d">图 25.1：用于定义力元件的方向</p></div><p class="bodytext"></p><p class="bodytext">偏心力</p><div class="objectWrapper" data-id="5ba0bcd977a15" data-type="image" data-caption="Kartesische/Polarkoordinaten für die exzentrische Kraft"><p class="bodytext"><img data-id="5ba0bcd977a15" height="173" src="8331.png" width="187"> <img data-id="5ba0bcd977a15" height="172" src="8332.png" width="185"></p><p class="figcaption" data-id="5ba0bcd977a15">图 25.2：偏心力的笛卡尔/极坐标</p></div><p class="bodytext"></p><p class="bodytext">您可以用笛卡尔坐标或极坐标输入偏心力的值（参见图 25.2）。您可以在轴编辑器中的 <span class="menu">绘图/设置</span> 界面更改坐标系。</p><p class="bodytext"></p><p class="bodytext"><strong>从齿轮计算传输数据</strong></p><p class="bodytext">在 <span class="menu">元素编辑器</span> 中，您可以从齿轮计算文件导入用于定义直齿轮和锥齿轮的数据。在元素树中选择所需元素，然后选中 <span class="menu">从文件读取数据</span> 复选框。然后选择齿轮编号（1 到 4）。与这些齿轮副相关的数据随后被直接导入。在这种情况下，使用节点处的数据而不是分度圆处的数据。</p><p class="bodytext">重要提示：如果此输入窗口中的 <span class="menu">从文件读取数据</span> 选项保持选中状态，则每次调用轴计算功能时都会从齿轮计算重新导入数据。如果您之后更改齿轮数据，新数据将自动随之传输！但是，如果您只想导入一次此数据，请在导入数据后再次取消选中此选项。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Forces</h3>   
+                
+<p class="bodytext"><span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">Forces can be positioned at any point on the shaft, even outside(!) the shaft. Different methods are available for defining force-transmitting elements (such as gears) or even individual forces. In most force elements, the torque direction is defined by setting them as <span class="menu">driving</span> or <span class="menu">driven</span>. The setting <span class="menu">Driving</span> means that the shaft is the driving element or that the moment is counter to the sense of rotation</span></span></span> (see chapter <a class="referencetopic-shabschnitt" href="8273.htm" target="_self">Direction of rotation</a>).</p><p class="bodytext">Comments about some of the elements:</p><p class="bodytext"></p><p class="bodytext"><strong>Cylindrical gear</strong></p><p class="bodytext"><strong>Position of contact:</strong> If you enter the position of contact with the other gear, forces are applied at this point. Instead of simply entering the reference diameter, you get a more accurate result if you enter the operating pitch diameter and the operating pressure angle instead of the nominal pressure angle. Then click the Convert button to calculate these values.<br />If the meshing type is set to &quot;Multiple meshing&quot;, you can model several meshings on the same cylindrical gear element. You must then define the position, the active operating pitch diameter and the length of load application for each meshing. The resulting working pressure angle and helix angle are then determined automatically from this data.<br />By default, the center point for load application is the center of the gear. This can be changed by defining the load application position offset δyF, according to the following formulae:</p><p class="bodytext"><br /><img height="233" src="10965.png" width="356" /><br />original starting position of gear load application: L0 = middle of the gear - (gear width/2)<br />Original final position of the load application on the gear: R0 = middle of the gear - (gear width/2)<br /><br />*If δyF &gt; 0<br />New starting position of the load application on the gear: L1 = L0 + 2 * δyF<br />New final position of the load application on the gear: R1 = R0<br /><br />*If δyF &lt; 0<br />New starting position of the load application on the gear: L1 = L0<br />New final position of the load application on the gear: R1 = R0 + 2 * δyF<br /><br />These calculations are only valid if the corresponding option has been selected in the calculation settings. Use the same process for all the gear elements.</p><p class="bodytext"><strong>Asymmetric cylindrical gear</strong></p><p class="bodytext">You can define asymmetric cylindrical gears by selecting <span class="menu">asymmetric</span> for the Gear geometry. If you select this option, you must enter two working pressure angles at normal section, one for the left flank and one for the right flank. The working flank is then determined, depending on the sense of rotation (clockwise or counter clockwise) and direction (driving or driven). Depending on which working flank is defined, either the working pressure angle for the left or the right flank is used for the calculation. This also works if a cylindrical gear pair file is linked.</p><p class="bodytext"><br /><strong>Take stiffness matrix into account: </strong>If this checkbox is selected, any gear body definition present in the connected gear calculation is taken into account. Only the gear body of the gear selected in the <span class="menu">Read data from file</span> option is used. Note that the gear body's stiffness matrix is not used in the standard shaft calculation, i.e. that it doesn't change the shaft stiffness.</p><p class="bodytext"></p><p class="bodytext"><strong>Bevel gear</strong><br /><strong>Meshing position</strong>: see Cylindrical gear.<br />The bevel gear's position can be converted using the bevel gear data. The reference point for positioning is the middle of the bevel gear width on the pitch cone. The bevel gear position can be converted using the axis crossing point position on the shaft and other bevel gear data.<br />The formulae in ISO 23509:2016, Annex D, are used to determine the axial and radial forces for bevel gears in the shaft calculation.<br />An additional force component due to friction is taken into account when calculating hypoid gears. The corresponding coefficient of friction μ can be defined in the module specific settings.<br />If the meshing type is set to &quot;Multiple meshing&quot;, you can model several meshings on the same cylindrical gear element.</p><p class="bodytext"></p><p class="bodytext"><strong>Face gear</strong></p><p class="bodytext">The pitch angle for face gears is always set to 90° (this input cannot be changed).</p><p class="bodytext"></p><p class="bodytext"><strong>Worm</strong></p><p class="bodytext"><strong>Position of contact</strong>: see Cylindrical gear. A worm is usually a driving element. Its efficiency is included in the calculation of force components.<br />If the worm data is read from a Z80 file, select the <span class="menu">Calculation with alternative formulae</span><span class="menu"> (differs from standard)</span> option in the <span class="menu">Calculation settings</span>, in the <span class="menu">Calculations</span> tab, in the worm gear calculation. This ensures that the radial forces in the shaft calculation match up with the radial forces in the worm gear calculation (see chapter <a class="referencetopic-shabschnitt" href="8505.htm" target="_self">Calculating with alternative formulae (differs from standard)</a>).</p><p class="bodytext"></p><p class="bodytext"><strong>Worm wheel</strong><br /><strong>Position of contact:</strong> see Cylindrical gear. The worm wheel is usually driven. Its efficiency is included in the calculation of force components.</p><p class="bodytext"></p><p class="bodytext"><strong>Pulley</strong><br /><strong>Direction of rope sheave:</strong> Input the direction of the resulting belt forces (see Figure 25.7)</p><p class="bodytext"></p><p class="bodytext">The direction of the helix angles and the positions of the elements are defined below (see Figure 25.1).</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd97799d" data-type="image" data-caption="Zur Richtungsdefinition bei Kraftelementen."><p class="bodytext"><img data-id="5ba0bcd97799d" height="503" src="12-w-013.png" width="488" /></p><p class="figcaption" data-id="5ba0bcd97799d">Figure 25.1: For defining the direction for force elements</p></div><p class="bodytext"></p><p class="bodytext">Eccentric force</p><div class="objectWrapper" data-id="5ba0bcd977a15" data-type="image" data-caption="Kartesische/Polarkoordinaten für die exzentrische Kraft"><p class="bodytext"><img data-id="5ba0bcd977a15" height="173" src="8331.png" width="187" /> <img data-id="5ba0bcd977a15" height="172" src="8332.png" width="185" /></p><p class="figcaption" data-id="5ba0bcd977a15">Figure 25.2: Cartesian/polar coordinates for eccentric force</p></div><p class="bodytext"></p><p class="bodytext">You can enter values for eccentric force either in Cartesian or polar coordinates (see Figure 25.2). You can change the coordinates system in the <span class="menu">Drawings/Settings</span> screen in the Shaft Editor.</p><p class="bodytext"></p><p class="bodytext"><strong>Transferring data from gear calculation</strong></p><p class="bodytext">In the <span class="menu">Element Editor</span>, you can import the data used to define spur and bevel gears from a gear calculation file. Select the element you require in the Element Tree and then click on the <span class="menu">Read data from file</span> checkbox. Then select the gear number (1 to 4). The data relevant to these gear pairs is then imported directly. In this situation, the data at the pitch point is used instead of the data at the reference circle.</p><p class="bodytext">Important: If the <span class="menu">Read data from file</span> option in this input window remains selected, data will be reimported from the gear calculation every time you call the shaft calculation function. If you then change the gear data later on, the new data will automatically be transferred with it! However, if you only want to import this data once, deactivate this option again once you have imported your data.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

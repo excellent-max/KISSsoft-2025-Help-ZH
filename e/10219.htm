@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>集成 KISSsoft 插件 | Integrating the KISSsoft Add-in</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Integrating the KISSsoft Add-in">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9007');expand('8924');expand('9272');expand('9246');highlight('10219')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9007.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10550.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">集成 KISSsoft 插件</h3>   
+                
+<p class="bodytext"><span class="menu">KISSsoftCOM</span> 服务器应作为安装过程的一部分进行注册。然而，如果此步骤未完成，并且 KISSsoft 接口无法工作，必须注册该插件。</p><p class="bodytext">前往 KISSsoft 安装目录并选择 <strong>ProEngineer</strong> 子文件夹。在该文件夹中，双击 <strong>ProECreoRegister.bat</strong> 文件以注册接口。</p><p class="bodytext">如果 KISSsoftCOM 服务器成功注册，将显示一条消息确认这一点。</p><p class="bodytext">要注销注册，请双击 <span class="menu">ProEUnRegister.bat</span> 文件（位于 KISSsoft 安装目录中）。然后显示一条消息确认注销成功。</p><p class="bodytext"></p><p class="bodytext">使用下面介绍的 3 种方法之一，确保每次启动 Creo Parametric 时 KISSsoft 菜单都存在。针对全部 3 种变体，在 'config.pro' 文件（Creo 中）中添加此行：</p><p class="code">open_protk_unsigned_apps 始终</p><p class="bodytext"><strong>变体 1： </strong></p><p class="bodytext">将 <strong>Protk_EditGear_Creo.dat</strong> 文件复制到 Creo <strong>\Common Files\text\</strong> 子目录（对于 Creo，将文件复制到 ...<strong>\text\</strong> 子目录）。<br>然后，将文件重命名为 <strong>Protk.dat</strong>。使用此变体，可更改 Creo 的启动目录，且 KISSsoft 菜单始终随其一起启动。<br>然而，如果已存在不同的 <strong>Protk.dat</strong> 文件，请将 <strong>Protk_EditGear_Creo.dat</strong> 中的行插入到 <strong>Protk.dat </strong> 文件中。</p><p class="bodytext"></p><p class="bodytext"><strong>变体 2：</strong></p><p class="bodytext">将 <strong>Protk_EditGear_Creo.dat</strong> 文件复制到初始 Creo 工作目录，并重命名为 <strong>Protk.dat</strong>。<br>在这种情况下，应将 <strong>Protk.dat</strong> 文件复制到启动目录。路径在 parametric.exe 文件的属性中显示。</p><p class="bodytext"></p><p class="bodytext"><strong>变体 3： </strong></p><p class="bodytext">用户必须将以下行添加到其 <strong>config.pro</strong> 文件（在 Creo 中）。换句话说，用户定义自己的路径： <br><strong>protkdat C:\Program Files\KISSsoft&lt;version&gt;</strong><br>文件 <span class="menu">Protk_EditGear_….dat</span> 位于 <span class="menu">ProEngineer </span> 安装子目录，必须重命名为 <span class="menu">Protk.dat </span> 才能正常工作。</p><p class="bodytext"></p><p class="bodytext"><strong>Protk.dat 文件内容说明：</strong></p><p class="bodytext"></p><p class="bodytext"><span class="code">NAME EditGear</span></p><p class="bodytext"><span class="code">EXEC_PATH C:\Program Files\KISSsoft AG\KISSsoft</span></p><p class="bodytext"><span class="code">XXXX\ProEngineer\EditGear\bin_nt\EditGear...</span></p><p class="bodytext"></p><p class="bodytext"><span class="code">TEXT_PATH C:\Program Files\KISSsoft AG\KISSsoft</span></p><p class="bodytext"><span class="code">XXXX\ProEngineer\EditGear\text.GB</span></p><p class="bodytext"></p><p class="bodytext"><span class="code">STARTUP DLL</span></p><p class="bodytext"><span class="code">ALLOW_STOP TRUE</span></p><p class="bodytext"><span class="code">UNICODE_ENCODING FALSE</span></p><p class="bodytext"><span class="code">END </span></p><p class="bodytext"></p><p class="bodytext"><span class="menu">EXEC_PATH</span> 和 <span class="menu">TEXT_PATH</span> 必须是安装目录的绝对路径。</p><p class="bodytext"><span class="menu">STARTUP DLL</span> 和 <span class="menu">UNICODE_ENCODING FALSE</span> 是预定义的（不要更改）。</p><p class="bodytext">使用 <span class="menu">ALLOW_STOP TRUE</span> 停止 Creo Parametric 程序（<span class="menu">Tools &gt; 辅助应用 &gt; 停止</span>）。</p><p class="bodytext"></p><p class="bodytext">可以在 <span class="menu">Protk.dat</span> 文件中删除此行，以防止用户停止接口。</p><p class="bodytext"><span class="menu">NAME EditGear</span> 和 <span class="menu">END</span> 必须存在，尽管可以更改 <span class="menu">EditGear</span> 的名称（如需）。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Integrating the KISSsoft Add-in</h3>   
+                
+<p class="bodytext">The <span class="menu">KISSsoftCOM</span> server should be registered as part of the installation process. However, if this didn't happen, and the KISSsoft interface doesn't work, you must register the Add-in.</p><p class="bodytext">Go to the KISSsoft installation directory and select the <strong>ProEngineer</strong> subfolder. In it, double-click on the <strong>ProECreoRegister.bat</strong> file to register the interface.</p><p class="bodytext">If the KISSsoftCOM server is registered successfully, a message is displayed to confirm that this is the case.</p><p class="bodytext">To delete the registration, double-click on the <span class="menu">ProEUnRegister.bat</span> file in the KISSsoft installation directory. A message is then displayed to confirm that deregistration was successful.</p><p class="bodytext"></p><p class="bodytext">Use one of the 3 methods described below to ensure the KISSsoft menu is present every time you start Creo Parametric. Add this line for all 3 variants, in the 'config.pro' file (in Creo):</p><p class="code">open_protk_unsigned_apps always</p><p class="bodytext"><strong>Variant 1: </strong></p><p class="bodytext">Copy the <strong>Protk_EditGear_Creo.dat</strong> file to the Creo <strong>\Common Files\text\</strong> subdirectory (for Creo, copy the file to the ...<strong>\text\</strong> subdirectory).<br />Then, rename the file to <strong>Protk.dat</strong>. Using this variant, the user can change their Creo start directory, and the KISSsoft menu always starts along with it.<br />However, if a different <strong>Protk.dat</strong> file is already present, insert the lines from <strong>Protk_EditGear_Creo.dat</strong> into the <strong>Protk.dat </strong> file.</p><p class="bodytext"></p><p class="bodytext"><strong>Variant 2:</strong></p><p class="bodytext">Copy the <strong>Protk_EditGear_Creo.dat</strong> file into the initial Creo working directory and rename it <strong>Protk.dat</strong>.<br />In this case, the <strong>Protk.dat</strong> file is to be copied into the start directory. The path is displayed in the properties of the parametric.exe file.</p><p class="bodytext"></p><p class="bodytext"><strong>Variant 3: </strong></p><p class="bodytext">The user must add the following lines to their <strong>config.pro</strong> file (in Creo). In other words, the user defines their own path: <br /><strong>protkdat C:\Program Files\KISSsoft&lt;version&gt;</strong><br />The <span class="menu">Protk_EditGear_….dat</span> file in the <span class="menu">ProEngineer </span> installation subdirectory must be renamed to <span class="menu">Protk.dat </span>to make it work.</p><p class="bodytext"></p><p class="bodytext"><strong>Description of the content of the Protk.dat file:</strong></p><p class="bodytext"></p><p class="bodytext"><span class="code">NAME EditGear</span></p><p class="bodytext"><span class="code">EXEC_PATH C:\Program Files\KISSsoft AG\KISSsoft</span></p><p class="bodytext"><span class="code">XXXX\ProEngineer\EditGear\bin_nt\EditGear...</span></p><p class="bodytext"></p><p class="bodytext"><span class="code">TEXT_PATH C:\Program Files\KISSsoft AG\KISSsoft</span></p><p class="bodytext"><span class="code">XXXX\ProEngineer\EditGear\text.GB</span></p><p class="bodytext"></p><p class="bodytext"><span class="code">STARTUP DLL</span></p><p class="bodytext"><span class="code">ALLOW_STOP TRUE</span></p><p class="bodytext"><span class="code">UNICODE_ENCODING FALSE</span></p><p class="bodytext"><span class="code">END </span></p><p class="bodytext"></p><p class="bodytext"><span class="menu">EXEC_PATH</span> and <span class="menu">TEXT_PATH</span> must be the absolute path of the installation.</p><p class="bodytext"><span class="menu">STARTUP DLL</span> and <span class="menu">UNICODE_ENCODING FALSE</span> are predefined (do not change them).</p><p class="bodytext">Use <span class="menu">ALLOW_STOP TRUE</span> to stop the Creo Parametric program (<span class="menu">Tools &gt; Auxiliary Application &gt; Stop</span>).</p><p class="bodytext"></p><p class="bodytext">You can delete this line in the <span class="menu">Protk.dat</span> file to prevent users from stopping the interface.</p><p class="bodytext"><span class="menu">NAME EditGear</span> and <span class="menu">END</span> must be present, although you can change the <span class="menu">EditGear</span> name if required.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

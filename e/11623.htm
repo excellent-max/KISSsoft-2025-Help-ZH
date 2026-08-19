@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>使用载荷谱：为每个载荷工况分别定义轴、油和箱体温度 | Using load spectra: define shaft, oil and housing temperatures individually for each load case</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Using load spectra: define shaft, oil and housing temperatures individually for each load case">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11621');expand('8183');expand('9287');expand('9246');highlight('11623')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11622.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11318.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">使用载荷谱：为每个载荷工况分别定义轴、油和箱体温度</h3>   
+                
+<p class="bodytext">如果使用此选项，您可以为每个载荷工况分别输入轴、油和箱体温度。只有在 <span class="menu">基本数据 </span>选项卡中选择考虑载荷谱时，此设置才可用。可以通过在载荷谱下拉菜单中选择 <span class="menu">自定义输入 </span> 来定义数据。在那里，可以在表格中手动定义数据，或者从文本文件中读取数据。文本文件中相应的列必须按如下所示定义。更多详情（参见"<a class="referencetopic-shabschnitt" href="11190.htm" target="_self">载荷谱</a>"章）和（参见"<a class="referencetopic-shabschnitt" href="8278.htm" target="_self">载荷谱</a>"章）。</p><p class="bodytext"><br><span class="code">contents: h T n Temp TempHousing TempOil</span></p><p class="bodytext"><span class="code">// 变量名说明（变量名不可更改）</span></p><p class="bodytext"><span class="code">// - h … 频率</span></p><p class="bodytext"><span class="code">// - T … 扭矩</span></p><p class="bodytext"><span class="code">// - n … 转速</span></p><p class="bodytext"><span class="code">// - Temp … 轴温度</span></p><p class="bodytext"><span class="code">// - TempHousing … 箱体温度</span></p><p class="bodytext"><span class="code">// - TempOil … 油温</span></p><p class="bodytext"><span class="code">0.1 1 1 70 70 70 </span></p><p class="bodytext"><span class="code">0.2 0.9 1 65 65 65 </span></p><p class="bodytext"><span class="code">0.5 0.8 1.1 50 50 50 </span></p><p class="bodytext"><span class="code">0.2 0.7 1.1 50 50 50 </span></p><p class="bodytext"><br></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Using load spectra: define shaft, oil and housing temperatures individually for each load case</h3>   
+                
+<p class="bodytext">If you use this option, you can input shaft, oil, and housing temperatures individually for each load case. This setting is available only if you choose to take load spectrum into account in the <span class="menu">Basic data </span>tab. The data can be defined by choosing <span class="menu">Own input </span> in the load spectrum drop down menu. In there, the data can be defined manually in a table or they can be read from a text file. Appropriate columns in the text file must be defined as shown below. For more details (see chapter <a class="referencetopic-shabschnitt" href="11190.htm" target="_self">Load spectra</a>) and (see chapter <a class="referencetopic-shabschnitt" href="8278.htm" target="_self">Load spectra</a>).</p><p class="bodytext"><br /><span class="code">contents: h T n Temp TempHousing TempOil</span></p><p class="bodytext"><span class="code">// Explanation of variable names (variable names cannot be changed)</span></p><p class="bodytext"><span class="code">// - h … frequency</span></p><p class="bodytext"><span class="code">// - T … torque</span></p><p class="bodytext"><span class="code">// - n … rotating speed</span></p><p class="bodytext"><span class="code">// - Temp … shaft temperature</span></p><p class="bodytext"><span class="code">// - TempHousing … housing temperature</span></p><p class="bodytext"><span class="code">// - TempOil … oil temperature</span></p><p class="bodytext"><span class="code">0.1 1 1 70 70 70 </span></p><p class="bodytext"><span class="code">0.2 0.9 1 65 65 65 </span></p><p class="bodytext"><span class="code">0.5 0.8 1.1 50 50 50 </span></p><p class="bodytext"><span class="code">0.2 0.7 1.1 50 50 50 </span></p><p class="bodytext"><br /></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

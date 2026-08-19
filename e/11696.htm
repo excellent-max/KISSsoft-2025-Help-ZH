@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>W010 轴计算 | W010 Shaft Calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="W010 Shaft Calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11677');expand('9293');expand('9246');highlight('11696')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11686.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11713.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">W010 轴计算</h3>   
+                
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">	<tbody>		<tr>			<td>Qu[0].sErmuedung</td>			<td>疲劳安全系数</td>			<td></td>		</tr>		<tr>			<td>Qu[0].sStatisch</td>			<td>静态安全系数</td>			<td></td>		</tr>		<tr>			<td>Qu[0].sResErmuedung</td>			<td>疲劳结果</td>			<td>%</td>		</tr>		<tr>			<td>Qu[0].sResStatisch</td>			<td>静态结果</td>			<td>%</td>		</tr>		<tr>			<td>Qu[0].sAnriss</td>			<td>抗初始裂纹安全系数</td>			<td></td>		</tr>		<tr>			<td>WelG.speed</td>			<td>转速</td>			<td>1/min</td>		</tr>		<tr>			<td>WelG.rotateCounterClockwise</td>			<td>旋转方向</td>			<td></td>		</tr>		<tr>			<td>WelG.AnzahlDr</td>			<td>固有频率数量</td>			<td></td>		</tr>		<tr>			<td>Bieg.X.BiegMin</td>			<td>最小挠度 x</td>			<td></td>		</tr>		<tr>			<td>Bieg.X.BiegMax</td>			<td>最大挠度 x</td>			<td></td>		</tr>		<tr>			<td>Bieg.Z.BiegMin</td>			<td>最小挠度 z</td>			<td></td>		</tr>		<tr>			<td>Bieg.Z.BiegMax</td>			<td>最大挠度 z</td>			<td></td>		</tr>		<tr>			<td>WelG.GVector[0]</td>			<td>x 方向重力分量</td>			<td></td>		</tr>		<tr>			<td>WelG.GVector[1]</td>			<td>y 方向重力分量</td>			<td></td>		</tr>		<tr>			<td>WelG.GVector[2]</td>			<td>z 方向重力分量</td>			<td></td>		</tr>		<tr>			<td>WelG.LageFlag</td>			<td>轴轴线位置</td>			<td></td>		</tr>		<tr>			<td>WelG.Oil.theOil</td>			<td>润滑剂温度</td>			<td></td>		</tr>		<tr>			<td>WelG.Oil.SchmierTypID</td>			<td>润滑剂</td>			<td></td>		</tr>		<tr>			<td>WelG.W050Allg_ErwLebensd</td>			<td>修正额定寿命</td>			<td></td>		</tr>		<tr>			<td>WelG.housingTemperature</td>			<td>箱体温度</td>			<td>°C</td>		</tr>		<tr>			<td>WelG.Oil.V_Id</td>			<td>杂质污染</td>			<td></td>		</tr>		<tr>			<td>WelG.WLagerBeruecksichtigen</td>			<td>轴承计算方法</td>			<td></td>		</tr>		<tr>			<td>WelG.W050Allg_SollLeben</td>			<td>所需额定寿命</td>			<td>h</td>		</tr>		<tr>			<td>WelG.Lebensdauer</td>			<td>轴所需额定寿命</td>			<td>h</td>		</tr>		<tr>			<td>WelG.aktivLK</td>			<td>考虑载荷谱</td>			<td></td>		</tr>		<tr>			<td>WelG.frictionMeth</td>			<td>轴承摩擦方法</td>			<td></td>		</tr>		<tr>			<td>WelG.oelstand</td>			<td>油位</td>			<td>mm</td>		</tr>		<tr>			<td>WelG.lubricationType</td>			<td>润滑类型</td>			<td></td>		</tr>		<tr>			<td>shafts[0].outerGeometry</td>			<td>外部几何形状</td>			<td></td>		</tr>		<tr>			<td>shafts[0].innerGeometry</td>			<td>内部几何形状</td>			<td></td>		</tr>		<tr>			<td>shafts[0].name</td>			<td>名称</td>			<td></td>		</tr>		<tr>			<td>shafts[0].drawingNumber</td>			<td>图样</td>			<td></td>		</tr>		<tr>			<td>shafts[0].mass</td>			<td>轴质量，包括附加质量</td>			<td>kg</td>		</tr>		<tr>			<td>shafts[0].length</td>			<td>长度</td>			<td>mm</td>		</tr>		<tr>			<td>shafts[0].temperature</td>			<td>温度</td>			<td>°C</td>		</tr>		<tr>			<td>shafts[0].material.DBID</td>			<td>材料列表选择</td>			<td></td>		</tr>		<tr>			<td>shafts[0].material.bez</td>			<td>材料描述</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.WerkstArtStr</td>			<td>材料类型</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.WerkstBehStr</td>			<td>材料处理</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.OberflVerfStr</td>			<td>表面处理</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.Hatt</td>			<td>计算寿命</td>			<td>h</td>		</tr>		<tr>			<td>shafts[0].w060.usage</td>			<td>最大利用率</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.damage</td>			<td>损伤</td>			<td></td>		</tr>		<tr>			<td>WelG.referenceTemperature</td>			<td>参考温度</td>			<td>°C</td>		</tr>		<tr>			<td>WelG.housingThermalReference</td>			<td>箱体热参考点</td>			<td>mm</td>		</tr>		<tr>			<td>WelG.considerGearOffsets</td>			<td>考虑齿轮偏移</td>			<td></td>		</tr>		<tr>			<td>W060Allg.Haen.sSollStreck</td>			<td>名义安全系数</td>			<td></td>		</tr>		<tr>			<td>W060Allg.Din.sSollStreck</td>			<td>所需安全系数</td>			<td></td>		</tr>		<tr>			<td>W060Allg.AGMA.sSafetyStatic</td>			<td>所需安全系数</td>			<td></td>		</tr>		<tr>			<td>W060Allg.Din.sSollErmuedung</td>			<td>所需安全系数</td>			<td></td>		</tr>		<tr>			<td>W060Allg.AGMA.sSafetyFatigue</td>			<td>所需抗疲劳安全系数</td>			<td></td>		</tr>		<tr>			<td>W060Allg.Haen.sSollBruch</td>			<td>名义安全系数</td>			<td></td>		</tr>		<tr>			<td>WelG.flagoelstand</td>			<td>考虑油位</td>			<td></td>		</tr>		<tr>			<td>WelG.sealCalc</td>			<td>轴承密封件</td>			<td></td>		</tr>		<tr>			<td>WelG.writeResultsToCSV</td>			<td>将数据导出到 CSV 文件</td>			<td></td>		</tr>		<tr>			<td>WelG.Lage</td>			<td>空间位置</td>			<td>°</td>		</tr>		<tr>			<td>WelG.lastKElem</td>			<td>带载荷分级的应力分析</td>			<td></td>		</tr>		<tr>			<td>WelG.housingMaterial.DBID</td>			<td>箱体材料</td>			<td></td>		</tr>		<tr>			<td>WelG.considerGyroscopicEffect</td>			<td>考虑陀螺效应</td>			<td></td>		</tr>		<tr>			<td>WelG.ZahnradBeruecksichtigen</td>			<td>考虑齿轮</td>			<td></td>		</tr>		<tr>			<td>WelG.GewichtBeruecksichtigen</td>			<td>考虑重量</td>			<td></td>		</tr>		<tr>			<td>WelG.serializationExport.serializedDataForSaving</td>			<td>保存自定义轴承</td>			<td></td>		</tr>		<tr>			<td>WelG.serializationExport.isSerializationAllowed</td>			<td>允许导出</td>			<td></td>		</tr>		<tr>			<td>WelG.ReqSysReliability</td>			<td>配置在所需使用寿命内的可靠性</td>			<td></td>		</tr>		<tr>			<td>W060Allg.limitedLife</td>			<td>轴计算方法</td>			<td></td>		</tr>		<tr>			<td>shafts[0].speed</td>			<td>转速</td>			<td>1/min</td>		</tr>		<tr>			<td>shafts[0].startPosition</td>			<td>初始位置</td>			<td>mm</td>		</tr>		<tr>			<td>WelG.referenceTemperature</td>			<td>参考温度</td>			<td>°C</td>		</tr>	</tbody></table>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">另请参见</p><p class="relateditem"><a href="11713.htm" target="_self">元函数 SetElementData 和 GetElementData</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">W010 Shaft Calculation</h3>   
+                
+<table border="1" cellpadding="1" cellspacing="1" style="width:500px">	<tbody>		<tr>			<td>Qu[0].sErmuedung</td>			<td>Fatigue safety</td>			<td></td>		</tr>		<tr>			<td>Qu[0].sStatisch</td>			<td>Static safety</td>			<td></td>		</tr>		<tr>			<td>Qu[0].sResErmuedung</td>			<td>Fatigue result</td>			<td>%</td>		</tr>		<tr>			<td>Qu[0].sResStatisch</td>			<td>Static result</td>			<td>%</td>		</tr>		<tr>			<td>Qu[0].sAnriss</td>			<td>Safety against incipient crack</td>			<td></td>		</tr>		<tr>			<td>WelG.speed</td>			<td>Speed</td>			<td>1/min</td>		</tr>		<tr>			<td>WelG.rotateCounterClockwise</td>			<td>Sense of rotation</td>			<td></td>		</tr>		<tr>			<td>WelG.AnzahlDr</td>			<td>Number of eigenfrequencies</td>			<td></td>		</tr>		<tr>			<td>Bieg.X.BiegMin</td>			<td>Minimum deflection x</td>			<td></td>		</tr>		<tr>			<td>Bieg.X.BiegMax</td>			<td>Maximum deflection x</td>			<td></td>		</tr>		<tr>			<td>Bieg.Z.BiegMin</td>			<td>Minimum deflection z</td>			<td></td>		</tr>		<tr>			<td>Bieg.Z.BiegMax</td>			<td>Maximum deflection z</td>			<td></td>		</tr>		<tr>			<td>WelG.GVector[0]</td>			<td>Weight towards x</td>			<td></td>		</tr>		<tr>			<td>WelG.GVector[1]</td>			<td>Weight towards y</td>			<td></td>		</tr>		<tr>			<td>WelG.GVector[2]</td>			<td>Weight towards z</td>			<td></td>		</tr>		<tr>			<td>WelG.LageFlag</td>			<td>Position of shaft axis</td>			<td></td>		</tr>		<tr>			<td>WelG.Oil.theOil</td>			<td>Lubricant temperature</td>			<td></td>		</tr>		<tr>			<td>WelG.Oil.SchmierTypID</td>			<td>Lubricant</td>			<td></td>		</tr>		<tr>			<td>WelG.W050Allg_ErwLebensd</td>			<td>Modified rating life</td>			<td></td>		</tr>		<tr>			<td>WelG.housingTemperature</td>			<td>Housing temperature</td>			<td>°C</td>		</tr>		<tr>			<td>WelG.Oil.V_Id</td>			<td>Contamination</td>			<td></td>		</tr>		<tr>			<td>WelG.WLagerBeruecksichtigen</td>			<td>Calculation method bearing</td>			<td></td>		</tr>		<tr>			<td>WelG.W050Allg_SollLeben</td>			<td>Required rating life</td>			<td>h</td>		</tr>		<tr>			<td>WelG.Lebensdauer</td>			<td>Required rating life shaft</td>			<td>h</td>		</tr>		<tr>			<td>WelG.aktivLK</td>			<td>Consider load spectrum</td>			<td></td>		</tr>		<tr>			<td>WelG.frictionMeth</td>			<td>Friction method bearings</td>			<td></td>		</tr>		<tr>			<td>WelG.oelstand</td>			<td>Oil level</td>			<td>mm</td>		</tr>		<tr>			<td>WelG.lubricationType</td>			<td>Lubrication type</td>			<td></td>		</tr>		<tr>			<td>shafts[0].outerGeometry</td>			<td>Outer geometry</td>			<td></td>		</tr>		<tr>			<td>shafts[0].innerGeometry</td>			<td>Inner geometry</td>			<td></td>		</tr>		<tr>			<td>shafts[0].name</td>			<td>Name</td>			<td></td>		</tr>		<tr>			<td>shafts[0].drawingNumber</td>			<td>Drawing</td>			<td></td>		</tr>		<tr>			<td>shafts[0].mass</td>			<td>Mass of shaft, including additional masses</td>			<td>kg</td>		</tr>		<tr>			<td>shafts[0].length</td>			<td>Length</td>			<td>mm</td>		</tr>		<tr>			<td>shafts[0].temperature</td>			<td>Temperature</td>			<td>°C</td>		</tr>		<tr>			<td>shafts[0].material.DBID</td>			<td>Material list selection</td>			<td></td>		</tr>		<tr>			<td>shafts[0].material.bez</td>			<td>Material description</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.WerkstArtStr</td>			<td>Material type</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.WerkstBehStr</td>			<td>Material treatment</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.OberflVerfStr</td>			<td>Surface treatment</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.Hatt</td>			<td>Calculated life</td>			<td>h</td>		</tr>		<tr>			<td>shafts[0].w060.usage</td>			<td>Maximum utilization</td>			<td></td>		</tr>		<tr>			<td>shafts[0].w060.damage</td>			<td>Damage</td>			<td></td>		</tr>		<tr>			<td>WelG.referenceTemperature</td>			<td>Reference temperature</td>			<td>°C</td>		</tr>		<tr>			<td>WelG.housingThermalReference</td>			<td>Thermal housing reference point</td>			<td>mm</td>		</tr>		<tr>			<td>WelG.considerGearOffsets</td>			<td>Consider gear offsets</td>			<td></td>		</tr>		<tr>			<td>W060Allg.Haen.sSollStreck</td>			<td>Nominal safety</td>			<td></td>		</tr>		<tr>			<td>W060Allg.Din.sSollStreck</td>			<td>Required safeties</td>			<td></td>		</tr>		<tr>			<td>W060Allg.AGMA.sSafetyStatic</td>			<td>Required safety</td>			<td></td>		</tr>		<tr>			<td>W060Allg.Din.sSollErmuedung</td>			<td>Required safeties</td>			<td></td>		</tr>		<tr>			<td>W060Allg.AGMA.sSafetyFatigue</td>			<td>Required safety against fatigue</td>			<td></td>		</tr>		<tr>			<td>W060Allg.Haen.sSollBruch</td>			<td>Nominal safety</td>			<td></td>		</tr>		<tr>			<td>WelG.flagoelstand</td>			<td>Consider oil level</td>			<td></td>		</tr>		<tr>			<td>WelG.sealCalc</td>			<td>Seals bearing</td>			<td></td>		</tr>		<tr>			<td>WelG.writeResultsToCSV</td>			<td>Export data to CSV file</td>			<td></td>		</tr>		<tr>			<td>WelG.Lage</td>			<td>Position in space</td>			<td>°</td>		</tr>		<tr>			<td>WelG.lastKElem</td>			<td>Stress analysis with load bin</td>			<td></td>		</tr>		<tr>			<td>WelG.housingMaterial.DBID</td>			<td>Housing material</td>			<td></td>		</tr>		<tr>			<td>WelG.considerGyroscopicEffect</td>			<td>Consider gyroscopic effect</td>			<td></td>		</tr>		<tr>			<td>WelG.ZahnradBeruecksichtigen</td>			<td>Consider gear</td>			<td></td>		</tr>		<tr>			<td>WelG.GewichtBeruecksichtigen</td>			<td>Consider weight</td>			<td></td>		</tr>		<tr>			<td>WelG.serializationExport.serializedDataForSaving</td>			<td>Save own bearings</td>			<td></td>		</tr>		<tr>			<td>WelG.serializationExport.isSerializationAllowed</td>			<td>Allow export</td>			<td></td>		</tr>		<tr>			<td>WelG.ReqSysReliability</td>			<td>Reliability of the configuration for required service life</td>			<td></td>		</tr>		<tr>			<td>W060Allg.limitedLife</td>			<td>Calculation method shaft</td>			<td></td>		</tr>		<tr>			<td>shafts[0].speed</td>			<td>Speed</td>			<td>1/min</td>		</tr>		<tr>			<td>shafts[0].startPosition</td>			<td>Initial position</td>			<td>mm</td>		</tr>		<tr>			<td>WelG.referenceTemperature</td>			<td>Reference temperature</td>			<td>°C</td>		</tr>	</tbody></table>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">See also</p><p class="relateditem"><a href="11713.htm" target="_self">Meta functions SetElementData and GetElementData</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

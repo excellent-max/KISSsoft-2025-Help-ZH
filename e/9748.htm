@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>服务器功能 | Server functionality</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Server functionality">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9746');expand('9018');expand('9272');expand('9246');highlight('9748')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9747.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9749.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">服务器功能</h3>   
+                
+<p class="bodytext">服务器具有若干功能，可使用这些功能来启动计算模块、读取或设置值并执行计算。</p><ul>	<li class="bodytext"><span class="menu">GetModule([in] BSTR module, [in] VARIANT_BOOL interactive)</span>：根据模块标识（如 Z012 或 W010）启动计算模块。<span class="menu">interactive</span> 参数指定是否创建带图形用户界面的计算模块。</li>	<li class="bodytext"><span class="menu">IsModuleValid([out] VARIANT_BOOL isValid)</span>：返回计算模块是否已通过 GetModule 创建且仍然存在。</li>	<li class="bodytext"><span class="menu">Calculate() </span> 执行活动模块的主要计算。</li>	<li class="bodytext"><span class="menu">CalculateRetVal([out, retval] VARIANT_BOOL* isOk)</span>：执行当前活动模块的主计算，并返回计算是否成功。</li>	<li class="bodytext"><span class="menu">SetVar([in] BSTR name, [in] BSTR value)</span>：将变量设置为指定值，数据以文本形式传输。变量名可在报告模板中查找，但不能保证这些变量在未来版本中保持不变。</li>	<li class="bodytext"><span class="menu">GetVar([in] BSTR name, [out, retval] BSTR* value</span><span class="menu">)</span>：以文本形式返回 KISSsoft 变量。</li>	<li class="bodytext"><span class="menu">ShowInterface([in] VARIANT_BOOL wait)</span>：显示图形用户界面。<span class="menu">wait</span> 参数用于指定函数是否等待对话框关闭。</li>	<li class="bodytext"><span class="menu">IsActiveInterface([out, retval] VARIANT_BOOL* isActive)</span>：返回 KISSsoft 对话框是否处于活动状态。</li>	<li class="bodytext"><span class="menu">IsActive([out, retval] VARIANT_BOOL* isActive)</span>：返回是否已加载计算模块。</li>	<li class="bodytext"><span class="menu">ReleaseModule() </span> 再次释放已加载的模块。每次使用后都要再次释放模块，以减少服务器的负载。</li>	<li class="bodytext"><span class="menu">LoadFile([in] BSTR file name)</span>：加载指定文件。</li>	<li class="bodytext"><span class="menu">SaveFile([in] BSTR file name)</span>：将计算保存到指定文件。</li>	<li class="bodytext"><span class="menu">CheckLicense ([in] name BSTR, [out, retval] VARIANT_BOOL* isOk)</span>：返回许可证是否有效。</li>	<li class="bodytext"><span class="menu">GetININame([out, retval] BSTR* name)</span>：返回当前加载的 INI 文件名。</li>	<li class="bodytext"><span class="menu">GetVersionFromFile([in] BSTR filename, [out, retval] BSTR* version)</span>：返回计算文件中 KISSsoft 模块的版本号（如 2.6；版本号取决于所用模块）。</li>	<li class="bodytext"><span class="menu">GetModulFromFile([in] BSTR filename, [out, retval] BSTR* name)</span>：返回计算文件中的 KISSsoft 模块标识（如 M040）。调用前必须先通过 GetModule 获取计算模块。</li>	<li class="bodytext"><span class="menu">GetKsoftVersionFromFile([in] BSTR file name, [out, retval] BSTR* kSoftVersion)</span>：返回计算文件中记录的 KISSsoft 版本号（如 03-2011）。</li>	<li class="bodytext"><span class="menu">GetKsoftVersion([out, retval] BSTR* kSoftVersion)</span>：返回 KISSsoft 已注册且通过 COM 接口启动的版本（如 03-2011）。</li>	<li class="bodytext"><span class="menu">GetDBName([in] BSTR db_name, [in] BSTR table, [in] SHORT flag, [in] LONG ID, [in] LONG order, [out,retval] BSTR *name)</span>：使用 flag 参数指定输入为 ID（flag = 0）还是结果（flag = 1）。相应的输出为条目的序号和名称，或 ID（材料数据库中的 BEZ_DIN）。发生错误时不显示消息，函数返回 False。</li>	<li class="bodytext"><span class="menu">GetDBValue([in] BSTR db_name, [in] BSTR table, [in] LONG ID, [in] BSTR fieldname, [out,retval] BSTR *name)</span>：返回指定数据库字段中的值。发生错误时不显示消息，函数返回 False。请注意，轴承制造商未批准使用该函数直接提取轴承数据，因此该函数已被禁用。</li>	<li class="bodytext"><span class="menu">GetKsoftVersionSettings([out, retval] BSTR* kSoftVersionSettings)</span>：返回用于保存个人设置的临时设置文件夹所对应的 KISSsoft 版本（如 03-2014）。</li>	<li class="bodytext"><span class="menu">SetSilentMode([in] VARIANT_BOOL silent)</span>：指定是否隐藏消息，以便无需确认系统提示即可执行计算。</li>	<li class="bodytext"><span class="menu">Report([in] LONG show)</span>：生成报告。show 参数用于指定是否显示报告。报告在 Temp 目录的“KISS_?”子文件夹中创建。</li>	<li class="bodytext">	<p class="bodytext"><span class="menu">SetDebugFile([in] BSTR path)</span>：设置用于错误追踪的调试文件路径和文件名。</p>	</li>	<li class="bodytext"><span class="menu">ReportWithParameters([in] BSTR infile, [in] BSTR outfile, [in] LONG show, [in] LONG type)</span>：使用指定的报告模板（infile），在预定位置以预定名称（outfile）创建报告，并指定文件类型。文件名可以包含路径，也可以不含路径。输入报告模板 infile 时，还应输入文件扩展名（例如 Z012ld0.rpt）。如果没有为该文件输入路径，程序将在默认目录（另见“报告”）中查找。输出文件也必须输入扩展名。如果未指定路径，文件将以 KISS_? 为名称保存到 Temp 目录。文件扩展名应与指定的类型匹配。show 参数用于指定是否显示报告。art（即 type）参数用于指定输出格式：art=0 为带 *1 的 rtf 格式；art=1 为不带 *1 的 rtf 格式；art=2 为带 *1 的 html 格式；art=10 为不带 *1 的 txt 格式；art=20 为不带 *1 的 Unicode txt 格式；art=1000 为带 *1 的 pprpt 格式；art=1001 为不带 *1 的 pprpt 格式。<ul>		<li class="bodytext">*1 表示考虑数据层级</li>		<li class="bodytext">可能的组合示例：使用默认报告模板 → RTF 格式：ReportWithParameters("C:\Program Files (x86)\KISSsoft 2019\rpt\Z070ld0.rpt","C:\Temp\Z070ld0.rtf", 1, 0)，HTML 格式：Call ksoft.ReportWithParameters("Z070ld0.rpt", "C:\Temp\Z070ld0.html", 1, 2)，PPRPT 格式：ReportWithParameters ("C:\Program Files (x86)\KISSsoft 2019\rpt\Z070ld0.rpt","C:\Temp\Z070ld0.pprpt", 1, 1000)；使用图章报告模板 → TXT 格式：ReportWithParameters("Z10GEAR1d.rpt","C:\Temp\Z010GEAR1d.txt", 1, 10)</li>	</ul>	</li>	<li class="bodytext"><span class="menu">Message([out] VARIANT *strings, [out] VARIANT *types:, [out] LONG *numElem)</span>：第一个参数以字符串数组形式返回上次计算的消息；第二个参数返回相应的消息类型（error、warning、info）；numElem 返回现有消息的数量。</li>	<li class="bodytext"><span class="menu">CallFunc([in] BSTR name)</span>：执行特殊计算。可按需索取可用计算的详细清单。</li>	<li class="bodytext"><span class="menu">CallFuncNParam([in] VARIANT paramArray)</span>：执行特殊计算。可按需索取可用计算的详细清单。</li>	<li class="bodytext"><span class="menu">SetLanguage([in] LONG index)</span>：设置报告、界面和消息使用的语言（0 = 德语；1 = 英语；2 = 法语；3 = 意大利语；4 = 西班牙语；5 = 俄语；6 = 葡萄牙语；7 = 中文）。</li>	<li class="bodytext"><span class="menu">GetLanguage ([out, retval] LONG* index)</span>：读取当前设置的语言索引。各索引的定义见 SetLanguage() 函数说明。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Server functionality</h3>   
+                
+<p class="bodytext">The server has a number of functions that you can use to start a calculation module, read or set values, and perform a calculation.</p><ul>	<li class="bodytext"><span class="menu">GetModule([in] BSTR module, [in] VARIANT_BOOL interactive) </span> starts a calculation module from the module descriptor (e.g. Z012 or W010). ‘Interactive’<span class="menu"> </span> defines whether the calculation module is to be generated with a graphical user interface.</li>	<li class="bodytext"><span class="menu">IsModuleValid([out] VARIANT_BOOL isValid) </span> returns a value that indicates whether the calculation module has been generated with ‘GetModule’ and is present.</li>	<li class="bodytext"><span class="menu">Calculate() </span> performs the main calculation for the active module.</li>	<li class="bodytext"><span class="menu">CalculateRetVal([out, retval] VARIANT_BOOL* isOk) </span> runs the main calculation for the active module, and returns a value to tell you whether the calculation is OK.</li>	<li class="bodytext"><span class="menu">SetVar([in] BSTR name, [in] BSTR value) </span> is a function with which you can set variables to a required value. This data is transferred as text. You will find the variable names in the report templates, but there is no guarantee that all these variables will remain the same in the future.</li>	<li class="bodytext"><span class="menu">GetVar([in] BSTR name, [out, retval] BSTR* value</span><span class="menu">) </span> returns a variable from KISSsoft as text.</li>	<li class="bodytext"><span class="menu">ShowInterface([in] VARIANT_BOOL wait) </span> displays the graphical user interface. Use the 'wait'<span class="menu"> </span> parameter to specify whether the function is to wait until the dialog is closed.</li>	<li class="bodytext"><span class="menu">IsActiveInterface([out, retval] VARIANT_BOOL* isActive)</span> shows whether a KISSsoft dialog is active.</li>	<li class="bodytext"><span class="menu">IsActive([out, retval] VARIANT_BOOL* isActive) </span> shows whether a module has been loaded.</li>	<li class="bodytext"><span class="menu">ReleaseModule() </span> releases the loaded module again. You must always release a module again, to reduce the load on the server.</li>	<li class="bodytext"><span class="menu">LoadFile([in] BSTR file name) </span> loads the specified file.</li>	<li class="bodytext"><span class="menu">SaveFile([in] BSTR file name) </span> saves the calculation in the specified file.</li>	<li class="bodytext"><span class="menu">CheckLicense ([in] name BSTR, [out, retval] VARIANT_BOOL* isOk) </span> shows whether the license is valid.</li>	<li class="bodytext"><span class="menu">GetININame([out, retval] BSTR* name) </span> supplies the name of the loaded INI file.</li>	<li class="bodytext"><span class="menu">GetVersionFromFile([in] BSTR filename, [out, retval] BSTR* version) </span> supplies the version number (e.g. 2.6) of the KISSsoft module in the calculation file (the version number depends on which module is being used).</li>	<li class="bodytext"><span class="menu">GetModulFromFile([in] BSTR filename, [out, retval] BSTR* name) </span> supplies the KISSsoft module label (e.g. M040) in the calculation file. You must first fetch a calculation module (GetModule).</li>	<li class="bodytext"><span class="menu">GetKsoftVersionFromFile([in] BSTR file name, [out, retval] BSTR* kSoftVersion) </span>supplies the KISSsoft version number (e.g. 03-2011), given in the calculation file.</li>	<li class="bodytext"><span class="menu">GetKsoftVersion([out, retval] BSTR* kSoftVersion) </span> supplies the KISSsoft version (e.g. 03-2011) that is registered and was started via the COM interface.</li>	<li class="bodytext"><span class="menu">GetDBName([in] BSTR db_name, [in] BSTR table, [in] SHORT flag, [in] LONG ID, [in] LONG order, [out,retval] BSTR *name) </span> Use the 'flag' parameter to specify whether the ID (flag = 0) or the result (flag = 1) is to be used as the input. The output is then either the order and the name of the entry or the ID (in material database BEZ_DIN). No message is displayed if an error occurs. A ‘False’ is returned for the function.</li>	<li class="bodytext"><span class="menu">GetDBValue([in] BSTR db_name, [in] BSTR table, [in] LONG ID, [in] BSTR fieldname, [out,retval] BSTR *name) </span> supplies the value present in this database field. No message is displayed if an error occurs. A ‘False’ is returned for the function. Please note that the bearing manufacturers have not approved this function for directly extracting bearing data, which is why this function is disabled.</li>	<li class="bodytext"><span class="menu">GetKsoftVersionSettings([out, retval] BSTR* kSoftVersionSettings) </span> supplies the KISSsoft version (e.g. 03-2014) of the temporary settings folder in which the personal settings are stored.</li>	<li class="bodytext"><span class="menu">SetSilentMode([in] VARIANT_BOOL silent) </span> defines whether messages are to be hidden or not, so that calculations can be performed without you having to confirm system prompts.</li>	<li class="bodytext"><span class="menu">Report([in] LONG show) </span>writes the report. You can specify whether or not this report is to be displayed. The report is created in the Temp directory in the &quot;KISS_?&quot; sub-folder.</li>	<li class="bodytext">	<p class="bodytext"><span class="menu">SetDebugFile([in] BSTR path) </span> sets the path and file name of a debug file which can be used for error tracking.</p>	</li>	<li class="bodytext"><span class="menu">ReportWithParameters([in] BSTR infile, [in] BSTR outfile, [in] LONG show, [in] LONG type) </span> creates the report using the specified report template (‘infile’) in the predefined place with the predefined name (‘outfile’) and supplies the file type. You can enter file names either with or without the path. When entering the report template (‘infile’), you should also input the file extension (e.g.’Z012ld0.rpt’). If you do not enter a path for this file, the program will search the default directory (see also Reports) for the file. You must also enter the file extension for an output file. If you do not specify the path, the file is saved to the Temp directory with the name ‘KISS_?’. The file extension should match the specified type. Use the ‘show’ parameter to define whether the report is to be displayed, or not. Use the ‘art’ (meaning ‘type’) parameter to define the output format. (art=0 → rtf format with *1 ; art=1 → rtf format without *1 ; art=2 → html format with *1 ; art=10 → txt format without *1 ; art=20 → txt format in Unicode without *1) ; art=1000 → pprpt format with *1 ; art=1001 → pprpt format without *1).	<ul>		<li class="bodytext">*1 = takes into account the data level</li>		<li class="bodytext">Examples of possible combinations: With default report templates → RTF format: ReportWithParameters(&quot;C:\Program Files (x86)\KISSsoft 2019\rpt\Z070ld0.rpt&quot;,&quot;C:\Temp\Z070ld0.rtf&quot;, 1, 0), HTML format: Call ksoft.ReportWithParameters(&quot;Z070ld0.rpt&quot;, &quot;C:\Temp\Z070ld0.html&quot;, 1, 2), PPRPT format: ReportWithParameters (&quot;C:\Program Files (x86)\KISSsoft 2019\rpt\Z070ld0.rpt&quot;,&quot;C:\Temp\Z070ld0.pprpt&quot;, 1, 1000); with drawing stamp report template → TXT format: ReportWithParameters(&quot;Z10GEAR1d.rpt&quot;,&quot;C:\Temp\Z010GEAR1d.txt&quot;, 1, 10)</li>	</ul>	</li>	<li class="bodytext"><span class="menu">Message([out] VARIANT *strings, [out] VARIANT *types:, [out] LONG *numElem) </span> returns the messages from the last calculation in the first parameter, as an array containing strings. The second parameter contains the particular message type (error, warning, info). The number of existing messages is shown in numElem.</li>	<li class="bodytext"><span class="menu">CallFunc([in] BSTR name) </span> allows you to perform special calculations. A more detailed list of the available calculations is available on request.</li>	<li class="bodytext"><span class="menu">CallFuncNParam([in] VARIANT paramArray) </span> allows you to perform special calculations. A more detailed list of the available calculations is available on request.</li>	<li class="bodytext"><span class="menu">SetLanguage([in] LONG index) </span> specifies the language used for reports, interfaces and messages (0 = German; 1 = English; 2 = French; 3 = Italian; 4 = Spanish; 5 = Russian; 6 = Portuguese; 7 = Chinese).</li>	<li class="bodytext"><span class="menu">GetLanguage ([out, retval] LONG* index) </span> reads the index of the language that is currently set. Indexes are described in the SetLanguage() function description.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

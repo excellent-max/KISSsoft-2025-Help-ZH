@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算具有接触角的轴承上的力 | Calculating force on bearings with a contact angle</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculating force on bearings with a contact angle">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8196');expand('8180');expand('9287');expand('9246');highlight('8198')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8196.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8200.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算具有接触角的轴承上的力</h3>   
+                
+<p class="bodytext">在计算轴和轴承时，具有接触角的轴承必须作为特殊情况处理。用于计算轴承反力的有效轴承作用中心确定在压缩力作用线与轴中心线相交的点处。在滚动轴承目录中，这被描述为由轴承座倾斜位置产生的轴向力。您可以使用它来定义计算额定寿命所需的数据（径向载荷和轴向载荷）。</p><p class="bodytext">计算轴中的载荷变化过程更为困难，而且这在技术文献中也没有明确记录。此处可采用两种建模类型：</p><ul>	<li class="bodytext"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"><strong>方法 1：</strong> </span></span></span></span>在具有接触角的轴承中，有效轴承力作用线通过压力中心点。因此，您可以计算轴承力，因为出于计算目的，可以认为轴承位于压力中心点。这与用于定义滚动轴承载荷的过程一致。</li>	<li class="bodytext"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"><strong>方法 2：</strong> </span></span></span></span><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"> </span></span></span></span>但是，您不能在轴承宽度之外将轴承力施加到轴上。这就是 KISSsoft 将轴承力置于轴承中心的原因。同时，偏心载荷的施加会产生一个附加弯矩，该弯矩等于轴承中心点与压力中心点之间的距离乘以径向力。<strong>这也是 KISSsoft 中使用的方法。</strong></li></ul><p class="bodytext">两种方法在压力中心之间得到的弯矩变化过程相同。但是，在压力/轴承中心区域存在差异。</p><p class="bodytext">在实际中，载荷不一定施加在轴承中心，而是施加在轴承的整个区域。因此，弯矩可以精确地施加在轴肩上。但是，如果载荷直接作用在校核点上（即当校核点位于轴承中心和轴肩之间时），则会给强度计算带来问题。</p><p class="bodytext">弯曲图的计算产生了差异：在方法 1 中，挠度在压力中心为零；在方法 2 中，挠度在轴承位置为零。此处方法 2 肯定更精确，尤其是在涉及大接触角、压力中心位于轴承宽度之外时。只有方法 2 才能使计算包括压力中心点位于轴之外的情况。</p><p class="bodytext">在这类情况下，实际情况介于两种方法之间。更精确的计算只能通过耗时的有限元（FEM）计算来实现，这种计算考虑了轴承座的特性。</p><p class="bodytext"><strong>方法 2 对轴计算来说更精确、更方便（因为它允许压力中心点位于轴之外），这就是为什么该变体已包含在 KISSsoft 轴计算功能中。</strong><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"> </span></span></span></span></p><p class="bodytext"><strong>关于强度计算的说明：</strong>任何基于名义应力概念的强度校核（DIN 743、FKM 等），在力施加区域（例如轴肩上的轴承内圈）当局部应力分布与估算的名义应力不一致时，其有效性有限。在实践中，在这些点上计算出的结果必须谨慎解读。</p><p class="bodytext">在 KISSsoft 中，对于具有接触角的轴承，附加内部轴向力计算为 Fr * 0.5/Y，如“Die Wälzlagerpraxis”及不同的轴承产品目录中所述。（此处为 FAG；NSK 用 0.6 的系数值代替 0.5；SKF 用于圆锥滚子轴承，如此处所述；对于角接触球轴承，系数值为 1.14（2004 版目录，作为 Fa/C 的函数））。如果轴承数据库中不存在系数 Y，则不考虑附加轴向力。因此，计算过程与 KISSsoft 轴承计算相同。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculating force on bearings with a contact angle</h3>   
+                
+<p class="bodytext">Bearings with a contact angle must be handled as a special case when calculating shafts and bearings. The effective active bearing center used to calculate the bearing reactions is determined at the point at which the compression force line of action intersects with the shaft centerline. In the rolling bearing catalogs, this is described as the axial force resulting from the oblique position of the bearing housing. You can use this to define the data (radial and axial loads) required to calculate the rating life.</p><p class="bodytext">It is more difficult to calculate the load progression in the shaft, and this is also not documented clearly in the technical literature. Here, two modeling types are possible:</p><ul>	<li class="bodytext"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"><strong>Approach 1:</strong> </span></span></span></span>In bearings that have a contact angle, the effective bearing force line of action passes through the pressure center point. For this reason, you can calculate the bearing forces because, for calculation purposes, the bearing can be considered as being at the pressure center point. This matches the procedures used to define the rolling bearing load.</li>	<li class="bodytext"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"><strong>Approach 2:</strong> </span></span></span></span><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"> </span></span></span></span>However, you cannot introduce the bearing force on the shaft outside the bearing width. This is why KISSsoft places the bearing force in the center of the bearing. At the same time, the eccentric load application creates an additional bending moment which equals the product of the distance of the bearing- and pressure center point, times the radial force. <strong>This is also the approach used in KISSsoft.</strong></li></ul><p class="bodytext">Both approaches return the same progression of bending moment between the pressure centers. There is, however, a difference in the area of the pressure/bearing centers.</p><p class="bodytext">In real life, the load is not necessarily applied to the center of the bearing but to the entire area of the bearing. Therefore, the bending moment can be placed precisely on the shaft shoulder. However, this then causes a problem in the strength calculation if the load application acts directly on the proof point (i. e. when the proof point lies between the bearing center and the shaft shoulder).</p><p class="bodytext">The calculation of the diagrams of bending produces a difference in that, in approach 1, the deflection is zero in the pressure center and, in approach 2, it is at the bearing position. Here, approach 2 is certainly more precise, especially when large contact angles, where the pressure center lies outside the bearing width, are involved. Only approach 2 enables the calculation to include cases in which the pressure center point lies outside the shaft.</p><p class="bodytext">As often happens in such cases, the reality lies somewhere between the two approaches. More precise calculations can only be performed using time-consuming FEM calculations which take into account the properties of the bearing housing.</p><p class="bodytext"><strong>Approach 2 is more precise and convenient for shaft calculations (because it allows for pressure center points being outside the shaft), which is why this variant has been included in KISSsoft shaft calculation functions.</strong><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"> </span></span></span></span></p><p class="bodytext"><strong>Notes about the strength calculation:</strong> Any strength verification based on the nominal stress concept (DIN 743, FKM, etc. ), has limited validity, in the force application zone (e. g. internal bearing ring on the shaft shoulder) when the local stress distribution does not correspond to the estimated nominal stress. In practice, the results calculated on these points must be interpreted with caution.</p><p class="bodytext">In KISSsoft, the additional internal axial force that is present in the case of bearings with a contact angle is calculated as Fr * 0.5/Y, as described in &quot;Die Wälzlagerpraxis&quot; and different bearing product catalogs. (FAG as here, NSK with a factor value of 0.6 instead of 0.5, SKF for tapered roller bearings, as here, and for angular contact ball bearings with a factor value of 1.14 (Catalog 2004 as a function of Fa/C)). If factor Y is not present in the bearing database, no additional axial force is taken into consideration. Consequently, the calculation process is the same as the KISSsoft bearing calculation.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

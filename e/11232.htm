@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>使用金刚石修整轮和磨削蜗杆 | Using diamond dressing wheels and grinding worms</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Using diamond dressing wheels and grinding worms">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8751');expand('7708');expand('9286');expand('9246');highlight('11232')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8781.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11457.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">使用金刚石修整轮和磨削蜗杆</h3>   
+                
+<p class="bodytext">在 <span class="menu">制造（修形 &gt; 磨削蜗杆/修整轮）</span> 选项卡中点击转换按钮，可调用一个选项来查明是否存在适合制造该齿轮的磨削蜗杆（连同其配套的金刚石修整盘）。所有适用的修整轮清单由 "DressingWheel.dat" 文件生成。读取文件时，与当前输入的模数和压力角不相符的修整轮将被忽略。<br><br>要加载的文件必须位于 KISSsoft 安装目录下的 …\ext\dat\ 或 …\dat\ 子文件夹中（不过 KISSsoft 会先在 \ext\dat\ 中搜索它们）。导入文件时，以反斜杠开头的行将被忽略。<br>在一行中，第一个条目之后的所有条目都用分号分隔（从左侧开始）：<br>1. 文本，读取文件时忽略<br>2. 文本，读取文件时忽略<br>3. 法向模数 [mm]<br>4. 压力角 αn [°]<br>5. 齿廓鼓形（深度鼓形）半径 rc [mm]（当读取到 "straight" 时，该半径设为 1010）。<br>6. 线性齿顶修形长度 LRELIEF [mm]<br>7. 线性齿顶修形的角度 <img src="greekPhi.png"> [°] 或半径 rRELIEF [mm]（如果角度值以度和弧分为单位：x°xx 或 xØxx。如果是半径：Rxxx）<br>8. 文本，读取文件时忽略<br>9. 文本，读取文件时忽略<br>10. 文本，读取文件时忽略<br>11. 修整轮上齿廓鼓形最高点的位置 hp [mm]（沿齿面从齿顶开始输入）<br>12. 修整轮齿顶高 hfpd [mm]<br>13. 修整轮齿根高 hapd [mm]<br>14. 修整轮齿面与磨削蜗杆之间的间隙 AL*ref [mm]（沿基准线测量）<br>15. 修整轮的齿根圆角半径 ϱ [mm]<br>16. 修整轮零件号/标签<br>17. 文本，读取文件时忽略<br>18. 文本，读取文件时忽略<br>19. 磨削蜗杆螺纹头数<br>20. 磨削蜗杆的分度圆 [mm]</p><p class="bodytext"></p><div class="objectWrapper" data-id="65afc85bab35f" data-type="image" data-caption="Abrichtscheibe mit linearer Kopfrücknahme"><p class="bodytext"><img data-id="65afc85bab35f" height="305" src="11233.png" width="279"></p><p class="figcaption" data-id="65afc85bab35f">图 15.69：带线性齿顶修形的修整轮</p></div><p class="bodytext"></p><div class="objectWrapper" data-id="65afc85bab36e" data-type="image" data-caption="Abrichtscheibe mit radialer Kopfrücknahme"><p class="bodytext"><img data-id="65afc85bab36e" height="302" src="11234.png" width="279"></p><p class="figcaption" data-id="65afc85bab36e">图 15.70：带径向齿顶修形的修整轮</p></div><p class="bodytext">例如，这样您就可以在不同的行中用不同的磨削蜗杆多次加载同一个修整轮。请勿在行的开头或结尾输入分号。文件的最后一行不能为空。<br><br>然后，系统根据所选齿轮，连同加载的修整轮，在第一个窗口中显示可实现的齿顶和齿根<span style="font-size:11pt"><span style='font-family:"Calibri",sans-serif'><span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">修形</span></span></span></span></span>。仅显示已定义预加工（不带修顶刀具）且已输入加工余量的齿轮。<br>然后，系统在第三列中显示各修整轮的适用性。此处适用以下规则："" 表示无需修改间隙 <em class="emphasis">A</em><span class="subscript-italic">L*ref</span>（"齿面之间的空隙"）即适用，"" 表示修改间隙 <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> 后适用，"" 表示不适用。<span style="font-size:11pt"><span style='font-family:"Calibri",sans-serif'><span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">修形</span></span></span></span></span>和轮齿直径是使用齿形计算中 <span class="menu">公差</span> 选项卡内数值所规定的齿厚公差位置来计算的。系统还会在表格上方显示目标齿顶修形 Ca 和目标<span style="font-size:11pt"><span style='font-family:"Calibri",sans-serif'><span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">修形</span></span></span></span></span>长度 LCa*，具体取决于所选齿轮（根据 <span class="menu">修形</span>选项卡中修形表内的条目）。<br><br>当选定一个修整轮后，系统会在名为"所选磨削蜗杆/修整轮"的第二个窗口中显示磨削过程的基本数据。您可以通过修改间隙 <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> 来使修整轮移动 Δh，同时还可以修改磨削蜗杆的导程角和分度圆直径。然后重新计算并显示修形。<br><br>一旦最终选定了磨削蜗杆，与修整轮最匹配的齿廓修形数据就会被调整。在此过程中，磨削蜗杆和修整轮的数据被写入 "Dressingwheel.tmp" 文件。该文件存储在 Windows Temp 文件夹中。<br>这些修形被输入到修形表中，所有之前的齿廓修形都会被删除。现在，齿轮轮廓的定义方式与使用所选磨削蜗杆在磨削过程中实际加工出的轮廓相同。此外，磨削蜗杆的浸入深度在 <span class="menu">Final machining</span> 选项卡中设置，磨削过程设置为"展成磨削"并采用"齿面和齿根磨削"。<br><br>报告中还包含测量圆直径 dmess 及其相应的齿顶修形 C<sub>a</sub>。测量圆位于齿顶成形圆 d<sub>Fa</sub> 和齿顶修形起点 d<sub>Ca</sub> 之间（dmess = (2*dFa + dCa) / 3）。</p><p class="hint">注意：</p><p class="bodytext">您可以在 <span class="menu">所选磨削蜗杆/修整轮</span> 窗口中执行此处所述的对修整轮的所有标准操作。<br><br>a) <strong>修磨磨削蜗杆</strong><br>。在加工出规定数量的齿轮后，这一操作会非常频繁且有规律地进行。通过在修整装置上进行约 0.5 到 1.0 mm 的径向进给来实现。此处，间隙 <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> 由修整装置自动保持恒定。在 <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> 不变的情况下重新修磨，只会使蜗杆导程角产生极小的变化。<br><br>b) <strong>修改间隙 AL*ref</strong>（不改变径向进给）<br><em class="emphasis">A</em><span class="subscript-italic">L*ref</span> 可以在已经成形（即已修整）的磨削蜗杆上增大。<em class="emphasis">A</em><span class="subscript-italic">L*ref</span> 只能在新磨削蜗杆（即尚未成形的）上减小。<br><br>c) <strong>修改径向进给 </strong>（"中心距" 修整盘-磨削蜗杆 <em class="emphasis">d</em><span class="subscript-italic">worm</span><sub class="subscript"> </sub>）<br>a 值只能在新磨削蜗杆（即尚未成形的）上增大。在已经成形（即已修整）的磨削蜗杆上，通常可以减小 "a" 值。理论上，在这种情况下（径向减小），间隙 <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> 可以同时减小。这样可以防止磨削蜗杆齿距发生微小变化（在恒定直径 dx 下），而这种变化是需要修正的。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd78afac" data-type="image" data-caption="Schleifschnecke mit Abrichtscheiben (exemplarisch mit und ohne Verschiebung Δh)"><p class="bodytext"><img data-id="5ba0bcd78afac" src="11235.png" style="height:145.35px; width:441px"></p><p class="figcaption" data-id="5ba0bcd78afac">图 15.71：带修整轮的磨削蜗杆（示例分别展示了带位移 Δh 和不带位移 Δh 的情况）</p></div><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Using diamond dressing wheels and grinding worms</h3>   
+                
+<p class="bodytext">Click on the Convert button in the <span class="menu">Manufacturing (Modifications &gt; Grinding worm/dressing wheel)</span> tab to call an option which enables you to find out whether suitable grinding worms (with their associated diamond dressing disc) are present for manufacturing the gear. A list of all suitable dressing wheels is generated from the &quot;DressingWheel.dat&quot; file. Dressing wheels which are not suitable for the currently entered module and pressure angle are ignored when the file is read.<br /><br />The file to be loaded must be in the …\ext\dat\ or …\dat\ sub-folder, in the KISSsoft installation directory (although KISSsoft will search for them in \ext\dat\ first). When the file is imported, lines that start with a backslash are ignored.<br />In a line, all entries after the first are separated by semicolons (starting from the left):<br />1. Text, is ignored when the file is read<br />2. Text, is ignored when the file is read<br />3. Normal module [mm]<br />4. Pressure angle αn [°]<br />5. Profile crowning (depth crowning) radius rc [mm] (when &quot;straight&quot; is read, this radius is set to 1010.<br />6. Length of the linear tip relief LRELIEF [mm]<br />7. Angle <img src="greekPhi.png" /> [°] or radius rRELIEF [mm] of the linear tip relief (if the angle value is in degrees and arc minutes: x°xx or xØxx. If it is the radius: Rxxx)<br />8. Text, is ignored when the file is read<br />9. Text, is ignored when the file is read<br />10. Text, is ignored when the file is read<br />11. Position hp of the high point of the profile crowning on the dressing wheel [mm] (input along the flank, starting from the tip)<br />12. Dressing wheel addendum hfpd [mm]<br />13. Dressing wheel dedendum hapd [mm]<br />14. Gap AL*ref between the flank of the dressing wheel and the grinding worm [mm] (measured along the datum line)<br />15. Tooth root radius ϱ [mm] of the dressing wheel<br />16. Dressing wheel article number/label<br />17. Text, is ignored when the file is read<br />18. Text, is ignored when the file is read<br />19. Number of threads, grinding worm<br />20. Reference circle [mm] of the grinding worm</p><p class="bodytext"></p><div class="objectWrapper" data-id="65afc85bab35f" data-type="image" data-caption="Abrichtscheibe mit linearer Kopfrücknahme"><p class="bodytext"><img data-id="65afc85bab35f" height="305" src="11233.png" width="279" /></p><p class="figcaption" data-id="65afc85bab35f">Figure 15.69: Dressing wheel with linear tip relief</p></div><p class="bodytext"></p><div class="objectWrapper" data-id="65afc85bab36e" data-type="image" data-caption="Abrichtscheibe mit radialer Kopfrücknahme"><p class="bodytext"><img data-id="65afc85bab36e" height="302" src="11234.png" width="279" /></p><p class="figcaption" data-id="65afc85bab36e">Figure 15.70: Dressing wheel with radial tip relief</p></div><p class="bodytext">This enables you to load the same dressing wheel several times, in different lines, with different grinding worms, for example. Do not enter a semicolon at the start or end of the line. The last line of the file must not be empty.<br /><br />The system then displays the achievable tip and root <span style="font-size:11pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">modification</span></span></span></span></span>s, according to the selected gear, with the loaded dressing wheels, in the first window. Only gears for which pre-machining (without a topping tool) has been defined, and a machining stock has been entered, are displayed.<br />The system then displays the suitability of the particular dressing wheel in the third column. Here, the following apply: &quot;&quot; mean suitable without modification of the gap <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> (&quot;air between the flanks&quot;), &quot;&quot; means suitable if the gap <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> is modified and &quot;&quot; means not suitable. The <span style="font-size:11pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">modification</span></span></span></span></span>s and toothing diameter are calculated using a tooth thickness tolerance position as stated in the value in the <span class="menu">Tolerances</span> tab for the tooth form calculation. The system also displays the target tip relief Ca and the target m<span style="font-size:11pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">odification</span></span></span></span></span> length LCa* above the table, depending on the selected gear (according to the entries in the Modifications table in the <span class="menu">Modifications</span>) tab.<br /><br />When a dressing wheel is selected, the system displays the basic data for the grinding process in a second window called &quot;Selected grinding worm/dressing wheel&quot;. You can move the dressing wheel by Δh by modifying the gap <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> and also modify the grinding worm's lead angle and reference diameter. The modifications are then recalculated and displayed.<br /><br />Once a grinding worm has been finally selected, the data in the profile modifications that most closely match the dressing wheel is adjusted. During this process, the data for the grinding worm and the dressing wheel is written to the &quot;Dressingwheel.tmp&quot; file. This file is stored in the Windows Temp folder.<br />These modifications are input in the Modifications table, and all previous profile modifications are deleted. The gear contour is now defined in the same way as it will be produced in the grinding process with the selected grinding worm. In addition, the depth of immersion of the grinding worm is set in the <span class="menu">Final machining</span> tab and the grinding process is set to &quot;Generation grinding&quot; with &quot;Grinding of flank and root&quot;.<br /><br />The report also contains the diameter of a measuring circle dmess with the associated tip relief C<sub>a</sub>. The measuring circle lies between the tip form circle d<sub>Fa</sub> and the start of the tip relief d<sub>Ca</sub> (dmess = (2*dFa + dCa) / 3).</p><p class="hint">Note:</p><p class="bodytext">You can perform all the standard manipulations with dressing wheels described here in the <span class="menu">Selected grinding worm/dressing wheel</span> window.<br /><br />a) <strong>Sharpening the grinding worm</strong><br />. This is performed very frequently and regularly after a specified number of gears has been produced. Achieved by a radial feed of around 0.5 to 1.0 mm on the dressing device. Here, the gap <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> is automatically kept constant by the dressing device. Resharpening with an unchanged <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> only produces a minimal change in the worm lead angle.<br /><br />b) <strong>Modifying the gap AL*ref</strong> (without changing the radial feed) <br /><em class="emphasis">A</em><span class="subscript-italic">L*ref</span> can be increased on a grinding worm that has already been profiled (i.e. dressed). <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> can only be reduced on a grinding worm that is new, i.e. has not yet been profiled.<br /><br />c) <strong>Modifying the radial feed </strong> (&quot;center distance&quot; dressing disc-grinding worm <em class="emphasis">d</em><span class="subscript-italic">worm</span><sub class="subscript"> </sub>)<br />The value for a can only be increased on a grinding worm that is new, i.e. has not yet been profiled. The &quot;a&quot; value can normally be reduced on a grinding worm that has already been profiled (i.e. dressed). Theoretically, in this case (radial reduction), the gap <em class="emphasis">A</em><span class="subscript-italic">L*ref</span> could be reduced at the same time. This should prevent a minimal change to the grinding worm pitch (in a constant diameter dx), which would need to be corrected.</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd78afac" data-type="image" data-caption="Schleifschnecke mit Abrichtscheiben (exemplarisch mit und ohne Verschiebung Δh)"><p class="bodytext"><img data-id="5ba0bcd78afac" src="11235.png" style="height:145.35px; width:441px" /></p><p class="figcaption" data-id="5ba0bcd78afac">Figure 15.71: Grinding worm with dressing wheels (examples shown with and without displacement Δh)</p></div><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>旋转角度控制的拧紧 | Rotation-angle controlled tightening</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Rotation-angle controlled tightening">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11538');expand('7903');expand('9288');expand('9246');highlight('7946')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7943.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7930.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">旋转角度控制的拧紧</h3>   
+                
+<p class="bodytext">旋转角主要根据所达到的预紧力的平均值<span style="font-size:11.0pt"><span style="line-height:107%"><span style='font-family:"Calibri",sans-serif'> </span></span></span> (<em class="emphasis">F</em><sub class="subscript">M</sub> + <em class="emphasis">F</em><sub class="subscript">M</sub>/α<sub class="subscript">A</sub>)/2 以及螺栓相应的弹性变形来计算。与装配相关的以下边界条件也可以预先定义。这些数据不直接影响主计算（例如所达到的预紧力），而是根据螺栓计算结束时的结果被动推导得出。</p><p class="bodytext">步数</p><p class="bodytext">计算出的拧紧角可以划分为特定数量的分步。每个分步的角度随后在报告中单独输出。</p><p class="bodytext">预紧力</p><p class="bodytext">在对螺栓进行角度控制拧紧之前，先将其拧紧到阈值扭矩。该值以装配期间达到的扭矩平均值 (MA_(FMm)) 的百分比形式输入。该预紧点是报告中以字母 (b) 标识的拧紧角的起始角。报告中以字母 (a) 标识的拧紧角包括直至达到阈值扭矩为止的角度。然而，由于精度越来越差，该角度仅对小预紧值显示。</p><p class="bodytext">塑性变形</p><p class="bodytext">如果在某一截面上超过了屈服点，您可以在此指定该段长度要塑性拉伸的百分比。然后根据螺纹导程，将这种塑性长度变化转换为旋转角。该角度随后加到拧紧角上。</p><p class="bodytext">最大屈服点</p><p class="bodytext">如果此处所用螺栓的某一部分预计其屈服点高于标称屈服点，可以将该最大屈服点设置为相对于标称屈服点的值。或者，您可以在螺栓强度等级的附加数据（在螺栓数据中）中将最大屈服点作为绝对值输入。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Rotation-angle controlled tightening</h3>   
+                
+<p class="bodytext">The angle of rotation is primarily calculated on the basis of the mean value of the achieved preload<span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Calibri&quot;,sans-serif"> </span></span></span> (<em class="emphasis">F</em><sub class="subscript">M</sub> + <em class="emphasis">F</em><sub class="subscript">M</sub>/α<sub class="subscript">A</sub>)/2 and the associated elastic deformation of the bolt. The following boundary conditions, which are relevant to assembly, can also be predefined. This data does not directly affect the main calculation, such as the achieved pretension forces, it is derived passively from the results at the end of the bolt calculation instead.</p><p class="bodytext">Number of steps</p><p class="bodytext">The calculated tightening angle can be divided into a specific number of partial steps. The angles for each partial step are then output separately in the report.</p><p class="bodytext">Pretension</p><p class="bodytext">Before angle-controlled tightening is performed on a bolt, it is tightened to a threshold torque. This is entered as a proportional percentage of the mean value of the torque achieved during assembly (MA_(FMm)). This pretension point is the starting angle of the tightening angle identified by the letter (b) in the report. The tightening angle, identified by the letter (a) in the report, includes the angle up to when the threshold torque is achieved. However, due to its increasing lack of precision, this is only displayed for small pretension values.</p><p class="bodytext">Plastic deformation</p><p class="bodytext">If the yield point is exceeded on a cross section, you can specify the proportional percentage by which the length of this segment is to be stretched plastically, here. This plastic change in length is then converted into an angle of rotation, based on the thread lead. This angle is then added to the tightening angle.</p><p class="bodytext">Maximum yield point</p><p class="bodytext">If a part of the bolt used here is expected to have a yield point that is higher than the nominal yield point, this maximum yield point can be set relative to the nominal yield point. Alternatively, you can enter the maximum yield point as an absolute value in the additional data for the bolt strength class (in the bolt data).</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

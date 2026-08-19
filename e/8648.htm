@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿向载荷系数 | Face load factor</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Face load factor">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8720');expand('7708');expand('9286');expand('9246');highlight('8648')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11636.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10932.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">齿向载荷系数</h3>   
+                
+<p class="bodytext">齿向载荷系数 K<sub class="subscript">H</sub><sub>β,</sub>K<sub class="subscript">F</sub><sub>β,</sub>K<sub class="subscript">B</sub><sub>β</sub> 考虑了齿宽上不均匀载荷分布对接触应力、齿根应力和胶合应力的影响。您可以指定齿向载荷系数要么设置为常数值，要么由其他值计算得出。如果您已经知道齿向载荷系数 K<sub class="subscript">H</sub><sub>β</sub>，请选择 <span class="menu">自定义输入</span> 方法并输入该值。单击 Plus 按钮以显示 <span class="menu">定义齿向载荷系数</span> 窗口。其中显示了根据 DIN/ISO 进行的计算：在该计算中，您可以使用多个参数来计算所需的值。</p><p class="bodytext">此处通常的设置是"按计算方法计算"。然后根据强度计算标准（ISO、AGMA 或 DIN）中使用的公式来计算齿向载荷系数。您需要为此输入一些值。这些值显示在窗口右侧（齿线修形等），并在后续各节中说明。您可以通过在 <span class="menu">定义齿向载荷系数</span> 窗口中单击 Plus 按钮来输入其他值。</p><p class="bodytext">对于 <strong>具有刚度增强效应的系数 K</strong> 条目：如果 d<sub class="subscript">1</sub>/d<sub class="subscript">sh</sub> &gt;1.15，并且小齿轮以固定的过盈配合或轴/小齿轮一体式制造，则小齿轮具有使轴刚度增强的作用（刚度增强效应）。</p><p class="bodytext">标准中提出的用于定义齿向载荷系数 K<sub class="subscript">H</sub><sub>β</sub> 的公式使您能够非常快速地确定 K<sub class="subscript">H</sub><sub>β</sub>（但只是经验性的，因此不太准确）。 使用这些公式计算出的 K<sub class="subscript">H</sub><sub>β</sub> 系数通常高于实际值，因此计算值偏于保守。如果齿向载荷系数增大（&gt; 1.5），则进行更精确的计算是有意义的。为此，请使用"根据 ISO 6336-1 附录 E 进行无制造偏差计算"方法。</p><p class="bodytext">"根据 ISO 6336 附录 E 计算"的方法非常准确，但耗时。如 [19] 中所述，它计算啮合中的任何张口，从而定义整个齿宽上的载荷分布。要执行此计算，您需要知道轴和支撑的确切尺寸。单击 <span class="menu">定义轴线对中</span> 按钮，以输入存储在相关轴的轴计算模块中的轴值。</p><p class="bodytext">"根据 ISO 6336 附录 E 定义进行含制造偏差计算"的方法是最准确的方法。它还需要您指定轮齿公差 f<sub class="subscript">H</sub><sub>β</sub>（承载齿宽上的总齿线偏差），并设置轴线对中公差 f<sub>par</sub>（作用平面内轴线位置的角偏差）。如 [19] 中所述，齿宽上的载荷分布计算 5 次：首先无偏差，然后依次为 (+f<sub class="subscript">H</sub><sub>β</sub>,+ f<sub>par</sub>)、(+f<sub class="subscript">H</sub><sub>β</sub>,- f<sub>par</sub>)、(-f<sub class="subscript">H</sub><sub>β</sub>,+ f<sub>par</sub>)、(-f<sub class="subscript">H</sub><sub>β</sub>,- f<sub>par</sub>)。在此过程中确定的最大齿向载荷系数 K<sub class="subscript">H</sub><sub>β</sub> 即为最终结果。</p><p class="bodytext">单击 IΣf<sub class="subscript">H</sub><sub>β</sub>I 条目旁边的 尺寸计算按钮，以显示一个子窗口，其中包含关于如何考虑制造误差的一系列建议。<br><br>最大值建议显示 f<sub>par</sub> 和 Σf<sub class="subscript">H</sub><sub>β</sub> 公差区间的可能最高值。统计评估建议显示的公差对应置信概率为 99.7% 的统计评估公差区间。</p><p class="bodytext">以下公式用于定义总公差 f<sub>total</sub>：</p><p class="bodytext">f<sub>par</sub> = f<sub>Σβ-ISO</sub> * cos(α<sub>wt</sub>) + f<sub>Σδ-ISO</sub> * sin(α<sub>wt</sub>) （作用平面内的值，按 ISO/TR 10064-4 或 DIN 3964 规定的箱体制造误差影响）</p><p class="bodytext">f<sub>total-maximal</sub> = Σf<sub>Hβ-max</sub> + f<sub>par-max</sub> = f<sub>Hβ1</sub> + f<sub>Hβ2</sub> + f<sub>par</sub></p><p class="bodytext">f<sub>total-statistic</sub> = Σf<sub>Hβ-stat</sub> + f<sub>par-stat</sub> = 3 * √[(f<sub>Hβ1</sub>/3)<sup>2</sup> + (f<sub>Hβ2</sub>/3)<sup>2</sup> + (f<sub>par</sub> /3)<sup>2</sup>];</p><p class="bodytext">其中各值细分如下：</p><p class="bodytext">Σf<sub>Hβ-max</sub> = +I<sub>fHβ1</sub>I + I<sub>fHβ2</sub>I;</p><p class="bodytext">f<sub>par-max</sub> = If<sub>par</sub>I</p><p class="bodytext">Σf<sub>Hβ-stat</sub> = f<sub>total-statistic</sub> * (f<sub>Hβ1</sub> + f<sub>Hβ2</sub>) / (f<sub>Hβ1</sub> + f<sub>Hβ2</sub> + f<sub>par</sub>);</p><p class="bodytext">f<sub>par-stat</sub> = f<sub>total-statistic</sub> * f<sub>par</sub> / (f<sub>Hβ1</sub> + f<sub>Hβ2</sub> + f<sub>par</sub>);</p><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">如果您想通过对每个元素应用载荷谱来计算齿向载荷系数，请选择<strong> </strong><span class="menu">自定义输入，按载荷级</span>、<strong> </strong><span class="menu">按计算方法计算</span><strong> </strong>或<strong> </strong><span class="menu">按载荷级，根据 ISO 6336-1 附录 E 计算含/不含制造偏差</span> 方法。</p><p class="bodytext">在圆柱齿轮副、三齿轮链、四齿轮链和行星齿轮系统的计算模块中，可以调用轴计算文件，并根据相应的轴弯曲线更准确地计算齿面之间的相对位移（参见"<a class="referencetopic-shabschnitt" href="10582.htm" target="_self">考虑轴弯曲（齿向载荷系数与接触分析）</a>"章）。轴计算中涉及的所有载荷分箱的扭矩、功率和力随后根据部分载荷系数 w<sub class="subscript">t </sub> 进行修正。</p><p class="bodytext">可以考虑齿轮体的扭转。此处计算假设涉及实心圆柱或空心圆柱（外径 = 齿根圆 + 0.4*法向模数 或工作节圆，取决于在"设置"下预定义的内容，孔径 = 内径）。换言之，考虑内径，一侧的扭矩为零。扭矩沿齿宽以线性方式分布（由扭转引起的抛物线形变形过程）。您可以选择哪一侧承受扭矩。在这种情况下，I 和 II 指的是同一侧，正如您输入轮齿修形时的情况一样。行星齿轮级中太阳轮扭矩的增加通过使用多重啮合（多个行星轮）来考虑。在任何其他配置中（例如齿轮副），不考虑多重啮合。在这种情况下，如果变形取自轴计算，则可以使用正确的扭矩曲线。</p><p class="bodytext">齿宽被划分为多个切片，以帮助您按照 ISO 6336 附录 E 的定义计算齿向载荷系数：</p><p class="bodytext">您可以在"定义切片数"对话框中设置按附录 E 计算齿向载荷系数的精度。单击计算方法旁边的 Plus 按钮以打开此对话框。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Face load factor</h3>   
+                
+<p class="bodytext">The face load factors K<sub class="subscript">H</sub><sub>β,</sub>K<sub class="subscript">F</sub><sub>β,</sub>K<sub class="subscript">B</sub><sub>β</sub> take into consideration the influence of an uneven load distribution over the facewidth on the contact stress, tooth root stress and scuffing stress. You can specify that the face load factor is either to be set as a constant value or calculated from other values. If you already know the face load factor K<sub class="subscript">H</sub><sub>β</sub>, select the <span class="menu">Own input</span> method and input this value. Click the Plus button to display the <span class="menu">Define face load factor</span> window. In it, the calculation according to DIN/ISO is displayed: in that calculation, you can use a number of parameters to calculate the value you require.</p><p class="bodytext">The usual setting here is &quot;Calculation according to calculation method&quot;. The face load factor is then calculated according to the formulae used in the strength calculation standard (ISO, AGMA or DIN). You will need to input some values for this. These values are displayed on the right of the window (flank line modification, etc.) and are described in the sections that follow. You can input other values by clicking the Plus button in the <span class="menu">Define face load factor</span> window.</p><p class="bodytext">For the <strong>Factor K with stiffening effect</strong> entry: the pinion has the effect that it stiffens the shaft (stiffening effect) if d<sub class="subscript">1</sub>/d<sub class="subscript">sh</sub> &gt;1.15 and the pinion is created with a fixed interference fit or shaft/pinion on the piece.</p><p class="bodytext">The formulae proposed in the standards for defining the face load factor K<sub class="subscript">H</sub><sub>β</sub> enable you to determine K<sub class="subscript">H</sub><sub>β</sub> very quickly (but only empirically, and therefore not very accurately).  The K<sub class="subscript">H</sub><sub>β</sub> factor calculated using these formulae is usually higher than it actually is, so the calculated value is therefore on the conservative side. If the face load factor is increasing (&gt; 1.5), it makes sense to perform a more accurate calculation. To do this, use the &quot;Calculation without manufacturing deviation according to ISO 6336-1 Annex E&quot; method.</p><p class="bodytext">The “Calculation according to ISO 6336 Annex E” method is very accurate, but time consuming. As described in [19], it calculates any gaping in the meshing, and therefore defines the load distribution over the entire facewidth. To perform this calculation, you will need to know the exact dimensions of the shafts and support. Click the <span class="menu">Define axis alignment</span> button to input the shaft values stored in the shaft calculation module for the relevant shafts.</p><p class="bodytext">The &quot;Calculation with manufacturing deviation, as defined in ISO 6336 Annex E&quot; method is the most accurate method. It also requires you to specify the toothing tolerance f<sub class="subscript">H</sub><sub>β</sub> (total tooth trace deviations over the bearing facewidth) and set the axis alignment tolerance f<sub>par</sub> (angular deviation of the axis position in the plane of action). As described in [19], the load distribution over the facewidth is calculated 5 times: First without deviation, then with (+f<sub class="subscript">H</sub><sub>β</sub>,+ f<sub>par</sub>), (+f<sub class="subscript">H</sub><sub>β</sub>,- f<sub>par</sub>), (-f<sub class="subscript">H</sub><sub>β</sub>,+ f<sub>par</sub>), (-f<sub class="subscript">H</sub><sub>β</sub>,- f<sub>par</sub>). The largest face load factor K<sub class="subscript">H</sub><sub>β</sub>, determined in the process, represents the final result.</p><p class="bodytext">Click the Sizing button next to the entry for IΣf<sub class="subscript">H</sub><sub>β</sub>I to display a subwindow that contains a range of suggestions about how to take manufacturing errors into account.<br /><br />The maximum suggestion shows the possible highest value for the tolerance interval for f<sub>par</sub> and Σf<sub class="subscript">H</sub><sub>β</sub>. The statistically evaluated proposal shows tolerances that correspond to a statistically evaluated tolerance interval with 99.7% probability.</p><p class="bodytext">The following formulae are used to define the total tolerance f<sub>total</sub>:</p><p class="bodytext">f<sub>par</sub> = f<sub>Σβ-ISO</sub> * cos(α<sub>wt</sub>) + f<sub>Σδ-ISO</sub> * sin(α<sub>wt</sub>) (value in the plane of action, effect of housing manufacturing errors as specified in ISO/TR 10064-4 or DIN 3964))</p><p class="bodytext">f<sub>total-maximal</sub> = Σf<sub>Hβ-max</sub> + f<sub>par-max</sub> = f<sub>Hβ1</sub> + f<sub>Hβ2</sub> + f<sub>par</sub></p><p class="bodytext">f<sub>total-statistic</sub> = Σf<sub>Hβ-stat</sub> + f<sub>par-stat</sub> = 3 * √[(f<sub>Hβ1</sub>/3)<sup>2</sup> + (f<sub>Hβ2</sub>/3)<sup>2</sup> + (f<sub>par</sub> /3)<sup>2</sup>];</p><p class="bodytext">where the values are subdivided as follows:</p><p class="bodytext">Σf<sub>Hβ-max</sub> = +I<sub>fHβ1</sub>I + I<sub>fHβ2</sub>I;</p><p class="bodytext">f<sub>par-max</sub> = If<sub>par</sub>I</p><p class="bodytext">Σf<sub>Hβ-stat</sub> = f<sub>total-statistic</sub> * (f<sub>Hβ1</sub> + f<sub>Hβ2</sub>) / (f<sub>Hβ1</sub> + f<sub>Hβ2</sub> + f<sub>par</sub>);</p><p class="bodytext">f<sub>par-stat</sub> = f<sub>total-statistic</sub> * f<sub>par</sub> / (f<sub>Hβ1</sub> + f<sub>Hβ2</sub> + f<sub>par</sub>);</p><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">If you want to calculate the face load factor by applying a load spectrum for each element, select either the<strong> </strong><span class="menu">Own input, per load stage</span>,<strong> </strong><span class="menu">Calculation according calculation method</span><strong> </strong>or<strong> </strong><span class="menu">Calculation with/without manufacturing deviation according to ISO 6336-1 Annex E, per load stage</span> method.</p><p class="bodytext">In the cylindrical gear pairs, three- and four-gear chains, and planetary systems, calculation module, shaft calculation files can be called and used to calculate the relative displacement between the tooth flanks more accurately, based on the corresponding shaft bending lines (see chapter <a class="referencetopic-shabschnitt" href="10582.htm" target="_self">Taking into account shaft bending (face load factor and contact analysis)</a>). Torque, power and force for all the load bins involved in the shaft calculation are then modified according to the partial load factor w<sub class="subscript">t </sub>.</p><p class="bodytext">Torsion of the gear body can be taken into account. Here the calculation assumes a solid cylinder or hollow cylinder (external diameter = root circle + 0.4*normal module or operating pitch circle, depending on what has been predefined under &quot;Settings&quot;, bore = inside diameter) is involved. In other words, the internal diameter is taken into account and the torque on one side is zero. The torque is distributed in a linear fashion along the facewidth (parabolic course of deformation by torsion). You can select which side is to be subjected to torsional moment. In this case, I and II refer to the same side, as is also the case when you enter the toothing modifications. The increase in torque for a sun in planetary stages is taken into account by using multiple meshing (several planets). Multiple meshing is not taken into consideration in any other configuration (e.g. for gear pairs). In such situations, the correct torque curve can be used if the deformation is taken from the shaft calculation.</p><p class="bodytext">The facewidth is divided into slices to help you calculate the face load factor as defined in ISO 6336, Annex E:</p><p class="bodytext">You can set the accuracy of the face load factor calculation according to Annex E in the &quot;Define number of slices&quot; dialog. Click the Plus button next to the calculation method to open this dialog.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

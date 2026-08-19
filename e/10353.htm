@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算 | Calculations</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculations">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10352');expand('9288');expand('9246');highlight('10353')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10352.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10356.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算</h3>   
+                
+<p class="bodytext"><span class="menu">剖分式轮毂：</span></p><p class="bodytext">根据表面压力的类型，计算剖分式轮毂时使用一个附加的表面压力系数和抗滑动安全性系数：该系数根据表面压力的类型而变化<span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">:</span></span></span></p><ul>	<li class="bodytext">K = 1 <span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">→ </span></span></span>均匀表面压力</li>	<li class="bodytext">K= π^2/8 <span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">→</span></span></span> 余弦形表面压力</li>	<li class="bodytext">K = π/2 <span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">→ </span></span></span>线性接触</li></ul><p class="bodytext"><span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">在 KISSsoft 中，可在 <span class="menu">基本数据</span> 窗口的选择列表中选择压力类型。</span></span></span></p><p class="bodytext">表面压力公式：</p><p class="bodytext"><img src="10357.png" style="height:63px; width:223px"></p><p class="bodytext">滑动安全公式：</p><p class="bodytext"><img src="10358.png" style="height:57px; width:203px"></p><p class="bodytext">弯曲计算式：</p><p class="bodytext"><img src="10359.png" style="height:59px; width:181px"></p><p class="bodytext"></p><p class="bodytext"><span class="menu">槽式轮毂：</span></p><p class="bodytext">表面压力公式：</p><p class="bodytext"><img src="10360.png" style="height:59px; width:148px"></p><p class="bodytext">滑动安全公式：</p><p class="bodytext"><img src="10361.png" style="height:59px; width:208px"></p><p class="bodytext">弯曲计算式：</p><p class="bodytext"><img src="10362.png" style="height:59px; width:237px"></p><p class="bodytext"></p><p class="bodytext">符号说明：</p><p class="bodytext">pF: 表面压力 [N/mm2]</p><p class="bodytext">KA：工况系数</p><p class="bodytext">T: 公称转矩 [N]</p><p class="bodytext">SH: 滑动安全性</p><p class="bodytext">K: 表面压力修正因子</p><p class="bodytext">l：接合宽度 [mm]</p><p class="bodytext">D: 接合面直径 [mm]</p><p class="bodytext">lS: 螺栓到轴中心的距离 [mm]</p><p class="bodytext">l1: 法向力到转动中心的距离 [mm]</p><p class="bodytext">l2: 夹紧力到转动中心的距离 [mm]</p><p class="bodytext">μ：摩擦系数</p><p class="bodytext">σB: 弯曲应力 [N/mm2]</p><p class="bodytext">Fkl: 每个螺栓的夹紧力 [N]</p><p class="bodytext">i: 螺栓数量</p><p class="bodytext">Wb：抗弯截面系数 [mm3]</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculations</h3>   
+                
+<p class="bodytext"><span class="menu">Split hub:</span></p><p class="bodytext">Depending on the type of surface pressure, an additional factor for surface pressure and safety against sliding is used to calculate a split hub: This varies according to the type of surface pressure<span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">:</span></span></span></p><ul>	<li class="bodytext">K = 1 <span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">→ </span></span></span>uniform surface pressure</li>	<li class="bodytext">K= π^2/8 <span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">→</span></span></span> cosine-form surface pressure</li>	<li class="bodytext">K = π/2 <span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">→ </span></span></span>linear contact</li></ul><p class="bodytext"><span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">In KISSsoft, you can select the type of pressure in a selection list in the <span class="menu">Basic data</span> window.</span></span></span></p><p class="bodytext">Formula for surface pressure:</p><p class="bodytext"><img src="10357.png" style="height:63px; width:223px" /></p><p class="bodytext">Formula for safety against sliding:</p><p class="bodytext"><img src="10358.png" style="height:57px; width:203px" /></p><p class="bodytext">Formula for calculating bending:</p><p class="bodytext"><img src="10359.png" style="height:59px; width:181px" /></p><p class="bodytext"></p><p class="bodytext"><span class="menu">Slotted hub:</span></p><p class="bodytext">Formula for surface pressure:</p><p class="bodytext"><img src="10360.png" style="height:59px; width:148px" /></p><p class="bodytext">Formula for safety against sliding:</p><p class="bodytext"><img src="10361.png" style="height:59px; width:208px" /></p><p class="bodytext">Formula for calculating bending:</p><p class="bodytext"><img src="10362.png" style="height:59px; width:237px" /></p><p class="bodytext"></p><p class="bodytext">Description of codes:</p><p class="bodytext">pF: Surface pressure [N/mm2]</p><p class="bodytext">KA: Application factor</p><p class="bodytext">T: Nominal torque [N]</p><p class="bodytext">SH: Safety against sliding</p><p class="bodytext">K: Correction factor surface pressure</p><p class="bodytext">l: Joint width [mm]</p><p class="bodytext">D: Diameter of joint [mm]</p><p class="bodytext">lS: Distance bolt to shaft center [mm]</p><p class="bodytext">l1: Distance normal force to center of rotation [mm]</p><p class="bodytext">l2: Distance clamp load to center of rotation [mm]</p><p class="bodytext">μ: Coefficient of friction</p><p class="bodytext">σB: Bending stress [N/mm2]</p><p class="bodytext">Fkl: Clamp load per bolt [N]</p><p class="bodytext">i: Number of bolts</p><p class="bodytext">Wb: Moment of resistance [mm3]</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

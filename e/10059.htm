@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>轴计算材料 | Material Shaft calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Material Shaft calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10061');expand('10008');expand('9042');expand('9272');expand('9246');highlight('10059')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11098.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10060.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">轴计算材料</h3>   
+                
+<p class="bodytext">该表适用于轴 (w010):</p><ul>	<li class="bodytext">根据 Hänchen 计算强度的值：<ul>		<li class="bodytext"><strong>弯曲疲劳极限 </strong>σ<sub class="subscript">bW</sub><strong>:</strong> [N/mm<span class="superscript">2</span>]</li>	</ul>	</li>	<li class="bodytext">根据 DIN 743 计算强度的值:<ul>		<li class="bodytext"><strong>参考直径 d</strong><sub class="subscript">b</sub> [mm], <strong>拉伸强度 R</strong><sub class="subscript">m</sub> [N/mm<span class="superscript">2</span>], <strong>屈服点 R</strong><sub class="subscript">p</sub> [N/mm<span class="superscript">2</span>], <strong>弯曲疲劳极限 </strong>σ<sub class="subscript">bW</sub> [N/mm<span class="superscript">2</span>], <strong>拉伸/压缩疲劳极限 </strong>σ<sub class="subscript">zdW</sub> [N/mm<span class="superscript">2</span>], <strong>扭转疲劳极限 </strong>τ<sub class="subscript">tW</sub> [N/mm<span class="superscript">2</span>]</li>		<li class="bodytext"><strong>实验数据： </strong>数据库条目引用外部表（参见「<a class="referencetopic-shabschnitt" href="9060.htm" target="_self">外部表</a>」章节）。实验 Haigh 图的表以 W01-???.dat 开头。</li>		<li class="bodytext"><strong>CrNiMo钢： </strong>在确定渗碳钢的尺寸系数K1时，需要指定该钢是否为CrNiMo渗碳钢。材料20NiCrMo13-4, 17NiCrMo6-4, 17NiCrMoS6-4, 18NiCr5-4, 17CrNi6-6, 18CrNiMo7-6, 14NiCrMo13-4, 22CrMoS3-5和15NiCr13属于这一组。根据 DIN 10084，这些材料的拉伸强度没有明显下降。根据林克教授的说法，这些材料也属于这一组。</li>	</ul>	</li>	<li class="bodytext">根据 FKM 计算强度的值:<ul>		<li class="bodytext"><strong>参考直径 R</strong><sub class="subscript">m,N</sub> 的拉伸强度 [N/mm<span class="superscript">2</span>], <strong>参考直径 R</strong><sub class="subscript">e,N</sub> 的屈服点 [N/mm<span class="superscript">2</span>], <strong>R<sub>p,N</sub> 的有效参考直径 d</strong><sub>eff,N,p</sub> [mm], <strong>R<sub>m,N</sub> 的有效参考直径 d</strong><sub>eff,N,m</sub> [mm], <strong>A 的有效参考直径 d</strong><sub>eff,N,a</sub> [mm], <strong>计算 K<sub>d,p</sub>（流动）的常数 a</strong><sub>d,p</sub>, <strong>计算 K<sub>d,m</sub>（断裂）的常数 a</strong><sub>d,m</sub>, <strong>计算 K<sub>d,a</sub>（断裂伸长率）的常数 a</strong><sub>d,A</sub></li>		<li class="bodytext"><strong>断裂伸长率 A: </strong>[%]</li>		<li class="bodytext"><strong>FKM 组： </strong>显示该条目所属材料组的选择列表。</li>	</ul>	</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Material Shaft calculation</h3>   
+                
+<p class="bodytext">The table applies to shafts (w010):</p><ul>	<li class="bodytext">Values for calculating strength according to Hänchen:	<ul>		<li class="bodytext"><strong>Bending fatigue limit </strong>σ<sub class="subscript">bW</sub><strong>:</strong> [N/mm<span class="superscript">2</span>]</li>	</ul>	</li>	<li class="bodytext">Values for strength calculation according to DIN 743:	<ul>		<li class="bodytext"><strong>Reference diameter d</strong><sub class="subscript">b</sub> [mm], <strong>Tensile strength R</strong><sub class="subscript">m</sub> [N/mm<span class="superscript">2</span>], <strong>Yield point R</strong><sub class="subscript">p</sub> [N/mm<span class="superscript">2</span>], <strong>Bending fatigue limit </strong>σ<sub class="subscript">bW</sub> [N/mm<span class="superscript">2</span>], <strong>Tension/compression fatigue limit </strong>σ<sub class="subscript">zdW</sub> [N/mm<span class="superscript">2</span>], <strong>Torsion fatigue limit </strong>τ<sub class="subscript">tW</sub> [N/mm<span class="superscript">2</span>]</li>		<li class="bodytext"><strong>Experimental data: </strong>The database entries refer to external tables (see chapter <a class="referencetopic-shabschnitt" href="9060.htm" target="_self">External tables</a>). Tables for the experimental Haigh diagram begin with W01-???.dat.</li>		<li class="bodytext"><strong>CrNiMo case hardening steel: </strong>When determining the size factor K1 for case hardening steel, you need to specify whether the steel is CrNiMo case hardening steel. The materials 20NiCrMo13-4, 17NiCrMo6-4, 17NiCrMoS6-4, 18NiCr5-4, 17CrNi6-6, 18CrNiMo7-6, 14NiCrMo13-4, 22CrMoS3-5 and 15NiCr13 belong to this group. According to DIN 10084, there is no significant drop in the tensile strength of these materials. These materials also belong to this group according to Prof. Linke.</li>	</ul>	</li>	<li class="bodytext">Values for strength calculation according to FKM:	<ul>		<li class="bodytext"><strong>Tensile strength for reference diameter R</strong><sub class="subscript">m,N</sub> [N/mm<span class="superscript">2</span>], <strong>Yield point for reference diameter R</strong><sub class="subscript">e,N</sub> [N/mm<span class="superscript">2</span>], <strong>Effective reference diameter for R<sub>p,N</sub> d</strong><sub>eff,N,p</sub> [mm], <strong>Effective reference diameter for R<sub>m,N</sub> d</strong><sub>eff,N,m</sub> [mm], <strong>Effective reference diameter for A d</strong><sub>eff,N,a</sub> [mm], <strong>Constant for the calculation of K<sub>d,p </sub>(flow) a</strong><sub>d,p</sub>, <strong>Constant for the calculation of K<sub>d,m</sub> (fracture) a</strong><sub>d,m</sub>, <strong>Constant for the calculation of K<sub>d,a</sub> (elongation at break) a</strong><sub>d,A</sub></li>		<li class="bodytext"><strong>Elongation at break A: </strong>[%]</li>		<li class="bodytext"><strong>FKM Group: </strong>Selection list showing the material group to which the entry belongs.</li>	</ul>	</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

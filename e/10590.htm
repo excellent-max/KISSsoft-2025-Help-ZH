@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>摩擦离合器 | Friction couplings</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Friction couplings">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10467');expand('9246');highlight('10590')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10692.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10591.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">摩擦离合器</h3>   
+                
+<p class="bodytext">此模块用于根据 VDI 2241 [106] 计算摩擦离合器和制动器。该计算结果可用于选择合适的离合器或制动器。离合器可通过机械、电磁或压力（例如液压）方式操作，从而产生或消除压紧力。离合器可设计为干式运行或带润滑运行。这会对滑动摩擦系数和静摩擦系数产生显著影响。</p><div class="objectWrapper" data-id="5ba0bcd6947b6" data-type="image" data-caption="Basisdaten Schaltbare fremdbetätigte Kupplungen"><p class="bodytext"><img data-id="5ba0bcd6947b6" height="308" src="60-a020_basisdaten_small.png" width="564"></p><p class="figcaption" data-id="5ba0bcd6947b6">图55.1：基本数据：摩擦离合器</p></div><div class="objectWrapper" data-id="5ba0bcd694808" data-type="image" data-caption="Darstellung eines schliessenden Systems"><p class="bodytext"><img data-id="5ba0bcd694808" src="10603.png" style="height:266px; width:325.5px"></p><p class="figcaption" data-id="5ba0bcd694808">图55.2：闭合系统的视图</p></div><p class="bodytext">力存储在弹簧中。当弹簧释放时，力使离合器回到其开启状态，反之亦然。这里通常使用压缩弹簧或碟形弹簧。两种类型的弹簧在开启状态下都已预紧。在此闭合系统的示例中，压缩力由液压产生，因此作用于活塞。这种力存储的额外定义未包含在 VDI 指南中。该指南假定摩擦表面压力直接施加在摩擦盘上。由于弹簧的动态特性也可能是非线性的，因此计算中使用与第一片摩擦盘接触所产生的力。</p><p class="bodytext">在 KISSsoft 中，可以定义弹簧力，或直接输入参考扭矩 M<sub class="subscript">K</sub> 和负载力矩 M<sub class="subscript">L</sub>。按照 VDI 2241 的规定，摩擦的啮合功和切换能力使用平均滑动速度和平均滑动摩擦系数来定义。也可以将滑动摩擦系数指定为 5 个滑动速度的函数，因为该因数会随实际滑动速度的不同而有很大变化。但这种方法未考虑油液老化，而油液老化会降低滑动摩擦系数。</p><div class="objectWrapper" data-id="5ba0bcd694858" data-type="image" data-caption="Schematische Darstellung einer Kupplung"><p class="bodytext"><img data-id="5ba0bcd694858" src="10604.png" style="height:150px; width:405px"></p><p class="figcaption" data-id="5ba0bcd694858">图55.3：离合器的示意图</p></div><p class="bodytext">动态惯性矩 J<sub class="subscript">L</sub> 也可以由多个不同参数组成。如果质量 m 位于距旋转轴距离 r 处，其惯性矩可用公式 J<sub class="subscript">L2</sub> = m·r<sup><span class="superscript">2</span></sup> 计算。</p><p class="bodytext">这可以添加到现有的惯性矩 J<sub>L</sub>。</p><p class="bodytext">J<sub class="subscript">L</sub> =J<sub class="subscript">L1</sub> + J<sub class="subscript">L2</sub>.</p><p class="bodytext">然后可通过速比将惯性矩折算到离合器轴上：J<sub class="subscript">2red</sub> = J<sub class="subscript">2</sub>*(n<sub class="subscript">2</sub>/n<sub class="subscript">1</sub>)<span class="superscript">2</span>。此折算后的惯性矩可再加到离合器轴本身的惯性矩上。</p><p class="bodytext">J<sub class="subscript">L</sub> = J<sub class="subscript">L1</sub> + J<sub class="subscript">2red</sub></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">本章内容</p><p class="relateditem"><a href="10591.htm" target="_self">计算</a></p><p class="relateditem"><a href="10593.htm" target="_self">弹簧力的定义</a></p><p class="relateditem"><a href="10592.htm" target="_self">滑动摩擦系数和滑动速度的定义</a></p><p class="relateditem"><a href="10594.htm" target="_self">图形</a></p><p class="relateditem"><a href="10609.htm" target="_self">设置</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Friction couplings</h3>   
+                
+<p class="bodytext">This module is used to calculate friction clutches and brakes in accordance with VDI 2241 [106]. The results of this calculation can then be used to select a suitable clutch or brake. The couplings are operated either mechanically, electromagnetically, or by pressure (e.g. hydraulically), thereby either generating or removing pressing force. The couplings can be designed to run either dry or with lubrication. This has a significant effect on the coefficient of sliding friction and the coefficient of static friction.</p><div class="objectWrapper" data-id="5ba0bcd6947b6" data-type="image" data-caption="Basisdaten Schaltbare fremdbetätigte Kupplungen"><p class="bodytext"><img data-id="5ba0bcd6947b6" height="308" src="60-a020_basisdaten_small.png" width="564" /></p><p class="figcaption" data-id="5ba0bcd6947b6">Figure 55.1: Basic data: Friction couplings</p></div><div class="objectWrapper" data-id="5ba0bcd694808" data-type="image" data-caption="Darstellung eines schliessenden Systems"><p class="bodytext"><img data-id="5ba0bcd694808" src="10603.png" style="height:266px; width:325.5px" /></p><p class="figcaption" data-id="5ba0bcd694808">Figure 55.2: View of a closing system</p></div><p class="bodytext">Force is stored in a spring. When the spring is released, the force returns the coupling to its open state, or vice versa. Compression or disc springs are usually used here. Both types of spring are pretensioned in their open state. In this example of a closing system, the compression is created hydraulically, and therefore affects the piston. This additional definition of force storage is not included in the VDI guideline. The guideline assumes that frictional surface pressure is applied directly to the plate. As the dynamic characteristics of the springs can also be non-linear, the force generated by the contact with the first plate is used in the calculation.</p><p class="bodytext">In KISSsoft, you can either define the spring forces, or input the reference torque M<sub class="subscript">K</sub> and the load torque M<sub class="subscript">L</sub> directly. As specified in VDI 2241, the engagement work of friction and the switching capacity are defined using an average sliding velocity and an average coefficient of sliding friction. You can also specify the coefficient of sliding friction as a dependency of 5 sliding velocities, because this coefficient can vary greatly depending on which sliding velocity is present. However, this does not take into account the aging of the oil, which would reduce the coefficient of sliding friction.</p><div class="objectWrapper" data-id="5ba0bcd694858" data-type="image" data-caption="Schematische Darstellung einer Kupplung"><p class="bodytext"><img data-id="5ba0bcd694858" src="10604.png" style="height:150px; width:405px" /></p><p class="figcaption" data-id="5ba0bcd694858">Figure 55.3: Schematic display of a coupling</p></div><p class="bodytext">The dynamic moment of inertia J<sub class="subscript">L</sub> can also be made up of a number of different parameters. If a mass m is present at the distance r from the rotational axis, its moment of inertia can be calculated with the formula J<sub class="subscript">L2</sub> = m*r<sup><span class="superscript">2</span></sup>.</p><p class="bodytext">This can then be added to the existing moment of inertia J<sub>L</sub>.</p><p class="bodytext">J<sub class="subscript">L</sub> =J<sub class="subscript">L1</sub> + J<sub class="subscript">L2</sub>.</p><p class="bodytext">Ratios can then reduce the moment of inertia on the clutch shaft J<sub class="subscript">2red</sub> = J<sub class="subscript">2</sub>*(n<sub class="subscript">2</sub>/n<sub class="subscript">1</sub>)<span class="superscript">2</span>. This reduced moment of inertia can then be added to the clutch shaft's moment of inertia.</p><p class="bodytext">J<sub class="subscript">L</sub> = J<sub class="subscript">L1</sub> + J<sub class="subscript">2red</sub></p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">In this chapter</p><p class="relateditem"><a href="10591.htm" target="_self">Calculation</a></p><p class="relateditem"><a href="10593.htm" target="_self">Definition of spring forces</a></p><p class="relateditem"><a href="10592.htm" target="_self">Definition of the coefficients of sliding friction and velocities</a></p><p class="relateditem"><a href="10594.htm" target="_self">Graphics</a></p><p class="relateditem"><a href="10609.htm" target="_self">Settings</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

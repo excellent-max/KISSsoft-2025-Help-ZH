@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿线修形 | Flank line modification</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Flank line modification">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8180');expand('9287');expand('9246');highlight('8265')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11112.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10415.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">齿线修形</h3>   
+                
+<p class="bodytext">出于各种目的，了解轴截面上某一特定点因弹性变形（弯曲和扭转）而沿特定方向移动了多少非常重要。其中一个例子是计算安装在同一条轴两端的联轴器两半之间的张口量。在这种情况下，轴截面上某一点的位移是沿轴向方向计算的。</p><p class="bodytext">此计算最重要的应用是确定啮合区域内的轴变形。节点处的变形沿齿宽计算。在这种情况下，节点因弯曲和扭转产生的位移仅沿齿面法线方向计算。平行于齿面的位移只会引起滑动速度的极小变化，因此可以忽略不计。</p><p class="bodytext">在 <span class="menu">齿线修形</span> 选项卡中，您可以直接选择轴上当前存在的轮齿。根据之前输入的数据，您可以确定计算所需的规格（齿宽从…到…、啮合点坐标、节点处齿面法线方向），这些规格会显示在用户界面中。因此，假设配对齿轮具有无限刚度，就可以沿齿宽确定节点位移因变形而产生的变化过程。</p><p class="hint">注意：</p><p class="bodytext">计算齿线修形时，被选中用于计算的齿轮（计算 A 或 B）上可能的载荷作用点偏移会被暂时禁用。这意味着执行计算 A 时，齿轮 A 的载荷作用点偏移被禁用；执行计算 B 时，该偏移会重新启用。</p><p class="bodytext"></p><p class="bodytext">这种变形（也称为张口）可以通过选择 <span class="menu">图形 &gt; 齿线修形</span><span class="menu"> &gt; 变形</span> 来显示。</p><p class="bodytext">这会显示节点处的变形。同时还会显示最佳齿线修形的建议。这种修形可确保载荷沿齿宽均匀分布。</p><p class="bodytext"></p><p class="bodytext">您可以在另一个输入字段中输入轮齿接触刚度 cγ。对于钢制齿轮，每 mm 齿宽的轮齿接触刚度约为 20 N/mm/°。cγ 的值在圆柱齿轮计算中会精确计算并记录。然后可以使用该刚度计算沿齿宽的载荷分布。单击 <span class="menu">图形 &gt; 齿线修形</span> <span class="menu">&gt; 载荷分布</span> 查看结果。</p><p class="bodytext"></p><p class="bodytext"><strong>计算齿轮计算中的载荷分布系数 K<sub>Hβ</sub></strong></p><p class="bodytext">结果窗口还会显示载荷分布系数 K<sub>Hβ</sub>，它根据 ISO 6336 计算，公式为 K<sub>Hβ</sub> = wmax/wm，由平均线载荷 (wm) 和最大线载荷 (wmax) 得出。该计算使齿向载荷分布系数的估算精度显著提高，类似于 ISO 6336 中的方法 B。该过程与 ISO 6336 的附录 E 基本相似。但是，您必须注意，此处所用配对齿轮的轴被假设为具有无限刚度。如果配对齿轮的轴刚度大得多，这是允许的。制造偏差也仅在例如通过将轴的角偏差（轴承偏移）作为轴数据的一部分输入来定义时才会纳入。</p><p class="bodytext">齿轮本体也可以作为刚度矩阵纳入考虑。为此，请在圆柱齿轮力元素中选择 <span class="menu">将刚度矩阵纳入考虑</span> 选项来执行相应的计算（参见"<a class="referencetopic-shabschnitt" href="8329.htm" target="_self">力</a>"章）。</p><p class="hint">注意：</p><p class="bodytext">如果要在考虑两根轴的变形的情况下确定 K<sub>hβ</sub>：两根轴的变形分量可以在圆柱齿轮计算的 <span class="menu">接触分析</span> 选项卡中合并。</p><p class="bodytext"></p><p class="bodytext"><strong>确定齿线修形尺寸</strong></p><p class="bodytext">此计算模块旨在让您能够快速而准确地定义最佳的齿线修形。为此，您可以输入由齿线鼓形或齿端修形以及齿向角偏差组成的修形。根据所需的走向，您可以将齿向角偏差指定为正数或负数。此处输入的修形随后也会显示在“变形”图形中。在“载荷分布”图形中，您可以清楚地看到此计算所实现的改进的载荷分布。单击 <span class="menu">图形 &gt; 齿线修形</span><span class="menu"> &gt; 齿线图</span> 以调用用于制造该修形（齿轮图纸）的图形。</p><p class="bodytext"></p><div class="objectWrapper" data-id="5bae22e538e49" data-type="image" data-caption="Bestimmung des Klaffens im Zahneingriff"><p class="bodytext"><img data-id="5bae22e538e49" height="240" src="21-gap_meshing_point.png" width="563"></p><p class="figcaption" data-id="5bae22e538e49">图 26.9：确定啮合点处的张口</p></div>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Flank line modification</h3>   
+                
+<p class="bodytext">For various purposes, it is important that you know how much a specific point in the shaft cross section moves in a particular direction due to elastic deformation (bending and torsion). An example of this is calculating the gaping between the two halves of a coupling that are mounted on each end of the same shaft. In this situation, the displacement of a point on the shaft cross section is calculated in the axial direction.</p><p class="bodytext">The most important application of this calculation is to determine shaft deformation in the meshing area. The deformation for the pitch point is calculated along the facewidth. In this situation, the displacement of the pitch point due to bending and torsion is calculated only in the direction of the normal to the flank. A displacement parallel to the flank only results in a very minimal change in sliding velocity and can therefore be ignored.</p><p class="bodytext">In the <span class="menu">Flank line modification</span> tab, you can directly select the toothing currently present on the shaft. Based on previously entered data, you can determine the necessary specifications for the calculation (facewidth from and to, coordinates of meshing point, direction of the normal to the tooth flank in the pitch point) which are displayed in the user interface. Therefore, assuming that the counter gear has infinite stiffness, the progress of the pitch point displacement due to deformation can be determined along the facewidth.</p><p class="hint">Note:</p><p class="bodytext">When calculating the flank line modification, a possible offset of the load application on the gear selected for the calculation (calculation A or B) is temporarily disabled. This means the gear load application offset of gear A is disabled when calculation A is performed, but is re-enabled when calculation B is performed.</p><p class="bodytext"></p><p class="bodytext">This deformation, also known as gaping, can be displayed by selecting <span class="menu">Graphic &gt; Flank line modification</span><span class="menu"> &gt; Deformation</span>.</p><p class="bodytext">This shows the deformation in the pitch point. A proposal for an optimal flank line modification is also displayed. This type of modification would ensure a homogenous load distribution across the facewidth.</p><p class="bodytext"></p><p class="bodytext">You can input the tooth contact stiffness cγ in another input field. For steel gears, the tooth contact stiffness per mm facewidth is approximately 20 N/mm/°. The values of cγ are calculated precisely and documented in the cylindrical gear calculation. This stiffness can then be used to calculate the load distribution along the facewidth. Click <span class="menu">Graphics &gt; Flank line modification</span> <span class="menu">&gt; load distribution</span> to see the result.</p><p class="bodytext"></p><p class="bodytext"><strong>Calculating the load distribution coefficient K<sub>Hβ</sub> for gear calculation</strong></p><p class="bodytext">The results window also shows the load distribution coefficient K<sub>Hβ</sub>, calculated according to ISO 6336, with the equation K<sub>Hβ</sub> = wmax/wm from the average line load (wm) and the maximum line load (wmax). This calculation enables the face load factor to be estimated with significantly more accuracy, similar to Method B in ISO 6336. The procedure is basically similar to Annex E of ISO 6336. However, you must be aware that the shaft of the counter gear used here is assumed to have infinite stiffness. This is permitted if the shaft of the counter gear has much greater stiffness. Manufacturing deviations are also only included if, for example, they have been defined by inputting an angular deviation of the shaft (bearing offset) as part of the shaft data.</p><p class="bodytext">The gear body can also be taken into account as a stiffness matrix. To do this, select the <span class="menu">Take stiffness matrix into account</span> option in the cylindrical gear force element to perform the corresponding calculation (see chapter <a class="referencetopic-shabschnitt" href="8329.htm" target="_self">Forces</a>).</p><p class="hint">Note:</p><p class="bodytext">If K<sub>hβ</sub> is to be determined while taking into account the deformation of the two shafts: The deformation components of two shafts can be combined in the cylindrical gear calculation in the <span class="menu">Contact analysis</span> tab.</p><p class="bodytext"></p><p class="bodytext"><strong>Sizing the flank line modification</strong></p><p class="bodytext">This calculation module has been designed to enable you to define the best possible flank line modification both quickly and accurately. To do this, you can input a modification consisting of flank line crowning or end relief and flank angle deviation. You can specify the flank angle deviation either as a positive or negative number, depending on the required progression. The modification input here is then also displayed in the &quot;Deformation&quot; graphic. In the &quot;Load distribution&quot; graphic you can then clearly see the improved load distribution achieved by this calculation. Click <span class="menu">Graphic &gt; Flank line modification</span><span class="menu"> &gt; flank line diagram</span> to call the graphic for manufacturing the modification (gear drawing).</p><p class="bodytext"></p><div class="objectWrapper" data-id="5bae22e538e49" data-type="image" data-caption="Bestimmung des Klaffens im Zahneingriff"><p class="bodytext"><img data-id="5bae22e538e49" height="240" src="21-gap_meshing_point.png" width="563" /></p><p class="figcaption" data-id="5bae22e538e49">Figure 26.9: Determining gaping in the meshing point</p></div>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

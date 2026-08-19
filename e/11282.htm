@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算得到的允许齿根和/或齿面应力的外推 | Extrapolation of the calculated permissible root and/or flank stresses</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Extrapolation of the calculated permissible root and/or flank stresses">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11254');expand('9291');expand('9246');highlight('11282')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11280.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11284.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算得到的允许齿根和/或齿面应力的外推</h3>   
+                
+<p class="bodytext">如果有齿根和/或齿面疲劳结果，则可以对计算结果进行外推。请在“数据外推”选项卡中执行此操作。第一步可将数据外推至用户定义的循环次数（外推至循环次数）。此外推可使用平均齿距或 0.5∙平均齿距进行。在第 2 步和第 3 步中，可以根据用户定义的载荷循环次数确定要执行的步骤。第一步提供以下选项：</p><ul>	<li class="bodytext" style="margin-left: 0cm; margin-right: 0cm;"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">将允许应力设置为 0</span></span></span></span></li>	<li class="bodytext" style="margin-left: 0cm; margin-right: 0cm;"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">将循环次数设置为无限（针对特定允许应力）</span></span></span></span></li>	<li class="bodytext" style="margin-left: 0cm; margin-right: 0cm;"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">使用变化的齿距外推载荷循环次数。</span></span></span></span></li></ul><p class="bodytext">齿根、油润滑齿面、润滑脂润滑齿面和干运行齿面的结果分别提供外推选项。数据外推的影响可在“图形”下的 <span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">S-N 曲线 </span></span></span>（Woehler 线）中查看。</p><p class="bodytext">选择<span class="menu">扩展温度范围</span>选项，将计算结果扩展到较低温度。设置最低温度参数（必须低于“试验齿轮测量”表中的最低计算温度）以及提高允许应力的系数（该系数必须 ≥ 1）。结果显示在 S-N 曲线（Woehler 线）图形中，或写入生成的 .dat 文件。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Extrapolation of the calculated permissible root and/or flank stresses</h3>   
+                
+<p class="bodytext">The calculated results can be extrapolated if root and/or flank fatigue results are available. Do this in the Data extrapolation tab. In the first step, you can extrapolate data up to the user-defined number of cycles (Extrapolate to cycles). This extrapolation can be performed with an average pitch or 0.5∙average pitch. In steps 2 and 3, you can define which step is to be performed according to the user-defined load cycles. These options are available in the first step:</p><ul>	<li class="bodytext" style="margin-left: 0cm; margin-right: 0cm;"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">Set permissible stress to 0</span></span></span></span></li>	<li class="bodytext" style="margin-left: 0cm; margin-right: 0cm;"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">Set the number of cycles to infinite (for a specific permitted stress)</span></span></span></span></li>	<li class="bodytext" style="margin-left: 0cm; margin-right: 0cm;"><span style="font-size:9.5pt"><span style="line-height:13pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">Extrapolate load cycles with varying pitch.</span></span></span></span></li></ul><p class="bodytext">Individual extrapolation options are available for root, flank oil, flank grease and flank dry results. The effect of data extrapolation can be seen in Graphics under <span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">S-N curve </span></span></span>(Woehler line).</p><p class="bodytext">Select the <span class="menu">Extend temperature range</span> option to extend the calculated results to lower temperatures. Set the parameters for the minimum temperature (must be lower than the lowest calculated temperature in the &quot;Test gear measurements&quot; table) and the factor for increasing permissible stress (the factor must be ≥ 1). The results are displayed in the S-N curve (Woehler line) graphics or in the generated .dat file.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

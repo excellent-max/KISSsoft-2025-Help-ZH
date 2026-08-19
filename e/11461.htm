@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算 | Calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11457');expand('7708');expand('9286');expand('9246');highlight('11461')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11460.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11462.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算</h3>   
+                
+<p class="bodytext">载荷谱计算针对参考齿轮进行，通常也可以针对齿轮副（行星齿轮级、3 齿轮、4 齿轮）进行。常规计算（“所有轮齿”）假定扭矩曲线上的每个测量点都出现在每个齿上。如果扭矩的符号始终不变，则此方法是正确的。但是，如果出现交变扭矩，则仅当各个测量点之间的时间间隔足够长、允许被考虑的齿轮完成一整圈（或更多圈）旋转时，此方法才是正确的。</p><p class="bodytext">如果已选择 <span class="menu">确定特定齿的载荷谱</span> 选项，则使用速度和时间信息来计算特定扭矩测量点何时出现在所选齿上。然后执行计算。以这种方式确定的载荷谱随后仅根据其在参考齿轮上的角位置适用于所选齿。尽管如此，通过选择 <span class="menu">确定并使用平均损伤的角位置</span> 来找到一个与所有其他齿相比经历了“平均”损伤的齿，可以获得“普遍”适用的载荷谱。如果测量的扭矩曲线重复出现，并且被分析的齿轮在接近开始时具有不同的角位置，这是一个很好的选择。在致动器和类似机构中（其起始角位置始终保持不变），我们建议您选择 <span class="menu">确定并使用最大损伤的角位置</span> 选项。这是因为每个齿总是经历相同的扭矩曲线，并且承受最高载荷的齿对于计算额定寿命至关重要。角位置所经历的损伤通过使用雨流法确定相应的载荷谱，然后按照 ISO 6336-6 公式 A.2 计算等效扭矩 Teq 来评估。<br>单击 <span class="menu">图形</span> 选择按钮以显示单个齿上的扭矩曲线。<br><br>每次啮合的测量点数量必须保持恒定，以确保能够获得具有正确频率分布的载荷谱。因此，在每次啮合中确定扭矩最高和最低的测量点，然后在整个计算中使用。所有其他测量点将被删除。根据要求，也可以设置计算，使每次啮合中仅定义扭矩最高的测量点，然后在整个计算中使用该值。</p><p class="bodytext">如果测量齿轮单圈旋转的多个测量点，当移除不在被研究齿上的点时，扭矩变化的次数会逐渐增加。因此，单个齿的载荷谱包含更大比例的交变弯曲载荷，这会导致更低的齿根安全系数。</p><p class="bodytext"><br><strong>示例：</strong><br>使用 100,000 个测量点进行扭矩测量，每 0.1 s 测量一次。扭矩符号每 30 s 变化一次。具有 20 个齿的齿轮每秒旋转一圈。</p><p class="bodytext">这导致每 300 个测量点变化 1 次，即变化频率为 1/300 = 0.333%。</p><p class="bodytext">相比之下，齿轮上的齿 X 只“经历”每第 10 个测量点（每秒 10 个点，每秒 1 圈旋转）。换句话说，30 s 内只有 30 个测量点，变化频率为 1/30 = 3.33%！</p><p class="bodytext">由于计算很复杂，可以显示大量的中间结果。这有助于您有效地检查其进度。要显示中间结果，请在 <span class="menu">中间结果</span> 中单击相应的标志。</p><p class="bodytext"></p><p class="bodytext">计算完成后，您可以将载荷谱传递到 <span class="menu">强度</span> 选项卡。此处系统会检查是否需要更改特定设置，以确保计算能够正确执行。将显示必要的更改。如果您想应用这些更改，只需选择“Yes”确认即可。例如，工况系数必须设置为 1.0。如果您使用 Rainflow 变体，则动载系数必须设置为 1.0，因为扭矩中存在 KV。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation</h3>   
+                
+<p class="bodytext">The load spectrum calculation is performed for the reference gear and can usually also be performed for the gear pair (planetary gear stage, 3-gear, 4-gear). The normal calculation (&quot;all teeth&quot;) assumes that each measuring point on the torque curve occurs on each tooth. This approach is correct if the torque's prefix operator never changes. However, if alternating torque occurs, this approach is only correct if the time interval between the individual measuring points is long enough to allow the gear being considered to perform one full rotation (or more).</p><p class="bodytext">If the <span class="menu">Determine load spectrum for a specific tooth</span> option has been selected, the speed and time information is used to calculate when a particular torque measuring point occurs on a selected tooth. The calculation is then performed. A load spectrum that has been determined in this way then only applies to the selected tooth according to its angular position on the reference gear. Despite this, it is possible to obtain a &quot;generally&quot; applicable load spectrum by selecting <span class="menu">Determine and use the angular position with average damage</span> to find a tooth which has experienced &quot;average&quot; damage when compared to all other teeth. This is a good option if the measured torque curve occurs repeatedly and the gear that is being analyzed has different angular positions at the start of the approach. In the case of actuators and similar mechanisms, where the angular position at the start always remains the same, we recommend you select the <span class="menu">Determine and use the angular position with maximum damage</span> option. This is because each tooth always experiences the same torque curve and the tooth that is subjected to the highest load is relevant for calculating the rating life. The damage experienced by an angular position is evaluated by using the Rainflow method to determine the corresponding load spectrum and then calculating the equivalent torque Teq as detailed in ISO 6336-6, Equation A.2.<br />Click the <span class="menu">Graphic</span> selection button to display the torque curve on a single tooth.<br /><br />The number of measuring points per meshing must be constant to ensure that a load spectrum with the correct frequency distribution per element can be achieved. For this reason, the measuring point with highest and lowest torque is determined in each meshing, and then used throughout the calculation. All other measured points will be deleted. On request, the calculation can also be set so that only the measuring point with the highest torque is defined in each meshing, and then this value is used throughout the calculation.</p><p class="bodytext">If several measured points of a single rotation of the gear are measured, the number of torque changes increases progressively when the points that do not occur on the tooth under investigation are removed. The load spectrum of the individual tooth therefore includes a greater proportion of alternating bending loads, which results in lower tooth root safeties.</p><p class="bodytext"><br /><strong>Example:</strong><br />torque measurement with 100,000 measuring points, one measurement every 0.1 s. The torque prefix operator changes every 30 s. The gear with 20 teeth rotates once per second.</p><p class="bodytext">This results in 1 change per 300 measuring points, i.e. a change frequency of 1/300 = 0.333%.</p><p class="bodytext">In contrast, tooth X on the gear only &quot;experiences&quot; every 10th measuring point (10 points per second, 1 rotation per second). In other words, only 30 measuring points in 30 s, a change frequency of 1/30 = 3.33%!</p><p class="bodytext">As the calculation is complex, a very large number of interim results can be displayed. This helps you check its progress effectively. To display interim results, click on the appropriate flag in <span class="menu">Interim results</span>.</p><p class="bodytext"></p><p class="bodytext">Once the calculation has finished, you can transfer the load spectrum to the <span class="menu">Strength</span> tab. Here, the system checks whether particular settings need to be changed, to ensure the calculation can be performed correctly. The necessary changes are displayed. Simply select &quot;Yes&quot; to confirm, if you want to apply them. For example, the application factor must be set to 1.0. If you are using the Rainflow variant, the dynamic factor must be set to 1.0 because KV is present in the torque.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

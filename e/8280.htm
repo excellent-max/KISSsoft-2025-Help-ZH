@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算方法 | Calculation method</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation method">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11621');expand('8183');expand('9287');expand('9246');highlight('8280')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11621.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8282.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算方法</h3>   
+                
+<p class="bodytext">如果计算包含 <span class="menu">滚动轴承</span>，则可以通过多种不同的方式考虑它们：</p><ul>	<li class="bodytext"><strong>刚度：不计算。额定寿命：ISO 281，含制造商说明：</strong> 使用经典方法计算（如制造商目录中所述）。在这种计算中，带接触角轴承（例如圆锥滚子轴承）的响应方式为：轴承反力在方向力与轴的对称轴相交的位置处确定。<br>	这样，轴向力和径向力之间的相互依赖关系（如圆锥滚子轴承中存在的那样）被纳入计算中。滚动轴承主要约束位移和/或旋转中的运动自由度，这就是为什么在您选择此选项时以这种方式对它们进行建模。您可以输入位移刚度或扭转刚度（如果未输入值，则假定轴承具有无限刚度）。这意味着计算不受轴承类型或尺寸的影响。</li>	<li class="bodytext"><strong>刚度：ISO/TS 16281。额定寿命：ISO 281，含制造商说明：</strong> 如果选择此选项，轴的弯曲线会受到根据轴承几何形状计算得出的有限轴承刚度的影响。但是，额定寿命是根据力、按照制造商目录计算的（即在额定寿命计算中忽略倾覆力矩）。</li>	<li class="bodytext"><strong>刚度：ISO/TS 16281。额定寿命：ISO/TS 16281：</strong> 轴的弯曲线和轴承的额定寿命都基于按 ISO/TS 16281 确定的轴承内部几何形状。</li></ul><p class="bodytext">您可以在此处找到有关轴计算的更详细信息：（参见"<a class="referencetopic-shabschnitt" href="8139.htm" target="_self">滚动轴承（经典分析）</a>"章）和（参见"<a class="referencetopic-shabschnitt" href="10645.htm" target="_self">滚动轴承（内部几何）</a>"章）。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation method</h3>   
+                
+<p class="bodytext">If the calculation includes <span class="menu">rolling bearings</span>, they can be considered in a number of different ways:</p><ul>	<li class="bodytext"><strong>Stiffness: not calculated. Rating life: ISO 281, with manufacturer's notes:</strong> Calculation using the classic method (as described in manufacturers' catalogs). In this calculation of the way bearings with a contact angle (e.g. tapered roller bearings) react, the bearing reaction is determined at the place where the direction force intersects with the shaft's symmetry axis.<br />	In this way, the interdependency between the axial and radial forces, such as exists in tapered roller bearings, is included in the calculation. Rolling bearings primarily place constraints on the degree of freedom of movement found in displacement and/or rotation, which is why they are modeled in this way when you select this option. You can input displacement or torsional stiffness (if no values are input, the bearing is assumed to have infinite stiffness). This means the calculation is not affected by the type or size of the bearing.</li>	<li class="bodytext"><strong>Stiffness: ISO/TS 16281. Rating life: ISO 281, with manufacturer's notes: </strong> If you select this option, the shaft's bending lines are affected by the finite bearing stiffness which is calculated based on the bearing’s geometry. However, the rating life is calculated based on the forces, according to the manufacturer catalog (i.e. tilting moments are ignored in the rating life calculation).</li>	<li class="bodytext"><strong>Stiffness: ISO/TS 16281. Rating life: ISO/TS 16281:</strong> Both the shaft bending lines and the rating life of the bearing are based on the internal geometry of the bearings according to ISO/TS 16281.</li></ul><p class="bodytext">You will find more detailed information about the shaft calculation here: (see chapter <a class="referencetopic-shabschnitt" href="8139.htm" target="_self">Rolling Bearings (Classic Analysis)</a>) and (see chapter <a class="referencetopic-shabschnitt" href="10645.htm" target="_self">Rolling Bearings (Internal Geometry)</a>).</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

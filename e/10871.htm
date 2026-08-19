@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>编辑控制文件 | Editing the control file</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Editing the control file">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10869');expand('8370');expand('8353');expand('9286');expand('9246');highlight('10871')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10870.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10321.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">编辑控制文件</h3>   
+                
+<p class="bodytext">你可以通过修改控制文件来调整制造图样以满足自己的要求。用于控制制造图样的命令在下表中描述。</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">纸张大小：A4</p>			<p class="bodytext">纸张大小：A4 纵向</p>			<p class="bodytext">纸张大小: 297, 210</p>			</td>			<td width="372">			<p class="bodytext">指定所需纸张格式。此术语指用于描述常用纸张尺寸（A3、A4、A5、B4、B5、Letter、Legal 和 Ledger）的标准术语，同时也允许您输入自定义的宽度和高度尺寸。</p>			<p class="bodytext">默认设置为横向图纸幅面。然而，您可以通过输入关键字"portrait"切换为纵向图纸幅面。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">字体大小: 5</p>			</td>			<td width="372">			<p class="bodytext">指定所需字体大小。字体大小会影响报告和简图标题的尺寸。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">单位：英寸</p>			</td>			<td width="372">			<p class="bodytext">默认设置是假设输入值以mm为单位。系统可处理的单位有英寸、mm和cm。</p>			</td>		</tr>	</tbody></table><p class="bodytext"><br>现在可以添加具有特定属性的图形。下表给出了正确的输入方式概览。</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">绘制2DDiaProfileChart1</p>			</td>			<td width="354">			<p class="bodytext">“Draw”是用于指定要添加一个图形的关键字。它后面跟着要插入的图形的ID。最后的数字是ID的一部分，并标识齿轮。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">窗口：160, 285, 0, 85</p>			</td>			<td width="354">			<p class="bodytext">“Window”标识图形显示的窗口。值显示左右上下的限制。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">适应缩放</p>			</td>			<td width="354">			<p class="bodytext">此可选指令迫使图形变形，以便在所有方向上填满窗口。我们建议用于示意图，但不建议用于几何展示。</p>			<p class="bodytext">如果未使用此术语，则保留图形的原始大小和形状。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">固定比例 2</p>			</td>			<td width="354">			<p class="bodytext">此可选指令生成图形的缩放输出。数字对应比例（例如，M 2:1 为 2，M 1:10 为 0.1 等）。</p>			</td>		</tr>	</tbody></table><p class="bodytext"><br>你可以插入这些图形：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">齿形</p>			</td>			<td width="318">			<p class="bodytext">2DGeoToothDrawing</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">图，图样</p>			</td>			<td width="318">			<p class="bodytext">2DGeoGearDrawing</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">装配</p>			</td>			<td width="318">			<p class="bodytext">2DGeoAssemblyDrawing</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">刀具</p>			</td>			<td width="318">			<p class="bodytext">2DGeoToolDrawing</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">齿廓简图</p>			</td>			<td width="318">			<p class="bodytext">2DDiaProfileChart</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">齿面简图</p>			</td>			<td width="318">			<p class="bodytext">2DDiaFlankLineChart</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">齿面法向角</p>			</td>			<td width="318">			<p class="bodytext">2DDiaNormal</p>			</td>		</tr>	</tbody></table><p class="bodytext"><br>最后，你现在可以将报告显示在所需位置：</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">写报告1</p>			</td>			<td width="318">			<p class="bodytext">“Write”是用于创建齿轮数据报告的关键字。输入report1以选择齿轮1的数据，输入report2以选择齿轮2的数据，依此类推。</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">右上角：297, 218</p>			</td>			<td width="318">			<p class="bodytext">与图形不同，此处必须指定对齐方式，该对齐方式由第一个词定义。正确的命令是 topright:、topleft:、bottomright: 和 bottomleft:。它们表示对齐方式（右上、左上、右下和左下）。接下来的两个值表示特定的参考点。</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Editing the control file</h3>   
+                
+<p class="bodytext">You can modify the manufacturing drawing to suit your own requirements by making changes to the control file. The commands used to control the manufacturing drawing are described in the following table.</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">Papersize: A4</p>			<p class="bodytext">Papersize: A4 portrait</p>			<p class="bodytext">Papersize: 297, 210</p>			</td>			<td width="372">			<p class="bodytext">Specifies the required paper format. This refers to the standard terms used to describe commonly used paper sizes (A3, A4, A5, B4, B5, Letter, Legal and Ledger), and also enables you to input your own dimensions for width and height.</p>			<p class="bodytext">The default setting is for landscape format. However, you can switch to portrait format by entering the key word &quot;portrait&quot;.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">Fontsize: 5</p>			</td>			<td width="372">			<p class="bodytext">Specifies the required font size. The font size influences the size of the report and the diagram titles.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="138">			<p class="bodytext">Units: inch</p>			</td>			<td width="372">			<p class="bodytext">The default setting is that input values are assumed to be in mm. The system can handle these units: inch, mm and cm.</p>			</td>		</tr>	</tbody></table><p class="bodytext"><br />You can now add graphics that have specific properties. The table below gives an overview of the correct inputs.</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">Draw 2DDiaProfileChart1</p>			</td>			<td width="354">			<p class="bodytext">“Draw&quot; is the key word used to specify that a graphic is to be added. It is followed by the ID of the graphic you want to insert. The number at the end is part of the ID, and identifies the gear.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">Window: 160, 285, 0, 85</p>			</td>			<td width="354">			<p class="bodytext">“Window&quot; identifies the window in which the graphic is displayed. The values show the limits on the left, right, bottom and top.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">Scaletofit</p>			</td>			<td width="354">			<p class="bodytext">This optional command forces the graphic to distort so that it fills the window in every direction. We recommend this for diagrams, but not for geometric presentations.</p>			<p class="bodytext">If this term is not used, the original size and shape of the graphic is retained.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="156">			<p class="bodytext">Fixedscale 2</p>			</td>			<td width="354">			<p class="bodytext">This optional command generates a scaled output of the graphic. The number corresponds to the scale (in this case, 2 for M 2:1, 0.1 for M 1:10, etc.).</p>			</td>		</tr>	</tbody></table><p class="bodytext"><br />You can insert these graphics:</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Tooth form</p>			</td>			<td width="318">			<p class="bodytext">2DGeoToothDrawing</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Drawing</p>			</td>			<td width="318">			<p class="bodytext">2DGeoGearDrawing</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Assembly</p>			</td>			<td width="318">			<p class="bodytext">2DGeoAssemblyDrawing</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Tool</p>			</td>			<td width="318">			<p class="bodytext">2DGeoToolDrawing</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Profile diagram</p>			</td>			<td width="318">			<p class="bodytext">2DDiaProfileChart</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Flank line diagram</p>			</td>			<td width="318">			<p class="bodytext">2DDiaFlankLineChart</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Angle of flank normal</p>			</td>			<td width="318">			<p class="bodytext">2DDiaNormal</p>			</td>		</tr>	</tbody></table><p class="bodytext"><br />Finally, you can now display the report in the required location:</p><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Write report1</p>			</td>			<td width="318">			<p class="bodytext">“Write&quot; is the key word used to create a gear data report. Enter report1 to select the gear data of gear 1, report2 to select the gear data from gear 2, etc.</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="192">			<p class="bodytext">Topright: 297, 218</p>			</td>			<td width="318">			<p class="bodytext">Unlike graphics, you must specify an alignment here, which is defined with the first word. The correct commands are topright:, topleft:, bottomright: and bottomleft:. They represent the alignment (top right, top left, bottom right and bottom left). The next two values represent the particular reference point.</p>			</td>		</tr>	</tbody></table><p class="bodytext"></p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

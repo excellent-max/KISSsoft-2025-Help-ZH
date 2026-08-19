@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>注释 | Notes</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Notes">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11457');expand('7708');expand('9286');expand('9246');highlight('11463')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11462.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8782.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">注释</h3>   
+                
+<p class="bodytext"><strong>扭矩分辨率网格</strong></p><p class="bodytext">网格分辨率对结果有很大影响。由于测量点分布在扭矩网格上，它们在高扭矩载荷区间中的分布尤其具有显著影响。另一方面，定义分辨率非常高的网格将导致相应数量的载荷区间和计算量，从而使计算时间大大延长。</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1" style="width:500px">	<tbody>		<tr>			<td>扭矩曲线</td>			<td>最大变化</td>			<td>建议的网格单元数 n<sub>R</sub></td>		</tr>		<tr>			<td>仅正值</td>			<td>ΔT/T<sub>max </sub>&lt; = 0.5<br>			(ΔT = T<sub>max</sub>-T<sub>min</sub>)</td>			<td>50</td>		</tr>		<tr>			<td>仅正值</td>			<td>ΔT/T<sub>max </sub>&gt; 0.5</td>			<td>50-100</td>		</tr>		<tr>			<td>正值和负值</td>			<td></td>			<td>(50) 100-200</td>		</tr>	</tbody></table><p class="bodytext">此表中的值适用于恒定的载荷区间宽度。</p><p class="bodytext"></p><p class="bodytext"><strong>采样率</strong></p><p class="bodytext">采样频率（在记录扭矩测量点时）不应影响结果（除非采样频率过低而导致载荷峰值被忽略）。采样率必须显著高于扭矩信号频率。另请参见 DIN 45667《随机振动评估的分类方法》。</p><p class="bodytext"></p><p class="bodytext"><strong>转速</strong></p><p class="bodytext">如果使用雨流计数法，则只处理测量点处的扭矩，其相关转速被忽略。因此，会计算所有测量点的平均转速。在载荷谱中，该值随后被指定到所有载荷区间。为此，定义了每个测量点的动载系数。然后使用 T*KV 执行雨流计数法。如果使用“简单计数”法，转速值同样会被忽略。但该方法可以扩展，通过将测量点分布在扭矩-转速矩阵中来确保转速被纳入载荷谱。</p><p class="bodytext"></p><p class="bodytext"><strong>输入文件</strong></p><p class="bodytext">采用 CSV 格式，每行包含以下信息，可选带：<br>a) 扭矩</p><p class="bodytext">b) 时间；扭矩</p><p class="bodytext">c) 时间；转速；扭矩</p><p class="bodytext">注释行必须以 // 开头。</p><p class="bodytext">在 Excel 中保存 CSV 文件时，请单击“数据类型 CSV（分隔符分隔）”选项。</p><p class="bodytext"></p><p class="bodytext">如果变体 a) 或 b) 中的“转速”值缺失，则改用额定转速。</p><p class="bodytext">如果变体 a) 中的“时间”值缺失，则假定两个扭矩点之间的时间为 1 秒。</p><p class="bodytext">您可以在 \Example 目录中找到示例：“TorqueData from Round Drive.csv”文件。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Notes</h3>   
+                
+<p class="bodytext"><strong>Grid for torque resolution</strong></p><p class="bodytext">The grid resolution has a major influence on the result. As the measuring points are arranged over the torque grid, their distribution to load bins with high torques, in particular, has a significant effect. On the other hand, defining a grid with a very high resolution will result in a correspondingly large number of load bins and calculations that take much longer to run.</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1" style="width:500px">	<tbody>		<tr>			<td>Torque curve</td>			<td>Maximum variation</td>			<td>Suggested number of grid elements n<sub>R</sub></td>		</tr>		<tr>			<td>Only positive</td>			<td>ΔT/T<sub>max </sub>&lt; = 0.5<br />			(ΔT = T<sub>max</sub>-T<sub>min</sub>)</td>			<td>50</td>		</tr>		<tr>			<td>Only positive</td>			<td>ΔT/T<sub>max </sub>&gt; 0.5</td>			<td>50-100</td>		</tr>		<tr>			<td>Positive and negative</td>			<td></td>			<td>(50) 100-200</td>		</tr>	</tbody></table><p class="bodytext">The values in this table apply for a constant load bin width.</p><p class="bodytext"></p><p class="bodytext"><strong>Sampling rate</strong></p><p class="bodytext">The sampling frequency (when recording torque measuring points) should not affect the result (unless it is too slow and load peaks are overlooked as a consequence). The sampling rate must be significantly higher than the torque signal frequency. See also DIN 45667 &quot;Classification methods for evaluation of random vibrations&quot;.</p><p class="bodytext"></p><p class="bodytext"><strong>Speeds</strong></p><p class="bodytext">If the Rainflow method is used, only the torques at the measuring points are processed. Their associated speeds are ignored. Therefore, the average speed for all the measuring points is calculated. In the load spectrum, this value is then assigned to all load bins. For this reason, the dynamic factor of each measuring point is defined. The Rainflow method is then performed with T*KV. The speed values would also be ignored if the &quot;Simple Count&quot; method is used. However, this method can be expanded by distributing the measuring points in a torque-speed matrix to ensure the speed is included in the load spectrum.</p><p class="bodytext"></p><p class="bodytext"><strong>Input files</strong></p><p class="bodytext">In CSV format with the following information per row, optionally with:<br />a) Torque</p><p class="bodytext">b) Time; Torque</p><p class="bodytext">c) Time; Speed; Torque</p><p class="bodytext">Comment lines must start with //.</p><p class="bodytext">Click the &quot;Data type CSV (delimiter-separated)&quot; option when saving the CSV file in Excel.</p><p class="bodytext"></p><p class="bodytext">If the value for &quot;Speed&quot; in variant a) or b) is missing, the nominal speed is used instead.</p><p class="bodytext">If the value for &quot;Time&quot; in variant a) is missing, a time of 1 second between two torque points is assumed.</p><p class="bodytext">You will find an example in the \Example directory: &quot;TorqueData from Round Drive.csv&quot; file.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

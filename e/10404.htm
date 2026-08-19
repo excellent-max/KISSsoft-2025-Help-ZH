@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>技术解释 | Technical Explanations</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Technical Explanations">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11538');expand('7903');expand('9288');expand('9246');highlight('10404')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7941.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7929.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">技术解释</h3>   
+                
+<p class="bodytext">温度对螺栓工况性能的关键影响是：</p><ul>	<li class="bodytext">热膨胀引起的预紧力变化</li>	<li class="bodytext">高温下由松弛引起的预紧力变化</li>	<li class="bodytext">脆性（高温和低温下）</li></ul><p class="bodytext">由于螺栓和夹紧部件的材料数据不足，计算选项的数量也受到限制。由于热膨胀引起的预紧力变化可以非常准确地计算，因为作为初步近似，热膨胀值的变化可以视为与温度成线性关系，至少在-100至+500°C的温度范围内。其他效应（松弛和脆性）可通过选择适当的材料并采取预防措施（参见相关文献）来最小化。</p><p class="bodytext">热膨胀引起的预紧力变化的计算使用与温度相关的热膨胀值和杨氏模量，如 H. Wiegand 在《螺栓连接》第 4 版（1988 年）第 7.1.3.1 节中所规定。所有其他计算均基于 VDI 2230 中的方程，并采用工作温度下的相应值。</p><p class="bodytext">KISSsoft 为许多可输入的数据（杨氏模量、热膨胀值、工作温度下的屈服点）提供合理的建议值，这些值基于当前技术文献，包括 DIN 标准或瑞士楚格市 Bosshard 公司的技术文档。这些建议基于环境温度下的杨氏模量，当然也基于工作温度。在计算工作温度下许用压力的建议值时，假定屈服点按比例变化。这些建议是“常用钢”的平均值，不针对某一种特定材料，因此在关键情况下必须仔细核查，因为温度的影响也随材料类型的不同而变化。如果希望使用经验公式自动计算材料数据，只需点击 <span class="menu">计算 &gt; 设置</span>。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Technical Explanations</h3>   
+                
+<p class="bodytext">The critical influences of temperature on the operating properties of bolts are:</p><ul>	<li class="bodytext">Change in pretension force due to thermal expansion</li>	<li class="bodytext">Change in pretension force due to relaxation (at high temperatures)</li>	<li class="bodytext">Brittleness (at high and low temperatures)</li></ul><p class="bodytext">The lack of sufficient general data for the materials for bolts and clamped parts means the number of calculation options is also limited. The change in pretension force due to thermal expansion can be calculated very accurately because, as a first approximation, changes to the thermal expansion value can be viewed as linear, in line with the temperature, at least for the temperature range -100 to +500°C. The other effects (relaxation and brittleness) can be minimized by selecting appropriate materials and taking precautionary measures (see the relevant literature).</p><p class="bodytext">The calculation of the change in pretension force due to thermal expansion is performed with temperature-dependent thermal expansion value and Young's modulus, as specified by H. Wiegand in Schraubenverbindungen, 4th Edition 1988, section 7.1.3.1. All other calculations are based on the equations in VDI 2230 with the appropriate values at operating temperature.</p><p class="bodytext">KISSsoft suggests sensible values for much of the data you can input (Young's modulus, thermal expansion value, yield point at operating temperature), which are based on current technical literature. This consists of DIN standards or technical documentation from the company Bosshard, in Zug, Switzerland. These suggestions are based on the Young's modulus for ambient temperature and, of course, also on the operating temperature. When calculating the suggestion for the permissible pressure at operating temperature, the proportional change to the yield point was assumed. The suggestions are average values for &quot;commonly used steels&quot;. They do not refer to one specific material and must therefore be checked carefully in critical situations because the influence of temperature also varies according to the type of material involved. If you want to calculate material data automatically, using empirical formulae, simply click on the <span class="menu">Calculation &gt; Settings</span>.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算热参考转速 | Calculating the thermal reference speed</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculating the thermal reference speed">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8150');expand('8148');expand('8139');expand('9287');expand('9246');highlight('8153')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8152.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9520.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算热参考转速</h3>   
+                
+<p class="bodytext">将散失的热流量与摩擦功率设为相等值，从而使轴承的能量平衡正确。能量平衡方程为：</p><p class="bodytext"><em class="emphasis">NFr</em> = 10<span class="superscript">3</span> * <em class="emphasis">Qr</em></p><p class="bodytext">NFr: 摩擦功率 [W]<br>Qr: 散失热流量: [kW]</p><p class="bodytext">随后得到的方程为：</p><p class="bodytext">(π *nθr)/30 * (10<span class="superscript">-7</span> *f0r * (νr*nθr)<span class="superscript">2/3</span> *dm<sup><span class="superscript">3</span></sup> + f1r *P1r *dm) = qr *ASr</p><p class="bodytext">nθr: 热额定转速 [rpm]<br>f0r: 表 A.1、DIN ISO 15312 中的系数 [-]<br>r: 参考黏度 [mm2/s]<br>dm: 平均滚动轴承直径 [mm]<br>f1r: 表 A.1、DIN ISO 15312 中的系数 [-]<br>P1r: 参考载荷 [N]<br>qr: 滚动轴承特定参考热流密度（轴承接触、润滑剂）[kW/m<span class="superscript">2</span>]<br>ASr: 传热参考表面 [mm2]</p><p class="bodytext">nθr 可以使用该方程确定。</p><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculating the thermal reference speed</h3>   
+                
+<p class="bodytext">The dissipating heat flows and the friction power are set as equal values so that the energy balance of the bearing is correct. The equation for the energy balance is:</p><p class="bodytext"><em class="emphasis">NFr</em> = 10<span class="superscript">3</span> * <em class="emphasis">Qr</em></p><p class="bodytext">NFr: Friction power [W]<br />Qr: dissipated heat flow: [kW]</p><p class="bodytext">The subsequent equation becomes:</p><p class="bodytext">(π *nθr)/30 * (10<span class="superscript">-7</span> *f0r * (νr*nθr)<span class="superscript">2/3</span> *dm<sup><span class="superscript">3</span></sup> + f1r *P1r *dm) = qr *ASr</p><p class="bodytext">nθr: thermal nominal speed [rpm]<br />f0r: coefficient from Table A.1, DIN ISO 15312 [-]<br />r: reference viscosity [mm2/s]<br />dm: average rolling bearing diameter [mm]<br />f1r: coefficient from Table A.1, DIN ISO 15312 [-]<br />P1r: reference load [N]<br />qr: rolling bearing-specific reference heat flow density (bearing contact, lubricant) [kW/m<span class="superscript">2</span>]<br />ASr: Heat-transferring reference surface [mm2]</p><p class="bodytext">nθr can be determined using this equation.</p><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

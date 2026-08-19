@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>用户自定义滚道轮廓 | User-defined raceway profiles</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="User-defined raceway profiles">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10648');expand('10646');expand('10645');expand('9287');expand('9246');highlight('11536')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10649.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10651.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">用户自定义滚道轮廓</h3>   
+                
+<p class="bodytext">滚子轴承通常具有平直的内、外滚道轮廓。但如有需要，可通过指定用户自定义的滚道轮廓修形来对其进行修改，类似于用户自定义的滚子修形。滚道轮廓修形定义为恒定修形值与沿有效滚子长度上特定相对位置处的修形比率的乘积。</p><p class="bodytext">内滚道和外滚道的恒定修形值 r<sub>mod_i</sub> 和 r<sub>mod_o</sub> 在 KISSsoft 用户界面中设置，并且应始终为正值。修形比率 f 在 DAT 文件中设置。文件应具有以下结构：</p><p class="bodytext"></p><p class="bodytext">-- 这是一条注释<br>-- 索引 <span style="font-size:11.0pt"><span style="line-height:107%"><span style='font-family:"Courier New"'>| 相对位置 | 修形比率</span></span></span></p><p class="bodytext">DATA</p><p class="bodytext">1 -0.50 1.00</p><p class="bodytext">2 -0.30 0.75</p><p class="bodytext">3 0.00 0.00</p><p class="bodytext">4 0.30 0.75</p><p class="bodytext">5 0.50 1.00</p><p class="bodytext">END</p><p class="bodytext"></p><p class="bodytext">关于 DAT 文件的说明：</p><ul>	<li class="bodytext">以“--”开头的行是注释，并被忽略。</li>	<li class="bodytext">包含沿有效滚子长度上特定相对位置处的轮廓修形比率的行以关键字 "DATA" 开头，以关键字 "END" 结尾。</li>	<li class="bodytext">每行必须包含三列。第一列是索引。它仅作为用户参考，其值不起作用并被忽略。第二列是沿有效滚子长度的无量纲相对位置 x/L<sub>we</sub>，单位为 mm/mm，用于定义修形比率 f。通常，第二列中的值范围从 -0.5 到 +0.5，但也可能超出此范围。第三列包含修形比率，它定义了在沿有效滚子长度的特定相对位置处由 f ∙ r<sub>mod</sub> 表示的修形量。</li>	<li class="bodytext">正的修形比率 f &gt; 0 将导致指定位置处轴承游隙增大（或去除滚道材料），而负的修形比率 f &lt; 0 将导致指定位置处轴承游隙减小（或增加滚道材料）。修形比率中至少应有一个值为 f ≤ 0，否则该修形将增大轴承游隙。</li>	<li class="bodytext">文件中应至少有 2 行数据。给定位置之间的修形量通过线性插值计算。给定位置之外的修形量通过线性外推计算。</li></ul><p class="bodytext"></p><div class="objectWrapper" data-id="622a128d40272" data-type="image" data-caption="Parameter und Koordinaten, die zur Festlegung der Profilmodifikationen der inneren und äusseren Laufbahnen verwendet werden"><p class="figcaption"><img data-id="622a128d40272" height="235" src="raceway_modification.png" width="542"></p><p class="figcaption" data-id="622a128d40272">图 28.2：用于定义内、外滚道轮廓修形的参数和坐标</p></div>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">User-defined raceway profiles</h3>   
+                
+<p class="bodytext">Roller bearings usually have straight inner and outer raceway profiles. However, if needed, these can be modified by specifying user-defined raceway profile modifications, similar to user-defined roller profiling. Raceway profile modification is defined as the multiplication of a constant modification value and a modification ratio for a specific relative position along the effective roller length.</p><p class="bodytext">Constant modification values are set for the inner and outer raceway, r<sub>mod_i</sub> and r<sub>mod_o</sub>, in the KISSsoft user interface and should always be positive. Modification ratios f are set in the DAT file. The file should have the following structure:</p><p class="bodytext"></p><p class="bodytext">-- This is a comment<br />-- Index <span style="font-size:11.0pt"><span style="line-height:107%"><span style="font-family:&quot;Courier New&quot;">| Relative position | Modification ratio</span></span></span></p><p class="bodytext">DATA</p><p class="bodytext">1 -0.50 1.00</p><p class="bodytext">2 -0.30 0.75</p><p class="bodytext">3 0.00 0.00</p><p class="bodytext">4 0.30 0.75</p><p class="bodytext">5 0.50 1.00</p><p class="bodytext">END</p><p class="bodytext"></p><p class="bodytext">Notes about the DAT file:</p><ul>	<li class="bodytext">Lines that start with &quot;--&quot; are comments and are ignored.</li>	<li class="bodytext">The lines with profile modification ratios for a specific relative position along the effective roller length start with the keyword &quot;DATA&quot; and end with the keyword &quot;END&quot;.</li>	<li class="bodytext">Each line must have three columns. The first column is the index. It is only included as a reference for the user. Its values have no effect and are ignored. The second column is the non-dimensional relative position along the effective roller length x/L<sub>we</sub>, in mm/mm, for which the modification ratio f is defined. Usually, the values in the second column would extend from -0.5 to +0.5, but they can also exceed this range. The third column contains the modification ratio, which defines the amount of modification as f ∙ r<sub>mod</sub>, at a specific relative position along the effective roller length.</li>	<li class="bodytext">A positive modification ratio f &gt; 0 will result in increased bearing clearance at the specified position (or the removal of raceway material), while a negative modification ratio f &lt; 0 will result in reduced bearing clearance at the specified position (or the addition of raceway material). At least one value in the modification ratio should be f ≤ 0, otherwise the modification will increase the bearing clearance.</li>	<li class="bodytext">There should be at least 2 lines with the data in the file. The amount of modification between given positions is calculated by means of linear interpolation. The amount of modification outside given positions is calculated by means of linear extrapolation.</li></ul><p class="bodytext"></p><div class="objectWrapper" data-id="622a128d40272" data-type="image" data-caption="Parameter und Koordinaten, die zur Festlegung der Profilmodifikationen der inneren und äusseren Laufbahnen verwendet werden"><p class="figcaption"><img data-id="622a128d40272" height="235" src="raceway_modification.png" width="542" /></p><p class="figcaption" data-id="622a128d40272">Figure 28.2: Parameters and coordinates used to define inner and outer raceway profile modifications</p></div>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

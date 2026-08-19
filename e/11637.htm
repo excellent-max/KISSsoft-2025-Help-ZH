@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>交变扭矩载荷谱 | Load spectrum with alternating torque</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Load spectrum with alternating torque">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9489');expand('8341');expand('9286');expand('9246');highlight('11637')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10108.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10115.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">交变扭矩载荷谱</h3>   
+                
+<p class="bodytext">载荷区间也可以输入负扭矩。</p><p class="bodytext">问题：</p><p class="bodytext">迄今为止，尚未制定任何计算指南来描述如何计算具有交变载荷谱的齿轮。</p><p class="bodytext">唯一明确的情况是，交变扭矩的变化在每个循环中以及载荷谱的每个区间内都会发生。此时，一次载荷变化恰好对应一次双重载荷，即先施加 +扭矩，再施加 -扭矩。这种情况可以通过输入 +扭矩的载荷谱以及齿根的交替弯曲系数 Y<sub>M</sub> 来正确计算。齿面也能被正确计算，因为 +扭矩始终作用于同一齿面。</p><p class="bodytext">相反，如果驱动装置先正转一段时间，然后反转，专家们一致认为齿根并非纯粹承受交变载荷（这可能只是发生交变载荷变化的唯一位置）。然而，关于如何在数学上评估这种情况的讨论仍在激烈进行中。更难以定义的是，对于齿根具有不相等 +扭矩和 -扭矩的混合载荷谱应如何处理。对于此类情况，齿面只考虑 +扭矩（前提是 +扭矩等于或大于 -扭矩）。</p><p class="bodytext">关于处理反转扭矩载荷谱的说明：</p><p class="bodytext">如下图所示的载荷进程（其中轮齿先几次在左齿面上受载，然后几次在右齿面上受载）可以转换为如下所示的载荷谱。此处用一个示例来说明。</p><p class="bodytext">载荷进程（示例）：</p><ul>	<li class="bodytext">13 次载荷，左齿面上为名义载荷（100 Nm）的 100%，然后</li>	<li class="bodytext">9 次载荷，右齿面上为名义载荷（80 Nm）的 80%，等等。</li></ul><p class="bodytext">由此得到以下过程：</p><ul>	<li class="bodytext">11 次载荷循环，载荷为 100%，正扭矩，脉动；然后</li>	<li class="bodytext">1 次载荷循环，左侧 100% 载荷，右侧 80% 载荷；然后</li>	<li class="bodytext">7 次载荷循环，载荷为 80%，负扭矩，脉动；然后</li>	<li class="bodytext">1 次载荷循环，右侧 80% 载荷，左侧 100% 载荷；</li></ul><p class="bodytext">然后从头再次重复。</p><p class="bodytext">这可以表示为如下的载荷谱：</p><div class="objectWrapper" data-id="5ba0bcd5ef2bb" data-type="table" data-caption="Belastungsverlauf abgebildet als Lastkollektiv"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcd5ef2bb">	<tbody>		<tr align="left" valign="top">			<td width="124">			<p class="bodytext">频率</p>			</td>			<td width="124">			<p class="bodytext">扭矩</p>			</td>			<td width="124">			<p class="bodytext">左齿面载荷</p>			</td>			<td width="124">			<p class="bodytext">右齿面载荷</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="124">			<p class="bodytext">11/20 = 0.55</p>			</td>			<td width="124">			<p class="bodytext">100 Nm</p>			</td>			<td width="124">			<p class="bodytext">100%</p>			</td>			<td width="124">			<p class="bodytext">0%</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="124">			<p class="bodytext">7/20 = 0.35</p>			</td>			<td width="124">			<p class="bodytext">80 Nm</p>			</td>			<td width="124">			<p class="bodytext">0%</p>			</td>			<td width="124">			<p class="bodytext">100%</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="124">			<p class="bodytext">2/20 = 0.10</p>			</td>			<td width="124">			<p class="bodytext">100 Nm</p>			</td>			<td width="124">			<p class="bodytext">100%</p>			</td>			<td width="124">			<p class="bodytext">80%</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcd5ef2bb">表 24.1：表示为载荷谱的载荷进程</p></div><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd5ef340" data-type="image" data-caption="Belastungsverlauf"><p class="bodytext"><img data-id="5ba0bcd5ef340" src="10839.png" style="height:216.7px; width:460.35px"></p><p class="figcaption" data-id="5ba0bcd5ef340">图 24.1：载荷进程</p></div>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Load spectrum with alternating torque</h3>   
+                
+<p class="bodytext">Load bins can also be entered with negative torques.</p><p class="bodytext">The problem:</p><p class="bodytext">until now, no calculation guidelines have been drawn up to describe how to calculate gears with alternating load spectra.</p><p class="bodytext">The only unambiguous case is when a change in alternating torque takes place during every cycle and in each bin of the load spectrum. At this point, a load change corresponds to exactly one double-load with +torque and then with -torque. This instance can be calculated correctly by entering the load spectrum of the +torques and the alternating bending factor Y<sub>M</sub> for the tooth root. The flank is also calculated correctly, because the +torques always apply to the same flank.</p><p class="bodytext">If, in contrast, the drive runs forwards for a specific period of time and then runs backwards, the experts agree that the tooth root is not subjected purely to an alternating load (and possibly this is the only point at which an alternating load change takes place). However, discussions are still raging as to how this case can be evaluated mathematically. It is even more difficult to define how mixed load spectra with unequal +torques and -torques for the tooth root are to be handled. For this type of case, only the +torques are considered for the flank (with the prerequisite that the +torques are equal to, or greater than, the -torques).</p><p class="bodytext">Note about handling load spectra with reversing torque:</p><p class="bodytext">A load progression as represented in the figure below, where the tooth is subjected to a load a few times on the left flank, and then a few times on the right flank, can be converted into a load spectrum as shown below. This is represented in an example here.</p><p class="bodytext">Load progression (example):</p><ul>	<li class="bodytext">13 loads with 100% of the nominal load (100 Nm) on the left flank, then</li>	<li class="bodytext">9 loads with 80% of the nominal load (80 Nm) on the right flank, etc.</li></ul><p class="bodytext">This results in the following process:</p><ul>	<li class="bodytext">11 load cycles with 100% load, positive torque, pulsating; then</li>	<li class="bodytext">1 load cycle with 100% load on the left and 80% load on the right; then</li>	<li class="bodytext">7 load cycles with 80% load, negative torque, pulsating; then</li>	<li class="bodytext">1 load cycle with 80% load on the right and 100% load on the left;</li></ul><p class="bodytext">then repeated again from the start.</p><p class="bodytext">This can be represented as a load spectrum as follows:</p><div class="objectWrapper" data-id="5ba0bcd5ef2bb" data-type="table" data-caption="Belastungsverlauf abgebildet als Lastkollektiv"><table border="1" cellpadding="1" cellspacing="1" data-id="5ba0bcd5ef2bb">	<tbody>		<tr align="left" valign="top">			<td width="124">			<p class="bodytext">Frequency</p>			</td>			<td width="124">			<p class="bodytext">torque</p>			</td>			<td width="124">			<p class="bodytext">Left flank load</p>			</td>			<td width="124">			<p class="bodytext">Right flank load</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="124">			<p class="bodytext">11/20 = 0.55</p>			</td>			<td width="124">			<p class="bodytext">100 Nm</p>			</td>			<td width="124">			<p class="bodytext">100%</p>			</td>			<td width="124">			<p class="bodytext">0%</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="124">			<p class="bodytext">7/20 = 0.35</p>			</td>			<td width="124">			<p class="bodytext">80 Nm</p>			</td>			<td width="124">			<p class="bodytext">0%</p>			</td>			<td width="124">			<p class="bodytext">100%</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="124">			<p class="bodytext">2/20 = 0.10</p>			</td>			<td width="124">			<p class="bodytext">100 Nm</p>			</td>			<td width="124">			<p class="bodytext">100%</p>			</td>			<td width="124">			<p class="bodytext">80%</p>			</td>		</tr>	</tbody></table><p class="figcaption" data-id="5ba0bcd5ef2bb">Table 24.1: Load progression shown as a load spectrum</p></div><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd5ef340" data-type="image" data-caption="Belastungsverlauf"><p class="bodytext"><img data-id="5ba0bcd5ef340" src="10839.png" style="height:216.7px; width:460.35px" /></p><p class="figcaption" data-id="5ba0bcd5ef340">Figure 24.1: Load progression</p></div>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

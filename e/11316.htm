@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>生成 GDE 格式（VDI 2610）并为齿廓图、齿向线图和齿形生成详细数据 | Generate GDE format (VDI 2610) and generate detailed data for profile diagram, flank line diagram and tooth form</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Generate GDE format (VDI 2610) and generate detailed data for profile diagram, flank line diagram and tooth form">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8866');expand('8865');expand('7708');expand('9286');expand('9246');highlight('11316')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8872.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11517.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">生成 GDE 格式（VDI 2610）并为齿廓图、齿向线图和齿形生成详细数据</h3>   
+                
+<p class="bodytext">单击<span class="menu">生成 GDE 格式（VDI 2610）</span>和<span class="menu">为齿廓图、齿向线图和齿形生成详细数据</span>，计算用于生成齿廓图和齿向线图的各个点。此选项还会计算特定齿形的点。单击<span class="menu">报告 &gt; 特殊报告 &gt; 齿廓图、齿向线图和齿形的详细数据</span>以显示记录这些图上的点和齿形点的报告。单击<span class="menu">文件 &gt; 导出 &gt; GDE</span>以生成 GDE 输出文件。这将创建一个“GEAR DATA EXCHANGE”xml 文件（GDE 格式）。</p><p class="bodytext">但是，如果要对多个齿轮甚至多对齿轮副进行映射，则先将齿轮 1、然后齿轮 2，接着将配对 1 的 &lt;mating_data&gt; 部分写入文件，随后再写入配对 2（如果存在）的相同数据，依此类推，直到所有齿轮都已添加到文件中。</p><p class="bodytext">KISSsoft 中提供的以下修形受 GDE 格式支持：</p><ul>	<li class="bodytext">齿顶和齿根修形，线性</li>	<li class="bodytext">齿廓鼓形修整，以滚动长度为中心</li>	<li class="bodytext">齿向鼓形修整</li>	<li class="bodytext">扭转</li>	<li class="bodytext">压力角修形（角分）</li>	<li class="bodytext">螺旋角修形（角分）</li>	<li class="bodytext">齿端修薄，线性</li></ul><p class="bodytext">目前支持 3.1 和 3.2 版本。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Generate GDE format (VDI 2610) and generate detailed data for profile diagram, flank line diagram and tooth form</h3>   
+                
+<p class="bodytext">Click on <span class="menu">Generate GDE format (VDI 2610)</span> and <span class="menu">Generate detailed data for profile diagram, flank line diagram and tooth form</span> to calculate the individual points used to generate the profile diagram and the flank line diagram. This option also calculates the points for the particular tooth form. Click on <span class="menu">Report &gt; Special reports &gt; Detailed data for profile, flank line diagram and tooth form</span> to display a report documenting the points for the diagrams and the tooth form points. Click on <span class="menu">File &gt; Export &gt; GDE</span> to generate the GDE output file. This creates a &quot;GEAR DATA EXCHANGE&quot; xml file (in GDE format).</p><p class="bodytext">However, if several gears, or even several gear pairs, are to be mapped, first gear 1, then gear 2, and then the &lt;mating_data&gt; section, for pair 1, is written to the file, followed by the same data for pair 2 (if present), etc., until all the gears have been added to the file.</p><p class="bodytext">The following modifications, which are available in KISSsoft, are supported in GDE format:</p><ul>	<li class="bodytext">Tip and root relief, linear</li>	<li class="bodytext">Profile crowning, roll length-centered</li>	<li class="bodytext">Flank line crowning</li>	<li class="bodytext">Twist</li>	<li class="bodytext">Pressure angle modification (arc minutes)</li>	<li class="bodytext">Helix angle modification (arc minutes)</li>	<li class="bodytext">End relief, linear</li></ul><p class="bodytext">Versions 3.1 and 3.2 are currently supported.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

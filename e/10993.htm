@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>载荷谱计算 | Load spectrum calculation</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Load spectrum calculation">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10992');expand('7629');expand('9292');expand('9246');highlight('10993')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10992.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10994.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">载荷谱计算</h3>   
+                
+<p class="bodytext">使用 KISSsys 可以生成整个齿轮箱或传动系统，并保存为一个文件。然后可以使用 KISSsoft 模块对整个系统进行计算。如果存在多个应力情况（如载荷谱或载荷循环），可以使用此载荷谱在 KISSsys 中对整个系统进行分析。<br><br>用户然后可以为整个系统定义载荷工况，并对所有元件进行计算。使用载荷谱进行使用寿命计算时，可以使用与KISSsoft相同的元件。</p><p class="bodytext">不同齿轮和轴承的安全系数和服务寿命可以计算。此载荷谱也可用于计算轴的疲劳和静力安全系数。</p><p class="bodytext">你可以使用载荷谱功能来进行这些计算：</p><ul>	<li class="bodytext">使用用户自定义载荷计算齿轮单元。</li>	<li class="bodytext">一个齿轮单元的计算，其载荷阶段取自载荷谱。</li>	<li class="bodytext">使用预定义载荷谱计算齿轮单元（类似于在 KISSsoft 中定义的载荷谱）。</li></ul><p class="bodytext"><br>它也可以通过添加额外的值或设置来扩展载荷谱，例如，考虑每个载荷工步的不同速度。每个载荷工步定义一个频率、扭矩或功率和一个速度。</p><p class="bodytext">以下 KISSsoft 模块也需用于对需要计算的元件进行至少一次强度计算：</p><ul>	<li class="bodytext">齿轮使用寿命和安全系数与载荷谱：<br>	ZZ1（载荷谱）包括模块 Z16, Z16a, Z18 和 Z18a。</li>	<li class="bodytext">轴载荷频谱计算：<br>	WA8（载荷谱）包括模块 W01s 和 W06s。</li>	<li class="bodytext">KISSsys 全版本用于实现模板和设置：<br>	SYS 模块 K11c.</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Load spectrum calculation</h3>   
+                
+<p class="bodytext">With KISSsys the user can generate an entire gearbox or drive train in a single file. Calculations can be then performed for the whole system using KISSsoft modules. If several stress cases are present (load spectrum or load cycle), you can use this load spectrum in KISSsys to analyze an entire system.<br /><br />The user is then able to define load cases for the whole system and perform the calculation for all the components. Service life calculations with a load spectrum can be used with the same components as in KISSsoft.</p><p class="bodytext">The safety factors and service lives of different gears and bearings can be calculated. This load spectrum can also be used to calculate shaft fatigue and static safeties.</p><p class="bodytext">You can use the load spectrum function to perform these calculations:</p><ul>	<li class="bodytext">Calculation of a gear unit with a user-defined load.</li>	<li class="bodytext">Calculation of a gear unit with a single load stage taken from the load spectrum.</li>	<li class="bodytext">Calculation of a gear unit with a predefined load spectrum (similar to the ones defined in KISSsoft).</li></ul><p class="bodytext"><br />It is also possible to extend the load spectrum by adding extra additional values or settings, for example, to consider different speeds for each load step. A frequency, torque or power, and a speed is defined for each load step</p><p class="bodytext">The following KISSsoft modules are also required to perform at least one strength calculation for the elements that need to be calculated:</p><ul>	<li class="bodytext">Gear service life and safety factors with load spectrum:<br />	ZZ1 (load spectra) including modules Z16, Z16a, Z18 and Z18a.</li>	<li class="bodytext">Shaft calculation with load spectrum:<br />	WA8 (load spectra) including modules W01s and W06s.</li>	<li class="bodytext">KISSsys full version for implementing templates and setup:<br />	SYS module K11c.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

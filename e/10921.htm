@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>摩擦力矩，密封件 | Moment of friction, seals</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Moment of friction, seals">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11621');expand('8183');expand('9287');expand('9246');highlight('10921')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10622.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11505.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">摩擦力矩，密封件</h3>   
+                
+<p class="bodytext">定义密封件摩擦力矩的确定方式：</p><ul>	<li class="bodytext"><strong>SKF 主目录根据所选计算方法</strong>		<ul>		<li class="bodytext"><strong>根据 SKF 主目录 4000/IV T DE:1994</strong><br>		您可以在 SKF 目录中找到已集成在 KISSsoft 软件中的、适用于您轴承中所用密封件类型的数值。如果 KISSsoft 系统在轴承标签中发现已知的密封件标签，它将使用目录中列出的系数计算磨削密封件的摩擦力矩。否则，摩擦力矩将设置为零。</li>		<li class="bodytext"><strong>根据 SKF 主目录 17000/1 EN:2018</strong><br>		您可以在 SKF 目录中找到已集成在 KISSsoft 软件中的、适用于您轴承中所用密封件类型的数值。如果 KISSsoft 系统在轴承标签中发现已知的密封件标签，它将使用目录中列出的系数计算磨削密封件的摩擦力矩。否则，摩擦力矩将设置为零。<br>		在 KISSsoft 中，配合表面的直径按公式 ds = d + (D - d) * 0.2 计算。</li>	</ul>	</li>	<li class="bodytext"><strong>根据 ISO/TR 13593:1999（Viton M 密封件）</strong>，<em class="emphasis">M</em><sub class="subscript">seal</sub> 按以下公式计算：<em class="emphasis">M</em><sub class="subscript">seal</sub> = 3,736*10^-3*dsh；<em class="emphasis">M</em><sub class="subscript">seal</sub> 单位为 Nm，d<sub class="subscript">sh</sub> 为轴径，单位 mm。</li>	<li class="bodytext"><strong>根据 ISO/TR 13593:1999（Buna N 密封件）</strong>，<em class="emphasis">M</em><sub class="subscript">seal</sub> 按以下公式计算：<em class="emphasis">M</em><sub class="subscript">seal</sub> = 2,429*10^-3*dsh；<em class="emphasis">M</em><sub class="subscript">seal</sub> 单位为 Nm，d<sub class="subscript">sh</sub> 为轴径，单位 mm。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Moment of friction, seals</h3>   
+                
+<p class="bodytext">Defines how the moment of friction is to be defined for seals:</p><ul>	<li class="bodytext"><strong>SKF main catalog according to selected calculation method</strong>	<ul>		<li class="bodytext"><strong>According to SKF main catalog 4000/IV T DE:1994</strong><br />		You will find values from the SKF catalog for the seal types used in your bearings integrated in the KISSsoft software. If the KISSsoft system finds a familiar seal label in the bearing label, it calculates the moment of friction for a grinding seal using the coefficients listed in the catalog. Otherwise, the moment of friction is set to zero.</li>		<li class="bodytext"><strong>According to SKF main catalog 17000/1 EN:2018</strong><br />		You will find values from the SKF catalog for the seal types used in your bearings integrated in the KISSsoft software. If the KISSsoft system finds a familiar seal label in the bearing label, it calculates the moment of friction for a grinding seal using the coefficients listed in the catalog. Otherwise, the moment of friction is set to zero.<br />		In KISSsoft, the diameter of the mating surface is calculated with the formula ds = d + (D - d) * 0.2</li>	</ul>	</li>	<li class="bodytext"><strong>according to ISO/TR 13593:1999 Viton </strong> <em class="emphasis">M</em><sub class="subscript">seal</sub>, this diameter is calculated with the formula: <em class="emphasis">M</em><sub class="subscript">seal </sub>= 3,736*10^-3*dsh; <em class="emphasis">M</em><sub class="subscript">seal</sub> in Nm, d<sub class="subscript">sh</sub> Shaft diameter in mm</li>	<li class="bodytext"><strong>according to ISO/TR 13593:1999 Buna N</strong> <em class="emphasis">M</em><sub class="subscript">seal</sub> this diameter is calculated with the formula: <em class="emphasis">M</em><sub class="subscript">seal </sub>= 2,429*10^-3*dsh; <em class="emphasis">M</em><sub class="subscript">seal</sub> in Nm, d<sub class="subscript">sh</sub> Shaft diameter in mm</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

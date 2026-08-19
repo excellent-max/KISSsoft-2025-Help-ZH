@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>设置 | Settings</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Settings">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7903');expand('9288');expand('9246');highlight('7949')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7932.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10694.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">设置</h3>   
+                
+<p class="bodytext">选择 <span class="menu">计算 </span>&gt;<span class="menu"> 设置 </span>以输入其他值：</p><ul>	<li class="bodytext"><strong>出现错误消息（许用压力、许用预紧力）时不中止计算。</strong><br>如果显示有关超过屈服点或许用压力的错误消息，则在选中此选项时程序会继续计算。</li>	<li class="bodytext"><strong>计算最小预紧力 F<sub>M</sub>/α<sub>A</sub></strong><br>如果选中此选项，还会计算载荷工况 F<sub>M</sub>/α<sub>A</sub>。预紧力 F<sub>M</sub>/α<sub>A</sub> 是必须达到的最小预紧力。α<sub>A</sub> 是拧紧系数，它描述预紧力的分散程度。如果选中此选项，该预紧力的结果将显示在报告中。</li>	<li class="bodytext"><strong>偏心夹紧时不增加所需的夹紧力</strong><br>KISSsoft 会增大所需的夹紧载荷，以防止偏心夹紧时产生缝隙。您可以在此处关闭此功能。使用此选项时请谨慎。该计算假定不会产生缝隙！</li>	<li class="bodytext"><strong>计算表面压力时忽略头部支承区域的内径 d<sub>a</sub></strong><br>如果选中此选项，则在计算表面压力时不考虑 d<sub>a </sub>。因此，支承面积不是使用较大的直径（头部支承区域的内径 d<sub>a</sub> 或孔直径 d<sub>h</sub>）来确定，而总是改用孔直径 d<sub>h</sub>。支承面积会增大到孔直径 d<sub>h</sub>，前提是由 d<sub>a</sub> 限定的区域开始屈服。<br>此选项不符合 VDI 2230，因为在该标准中总是使用较大的直径。</li>	<li class="bodytext"><strong>对螺纹孔接头使用贯穿螺栓接头的柔度</strong><br>如果被夹紧件的接触面面积相对于螺栓头支承面积较小，则在计算柔度时可以将螺纹孔接头当作贯穿螺栓接头来处理。</li>	<li class="bodytext"><strong>工作力仅在工作温度下出现</strong><br>通常，KISSsoft 根据所需的夹紧载荷以及环境温度和工作温度下的载荷来计算最小预紧力。如果工作力仅在工作温度下出现，则可以选择此选项。在这种情况下，最小预紧力仅在工作温度下计算。</li>	<li class="bodytext"><strong>使用估算公式自动计算与温度相关的材料数据</strong><br>KISSsoft 可以通过使用经验公式自动计算工作温度下的材料数据。这些经验公式不考虑您输入的材料数据：它们采用"常用钢"的平均温度依赖关系！如果未选中此选项，您可以手动输入工作温度下的材料数据。</li>	<li class="bodytext"><strong>确定垫圈的比热膨胀</strong><br>这会显示垫圈子窗口中的热膨胀值输入字段。如果未选中此选项，则使用板的平均热膨胀来计算预紧力差值。换句话说，垫圈与板具有相同的热膨胀。因此，您可以选择输入该值。如果您输入了该值，则预紧力差值将使用您指定的值来计算，但此计算中仍使用板的柔度。VDI 2230 并未规定对垫圈使用专门的热膨胀计算。</li>	<li class="bodytext"><strong>在无扭转的情况下计算装配和工作应力</strong><br>如果连接是使用螺栓中不产生扭转应力的工艺拧紧的，则可以选择此选项。因此，在计算所需的防屈服安全系数时，仅考虑螺栓中的拉应力。</li>	<li class="bodytext"><strong>折减系数</strong><br>当机器处于工作状态时，折减系数用于计算等效应力。在许多情况下，弹性预紧连接中的扭转应力会减少 50%。因此，VDI 2230 建议此处使用值 0.5。</li>	<li class="bodytext"><strong>超过屈服点</strong><br>此处提供三个选择选项：不允许超过屈服点、仅允许在工作期间超过屈服点，或者允许在工作期间和装配期间超过屈服点。这使您能够选择首选的计算变体。</li>	<li class="bodytext"><strong>硬化系数</strong><br>在计算装配期间和工作期间是否已超过屈服点时，会使用一个附加的硬化系数 k<sub>v</sub>。硬化系数的默认值为 1.15。VDI 规定该值应在 1.1 到 1.2 之间。</li>	<li class="bodytext"><strong>工作期间的附加扭矩</strong><br>在计算工作应力时，可以定义一个附加扭矩。然后，该扭矩用于剪切应力计算。这既适用于不允许超过屈服点的情况，也适用于允许超过屈服点的情况。</li>	<li class="bodytext"><strong>工作期间的附加横向力</strong><br>在计算工作应力时，可以定义一个附加横向力。然后，该力用于剪切应力计算。这适用于超过屈服点的情况。</li>	<li class="bodytext"><strong>无限寿命强度</strong><br>列表框用于选择要进行无限寿命强度计算的螺栓类型。对于高强度摩擦型紧固件，由于特殊的几何特征，其可持续疲劳寿命会降低 10%。对于热镀锌高强度摩擦型紧固件，其可持续疲劳寿命会降低 30%。（VDI 2230 中关于交变应力的章节的注释）</li>	<li class="bodytext"><strong>螺栓拉伸强度系数</strong><br>该系数用于计算为获得 R<sub>m</sub> 的实用值所需的最小旋合长度，如 VDI 2230 中所述（参见"<a class="referencetopic-shabschnitt" href="7947.htm" target="_self">旋合长度</a>"章）。</li>	<li class="bodytext"><strong>屈服点利用率（参考）</strong><br>还可以在 <span class="menu">预紧力和拧紧扭矩 </span> 图形中显示参考利用率。如果您覆盖该值，则可以定义任意参考利用率并将其插入图形中。如果您不覆盖该值，则会设置屈服点和旋转角控制拧紧的默认值，即 100% 利用率。对于所有其他拧紧技术，则采用 90% 利用率。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Settings</h3>   
+                
+<p class="bodytext">Select <span class="menu">Calculations </span>&gt;<span class="menu"> Settings </span>to enter additional values:</p><ul>	<li class="bodytext"><strong>Don't abort calculation when error messages (permissible pressure, permissible pretension force) occur.</strong><br />	If error messages about exceeding the yield point or the permissible pressure are displayed, the program continues the calculation if this option is selected.</li>	<li class="bodytext"><strong>Calculate minimum pretension force F<sub>M</sub>/α<sub>A</sub></strong><br />	If this option is selected, the load case F<sub>M</sub>/α<sub>A</sub> is also calculated. The pretension force F<sub>M</sub>/α<sub>A</sub> is the minimum pretension force that must be achieved. α<sub>A</sub> is the tightening factor. It describes the pretension force scatter. If this option is selected, the results for this pretension force are displayed in the report.</li>	<li class="bodytext"><strong>Do not increase required clamping force for eccentric clamping</strong><br />	KISSsoft increases the required clamp load to prevent gaping for eccentric clamping. You can switch off this function here. Take care when using this option. The calculation assumes that gaping does not occur!</li>	<li class="bodytext"><strong>Ignore inside diameter of head bearing area d<sub>a</sub> when calculating surface pressure</strong><br />	If this option is selected, d<sub>a </sub>is not taken into account when the surface pressure is calculated. Consequently, the supporting area is not determined using the greater diameter (inside diameter of head bearing area d<sub>a</sub> or bore diameter d<sub>h</sub>), but always the bore diameter d<sub>h</sub> instead. The supporting area increases to the bore diameter d<sub>h</sub> if the area limited by d<sub>a</sub> begins to yield.<br />	This option is not VDI 2230 compliant, as, in it, the greater diameter is always used.</li>	<li class="bodytext"><strong>Use the resiliences of a through-bolt joint for a tapped thread joint</strong><br />	If the interface area of the clamped part is relatively small compared to the bolt head bearing area, the tapped thread joint can be treated like a through-bolt joint when the resiliences are calculated.</li>	<li class="bodytext"><strong>Operating force only at operating temperature</strong><br />	Normally, KISSsoft calculates the minimum pretension force based on the required clamp load and loading at ambient and operating temperatures. This option can be selected if the operating force only occurs at operating temperature. In this case, the minimum pretension force is then only calculated at operating temperature.</li>	<li class="bodytext"><strong>Calculate temperature dependent material data automatically with estimation formulae</strong><br />	KISSsoft can automatically calculate material data at operating temperature by using empirical formulae. These empirical formulae do not take into account the material data you entered: they use an average dependency for &quot;commonly used steels&quot;! If this option is not selected, you can enter the material data at operating temperature manually.</li>	<li class="bodytext"><strong>Determine specific thermal expansion of washers</strong><br />	This displays the input field for thermal expansion values in the sub-window for washers. If this option is not selected, the difference in pretension force is calculated using the average thermal expansion of the plates. In other words, the washer has the same thermal expansion as the plates. This is why you have the option of inputting this value.   If you do so, the difference in pretension force is calculated using the value you specified, but the resilience of the plates is still used in this calculation. VDI 2230 does not specify that a special thermal expansion calculation is to be used for washers.</li>	<li class="bodytext"><strong>Calculate mounting and operating stress without torsion</strong><br />	You can select this option if the connection is tightened using a process in which torsional stresses do not occur in the bolt. As a result, only the tensile stress in the bolt is taken into account for calculating the required safety against yield.</li>	<li class="bodytext"><strong>Reduction coefficient</strong><br />	The reduction coefficient is used to calculate equivalent stress when the machinery is in its working state. In many cases, the torsional stresses in elastically preloaded connections reduce by 50%. For this reason, VDI 2230 recommends the value 0.5 is used here.</li>	<li class="bodytext"><strong>Exceeding the yield point</strong><br />		Three selection options are available here: yield point cannot be exceeded, yield point can only be exceeded during operation, or yield point can be exceeded during operation and mounting. This enables you to select your preferred calculation variant.</li>	<li class="bodytext"><strong>Hardening coefficient</strong><br />	An additional hardening factor, k<sub>v</sub> is used when calculating whether the yield point has been exceeded during mounting and during operation. The default value for the hardening coefficient is 1.15. VDI specifies that it should between 1.1 and 1.2.</li>	<li class="bodytext"><strong>Additional torsional moment during operation</strong><br />	An additional torsional moment can be defined when calculating working stress. This torsional moment is then used in the shear stress calculation. This applies both in cases where the yield point cannot be exceeded and in cases in which the yield point can be exceeded.</li>	<li class="bodytext"><strong>Additional transverse force during operation</strong><br />	An additional transverse force can be defined when calculating working stress.  This force is then used in the shear stress calculation. This applies in cases where the yield point is exceeded.</li>	<li class="bodytext"><strong>Infinite life strength</strong><br />	Selection list used select the type of bolt for which the infinite life strength calculation is to be performed. In the case of high-strength friction-grip fasteners, the sustainable fatigue life is reduced by 10% because of special geometrical features. In the case of hot-galvanized high-strength friction-grip fasteners, the sustainable fatigue life is reduced by 30%. (Comment in VDI 2230, chapter on alternating stress)</li>	<li class="bodytext"><strong>Tensile strength of bolt coefficient</strong><br /> This coefficient is used to calculate the minimum length of engagement required to achieve a practical value for  R<sub>m</sub>, as in VDI 2230 (see chapter <a class="referencetopic-shabschnitt" href="7947.htm" target="_self">Length of engagement</a>).</li>	<li class="bodytext"><strong>Utilization of yield point (reference)</strong><br />	A reference utilization can also be displayed for the <span class="menu">Pretension forces and tightening torques </span> graphic. If you overwrite the value, any reference utilization can be defined and then inserted in the graphic. If you do not overwrite the value, the default value for yield point and rotation angle-controlled tightening with 100% utilization is set. For all other tightening techniques, 90% utilization is applied.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

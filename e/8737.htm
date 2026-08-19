@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>预加工和磨削余量 | Pre-machining and grinding allowance</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Pre-machining and grinding allowance">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8722');expand('7708');expand('9286');expand('9246');highlight('8737')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8736.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10618.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">预加工和磨削余量</h3>   
+                
+<p class="bodytext">齿轮通常先以磨削余量进行预加工，然后淬硬，最后磨削。磨削过程通常涉及齿面，但不涉及齿根。</p><p class="bodytext"><strong>注意：</strong>如果选择刀具、插齿刀或构造渐开线作为预加工刀具，则预加工的齿轮参考齿廓将根据刀具数据在内部计算。</p><p class="bodytext">在这种情况下，齿根圆由预加工刀具形成，齿面由磨削工艺形成。为正确完成此过程，请选择<span class="menu">预加工</span>（使用自定义输入，或使用磨削余量 III 或 IV（按 DIN 3972 规定）的参考齿廓）<span class="menu"></span>，或选择<span class="menu">最终加工</span>。如果决定使用预加工，则会显示<span class="menu">磨削余量</span>字段。您还可以将自己的公差添加到数据库中。输入预加工刀具的齿廓（例外：h<sub class="subscript">aP </sub><span class="superscript">*</span>）作为参考齿廓。对于齿厚偏差（公差），输入成品轮齿的齿厚余量（A<sub class="subscript">s</sub>）。在 KISSsoft 中，磨削余量是针对成品轮齿计算的。然后使用以下齿厚余量执行预加工：</p><p class="bodytext"></p><p class="bodytext"><img src="8739.png" style="height:64px; width:157px"></p><p class="bodytext">对于特殊要求，请在<span class="menu">定义磨削余量公差</span>窗口中点击加号按钮以增大公差。如果为 qmax-qmin 输入一个值，则使用 qmax = q+(qmax-qmin)/2 和 qmin = q-(qmax-qmin)/2 来定义预加工余量。<br>公差区间 qmax-qmin 被限制为以下值中的较小者：200% 的齿厚公差区间（As.e-As.i）、30%，或磨削余量（q）。</p><p class="bodytext">KISSsoft 随后确定与成品齿形相对应的参考齿廓。该齿形还将用于计算齿根强度的系数 Y<sub class="subscript">F</sub> 和 Y<sub class="subscript">S</sub>。然后通过将预加工轮廓与后续磨削工艺叠加，自动定义齿形。齿根圆直径由预加工参考齿廓导出。同时计算并打印输出预加工轮齿和成品轮齿的控制数据（如公法线长度）。</p><p class="hint">重要例外</p><p class="bodytext">齿顶高系数 h<sub class="subscript"> aP</sub><span class="superscript">*</span> 是用于计算理论齿顶圆直径系数的理论齿顶高系数。报告中会输出滚刀适当的最小齿根高度 h<span class="superscript">*</span><sub class="subscript">fP0</sub>，这是在无切顶情况下形成齿形所需的。h<sub class="subscript"> aP</sub><span class="superscript">*</span> 始终作为齿轮的精加工参考齿廓。参考线上的齿厚为 π/2*mn。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Pre-machining and grinding allowance</h3>   
+                
+<p class="bodytext">Often gears are premachined with a grinding allowance, then hardened and then ground. The tooth flank, but not the tooth root, is usually involved in the grinding process.</p><p class="bodytext"><strong>Note:</strong> If a cutter, pinion type cutter or constructed involute is selected as the pre-machining tool, the gear reference profile for pre-machining is calculated internally from the tool data.</p><p class="bodytext">In this case, the root circle is created by the pre-machining cutter and the flank by the grinding process. To complete this process correctly, select either <span class="menu">Pre-machining</span> (with own input, or with reference profile for grinding allowance III or IV as specified in DIN 3972)<span class="menu"></span> or select <span class="menu">Final machining</span>. If you decide to use pre-machining, the <span class="menu">Grinding allowance</span> field is displayed. You can also add your own tolerances to the database. Enter the pre-machining tool's profile (exception: h<sub class="subscript">aP </sub><span class="superscript">*</span>) as the reference profile. For the tooth thickness deviations (tolerances), enter the tooth thickness allowance for the finished gear teeth (A<sub class="subscript">s</sub>). In KISSsoft, the grinding allowance is calculated for the finished toothing. The pre-machining is then performed using the following tooth thickness allowance:</p><p class="bodytext"></p><p class="bodytext"><img src="8739.png" style="height:64px; width:157px" /></p><p class="bodytext">For special requirements, click on the Plus button in the <span class="menu">Define grinding allowance tolerance</span> window, to increase the tolerance. If a value is input for qmax-qmin, then qmax = q+(qmax-qmin)/2 and qmin = q-(qmax-qmin)/2 are used to define the pre-machining allowances.<br />The tolerance interval qmax-qmin is limited to the smaller value of either 200% of the tooth thickness tolerance interval (As.e-As.i), or 30%, or the grinding allowance (q).</p><p class="bodytext">KISSsoft then determines the reference profile that corresponds to the finished tooth form. This tooth form will also be used to calculate the factors Y<sub class="subscript">F</sub> and Y<sub class="subscript">S</sub> for the tooth root strength. The tooth form is then defined automatically by overlaying the pre-machining contour with the subsequent grinding process. The root diameters are derived from the reference profile for pre-machining. The control data (e.g. base tangent length) is calculated and printed out for both the premachined and the finished gear teeth.</p><p class="hint">Important exception</p><p class="bodytext">The addendum coefficient h<sub class="subscript"> aP</sub><span class="superscript">*</span> is the theoretical addendum coefficient that is used to calculate the theoretical tip diameter coefficient. The appropriate minimum root height of the hobbing cutter h<span class="superscript">*</span><sub class="subscript">fP0</sub>, which is required to create the tooth form without topping, is output in the report. h<sub class="subscript"> aP</sub><span class="superscript">*</span> always applies as the final machining reference profile for the gears. The tooth thickness on the reference line is π/2*mn.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>设置 | Settings</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Settings">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8091');expand('9288');expand('9246');highlight('8102')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8100.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8105.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">设置</h3>   
+                
+<p class="bodytext">您可以在模块专用设置（<span class="menu">计算</span>&gt; <span class="menu">设置</span>）中为计算、接合温度、安全系数等进行基本输入。</p><p class="bodytext">下面说明模块专用设置中的输入字段和选择字段：</p><ul>	<li style="margin:0cm 0cm 8pt"><strong>选择当量应力</strong>，根据<span style="font-size:9.5pt"><span style="line-height:17.0pt"><span style="tab-stops:list 36.0pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">文献 [6]，采用 von Mises 应力：</span></span></span></span></span></li></ul><p style="margin-left:80px"><img src="8104.png" style="height:39px; width:224px"></p><p style="margin-left:80px">根据文献 [78] 第 13 页，采用剪切应力假说：<br>σ<sub class="subscript">v</sub> = max(|σ<sub><img src="greekPhi.png" style="height:10px; width:7px"><img src="greekPhi.png" style="height:10px; width:7px"></sub> σ<sub class="subscript">rr</sub>|,|σ<sub><img src="greekPhi.png" style="height:10px; width:7px"><img src="greekPhi.png" style="height:10px; width:7px"></sub>σ<sub class="subscript">rr</sub>|)</p><ul>	<li class="bodytext"><span class="menu">装配温度 轴/轮毂（压入）</span><br>压入力可根据装配温度计算得出。</li></ul><ul>	<li class="bodytext"><span class="menu">摩擦系数（压入）</span><br>您可以在此定义 μe/μa 比值。该比值描述了压入摩擦系数与轴向摩擦系数之间的关系。默认值为 1.3。</li></ul><p class="hint" style="margin-left:80px">注意：</p><p style="margin-left:80px">DIN 7190-1 中只给出了压出的值。Niemann 第一卷（1981 年版）表 18/3 第 363 页也给出了压入的值。</p><ul>	<li class="bodytext"><span class="menu">摩擦系数（压出）</span><br>您可以在此定义 μII/μa 比值。该比值描述了压出摩擦系数与轴向摩擦系数之间的相互关系。默认值为 1.6。</li></ul><ul>	<li class="bodytext"><span class="menu">接合温度计算</span><strong>（横向过盈配合）</strong><br>安装间隙可以按接合处直径 df（若考虑加热则进行修正）输入，或按恒定安装间隙输入。外部部件的接合温度随后相应计算得出。您也可以输入接合期间的轴温。<br><br>该温度和安装间隙随后用于计算轮毂接合温度。仅当接合期间的轴温介于 -273 °C 和 20 °C 之间时，轮毂接合温度才会在报告中输出。<br><br>在设置中，您可以选择接合前轴是否过冷和/或轮毂是否加热。若勾选了该复选框，则使用 DIN 7190 规定的热膨胀系数相应值。默认情况下，该复选框设置为轴的过冷。</li></ul><ul>	<li class="bodytext"><span class="menu">所需安全系数</span><br>在设置中，您可以输入防止滑动、屈服点和断裂的所需安全系数。这些所需安全系数用于确定尺寸计算中所求的值。防止塑性变形的所需安全系数用于定义塑性直径，在过盈配合承受弹塑性应力时必须设置该直径。</li>	<li class="bodytext"><span class="menu">以壁厚作为毛坯直径计算材料强度</span><br>若勾选此复选框，则轮毂材料的强度将使用壁厚而非毛坯直径来确定。</li>	<li class="bodytext"><span class="menu">允许计算弹塑性加载的过盈配合</span><br>若勾选此复选框，则计算也会针对弹塑性应力进行（根据 DIN 7190-1），否则只包含弹性应力。</li></ul><ul>	<li class="bodytext"><span class="menu">运行期间出现负过盈时，继续计算并记录公差</span><br>若运行期间出现负公差，则会显示错误消息。这通常会中断计算，因为该值意味着配合已不再是过盈配合。设置此标志可强制计算在出现错误消息的情况下继续进行，以便您可以显示更高运行温度下的公差。此时报告中只显示按运行状态计算出的公差部分。</li>	<li class="bodytext"></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Settings</h3>   
+                
+<p class="bodytext">You make the basic entries for the calculation, joining temperature, safeties etc. in the module-specific settings (<span class="menu">Calculations</span>&gt; <span class="menu">Settings</span>).</p><p class="bodytext">The input and selection fields in the module-specific settings are explained below:</p><ul>	<li style="margin:0cm 0cm 8pt"><strong>Select equivalent stress</strong> according to<span style="font-size:9.5pt"><span style="line-height:17.0pt"><span style="tab-stops:list 36.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"> [6], with von Mises stress:</span></span></span></span></span></li></ul><p style="margin-left:80px"><img src="8104.png" style="height:39px; width:224px" /></p><p style="margin-left:80px">According to [78], page 13, with the shear stress hypothesis:<br />	σ<sub class="subscript">v</sub> = max(|σ<sub><img src="greekPhi.png" style="height:10px; width:7px" /><img src="greekPhi.png" style="height:10px; width:7px" /></sub> σ<sub class="subscript">rr</sub>|,|σ<sub><img src="greekPhi.png" style="height:10px; width:7px" /><img src="greekPhi.png" style="height:10px; width:7px" /></sub>σ<sub class="subscript">rr</sub>|)</p><ul>	<li class="bodytext"><span class="menu">Assembly temperature shaft/hub (press on)</span><br />	The press-on force can be calculated from the assembly temperatures.</li></ul><ul>	<li class="bodytext"><span class="menu">Coefficient of friction (press on)</span><br />	 You can define the μe/μa ratio here. This ratio describes the relationship between the coefficient of friction for press on and the axial coefficient of friction. The default value is 1.3.</li></ul><p class="hint" style="margin-left:80px">Note:</p><p style="margin-left:80px">Only values for forcing off are given in DIN 7190-1. Niemann Volume I (1981 edition), Table 18/3 p. 363, also gives values for press on.</p><ul>	<li class="bodytext"><span class="menu">Coefficient of friction (press off)</span><br />	You can define the μII/μa ratio here. This ratio describes the interrelationship between the coefficient of friction for press off and the axial coefficient of friction. The default value is 1.6.</li></ul><ul>	<li class="bodytext"><span class="menu">Calculation of joining temperature</span><strong>(lateral interference fit)</strong><br />	The mounting clearance can be entered either depending on the diameter of the joint df (modified if warming is taken into account) or as a constant mounting clearance. The joining temperature of the external component is then calculated accordingly. You can also input the temperature of shaft during joining.<br />	<br />	This temperature and the mounting clearance are then used to calculate the hub joining temperature. The hub joining temperature is only output in the report if the shaft temperature during joining lies between -273 °C and 20 °C.<br />	<br />	In the settings you can select whether the shaft is sub-cooled and/or the hub is heated before joining. If you have marked the checkbox, the respective value for the coefficient of thermal expansion according to DIN 7190 is used. By default, the checkbox is set to sub-cooling of the shaft.</li></ul><ul>	<li class="bodytext"><span class="menu">Required safeties</span><br /> 	In the Settings, you can input the required safeties against sliding, yield point and fracture. The required safeties are used to determine the searched values in the sizings. The required safeties against plastic deformation are used to define the plasticity diameter that must be set when an interference fit is placed under plastic-elastic stress.</li>	<li class="bodytext"><span class="menu">Calculate material strength with wall thickness as raw diameter</span><br />	If you set this checkbox, the strength of the hub material is determined using the wall thickness instead of the raw diameter.</li>	<li class="bodytext"><span class="menu">Allow calculation of elastic-plastic loaded interference fits</span><br />	If you set this checkbox, the calculation is also performed for elastic-plastic stress (according to DIN 7190-1), otherwise, only elastic stress is included.</li></ul><ul>	<li class="bodytext"><span class="menu">For negative interference during operation, continue the calculation and document the allowances</span><br />	If there is a negative allowance during operation, an error message is displayed. This usually interrupts the calculation, because this value would mean that the fit was no longer an interference fit. Set this flag to force the calculation to continue despite the error message so that you can display allowances for higher operating temperatures. Only the section with the allowances calculated for operation is then displayed in the report.</li>	<li class="bodytext"></li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

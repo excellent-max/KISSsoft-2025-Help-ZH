@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>使用滚齿刀具生成圆柱齿轮 | Generate cylindrical gear with hobbing cutter</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Generate cylindrical gear with hobbing cutter">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8786');expand('8782');expand('7708');expand('9286');expand('9246');highlight('8788')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8787.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8790.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">使用滚齿刀具生成圆柱齿轮</h3>   
+                
+<p class="bodytext">要使用刀具生成圆柱齿轮，请输入齿轮参考齿廓。当您添加此操作时，窗口会根据您在 <span class="menu">参考齿廓</span> 输入窗口中定义的值自动填充。如果刀具是非触顶刀具，则参考齿廓的齿顶高根据齿顶圆自动确定，而不采用您输入的值。对于特殊应用（使用不同模数的刀具制造齿轮），您可以修改模数 mn 和压力角 αn。然后可以使用尺寸计算按钮。单击尺寸计算按钮可根据指定的基圆在每种情况下计算正确的值。单击 <span class="menu">刀具...</span> 按钮打开 <span class="menu">定义刀具</span> 窗口（参见 <a class="referencetopic-shabschnitt" href="8725.htm" target="_self">刀具：滚齿刀具</a> 一章），该窗口显示刀具列表。要定义公差带，您可以直接输入生成变位系数（<span class="menu">自定义输入</span>），或使用预处理或最终处理公差。</p><p class="bodytext">滚齿刀具数据也可以作为系数或绝对长度（mm 或英寸）输入。如果滚齿刀具数据是图纸中给出的长度（以 mm 或英寸为单位），这些选择选项会让您的工作轻松得多。</p><p class="bodytext">在对 haP0* 进行尺寸计算时，系统会计算该值，随后用它来加工直至有效齿根直径的渐开线。此处显示的推荐值是精确计算值，再加 0.05（以便在齿根直径和有效齿根直径之间获得一个小间距）。</p><p class="bodytext">如果您使用尺寸计算按钮来定义砂轮，半径 ϱaP0 应较小（例如 0.1*mn），否则磨削过程可能触及齿根半径。</p><p class="bodytext"></p><p class="hint">注意</p><p class="bodytext">此处输入的刀具信息独立于 <span class="menu">参考齿廓</span> 输入窗口中指定的数据。换句话说，齿形计算完全基于 <span class="menu">齿形</span> 输入窗口中定义的值。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Generate cylindrical gear with hobbing cutter</h3>   
+                
+<p class="bodytext">To generate a cylindrical gear with a cutter, input the gear reference profile. When you add this operation, the window is filled automatically, based on the values you defined in the <span class="menu">Reference profile</span> input window. If the tool is a non-topping tool, the addendum of the reference profile is determined automatically from the tip circle, and not transferred from the values you input. For special applications (manufacturing a gear with a cutter with a different module), you can modify the module mn and the pressure angle αn. You can then use the Sizing buttons. Click the Sizing buttons to calculate the correct value in each case for the specified base circle. Click the <span class="menu">Cutter...</span> button to open the <span class="menu">Define cutter</span> window (see chapter <a class="referencetopic-shabschnitt" href="8725.htm" target="_self">Tool: Hobbing cutters</a>), which displays a list of tools. To define the tolerance field, you can either enter the generating profile shift coefficients directly (<span class="menu">Own input</span>), or use the pretreatment or final treatment tolerances.</p><p class="bodytext">The hobbing cutter data can also be input as coefficients or as absolute lengths (mm or inch). These selection options make your job much easier if the hobbing cutter data are the lengths (in mm or inches) given in a drawing.</p><p class="bodytext">When sizing haP0*, the system calculates the value, which is then used to manufacture the involute up to the active root diameter. The proposed value shown here is the exactly calculated value, to which 0.05 is added (to obtain a small distance between the root diameter and the active root diameter).</p><p class="bodytext">If you use the Sizing button to define the grinding wheel, the radius ϱaP0 should be small (e.g. 0.1*mn), otherwise the grinding process may reach the root radius.</p><p class="bodytext"></p><p class="hint">Note</p><p class="bodytext">The cutter information entered here is independent of the data specified in the <span class="menu">Reference profile</span> input window. In other words, the tooth form calculation is based exclusively on the values defined in the <span class="menu">Tooth form</span> input window.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

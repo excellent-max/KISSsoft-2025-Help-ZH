@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>载荷谱 | Load spectra</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Load spectra">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('10008');expand('9042');expand('9272');expand('9246');highlight('11190')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10843.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="10022.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">载荷谱</h3>   
+                
+<p class="bodytext">所有条目（频率、功率、速度）可以定义为系数或值。如果使用系数输入这些值，则功率和速度以名义功率的系数形式输入。在计算中，力和扭矩使用扭矩因子（载荷因子/速度因子）。如果输入设置为值，则不能更改参考齿轮、扭矩、速度或功率。这些输入字段处于非活动状态。</p><p class="bodytext">你可以从文件中导入载荷谱或直接输入它们。如果你直接输入此数据，载荷工况的数量由你输入的行数决定。</p><ul>	<li class="bodytext"><strong>输入：</strong> 指定这些因子是用于功率还是扭矩。如果从文件导入载荷谱，此设置同样适用。</li>	<li class="bodytext"><strong>链接文件：</strong> 该选项在载荷谱设置为“Own input”时显示。如果该选项显示，则可以从选定文件导入载荷谱值。导入可以以两种方式执行：如果未设置标志，则可以修改导入的载荷谱值。如果设置了标志，则载荷谱值将被选定文件中的值自动覆盖，且不能修改。</li>	<li class="bodytext"><strong>自定义输入载荷谱：</strong> 可以直接输入载荷谱，或从文件中导入。</li>	<li class="bodytext"><strong>文件名：</strong> 点击 <img src="11192.png" style="height:21px; width:21px"> 按钮，通过目录选择文件。包含载荷谱的文件必须是文本文件（.dat）。用户将在“dat”目录中找到一个名为“Example_DutyCycle.dat”的样本载荷谱文件。用户应将自己定义的载荷谱存储在“EXT/dat”目录中，以确保在版本升级后仍能始终可用。</li></ul><p class="bodytext"><img src="10230.png" style="height:197px; width:97px"></p><p class="bodytext"><em class="emphasis">用于输入载荷谱的示例文件</em></p><ul>	<li class="bodytext"><strong>频率：</strong> H<sub class="subscript">0</sub> ... H<sub class="subscript">19</sub>，这些频率之和必须为 1。</li>	<li class="bodytext"><strong>载荷因子（扭矩因子）：</strong> P<sub class="subscript">0</sub> ... P<sub class="subscript">19</sub> 0&lt;P<sub class="subscript">n</sub>&lt;,∞.</li>	<li class="bodytext"><strong>速度因子： </strong>N<sub class="subscript">0</sub> ... N<sub class="subscript">19</sub>, 0&lt;N<sub class="subscript">n</sub>&lt;∞.</li></ul><p class="bodytext">带有负扭矩的载荷区间被解释为从驱动状态转换为被驱动状态。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Load spectra</h3>   
+                
+<p class="bodytext">All entries (frequency, power, speed) can be defined either as coefficients or as values. If coefficients are used to input these values, the power and speeds are entered as coefficients of the nominal power. In the calculations, the factor for torque (load factor/speed factor) is used for forces and torques. You cannot change the reference gear, torque, speed or power if the input is set to values. These input fields are inactive.</p><p class="bodytext">You can either import load spectra from a file or enter them directly. If you input this data directly, the number of load cases is defined by the number of lines you enter.</p><ul>	<li class="bodytext"><strong>Input:</strong> Specify whether the factors are for power or torque. This also applies if the load spectrum is imported from a file.</li>	<li class="bodytext"><strong>Link with file:</strong> This option is displayed if the load spectrum is set to &quot;Own input&quot;. If the option is displayed, load spectrum values can be imported from a selected file. The import can be performed in two ways: If the flag is not set, the imported load spectrum values can be modified. If the flag is set, the load spectrum values are automatically overwritten by the values in the selected file, and cannot be modified.</li>	<li class="bodytext"><strong>Own input of load spectra:</strong> You can input the load spectrum directly, or import it from a file.</li>	<li class="bodytext"><strong>File name:</strong> Click the <img src="11192.png" style="height:21px; width:21px" /> button to select a file via the directories. The file containing the load spectrum must be a text file (.dat). You will find a sample load spectrum file called &quot;Example_DutyCycle.dat&quot; in the &quot;dat&quot; directory. You should store load spectra you define yourself in the &quot;EXT/dat&quot; directory, to ensure they are always available even after a version upgrade.</li></ul><p class="bodytext"><img src="10230.png" style="height:197px; width:97px" /></p><p class="bodytext"><em class="emphasis">Example of a file used to input a load spectrum</em></p><ul>	<li class="bodytext"><strong>Frequency:</strong> H<sub class="subscript">0</sub> ... H<sub class="subscript">19</sub>, the sum of these frequencies must be 1.</li>	<li class="bodytext"><strong>Load factor (torque factor):</strong> P<sub class="subscript">0</sub> ... P<sub class="subscript">19</sub> 0&lt;P<sub class="subscript">n</sub>&lt;,∞.</li>	<li class="bodytext"><strong>Speed factor: </strong>N<sub class="subscript">0</sub> ... N<sub class="subscript">19</sub>, 0&lt;N<sub class="subscript">n</sub>&lt;∞.</li></ul><p class="bodytext">Load bins with negative torque are interpreted as a change from driving to driven.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

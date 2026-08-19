@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>报告模板中的元数据 | Meta data in a report template</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Meta data in a report template">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9093');expand('9090');expand('8346');expand('9272');expand('9246');highlight('11704')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9106.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9042.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">报告模板中的元数据</h3>   
+                
+<p class="bodytext">借助报告模板，可应用元数据对报告生成进行一系列设置。在适用的情况下，这些设置会覆盖在<span class="menu">报告 &gt; 设置</span>菜单中所设定的值。</p><p class="bodytext">元数据定义在主报告模板开头的注释块中。如果稍后通过单击 <span data-teams="true"><span class="code">&lt;EXECUTE&gt;</span></span> 加载报告模板，则无法对现有设置进行任何更改。</p><p class="bodytext">注释块必须是连贯的。任何在第一行之后输入的、不以注释标记 <span class="code">‘//’</span> 开头的元数据都将被忽略。定义元数据的格式如下</p><p class="bodytext"><span class="code">//NAME=value </span></p><p class="bodytext">可以进行以下设置：</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1" style="width:500px">	<thead>		<tr>			<th scope="col">名称</th>			<th scope="col">值</th>			<th scope="col">注释</th>		</tr>	</thead>	<tbody>		<tr>			<td>			<p class="bodytext">NOTABSTOPS</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td></td>			<td>			<p class="bodytext">更改为固定间距字体（Courier 字体）。缩进使用空格而不是制表符创建。</p>			<p class="bodytext">主要用于旧格式模板。不应用于新模板。</p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">TITLE</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">标题通过 GETSTRING() 函数输出或获取</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">仅在 RPS 文件中评估。</p>			<p class="bodytext">要显示标题，请单击<span class="menu">报告 &gt; 特殊报告</span>。如果未设置标题，则使用模板的文件名。</p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MODULE</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">模块说明，例如 Z012、Z010 或 Z000。</p>			<p class="bodytext">ALL 表示全部</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">仅在 RPS 文件中评估。指定模板在<span class="menu">报告 &gt; 特殊报告</span>菜单中显示的计算模块。</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">LANDSCAPE</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td></td>			<td>			<p class="bodytext">更改页面方向为横向。</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">FORMAT</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">TEXT</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">更改文本格式。</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">LANGUAGE<br>			<br>			<br>			<br>			<br>			</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">GERMAN<br>			ENGLISH<br>			FRENCH<br>			ITALIAN<br>			SPANISH<br>			PORTUGUESE RUSSIAN<br>			CHINESE<br>			JAPANESE</p>			</td>			<td>			<p class="bodytext">仅在 RPS 文件中评估。指定模板显示所用的语言设置。</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">UNITS</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">US</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">更改为美制常用单位。目前，此功能仅在英文中有效。</p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">SIZE<br>			<br>			<br>			<br>			<br>			<br>			<br>			</p>			</td>			<td>			<p class="bodytext">A5<br>			A4<br>			A3<br>			LETTER<br>			LEGAL<br>			<br>			<br>			</p>			</td>			<td>			<p class="bodytext">设置纸张格式。<br>			<br>			</p>			<p class="bodytext"><br>			<br>			</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">ENCODING</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">ASCII<br>			LATIN1<br>			UTF8<br>			UTF8BOM<br>			UTF16</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">设置结果文件的编码。在大多数情况下，只有当 FORMAT=TEXT 时才有用。</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MARGINTOP</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">长度，单位 mm</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">上边距</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MARGINBOTTOM</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">长度，单位 mm</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">下边距</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MARGINLEFT</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">长度，单位 mm</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">左边距</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MARGINRIGHT</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">长度，单位 mm</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">右边距</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">HEADER</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">NONE</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">隐藏页眉并防止KISS?.RPT加载</p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">FOOTER</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">NONE</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">隐藏页脚并防止KISSF?.RPT加载</p>			</td>		</tr>	</tbody></table>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Meta data in a report template</h3>   
+                
+<p class="bodytext">Meta data can be applied to make a range of settings for report generation, using a report template. Where applicable, these settings overwrite the values set in the <span class="menu">Report &gt; Settings</span> menu.</p><p class="bodytext">The meta data is defined in a comment block at the beginning of the main report template. If report templates are loaded later by clicking on <span data-teams="true"><span class="code">&lt;EXECUTE&gt;</span></span>, no changes to existing settings can be made.</p><p class="bodytext">The comment block must be coherent. Any meta data that is entered after the first line not starting with the comment markers <span class="code">‘//’</span>will be ignored. The format for defining meta data is</p><p class="bodytext"><span class="code">//NAME=value </span></p><p class="bodytext">The following settings can be made:</p><p class="bodytext"></p><table border="1" cellpadding="1" cellspacing="1" style="width:500px">	<thead>		<tr>			<th scope="col">Name</th>			<th scope="col">Value</th>			<th scope="col">Comment</th>		</tr>	</thead>	<tbody>		<tr>			<td>			<p class="bodytext">NOTABSTOPS</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td></td>			<td>			<p class="bodytext">Changes to font with fixed spacing (Courier font). Indents are created using blank spaces instead of tabs.</p>			<p class="bodytext">Primarily intended for old format templates. It should not be used for new templates.</p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">TITLE</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">The title is written out or fetched using the GETSTRING() function</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Only evaluated in RPS files.</p>			<p class="bodytext">To display the title, click on <span class="menu">Report &gt; Special reports</span>. If the title is not set, the template’s file name is used instead.</p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MODULE</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Module description, e.g. Z012, Z010 or Z000.</p>			<p class="bodytext">ALL for all</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Only evaluated in RPS files. Specifies the calculation modules in which the template is displayed in the <span class="menu">Report &gt; Special reports</span> menu.</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">LANDSCAPE</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td></td>			<td>			<p class="bodytext">Changes page orientation to landscape.</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">FORMAT</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">TEXT</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Changes to text format.</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">LANGUAGE<br />			<br />			<br />			<br />			<br />			</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">GERMAN<br />			ENGLISH<br />			FRENCH<br />			ITALIAN<br />			SPANISH<br />			PORTUGUESE RUSSIAN<br />			CHINESE<br />			JAPANESE</p>			</td>			<td>			<p class="bodytext">Only evaluated in RPS files. Specifies the language setting in which the template is displayed.</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">UNITS</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">US</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Changes to US customary units. At present, this only works in English.</p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">SIZE<br />			<br />			<br />			<br />			<br />			<br />			<br />			</p>			</td>			<td>			<p class="bodytext">A5<br />			A4<br />			A3<br />			LETTER<br />			LEGAL<br />			<br />			<br />			</p>			</td>			<td>			<p class="bodytext">Sets the paper format.<br />			<br />			</p>			<p class="bodytext"><br />			<br />			</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">ENCODING</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">ASCII<br />			LATIN1<br />			UTF8<br />			UTF8BOM<br />			UTF16</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Sets the encoding for the result file. In most cases, this is only useful when FORMAT=TEXT.</p>			<p class="bodytext"></p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MARGINTOP</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Length in mm</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Top margin</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MARGINBOTTOM</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Length in mm</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Bottom margin</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MARGINLEFT</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Length in mm</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Left margin</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">MARGINRIGHT</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Length in mm</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Right margin</p>			<p class="bodytext"></p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">HEADER</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">NONE</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Hides the header and prevents KISS?.RPT from loading</p>			</td>		</tr>		<tr>			<td>			<p class="bodytext">FOOTER</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">NONE</p>			<p class="bodytext"></p>			</td>			<td>			<p class="bodytext">Hides the footer and prevents KISSF?.RPT from loading</p>			</td>		</tr>	</tbody></table>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

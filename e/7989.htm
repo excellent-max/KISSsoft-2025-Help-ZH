@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿厚公差 | Tooth thickness tolerance</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Tooth thickness tolerance">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7987');expand('7960');expand('9288');expand('9246');highlight('7989')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7987.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7990.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">齿厚公差</h3>   
+                
+<p class="bodytext">从 <span class="menu">齿厚公差</span> 下拉列表中选择一个选项。</p><p class="bodytext"><strong>实际</strong>的公差（smax、smin、emax、emin）对应于单个测量（在轮齿上测量的公法线长度或跨棒距测量）。<strong>有效</strong>的公差（svmax、svmin、evmax、evmin）对应于用量规进行的测量（所有齿一起检查）。因此，花键连接的齿侧间隙由“有效”公差推导得出。有效公差不仅包括单个齿的齿厚公差，还包括周节和形状误差分量。有效公差是下列 <strong>理论值</strong>。它们比实际公差更小（齿更厚）。</p><p class="hint">注意</p><p class="bodytext">根据标准，齿厚公差（smax、smin）是为轴预定义的。相比之下，对于轮毂，公差适用于齿槽（emax、emin）。</p><p class="bodytext">如果齿厚公差已设置为自定义输入，您可以输入轴的 svmax（<strong>有效</strong>最大公差）来计算 svmin，因为在这种情况下适用以下关系：</p><p class="bodytext">svmin – smin = svmax – smax</p><p class="bodytext">此外，您随后可以使用该标志为 <strong>实际</strong> 预定义单个测量公差。但是，如果未设置该标志，则差值 svmax–smax（周节和形状误差分量）以及公差区间 smax-smin 将根据所选精度等级的标准进行设置。</p><p class="bodytext">同样也适用于轮毂。</p><p class="hint">注意</p><p class="bodytext"><strong>圆周侧隙</strong>和<strong>法向侧隙</strong>使用齿轮副公式计算，其中 jt.act 和 jn.act 是 <strong>实际</strong> 值，jt.eff 和 jn.eff 是 <strong>有效</strong> 值。对于径向游隙，我们必须考虑到所有齿在移动时都可能接触。首先接触的齿轮副是其运动方向与齿面法向夹角最接近的齿轮副。因此，径向游隙对应于端面中的法向游隙（jr = jt * cos(alfa)）。该功能还检查齿顶游隙是否小到也会限制径向游隙。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Tooth thickness tolerance</h3>   
+                
+<p class="bodytext">Select one of the options from the <span class="menu">Tooth thickness tolerance</span> drop-down list.</p><p class="bodytext">The allowances for <strong>Actual</strong> (smax, smin, emax, emin) correspond to the individual measurements (base tangent length or measurement over pins measured on the gear teeth). The allowances for <strong>Effective</strong> (svmax, svmin, evmax, evmin) correspond to the measurement with gauges (all teeth checked together). The gear backlash of a spline connection is therefore derived from the &quot;Effective&quot; allowances. The effective allowances include not only the tooth thickness allowances of individual teeth but also a pitch and form error component. The effective allowances are the following <strong>theoretical values</strong>. They are smaller (the tooth is thicker) than with the actual allowances.</p><p class="hint">Note</p><p class="bodytext">According to the standard, the allowances for tooth thickness (smax, smin) are predefined for the shaft. In contrast, for the hub, the allowances apply to the tooth space (emax, emin).</p><p class="bodytext">If the tooth thickness tolerance has been set to your own input, you can input svmax for the shaft (<strong>Effective</strong> maximum allowance) to calculate svmin, because the relationship applies in this case:</p><p class="bodytext">svmin – smin = svmax – smax</p><p class="bodytext">In addition, you can then use the flag to predefine the individual measurement allowances for <strong>Actual</strong>. However, if this flag is not set, the difference svmax–smax (pitch and form error component), and the tolerance interval smax-smin are set according to the standard for the selected accuracy grade.</p><p class="bodytext">The same also applies to the hub.</p><p class="hint">Note</p><p class="bodytext">The <strong>circumferential backlash</strong> and <strong>normal backlash</strong> are calculated using the formulae for gear pairs, where jt.act and jn.act are the values for <strong>Actual</strong> and jt.eff and jn.eff are the values for <strong>Effective</strong>. In the case of radial clearance, we have to consider that all the teeth can have contact when they are moved. The first gear pair to make contact is the one whose direction of movement most closely matches the normal angle to the flank. The radial clearance therefore corresponds to the normal clearance in transverse section (jr = jt * cos(alfa)). The function also checks whether the tip clearance is so small that it also restricts the radial clearance.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

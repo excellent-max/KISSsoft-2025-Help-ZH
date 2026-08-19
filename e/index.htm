@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN">
+<html>
+<head>
+<title>KISSsoft User Manual </title>
+<link rel="stylesheet" type="text/css" href="infoportal.css">
+<link rel="stylesheet" type="text/css" href="app_styles.css">
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<meta name="ByLine" content="Customer">
+<meta name="SuperTitle" content="User's Guide">
+</head>
+
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+<script language="javascript" type="text/javascript" src="app_customer.js"></script>
+
+
+<SCRIPT Language='javascript'>
+// aufruf context-sensitive Hilfe: index.htm?id=xxx
+
+
+var query_vars = read_querystring();
+var id=query_vars['id'];
+var nav=setNavString();
+
+var win;
+var actFrameWidth;
+var actTimeout;
+var act_leftFrame_width;
+var act_bodyfile='';
+
+if (''!='') {act_bodyfile='.htm'}
+if (act_bodyfile=='') {act_bodyfile="9246.htm"}
+if (id) {act_bodyfile=id+'.htm'};
+if (query_vars['body']) {act_bodyfile=query_vars['body']};
+if (nav!='') {nav+='&body='+escape(act_bodyfile)} else {nav='?body='+escape(act_bodyfile)}
+
+if (''!='') {act_leftFrame_width=parseInt('')} else {act_leftFrame_width=_leftFrame_width}
+
+function resizeWindow(){
+var locIndex,bodyId
+var i
+
+	bodyId=unescape(String(ALL.BODY.location.href))
+	locIndex=String(location.href)
+	i=instr(locIndex,"body=")
+
+	if (i>0) {locIndex=locIndex.substring(0,i-1);}
+
+	bodyId=bodyId.substring(bodyId.lastIndexOf("/")+1,bodyId.lastIndexOf(".")) + ".htm"
+	if (locIndex.lastIndexOf("?")>0) {locIndex+="&"} else {locIndex+="?"}
+	document.location.href=locIndex + "body=" + bodyId
+}
+</SCRIPT>
+
+<body 
+	onResize='if (actTimeout) {clearTimeout(actTimeout)};actTimeout=window.setTimeout(resizeWindow,500);' 
+	onkeypress='checkReturn(event)'
+	topmargin='0' leftmargin='0' marginheight='0' maginwidth='0'>
+
+<script>
+   actFrameWidth=setFrameWidth()
+	wr("<table width=" + parseInt(act_leftFrame_width + actFrameWidth + _leftBorder_width + _rightBorder_width) + " border='0' align='left' cellpadding='0' cellspacing='0'>")
+	if (hasCustHeader()) 
+		{
+  		wr("<tr>")
+    		   wr("<td width='" + _leftBorder_width + "' rowspan='4'>&nbsp;</td>")   // ' Spalte 20px vorne %>
+    		   wr("<td width='" + parseInt(act_leftFrame_width + actFrameWidth) + "'>")
+			wrCustHeader()
+		   wr("</td>")
+		   wr("<td width='" + _rightBorder_width + "' rowspan='4'>&nbsp;</td>")   // ' Spalte 20px hinten %>
+		wr("</tr>")
+		}
+	else
+	{
+  	wr("<tr>")
+    	   wr("<td width='" + _leftBorder_width + "' rowspan='6'>&nbsp;</td>")   // ' Spalte 20px vorne %>
+    	   wr("<td width='" + parseInt(act_leftFrame_width + actFrameWidth) + "' height='" + _companyLogo_spaceabove + "' bgcolor=white></td>")
+	   wr("<td width='" + _rightBorder_width + "' rowspan='6'>&nbsp;</td>")   // ' Spalte 20px hinten %>
+	wr("</tr>")
+
+	wr("<tr>")
+    	   wr("<td width=" + parseInt(act_leftFrame_width + actFrameWidth) + ">")
+    	   wr("<table width=" + parseInt(act_leftFrame_width + actFrameWidth) + " border='0' cellpadding='0' cellspacing='0'>")
+
+      	   	wr("<tr>")
+        		wr("<td width='" + _companyLogo_width + "' height='" + _companyLogo_height + "'>")
+				if (_companyLogo_link!='') {wr("<a href='" + _companyLogo_link + "' target=_blank>");}
+        			wr("<img alt='' src='" + _companyLogo_name + "' width=" + _companyLogo_width + " height=" + _companyLogo_height + " border='0'>")
+				if (_companyLogo_link!='') {wr("</a>")};
+			wr("</td>")
+			wr("<td heigth='" + _companyLogo_height + "' width='" + parseInt(act_leftFrame_width + actFrameWidth -_companyLogo_width) + "' align='right'>")
+			wr("<table border='0' cellspacing='0' cellpadding='0'>")
+          			wr("<tr>")
+            			   wr("<td height=13 align='right' valign='bottom'>")
+				   wr("<a id='aContact' name='aContact' onclick=\"javascript:win.offsetY=15;win.showPopup('aContact');return false\" class='footer' style='cursor:pointer'>" + _companyContact_label + "</a>")
+	    			   wr("</td>")
+				   if (""!='') {
+					defWidth=10;
+					if (_iconSpaceBeforeIcon!='') {defWidth=parseInt(_iconSpaceBeforeIcon)};
+					wr("<td height='" + _companyLogo_height + "' rowspan='2' width='" + defWidth + "'>&nbsp</td>");
+					wr("<td height='" + _companyLogo_height + "' rowspan='2'>");
+					if (_iconURL!='') {wr("<a href='" + _iconURL + "' target=_blank>");}
+					wr("<img src='' border='0'></td>")
+					if (_iconURL!='') {wr("</a>")};
+					}
+
+          			wr("</tr>")
+	  			wr("<tr>")
+            			   wr("<td height=" + parseInt(_companyLogo_height - 13) + "><span class=Subcompany></span></td>")
+	  			wr("</tr>")
+        		wr("</table></td>")
+      	   	wr("</tr>")
+
+
+      	   	wr("<tr>")
+        		wr("<td height='" + _companyLogo_spacebelow + "' colspan='2'></td>")
+      	   	wr("</tr>")
+      	   wr("</table></td>")
+    	   wr("<td width='" + _rightBorder_width + "' rowspan='5'>&nbsp;</td>")   // ' Spalte 20px hinten %>
+  	wr("</tr>")
+
+  	wr("<tr>")
+    		wr("<td height='20' valign='middle' class='dots'>")
+    		wr("<table border='0' align='left' cellpadding='0' cellspacing='0' width='99%'>")
+      		   wr("<tr>")
+        		if (!false) {
+			   wr("<td width='14' style='padding:4px'><img alt='' src='square.gif' width='9' height='9' align='left'></td>")
+        		   wr("<td width='50'><a href='toc.htm' target=TOC class='nav_top'>" + _subMenu_content + "</a></td>")
+			   }
+			if (!false) {
+        		   wr("<td width='10'>&nbsp;</td>")
+        		   wr("<td width='14'><img alt='' src='square.gif' width='9' height='9' align='left'></td>")
+        		   wr("<td width='50'><a href='indexpage.htm' target=TOC class='nav_top'>" + _subMenu_Index + "</a></td>")
+			   }
+			if (!false) {
+        		   wr("<td width='10'>&nbsp;</td>")
+        		   wr("<td width='14'><img alt='' src='square.gif' width='9' height='9' align='left'></td>")
+			   if (_serverSearch) 
+        			{wr("<td width='50'><a href='server_search.asp' target=TOC class='nav_top'>" + _subMenu_Search + "</a></td>")}
+			   else
+        			{wr("<td width='50'><a href='dhtml_search.htm' target=TOC class='nav_top'>" + _subMenu_Search + "</a></td>")}
+			   }
+			wr("<td align='right'><span class='parfooter'>" + setNavLink() + "</span></td>")
+      		   wr("</tr>")
+    		wr("</table></td>")
+  	wr("</tr>")
+	}
+
+  	wr("<tr>")
+    		wr("<td height='2'></td>")
+  	wr("</tr>")
+
+
+  	wr("<tr><td>")
+		if (_resizeFrame) {
+			wr("<IFRAME name=ALL Frameborder='0' Scrolling='0' Width='100%' Height='" + _frame_height + "' Border='0' marginheight='0' marginwidth='0' src='frameAll.htm" + nav + "' id='BODYheight'></IFRAME>")
+		}
+		else {
+	    		wr("<table width='" + parseInt(act_leftFrame_width + actFrameWidth) + "' border='0' height='" + _frame_height + "' cellpadding='0' cellspacing='0' id='BODYheight'>")
+        		wr("<tr>")
+  			wr("<td width='" + act_leftFrame_width + "'>")
+			wr("<IFRAME name=TOC Frameborder='0' Scrolling='0' Width='100%' Height='100%' Border='0' marginheight='0' marginwidth='0' src=toc.htm" + nav + "></IFRAME>")
+			wr("</td>")
+  			wr("<td width='" + actFrameWidth + "'>")
+			wr("<IFRAME name=BODY Frameborder='0' Scrolling='0' Width='100%' Height='100%' Border='0' marginheight='0' marginwidth='0' \n");
+			if (id) {t=id+'.htm'} else {t=act_bodyfile}
+			wr("SRC="+t+"></IFRAME>\n");
+			wr("</td>")
+     			wr("</tr>")
+      			wr("</table>")
+			}
+      wr("</td></tr>")
+
+
+      if (_footerCopyright+_footerDisclaimer+_footerSafeHarbor+_footerPrint+_footerTop!='' || 0>1) {
+      	wr("<tr>")
+    	   wr("<td width='" + parseInt(act_leftFrame_width + actFrameWidth) + "'>")
+      	   wr("<table width='" + parseInt(act_leftFrame_width + actFrameWidth) + "' border='0' cellpadding='0' cellspacing='0' class='footer'>")
+      	      wr("<tr>")
+        	wr("<td width='" + parseInt(act_leftFrame_width + actFrameWidth)/2 + "' align='left'>") 
+        	wr("<table width='" + parseInt(act_leftFrame_width + actFrameWidth)/2 + "' border='0' cellpadding='0' cellspacing='0'>")
+         		wr("<tr><td  height='20'>")
+				if (_footerCopyright!='') {
+            				wr("<a href='" + _footerCopyright_link + "' class='footer' target='_blank'>© " + _footerCopyright + "</a>&nbsp&nbsp;&nbsp&nbsp;")
+					}
+				if (_footerDisclaimer!='') {
+	            			wr("<a href='" + _footerDisclaimer_link + "' class='footer' target='_blank'>" + _footerDisclaimer + "</a>&nbsp&nbsp;&nbsp&nbsp;")
+					}
+				if (_footerSafeHarbor!='') {
+	            			wr("<a href='" + _footerSafeHarbor_link + "' class='footer' target='_blank'>" + _footerSafeHarbor + "</a>")
+					}
+				wr("</span></td>")
+          		wr("</tr>")
+        	wr("</table></td>")
+        	wr("<td width='" + parseInt(act_leftFrame_width + actFrameWidth)/2 + "' align='right'>")
+        	wr("<table width='" + parseInt(act_leftFrame_width + actFrameWidth)/2 + "' border='0' align='right' cellpadding='0' cellspacing='0'>")
+          		wr("<tr><td  height='20' align='right'>")
+				if (0>1) {
+            				wr("<span id='wikiedit' style='display:none'><a href='#' onclick=javascript:newDialog('wikiedit.asp') class='footer'>" + _footerWiki + "</a>&nbsp;")
+            				wr("<span class='parfooter'><img alt='' src='edit.gif' width='12' height='12' onclick=javascript:newDialog('wikiedit.asp'); style='cursor:pointer'></span>&nbsp;&nbsp;&nbsp;</span>")
+					wr("<input type='hidden' name='topicid' value='0'>")
+					}
+            			if (_footerPrint!='') {
+					wr("<a href='#' onclick=javascript:printWindow(); class='footer'>" + _footerPrint + "</a>&nbsp;")
+        	    			wr("<span class='parfooter'><img alt='' src='print.gif' width='12' height='12' onclick=javascript:printWindow(); style='cursor:pointer'></span>&nbsp;&nbsp;&nbsp;")
+					}
+				if (_footerTop!='') {
+	            			wr("<a href='javascript:top.frames[\"ALL\"].BODY.window.scrollTo(0,0)' class='footer'>" + _footerTop + "</a>&nbsp")
+        	    			wr("<img alt='' src='top.gif' width='11' height='11' onclick='javascript:top.frames[\"ALL\"].BODY.window.scrollTo(0,0)' style='cursor:pointer'></td>")
+					}
+          		wr("</tr>")
+        	wr("</table></td>")
+              wr("</tr>")
+	   wr("</table>")
+	wr("</td></tr>")
+      }
+
+      wr("</table>")
+
+      wr("<div id='dContact' STYLE='width:140;position:absolute;visibility:hidden;background-color:#f8f8f8;padding:4px;border:solid 1px black' onclick='win.hidePopup()'><p style='font-size:10px'>" + _companyContact_address + "</p></div>")
+      win=new PopupWindow('dContact');win.autoHide();win.offsetX=-120;win.showPopup('aContact');win.hidePopup();
+
+</script>
+
+</body>
+
+</html>

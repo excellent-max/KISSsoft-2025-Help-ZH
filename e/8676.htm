@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>功率、扭矩和转速 | Power, torque and speed</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Power, torque and speed">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8718');expand('7708');expand('9286');expand('9246');highlight('8676')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11502.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8677.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">功率、扭矩和转速</h3>   
+                
+<p class="bodytext">单击功率输入字段（用于扭矩）旁的尺寸计算按钮，计算功率（扭矩），从而可保持预定义的最小安全系数（见"<a class="referencetopic-shabschnitt" href="8907.htm" target="_self">安全系数</a>"章）。<br><br>功率、扭矩和转速必须始终定义为正值。输入工作齿面以预设旋转方向。<br><br>对于行星齿轮级，转速输入字段旁的加号按钮现在变为可见。然后您可以输入第二个转速值（除参考齿轮的转速之外）。您可以输入正值或负值的转速。正值表示第二个齿轮与所选参考齿轮同向旋转。负值表示反向旋转。</p><p class="hint">注意：</p><p class="bodytext">当您在 KISSsys 中使用齿轮副对行星齿轮进行建模时，加号按钮对齿轮副同样有效，这与调用 KISSsys 时一样。然后您可以输入行星架转速 [nSteg]。参考齿轮的主转速 [n]（n - nweb）随后用于计算。这样可得到精确的载荷循环次数。<br><span style="font-size:10.0pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">如果定义了带值的载荷谱，则不能更改参考齿轮、扭矩、转速或功率。</span></span></span></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Power, torque and speed</h3>   
+                
+<p class="bodytext">Click the Sizing button next to the power input field (for the torque) to calculate the power (torque) so that a predefined minimum safety (see chapter <a class="referencetopic-shabschnitt" href="8907.htm" target="_self">Safety factors</a>) can be maintained.<br /><br />Power, torque and speed must always be defined with a positive value. Enter the working flank to predefine the sense of rotation.<br /><br />The Plus button next to the speed input field now becomes visible for planetary stages. You can then input a second speed value (in addition to the speed of the reference gear). You can enter the speed as either a positive or negative value. A positive value means that the second gear rotates in the same direction as the selected reference gear. A negative value means it rotates in the opposite direction.</p><p class="hint">Note:</p><p class="bodytext">The Plus button is also active for gear pairs when you are modeling epicyclic gears with gear pairs in KISSsys, as it is when you call KISSsys. You can then enter the speed of the planet carrier [nSteg]. The main speed [n] of the reference gear with n - nweb is then used in the calculation. This returns the exact number of load cycles.<br /><span style="font-size:10.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">You cannot change the reference gear, torque, speed or power if the load spectrum with values is defined</span></span></span>.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

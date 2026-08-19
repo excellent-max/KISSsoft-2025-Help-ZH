@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>定义载荷谱 | Define load spectrum</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Define load spectrum">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8718');expand('7708');expand('9286');expand('9246');highlight('8913')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8713.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8917.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">定义载荷谱</h3>   
+                
+<p class="bodytext">在此组中，您还可以访问已存储在数据库中的载荷谱。您也可以直接定义载荷谱。</p><p class="bodytext">如果选择<span class="menu">读取</span>，您可以导入包含载荷谱的文件（.txt 或 .dat 格式）。</p><p class="bodytext">'Example_DutyCycle.dat' 文件位于 <span class="menu">dat</span> 子文件夹（KISSsoft 安装目录）中，是展示如何定义载荷谱的示例文件。对于载体上的载荷谱，必须应用 'Example_Carrier_DutyCycle.dat' 中所示的特殊格式并带有标题。</p><p class="bodytext">如果希望在使用载荷谱计算时为每个载荷级考虑单独的系数（K<sub class="subscript">H</sub><sub>β</sub>、K<sub>γ</sub> 等），请打开<span class="menu">系数</span>选项卡。在其中，对载荷分布系数 K<sub>γ</sub>（参见"<a class="referencetopic-shabschnitt" href="8689.htm" target="_self">啮合载荷系数</a>"章）、交变弯曲系数 Y<sub class="subscript">M</sub>（参见"<a class="referencetopic-shabschnitt" href="8698.htm" target="_self">交变弯曲系数</a>"章）和齿向载荷系数 K<sub class="subscript">H</sub><sub>β</sub>（参见"<a class="referencetopic-shabschnitt" href="8648.htm" target="_self">齿向载荷系数</a>"章）进行相应设置。系数（K<sub class="subscript">H</sub><sub>β</sub>、K<sub>γ</sub> 等）定义载荷谱的示例可在 'Example_DutyCycleWithFactors.dat' 文件中查看，该文件位于 <span class="menu">dat</span> 子目录（KISSsoft 安装目录）中。<br><br>如果选择<span class="menu">扭矩测量 </span>选项，还可以从一系列扭矩/转速/时间测量值生成载荷谱。单击载荷谱表格下方的 Convert 按钮以调用此选项（参见"<a class="referencetopic-shabschnitt" href="11457.htm" target="_self">扭矩测量</a>"章）。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Define load spectrum</h3>   
+                
+<p class="bodytext">In this group, you can also access load spectra that have been stored in the database. You can also define the load spectra directly.</p><p class="bodytext">If you select <span class="menu">Read</span>, you can import a file (in either .txt or .dat format) with a load spectrum.</p><p class="bodytext">The 'Example_DutyCycle.dat' file in the <span class="menu">dat</span> sub-folder in the KISSsoft installation directory is an example of a file that shows how a load spectrum can be defined. For load spectra on carriers, the special format shown in 'Example_Carrier_DutyCycle.dat' must be applied with a header.</p><p class="bodytext">If you want separate factors (K<sub class="subscript">H</sub><sub>β</sub>, K<sub>γ</sub>, etc.) to be taken into account in the calculation with load spectra for each load bin, open the <span class="menu">Factors</span> tab. In it, make the appropriate settings for the load distribution coefficient K<sub>γ</sub> (see chapter <a class="referencetopic-shabschnitt" href="8689.htm" target="_self">Mesh load factor</a>), the alternating bending factor Y<sub class="subscript">M</sub> (see chapter <a class="referencetopic-shabschnitt" href="8698.htm" target="_self">Alternating bending factor</a>) and the face load factor K<sub class="subscript">H</sub><sub>β</sub> (see chapter <a class="referencetopic-shabschnitt" href="8648.htm" target="_self">Face load factor</a>). An example of how a load spectrum can be defined with factors (K<sub class="subscript">H</sub><sub>β</sub>, K<sub>γ</sub>, etc.), can be seen in the 'Example_DutyCycleWithFactors.dat' file in the <span class="menu">dat</span> sub-directory in the KISSsoft installation directory.<br /><br />A load spectrum can also be generated from a series of measurements with torque/speed/time if you select the <span class="menu">torque measurement </span> option. Click the Convert button below the Load spectrum table to call this option, (see chapter <a class="referencetopic-shabschnitt" href="11457.htm" target="_self">Torque measurement</a>).</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

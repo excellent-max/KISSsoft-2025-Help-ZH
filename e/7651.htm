@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>计算元素 | Calculation elements</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Calculation elements">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7647');expand('7629');expand('9292');expand('9246');highlight('7651')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7650.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7652.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">计算元素</h3>   
+                
+<p class="bodytext">所有用于 KISSsoft 计算的元素都派生自名称以 <span class="menu">kSoft</span> 开头的类。它们在树状视图中具有蓝色背景。</p><p class="bodytext">计算元素具有一系列功能：</p><ul>	<li class="bodytext"><strong>计算：</strong> 在后台执行 KISSsoft 计算。</li>	<li class="bodytext"><strong>kSoftInterface:</strong> 以交互方式启动 KISSsoft。</li>	<li class="bodytext"><strong>kSoftReport:</strong> 运行计算并显示报告。</li>	<li class="bodytext"><strong>SetFlags</strong>：设置用于 KISSsoft 与 KISSsys 之间数据交换的标志，以适应所需的存储位置。<ul>		<li class="bodytext"><span class="menu">KISSsoft -&gt; KISSsys</span> 和 <span class="menu">KISSsys -&gt; KISSsoft</span>：数据在两个方向上传输。</li>		<li class="bodytext">仅 <span class="menu">KISSsoft -&gt; KISSsys</span>：<span style="font-size:9.5pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a"> </span></span></span>带有存储表达式的数据从 KISSsys 传输到 KISSsoft。所有其他数据仅在另一个方向上传输。</li>	</ul>	</li></ul><p class="bodytext">此函数仅在选中时设置一次标志。因此，它对之后的更改没有影响。</p><ul>	<li class="bodytext"><strong>kSoftModul</strong>：此隐藏函数显示 KISSsoft 模块名称</li>	<li class="bodytext"><strong>getTranslationTable</strong>：此隐藏函数显示从 KISSsys 到 KISSsoft 的变量名称的翻译表。在计算元素中，翻译表可以通过 <span class="menu">TranslationTable</span> 数组进行扩展：例如，条目 <span class="menu">[['eps_a_min','ZP[0].Eps.aEffI'],['eps_a_max','ZP[0].Eps.aEffE']</span> 在变量 <span class="menu">eps_a_min</span> 和 <span class="menu">eps_a_max</span> 与相关的 KISSsoft 变量之间建立链接。到目前为止，KISSsoft 变量的名称只能从报告模板中获取，这些模板是 <span class="menu">.rpt</span> 文件。</li>	<li class="bodytext"><strong>getUtilization</strong>：此函数返回利用率以及所需的安全系数/安全比。</li></ul><p class="bodytext"></p><p class="bodytext">在 <span class="menu">fileName</span> 变量中，您可以指定一个 KISSsoft 计算文件，该文件将在计算开始时（在任何其他变量传输之前）自动加载。您可以使用 <span class="menu">savingMode</span> 变量来指定此 KISSsoft 计算文件是否应自动保存：</p><ul>	<li class="bodytext"><strong>不询问且不保存：</strong>当 KISSsoft 关闭时，如果对文件进行了更改，则不会提示您保存该文件。</li>	<li class="bodytext"><strong>询问是否保存：</strong>当 KISSsoft 关闭时，系统将提示您保存该文件。</li>	<li class="bodytext"><strong>自动保存：</strong>当 KISSsoft 关闭时，计算文件将自动保存，而无需用户确认提示。</li>	<li class="bodytext"><strong>将文件保存到 KISSsys：</strong>不会在 <span class="menu">fileName</span> 变量中输入文件名。相反，整个计算文件将保存到 KISSsys 元素中。</li></ul><p class="bodytext"></p><p class="bodytext">轴计算包括特殊的 <strong>UpdateShaftElements</strong> 方法。如果必须在轴上添加/删除力元素，请使用此方法。它评估轴上的力元素数量及其类型，并将它们传输到轴计算中的 <span class="menu">Forces</span> 数组中。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Calculation elements</h3>   
+                
+<p class="bodytext">All the elements for KISSsoft calculations are derived from classes which begin with the name <span class="menu">kSoft</span>. They have a blue background in the tree view.</p><p class="bodytext">The calculation elements have a range of functions:</p><ul>	<li class="bodytext"><strong>Calculate:</strong> performs a KISSsoft calculation in the background.</li>	<li class="bodytext"><strong>kSoftInterface:</strong> starts KISSsoft interactively.</li>	<li class="bodytext"><strong>kSoftReport:</strong> runs the calculation and displays the report.</li>	<li class="bodytext"><strong>SetFlags</strong>: sets the flags for data exchange between KISSsoft and KISSsys to suit the required storage location.	<ul>		<li class="bodytext"><span class="menu">KISSsoft -&gt; KISSsys</span> and <span class="menu">KISSsys -&gt; KISSsoft</span>: the data is transferred in both directions.</li>		<li class="bodytext">Only <span class="menu">KISSsoft -&gt; KISSsys</span>:<span style="font-size:9.5pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a"> </span></span></span>data with a stored expression is transferred from KISSsys to KISSsoft. All other data is only transferred in the other direction.</li>	</ul>	</li></ul><p class="bodytext">This function sets the flags only once, when it is selected. It therefore has no effect on later changes.</p><ul>	<li class="bodytext"><strong>kSoftModul</strong>: This hidden function displays the KISSsoft module name</li>	<li class="bodytext"><strong>getTranslationTable</strong>: this hidden function shows the translation table for variable names from KISSsys to KISSsoft. In the calculation element, the translation table can be extended via the <span class="menu">TranslationTable</span> array: For example, the entry <span class="menu">[['eps_a_min','ZP[0].Eps.aEffI'],['eps_a_max','ZP[0].Eps.aEffE']</span> adds a link between the variables <span class="menu">eps_a_min</span> and <span class="menu">eps_a_max</span> and the relevant KISSsoft variables. Up to now, the names of the KISSsoft variables could only be taken from the report templates, which are <span class="menu">.rpt</span> files.</li>	<li class="bodytext"><strong>getUtilization</strong>: this function returns the utilization, and the required safety/safety ratio.</li></ul><p class="bodytext"></p><p class="bodytext">In the <span class="menu">fileName</span> variable, you can specify a KISSsoft calculation file which will automatically be loaded at the start of the calculation, before any other variables are transferred. You can use the <span class="menu">savingMode</span> variables to specify whether this KISSsoft calculation file should be saved automatically:</p><ul>	<li class="bodytext"><strong>Don’t ask and don’t save:</strong> When KISSsoft is shut down, you will not be prompted to save the file if changes have been made to it.</li>	<li class="bodytext"><strong>Ask for saving:</strong> When KISSsoft is closed, you will be prompted to save the file.</li>	<li class="bodytext"><strong>Save automatically:</strong> When KISSsoft is closed, the calculation file is saved automatically without a user confirmation prompt.</li>	<li class="bodytext"><strong>Save file in KISSsys:</strong> No file name will be entered in the <span class="menu">fileName</span> variable. Instead, the entire calculation file will be saved in the KISSsys element.</li></ul><p class="bodytext"></p><p class="bodytext">The shaft calculation includes the special <strong>UpdateShaftElements</strong> method. Use this method if a force element has to be added/deleted on a shaft. It evaluates the number of force elements on the shaft, and their type, and transfers them into the <span class="menu">Forces</span> array in the shaft calculation.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

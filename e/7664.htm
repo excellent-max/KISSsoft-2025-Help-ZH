@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>变量对话框的对话框元素 | Dialog elements for the variable dialog</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Dialog elements for the variable dialog">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7663');expand('7659');expand('7629');expand('9292');expand('9246');highlight('7664')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7663.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7665.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">变量对话框中的对话框元素</h3>   
+                
+<p class="bodytext">以下对话框元素可用于变量对话框：</p><p class="bodytext"><strong>水平分组：</strong></p><p class="bodytext">水平分组提供了一个框架，其中各个对话框元素并排排列。它们的位置必须始终由垂直分组定义，这意味着水平分组中的所有对话框元素都必须在垂直分组中定义。水平分组的定义如下：</p><p class="bodytext">[C:VDLG_HORZ, Caption_str, DistAbove_n, DistAfter_n, [Dialogelem]]</p><ul>	<li class="bodytext">C: VDLG_HORZ：水平分组的类型定义。</li>	<li class="bodytext">Caption：水平分组的标题。如果"Caption"不是空字符串，则会在水平分组周围绘制一个边框。</li>	<li class="bodytext">DistAbove：距水平分组上方的下一个对话框元素的距离。</li>	<li class="bodytext">DistAfter：距水平分组下方的下一个对话框元素的距离。"DistAfter"和"DistAbove"以像素为单位指定。</li>	<li class="bodytext">[Dialogelem]：用于定义位于水平分组中的对话框元素的元素数组。该数组只能包含 VDLG_Vert 类型的元素。</li></ul><p class="bodytext"><strong>垂直分组：</strong></p><p class="bodytext">垂直分组提供了一个框架，其中各个对话框元素在彼此下方排列。对话框元素的宽度由垂直分组定义。垂直分组的定义如下：</p><p class="bodytext">[C:VDLG_Vert,Caption_str,[XStart_r,XEnd_r],XPart_r,[Diag],Marg_n]</p><ul>	<li class="bodytext">C:VDLG_Vert：垂直分组的类型定义。</li>	<li class="bodytext">Caption：垂直分组的标题。垂直分组始终在其周围绘制一个边框。</li>	<li class="bodytext">[XStart,XEnd]：XStart 和 XEnd 定义垂直分组宽度相对于上级对话框宽度的系数（介于 0 和 1 之间）。它们还定义了垂直分组的 X 位置。</li>	<li class="bodytext">XPart：介于 0 和 1 之间的系数，定义了对话框字段的提示值与输入值之间的比率（分配给输入字段的文本称为"提示"）。如果 XPart=-1，则提示位于对话框元素上方。</li>	<li class="bodytext">[Diag]：用于定义垂直分组中对话框元素的元素数组。</li>	<li class="bodytext">Marg：一个可选参数，定义了对话框元素相对于垂直分组边缘的位移。这意味着对话框元素与垂直分组的左边缘和右边缘都保留"Marg"（边距）距离。</li></ul><p class="bodytext"><strong>RealEditFeld:</strong></p><p class="bodytext">提供一个可在其中输入浮点数的编辑框。</p><p class="bodytext">[C:VDLG_Real,Prompt_str,Preset_r,res,res,Places_n]</p><ul>	<li class="bodytext">C:VDLG_Real：RealEdit 字段类型定义。</li>	<li class="bodytext">Prompt：分配给输入字段的文本。</li>	<li class="bodytext">Preset：预设值。</li>	<li class="bodytext">res：此处为两个当前未使用的可选参数保留了位置。但是，在定义中这些位置不能留空（例如，[C:VDLG_Real,Prompt,Preset,0,0,Places] 是正确的解决方案，而 [C:VDLG_Real,Prompt,Preset,,,Places] 则不是）。</li>	<li class="bodytext">Point：定义输入字段中小数位数的可选参数。</li>	<li class="bodytext">返回值：返回值是输入字符串。</li></ul><p class="bodytext"><strong>IntEditFeld:</strong></p><p class="bodytext">提供一个可在其中输入整数的编辑框。</p><p class="bodytext">[C:VDLG_Int,Promt_str,Preset_n]</p><ul>	<li class="bodytext">C:VDLG_Int：IntEdit 字段类型定义。</li>	<li class="bodytext">Prompt：分配给输入字段的文本。</li>	<li class="bodytext">Preset：预设值。</li>	<li class="bodytext">返回值：返回值是输入字符串。</li></ul><p class="bodytext"><strong>StringEditFeld:</strong></p><p class="bodytext">提供一个可在其中输入文本的编辑框。</p><p class="bodytext">[C:VDLG_Str,Promt_str,Preset_str]</p><ul>	<li class="bodytext">C:VDLG_Str：StringEdit 字段类型定义。</li>	<li class="bodytext">Prompt：分配给输入字段的文本。</li>	<li class="bodytext">Preset：预设文本。</li>	<li class="bodytext">返回值：返回值是输入字符串。</li></ul><p class="bodytext"><strong>文本显示：</strong></p><p class="bodytext">系统生成文本显示。如果输入空字符串而不是文本，则文本字段也可用于定义空格。</p><p class="bodytext">[C:VDLG_Prompt,Prompt_str,Fieldheight_n]</p><ul>	<li class="bodytext">C:VDLG_Prompt：文本显示类型定义。</li>	<li class="bodytext">Prompt：字段文本。</li>	<li class="bodytext">字段高度：文本显示的高度。</li></ul><p class="bodytext"><strong>IntComboBox:</strong></p><p class="bodytext">提供一个可在其中输入整数的组合框。</p><p class="bodytext">[C:VDLG_IntCom,Prompt_str,[Entr_n],Sign_n/[Ind_n],0,0,AsVal_b]</p><ul>	<li class="bodytext">C:VDLG_IntCom：IntComboBox 类型定义。</li>	<li class="bodytext">Prompt：分配给组合框的文本。</li>	<li class="bodytext">[Eintr]：包含可用列表项的元素数组（对于 IntComboBox，列表项必须是整数）。</li>	<li class="bodytext">Sign/[Ind]：此处，您可以选择使用"Sign"直接设置一个包含在列表中的约束值，或使用"Ind"在特定列表位置选择一个值作为约束值（列表中的第一个元素位于位置 0）。"Sign"和"[Ind]"是可选参数。</li>	<li class="bodytext">AsVal：如果可选参数"AsVal"已设置且不等于 0，则返回值变为输入值。否则，返回值是所选条目的索引。</li></ul><p class="bodytext"><strong>IntEditComboBox:</strong></p><p class="bodytext">提供一个可编辑的组合框，可在其中输入整数。请确保此处输入的值是整数。</p><p class="bodytext">[C:VDLG_IntComE,Prompt_str,[Entr_n],Sign_n/[Ind_n]]</p><ul>	<li class="bodytext">参见 IntComboBox</li>	<li class="bodytext">返回值：返回值是输入字符串。</li></ul><p class="bodytext"><strong>RealComboBox:</strong></p><p class="bodytext">提供一个可在其中输入浮点数的组合框。</p><p class="bodytext">[C:VDLG_RealCom,Prompt_str,[Entr_r],Sign_r/[Ind_n],0,0,AsVal_b]</p><ul>	<li class="bodytext">参见 IntComboBox</li></ul><p class="bodytext"><strong>RealEditComboBox:</strong></p><p class="bodytext">提供一个可编辑的组合框，可在其中输入浮点数。</p><p class="bodytext">[C:VDLG_RealComE,Prompt_str,[Entr_r],Sign_r/[Ind_n]]</p><ul>	<li class="bodytext">参见 IntComboBox</li>	<li class="bodytext">返回值：返回值是输入字符串。</li></ul><p class="bodytext"><strong>StringComboBox:</strong></p><p class="bodytext">提供一个可在其中输入字符串的组合框。</p><p class="bodytext">[C:VDLG_StrCom,Prompt_str,[Entr_str],Sign_str/[Ind_n],AsPos_n]</p><ul>	<li class="bodytext">参见 IntComboBox</li>	<li class="bodytext">AsPos：与 IntComboBox 相反，如果可选参数"AsPos"已设置且不等于 0，则此处的返回值表示所选字段的索引。否则，返回值是输入值。</li></ul><p class="bodytext"><strong>StringEditComboBox:</strong></p><p class="bodytext">提供一个可编辑的组合框，可在其中输入字符串。</p><p class="bodytext">[C:VDLG_StrCom,Prompt_str,[Entr_str],Sign_str/[Ind_n]]</p><ul>	<li class="bodytext">参见 IntComboBox</li>	<li class="bodytext">返回值：返回值是输入字符串。</li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Dialog elements for the variable dialog</h3>   
+                
+<p class="bodytext">The following dialog elements are available for the variable dialogs:</p><p class="bodytext"><strong>Horizontal grouping:</strong></p><p class="bodytext">The horizontal grouping provides a framework in which the individual dialog elements are lined up beside each other. Their position must always be defined by a vertical group, which means that all dialog elements in a horizontal grouping must be defined in a vertical group. A horizontal group is defined as follows:</p><p class="bodytext">[C:VDLG_HORZ, Caption_str, DistAbove_n, DistAfter_n, [Dialogelem]]</p><ul>	<li class="bodytext">C: VDLG_HORZ: type definition for horizontal grouping.</li>	<li class="bodytext">Caption: the horizontal grouping's caption. If &quot;Caption&quot; is not an empty string, a frame will be drawn around the horizontal group.</li>	<li class="bodytext">DistAbove: distance from the next dialog element, above the horizontal group.</li>	<li class="bodytext">DistAfter: distance from the next dialog element, below the horizontal group. &quot;DistAfter&quot; and &quot;DistAbove&quot; are specified in pixels.</li>	<li class="bodytext">[Dialogelem]: element array used to define the dialog elements located in the horizontal grouping. This array must only contain elements of the type VDLG_Vert.</li></ul><p class="bodytext"><strong>Vertical grouping:</strong></p><p class="bodytext">The vertical grouping provides a framework in which the individual dialog elements are lined up below each other. The width of the dialog elements is defined by the vertical group. A vertical group is defined as follows:</p><p class="bodytext">[C:VDLG_Vert,Caption_str,[XStart_r,XEnd_r],XPart_r,[Diag],Marg_n]</p><ul>	<li class="bodytext">C:VDLG_Vert: type definition for vertical grouping.</li>	<li class="bodytext">Caption: the vertical grouping's caption. The vertical grouping always has a frame drawn around it.</li>	<li class="bodytext">[XStart,XEnd]: XStart and XEnd define a factor (between 0 and 1) for the width of the vertical group relative to the width of the hierarchically superior dialog. They also define the X-position of the vertical group.</li>	<li class="bodytext">XPart: a factor between 0 and 1 that defines the ratio between the prompted value and the input value for the dialog fields (the text assigned to an input field is called the &quot;prompt&quot;). If XPart=-1, the prompt is positioned above the dialog element.</li>	<li class="bodytext">[Diag]: element array used to define the dialog elements in the vertical grouping.</li>	<li class="bodytext">Marg: an optional parameter that defines the displacement of the dialog elements relative to the edge of the vertical group. This means that the dialog elements contain the &quot;Marg&quot; (margin) distance from both the left-hand and right-hand edge of the vertical group.</li></ul><p class="bodytext"><strong>RealEditFeld:</strong></p><p class="bodytext">Provides an edit box in which you can enter a floating comma number.</p><p class="bodytext">[C:VDLG_Real,Prompt_str,Preset_r,res,res,Places_n]</p><ul>	<li class="bodytext">C:VDLG_Real: RealEdit field type definition.</li>	<li class="bodytext">Prompt: text assigned to the input field.</li>	<li class="bodytext">Preset: Preset value.</li>	<li class="bodytext">res: a space (place) has been reserved here for two optional parameters which are not currently in use. However, these places must not be left empty in the definition (e.g. [C:VDLG_Real,Prompt,Preset,0,0,Places] would be a correct solution but not [C:VDLG_Real,Prompt,Preset,,,Places]).</li>	<li class="bodytext">Point: an optional parameter that defines the number of decimal places in the input field.</li>	<li class="bodytext">Return value: The return value is the input string.</li></ul><p class="bodytext"><strong>IntEditFeld:</strong></p><p class="bodytext">Provides an edit box in which you can enter a whole number.</p><p class="bodytext">[C:VDLG_Int,Promt_str,Preset_n]</p><ul>	<li class="bodytext">C:VDLG_Int: IntEdit field type definition.</li>	<li class="bodytext">Prompt: text assigned to the input field.</li>	<li class="bodytext">Preset: Preset value.</li>	<li class="bodytext">Return value: The return value is the input string.</li></ul><p class="bodytext"><strong>StringEditFeld:</strong></p><p class="bodytext">Provides an edit box in which you can enter text.</p><p class="bodytext">[C:VDLG_Str,Promt_str,Preset_str]</p><ul>	<li class="bodytext">C:VDLG_Str: StringEdit field type definition.</li>	<li class="bodytext">Prompt: text assigned to the input field.</li>	<li class="bodytext">Preset: Preset text.</li>	<li class="bodytext">Return value: The return value is the input string.</li></ul><p class="bodytext"><strong>Text display:</strong></p><p class="bodytext">The system generates a text display. If an empty string is entered instead of text, the text field can also be used to define a space.</p><p class="bodytext">[C:VDLG_Prompt,Prompt_str,Fieldheight_n]</p><ul>	<li class="bodytext">C:VDLG_Prompt: Text display type definition.</li>	<li class="bodytext">Prompt: Field text.</li>	<li class="bodytext">Field height: height at which the text is displayed.</li></ul><p class="bodytext"><strong>IntComboBox:</strong></p><p class="bodytext">Provides a combo box in which you can enter a whole number.</p><p class="bodytext">[C:VDLG_IntCom,Prompt_str,[Entr_n],Sign_n/[Ind_n],0,0,AsVal_b]</p><ul>	<li class="bodytext">C:VDLG_IntCom: IntComboBox type definition.</li>	<li class="bodytext">Prompt: text assigned to the combo box.</li>	<li class="bodytext">[Eintr]: element array with the available list items (in the case of an IntComboBox, the components must be whole numbers).</li>	<li class="bodytext">Sign/[Ind]: here, you have the option of using &quot;Sign&quot; to either set a constraint value, which is contained in the list, directly, or using &quot;Ind&quot; to select a value in a particular list position as a constraint value (the first element in the list is located at position 0).&quot;Sign&quot; and &quot;[Ind]&quot; are optional parameters.</li>	<li class="bodytext">AsVal: if the optional &quot;AsVal&quot; parameter has been set, and does not equal 0, the return value becomes the input. Otherwise, the return value is the index of the selected entry.</li></ul><p class="bodytext"><strong>IntEditComboBox:</strong></p><p class="bodytext">Provides a editable combo box in which you can enter a whole number. Please ensure that the values entered here are whole numbers.</p><p class="bodytext">[C:VDLG_IntComE,Prompt_str,[Entr_n],Sign_n/[Ind_n]]</p><ul>	<li class="bodytext">see IntComboBox</li>	<li class="bodytext">Return value: The return value is the input string.</li></ul><p class="bodytext"><strong>RealComboBox:</strong></p><p class="bodytext">Provides a combo box in which you can enter a floating comma number.</p><p class="bodytext">[C:VDLG_RealCom,Prompt_str,[Entr_r],Sign_r/[Ind_n],0,0,AsVal_b]</p><ul>	<li class="bodytext">see IntComboBox</li></ul><p class="bodytext"><strong>RealEditComboBox:</strong></p><p class="bodytext">Provides a editable combo box in which you can enter a floating comma number.</p><p class="bodytext">[C:VDLG_RealComE,Prompt_str,[Entr_r],Sign_r/[Ind_n]]</p><ul>	<li class="bodytext">see IntComboBox</li>	<li class="bodytext">Return value: The return value is the input string.</li></ul><p class="bodytext"><strong>StringComboBox:</strong></p><p class="bodytext">Provides a combo box in which you can input a string.</p><p class="bodytext">[C:VDLG_StrCom,Prompt_str,[Entr_str],Sign_str/[Ind_n],AsPos_n]</p><ul>	<li class="bodytext">see IntComboBox</li>	<li class="bodytext">AsPos: In contrast to the IntComboBox, the return value here represents the index of the selected field, if the optional parameter &quot;AsPos&quot; has been set and does not equal 0. Otherwise, the return value is the input.</li></ul><p class="bodytext"><strong>StringEditComboBox:</strong></p><p class="bodytext">Provides a editable combo box in which you can enter a string.</p><p class="bodytext">[C:VDLG_StrCom,Prompt_str,[Entr_str],Sign_str/[Ind_n]]</p><ul>	<li class="bodytext">see IntComboBox</li>	<li class="bodytext">Return value: The return value is the input string.</li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

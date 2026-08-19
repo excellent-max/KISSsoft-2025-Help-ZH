@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>主要计算步骤 | Main calculation steps</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Main calculation steps">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11534');expand('11432');expand('11646');expand('11414');expand('9246');highlight('11535')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11534.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11647.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">主要计算步骤</h3>   
+                
+<p class="bodytext">进行此类分析的计算步骤如下所述。实际用于生成缩减刚度矩阵的过程未作描述，因为该过程因每个 FEM 计算机程序而异。请参阅您的 FEM 程序手册以获取更多信息。</p><p class="bodytext"></p><p class="bodytext"><strong>步骤 1：设置计算</strong></p><p class="bodytext">箱体变形计算是一种特殊的系统模块计算。要使用此特殊计算，必须在模型中添加至少一个箱体单元。要在此计算中使用箱体单元，必须在箱体单元属性中勾选相应的复选框。</p><p class="bodytext">在 <span class="menu">计算 </span><span class="menu">&gt; 箱体变形</span> 选项卡中，您可以定义要使用的箱体单元，并输入缩减刚度矩阵文件名、所需收敛精度和最大迭代次数。刚度矩阵文件中所用的单位制可从文件中读取，也可在 <span class="menu">计算</span> 选项卡中手动设置。用于将轴承映射到 FEM 主节点的公差也可在此设置。关于使用这些输入数据的更多信息如下。</p><p class="bodytext">由于 FEM 模型和系统模块模型可能不具有相同的坐标系，因此在模型中正确定位箱体单元非常重要。如果要通过手动将三个 FEM 节点映射到其对应轴承来执行此定位，则必须在箱体单元属性中勾选相应的复选框。要执行定位，应在 <span class="menu">计算</span> 选项卡的表格中选择三个非共线轴承，然后手动设置与其对应的 FEM 主节点 ID。定位完成后，建议在 3D 查看器中通过查看主节点或箱体的 3D 表示（右键单击箱体单元显示）来验证箱体单元的位置。注意，当使用 STEP 模型作为箱体的几何表示时，该模型应与缩减 FEM 刚度矩阵处于同一坐标系，以确保定位后模型正确显示。</p><p class="bodytext">关于软件支持的 FEM 程序以及文件格式要求的更多详细信息，可在相关说明（应要求提供）中找到。</p><p class="bodytext"></p><p class="bodytext"><strong>步骤 2：执行分析</strong></p><p class="bodytext">计算的第一步是检查 FEM 节点到轴承的映射。如果有任何节点未映射，程序会报告所有未映射节点，并显示它们到最近轴承的距离。此时，您需要知道指定节点的位置是否确实与轴承对应。然后您可以决定是继续计算还是取消计算。特定轴承不对应节点的可能原因之一是箱体在系统模块坐标系中的定位不正确。如果是这种情况，则必须验证箱体的定位。如果不是，且 FEM 节点与轴承之间的差异（如映射消息中所报告）不是太大，则可更改映射过程中所用的公差。例如，当 FEM 节点位于轴承边缘而非中间时，就可能发生这种情况。如果继续计算，程序会缩减与已映射节点对应部分的刚度矩阵，从而忽略所有未映射到轴承的节点。计算还会忽略之前在轴承中指定的任何预定义偏移和倾斜值，并将其设为零。算法运行所有 KISSsoft 计算，并根据其结果推导出轴承上的力。程序随后使用这些力计算轴承上的偏移和倾斜（使用 FEM 刚度矩阵）。然后使用新的偏移再次运行 KISSsoft 计算，这可能产生新的轴承力和偏移值。此过程反复迭代，直到力和偏移计算之间达到收敛。在计算过程中，如果箱体刚度较低，有时可能会达到最大允许迭代次数。</p><p class="bodytext"></p><p class="bodytext">无论何种情况，系统都会显示结果窗口，其中包含最后两次迭代的最大差值相对于最后一次迭代最大值的百分比比率，并存储和应用最后一次迭代的结果。注意，为确保算法找到有用的解，应在"最大迭代次数"字段中输入大于 4 的数字。</p><p class="bodytext"></p><p class="bodytext">计算完成后，您可以执行进一步分析。例如，您可以对齿轮执行接触分析，以查看箱体刚度对齿轮单元设计参数的影响。您还可以使用多个箱体单元，并为每个箱体单元加载不同的缩减刚度矩阵。如果您想比较不同箱体设计对齿轮单元设计的影响，这将非常有用。使用此方法计算的每个箱体的结果随后存储在箱体单元中。之后可通过单击箱体单元的"恢复轴承偏移结果"功能（右键单击箱体单元）再次查看这些结果。</p><p class="bodytext">以下功能也可用于处理已映射轴承的偏移（公差保持不变）：</p><ul>	<li class="bodytext">重置轴承偏移：将轴承偏移值设为零。</li>	<li class="bodytext">保存轴承偏移：保存当前偏移值。</li>	<li class="bodytext">恢复轴承偏移：恢复已保存的偏移值。</li></ul><p class="bodytext"></p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Main calculation steps</h3>   
+                
+<p class="bodytext">The calculation steps for performing this kind of analysis are summarized below. The actual process used to generate the reduced stiffness matrix is not described, because it is different for each FEM computer program. Please refer to your FEM program manuals for more information.</p><p class="bodytext"></p><p class="bodytext"><strong>Step 1: Setting up the calculation</strong></p><p class="bodytext">The housing deformation calculation is a special system module calculation. To enable this special calculation to be used, at least one housing element must be added to the model. In order to use a housing element in this calculation, the appropriate checkbox must be set in the housing element properties.</p><p class="bodytext">In the <span class="menu">Calculation </span><span class="menu">&gt; Housing deformation</span> tab, you can define which housing element is to be used and enter the reduced stiffness matrix file name, required convergence accuracy and maximum number of iterations. The system of units used in the stiffness matrix file can either be read from the file, or set manually, in the <span class="menu">Calculation</span> tab. The tolerance used for mapping bearings to FEM master nodes can be also set there. More information about using this input data is provided below.</p><p class="bodytext">As the FEM model and the system module model might not have the same coordinates system, it is important to position the housing element correctly in the model. If you want to perform this positioning by manually mapping three FEM nodes to their corresponding bearings, you must select the appropriate checkbox in the housing element properties. To perform the positioning, you should select three non-colinear bearings in the table in the <span class="menu">Calculation</span> tab and then manually set the FEM master node IDs that correspond to them. After positioning has finished, it is advised to validate the position of the housing element in the 3D viewer by viewing either the master nodes or the 3D representation of the housing (displayed by right-clicking on the housing element). Note that when a STEP model is used for the geometrical representation of the housing, this model should be in the same coordinate system as the reduced FEM stiffness matrix to ensure the model is displayed correctly after positioning.</p><p class="bodytext">You will find more detailed information about the FEM programs supported by the software, and the file format requirements, in the relevant instructions (available on request).</p><p class="bodytext"></p><p class="bodytext"><strong>Step 2: Performing the analysis</strong></p><p class="bodytext">The first step in the calculation is to check the mapping of the FEM nodes to bearings. If any nodes are unmapped, the program reports them all and displays their distance to the closest bearing. At this point, you need to know if the positions of the specified nodes actually correspond to the bearings. You can then decide whether to continue with the calculation or cancel it. One possible reason that specific bearings do not correspond to nodes is that the housing is positioned incorrectly in the system module's coordinates system. If this is the case, the positioning of the housing must be validated. If not, and the difference between FEM nodes and bearings (as reported in the mapping message) is not too big, you can change the tolerance used in the mapping process. This might happen, for example, if the FEM node was positioned at the edge of a bearing instead of in the middle. If you continue the calculation, the program reduces the stiffness matrix for the part that corresponds to the mapped nodes, and therefore ignores all nodes that were not mapped to bearings. The calculation also ignores any predefined offsets and tilting values previously specified in the bearings and sets them to zero. The algorithm runs all the KISSsoft calculations and derives the forces on the bearings from their results. The program then uses these forces to calculate the offsets and tilting on the bearings (using the FEM stiffness matrix). The KISSsoft calculations are then run again with the new offsets, which might result in new bearing forces and offset values. This procedure is repeated iteratively until there is convergence between the forces and offset calculations. During the calculation process, it might sometimes happen that the maximum permitted number of iterations is reached, if a housing has low stiffness.</p><p class="bodytext"></p><p class="bodytext">In any case, the system will display the results window, containing the percentage ratio between the maximum difference from the last two iterations to the maximum value from the last iteration, and store and apply the results from the last iteration. Note that, to ensure the algorithm finds a useful solution, you should input a number that is greater than 4 in the Maximum number of iterations field.</p><p class="bodytext"></p><p class="bodytext">After the calculation has finished, you can perform further analyses. For example, you can perform contact analysis on gears to see the effect of housing stiffness on the gear unit design parameters. You can also use multiple housing elements and load different reduced stiffness matrices for each of them. This can be very useful if you want to compare the effect of different housing designs on the gear unit design. The results for each housing calculated using this method are then stored in the housing element. These results can then be viewed again by clicking on the housing element's &quot;Restore results of bearings' offsets&quot; function (right-click on the housing element).</p><p class="bodytext">The following functions are also available, for handling the offsets of mapped bearings (the tolerances remain the same):</p><ul>	<li class="bodytext">Reset bearings' offsets: set bearing offset values to zero.</li>	<li class="bodytext">Save bearings' offsets: save the current offset values.</li>	<li class="bodytext">Restore bearings' offsets: restore the saved offset values.</li></ul><p class="bodytext"></p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

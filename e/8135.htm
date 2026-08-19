@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>确定轴承游隙尺寸 | Sizing the bearing clearance</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Sizing the bearing clearance">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('8120');expand('9287');expand('9246');highlight('8135')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11109.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8136.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">确定轴承游隙尺寸</h3>   
+                
+<p class="bodytext">轴承游隙 = d_bore - d_shaft</p><p class="bodytext">一般来说，较大的轴承游隙使轴承更稳定，并且能更有效地冷却。但是，这也会导致承载能力降低。</p><ul>	<li class="bodytext"><strong>根据 Niemann 的建议</strong><br>	Niemann《机械工程中的金属轴承》，第 I 卷，表 15/2，[8]。<br>	<br>	对于其他材料，应采用以下值：</li></ul><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="228">			<p class="bodytext">铸铁轴承</p>			</td>			<td width="80">			<p class="bodytext">0.001 <strong>*</strong> d</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="228">			<p class="bodytext">轻金属轴承</p>			</td>			<td width="80">			<p class="bodytext">0.0013 <strong>*</strong> d</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="228">			<p class="bodytext">烧结轴承</p>			</td>			<td width="80">			<p class="bodytext">0.0015 * d</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="228">			<p class="bodytext">塑料轴承</p>			</td>			<td width="80">			<p class="bodytext">0.003 * d</p>			</td>		</tr>	</tbody></table><p class="indent">d : 轴承直径</p><p class="indent"></p><ul>	<li class="bodytext"><strong>根据 ISO 7902 的建议</strong><br>	根据 ISO 7902 第 3 部分表 4 的《机械工程中的金属轴承》建议，[69]。<br>	在此尺寸计算方法中，您可以使用根据 ISO 7902 的建议，或者根据预定义的输出温度计算游隙（仅当使用润滑剂散热时）。</li>	<li class="bodytext"><strong>根据 DIN 31652 的建议</strong><br>	根据 ISO 7902 第 3 部分表 4 的《机械工程中的金属轴承》建议，[69]，因为 DIN 标准不包含建议值。<br>	在此尺寸计算方法中，您可以使用根据 ISO 7902 的建议，或者根据预定义的输出温度计算游隙（仅当使用润滑剂散热时）。</li>	<li class="bodytext"><strong>根据 DIN 31657 的建议</strong><br>	根据 DIN 31657 第 4 部分《机械工程中的滑动轴承》建议，[70]。<br>	在此尺寸计算方法中，您可以使用根据 DIN 31657 的建议，或者根据输入的输出温度计算游隙。</li>	<li class="bodytext"><strong>根据 K. Spiegel 的建议</strong><br>	根据 K. Spiegel 的游隙建议：Goettner 方程<br>	相对轴承游隙 = (2.5+50.0/D)/1000.0 "其中 d 单位为 [mm]"<br>	轴承游隙（mm）：(2.5+50.0/D)/1000.0*D<span lang="EN-US" style="font-size:11.0pt"><span style='font-family:"Calibri",sans-serif'><span style="color:#0070c0"> </span></span></span></li></ul>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Sizing the bearing clearance</h3>   
+                
+<p class="bodytext">Bearing clearance = d_bore - d_shaft</p><p class="bodytext">In general, a larger bearing clearance makes the bearing more stable and allows it to cool more effectively. However, it also results in reduced load capacity.</p><ul>	<li class="bodytext"><strong>Suggestion according to Niemann</strong><br />	Proposal for metal bearings in mechanical engineering according to Niemann, Volume I, Table 15/2, [8].<br />	<br />	The following values should be applied for other materials:</li></ul><table border="1" cellpadding="1" cellspacing="1">	<tbody>		<tr align="left" valign="top">			<td width="228">			<p class="bodytext">Cast iron bearing</p>			</td>			<td width="80">			<p class="bodytext">0.001 <strong>*</strong> d</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="228">			<p class="bodytext">Light metal bearing</p>			</td>			<td width="80">			<p class="bodytext">0.0013 <strong>*</strong> d</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="228">			<p class="bodytext">Sintered bearing</p>			</td>			<td width="80">			<p class="bodytext">0.0015 * d</p>			</td>		</tr>		<tr align="left" valign="top">			<td width="228">			<p class="bodytext">Plastic bearing</p>			</td>			<td width="80">			<p class="bodytext">0.003 * d</p>			</td>		</tr>	</tbody></table><p class="indent">d : Bearing diameter</p><p class="indent"></p><ul>	<li class="bodytext"><strong>Proposal according to ISO 7902</strong><br />	Proposal for metal bearings in mechanical engineering according to ISO 7902, Part 3, Table 4, [69].<br />	In this sizing method, you can either use the proposal according to ISO 7902 or calculate the clearance from a predefined output temperature (only where the lubricant is used to dissipate the heat).</li>	<li class="bodytext"><strong>Proposal according to DIN 31652</strong><br />	Proposal for metal bearings in mechanical engineering according to ISO 7902, Part 3, Table 4, [69], as the DIN standard does not contain a proposed value.<br />	In this sizing method, you can either use the proposal according to ISO 7902 or calculate the clearance from a predefined output temperature (only where the lubricant is used to dissipate the heat).</li>	<li class="bodytext"><strong>Proposal according to DIN 31657</strong><br />	Proposal for plain bearings in mechanical engineering according to DIN 31657, Part 4, [70].<br />	In this sizing method you can either use the proposal according to DIN 31657 or calculate the clearance from the entered output temperature.</li>	<li class="bodytext"><strong>Proposal according to K. Spiegel</strong><br />	Proposal for clearance according to K. Spiegel: Goettner equation<br />	Relative bearing clearance = (2.5+50.0/D)/1000.0 &quot;with d [mm]&quot;<br />	Bearing clearance in mm: (2.5+50.0/D)/1000.0*D<span lang="EN-US" style="font-size:11.0pt"><span style="font-family:&quot;Calibri&quot;,sans-serif"><span style="color:#0070c0"> </span></span></span></li></ul>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>特征频率 | Characteristic frequencies</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Characteristic frequencies">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11432');expand('11646');expand('11414');expand('9246');highlight('11647')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11535.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9286.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">特征频率</h3>   
+                
+<p class="bodytext">此特殊计算能够收集所建模系统的滚动轴承和齿轮副（圆柱齿轮、三齿轮和四齿轮轮系、行星齿轮和锥齿轮）的特征频率。这些值显示在结果窗口的两幅图中以及特殊报告中。此外，还提供了多种详细分析工具，以及供用户输入来自其他组件的频率。</p><p class="bodytext"></p><p class="bodytext">此特殊计算的用户界面分为两部分：<span class="menu">常规</span>和<span class="menu">附加数据</span>。</p><p class="bodytext"><span class="menu">常规</span>区域包含基本设置：</p><p class="bodytext"><span class="menu">参考转速：</span>用于选择参考转速。您可以从边界条件或轴中选择。</p><p class="bodytext"><span class="menu">参考轴或参考边界：</span>显示现有模型中所有其他频率所参照的轴/边界。参考转速显示在报告和结果窗口中。它也可以在<span class="menu">频域</span>图中的<span class="menu">图形 &gt; 特征频率</span>下显示。如果<span class="menu">单位选择</span>字段设置为<span class="menu">阶次 – 按参考转速归一化</span>，也会使用参考转速。如果分析中存在恒定频率（模态分析结果、齿轮临界转速、来自其他组件的频率），报告将输出以红色标记的临界频率。这些临界频率等于参考转速。如果选择了<span class="menu">考虑参考转速容差范围</span>选项，则在输出临界频率时将考虑参考转速容差范围。</p><p class="bodytext"><span class="menu">转速范围（最小/最大）n：</span>用于<span class="menu">频域</span>图中 X 轴的绘制，以及定义输出临界或相似频率的区间。</p><p class="bodytext"><span class="menu">谐波数量：</span>在报告和两幅图中均予以考虑。</p><p class="bodytext"><span class="menu">单位选择：</span>使用此选项，您可以将默认单位（Hertz – Hz）更改为每分钟循环次数（cpm）。每分钟循环次数相当于 60 Hz。第三个选项是<span class="menu">按参考转速归一化的阶次</span>。如果选择此选项，所有频率都按参考转速归一化。参考转速可以来自轴或来自边界条件。</p><p class="bodytext">您还可以在计算过程中考虑<span class="menu">齿轮特征频率</span>。在此，您可以指定是计算所有齿轮特征频率还是仅计算其中一部分。此外，可以选择不同齿轮级的齿轮特征频率。有关齿轮特征频率的更多信息（参见"<a class="referencetopic-shabschnitt" href="11630.htm" target="_self">齿轮啮合频率</a>"章）。</p><p class="bodytext">轴承特征频率也提供相同的计算选项。此外，可以考虑特定轴承的频率。</p><p class="bodytext"><span class="menu">轴频率</span>选项仅表示轴的旋转频率。可以选择考虑单个轴的频率。</p><p class="bodytext"></p><p class="bodytext">以下分析选项在<span class="menu">附加数据</span>中可用：</p><p class="bodytext"><span class="menu">输出相似频率：</span> 如果激活此选项，则会输出位于用户自定义的相似频率公差范围内的频率。结果在报告的<span class="menu">相似频率</span>章节中给出。此选项考虑的频率包括齿轮和轴承的特征频率、轴的旋转频率，以及来自<span class="menu">包含来自其他组件的频率</span>选项的用户自定义频率。此外，还考虑<span class="menu">谐波数量</span>中定义的更高谐波处的频率。</p><p class="bodytext"><span class="menu">考虑参考转速容差范围：</span>此选项考虑参考转速容差范围，可以作为参考转速的百分比或作为绝对值。这可以在<span class="menu">频域</span>图中启用容差范围绘制，并在结果窗口和报告中输出该范围。容差范围也用于标记报告中显示的临界频率。</p><p class="bodytext"><span class="menu">包含模态分析的结果：</span>考虑<span class="menu">模态分析 </span>特殊计算的结果（参见"<a class="referencetopic-shabschnitt" href="11433.htm" target="_self">模态分析</a>"章）。模态分析的频率在<span class="menu">频域</span>图中显示为水平线。这些值也显示在报告中。在报告中，显示特定特征频率与固有频率相交处的参考转速值。如果该值接近参考转速，则标记为红色，因为这可能是一个临界点。</p><p class="bodytext"><span class="menu">包含根据 ISO 6336-1/ISO 10300-1 的齿轮临界转速：</span>如果激活此选项，则该值作为水平线包含在<span class="menu">频域</span>图中。该值也显示在报告中，并进行共振分析，显示特定特征频率与临界转速频率相交处的参考转速值。如果该值接近参考转速，则标记为红色。</p><p class="bodytext"><span class="menu">包含来自其他组件的频率：</span>通过选择此选项，您可以输入附加频率。该输入可以作为对特定轴或边界条件的参考值。在这种情况下，输入阶次或倍率，并在参考转速下自动计算频率。作为<span class="menu">参考值频率</span>输入的频率取决于轴转速或边界条件。这些值显示在图中和结果中。<span class="menu">输出相似频率</span>选项也考虑这些值。例如，电动机的极数或槽数可以作为对输入–电机轴的参考输入。这些值也可以作为绝对频率值输入，该值不随参考转速变化。绝对值在<span class="menu">频域</span>图中显示为水平线，并且在<span class="menu">输出相似频率</span>中不予考虑。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Characteristic frequencies</h3>   
+                
+<p class="bodytext">This special calculation enables the collection of the characteristic frequencies of rolling bearings and gear pairs (cylindrical gears, three and four gear trains, planetary gears, and bevel gears) of a modeled system. The values are shown in two diagrams in the results window and in the special report. In addition, several tools for detailed analysis are available as well as the user input of the frequencies from other components.</p><p class="bodytext"></p><p class="bodytext">The user interface of this special calculation is divided into two parts: <span class="menu">General</span> and <span class="menu">Additional data</span>.</p><p class="bodytext">The <span class="menu">General</span> area contains the basic settings:</p><p class="bodytext"><span class="menu">Reference speed: </span>For selecting the reference speed. You can choose from boundary conditions or from shafts.</p><p class="bodytext"><span class="menu">Reference shaft or Reference boundary: </span>Presents the shaft/boundary from the existing model to which all other frequencies are referenced. The reference speed is displayed in the report and in the results window. It can also be displayed in the <span class="menu">Frequency domain</span> diagram under <span class="menu">Graphic &gt; Characteristic Frequencies</span>. The reference speed is also used if the <span class="menu">Unit selection</span> field is set to <span class="menu">Order – normalized by the reference speed</span>. If constant frequencies are present in the analysis (results from the modal analysis, gear critical speed, frequencies from other components) the report will output the critical frequencies which are marked in red color. These critical frequencies are equal to the reference speed. If the <span class="menu">Consider reference speed tolerance range</span> option is selected, the reference speed tolerance range will be taken into account for outputting the critical frequencies.</p><p class="bodytext"><span class="menu">Speed range (min/max) n: </span> Is used in the plot of the X-axis in the <span class="menu">Frequency domain</span> diagram, and for defining the interval in which the critical or similar frequencies are output.</p><p class="bodytext"><span class="menu">Number of harmonics: </span> Is considered in the report and in both diagrams.</p><p class="bodytext"><span class="menu">Unit selection: </span> With this option you can change the default unit (Hertz – Hz) to cycles per minute (cpm). Cycles per minute is equivalent to 60 Hz. The third option is, <span class="menu">Order normalized by the reference speed</span>. If you select this option, all the frequencies are normalized by the reference speed. The Reference speed can be from shaft or from boundary condition.</p><p class="bodytext">You can also consider <span class="menu">Gear characteristics frequencies</span> during the calculation. Here, you can specify whether all gear characteristics frequencies to be are calculated or only a selection of them. Additionally, gear characteristic frequencies for different gear stages can be selected. For more information about characteristic gear frequencies (see chapter <a class="referencetopic-shabschnitt" href="11630.htm" target="_self">Gear mesh frequencies</a>).</p><p class="bodytext">The same calculation options are available for Bearing characteristic frequencies. Also, frequencies for specific bearings can be considered.</p><p class="bodytext">The <span class="menu">Shaft frequencies</span> option represents only the rotational frequency of a shaft. The consideration of the frequency of an individual shaft can be selected.</p><p class="bodytext"></p><p class="bodytext">The following analysis options are available in <span class="menu">Additional data</span>:</p><p class="bodytext"><span class="menu">Output similar frequencies: </span> If this option is activated, frequencies are output that are inside the user-defined similar frequencies tolerance range. The results are given in the <span class="menu">Similar frequencies</span> chapter in the report. The frequencies considered in this option are the characteristic frequencies of gears, bearings, rotational frequencies of shafts, and user-defined frequencies from the <span class="menu">Include frequencies from other components</span> option. The frequencies at higher harmonics defined in <span class="menu">Number of harmonics</span> taken into account.</p><p class="bodytext"><span class="menu">Consider reference speed tolerance range: </span> This option considers the reference speed tolerance range, either as a percentage of the reference speed or as an absolute value. This enables the tolerance range plot in the <span class="menu">Frequencies domain</span> diagram and outputs the range in the result window and in the report. The tolerance range is also used to mark the critical frequencies shown in the report.</p><p class="bodytext"><span class="menu">Include results from modal analysis: </span> Takes into account the results of the <span class="menu">Modal analysis </span>special calculation (see chapter <a class="referencetopic-shabschnitt" href="11433.htm" target="_self">Modal analysis</a>). The frequencies from the modal analysis are shown as horizontal lines in the <span class="menu">Frequencies domain</span> diagram. The values are also shown in the report. In the report, the values of the reference speed at which the specific characteristic frequencies intersect the eigenfrequencies are shown. If this value is close to the reference speed, it is marked red, as this might be a critical point.</p><p class="bodytext"><span class="menu">Include gear critical speed according to ISO 6336-1/ISO 10300-1: </span> If this option is activated, this value is included as horizontal line in the <span class="menu">Frequencies domain</span> diagram. The value is also shown in the report and the resonance analysis is conducted, showing the reference speed value at which the specific characteristic frequencies intersect the critical speed frequency. If this value is close to the reference speed, it is marked red.</p><p class="bodytext"><span class="menu">Include frequencies from other components: </span> By choosing this option, you have the possibility  to input additional frequencies. This input can be as a reference value to specific shaft or boundary conditions. In this case, the order or multiplier is input and the frequency is automatically calculated at the reference speed. The frequencies input as <span class="menu">Reference value frequencies</span> are dependent on the shaft speed or the boundary condition. The values are shown in the diagrams and in the results. The <span class="menu">Output similar frequencies</span> option also takes these values into account. For example, the input of the pole or slot number of an electric motor can be entered as a reference to an input–motor shaft. The values can also be input as absolute value frequencies which are constant with the reference speed. The absolute values are shown as a horizontal line in the <span class="menu">Frequency domain</span> diagram and are not considered in <span class="menu">Output similar frequencies</span>.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

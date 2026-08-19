@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>轴计算模块中的设置 | Settings in the shaft calculation module</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Settings in the shaft calculation module">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11594');expand('11432');expand('11646');expand('11414');expand('9246');highlight('11673')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11675.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11674.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">轴计算模块中的设置</h3>   
+                
+<p class="bodytext">在执行强制响应分析之前，轴计算模块中有一些重要的设置必须详细考虑。这些设置会对结果产生显著影响。这里简要提及其中一些。</p><p class="bodytext"><span class="menu">轴上的齿轮： </span>在<strong>基本数据</strong>选项卡中提供了四种轴上的齿轮定义类型：</p><ol>	<li class="bodytext">仅作为载荷施加的齿轮</li>	<li class="bodytext">作为质量的齿轮</li>	<li class="bodytext">作为质量和刚度的齿轮</li>	<li class="bodytext">根据 ISO 6336-1 作为质量和刚度的齿轮</li></ol><p class="bodytext">根据所选齿轮定义类型，在强制响应分析中会在内部考虑相应的设置来定义齿轮。</p><p class="bodytext">在第一种情况下，轴计算分析中忽略齿轮质量。但是，在系统动力学方程中，它必须作为点质量考虑（以所谓的傅里叶矩阵形式，它将轴的响应与齿轮体动力学联系起来）。在第二种情况下，齿轮在轴计算响应中作为点质量考虑，但在傅里叶矩阵中忽略。在最后一种情况下，<span class="menu">齿轮作为质量和刚度</span>，齿轮单元被视为轴的一部分，其效应集成到轴中。因此，它在傅里叶矩阵中被忽略。</p><p class="bodytext">如果任何轴计算中的齿轮定义与其他轴计算中的定义不同，则在强制响应计算结束时显示警告消息。该定义也可以在系统模块的<span class="menu">系统数据 </span>选项卡中设置一次，以确保其对所有齿轮一致。</p><p class="bodytext"><span class="menu">滚动轴承计算： </span>在轴计算模块的<span class="menu">滚动轴承</span>选项卡中，您可以为计算方法选择以下设置之一：</p><ol>	<li class="bodytext">刚度：不计算</li>	<li class="bodytext">刚度：ISO/TS 16281</li></ol><p class="bodytext">该定义也可以在系统模块的<span class="menu">系统数据</span>选项卡中设置一次，以确保其对所有滚动轴承一致。如果选择<span class="menu">刚度：不计算</span>，则在 KISSsoft 中考虑非常大的刚度系数。强制响应计算结束时显示带有此信息的警告消息。此外，某个轴计算中滚动轴承刚度的选择与其他轴计算不同，会导致另一条警告消息。</p><p class="bodytext"></p><p class="bodytext"><span class="menu">常规： </span>以下选项对强制响应分析的结果有贡献：</p><ol>	<li class="bodytext">考虑重量</li>	<li class="bodytext">考虑陀螺效应</li>	<li class="bodytext">考虑剪切引起的变形（Timoshenko 梁）</li></ol><p class="bodytext">前两个项目也可以在系统模块的<span class="menu">系统数据 </span>选项卡中设置，以确保它们对所有轴计算一致。</p><p class="bodytext"></p><p class="bodytext"><span class="menu">支承和轴承： </span>定义轴承时，刚度系数、阻尼系数和施加的边界条件会对强制响应分析结果产生显著影响。此外，在轴承中，阻尼系数可以由用户手动指定。</p><p class="bodytext"><span class="menu">文档点： </span>强制响应分析的某些输出类型需要在轴上有一个文档点。实际上，文档点指定了轴上要求某些轴输出的规定测量点。这一事实将在<span class="menu">图形</span>章节<a class="referencetopic-shabschnitt" href="11601.htm" target="_self">图形</a>中更详细地解释。如果文档点位于轴外，则会显示错误消息。同样的规则也适用于轴上的耦合位置。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Settings in the shaft calculation module</h3>   
+                
+<p class="bodytext">There are some important settings in the shaft calculation module which must be taken into account in detail before performing a forced response analysis. These settings can have a significant effect on the results. Some of them are briefly mentioned here.</p><p class="bodytext"><span class="menu">Gear on shaft: </span>Four types of definition for gears on a shaft are available in the <strong>Basic data</strong> tab:</p><ol>	<li class="bodytext">Gears as load applications only</li>	<li class="bodytext">Gears as mass</li>	<li class="bodytext">Gears as mass and stiffness</li>	<li class="bodytext">Gears as mass and stiffness acc. to ISO 6336-1</li></ol><p class="bodytext">According to the selected type of gear definition, the corresponding settings are considered internally in the forced response analysis to define the gears.</p><p class="bodytext">In the first case, the gear mass is neglected in the shaft calculation analysis. However, in the system dynamic equations, it is to be taken into account as a point mass (in the form of a so-called Fourier matrix, which relates the response of the shafts to the gear body dynamics). In the second case, the gear is taken into account as a point mass in the shaft calculation response, but neglected in the Fourier matrix. In the last case, <span class="menu">Gear as mass and stiffness</span>, the gear element is considered as part of the shaft and its effect is integrated into the shaft. For this reason, it is neglected in the Fourier matrix.</p><p class="bodytext">If the definition of the gear in any shaft calculation differs from the definition in other shaft calculations, a warning message is displayed at the end of the forced response calculation. This definition can also be set once in the <span class="menu">System data </span> tab in the system module to ensure it is consistent for all gears.</p><p class="bodytext"><span class="menu">Rolling bearings calculation: </span> In the <span class="menu">Rolling bearing</span> tab in the shaft calculation module, you can select one of the following settings for the calculation method:</p><ol>	<li class="bodytext">Stiffness: Not calculated</li>	<li class="bodytext">Stiffness: ISO/TS 16281</li></ol><p class="bodytext">This definition can also be set once, in the <span class="menu">System data</span> tab in the system module, to ensure it is consistent for all rolling bearings. If <span class="menu">Stiffness: Not calculated</span> is selected, a very large stiffness coefficient is considered in KISSsoft. A warning message with this information is displayed at the end of the forced response calculation. In addition, selections of the stiffness of the rolling bearings in a shaft calculation different from other shaft calculations results in another warning message.</p><p class="bodytext"></p><p class="bodytext"><span class="menu">General: </span> The following options contribute to the results of the forced response analysis:</p><ol>	<li class="bodytext">Consider weight</li>	<li class="bodytext">Consider gyroscopic effect</li>	<li class="bodytext">Consider deformation due to shearing (Timoshenko beam)</li></ol><p class="bodytext">The first two items can also be set in <span class="menu">System data </span> tab in the system module to ensure they are consistent for all shaft calculations.</p><p class="bodytext"></p><p class="bodytext"><span class="menu">Supports and Bearings: </span> When defining bearings, the stiffness coefficients, the damping coefficients and the imposed boundary conditions can have significant effect on the forced response analysis results. In addition, in the bearings, the damping coefficients can be manually specified by the user.</p><p class="bodytext"><span class="menu">Documentation points: </span> Some output types of the forced response analysis require a documentation point on a shaft. In fact, documentation points specify prescribed measuring points on the shafts where certain shaft outputs are demanded. This fact will be explained in greater detail in the <span class="menu">Graphics</span> section <a class="referencetopic-shabschnitt" href="11601.htm" target="_self">Graphics</a>. If a documentation point is located outside of a shaft, an error message is shown. The same rule holds also for the coupling locations on the shafts.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

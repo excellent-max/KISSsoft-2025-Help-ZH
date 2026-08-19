@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>零件形状的选择 | Selection of the part form</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Selection of the part form">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7694');expand('7693');expand('7681');expand('9291');expand('9246');highlight('7695')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7694.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="7697.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">零件形状的选择</h3>   
+                
+<p class="bodytext">零件形状的选择：您可以选择杆形、壳形或块形零件。它们各自具有不同的应力分量或应力类型，以及不同的索引。如果应用局部概念，通常存在块形零件。所选的零件形状会影响应力分量的数据输入。</p><div class="objectWrapper" data-id="5ba0bcd8054a8" data-type="image" data-caption="Hauptmaske für den Nachweis mit örtlichen Spannungen"><p class="bodytext"><img data-id="5ba0bcd8054a8" src="48-k12_basisdaten_small.png" style="height:297px; width:560px"></p><p class="figcaption" data-id="5ba0bcd8054a8">图 57.1：局部应力校核的主界面</p></div><p class="bodytext"></p><p class="bodytext">杆形零件：以下与零件相关的坐标系适用于杆形零件，即杆、梁和轴：x 轴位于杆的轴线上，y 轴和 z 轴是截面的主惯性轴，规定方式需使惯性矩满足 Iy &gt; Iz。</p><p class="bodytext">对于平面（扁平）零件，即圆盘、板和壳体，在校核点应使用以下与零件相关的坐标系：X 轴和 Y 轴位于平面内，Z 轴在厚度方向上垂直于该平面。Z 方向上的正应力和剪切应力应可忽略不计。</p><p class="bodytext">块形零件：适用与体积相关的坐标系。需要计算主应力 σ1、σ2 和 σ3。在 3D 零件自由表面上的校核点 W 处，主应力 σ1 和 σ2 应沿表面方向作用，主应力 σ3 垂直于它们指向零件内部。通常，对于所有应力，存在一个垂直于表面的应力梯度和两个沿表面方向的应力梯度。但是，在计算中只能考虑垂直于表面的 σ1 和 σ2 的应力梯度，而不能考虑在表面的两个方向上 σ1 和 σ2 的应力梯度，也不能考虑 σ3 的任何应力梯度。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Selection of the part form</h3>   
+                
+<p class="bodytext">Selection of the part form: you can choose parts that are rod-shaped, shell-shaped or block-shaped. They each have different stress components or stress types, and different indexing. If the local concept is applied, block-shaped parts are usually present. The selected part form influences the data input for the stress components.</p><div class="objectWrapper" data-id="5ba0bcd8054a8" data-type="image" data-caption="Hauptmaske für den Nachweis mit örtlichen Spannungen"><p class="bodytext"><img data-id="5ba0bcd8054a8" src="48-k12_basisdaten_small.png" style="height:297px; width:560px" /></p><p class="figcaption" data-id="5ba0bcd8054a8">Figure 57.1: Main screen for the proof with local stresses</p></div><p class="bodytext"></p><p class="bodytext">Rod-shaped parts: the following part-related coordinates system applies, for rod-shaped parts, i.e. rods, beams and shafts: The x-axis lies in the rod axis, and the y- and z-axes are the main axes of the cross section, and need to be specified in such a way that Iy &gt; Iz applies for the moment of inertia.</p><p class="bodytext">For planiform (flat) parts, i.e. discs, plates and shells, the following part-related coordinates system should apply in the proof point: the X- and Y-axes lie in the plane, and the Z-axis is vertical to it in the direction of thickness. The normal stress and the shear stresses in the direction of Z should be negligible.</p><p class="bodytext">Block-shaped parts: volume-related coordinates systems apply. The primary stresses σ1, σ2 and σ3 need to be calculated. In the proof point W on the free surface of a 3D part, the primary stresses σ1 and σ2 should act in the direction of the surface and the primary stress σ3 points into the interior of the part, vertically to them. Generally, there is one stress gradient that runs vertically to the surface, and two stress gradients that run in the direction of the surface, for all stresses. However, only the stress gradients for σ1 and σ2, running vertically to the surface, can be taken into account in the calculation, and not the stress gradients for σ1 and σ2 in both directions on the interface and none of the stress gradients for σ3.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

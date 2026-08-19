@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>公差带 | Tolerance field</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Tolerance field">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11621');expand('8183');expand('9287');expand('9246');highlight('8282')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8280.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9793.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">公差带</h3>   
+                
+<p class="bodytext">轴承游隙等级的定义尚未对轴承游隙给出明确说明，因为只为轴承游隙等级定义了一个数值范围。<span class="menu">最小值</span> 和 <span class="menu">最大值</span> 选项定义该范围的上限和下限，而 <span class="menu">平均值</span> 是（径向）轴承游隙的 <span class="menu">最大值</span> 和 <span class="menu">最小值</span> 的算术平均值。</p><p class="bodytext"><strong>工作轴承游隙</strong> 使用所选的轴承游隙等级（例如 "C0"）、所选公差（例如 "平均值"）和工作条件（即转速和温度）来定义。对于每个滚动轴承，工作游隙的计算将在下文描述。从下一张图（参见图 25.8）开始，计算中引入以下变量：</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd95b359" data-type="image" data-caption="Für die Berechnung des Lagerspiels verwendete Durchmesser"><p class="bodytext"><img data-id="5ba0bcd95b359" height="297" src="11055.png" width="366"></p><p class="figcaption" data-id="5ba0bcd95b359">图 25.8：用于计算轴承游隙的直径</p></div><ul>	<li class="bodytext">轴的内径和外径。<img src="11056.png"></li>	<li class="bodytext">轮毂的内径和外径。如果轴承是连接元件，则这些值代表外轴的内径和外径。为简单起见，此处术语 "箱体" 用于表示箱体或外轴（如果存在）。<img src="11057.png"></li>	<li class="bodytext">轴承的内径和外径，以及内、外滚道的直径。<img src="11058.png"><img src="11059.png"></li></ul><p class="bodytext"><br>所有直径值均代表实际直径，即它们考虑了各零件的偏差。计算步骤如下：</p><ul>	<li class="bodytext">滚道偏差取自相应的表（例如公差 "PN"），用于内圈 ΑΒ<sub>i</sub> 和外圈 ΑΒ<sub>o</sub>。</li>	<li class="bodytext">轴的偏差 Α<sub>w</sub> 和箱体的偏差 Α<sub>n</sub> 根据用户定义的数据（例如 "k6"）计算。您可以直接输入相应的偏差，也可以从列表框中选择公差带（列表包含最常见的公差带）。或者，您可以通过单击 "自定义输入"（例如 ‘k6’）手动输入公差带。</li>	<li class="bodytext">过盈量在内圈 Uwi 和外圈 U<sub>wo</sub> 上计算。</li></ul><p class="bodytext" style="margin-left:80px"><img height="48" src="11062.png" width="107"></p><ul>	<li class="bodytext">根据 DIN 7190，过盈量减去数值 0.4*(<em class="emphasis">R</em><span class="subscript-italic">zA</span><em class="emphasis"> </em>+ <em class="emphasis">R</em><span class="subscript-italic">zB</span>)。此时，<em class="emphasis">R</em><span class="subscript-italic">zA </span>和 <em class="emphasis">R</em><span class="subscript-italic">zB</span> 是接触体的表面粗糙度（A：滚动轴承套圈，B：轴/轮毂）。假设滚动轴承套圈的粗糙度远小于轴/轮毂的粗糙度。因此，滚动轴承套圈的粗糙度不予考虑（<em class="emphasis">R</em><span class="subscript-italic">zA</span> = 0）。</li></ul><p class="bodytext" style="margin-left:80px"><img src="11066.png" style="height:48px; width:163px"></p><ul>	<li class="bodytext">考虑温度的影响，</li></ul><p class="bodytext" style="margin-left:80px"><img src="11067.png" style="height:144px; width:249px"><br><br>其中 <em>α</em><sub><span class="subscript-italic">s</span></sub>、<em>α</em><sub><span class="subscript-italic">h</span></sub>、<em>α</em><span class="subscript-italic">b</span> 是轴、箱体和轴承的热膨胀系数，<em>Τ</em><sub><span class="subscript-italic">s</span></sub><em>Τ</em><sub><span class="subscript-italic">h</span></sub><em>Τ</em><sub><span class="subscript-italic">R</span></sub><em> </em> 是轴、箱体和参考温度，<em class="emphasis">d</em><sub><span class="subscript-italic">nom</span></sub>、<em class="emphasis">D</em><sub><span class="subscript-italic">nom</span></sub> 是目录中定义的轴承公称直径。</p><ul>	<li class="bodytext">如果条件 A 适用，则对内圈进行过盈配合计算；如果条件 B 适用，则对外圈进行过盈配合计算，同时考虑工作转速。</li></ul><p class="bodytext" style="margin-left:80px"><img src="11068.png"></p><ul>	<li class="bodytext">过盈配合中产生的压力会改变轴承套圈的工作直径，因此也会使公称轴承游隙产生 ΔPd 的变化。</li></ul><p class="hint">注意</p><p class="bodytext">您在公差带中所做的选择对轴承的整体行为没有影响。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Tolerance field</h3>   
+                
+<p class="bodytext">The definition of the bearing clearance class does not yet provide a definitive statement about bearing clearance because only a range of values has been defined for the bearing clearance class. The <span class="menu">Minimum</span> and <span class="menu">Maximum</span> options define the upper and lower limits of the range, whereas the <span class="menu">Mean value</span> is the arithmetical average of the <span class="menu">Maximum</span> and <span class="menu">Minimum</span> for (radial) bearing clearance.</p><p class="bodytext">The <strong>Operating bearing clearance</strong> is defined using the selected bearing clearance class (e.g. &quot;C0&quot;), the selected tolerance (e.g. &quot;mean value&quot;) and the working conditions, i.e. speed and temperature. For every rolling bearing, the calculation of operating clearance is described below. Starting from the next figure (see Figure 25.8), the following variables are introduced in the calculation:</p><p class="bodytext"></p><div class="objectWrapper" data-id="5ba0bcd95b359" data-type="image" data-caption="Für die Berechnung des Lagerspiels verwendete Durchmesser"><p class="bodytext"><img data-id="5ba0bcd95b359" height="297" src="11055.png" width="366" /></p><p class="figcaption" data-id="5ba0bcd95b359">Figure 25.8: Diameters used to calculate bearing clearance</p></div><ul>	<li class="bodytext"><img src="11056.png" /> Internal and external diameter of the shaft.</li>	<li class="bodytext"><img src="11057.png" /> Internal and external diameter of the hub. If the bearing is a connecting element, then these values represent the internal and external diameter of the external shaft. For simplicity's sake, the term &quot;housing&quot; is used here to mean either the housing or the external shaft (if present).</li>	<li class="bodytext"><img src="11058.png" /> Internal and external diameter of the bearing, and <img src="11059.png" /> for the diameter of the internal and external outer raceway.</li></ul><p class="bodytext"><br />All diameter values represent actual diameters, i.e. they take the allowance for each part into account. The calculation steps are as follows:</p><ul>	<li class="bodytext">The ring race allowance is taken from the corresponding table (e.g. for tolerance &quot;PN&quot;), for the inner ring ΑΒ<sub>i</sub> and the outer ring ΑΒ<sub>o</sub>.</li>	<li class="bodytext">The allowance for the shaft, Α<sub>w</sub>, and housing, Α<sub>n</sub>, are calculated from the user-defined data (e.g. &quot;k6&quot;). You can either input the corresponding allowance directly or select the tolerance field from a selection list (the most commonly occurring tolerance fields are included in the list). Alternatively, you can input the tolerance field manually by clicking &quot;Own input&quot; (e.g. ‘k6’).</li>	<li class="bodytext">The interference is calculated on the inner ring Uwi and on the outer ring U<sub>wo</sub>.</li></ul><p class="bodytext" style="margin-left:80px"><img height="48" src="11062.png" width="107" /></p><ul>	<li class="bodytext">According to DIN 7190, the interference is reduced by the value 0.4*(<em class="emphasis">R</em><span class="subscript-italic">zA</span><em class="emphasis"> </em>+ <em class="emphasis">R</em><span class="subscript-italic">zB</span>). In this case, <em class="emphasis">R</em><span class="subscript-italic">zA </span>and <em class="emphasis">R</em><span class="subscript-italic">zB</span> are the surface roughness of the contact bodies (A: rolling bearing ring, B: shaft/hub). It is assumed that the roughness of the rolling bearing rings is much less than the roughness of the shaft/hub. For this reason, the roughness of the rolling bearing rings is not taken into account (<em class="emphasis">R</em><span class="subscript-italic">zA</span> = 0).</li></ul><p class="bodytext" style="margin-left:80px"><img src="11066.png" style="height:48px; width:163px" /></p><ul>	<li class="bodytext">The effect of temperature is taken into account,</li></ul><p class="bodytext" style="margin-left:80px"><img src="11067.png" style="height:144px; width:249px" /><br /><br />where <em>α</em><sub><span class="subscript-italic">s</span></sub>, <em>α</em><sub><span class="subscript-italic">h</span></sub>, <em>α</em><span class="subscript-italic">b</span> is the thermal expansion coefficient of the shaft, housing and bearing, <em>Τ</em><sub><span class="subscript-italic">s</span></sub><em>Τ</em><sub><span class="subscript-italic">h</span></sub><em>Τ</em><sub><span class="subscript-italic">R</span></sub><em> </em> are the shaft, housing and reference temperatures and <em class="emphasis">d</em><sub><span class="subscript-italic">nom</span></sub>, <em class="emphasis">D</em><sub><span class="subscript-italic">nom</span></sub> is the nominal diameter of the bearing as defined in the catalog.</p><ul>	<li class="bodytext">An interference fit calculation is performed for the inner ring if condition A applies and for the outer ring if condition B applies, taking into account the operating speed as well.</li></ul><p class="bodytext" style="margin-left:80px"><img src="11068.png" /></p><ul>	<li class="bodytext">The pressure generated in the interference fit changes the operating diameter of the bearing races, and therefore also causes a change, ΔPd, to the nominal bearing clearance.</li></ul><p class="hint">Note</p><p class="bodytext">The selection you make in the Tolerance field has no effect on the general behavior of the bearings.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

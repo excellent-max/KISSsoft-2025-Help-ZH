@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿轮体 | Gear body</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Gear body">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('7708');expand('9286');expand('9246');highlight('11611')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11664.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11613.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">齿轮体</h3>   
+                
+<p class="bodytext">在 <span class="menu">齿轮体</span> 选项卡中（您通过点击<span class="menu"> </span><span class="menu">计算</span>菜单将其打开），您可以输入用于定义齿轮体的值，这会影响按照 ISO 6336 附录 E 规定的强度计算、接触分析和线载荷计算。为此，首先点击 <span class="menu">齿轮轮缘定义</span> 选项来定义齿轮体拓扑。这对应于下图所示的图纸之一。</p><p class="bodytext"></p><div class="objectWrapper" data-id="679896b5eef20" data-type="image" data-caption="Unterschiedliche Topologien für einen Radkörper (oben: Aussenräder, unten: Innenräder)"><p class="bodytext"><img data-id="679896b5eef20" height="413" src="Z-015-current.png" width="427"></p><p class="figcaption" data-id="679896b5eef20">图 15.92：不同的齿轮体拓扑（上：外齿轮，下：内齿轮）</p></div><p class="bodytext">情况（A）与情况（B）不同，因为它在齿轮体和轮齿之间有一个齿轮轮缘。齿圈和齿轮体可以采用不同的材料。</p><p class="bodytext">根据所选拓扑的不同，还有许多额外的输入选项可用：</p><ul>	<li class="bodytext">内径 d<sub>i</sub></li>	<li class="bodytext">齿轮轮缘内径 d<sub>bi</sub></li>	<li class="bodytext">轮缘厚度系数 S<sub>R*</sub></li>	<li class="bodytext">轴直径 d<sub>s</sub></li>	<li class="bodytext">腹板厚度系数 b<sub>s</sub>/b*</li>	<li class="bodytext">腹板厚度 b<sub>s</sub></li></ul><p class="bodytext">内径是计算质量转动惯量所必需的。对于情况（B），它可以通过 d<sub>i</sub> 的输入或轮缘厚度系数 S<sub>R*</sub> 来定义。对于情况（C），内径与轴直径相同。</p><p class="bodytext">齿轮轮缘的内径对于情况（A）是必需的。这可以通过直接输入 d<sub>bi</sub> 或使用轮缘厚度系数 S<sub>R*</sub> 来定义。</p><p class="bodytext">按照 ISO 或 AGMA 的定义，齿轮轮缘厚度 S<sub>R</sub> 确实会影响强度。如果已输入齿轮轮缘直径 d<sub>bi</sub>，则有效齿轮轮缘厚度 S<sub>R</sub> 由 (d<sub>f</sub> - d<sub>bi</sub>)/2 确定。齿轮轮缘厚度 S<sub>R</sub> 将在报告中输出。当使用薄齿轮轮缘时，此系数会极大地影响安全系数的计算。对于薄齿轮轮缘，此值也可以按照 VDI 2737 计算（参见"<a class="referencetopic-shabschnitt" href="8903.htm" target="_self">考虑齿轮轮缘影响（VDI 2737）的齿根安全系数</a>"章）。</p><p class="bodytext"></p><p class="bodytext">腹板厚度系数：如果内径 &lt; &gt; 0，则将输入腹板厚度（b<sub>s</sub> 或 b<sub>s</sub>/b）的值纳入考虑。如果设置 b<sub>s</sub>/b = 1.0，则表示不存在腹板。在这种情况下，齿轮体系数 C<sub>R</sub> 为 1.0。比值 b/b<sub>s</sub> 可在 0.2 和 1.2 之间变化。此时，CR 小于 1（如果 b/b<sub>s</sub> &lt; 1）或大于 1（如果 b/b<sub>s</sub> &gt; 1）。然后使用系数 CR 计算轮齿接触刚度（cγα）。</p><p class="bodytext">如果选择“不考虑”刚度模型选项，则齿轮体对 ISO 6336 附录 E 中定义的接触分析和线载荷计算没有影响。相比之下，齿轮体始终在强度计算中被考虑。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">另请参见</p><p class="relateditem"><a href="11613.htm" target="_self">定义选项</a></p><p class="relateditem"><a href="11614.htm" target="_self">计算设置</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Gear body</h3>   
+                
+<p class="bodytext">In the <span class="menu">Gear body</span> tab, which you open by clicking on the<span class="menu"> </span><span class="menu">Calculation</span> menu, you can input values for defining a gear body, which has influence on the strength calculation, the contact analysis and the line load calculation as specified in ISO 6336 Annex E. To achieve this, first click the <span class="menu">Gear rim definition</span> option to define the gear body topology. This corresponds to one of the drawings displayed in the figure below.</p><p class="bodytext"></p><div class="objectWrapper" data-id="679896b5eef20" data-type="image" data-caption="Unterschiedliche Topologien für einen Radkörper (oben: Aussenräder, unten: Innenräder)"><p class="bodytext"><img data-id="679896b5eef20" height="413" src="Z-015-current.png" width="427" /></p><p class="figcaption" data-id="679896b5eef20">Figure 15.92: Different gear body topologies (top: external gears, bottom: internal gears)</p></div><p class="bodytext">Case (A) is different from case (B) because it has a gear rim between the gear body and the toothing. The tooth rim and the gear body may have different materials.</p><p class="bodytext">A number of additional input options, which vary according to the selected topology, are available:</p><ul>	<li class="bodytext">Inside diameter d<sub>i</sub></li>	<li class="bodytext">Inside diameter of gear rim d<sub>bi</sub></li>	<li class="bodytext">Rim thickness coefficient S<sub>R*</sub></li>	<li class="bodytext">Shaft diameter d<sub>s</sub></li>	<li class="bodytext">Web thickness factor b<sub>s</sub>/b*</li>	<li class="bodytext">Web thickness b<sub>s</sub></li></ul><p class="bodytext">The inner diameter is needed to calculate the mass moment of inertia. For case (B), it can be defined either by the input for d<sub>i</sub> or the rim thickness coefficient S<sub>R*</sub>. For case (C), the inner diameter is the same as the shaft diameter.</p><p class="bodytext">The inner diameter of the gear rim is needed for case (A). This can be defined either by inputting d<sub>bi</sub> directly or by using the rim thickness coefficient S<sub>R*</sub>.</p><p class="bodytext">As defined in ISO or AGMA, the gear rim thickness S<sub>R</sub> does affect the strength. If a diameter has been entered for gear rim d<sub>bi</sub>, the effective gear rim thickness S<sub>R</sub> is determined from (d<sub>f</sub> - d<sub>bi</sub>)/2. The gear rim thickness S<sub>R</sub> will be output in the report. Where thin gear rims are used, this factor can greatly influence the calculation of safety factors. For thin gear rims, this value can also be calculated in accordance with VDI 2737 ((see chapter <a class="referencetopic-shabschnitt" href="8903.htm" target="_self">Safety factor root with gear rim influence (VDI 2737)</a>).</p><p class="bodytext"></p><p class="bodytext">Web thickness factor: If the inside diameter is &lt; &gt; 0, the value input for the web thickness (b<sub>s</sub> or b<sub>s</sub>/b) is taken into account. If b<sub>s</sub>/b = 1.0 is set, this means no web is present. In this case, the gear body coefficient C<sub>R</sub> is 1.0. The ratio b/b<sub>s</sub> can vary between 0.2 and 1.2. In this case, CR is then &lt; 1 (if b/b<sub>s</sub> &lt; 1) or &gt; 1 (if b/b<sub>s</sub> &gt; 1). The coefficient CR is then used to calculate the tooth contact stiffness (cγα).</p><p class="bodytext">If the “Do not consider” stiffness model option is selected, the gear body has no influence on the contact analysis and line load calculation as defined in ISO 6336, Annex E. In contrast, the gear body is always considered in the strength calculation.</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">See also</p><p class="relateditem"><a href="11613.htm" target="_self">Definition option</a></p><p class="relateditem"><a href="11614.htm" target="_self">Calculation settings</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

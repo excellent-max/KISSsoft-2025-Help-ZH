@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN">
+<html>
+
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<SCRIPT Language='javascript'>
+// aufruf context-sensitive Hilfe: index.htm?id=xxx
+
+
+function resizeTOC() {
+   var actDoc
+   if (top.frames["ALL"])
+   	{
+   	actDoc=top.frames["ALL"].frames['TOC'].document;
+   	if (actDoc.HHCtrl) {
+	   var hhctrl=actDoc.HHCtrl
+	   hhctrl.width=actDoc.body.clientWidth-5
+	   hhctrl.height=actDoc.body.clientheight-10
+	   }
+	}
+
+}
+
+var query_vars = read_querystring();
+var id=query_vars['id'];
+var nav=unescape(query_vars['nav']);
+var act_bodyfile=unescape(query_vars['body']);
+if (!nav) {nav=''} else {nav='?nav=' + escape(nav)};
+
+var act_leftFrame_width;
+if (''!='') {act_leftFrame_width=parseInt('')} else {act_leftFrame_width=_leftFrame_width}
+if (BrowserDetect.browser!='Firefox') {frameborder="Frameborder='0'"} else {frameborder=""};
+
+	wr("<frameset border='4' cols='" + act_leftFrame_width + ",*' frameborder='1' framespacing='4px'>")
+	wr("<FRAME name=TOC Frameborder='0' Border='0' marginheight='0' marginwidth='0' src='toc.htm" + nav + "' onload=resizeTOC() onresize='resizeTOC()'></FRAME>")
+	wr("<FRAME name=BODY  Border='0' " + frameborder + " marginheight='0' marginwidth='0' \n");
+	if (_rightFrame_Scroll) {wr(" scroling=yes " )};
+	if (id) {t=id+'.htm'} else {t=act_bodyfile}
+	wr(" SRC="+t+"></FRAME>\n");
+
+
+</SCRIPT>

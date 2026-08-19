@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>齿面磨损 | Wear along the tooth flank</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Wear along the tooth flank">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('11492');expand('8405');expand('8353');expand('9286');expand('9246');highlight('10069')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11496.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11497.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">齿面磨损</h3>   
+                
+<p class="bodytext">在计算齿面的局部磨损之前，必须先定义材料的磨损系数 k<sub class="subscript">w</sub>。该系数可以使用齿轮测试设备或通过简单的试验程序（例如销盘试验台）来测定近似值。目前正在进行研究，以确定通过简化测量方法确定的系数 k<sub class="subscript">w</sub> 可以多准确地应用于齿轮。要进行精确预测，还需要确定材料配对下的系数 k<sub class="subscript">w</sub>。例如，POM 与 POM 配对的结果不同于 POM 与钢配对。</p><p class="bodytext"><strong>塑料</strong></p><p class="bodytext">对于塑料，可以在聚合物数据文件中根据温度输入磨损因子 k<sub class="subscript">w</sub>（例如，POM 对应 Z014-100.DAT）。数据以 10<sup><span class="superscript">6</span></sup> mm<sup><span class="superscript">3</span></sup>/Nm 为单位输入。<br><br>例如：</p><p class="bodytext"><img height="84" src="10075.png" width="564"></p><p class="bodytext"></p><p class="bodytext"><strong>钢</strong></p><p class="bodytext">普莱的调查表明，钢材料的磨损系数可以近似定义。另见钢材材料磨损系数的计算（<a class="referencetopic-shabschnitt" href="10495.htm" target="_self">钢材材料的磨损系数 kw 计算</a>章节）。</p><p class="bodytext"><strong>计算</strong></p><p class="bodytext">磨损根据以下基本公式进行计算：</p><p class="bodytext"><img src="10076.png" style="height:29px; width:120px"></p><p class="bodytext">(δw [mm], k<sub class="subscript">w</sub> [mm<span class="superscript">3</span>/Nm], P: 压力 [N/mm<span class="superscript">2</span>], V:速度 [m/s], T:时间[s])</p><p class="bodytext">根据齿轮条件进行修改后，局部磨损由以下因素引起：</p><p class="bodytext"><img src="10077.png" style="height:32px; width:165px"></p><p class="bodytext">(i = 1.2)</p><p class="bodytext">(δw_i [mm], k<sub class="subscript">w</sub> [mm<span class="superscript">3</span>/Nm], NL: 载荷循环次数，w: 线载荷 [N/mm], ζ_i: 单位滑动比)</p><p class="bodytext">该公式也对应于 [61] 中的公式 6.1。</p><p class="bodytext">确定齿面磨损的计算在每个啮合点处使用以下取自啮合线计算的数据：</p><ul>	<li class="bodytext">单位滑动比</li>	<li class="bodytext">线载荷</li></ul><p class="bodytext">在 23°C 下 POM 对 POM，[61] 给出的 k<sub class="subscript">w</sub> 值为 1.03 * 10<span class="superscript">-6</span> mm<span class="superscript">3</span>/Nm。POM 对钢时，它给出的 k<sub class="subscript">w</sub> 值为 3.7×10<span class="superscript">-6</span> mm<span class="superscript">3</span>/Nm。</p><p class="bodytext">在解释结果时，请注意齿面磨损的增加会在某种程度上改变局部条件（线载荷、滑动速度），因此也会改变磨损本身的增加量。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Wear along the tooth flank</h3>   
+                
+<p class="bodytext">Before you can calculate local wear on the tooth flank, you must first define the material's wear coefficient k<sub class="subscript">w</sub>. This coefficient can be measured using gear testing equipment or by implementing a simple test procedure (for example pin and disk test rig) to determine the approximate value. Investigations are currently being carried out to see how accurately the coefficient k<sub class="subscript">w</sub>, determined using a simplified measurement method, can be applied to gears. For exact forecasts, you will also need to determine the coefficient k<sub class="subscript">w</sub>for the material pairing. For example, POM paired with POM does not supply the same results as POM paired with steel.</p><p class="bodytext"><strong>Plastics</strong></p><p class="bodytext">You can input the wear factor k<sub class="subscript">w</sub> in the polymer data file, for plastics, depending on the temperature (for example, Z014-100.DAT for POM). The data is input in 10<sup><span class="superscript">6</span> </sup>mm<sup><span class="superscript">3</span></sup>/Nm.<br /><br />For example:</p><p class="bodytext"><img height="84" src="10075.png" width="564" /></p><p class="bodytext"></p><p class="bodytext"><strong>Steel</strong></p><p class="bodytext">Plewe's investigations have revealed that a rough approximation of the wear coefficients for steel materials can be defined. See also the calculation of wear coefficients for steel (see chapter <a class="referencetopic-shabschnitt" href="10495.htm" target="_self">Calculation of the wear coefficient kw for steel</a>).</p><p class="bodytext"><strong>Calculation</strong></p><p class="bodytext">Wear is calculated according to the following basic equation:</p><p class="bodytext"><img src="10076.png" style="height:29px; width:120px" /></p><p class="bodytext">(δw [mm], k<sub class="subscript">w</sub> [mm<span class="superscript">3</span>/Nm], P: Pressure [N/mm<span class="superscript">2</span>], V:Velocity [m/s], T:Time[s])</p><p class="bodytext">As modified to suit gear conditions, local wear results from:</p><p class="bodytext"><img src="10077.png" style="height:32px; width:165px" /></p><p class="bodytext">(i = 1.2)</p><p class="bodytext">(δw_i [mm], k<sub class="subscript">w</sub> [mm<span class="superscript">3</span>/Nm], NL: Number of load cycles, w: Line load [N/mm], ζ_i: specific sliding)</p><p class="bodytext">This equation also corresponds to the data in [61], Equation 6.1.</p><p class="bodytext">The calculation used to determine wear on the tooth flank uses the following data at each point of contact taken from the calculation of the path of contact:</p><ul>	<li class="bodytext">Specific sliding</li>	<li class="bodytext">Line load</li></ul><p class="bodytext">POM against steel (at 23°C), [61] gives a k<sub class="subscript">w</sub> value of 1.03 * 10<span class="superscript">-6</span> mm<span class="superscript">3</span>/Nm. Against steel, it gives a k<sub class="subscript">w</sub> value of 3.7*10<span class="superscript">-6</span> mm<span class="superscript">3</span>/Nm.</p><p class="bodytext">When you interpret the results, note that the increasing wear on the tooth flank changes local conditions (line load, sliding velocity) to some extent, and therefore also changes the increase in wear itself.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

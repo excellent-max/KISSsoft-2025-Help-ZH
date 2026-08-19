@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>规则 | Rules</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Rules">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9114');expand('9272');expand('9246');highlight('10847')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="9041.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="11522.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">规则</h3>   
+                
+<p class="bodytext">规则用于确保内部指南中参数有效范围的应用和遵守。这通常涉及输入值、计算值的最大和最小限制，以及这些值之间的关系，例如长度/宽度比、长度/直径关系，甚至模数与中心距之间的关系。</p><p class="bodytext">这些规则通过存储在 <span class="menu">module</span>.rls 文件中进行定义，其中 <span class="menu">module</span> 表示计算模块的内部标签，例如 Z012 表示圆柱齿轮副。</p><p class="bodytext">这些规则分为两类：一类是在计算执行前必须满足的规则，另一类是在计算后必须检查的规则。如果违反了某条规则，相应的提示信息可以显示。对于在计算前必须检查的规则，还可以将变量设置为常量或计算值。</p><p class="bodytext"></p><p class="bodytext">可以使用以下语句：</p><p class="bodytext"><strong>precalc</strong>：表示在进行计算前必须检查的规则的开始。</p><p class="bodytext"><strong>postcalc</strong>：表示在进行计算后必须检查的规则的开始。</p><p class="bodytext"><strong>assert(</strong><span class="menu">Condition</span><strong>)</strong>：用于校验<span class="menu">条件</span>。该<span class="menu">条件</span>通常是比较表达式，比较式左右两侧均可包含计算。</p><p class="bodytext"><strong>action msg </strong><span class="menu">Message</span>：若前一个 assert <span class="menu">条件</span>未满足，则输出该<span class="menu">消息</span>。<span class="menu">消息</span>可像报告模板一样包含变量。</p><p class="bodytext"><strong>action set </strong><span class="menu">Assignment</span>：若前一个 assert 的 <span class="menu">条件</span>未满足，则执行赋值。赋值可以是一个常量，也可以像报告模板那样由变量计算得出。</p><p class="bodytext">在 precalc 部分定义赋值才有实际意义，因为在计算之后更改变量内容只会导致不一致的结果，且无其他影响。</p><p class="bodytext"></p><p class="bodytext">以下是一个斜齿轮计算的示例文件：</p><p class="code">precalc</p><p class="code">assert (ZR[0].x.nul &lt; 1)</p><p class="code">action msg "Rad 1 的齿廓变位量过大，当前值为 {ZR[0].x.nul}，最大值为 1。已设置为 1."</p><p class="code">action set ZR[0].x.nul = 1</p><p class="code"></p><p class="code">assert (ZR[1].x.nul &lt; 1)</p><p class="code">action msg "Rad 2 的齿廓变位量过大，当前值为 {ZR[1].x.nul}，最大值为 1。已设置为 1."</p><p class="code">action set ZR[1].x.nul = 1</p><p class="code">postcalc</p><p class="code">assert ((ZP[0].a/ZS.Geo.mn) &lt; 200)</p><p class="bodytext">action msg "中心距相对于模数过大 (a={ZP[0].a}, mn={ZS.Geo.mn}, a/mn={ZP[0].a/ZS.Geo.mn})."</p><p class="bodytext"></p><p class="bodytext"><strong>说明：</strong></p><p class="bodytext">"precalc" 语句打开在计算前必须执行的规则部分。</p><p class="bodytext">第一个 "assert" 语句检查齿轮 1 的名义齿廓变位量是否小于 1.0。</p><p class="bodytext">如果此 "assert" 不成立，"action msg" 语句将输出提示信息，说明齿廓变位量过大，显示当前值并提示齿廓变位量已设置为 1.0。</p><p class="bodytext">"action set" 语句随后将齿廓变位量设置为 1.0。</p><p class="bodytext">第二个 "assert" 语句检查齿轮 2 的相同值。</p><p class="bodytext"></p><p class="bodytext">"postcalc" 语句表示在进行计算前要执行的规则集的结束，并打开包含计算后要检查的规则的章节。示例展示了一个 "assert" 语句的定义。该语句检查中心距与模数之间的比率。如果违反了规则，"action msg" 语句将向用户触发提示信息。然而，在计算之后更改这两个值中的任何一个是没有意义的，因此此处没有 "action set" 语句。</p><p class="bodytext"></p><p class="bodytext">公式中允许的运算符和函数（见"<a class="referencetopic-shabschnitt" href="9096.htm" target="_self">计算变量</a>"章）。</p><p class="bodytext"></p><p class="bodytext">规则文件存储在模板目录中（TEMPLATEDIR，通常为“template”子目录，见"<a class="referencetopic-shabschnitt" href="9131.htm" target="_self">目录结构</a>"章）。由于模板目录也可以是项目特定的，因此可以定义项目特定的规则。</p>
+
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Rules</h3>   
+                
+<p class="bodytext">Rules are used to ensure that in-house guidelines for the ranges of validity of parameters are applied and complied with. This typically concerns the maximum and minimum limits of input values, calculated values and the relationships between these values i.e. length/width ratios, length/diameter relationships or even the relationship between the module and the center distance.</p><p class="bodytext">These rules are defined by being stored in a <span class="menu">module</span>.rls file, where <span class="menu">module</span> stands for the calculation module's in-house label, e.g. Z012 for cylindrical gear pairs.</p><p class="bodytext">These rules are subdivided into those that must be fulfilled before the calculation is performed and those that must be checked afterwards. If a rule is infringed, the appropriate messages can be displayed. In the case of rules that must be checked before the calculation, variables can also be set to constant or calculated values.</p><p class="bodytext"></p><p class="bodytext">The following statements are possible:</p><p class="bodytext"><strong>precalc</strong>: marks the beginning of the rules that must be checked before a calculation is performed.</p><p class="bodytext"><strong>postcalc</strong>: marks the beginning of the rules that must be checked after a calculation.</p><p class="bodytext"><strong>assert(</strong><span class="menu">Condition</span><strong>)</strong>: The <span class="menu">condition</span> is ensured. In this case, the <span class="menu">condition</span> usually represents a comparison in which both the right-hand and left-hand side of the comparison can also be calculated.</p><p class="bodytext"><strong>action msg </strong><span class="menu">Message</span>: If the <span class="menu">condition</span> of the previous assert has not been fulfilled, the <span class="menu">message</span> is output. Here the <span class="menu">message</span> can include variables, in the same way as report templates.</p><p class="bodytext"><strong>action set </strong><span class="menu">Assignment</span>: If the <span class="menu">condition</span> of the previous assert has not been fulfilled, the assignment is performed. The assigned value can be a constant, or can be calculated from variables, in the same way as for the report templates.</p><p class="bodytext">Defining an assignment is only really useful in the precalc section because changing the contents of variables after the calculation merely leads to inconsistent results and has no other effects.</p><p class="bodytext"></p><p class="bodytext">Here is an example file for a helical gear calculation:</p><p class="code">precalc</p><p class="code">assert (ZR[0].x.nul &lt; 1)</p><p class="code">action msg "Profilverschiebung Rad 1 zu gross, Ist {ZR[0].x.nul}, Maximum 1. Wird auf 1 gesetzt."</p><p class="code">action set ZR[0].x.nul = 1</p><p class="code"></p><p class="code">assert (ZR[1].x.nul &lt; 1)</p><p class="code">action msg "Profilverschiebung Rad 2 zu gross, Ist {ZR[1].x.nul}, Maximum 1. Wird auf 1 gesetzt."</p><p class="code">action set ZR[1].x.nul = 1</p><p class="code">postcalc</p><p class="code">assert ((ZP[0].a/ZS.Geo.mn) &lt; 200)</p><p class="bodytext">action msg &quot;Center distance too big for module (a={ZP[0].a}, mn={ZS.Geo.mn}, a/mn={ZP[0].a/ZS.Geo.mn}).&quot;</p><p class="bodytext"></p><p class="bodytext"><strong>Explanations:</strong></p><p class="bodytext">The &quot;precalc&quot; statement opens the section of the rules that must be executed before the calculation.</p><p class="bodytext">The first &quot;assert&quot; statement checks whether the nominal profile shift of gear 1 is less than 1.0.</p><p class="bodytext">If this &quot;assert&quot; is not fulfilled, the &quot;action msg&quot; statement outputs the message that the profile shift is too big, displays the current value and tells you that the profile shift has been set to 1.0.</p><p class="bodytext">The &quot;action set&quot; then sets the profile shift to 1.0.</p><p class="bodytext">The second &quot;assert&quot; statement checks the same values for gear 2.</p><p class="bodytext"></p><p class="bodytext">The &quot;postcalc&quot; statement signifies the end of the set of rules to be executed before the calculation and opens the section containing the rules that are to be checked after the calculation. The example shows a definition of an &quot;assert&quot; statement. This checks the ratio between the center distance to the module. If the rule is infringed, the &quot;action msg&quot; statement triggers a message to the user. However, there is no point in changing one of these two values after the calculation, and this is why the &quot;action set&quot; statement is not present here.</p><p class="bodytext"></p><p class="bodytext">Permitted operators and functions in the formulae (see chapter <a class="referencetopic-shabschnitt" href="9096.htm" target="_self">Calculation variables</a>).</p><p class="bodytext"></p><p class="bodytext">The file containing the rules is stored in the template directory (TEMPLATEDIR, usually the &quot;template&quot; (see chapter <a class="referencetopic-shabschnitt" href="9131.htm" target="_self">Directory structure</a>) subdirectory). As the template directory can also be project-specific, you can also define project-specific rules.</p>
+
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>

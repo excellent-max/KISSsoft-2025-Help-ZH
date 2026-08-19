@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>交叉轴斜齿轮和带齿条的交叉轴斜齿轮 | Crossed helical gears and crossed helical gear with rack</title>
+<meta name="Generator" content="KISSbooks (production)">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Keywords" content="Crossed helical gears and crossed helical gear with rack">
+
+<link rel="stylesheet" type="text/css" href="documentStyles.css">
+
+<base target="BODY">
+
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="javascript" type="text/javascript" src="routines.js"></script>
+<script language="javascript" type="text/javascript" src="app_configuration.js"></script>
+
+<style id="kisssoft-bilingual-style">
+.bilingual-zh{font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72;color:#202124;background:#f7fbff;border:1px solid #bfd9ee;border-radius:6px;margin:12px 0 22px;padding:18px 22px;white-space:normal}
+.bilingual-zh .bilingual-label{display:inline-block;font:600 12px/1.5 "PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;padding:3px 9px;border-radius:12px;margin:2px 0 10px;color:#0d4f78;background:#dcefff}
+.bilingual-zh table{max-width:100%;margin:10px 0}.bilingual-zh img,.bilingual-zh svg{max-width:100%;height:auto}.bilingual-zh p,.bilingual-zh li,.bilingual-zh td{line-height:1.72}
+.bilingual-english-start{border-top:1px solid #c8c8c8;margin:18px 0 10px;padding-top:12px}.bilingual-english-start span{display:inline-block;font:600 12px/1.5 Arial,sans-serif;padding:3px 9px;border-radius:12px;color:#555;background:#eee}
+</style>
+
+</head>
+      
+<body  class='contents' topmargin="0" leftmargin="0" marginheight="0" marginwidth="0"  onload="if (isTOCLoaded()) {expand('9286');expand('9246');highlight('8429')}">
+<div id='data'>
+
+<script>
+    var onlhlp;
+    var query_vars = read_querystring();
+        
+    if (parent) {onlhlp=parent.onlhlp;}
+    if (onlhlp) {_rightFrame_Scroll=false;}
+    if (_rightFrame_Scroll) {i=30;} else {i=7;}
+
+    wr("<table width='" + parseInt(document.body.clientWidth-i) + "' border='0' cellspacing='0' cellpadding='0'>");
+    wr("<tr><td>");
+        
+    if (_bodyHeader_file!='' && !onlhlp) {wr("<img src='" + _bodyHeader_file + "' width='" + parseInt(document.body.clientWidth-30) + "' height='" + _bodyHeader_fileHeight + "'>")}
+    
+    wr("</td></tr>");
+    wr("<tr><td>");
+</script>
+
+<table class="relatedtopics aboveheading" cellpadding="0" cellspacing="0" border="0">
+    <tr  valign="top">
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8506.htm" target="_self">
+                    <img src="9383.png">
+                </a>
+            </p>
+        </td>
+        <td width= "18">
+            <p class="bodytext">
+                <a href="8430.htm" target="_self">
+                    <img src="9384.png">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+          
+<!-- KISSSOFT_BILINGUAL_START -->
+<section class="bilingual-zh" lang="zh-CN"><span class="bilingual-label">中文翻译</span><h3 class="heading3">交叉轴斜齿轮和带齿条的交叉轴斜齿轮</h3>   
+                
+<p class="bodytext">交叉轴斜齿轮是具有斜齿的渐开线圆柱齿轮，其轴的轴线相互交叉。通常，轴交角为 Σ = 90°。与包络蜗杆所示的线接触不同，交叉轴斜齿轮在展成过程中仅在一个点接触。因此，它们只能传递很小的力，主要用于控制目的。</p><p class="bodytext"></p><p class="bodytext">在精密工程中，蜗轮通常采用与带圆柱齿轮体的斜齿圆柱齿轮相同的方式制造。与“经典”球面蜗轮相比，这种方式更容易生产和装配。在这种情况下，使用交叉轴斜齿轮模块，以与斜齿圆柱齿轮相同的方式计算精密机械蜗轮的几何形状。</p><p class="bodytext">在变位系数不为零的交叉轴斜齿轮中，齿轮 1 上的螺旋角（如果齿数很少，则称为“蜗杆”）与齿轮 2 上的螺旋角彼此不同。两个齿轮通常具有相同的旋向。相比之下，工作节圆/螺旋线上两个螺旋角之和恰好等于轴交角。</p><p class="bodytext"></p><p class="bodytext">轴向交叉角通常为正，但在某些特殊情况下也可以为负。然而，它必须始终小于齿轮 1 上的螺旋角。在这种情况下，齿轮 2 与齿轮 1 的旋向相反。在 KISSsoft 中，您必须始终输入齿轮 1 上的螺旋角和轴向交叉角的值。齿轮 2 上的螺旋角是计算得出的。KISSsoft 在其内部计算中始终对齿轮 1 上的螺旋角使用正值。然而，齿轮 2 上的角度可以是正（通常情况如此）或负。</p><p class="bodytext"></p><p class="bodytext">特殊情况：</p><p class="bodytext">在某些特殊情况下，用户可以将齿轮 1 视为蜗杆。为此，必须直接在计算文件中将 <span lang="EN-GB" style="font-size:10.0pt"><span style='font-family:"Arial",sans-serif'><span style="color:#4a4a4a">ZR[0].isWorm </span></span></span>变量设置为 true。</p><p class="bodytext">齿轮 2 可以具有内齿形。在这种情况下，为齿轮 2 输入负的齿数。</p><p class="bodytext">带直齿的齿轮副：齿轮 1 不能是直齿轮。螺旋角输入 0 不被接受。相比之下，齿轮 2 可以具有直齿。在这种情况下，选择负的轴交角。</p><p class="bodytext"></p><p class="bodytext">对于轴交角，适用以下条件：</p><ul>	<li class="bodytext">对于外齿：β1+β2 = Σ (*)</li>	<li class="bodytext">对于内齿：β1-β2 = Σ (*)</li></ul><p class="bodytext">*）：如果齿轮 1 和齿轮 2 具有相同的旋向（均为右旋或均为左旋）则适用。否则，必须为 β2 输入负值。</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">本章内容</p><p class="relateditem"><a href="8430.htm" target="_self">计算基础原理</a></p><p class="relateditem"><a href="8431.htm" target="_self">基本数据</a></p><p class="relateditem"><a href="8455.htm" target="_self">设置</a></p><p class="relateditem"><a href="10509.htm" target="_self">注释</a></p><p class="relateditem"><a href="11402.htm" target="_self">带齿条的交叉轴斜齿轮</a></p>
+</td>
+</tr>
+</table>
+
+
+
+</section>
+<div class="bilingual-english-start"><span>English Original</span></div>
+<!-- KISSSOFT_BILINGUAL_END -->
+<h3 class="heading3">Crossed helical gears and crossed helical gear with rack</h3>   
+                
+<p class="bodytext">Crossed helical gears are involute cylindrical gears with helical teeth whose shafts have crossed axes. Usually, the axial crossing angle is Σ = 90°. In contrast to the line contact shown in enveloping worms, crossed helical gears only contact at one point during generation. As a result, they can only transmit very small forces, and are primarily used for control purposes.</p><p class="bodytext"></p><p class="bodytext">In precision engineering, a worm wheel is often manufactured in the same way as a helical cylindrical gear with a cylindrical gear body. This makes it easier to produce and assemble than the &quot;classic&quot; worm wheel globoid gear. In this situation, the crossed helical gear module is used to calculate the geometry of a precision mechanics worm wheel in the same way as a helical-toothed cylindrical gear.</p><p class="bodytext">In a crossed helical gear where the profile shift coefficient is not zero, the helix angle on Gear 1 (referred to as the &quot;worm&quot; if a small number of teeth is involved)and the helix angle on Gear 2 differ from each other. Both gears usually have the same hand of gear. In contrast, the total of both helix angles at the operating pitch circle/spiral is exactly the same as the shaft angle.</p><p class="bodytext"></p><p class="bodytext">The axial crossing angle is usually positive, but can also be negative or positive in some special cases. However, it must always be smaller than the helix angle on Gear 1. In this situation, gear 2 has the opposite hand of gear to gear 1. In KISSsoft, you must always input values for the helix angle on Gear 1 and axial crossing angle. The helix angle on Gear 2 is calculated. KISSsoft always uses a positive value for the helix angle on Gear 1 in its internal calculations. However, the angle on Gear 2 can be either positive (as is usually the case) or negative.</p><p class="bodytext"></p><p class="bodytext">Special cases:</p><p class="bodytext">In some special cases, the user can consider Gear 1 as a worm. For this the <span lang="EN-GB" style="font-size:10.0pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#4a4a4a">ZR[0].isWorm </span></span></span>variable must be set to true directly in the calculation file.</p><p class="bodytext">Gear 2 can have internal toothing. In this case, enter a negative number of teeth on Gear 2.</p><p class="bodytext">Gear pair with spur gear teeth: Gear 1 cannot be a spur gear. An entry of 0 for the helix angle is not accepted. In contrast, Gear 2 can have spur gear teeth. In this case, select a negative shaft angle.</p><p class="bodytext"></p><p class="bodytext">For the shaft angle, the following conditions apply:</p><ul>	<li class="bodytext">for external teeth: β1+β2 = Σ (*)</li>	<li class="bodytext">for internal teeth: β1-β2 = Σ (*)</li></ul><p class="bodytext">*): Applies if gear 1 and gear 2 have the same hand of gear (either both right or both left). Otherwise, a negative value for β2 must be entered.</p>
+<table class="relatedtopics belowtopictext" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width="600">
+<p class="relatedheading">In this chapter</p><p class="relateditem"><a href="8430.htm" target="_self">Underlying principles of calculation</a></p><p class="relateditem"><a href="8431.htm" target="_self">Basic data</a></p><p class="relateditem"><a href="8455.htm" target="_self">Settings</a></p><p class="relateditem"><a href="10509.htm" target="_self">Notes</a></p><p class="relateditem"><a href="11402.htm" target="_self">Crossed helical gear with rack</a></p>
+</td>
+</tr>
+</table>
+
+</td></tr>
+</table>
+</div>
+<SCRIPT language='javascript'>WebFXsetHeight()</SCRIPT>
+
+</body>
+</html>
