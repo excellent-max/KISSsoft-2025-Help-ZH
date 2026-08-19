@@ -1,8 +1,13 @@
-# KISSsoft 2025 中英双语帮助文档 (Help-ZH)
+# KISSsoft 2025 中英双语帮助文档 (Help-ZH) | 官方帮助手册完整汉化
 
-本项目为 **KISSsoft 2025 官方帮助文档（Help）的完整中英双语汉化版本**。
+[![GitHub stars](https://img.shields.io/github/stars/excellent-max/KISSsoft-2025-Help-ZH?style=flat-square)](https://github.com/excellent-max/KISSsoft-2025-Help-ZH/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/excellent-max/KISSsoft-2025-Help-ZH?style=flat-square)](https://github.com/excellent-max/KISSsoft-2025-Help-ZH/issues)
+[![License](https://img.shields.io/badge/License-Community-blue.svg?style=flat-square)](#-免责声明)
+[![KISSsoft Version](https://img.shields.io/badge/KISSsoft-2025%20%2F%202024%20%2F%202023-orange.svg?style=flat-square)](https://github.com/excellent-max/KISSsoft-2025-Help-ZH)
 
-采用**中文在上、英文在下**的双语段落对照排版，既保证了中文阅读的流畅与高效，又完整保留了英文原版严谨的技术定义。所有原版公式、表格、结构及插图资源均 100% 完整保留，直接替换官方路径即可无缝生效。
+本项目为 **KISSsoft 2025 官方帮助文档（KISSsoft Help / Documentation）的完整中英双语汉化版**。
+
+致力于解决国内机械工程师、齿轮传动设计人员在查阅原版英文帮助手册时的语言障碍。文档采用**中文在上、英文在下**的双语段落对照排版，既保证了中文阅读的高效流畅，又完整保留了英文原版严谨的技术定义、标准代号与公式推导。直接替换官方路径即可在软件中按 `F1` 无缝唤出使用。
 
 ---
 
@@ -11,6 +16,23 @@
 文档采用精准段落级中英对照排版，中文高亮清晰，英文完整附后：
 
 ![KISSsoft 2025 双语帮助文档排版预览](preview.png)
+
+---
+
+## 🔍 支持的核心模块与标准 (Supported Modules)
+
+涵盖 KISSsoft 2025 全系统所有计算与校核模块，严格遵循 **ISO / AGMA / DIN / GB/T** 等主流设计计算标准：
+
+- **齿轮设计与校核 (Gear Calculation)**：
+  - 圆柱齿轮（Cylindrical Gears）、行星齿轮（Planetary Systems）、斜齿轮、人字齿轮
+  - 锥齿轮与准双曲面齿轮（Bevel and Hypoid Gears / Gleason / Klingelnberg）
+  - 蜗轮蜗杆传动（Worm Gears）、非正交齿轮、高阶微观齿面修形（Tooth Flank Modifications）与接触斑点（Contact Pattern）瞬态分析
+- **轴系与轴承分析 (Shaft & Bearing System)**：
+  - 轴系拓扑编辑器（Shaft Editor）、轴强度校核（DIN 743 / FKM）、临界转速与扭转振动分析
+  - 滚动轴承（Rolling Bearings - ISO 281 / ISO/TS 16281 内部载荷分布）与流体动力滑动轴承（Hydrodynamic Journal Bearings）
+- **联接件与弹性元件 (Connections & Springs)**：
+  - 螺栓联接（Bolted Joints - VDI 2230）、花键配合（Involute Splines - DIN 5480 / ISO 4156）
+  - 圆柱螺旋弹簧、碟形弹簧、过盈配合（Interference Fit）与销键联接
 
 ---
 
@@ -32,8 +54,8 @@
 
 ### 方式一：手动下载复制替换（推荐）
 
-1. 点击本仓库右上角 **`Code` -> `Download ZIP`** 并解压。
-2. 打开 KISSsoft 2025 安装目录下的 `help` 文件夹：
+1. 点击本仓库右上角 **`Code` -> `Download ZIP`**（或从 Release 下载）并解压。
+2. 打开 KISSsoft 2025 安装目录下的 `help` 文件夹（通常默认路径如下）：
    ```text
    C:\Program Files\KISSsoft AG\KISSsoft 2025\help\
    ```
